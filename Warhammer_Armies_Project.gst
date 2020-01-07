@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="1" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.7"/>
     <publication id="9e23-79cb-pubN67565" name="Albion v.1.21"/>
@@ -29,7 +29,7 @@
     <publication id="8abe-59b3-1084-5e51" name="Cathay v.1.12"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.21"/>
     <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric"/>
-    <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War"/>
+    <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.12"/>
     <publication id="894a-5ecc-1ff7-958a" name="Estalia"/>
     <publication id="0545-ea23-873c-f668" name="Halflings"/>
     <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins"/>
@@ -1150,7 +1150,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
           <profiles>
             <profile id="fdb4-9681-b7f6-01e9" name="Battle Banner" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gain +1 To Hit in the first round of close combat.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard adds +D6 to combat resolution, rolled each time it is used.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2233,7 +2233,7 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
     <rule id="b806-942b-15af-b309" name="Expendable" publicationId="9e23-79cb-pubN66727" page="70" hidden="false">
-      <description>Models with thisl rule do not cause Panic to friendly units that are not Expendable themselves. Character may not join a unit with this rule, unless specified.</description>
+      <description>Models with this rule do not cause Panic to friendly units that are not Expendable themselves. Characters may not join a unit with this rule, unless specified.</description>
     </rule>
     <rule id="668c-19e8-b764-8549" name="Stomp" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>The model can make a Stomp in addition to its other close combat attacks. A Stomp has Always Strikes Last, and inflicts D6 (or D3 against lone Infantry models and skirmishers) automatic hits, at the model&apos;s S, on one enemy Infantry, War Beasts or Swarm unit in base contact with the model.</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="35d0-e027-3d89-392c" name="Hobgoblin Animosity Chart">
       <characteristicTypes>
@@ -74,6 +74,14 @@
     <profileType id="a3ea-b771-681d-aade" name="Scientific Item">
       <characteristicTypes>
         <characteristicType id="1a57-1bef-d448-4349" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="fbf7-f819-ba56-6f0c" name="Land Ship Calamity Chart">
+      <characteristicTypes>
+        <characteristicType id="0642-bc05-3e43-a39e" name="1"/>
+        <characteristicType id="096e-9fbc-4982-edbe" name="2-3"/>
+        <characteristicType id="4dcd-7805-633d-f6ea" name="4-5"/>
+        <characteristicType id="bb4d-0ef8-1686-c24a" name="6"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -4051,7 +4059,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7789,6 +7797,43 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="c871-d959-418f-f309" name="Hand Weapon &amp; Ogre Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0b2-cc29-c2c9-364f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="51ab-e854-5082-c24d" name="Ogre Pistol" publicationId="8ada-88a0-cdcd-9b5e" page="103" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Armour Piercing (1). +1 A (requires Two Hands).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cab6-b2eb-6a3f-2d74" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9eed-569d-30cc-4aef" name="Brace of Ogre Pistols" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3dd6-071e-8513-d7c1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="aba9-5e16-7880-b383" name="Brace of Ogre Pistols" publicationId="8ada-88a0-cdcd-9b5e" page="103" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Armour Piercing (1). +1 A (requires Two Hands). Multiple Shots (2).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="9370-3d76-5ac0-cf58" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="767c-084b-98ba-8d92">
@@ -8016,7 +8061,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
           </profiles>
           <rules>
             <rule id="a4fc-1295-2274-9ea0" name="Orc Animosity" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false">
-              <description>Units with this rule must roll a D6 and consult the Orc Animosity chart at the start of the turn, unless they are already in combat, fleeing, or have less than Unit Strength 5.</description>
+              <description>Units with this rule must roll a D6 and consult the Orc Animosity chart at the start of the turn, unless they are already in combat, fleeing, or have less than 5 models.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -8225,6 +8270,117 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e84-add5-cabd-b9e5" name="The &apos;Marienburg&apos; Class Land Battle Ship" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="173d-18b9-af15-5ad3" name="Land Ship" publicationId="d69c-a7ea-95db-6f56" page="13" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">1ß</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 3+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="610c-33cc-8297-d896" name="Culverin" publicationId="d69c-a7ea-95db-6f56" page="13" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+          <characteristics>
+            <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon</characteristic>
+            <characteristic name="Range" typeId="1c88-efb0-083f-b945">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
+            <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3). The Land Ship may still move and fire the cannon, and may even fire it if engaged in combat contrary to the usual rules (but can only nominate a target point in the unit in base contact with the ship’s front). If the weapon is destroyed by a Misfire result, the Land Ship also immediately suffers D3 Wounds with no Armour saves allowed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b2b8-8728-2547-4ae5" name="Fusillade" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). In addition to firing the Culverin, in each Shooting phase the Land Ship can fire a fusillade at a single target in any direction (note this does not need to be the same target at which the Land Ship’s Culverin is firing). This generates 6 shots. Note that unlike the Culverin, the Fusillade cannot be used if the Land Ship is engaged in combat.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4572-c936-2e70-e472" name="Result" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false" typeId="fbf7-f819-ba56-6f0c" typeName="Land Ship Calamity Chart">
+          <characteristics>
+            <characteristic name="1" typeId="0642-bc05-3e43-a39e">Abandon Ship!: The Land Ship is destroyed but left on the table as an area of impassable terrain. Any unit in base contact when this happens suffers D6 S 8 hits.</characteristic>
+            <characteristic name="2-3" typeId="096e-9fbc-4982-edbe">Arrrrgh!: The ship moves the rolled distance and an additional D6&quot;, as well as suffering D3 wounds with no Armour save allowed.</characteristic>
+            <characteristic name="4-5" typeId="4dcd-7805-633d-f6ea">All Hands to the Wheel!: Roll a Scatter dice and move the ship the rolled distance in the direction shown on the dice. If a ‘hit’ is rolled, the Land Ship remains stationary.</characteristic>
+            <characteristic name="6" typeId="bb4d-0ef8-1686-c24a">Boom!: Everything within D6&quot; of the Land Ship’s hull suffers a S 6 hit and the Land Ship is destroyed and removed from play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="c16c-14c8-e4b2-2a72" name="The Wonder of the Age" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
+          <description>The Land Ship, lacking anything like the control of a Steam Tank has two modes of movement: slow and full power. The player must declare which they are using before the Land Ship is moved each turn.
+
+ Slow: The Land Ship may move up to 6&quot; directly forward without penalty or risk, but may not charge.
+
+ Full Power: The Land Ship follow the rules for Random Movement (3D6). However, if you roll two or more 1&apos;s when determining the Land Ships Random Movement, something has gone disastrously wrong. Roll immediately on the Land Ship Calamity Chart and apply the result.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="98e4-0e5c-29d2-06a1" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
+        <infoLink id="b9c4-1bc6-dea1-a5fd" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+        <infoLink id="e259-037b-7a04-c1f6" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="d76f-9715-6b3d-5c7b" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
+        <infoLink id="86bc-9f89-0702-42fd" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="709e-fc20-9c8d-82e4" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
+        <infoLink id="5176-ab04-718b-4f06" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
+        <infoLink id="c61a-812a-e6d9-098d" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b7b8-cd44-cb3d-ced2" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5829-63d0-43c6-b7a5" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="f568-420f-add4-659c" name="New CategoryLink" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+        <categoryLink id="1a60-4e8c-9eb3-7165" name="Lords" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="891a-c822-2656-5b25" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dogs of War Hero)" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d71-da9c-c080-8504" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="dc28-8702-194e-73a4" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1577-64bf-0f00-4ea0" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dogs of War Core)" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4338-b961-e844-ff3e" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="3a6c-25e7-859a-5e95" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="31fd-b7be-d881-04ae" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dogs of War Special)" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1623-20cf-768f-6a2b" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="4670-1146-f961-03f1" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0cec-87c8-80f2-c65b" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dogs of War Rare)" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -8823,7 +8979,7 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
       <description>A Pegasus with the Swift as the Wind upgrade re-rolls any dice results of a 1 when determining its charge range.</description>
     </rule>
     <rule id="d996-215a-4565-86db" name="Hobgoblin Animosity" publicationId="8ada-88a0-cdcd-9b5e" page="61" hidden="false">
-      <description>Units with this rule must roll a D6 and consult the Hobgoblin Animosity chart below at the start of the turn, unless they are already in combat, fleeing, or has less than Unit Strength 5.</description>
+      <description>Units with this rule must roll a D6 and consult the Hobgoblin Animosity chart below at the start of the turn, unless they are already in combat, fleeing, or have less than 5 models.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8963,5 +9119,6 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="fc7f-6f4b-7eff-f672" name="Magic" targetId="a579-d41f-e1ad-746f" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="a972-5ccb-f848-be8f" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

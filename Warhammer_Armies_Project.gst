@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.7"/>
     <publication id="9e23-79cb-pubN67565" name="Albion v.1.21"/>
@@ -10,7 +10,7 @@
     <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.1"/>
     <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.0"/>
     <publication id="9e23-79cb-pubN78975" name="Orcs &amp; Goblins v.1.02"/>
-    <publication id="9e23-79cb-pubN116235" name="Regiments of Renown"/>
+    <publication id="9e23-79cb-pubN116235" name="Regiments of Renown v.1.12"/>
     <publication id="aa7b-3583-0834-7bfa" name="Dwarfs v.1.11"/>
     <publication id="b3a3-a398-4838-11a1" name="Empire Knightly Orders v.1.03"/>
     <publication id="d69c-a7ea-95db-6f56" name="Steam Tanks"/>
@@ -29,7 +29,7 @@
     <publication id="8abe-59b3-1084-5e51" name="Cathay v.1.12"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.21"/>
     <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric"/>
-    <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.12"/>
+    <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.13"/>
     <publication id="894a-5ecc-1ff7-958a" name="Estalia"/>
     <publication id="0545-ea23-873c-f668" name="Halflings"/>
     <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="1" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
       <characteristicTypes>
@@ -7063,23 +7063,19 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
         <profile id="f7e3-b41c-ba12-d2b0" name="Result" publicationId="9e23-79cb-pubN71963" page="92" hidden="false" typeId="fca7-29bf-d164-5601" typeName="Big Things Chart">
           <characteristics>
             <characteristic name="1" typeId="2cba-ffb2-ec37-dfc9">Yell and Brawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points or more (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
-            <characteristic name="2-4" typeId="54de-c9d2-3e69-b8c3">Thump with Club: The Giant brings down its club on a single model from the target unit that is in base
-contact. The target may attempt to avoid the blow by passing an I test (use the lowest if the model
-has several different values). If the test is failed, the model takes 2D3 wounds which Ignores Armour
-Saves. If a double is rolled the Giant&apos;s club embeds itself in the ground and the Giant cannot attack at all in the following round of the same combat whilst it recovers its weapon.</characteristic>
-            <characteristic name="5-6" typeId="7ef3-115b-f42c-ed27">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3
-wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
+            <characteristic name="2-4" typeId="54de-c9d2-3e69-b8c3">Thump with Club: The Giant brings down its club on a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an I test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 wounds which Ignores Armour Saves. If a double is rolled the Giant&apos;s club embeds itself in the ground and the Giant cannot attack at all in the following round of the same combat whilst it recovers its weapon.</characteristic>
+            <characteristic name="5-6" typeId="7ef3-115b-f42c-ed27">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
           </characteristics>
         </profile>
         <profile id="bbad-876d-119b-ad3c" name="Result" publicationId="9e23-79cb-pubN71963" page="92" hidden="false" typeId="799f-11c1-1a96-0ccb" typeName="Pick up and... Chart">
           <characteristics>
-            <characteristic name="1" typeId="f283-309e-597b-1a3b">Stuff into Bag: The model is removed as a casualty.</characteristic>
+            <characteristic name="1" typeId="f283-309e-597b-1a3b">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag,
+but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
             <characteristic name="2" typeId="7d79-003e-4a07-efd0">Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 S 6 Hits which Ignore Armour saves, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
-            <characteristic name="3" typeId="9cc5-dee5-158b-7e15">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim suffers D3 S 6 Hits which Ignores Armour saves, and the unit takes D6 S 3 hits (save as normal).
-Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
+            <characteristic name="3" typeId="9cc5-dee5-158b-7e15">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim suffers D3 S 6 Hits which Ignores Armour saves, and the unit takes D6 S 3 hits (save as normal). Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
             <characteristic name="4" typeId="1d71-d3cc-5638-d323">Squash: The model is removed as a casualty.</characteristic>
             <characteristic name="5" typeId="f27a-9208-aa58-3cf0">Eat: The model is removed as a casualty.</characteristic>
-            <characteristic name="6" typeId="1635-0dc0-d896-cf6c">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, and then choose another victim. The second victim makes a single attack as usual to avoid being picked up — if he fails, roll again on this table to see what the Giant does with him.</characteristic>
+            <characteristic name="6" typeId="1635-0dc0-d896-cf6c">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
           </characteristics>
         </profile>
         <profile id="ec28-748b-772e-aff5" name="Result" publicationId="9e23-79cb-pubN71963" page="92" hidden="false" typeId="5c9e-5912-4cca-84b7" typeName="Small Things Chart">

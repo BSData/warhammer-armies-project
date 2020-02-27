@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="8f52-2c37-b05e-63ac" name="Maleficent Gaze Table">
       <characteristicTypes>
@@ -576,14 +576,14 @@
             </selectionEntry>
             <selectionEntry id="0863-b65d-d215-b987" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="8a7a-cd53-d56d-788d" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b1-7bae-f2ad-0262" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a7a-cd53-d56d-788d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a7a-cd53-d56d-788d" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="5725-b621-98e8-ca43" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1442,13 +1442,13 @@
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0a16-02fe-fe45-e1d5" name="Beast&apos;s bane" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0a16-02fe-fe45-e1d5" name="Beast&apos;s Bane" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fc5-7ae7-45cf-fc1e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef09-6f11-0445-5da1" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ebbb-b64a-0c37-9afe" name="Beast&apos;s bane" publicationId="84d9-dc45-4bf8-ae57" page="62" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="ebbb-b64a-0c37-9afe" name="Beast&apos;s Bane" publicationId="84d9-dc45-4bf8-ae57" page="62" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -4280,35 +4280,6 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
             <infoLink id="4302-34df-0724-f733" name="Lowborn Caste" hidden="false" targetId="5b4c-9990-2f3d-db5c" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="7a8c-a125-970a-7ae5" name="Camel" hidden="false" collective="true" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30a0-3ca5-2e08-e892" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5ed-6ded-ca88-e90f" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="74a7-717f-1dc7-b6c8" name="Camel" publicationId="84d9-dc45-4bf8-ae57" page="41" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="7c32-fba2-8b7b-5c8d" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="3a9b-a522-9887-e062" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="b7d4-4faf-c6bf-0c43" name="Bengal Tiger" hidden="false" collective="true" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e49b-d9f1-23a0-624e" type="max"/>
@@ -4345,12 +4316,12 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8418-052f-91df-7768" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="dcc8-f42e-4060-fe49" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="dcc8-f42e-4060-fe49" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa2d-a9ea-56e9-737a" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="1ef1-d1e8-1886-31ed" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+                    <infoLink id="1ef1-d1e8-1886-31ed" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
@@ -5388,7 +5359,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                   <characteristics>
                     <characteristic name="Range" typeId="59f2-3142-82d5-4f43">26&quot;</characteristic>
                     <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Volley Fire.Multiple Shots (2). Stand and Fire. Poisoned Attacks.</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Volley Fire. Multiple Shots (2). Stand and Fire. Poisoned Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

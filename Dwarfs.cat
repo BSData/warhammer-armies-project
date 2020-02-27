@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="2bfd-fe7d-294c-9853" name="Rules of the Runes Table">
       <characteristicTypes>
@@ -1576,14 +1576,14 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <profile id="14a0-2f86-8df3-97d0" name="Runelord" publicationId="aa7b-3583-0834-7bfa" page="139" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
           </characteristics>
         </profile>
@@ -4230,6 +4230,21 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
       </costs>
     </selectionEntry>
     <selectionEntry id="9fa1-ad93-8854-17cb" name="Slayers" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="2711-254a-05d8-70d5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa51-abcf-79bc-2b70" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2711-254a-05d8-70d5" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="43f4-b332-7f95-9277" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -4369,14 +4384,27 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c2b-a613-3d13-958a" name="Slayers (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7c2b-a613-3d13-958a" name="Slayers (Ungrim Ironfist as General)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="fadb-28e0-55f4-d084" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1b2-2798-72c0-bedb" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="fadb-28e0-55f4-d084" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-ad93-8854-17cb" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="974e-7c8a-61c5-6977" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fadb-28e0-55f4-d084" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="f492-5e2d-e0bb-bf9b" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -4516,21 +4544,26 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa51-abcf-79bc-2b70" name="Brotherhood of Grimnir (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="aa51-abcf-79bc-2b70" name="Brotherhood of Grimnir (Ungrim Ironfist as General)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="05b4-81b5-96c9-a166" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="974e-7c8a-61c5-6977" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-ad93-8854-17cb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="05b4-81b5-96c9-a166" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1b2-2798-72c0-bedb" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="05b4-81b5-96c9-a166" value="0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="974e-7c8a-61c5-6977" type="atLeast"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05b4-81b5-96c9-a166" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05b4-81b5-96c9-a166" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="05af-0db4-f93e-4199" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -6155,21 +6188,26 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="974e-7c8a-61c5-6977" name="Brotherhood of Grimnir" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="974e-7c8a-61c5-6977" name="Brotherhood of Grimnir" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="8ac2-8a61-4dd0-4c75" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1b2-2798-72c0-bedb" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="set" field="8ac2-8a61-4dd0-4c75" value="0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa51-abcf-79bc-2b70" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa51-abcf-79bc-2b70" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ac2-8a61-4dd0-4c75" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ac2-8a61-4dd0-4c75" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="49f9-abbc-1d99-c141" name="Special" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>

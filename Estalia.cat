@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="290c-8805-073e-3492" name="Estalia" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="290c-8805-073e-3492" name="Estalia" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="e5cf-9291-e237-c43a" name="Duelling Techniques">
       <characteristicTypes>
@@ -644,14 +644,14 @@
             </selectionEntry>
             <selectionEntry id="9978-c6c5-bb5d-462e" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="432a-eef9-5089-f2ae" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2082-4e1f-0eab-4d48" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="432a-eef9-5089-f2ae" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="432a-eef9-5089-f2ae" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="7f16-7f9a-5126-8b61" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1520,7 +1520,7 @@
         </selectionEntry>
         <selectionEntry id="02ba-8bf6-db85-1a72" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="d162-ea9d-c967-f39a" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4296-dbdd-3d5c-6fe9" type="atLeast"/>
               </conditions>
@@ -1608,14 +1608,14 @@
             </selectionEntry>
             <selectionEntry id="020d-ebef-a29b-8864" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="4586-e134-5e5a-5b94" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1395-91d1-9b4c-543b" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4586-e134-5e5a-5b94" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4586-e134-5e5a-5b94" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="d01a-c13e-820c-5e2e" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1746,7 +1746,7 @@
               <selectionEntries>
                 <selectionEntry id="4296-dbdd-3d5c-6fe9" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="83d8-38b1-59fc-fe86" value="0">
                       <conditions>
                         <condition field="selections" scope="4cec-0487-f58e-19e1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ba-8bf6-db85-1a72" type="atLeast"/>
                       </conditions>
@@ -3820,7 +3820,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6156-10aa-f7c2-3d45" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d0f9-7423-3885-2248" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                <infoLink id="d0f9-7423-3885-2248" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -5889,10 +5889,10 @@ When suffering casualties from shooting or magic, the Herders follow the rules f
           <profiles>
             <profile id="c44f-8ca2-64f6-784e" name="Staff of Tomas the Pure" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Inquisitor only. The Crown gives the wearer +1 to his LD. In addition, all friendly units within 8&quot; of him gains +1 to their Combat Resolution.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Inquisitor only. The staff can deliver the Retribution of Myrmidia in the Shooting phase.</characteristic>
               </characteristics>
             </profile>
-            <profile id="48d1-6943-dfe3-6898" name="Staff of Tomas the Pure" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+            <profile id="48d1-6943-dfe3-6898" name="Retribution of Myrmidia" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
                 <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>

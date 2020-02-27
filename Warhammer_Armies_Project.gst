@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.7"/>
+    <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.71"/>
     <publication id="9e23-79cb-pubN67565" name="Albion v.1.21"/>
     <publication id="9e23-79cb-pubN71963" name="Beastmen v.1.33"/>
     <publication id="9e23-79cb-pubN75312" name="Bretonnia v.1.21"/>
     <publication id="9e23-79cb-pubN76150" name="Dark Elves v.1.32"/>
-    <publication id="9e23-79cb-pubN77092" name="High Elves v.1.1"/>
-    <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.1"/>
-    <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.0"/>
+    <publication id="9e23-79cb-pubN77092" name="High Elves v.1.21"/>
+    <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.22"/>
+    <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.2"/>
     <publication id="9e23-79cb-pubN78975" name="Orcs &amp; Goblins v.1.02"/>
     <publication id="9e23-79cb-pubN116235" name="Regiments of Renown v.1.12"/>
     <publication id="aa7b-3583-0834-7bfa" name="Dwarfs v.1.21"/>
-    <publication id="b3a3-a398-4838-11a1" name="Empire Knightly Orders v.1.03"/>
+    <publication id="b3a3-a398-4838-11a1" name="Empire Knightly Orders v.1.11"/>
     <publication id="d69c-a7ea-95db-6f56" name="Steam Tanks"/>
-    <publication id="315d-135b-135c-07ce" name="Empire v.1.14"/>
+    <publication id="315d-135b-135c-07ce" name="Empire v.1.21"/>
     <publication id="4086-1ccd-f433-39a2" name="Skaven v.1.32"/>
     <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos v.1.23"/>
-    <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.1, Lizardmen v.1.1"/>
+    <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.21, Lizardmen v.1.22"/>
     <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.33, Daemons of Chaos v.1.23, Warriors of Chaos v.1.11"/>
     <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.01"/>
     <publication id="10a5-5781-61f5-86ae" name="Vampire Counts v.1.11"/>
@@ -336,7 +336,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="774f-c530-a348-4efc" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8884-6707-cc4e-0ba5" name="Earthing Rod" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="8884-6707-cc4e-0ba5" name="Earthing Rod" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. If the wizard rolls on the miscast table they can re-roll the result.</characteristic>
               </characteristics>
@@ -352,7 +352,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="604b-0f90-445e-b464" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5c19-391e-7554-190c" name="Feedback Scroll" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="5c19-391e-7554-190c" name="Feedback Scroll" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a Wizard who has a Feedback Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, roll a dice for every dice used to cast the spell. The casting Wizard takes a wound for every result of 5+ rolled, with no armour saves allowed.</characteristic>
               </characteristics>
@@ -368,7 +368,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="624a-acff-ad2a-550a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="535f-9d0d-7ea0-ebab" name="Destroy Magic Scroll" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="535f-9d0d-7ea0-ebab" name="Destroy Magic Scroll" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy cast a spell, the bearer may immediately counter its effects by reading the Destroy Magic Scroll to release the spell written upon it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. In addition, roll a D6. On a 4+, the spell is destroyed and the enemy must discard the spell for the rest of the game.</characteristic>
               </characteristics>
@@ -384,7 +384,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8253-001b-5848-d319" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a25f-1fe3-dac2-bfc8" name="Power Scroll" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="a25f-1fe3-dac2-bfc8" name="Power Scroll" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. A Power Scroll can be used when the Wizard makes a casting attempt. During that casting attempt, any roll of a double will give a re-roll following the rules for Ultimate Power.</characteristic>
               </characteristics>
@@ -400,7 +400,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc3a-6611-f489-63ee" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2d29-f545-3f04-272e" name="Channeling Staff" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="2d29-f545-3f04-272e" name="Channeling Staff" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Wizard adds +1 to all of their channelling attempts.</characteristic>
               </characteristics>
@@ -416,7 +416,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d6c-9c6a-acb1-64fb" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5e94-c8f9-ff18-3b00" name="Book of Ashur" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="5e94-c8f9-ff18-3b00" name="Book of Ashur" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The bearer receives a +1 bonus on attempts to cast and dispel.</characteristic>
               </characteristics>
@@ -432,7 +432,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="259b-6a15-2b37-2f8e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7e5b-3f2a-6a32-23ed" name="Rod of Power" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="7e5b-3f2a-6a32-23ed" name="Rod of Power" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">At the end of each magic phase (yours and enemy&apos;s), you can save up to three unused power/dispel dice from the pool and store them in the rod. At the beginning of each successive magic phase (yours and enemy&apos;s), roll a dice. If the result is equal or higher to the number of dice stored, add them to the power/dispel dice pool, if the result is lower than the number of dice stored, they are lost.</characteristic>
               </characteristics>
@@ -448,7 +448,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a30-e4bb-3eec-ac7a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="038d-5c7c-eea0-59c9" name="Wand of Jet" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="038d-5c7c-eea0-59c9" name="Wand of Jet" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The bearer can increase one of their casting results by an additional D6, after other casting dice have been rolled. This extra power dice can contribute to casting a spell with Ultimate Power (and a miscast).</characteristic>
               </characteristics>
@@ -464,7 +464,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d99b-eb50-45a2-68ab" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a04f-4edc-88cd-3b87" name="Power Stone" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="a04f-4edc-88cd-3b87" name="Power Stone" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Wizard can declare that they are using the power stone immediately before casting a spell If they do so, two extra dice are added to the power dice that they are going to roll (you still need to roll at least one dice from the power pool).</characteristic>
               </characteristics>
@@ -480,7 +480,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b76-aeec-c1be-2b94" type="max"/>
           </constraints>
           <profiles>
-            <profile id="03f1-5018-42c1-e0a2" name="Forbidden Rod" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="03f1-5018-42c1-e0a2" name="Forbidden Rod" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The forbidden rod adds +D6 dice to the power pool at the start of the caster&apos;s own magic phase, but also inflicts D3 wounds on the bearer (with no armour saves allowed).</characteristic>
               </characteristics>
@@ -496,7 +496,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a74-62eb-bfc0-5088" type="max"/>
           </constraints>
           <profiles>
-            <profile id="905d-9b37-c90d-44d9" name="Dispel Scroll" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="905d-9b37-c90d-44d9" name="Dispel Scroll" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a wizard who has a dispel scroll can read it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. This may also be used to dispel spells that Remains in Play.</characteristic>
               </characteristics>
@@ -512,7 +512,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="052f-6d49-f0c7-63f6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7fd0-ad9a-5a2f-2f5e" name="Luckstone" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="7fd0-ad9a-5a2f-2f5e" name="Luckstone" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Once per battle, the bearer can re-roll all of the dice rolled to cast or dispel a spell. This can effectively cancel a miscast result, and cause Ultimate Power or a miscast.</characteristic>
               </characteristics>
@@ -528,7 +528,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82c3-b049-9efa-c588" type="max"/>
           </constraints>
           <profiles>
-            <profile id="37f3-4ce0-9569-7661" name="Wizard&apos;s Staff" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="37f3-4ce0-9569-7661" name="Wizard&apos;s Staff" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Wizard&apos;s Staff allows the bearer to use one more dice than they are normally allowed to when casting a spell (eg, a Wizard that can normally use up to two dice to cast spells will be able to use up to three dice).</characteristic>
               </characteristics>
@@ -544,7 +544,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a83f-c65d-e0f1-5024" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c73d-0a87-ee0f-8000" name="Scepter of Stability" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="c73d-0a87-ee0f-8000" name="Scepter of Stability" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The bearer can choose to increase one of their dispel results by an additional D6, after their other dispel dice have been rolled. This extra dispel dice can contribute to dispelling with Ultimate Power.</characteristic>
               </characteristics>
@@ -560,7 +560,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbe8-4955-b111-48d4" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c9b2-3e5b-c843-21a0" name="Scroll of Shielding" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="c9b2-3e5b-c843-21a0" name="Scroll of Shielding" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Shielding can read it instead of attempting to dispel the spell. The spell is cast as normal, but the target of the spell is granted Magic Resistance (4+) against the spell.</characteristic>
               </characteristics>
@@ -576,7 +576,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7355-7dca-cdd5-1592" type="max"/>
           </constraints>
           <profiles>
-            <profile id="31ec-b0a6-8428-3ea0" name="Loremaster&apos;s Tome" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="31ec-b0a6-8428-3ea0" name="Loremaster&apos;s Tome" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Wizard knows one additional spell from those normally allowed to them.</characteristic>
               </characteristics>
@@ -592,7 +592,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74b2-3a6f-0f9d-05b0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="63d8-2af6-31f5-90a2" name="Trickster&apos;s Shard" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="63d8-2af6-31f5-90a2" name="Trickster&apos;s Shard" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer&apos;s spells is dispelled by an enemy wizard, roll a D6. On a 5+, that wizard suffers a wound with no armour saves allowed.</characteristic>
               </characteristics>
@@ -608,7 +608,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c93-195b-816b-c790" type="max"/>
           </constraints>
           <profiles>
-            <profile id="aeeb-6d76-41b8-dc1d" name="Scroll of Leeching" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="aeeb-6d76-41b8-dc1d" name="Scroll of Leeching" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Leeching can read it
 instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, the bearer of the scroll adds a number of dispel dice to his pool equal to the number of dice used to cast the spell.</characteristic>
@@ -625,7 +625,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="31cd-5afd-0839-0aac" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2697-692f-cb9e-9873" name="Sivejir&apos;s Hex Scroll" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="2697-692f-cb9e-9873" name="Sivejir&apos;s Hex Scroll" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a Wizard who has a Hex Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but a portion of the spell&apos;s energy is transformed and redirected at the caster. The enemy wizard can resist the spell&apos;s effects by rolling equal to or under his wizard level on a D6. If he fails, a he becomes a toad! Whilst transformed, the wizard cannot channel or cast spells, all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working and all of his characteristics are reduced to 1 (except for his wounds, which are unaffected). His controlling player can roll a D6 at the start of each of his subsequent magic phases; the spell dissipates on a roll of 4+ and the wizard returns to his normal form.</characteristic>
               </characteristics>
@@ -648,7 +648,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbc6-779a-3e05-fa4c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d95a-fbd7-8810-7cf7" name="Wizarding Hat" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="d95a-fbd7-8810-7cf7" name="Wizarding Hat" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore. However, they also have Stupidity.</characteristic>
               </characteristics>
@@ -664,7 +664,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5bb-5b98-7b78-05a5" type="max"/>
           </constraints>
           <profiles>
-            <profile id="48c8-2e13-e426-6fcd" name="Fozzrik&apos;s Folding Fortress" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="48c8-2e13-e426-6fcd" name="Fozzrik&apos;s Folding Fortress" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">After deployment zones have been agreed, but before the armies have been deployed, place a watchtower building no more than 10x10 cm in base size in your deployment zone to represent the Folding Fortress. This is treated as a standard building. If you do not have a suitable building to place, you cannot use Fozzrik&apos;s Folding Fortress.</characteristic>
               </characteristics>
@@ -680,12 +680,12 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4fa-1dce-fe3c-d2ac" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f905-bfc7-b32f-9d87" name="Orb of Thunder" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="f905-bfc7-b32f-9d87" name="Orb of Thunder" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Bound Spell, Power Level 4. Remains in play. The Orb of Thunder contains a hex spell.</characteristic>
               </characteristics>
             </profile>
-            <profile id="b26f-355c-8a01-be80" name="Orb of Thunder" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+            <profile id="b26f-355c-8a01-be80" name="Orb of Thunder" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -705,7 +705,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38a1-1a98-b4c1-6fc2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9314-4ee5-56eb-b392" name="Ruby Ring of Ruin" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="9314-4ee5-56eb-b392" name="Ruby Ring of Ruin" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Bound spell (power level 4). The Ruby Ring of Ruin contains the Fireball spell.</characteristic>
               </characteristics>
@@ -725,7 +725,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f47c-27b3-9edf-511b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="205b-7c2f-1427-2817" name="Crown of Command" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="205b-7c2f-1427-2817" name="Crown of Command" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Crown of Command gives the bearer and any unit they join Stubborn for as long as the bearer remains with the unit.</characteristic>
               </characteristics>
@@ -741,7 +741,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="100f-9395-351c-2c32" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6e2a-fe07-c226-d0bd" name="Healing Potion" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="6e2a-fe07-c226-d0bd" name="Healing Potion" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Healing Potion can be drunk at the start of the controlling player&apos;s turn. The imbiber immediately recovers D6 Wounds lost in the battle.</characteristic>
               </characteristics>
@@ -757,7 +757,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc54-ceef-45ef-1fea" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2f6d-8270-dcea-3d13" name="The Terrifying Mask of Eee!" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="2f6d-8270-dcea-3d13" name="The Terrifying Mask of Eee!" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The wearer of this mask causes Terror. However, other models can never use their LD.</characteristic>
               </characteristics>
@@ -773,7 +773,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0b3-b929-f284-e14e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="56e5-f08d-7476-5f5e" name="Potion of Speed" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="56e5-f08d-7476-5f5e" name="Potion of Speed" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Potion of Speed can be drunk at the start of any phase. The imbiber has +D3 A until the end of the turn.</characteristic>
               </characteristics>
@@ -789,7 +789,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b06c-5575-9b8f-f843" type="max"/>
           </constraints>
           <profiles>
-            <profile id="428c-c4eb-4bc0-a597" name="Potion of Strength" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="428c-c4eb-4bc0-a597" name="Potion of Strength" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Potion of Strength can be drunk at the start of any phase. The imbiber has +D3 S until the end of the turn.</characteristic>
               </characteristics>
@@ -805,7 +805,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99c8-3735-ee15-cf1f" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0e40-7b19-6cd8-5370" name="The Other Trickster&apos;s Shard" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="0e40-7b19-6cd8-5370" name="The Other Trickster&apos;s Shard" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Models in base contact with the bearer (friends and foes) must re-roll successful ward saves.</characteristic>
               </characteristics>
@@ -821,7 +821,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc21-fe92-f52c-1623" type="max"/>
           </constraints>
           <profiles>
-            <profile id="26c2-d30a-6795-a7bd" name="Ironcurse Icon" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="26c2-d30a-6795-a7bd" name="Ironcurse Icon" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The character (and any unit they are with) gain a Ward save (6+) against war machine weapons.</characteristic>
               </characteristics>
@@ -837,7 +837,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51c3-7e65-55ab-3bdc" type="max"/>
           </constraints>
           <profiles>
-            <profile id="da0a-6b34-bfa5-6e42" name="Potion of Toughness" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="da0a-6b34-bfa5-6e42" name="Potion of Toughness" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Potion of Toughness can be drunk at the start of any phase. The imbiber has +D3 T until the end of the turn.</characteristic>
               </characteristics>
@@ -853,7 +853,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1886-65c5-f5a4-20a3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e1eb-687b-4f1a-dee2" name="Arabyan Carpet" publicationId="9e23-79cb-pubN66727" page="153" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="e1eb-687b-4f1a-dee2" name="Arabyan Carpet" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Infantry models on foot only. The owner of this magical carpet has Fly. However, they cannot join units.</characteristic>
               </characteristics>
@@ -876,7 +876,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2540-5b13-c727-ec0e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="98fe-57c4-ccae-a2d4" name="Banner of Valour" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="98fe-57c4-ccae-a2d4" name="Banner of Valour" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Immunity (Panic).</characteristic>
               </characteristics>
@@ -908,7 +908,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9953-81e7-44ac-443e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a850-abd0-3a25-b4d0" name="Scarecrow Banner" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="a850-abd0-3a25-b4d0" name="Scarecrow Banner" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard causes Fear in models with Fly.</characteristic>
               </characteristics>
@@ -924,9 +924,9 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3df3-6d35-797f-0b66" type="max"/>
           </constraints>
           <profiles>
-            <profile id="542a-4c76-c480-92fa" name="Standard of Arcane Warding" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="542a-4c76-c480-92fa" name="Standard of Arcane Warding" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Magic Resistance (5+).</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Magic Resistance (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -940,7 +940,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c43c-f428-b317-b30e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="af1e-d3de-2351-14e1" name="Razor Standard" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="af1e-d3de-2351-14e1" name="Razor Standard" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard have Armour Piercing (1).</characteristic>
               </characteristics>
@@ -956,7 +956,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79ae-bb31-5da1-f570" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d1af-9055-f967-a190" name="Dread Banner" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="d1af-9055-f967-a190" name="Dread Banner" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard causes Fear.</characteristic>
               </characteristics>
@@ -972,7 +972,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ef6-9920-3e29-7b1e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="195d-20c5-02e2-73be" name="Ranger&apos;s Standard" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="195d-20c5-02e2-73be" name="Ranger&apos;s Standard" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Strider. If the unit is riding a mount, the mount benefit from Strider as well.</characteristic>
               </characteristics>
@@ -988,7 +988,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="756e-f805-e6d6-7bfc" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6031-44f7-6873-9453" name="Rampager&apos;s Standard" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="6031-44f7-6873-9453" name="Rampager&apos;s Standard" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard can re-roll its charge distance dice.</characteristic>
               </characteristics>
@@ -1004,7 +1004,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a1f-761c-04e8-c9d8" type="max"/>
           </constraints>
           <profiles>
-            <profile id="735f-815b-b9e3-be11" name="Wailing Banner" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="735f-815b-b9e3-be11" name="Wailing Banner" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard causes Terror in its enemies.</characteristic>
               </characteristics>
@@ -1020,7 +1020,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b69-cfb3-5d61-f5aa" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b5fd-7f4d-c4c1-bb5e" name="Standard of Shielding" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="b5fd-7f4d-c4c1-bb5e" name="Standard of Shielding" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains a Ward save (6+) against missile attacks.</characteristic>
               </characteristics>
@@ -1036,7 +1036,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7631-5b1e-8d69-8074" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1ccb-52e7-bc46-0f38" name="Banner of Might" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="1ccb-52e7-bc46-0f38" name="Banner of Might" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gain +1 To Hit in the first round of close combat.</characteristic>
               </characteristics>
@@ -1052,7 +1052,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67ad-9fa9-e35d-48c9" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f014-0f4f-6777-fa43" name="Banner of Duty" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="f014-0f4f-6777-fa43" name="Banner of Duty" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard can re-roll any failed Rally test.</characteristic>
               </characteristics>
@@ -1068,7 +1068,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0be-d090-e59b-a5f6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="009b-5291-4a6a-2d06" name="Banner of Swiftness" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="009b-5291-4a6a-2d06" name="Banner of Swiftness" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Swiftstride.</characteristic>
               </characteristics>
@@ -1084,7 +1084,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67e0-34f8-5bff-e1d4" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3ca5-b1f2-ffd0-b846" name="Standard of Discipline" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="3ca5-b1f2-ffd0-b846" name="Standard of Discipline" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard have +1 LD, but cannot use the General&apos;s Inspiring Presence.</characteristic>
               </characteristics>
@@ -1100,9 +1100,9 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36ab-c5f2-f110-0235" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d212-2fd5-37a7-0c87" name="Lichbone Pennant" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="d212-2fd5-37a7-0c87" name="Lichbone Pennant" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Magic Resistance (6+).</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Magic Resistance (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1116,7 +1116,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ff1-8b7f-bfe8-12fc" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4a88-2418-1025-19aa" name="Banner of Eternal Flame" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="4a88-2418-1025-19aa" name="Banner of Eternal Flame" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard gains Flaming Attacks.</characteristic>
               </characteristics>
@@ -1132,7 +1132,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b65-8193-63c8-61d8" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4eb8-3ff8-bdd8-dfbf" name="Gleaming Pennant" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="4eb8-3ff8-bdd8-dfbf" name="Gleaming Pennant" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">One use only. A unit with this magic standard can re-roll its first failed LD test.</characteristic>
               </characteristics>
@@ -1148,7 +1148,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3dc-0e24-5e6a-5ca1" type="max"/>
           </constraints>
           <profiles>
-            <profile id="fdb4-9681-b7f6-01e9" name="Battle Banner" publicationId="9e23-79cb-pubN66727" page="154" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="fdb4-9681-b7f6-01e9" name="Battle Banner" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard adds +D6 to combat resolution, rolled each time it is used.</characteristic>
               </characteristics>
@@ -1164,7 +1164,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1521-5139-e9fa-035c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0556-d274-dde6-2c71" name="Banner of Courage" publicationId="9e23-79cb-pubN66727" page="155" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="0556-d274-dde6-2c71" name="Banner of Courage" publicationId="9e23-79cb-pubN66727" page="156" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit with this magic standard re-roll failed Break tests.</characteristic>
               </characteristics>
@@ -1187,7 +1187,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21eb-a66f-cd50-6bda" type="max"/>
           </constraints>
           <profiles>
-            <profile id="365e-d800-8bd3-1edc" name="Enchanted shield" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="365e-d800-8bd3-1edc" name="Enchanted shield" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">5+</characteristic>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">4+</characteristic>
@@ -1205,7 +1205,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b54-e129-3514-3d95" type="max"/>
           </constraints>
           <profiles>
-            <profile id="de13-7bdf-fcdf-ad13" name="Trickster&apos;s Helm" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="de13-7bdf-fcdf-ad13" name="Trickster&apos;s Helm" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
@@ -1223,7 +1223,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="beab-012a-f0b6-b37b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="fcae-7696-3cb8-33fb" name="Dragonhelm" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="fcae-7696-3cb8-33fb" name="Dragonhelm" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
@@ -1241,7 +1241,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55ab-bfc9-ab83-2670" type="max"/>
           </constraints>
           <profiles>
-            <profile id="daa7-f45b-e479-ec29" name="Shield of Ptolos" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="daa7-f45b-e479-ec29" name="Shield of Ptolos" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
@@ -1259,7 +1259,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39f5-e577-e363-e6d3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="573d-ad01-0e3f-f406" name="Glittering Scales" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="573d-ad01-0e3f-f406" name="Glittering Scales" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1277,7 +1277,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="710a-3a50-aac9-4488" type="max"/>
           </constraints>
           <profiles>
-            <profile id="84be-4d1b-6664-fca4" name="Spellshield" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="84be-4d1b-6664-fca4" name="Spellshield" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1295,7 +1295,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1150-ec24-0bd8-f228" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2f6a-b82a-3b68-2140" name="Charmed Shield" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="2f6a-b82a-3b68-2140" name="Charmed Shield" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1313,7 +1313,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d37-d30a-c1c3-d45a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1be5-6ccd-a197-da65" name="Gambler&apos;s Armour" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="1be5-6ccd-a197-da65" name="Gambler&apos;s Armour" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1331,7 +1331,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c164-3d76-3d53-8e44" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0a3f-93f5-ff58-3dab" name="Armour of Fortune" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="0a3f-93f5-ff58-3dab" name="Armour of Fortune" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1349,7 +1349,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2fa-2ccf-29b3-5c2d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ca91-841a-9736-fb2c" name="Armour of Destiny" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="ca91-841a-9736-fb2c" name="Armour of Destiny" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1367,7 +1367,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2af3-2b92-e65d-0d3a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f02a-c178-e4a0-c988" name="Armour of Resilience" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="f02a-c178-e4a0-c988" name="Armour of Resilience" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -1385,7 +1385,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b8f-25f0-ab4b-2d51" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f057-c450-e055-319b" name="Armour of Silvered Steel" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="f057-c450-e055-319b" name="Armour of Silvered Steel" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">2+</characteristic>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">2+</characteristic>
@@ -1403,7 +1403,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb84-d683-78c3-efa7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="225f-e811-fae5-e4e7" name="Helm of Discord" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="225f-e811-fae5-e4e7" name="Helm of Discord" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
@@ -1429,7 +1429,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="112a-571b-10c9-3935" type="max"/>
           </constraints>
           <profiles>
-            <profile id="fcd4-edf6-4c50-b025" name="Giant Blade" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="fcd4-edf6-4c50-b025" name="Giant Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+3</characteristic>
@@ -1447,7 +1447,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="414d-dc15-216b-fdde" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0d26-5432-d0b1-ae60" name="Dragon Blade" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="0d26-5432-d0b1-ae60" name="Dragon Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1465,7 +1465,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e991-1731-46eb-6b62" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a2ee-fde7-53e5-05ef" name="Fencer&apos;s Blades" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="a2ee-fde7-53e5-05ef" name="Fencer&apos;s Blades" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1483,7 +1483,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9e1-6b0a-dad5-8ea7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3c5a-61b9-e492-ee7f" name="Sword of Swift Slaying" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="3c5a-61b9-e492-ee7f" name="Sword of Swift Slaying" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1501,7 +1501,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27e1-8a0a-6869-1d6e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3a2f-93e5-56ba-d30e" name="Sword of Anti-Heroes" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="3a2f-93e5-56ba-d30e" name="Sword of Anti-Heroes" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1519,7 +1519,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ab8-a2d0-92fd-3b84" type="max"/>
           </constraints>
           <profiles>
-            <profile id="32ac-cafc-3e21-01a7" name="Sword of Strife" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="32ac-cafc-3e21-01a7" name="Sword of Strife" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1537,7 +1537,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a79-9a8b-8c0a-2792" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0988-c61d-85df-0246" name="Bone Blade" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="0988-c61d-85df-0246" name="Bone Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1555,7 +1555,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="101a-de5b-6df2-0091" type="max"/>
           </constraints>
           <profiles>
-            <profile id="39fd-7db9-5a2c-a5dc" name="Ogre Blade" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="39fd-7db9-5a2c-a5dc" name="Ogre Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+2</characteristic>
@@ -1573,7 +1573,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22fe-94be-107a-14ec" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ffe9-c7d8-595f-1e72" name="Sword of Bloodshed" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="ffe9-c7d8-595f-1e72" name="Sword of Bloodshed" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1591,7 +1591,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2114-37f8-2bf1-6c35" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4d07-d8e3-411f-b179" name="Parrying Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="4d07-d8e3-411f-b179" name="Parrying Blade" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1609,7 +1609,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e8e-e283-e017-7c8b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b737-c9f0-8cc9-d53b" name="Relic Sword" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="b737-c9f0-8cc9-d53b" name="Relic Sword" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1627,7 +1627,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba28-d682-f3aa-3ca2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ccda-8d97-ba0f-ca6c" name="Sword of Fortitude" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="ccda-8d97-ba0f-ca6c" name="Sword of Fortitude" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1645,7 +1645,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7301-093c-61b6-036a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7c47-fc43-28bd-02e5" name="Sword of Might" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="7c47-fc43-28bd-02e5" name="Sword of Might" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
@@ -1663,7 +1663,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed10-bb95-098b-e65d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7b51-e10f-cac6-e67b" name="Sword of Battle" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="7b51-e10f-cac6-e67b" name="Sword of Battle" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1681,7 +1681,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d121-688a-9670-8775" type="max"/>
           </constraints>
           <profiles>
-            <profile id="dbdc-3022-1972-c708" name="Venom Sword" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="dbdc-3022-1972-c708" name="Venom Sword" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1699,7 +1699,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3573-92bd-f40a-83bb" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3a90-cf91-04cc-1484" name="Shrieking Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="3a90-cf91-04cc-1484" name="Shrieking Blade" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1717,7 +1717,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3be0-39f4-e46e-f38a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="349a-9bc4-d242-2258" name="Sword of Striking" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="349a-9bc4-d242-2258" name="Sword of Striking" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1735,7 +1735,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2a0-01ab-8cf2-ad64" type="max"/>
           </constraints>
           <profiles>
-            <profile id="117e-9060-1f72-0ec1" name="Blade of Slicing" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="117e-9060-1f72-0ec1" name="Blade of Slicing" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1753,7 +1753,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6499-51a0-0eac-3c7b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ce06-3eb8-7e35-9d65" name="Blade of Sea Gold" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="ce06-3eb8-7e35-9d65" name="Blade of Sea Gold" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1771,7 +1771,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="864a-f967-7fa8-bbd5" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f53d-fab5-5ed9-1606" name="Warrior Bane" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="f53d-fab5-5ed9-1606" name="Warrior Bane" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1789,7 +1789,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec45-2002-d9cc-0713" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f47f-6758-3d8a-785b" name="Tormentor Sword" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="f47f-6758-3d8a-785b" name="Tormentor Sword" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1807,7 +1807,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="383f-887e-b478-f1e4" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d7a3-4ba9-47fe-960a" name="Biting Blade" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="d7a3-4ba9-47fe-960a" name="Biting Blade" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1825,7 +1825,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69b5-7490-ddd7-7712" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9a33-d93b-f040-e3c9" name="Berserker Sword" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="9a33-d93b-f040-e3c9" name="Berserker Sword" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1843,7 +1843,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0efd-950b-b594-8b15" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e496-1dfb-12e8-ebe8" name="Obsidian Blade" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="e496-1dfb-12e8-ebe8" name="Obsidian Blade" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -1868,7 +1868,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd21-14a4-0da1-c25d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ff22-ae39-28e0-103e" name="Talisman of Protection" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="ff22-ae39-28e0-103e" name="Talisman of Protection" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Talisman of Protection grants the bearer a Ward save (6+).</characteristic>
               </characteristics>
@@ -1884,7 +1884,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8930-ddef-c302-de07" type="max"/>
           </constraints>
           <profiles>
-            <profile id="14ce-8170-050f-a735" name="Talisman of Preservation" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="14ce-8170-050f-a735" name="Talisman of Preservation" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Talisman of Preservation grants the bearer a Ward save (4+).</characteristic>
               </characteristics>
@@ -1900,7 +1900,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d20d-3ef9-08ce-73aa" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0e2a-aeca-b4d5-d1ee" name="Talisman of Endurance" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="0e2a-aeca-b4d5-d1ee" name="Talisman of Endurance" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Talisman of Endurance grants the bearer a Ward save (5+).</characteristic>
               </characteristics>
@@ -1916,7 +1916,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73dd-da68-2d82-1817" type="max"/>
           </constraints>
           <profiles>
-            <profile id="96c5-a02f-37b4-4a32" name="Seed of Rebirth" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="96c5-a02f-37b4-4a32" name="Seed of Rebirth" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The bearer of the Seed of Rebirth has Regeneration (6+).</characteristic>
               </characteristics>
@@ -1932,7 +1932,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="747a-2c30-c243-27e8" type="max"/>
           </constraints>
           <profiles>
-            <profile id="07d5-6885-3d15-d1dc" name="Opal Amulet" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="07d5-6885-3d15-d1dc" name="Opal Amulet" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. The Opal Amulet bestows a 4+ ward save against the first wound suffered by the bearer, after which its power fades and it cannot be used again during the game.</characteristic>
               </characteristics>
@@ -1948,7 +1948,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9433-66af-7618-7696" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7f52-5771-b4d0-f4c2" name="Obsidian Trinket" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="7f52-5771-b4d0-f4c2" name="Obsidian Trinket" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Obsidian Trinket grants Magic Resistance (1).</characteristic>
               </characteristics>
@@ -1964,7 +1964,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ba9-0945-8668-3cb9" type="max"/>
           </constraints>
           <profiles>
-            <profile id="35a6-2a0b-d269-594c" name="Obsidian Lodestone" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="35a6-2a0b-d269-594c" name="Obsidian Lodestone" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Obsidian Lodestone grants Magic Resistance (3).</characteristic>
               </characteristics>
@@ -1980,7 +1980,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13bd-997c-79a2-5671" type="max"/>
           </constraints>
           <profiles>
-            <profile id="def0-21a1-97ff-909c" name="Obsidian Amulet" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="def0-21a1-97ff-909c" name="Obsidian Amulet" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Obsidian Amulet grants the bearer Magic Resistance (2).</characteristic>
               </characteristics>
@@ -1996,7 +1996,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="148f-27a8-1918-22e8" type="max"/>
           </constraints>
           <profiles>
-            <profile id="24df-897d-3df3-9768" name="Lucky Trinket" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="24df-897d-3df3-9768" name="Lucky Trinket" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. The Lucky Trinket allows the bearer to re-roll a single failed armour or Ward save.</characteristic>
               </characteristics>
@@ -2012,7 +2012,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1897-8816-df18-9602" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8618-74a7-0c3d-7877" name="Dragonbane Gem" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="8618-74a7-0c3d-7877" name="Dragonbane Gem" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The bearer of the Dragonbane Gem has Immunity (Flaming Attacks).</characteristic>
               </characteristics>
@@ -2028,7 +2028,7 @@ bearer or his unit. That character must immediately take a LD test. If the test 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00ce-69b4-4e2a-4d2a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="283b-bcb5-7a79-c1bb" name="Dawnstone" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="283b-bcb5-7a79-c1bb" name="Dawnstone" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The bearer re-rolls failed armour saves.</characteristic>
               </characteristics>
@@ -2136,7 +2136,7 @@ If the test is failed, it immediately moves directly forwards using the Random M
 Until they pass the Stupidity test again, models that have failed their Stupidity test have Immunity (Psychology), Random Movement (D6), cannot choose to do a combat reform, and Wizards cannot attempt to cast or channel power dice or dispel dice.</description>
     </rule>
     <rule id="2e96-0439-2413-69d5" name="Strider (Swamp)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="b143-056c-658e-ba26" name="Immunity (Psychology)" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that in most of these cases, the model only ignores the effects of the rule itself, the physical attack still cause damage as normal. Note that unless clearly specified, all attacks are considered to be physical attacks.
@@ -2284,13 +2284,14 @@ Characters
 If a Fast Cavalry unit is joined by a non-cavalry character or a Cavalry character with an armour save higher than 5+, the unit loses the rule until the character leaves.
 
 Fire &amp; Flee
-A unit of Fast Cavalry armed with missile weapons can choose Fire and Flee as a charge reaction. If it chooses to do so, the unit will first fire upon the target following the rules for Stand &amp; Shoot. After this, the unit makes a flee move. However, they may not use Swiftstride if they do so, and the normal -1 To Hit penalty for moving and shooting still applies.
+A unit of Fast Cavalry armed with missile weapons can choose Fire and Flee as a charge reaction. If it chooses
+to do so, the unit will first fire upon the target following the rules for Stand &amp; Shoot. After this, the unit makes a flee move. However, it may not use its Swiftstride if it does so, and the normal -1 To Hit penalty for moving and shooting still applies.
 
 Feigned Flight
-A unit of Fast Cavalry that chooses Flee or Fire &amp; Flee as a charge reaction does not cause Panic from fleeing through friendly units and automatically rallies in its next Compulsory Movement Phase. In addition, it is then also free to move during the remaining moves part of the Movement phase. The unit is also free to shoot as normal (but always counts as having moved). Note that if the flee move of the Fast Cavalry does not take them beyond the charge reach of their enemies, the unit suffers casualties as normal.
+A unit of Fast Cavalry that chooses Flee or Fire &amp; Flee as a charge reaction does not cause Panic from fleeing through friendly units and automatically rally in its next Compulsory Movement Phase. In addition, it is then also free to move during the remaining moves part of the Movement phase. The unit is also free to shoot as normal (but always counts as having moved). Note that if the flee move of the Fast Cavalry does not take them beyond the charge reach of their enemies, the unit suffers casualties as normal.
 
 Fire on the March
-Fast Cavalry armed with missile weapons are expert at shooting from horseback and can therefore shoot during a turn in which they marched or reformed (providing their weapon doesn&apos;t have Move or Fire). However, the normal -1 To Hit penalty for moving and shooting still applies.
+Fast Cavalry armed with missile weapons are experts at shooting from horseback and can therefore shoot during a turn in which they marched or reformed (providing their weapon doesn&apos;t have Move or Fire). However, the normal -1 To Hit penalty for moving and shooting still applies.
 
 Armour Saves
 Cavalry with an armour save better than 5+ and/or barding cannot use Fast Cavalry.</description>
@@ -2348,7 +2349,7 @@ After each Breath Weapon has been used the first time, roll a D6 before attempti
 Note that Breath Weapons are not physical attacks, and certain models may be Immune to the effects of some Breath Weapons. However, all Breath weapons Ignore Cover.
 
 Breath Weapon Shooting Attack
-If the model is not in close combat, it can use its Breath Weapon during its Shooting phase. A Breath Weapon shooting attack can be made even if the model marched or reformed during the same turn.
+If the model is not in close combat, it can use its Breath Weapon during its Shooting phase. A Breath Weapon shooting attack can be made even if the model marched or reformed during the same turn, but it cannot be used as a Stand and Shoot charge reaction.
 
 To perform the attack, place the flame template so that it lies entirely within the model&apos;s forward arc, with the narrow end touching the creature&apos;s mouth, and so that it is not touching any friendly units or enemy units that are in close combat. All models that they even partially under the template are automatically hit.
 
@@ -2384,10 +2385,10 @@ Unless otherwise stated, a model has Ice Attacks for both shooting and close com
 Unless otherwise stated, a model with thisl rule has Lightning Attacks for both shooting and close combat. Any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding, whether they be shooting or close combat attacks.</description>
     </rule>
     <rule id="1b92-42cb-7fdf-fd31" name="Loremaster (Lore of Metal)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="37a5-2f70-159f-adfd" name="Move or Fire" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
-      <description>A weapon with Move or Fire cannot be fired in the Shooting phase if the model moved earlier in the turn, including rallying, reforming and pivoting on the spot (except for Lone Models, who can pivot and fire in the same turn). This even applies if the model in question was forced to move as the result of a spell or other such compulsory action.</description>
+      <description>A weapon with Move or Fire cannot be fired in the Shooting phase if the model moved earlier in the turn, including rallying, reforming and pivoting on the spot (except for Lone Models, who can pivot and fire in the same turn). This even applies if the model in question was forced to move as the result of a spell or other such compulsory action. Mounted models with Move or Fire weapons may still move and fire, but they will suffer an additional -1 To Hit if they do so, unless specified.</description>
     </rule>
     <rule id="0a0c-35fd-e8ef-5f4e" name="Multiple Shots (2)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>The weapon enables its wielder to fire several shots at a time, rather than a single shot. The number of shots the weapon can fire is stated in brackets. Such weapons can either fire once without penalty, or as many times as indicated in the bracket with a -1 To Hit penalty (in addition to any other modifiers To Hit). War Machines with this special rule do not suffer -1 To Hit for firing Multiple Shots.
@@ -2536,13 +2537,13 @@ If a character with Magic Resistance joins a unit, all models in the unit benefi
       <description>Models with this rule gain a Ward save in close combat. The value of the Ward save is stated in the bracket. It cannot be used against attacks made against the model&apos;s flank or rear, nor can it be used against attacks that Hit automatically, attacks that are made at double the model&apos;s own Strength value, nor can it be used by mounted models, unless specified.</description>
     </rule>
     <rule id="c270-3956-9b64-b587" name="Strider" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="fa69-07b8-fdc1-3ac9" name="Natural Armour (6+)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
     <rule id="8d09-c701-2658-67e8" name="Strider (Forest)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="d896-d52f-cc64-ab43" name="Scythes" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Impact Hits +1.</description>
@@ -2594,10 +2595,10 @@ Immunity can also include Panic, Fear and Terror. If the majority of the models 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as restraining from pursuit, being allowed to march near enemies and many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction.</description>
     </rule>
     <rule id="1529-50c8-5c6e-150f" name="Loremaster (Lore of Fire)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="75e4-06e8-d7aa-8514" name="Loremaster (Lore of Death)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="39c8-00c3-4ec1-bfb8" name="Hatred (Monsters)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. The rest of the combat is fought normally. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have the Hatred rule against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against.</description>
@@ -2626,7 +2627,7 @@ Models that are Immune to all three above effects have Immunity (Psychology). Th
 If a model has both an armour save and a Ward save, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
     </rule>
     <rule id="48d5-6bee-c3f6-cec8" name="Strider (River)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="8d5b-32ea-4349-ff13" name="Hatred (Dark Elves)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. The rest of the combat is fought normally. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have the Hatred rule against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against.</description>
@@ -2641,7 +2642,7 @@ Immunity can also include Panic, Fear and Terror. If the majority of the models 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as restraining from pursuit, being allowed to march near enemies and many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction.</description>
     </rule>
     <rule id="4003-e9b4-9295-bef4" name="Loremaster (Lore of Heavens)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="76e1-4919-c7d3-29df" name="Magic Resistance (4)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model with Magic Resistance gains a bonus to dispel enemy spells directly targeting it (not including templates that are placed on top of it) as well as its Ward saves against damage caused by spells. This bonus is based on the number shown in brackets after the Magic Resistance special rule.
@@ -2649,16 +2650,16 @@ Models that are Immune to all three above effects have Immunity (Psychology). Th
 If a character with Magic Resistance joins a unit, all models in the unit benefit from the Magic Resistance as long as they are part of the unit. If a model has two sets of Magic Resistance, use the better one.</description>
     </rule>
     <rule id="be9b-43a8-959d-9cd1" name="Loremaster (Lore of the Great Maw)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="f099-a712-8bb3-8162" name="Strider (Obstacle)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="686b-8e1b-4d01-05ba" name="Strider (Marsh)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="5ffc-408d-a5fb-19c4" name="Loremaster (Lore of the Little Waagh!)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="da8d-d10d-b525-a19a" name="Hatred (Dwarfs)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. The rest of the combat is fought normally. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have the Hatred rule against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against.</description>
@@ -2733,10 +2734,10 @@ If a model has both an armour save and a Ward save, the model takes its armour s
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
     <rule id="67cf-c767-bc85-2897" name="Loremaster (Lore of Nehekhara)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="3b46-c6e4-f0af-cef8" name="Loremaster (Lore of Necromancy)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="a001-2c00-3971-2a29" name="Hatred (Bretonnia)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. The rest of the combat is fought normally. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have the Hatred rule against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against.</description>
@@ -2761,13 +2762,13 @@ Regeneration may not be used against Flaming Attacks, successful Killing Blows (
 If a model has both an armour save and a Ward save, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
     </rule>
     <rule id="fb5f-f956-90e7-af6f" name="Loremaster (Lore of Tzeentch)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="18a0-eeb5-f165-5fc9" name="Random Attacks (D3)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
     <rule id="4384-4bf5-ea6e-c49d" name="Loremaster (Lore of Athel Loren)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="fea1-6159-56b4-bc97" name="Immunity (Multiple Wounds)" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that in most of these cases, the model only ignores the effects of the rule itself, the physical attack still cause damage as normal. Note that unless clearly specified, all attacks are considered to be physical attacks.
@@ -2794,13 +2795,13 @@ Immunity can also include Panic, Fear and Terror. If the majority of the models 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as restraining from pursuit, being allowed to march near enemies and many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction.</description>
     </rule>
     <rule id="2875-64e6-bb63-ac04" name="Strider (Hill)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
-      <description>Models with Strider treat all pieces of terrain as open ground for the purposes of Movement. If a specific terrain type is mentioned in brackets behind Strider, the model treats only the specific terrain piece as open ground for the purposes of Movement.</description>
+      <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it.</description>
     </rule>
     <rule id="0eca-e6a2-66a1-2b53" name="Random Attacks (3D6)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
     <rule id="4393-049f-b19b-6457" name="Loremaster (Lore of Ice)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
-      <description>A Loremaster knows all the spells from their chosen lore, they are not limited by their Wizard level. The lore in question is stated in brackets.</description>
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
     <rule id="bff4-3615-a342-c3c4" name="Hatred (Norse)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. The rest of the combat is fought normally. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have the Hatred rule against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against.</description>
@@ -3067,16 +3068,16 @@ Models that are Immune to all three above effects have Immunity (Psychology). Th
     </profile>
     <profile id="Miscast Table" name="Result" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="130f-f4b6-557c-9411" typeName="Miscast Table">
       <characteristics>
-        <characteristic name="1-3" typeId="e3e1-eaee-133a-76f2">Loss of Power: Wizard can&apos;t cast further spells for this phase.</characteristic>
-        <characteristic name="4" typeId="93d1-9e23-340c-d53a">Lost Concentration: The opposing player may immediately cast a spell of the same casting value or less. It is automatically cast, but can be dispelled.</characteristic>
-        <characteristic name="5" typeId="d6c5-f059-c34e-5919">Magical Feedback: Wizard and all friendly models within 12&quot; that can channel/generate power or dispel dice suffer a S 6 hit. Wizard can&apos;t cast further spells for this phase.</characteristic>
-        <characteristic name="6" typeId="5f8a-9bec-6bc7-6f39">Power Drain: The wizard&apos;s player looses D3 power dice from the power pool.</characteristic>
-        <characteristic name="7" typeId="9057-904d-3787-30c4">Detonation: All models in contact with the wizard (not the wizard itself) suffer a S 10 hit.</characteristic>
-        <characteristic name="8" typeId="6e0d-3e80-1c94-f094">Amnesia: Wizard forgets the spell.</characteristic>
-        <characteristic name="9" typeId="1c40-75a8-7d40-8d2b">Calamitous Detonation: Center the small round template over the wizard. All models under the template suffer a S 10 hit. No Look Out Sir! allowed.</characteristic>
-        <characteristic name="10" typeId="9abf-70d2-70ff-248e">Deamonic Poessession: Wizard loses a level and suffers a S 10 hit.</characteristic>
-        <characteristic name="11" typeId="eb78-e0e0-e499-a543">Dimensional Cascade: Center the large round template over the wizard. All models under the template suffer a S 10 hit. No Look Out Sir! allowed.</characteristic>
-        <characteristic name="12" typeId="12b7-a88b-236d-0ee0">Damned by Chaos: The wizard is dead, no saves allowed.</characteristic>
+        <characteristic name="1-3" typeId="e3e1-eaee-133a-76f2">Loss of Power: The Wizard cannot attempt to cast further spells this phase.</characteristic>
+        <characteristic name="4" typeId="93d1-9e23-340c-d53a">Lost Concentration: The opposing player may immediately cast any one of their own spells of the same casting difficulty rating or less. No casting roll is required – the spell is automatically cast – but it can be dispelled by the player whose turn it is as normal (by using power dice in the same way as dispel dice). They need to beat the basic casting value of the spell to dispel it.</characteristic>
+        <characteristic name="5" typeId="d6c5-f059-c34e-5919">Magical Feedback: The Wizard and every model on the same side within 12&quot; that can channel/generate power or dispel dice suffer a S 4 hit as a result of the magical backlash. The Wizard cannot attempt to cast further spells this phase.</characteristic>
+        <characteristic name="6" typeId="5f8a-9bec-6bc7-6f39">Power Drain: The casting player loses D3 dice from the power pool.</characteristic>
+        <characteristic name="7" typeId="9057-904d-3787-30c4">Detonation: The Wizard and all models in base contact with him suffer a S 10 hit.</characteristic>
+        <characteristic name="8" typeId="6e0d-3e80-1c94-f094">Amnesia: The caster forgets how to cast the spell and will not be able to cast it again during this battle.</characteristic>
+        <characteristic name="9" typeId="1c40-75a8-7d40-8d2b">Calamitous Detonation: Centre the small round template over the Wizard – every model underneath the template suffers a S 10 hit (including the Wizard – they do not benefit from Look Out Sir! in this case).</characteristic>
+        <characteristic name="10" typeId="9abf-70d2-70ff-248e">Deamonic Poessession: The caster suffers one S 10 hit and loses a Wizard level and their highest levelled spell. If the caster reaches Level 0, he stops counting as a Wizard for all purposes and therefore will not be able to use any arcane magic items he is carrying.</characteristic>
+        <characteristic name="11" typeId="eb78-e0e0-e499-a543">Dimensional Cascade: Centre the large round template over the Wizard – every model underneath the template (including the Wizard – they do not benefit from Look Out Sir! in this case) suffers a S 10 hit.</characteristic>
+        <characteristic name="12" typeId="12b7-a88b-236d-0ee0">Damned by Chaos: The Wizard is immediately removed as a casualty, regardless of any protective magic item or rule they might have.</characteristic>
       </characteristics>
     </profile>
     <profile id="4a1d-35f9-e891-b533" name="Fireball" publicationId="9e23-79cb-pubN66727" page="138" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

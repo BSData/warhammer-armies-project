@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="37f8-6eb5-3f67-40f1" name="Blessings of Rigg">
       <characteristicTypes>
@@ -447,16 +447,16 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c4a1-a7ae-69f1-8ac3" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c4a1-a7ae-69f1-8ac3" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="5673-674b-2e78-9ae8" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3b1-0fcb-dcd7-82e6" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5673-674b-2e78-9ae8" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5673-674b-2e78-9ae8" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="ccef-5d58-b43b-8134" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -467,7 +467,7 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
             </selectionEntry>
             <selectionEntry id="394f-82df-ffca-506e" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="fb82-a3e9-c655-589d" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3b1-0fcb-dcd7-82e6" type="atLeast"/>
                   </conditions>
@@ -1361,7 +1361,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
         </selectionEntry>
         <selectionEntry id="f19a-2a11-41ae-d2ca" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="92e4-2231-8d18-5d23" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de96-7ee5-430a-58d2" type="atLeast"/>
               </conditions>
@@ -1502,16 +1502,16 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="35b5-9fb2-d018-9bf8" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="35b5-9fb2-d018-9bf8" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="ace2-094e-f8d7-a9d9" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5198-58b0-5dc6-e046" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ace2-094e-f8d7-a9d9" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ace2-094e-f8d7-a9d9" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="b2d2-f9a5-5163-4fed" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1522,7 +1522,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
             </selectionEntry>
             <selectionEntry id="e5e3-c0bb-119d-3013" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="5072-8afc-3f13-062c" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5198-58b0-5dc6-e046" type="atLeast"/>
                   </conditions>
@@ -1608,7 +1608,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
               <selectionEntries>
                 <selectionEntry id="de96-7ee5-430a-58d2" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="15f1-0eb6-242e-8f9d" value="0">
                       <conditions>
                         <condition field="selections" scope="9a52-85c4-6c7e-67dd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f19a-2a11-41ae-d2ca" type="atLeast"/>
                       </conditions>
@@ -2173,7 +2173,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
             </selectionEntry>
             <selectionEntry id="1814-0218-825f-60cd" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="9eca-e46e-94e6-2598" value="0.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="376b-b9e4-a4f2-4132" type="atLeast"/>
                   </conditions>
@@ -2220,7 +2220,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
           <selectionEntryGroups>
             <selectionEntryGroup id="376b-b9e4-a4f2-4132" name="Secondary Weapon" hidden="false" collective="false" import="true">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="dfeb-b489-eccf-a9b0" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1814-0218-825f-60cd" type="atLeast"/>
                   </conditions>
@@ -3081,7 +3081,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
             </selectionEntry>
             <selectionEntry id="1aba-ec04-043b-68f0" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="1447-6bee-6522-81ec" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="63cf-6734-4924-1dbe" type="atLeast"/>
                   </conditions>
@@ -3128,7 +3128,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
           <selectionEntryGroups>
             <selectionEntryGroup id="63cf-6734-4924-1dbe" name="Secondary Weapon" hidden="false" collective="false" import="true">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="cddf-6a93-92cf-bee5" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1aba-ec04-043b-68f0" type="atLeast"/>
                   </conditions>

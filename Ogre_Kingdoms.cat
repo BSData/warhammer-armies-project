@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
       <characteristicTypes>
@@ -115,13 +115,15 @@
           <description>At the start of each enemy turn (before any Stupidity tests are taken) you can nominate D3 enemy units that are within 18&quot; of Greasus to have Stupidity for the remainder of the turn. This ability has no effect on units that have Immunity (Psychology).</description>
         </rule>
         <rule id="2c30-185e-68fc-4a94" name="Hoardmaster" publicationId="9e23-79cb-pubN78137" page="102" hidden="false">
-          <description>Unless Greasus is fleeing, all friendly units within 18&quot; of Greasus (including the Overtyrant himself), add +1 to their combat result scores, and automatically pass Rally tests.</description>
+          <description>Unless Greasus is fleeing, all friendly units within 18&quot; of Greasus (including the Overtyrant himself), add +1 to their combat result scores.</description>
+        </rule>
+        <rule id="f86e-16cd-699f-e6d0" name="The Goldtooth Tribe" publicationId="9e23-79cb-pubN78137" page="102" hidden="false">
+          <description>At least two units of Ironguts must be fielded in an army led by Greasus. These units may take Magic Standards worth up to 50 pts.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="8ccb-7471-a690-4338" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="978a-eaee-1207-0daa" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-        <infoLink id="d155-ef39-e73b-d40e" name="The Goldtooth Tribe" hidden="false" targetId="d27f-f396-7b73-9916" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c13f-7737-fa60-0698" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -138,7 +140,8 @@
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Any friendly Ogre Kingdoms unit that is fleeing at the beginning of the Ogre player&apos;s turn, and is within 12&quot; from Greasus, rallies automatically. All close combat attacks made with this weapon, have a S of 10 and causes Multiple Wounds (D3).</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Any friendly Ogre Kingdoms unit that is fleeing at the beginning of the Ogre player&apos;s turn, and is within 12&quot; from Greasus, rallies automatically. All close combat attacks made with this weapon have a S of 10
+and Multiple Wounds (D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -154,7 +157,7 @@
           <profiles>
             <profile id="90a5-2416-e9de-03b8" name="Overtyrant&apos;s Crown" publicationId="9e23-79cb-pubN78137" page="102" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Overtyrant&apos;s Crown gives Greasus a Ward save (4+). In addition, Greasus and any unit he joins have Immunity (Psychology).</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Overtyrant&apos;s Crown gives Greasus a Ward save (4+). In addition, Greasus and any unit he joins has Immunity (Psychology).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -179,7 +182,7 @@
         <entryLink id="aa79-f7ab-5586-40d2" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="395.0"/>
+        <cost name="pts" typeId="points" value="365.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="862b-cc3a-d546-10b8" name="Skrag the Slaughterer" hidden="false" collective="false" import="true" type="model">
@@ -198,15 +201,15 @@
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character, Slaughtermaster)</characteristic>
           </characteristics>
         </profile>
         <profile id="7890-0226-00ba-4940" name="Effect" publicationId="9e23-79cb-pubN78137" page="104" hidden="false" typeId="6c81-470a-5970-5e96" typeName="Models Killed Table">
           <characteristics>
-            <characteristic name="1+" typeId="39d7-e2db-05b5-6b5e">Skrag gains Regeneration. All Gorgers that have not entered play do so in their next turn.</characteristic>
+            <characteristic name="1+" typeId="39d7-e2db-05b5-6b5e">Skrag gains Regeneration (4+). All Gorgers that have not entered play do so in their next turn.</characteristic>
             <characteristic name="5+" typeId="486d-3878-f49d-46bd">Skrag gains +1 A. All Gorgers gain +1 A.</characteristic>
             <characteristic name="10+" typeId="31ef-dcc3-3a2a-d42b">Skrag gains Hatred. All Gorgers gain Hatred.</characteristic>
-            <characteristic name="15+" typeId="7193-7d96-3f38-1ace">Skrag becomes Unbreakable. All Gorgers gain Regeneration.</characteristic>
+            <characteristic name="15+" typeId="7193-7d96-3f38-1ace">Skrag becomes Unbreakable. All Gorgers gain Regeneration (4+).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -216,6 +219,8 @@
         <infoLink id="0d60-3ed7-e093-c62c" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
         <infoLink id="9040-9163-e433-43ff" name="Killing Blow" hidden="false" targetId="a711-7cf6-cd2b-1d29" type="rule"/>
         <infoLink id="7511-6277-51b6-bd1b" name="Ogre Charge" hidden="false" targetId="d041-af68-1592-6f88" type="rule"/>
+        <infoLink id="5f04-0583-4647-b118" name="One model must take the Lore of the Great Maw" hidden="false" targetId="3cb0-d496-30dc-6325" type="rule"/>
+        <infoLink id="2c2c-7bb0-95f5-a9a4" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e52a-ee84-8a67-3ae4" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -311,10 +316,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="4b26-46c7-e5eb-d810" name="The Ironskin Tribe" publicationId="9e23-79cb-pubN78137" page="105" hidden="false">
+          <description>If Ghark is the army&apos;s General, Leadbelchers count as a Core choice and Grimhorn Rhinox Riders count as a Special choice.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="79dc-8a6e-74a7-52c5" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="41e4-6f6d-05cd-e41d" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-        <infoLink id="cb6f-685d-031e-0040" name="The Ironskin Tribe" hidden="false" targetId="3e6a-6862-a63e-a3a0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="98d8-a49d-9e3e-3270" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -368,7 +377,7 @@
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast (Special Character)</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast (Special Character)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -380,7 +389,6 @@
           <infoLinks>
             <infoLink id="5b7a-e44c-af02-7a9a" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="0498-b827-d4d1-fa76" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-            <infoLink id="8930-b1aa-2b0f-5a3c" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -410,14 +418,11 @@
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character, Slaughtermaster)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="f562-f697-fb7b-ec38" name="Model must be the only Mawseeker in the army" hidden="false">
-          <description>No other character in the army may have that Big Name Mawseeker.</description>
-        </rule>
         <rule id="11d8-6f61-92f7-d976" name="The First Butcher" publicationId="9e23-79cb-pubN78137" page="106" hidden="false">
           <description>Once per turn, Groth may re-roll a dice when casting a spell or when trying to dispel an enemy spell.</description>
         </rule>
@@ -427,6 +432,8 @@
         <infoLink id="5f2e-6a6f-446c-06f6" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="36f6-01ff-26eb-0ff6" name="Ogre Charge" hidden="false" targetId="d041-af68-1592-6f88" type="rule"/>
         <infoLink id="112b-00b5-0202-d7c8" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+        <infoLink id="84af-8962-7780-aaae" name="One model must take the Lore of the Great Maw" hidden="false" targetId="3cb0-d496-30dc-6325" type="rule"/>
+        <infoLink id="f7af-1764-87c7-5ece" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7c55-2262-1d87-af83" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -590,7 +597,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="8946-dd85-f5f7-5934" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="817f-75f6-8699-4cd2" name="Talismans" hidden="false" collective="false" import="true" targetId="0b2a-4231-9ac0-22ab" type="selectionEntryGroup"/>
+            <entryLink id="817f-75f6-8699-4cd2" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
             <entryLink id="b71a-1e4e-9d6d-147b" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="21f4-04d8-7b46-de25" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
           </entryLinks>
@@ -854,6 +861,7 @@
         <infoLink id="1abf-81c6-4363-5daf" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
         <infoLink id="5d5b-0108-4daa-1aeb" name="Ogre Charge" hidden="false" targetId="d041-af68-1592-6f88" type="rule"/>
         <infoLink id="2587-3a51-2e2f-fabd" name="One model must take the Lore of the Great Maw" hidden="false" targetId="3cb0-d496-30dc-6325" type="rule"/>
+        <infoLink id="b38e-45c4-755c-df2f" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e89b-8295-30e2-7653" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -867,9 +875,9 @@
           </constraints>
           <entryLinks>
             <entryLink id="b016-ee93-3913-c131" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="be22-ebaa-06f2-a90b" name="Talismans" hidden="false" collective="false" import="true" targetId="0b2a-4231-9ac0-22ab" type="selectionEntryGroup"/>
             <entryLink id="680d-a877-a003-2071" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="f73d-6916-a500-a389" name="Arcane Items" hidden="false" collective="false" import="true" targetId="5b18-41f0-a03d-edb3" type="selectionEntryGroup"/>
+            <entryLink id="5954-26a8-4f7d-5da5" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -897,7 +905,7 @@
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
                 <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the caster’s next magic phase, the target unit may re-roll failed rolls To Hit. If the unit does not win a round of combat until then, each model in the unit must pass a T test or suffer 1 Wound with no saves allowed.</characteristic>
               </characteristics>
             </profile>
@@ -908,7 +916,7 @@
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -925,7 +933,7 @@
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="75.0"/>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1117,7 +1125,7 @@
       </profiles>
       <rules>
         <rule id="2f4e-a506-d882-8308" name="Golgfag&apos;s Maneaters" publicationId="9e23-79cb-pubN78137" page="109" hidden="false">
-          <description>Golgfag&apos;s Maneaters always have Stubborn, but may choose one other rule from the &apos;Been There, Done That&apos; rule as normal. In addition, when included in an alliance they are treated as trusted allies by all units on their side, and count all units on their side as trusted allies in return. If an army includes Golgfag&apos;s Maneaters, then Golgfag must set up with the unit, and may not leave it. No other character may join the unit.</description>
+          <description>If an army includes Golgfag&apos;s Maneaters, then Golgfag must set up with the unit, and may not leave it. No other character may join the unit.</description>
         </rule>
         <rule id="72b9-13a4-3402-8d35" name="Easy Come, Easy Go" publicationId="9e23-79cb-pubN78137" page="109" hidden="false">
           <description>At the start of a battle, before deployment, roll 2D6 and multiply the score by 10. You may equip Golgfag with magic items from the Warhammer Rulebook with a total points value that is equal to or less than the result. The normal restrictions on choosing magic items apply (so you can&apos;t take the same item twice in an army, or equip Golgfag with two items of the same type, etc.). The items chosen do not count against Golgfag&apos;s points value or the total points value of the army.</description>
@@ -1229,8 +1237,8 @@
             <profile id="6fbd-1241-47bd-cde7" name="Great Gutgouger" publicationId="9e23-79cb-pubN78137" page="111" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Requires Two Hands. While Bragg is involved in a challenge, he gains Heroic Killing Blow. In addition, if Bragg slays his foe in a challenge, any enemy units in base contact with him are Disrupted for the remainder of the turn.</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"></characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Flail. While Bragg is involved in a challenge, he gains Heroic Killing Blow. In addition, if Bragg slays his foe in a challenge, any enemy units in base contact with him are Disrupted for the remainder of the turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1243,7 +1251,7 @@
         <entryLink id="b039-d69a-bec7-cdf8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="175.0"/>
+        <cost name="pts" typeId="points" value="155.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="891b-d8b5-2154-00c1" name="Braugh Slavelord" hidden="false" collective="false" import="true" type="model">
@@ -1347,7 +1355,7 @@
         <entryLink id="eb33-0e01-7097-8202" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="211.0"/>
+        <cost name="pts" typeId="points" value="171.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca33-7e83-ecb3-6ad8" name="Jhared the Red" hidden="false" collective="false" import="true" type="model">
@@ -1428,7 +1436,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great Throwing Spear. Enemy models wounded, but not killed, by Jhared’s ranged attacks suffer –D3 Movement until the end of their next turn.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great Throwing Spear. Attacks made with these javelins have the Ice Attacks special rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1519,8 +1527,8 @@
                 <infoLink id="5772-6d4a-b444-0e79" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                 <infoLink id="2910-effd-44d1-793b" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                 <infoLink id="6c11-a7f9-6adf-7ad3" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-                <infoLink id="c42c-1a9a-6e65-4881" name="Numbing Chill" hidden="false" targetId="203c-3742-7c1c-6435" type="rule"/>
                 <infoLink id="4c37-5743-ec05-be4c" name="Sphere of Frost-wreathed Ice" hidden="false" targetId="9014-b156-9887-ed88" type="profile"/>
+                <infoLink id="7005-6060-516e-14fd" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -1565,7 +1573,7 @@
       <selectionEntries>
         <selectionEntry id="2c07-af81-7bef-b7f6" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="2804-c8d5-a599-3857" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb31-0258-90d2-36d1" type="atLeast"/>
               </conditions>
@@ -1577,9 +1585,9 @@
           </constraints>
           <entryLinks>
             <entryLink id="f1e1-161f-39cc-279a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="4ccc-af80-c0c1-ca29" name="Talismans" hidden="false" collective="false" import="true" targetId="0b2a-4231-9ac0-22ab" type="selectionEntryGroup"/>
             <entryLink id="5925-11ff-417d-c2e5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="cd65-c9b0-aa2a-3e2e" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
+            <entryLink id="d14c-9515-beae-05fe" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1781,6 +1789,34 @@
                 <cost name="pts" typeId="points" value="65.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d3cf-857b-9997-4f9f" name="Rhinox War Chariot" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92af-fab8-2022-6fbb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d1d1-dc2f-7da9-db8e" name="Impact Hits (D6+2)" hidden="false" targetId="d078-4dd8-8ffb-876a" type="rule"/>
+                <infoLink id="f966-a800-ca5d-5657" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="e279-cdd0-361c-79ee" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="e59b-e4f4-f902-2e12" name="Rhinox War Chariot" hidden="false" targetId="17f0-326b-1d42-a423" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="279f-ece8-5976-0a37" name="Rhinox" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee9e-9b73-a30a-0cf7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d826-8a38-f5cd-6bda" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="90e1-0c49-b811-1ad3" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="125.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e24b-4cb7-e1fe-4728" name="Character Options" hidden="false" collective="false" import="true">
@@ -1799,7 +1835,7 @@
               <selectionEntries>
                 <selectionEntry id="bb31-0258-90d2-36d1" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="6fd8-71af-1336-6635" value="0">
                       <conditions>
                         <condition field="selections" scope="16bd-cf4e-7102-c09f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c07-af81-7bef-b7f6" type="atLeast"/>
                       </conditions>
@@ -1852,6 +1888,7 @@
         <infoLink id="4c4f-35d3-0081-428f" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
         <infoLink id="0843-636d-b12a-a33f" name="Ogre Charge" hidden="false" targetId="d041-af68-1592-6f88" type="rule"/>
         <infoLink id="62f4-0999-3ea4-1650" name="One model must take the Lore of the Great Maw" hidden="false" targetId="3cb0-d496-30dc-6325" type="rule"/>
+        <infoLink id="f2f1-e078-d4ea-c4aa" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1a56-0240-f7e6-db61" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
@@ -1865,9 +1902,9 @@
           </constraints>
           <entryLinks>
             <entryLink id="7aee-b78a-3348-5bca" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="1488-73b0-dcf2-79c2" name="Talismans" hidden="false" collective="false" import="true" targetId="0b2a-4231-9ac0-22ab" type="selectionEntryGroup"/>
             <entryLink id="3b08-9fc4-b828-5731" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="0057-6713-e3a6-4927" name="Arcane Items" hidden="false" collective="false" import="true" targetId="5b18-41f0-a03d-edb3" type="selectionEntryGroup"/>
+            <entryLink id="ccfc-387f-0c36-b33f" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2086,13 +2123,13 @@
         <profile id="cc0b-cdec-9a88-5b23" name="Hunter" publicationId="9e23-79cb-pubN78137" page="63" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Character)</characteristic>
           </characteristics>
@@ -2117,9 +2154,9 @@
           </constraints>
           <entryLinks>
             <entryLink id="d119-8677-8b96-7dbd" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="96da-c7ce-e749-22ff" name="Talismans" hidden="false" collective="false" import="true" targetId="0b2a-4231-9ac0-22ab" type="selectionEntryGroup"/>
             <entryLink id="a36a-2335-b312-7048" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="3199-812e-0a57-fc50" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
+            <entryLink id="c99b-2466-3d2d-879b" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2140,31 +2177,12 @@
         <selectionEntry id="e05d-7ec8-ef60-f08a" name="Light Armor" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c426-8b8b-6ae6-9992" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e16f-9356-b924-bb82" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="49f2-c8b7-782f-6302" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9a8f-8e9b-d020-c0f6" name="Great Throwing Spear" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e1d-6ac2-61a5-69d4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7abf-a8a8-7404-fdc5" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="d565-9b0a-7c25-4af9" name="Great Throwing Spear" publicationId="9e23-79cb-pubN78137" page="56" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
-                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2246,8 +2264,8 @@
                 <infoLink id="d41c-c232-9237-b855" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                 <infoLink id="ca2f-f33a-e49a-51ac" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                 <infoLink id="95b2-382a-27c3-be08" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-                <infoLink id="a5e5-f27f-8c0b-9e05" name="Numbing Chill" hidden="false" targetId="203c-3742-7c1c-6435" type="rule"/>
                 <infoLink id="f6a6-cc37-0926-43f5" name="Sphere of Frost-wreathed Ice" hidden="false" targetId="9014-b156-9887-ed88" type="profile"/>
+                <infoLink id="6ba9-45f5-5eed-3b40" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -2258,7 +2276,6 @@
         <selectionEntryGroup id="2ff6-a65d-e579-87ae" name="Secondary Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="803f-76aa-ad62-7cf1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0335-161d-f2ef-543d" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="2b56-223d-a023-9e50" name="Harpoon Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -2296,6 +2313,23 @@
               <infoLinks>
                 <infoLink id="cf9d-0758-76da-b6f5" name="Chaintrap" hidden="false" targetId="7290-26d3-e6f7-57d7" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b7fc-b99c-51fa-f365" name="Great Throwing Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ffc9-6fd4-0b7d-e3f4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6a73-feff-f3a3-15e4" name="Great Throwing Spear" publicationId="9e23-79cb-pubN78137" page="56" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
@@ -2344,9 +2378,9 @@
           </constraints>
           <entryLinks>
             <entryLink id="d7eb-4a6c-4696-a8a1" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="d6c8-352c-4fdb-5d21" name="Talismans" hidden="false" collective="false" import="true" targetId="0b2a-4231-9ac0-22ab" type="selectionEntryGroup"/>
             <entryLink id="239f-cc29-3828-d3dc" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="1f57-4849-15f5-7087" name="Arcane Items" hidden="false" collective="false" import="true" targetId="5b18-41f0-a03d-edb3" type="selectionEntryGroup"/>
+            <entryLink id="d315-a839-41b0-7794" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2524,7 +2558,7 @@
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5</characteristic>
                 <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes a single S 5 hit with Multiple Wound (D3). No Regeneration saves are allowed against any wounds suffered from the Ice Spear.</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes a single S 5 hit with Ice Attacks and Multiple Wound (D3). No Regeneration saves are allowed against any wounds suffered from the Ice Spear.</characteristic>
               </characteristics>
             </profile>
             <profile id="41ba-177a-2305-8779" name="Ice Spikes" publicationId="9e23-79cb-pubN78137" page="85" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -2548,7 +2582,7 @@
           </profiles>
           <rules>
             <rule id="033c-321e-a696-b7f2" name="Rhimespeaker&apos;s Call" publicationId="9e23-79cb-pubN78137" page="85" hidden="false">
-              <description>Rimespeakers can channel power and dispel dice in the same manner as Wizards. In addition, Rimespeakers know the three spells.</description>
+              <description>Rimespeakers can channel power and dispel dice in the same manner as Level 1 Wizards. In addition, Rimespeakers know the three spells.</description>
             </rule>
           </rules>
           <costs>
@@ -2648,23 +2682,12 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0f6e-69e4-5b97-6a96" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d693-f8f7-1a50-1da9">
+            <selectionEntryGroup id="0f6e-69e4-5b97-6a96" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd9e-b587-d1d6-bdd9">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6832-63eb-0181-0ac3" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6bbb-0134-c5f5-f669" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="d693-f8f7-1a50-1da9" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d159-6230-5b42-fc9d" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="6fce-f0da-036a-6906" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="dd9e-b587-d1d6-bdd9" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd8e-c955-d246-4345" type="max"/>
@@ -2673,7 +2696,7 @@
                     <infoLink id="fd72-99bd-5859-620d" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5fd1-763f-7ea6-3949" name="Hand Weapon &amp; Ironfist" hidden="false" collective="true" import="true" type="upgrade">
@@ -2685,14 +2708,14 @@
                     <infoLink id="bf52-344c-5542-c874" name="Ironfist" hidden="false" targetId="6762-6a5b-4d19-dc9f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="31.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2811,7 +2834,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="41.0"/>
+            <cost name="pts" typeId="points" value="39.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3035,22 +3058,21 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec24-3be5-4b39-6a34" name="Ironguts (The Goldtooth Tribe)" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
+    <selectionEntry id="ec24-3be5-4b39-6a34" name="Ironguts (The Goldtooth Tribe)" hidden="false" collective="false" import="true" type="model">
+      <modifierGroups>
+        <modifierGroup>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f95b-20b9-8fae-0797" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="e2d4-33a7-3a3f-861a" value="2">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f95b-20b9-8fae-0797" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" field="449b-988f-bc0a-340e" value="2.0"/>
+            <modifier type="set" field="4627-7634-991c-5093" value="2.0"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4627-7634-991c-5093" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2d4-33a7-3a3f-861a" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4627-7634-991c-5093" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="449b-988f-bc0a-340e" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="673d-bb68-3f92-8ea0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -3066,7 +3088,6 @@
             <infoLink id="9dde-348d-35bc-2ac6" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="824b-b218-6c88-aaf8" name="Down to the Ironguts" hidden="false" targetId="9561-ca26-3d02-fa97" type="rule"/>
             <infoLink id="955c-b1a6-bd19-7061" name="Irongut" hidden="false" targetId="9ee3-10e5-b4c3-c2a6" type="profile"/>
-            <infoLink id="0540-c156-1bb5-65ca" name="The Goldtooth Tribe" hidden="false" targetId="d27f-f396-7b73-9916" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="825b-aa2a-af4e-574f" name="Medium Armor" hidden="false" collective="true" import="true" type="upgrade">
@@ -3095,7 +3116,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="41.0"/>
+            <cost name="pts" typeId="points" value="39.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3200,6 +3221,7 @@
         <infoLink id="5388-6d42-8d08-9f8c" name="Flaming Attacks" hidden="false" targetId="8600-a090-2761-d661" type="rule"/>
         <infoLink id="c7e9-0c9b-8b9b-2454" name="Immunity (Flaming Attacks)" hidden="false" targetId="49c7-526e-cb3e-d7b7" type="rule"/>
         <infoLink id="0a90-6996-d510-f636" name="Fire Breath" hidden="false" targetId="6687-ca6c-5c08-27b1" type="rule"/>
+        <infoLink id="971e-d106-e081-6e09" name="One model must take the Lore of the Great Maw" hidden="false" targetId="3cb0-d496-30dc-6325" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3458-4283-b758-44c2" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -3271,12 +3293,20 @@
     </selectionEntry>
     <selectionEntry id="ca7a-8a16-e227-97aa" name="Leadbelcher" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f82-6eb2-20e1-f0af" type="atLeast"/>
-          </conditions>
+        <modifier type="set" field="2259-3373-7be7-ed39" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59f2-092a-586e-6dba" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a58-c5fd-4a14-1b17" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2259-3373-7be7-ed39" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="a20a-2b9c-1fbf-da9f" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -3398,7 +3428,7 @@
       <selectionEntries>
         <selectionEntry id="fded-e443-79e2-3bb4" name="Ogre" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2351-5173-850c-ef77" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2351-5173-850c-ef77" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="a7c5-8a63-2a1f-5549" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
@@ -3581,8 +3611,10 @@
             <infoLink id="5d51-e237-f938-7f9b" name="Ogre Charge" hidden="false" targetId="d041-af68-1592-6f88" type="rule"/>
             <infoLink id="439b-8bff-953e-2dcc" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="f70c-b053-91ff-1135" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-            <infoLink id="fd77-a9b7-d907-b3e4" name="Been there, Done That" hidden="false" targetId="1eff-7bfb-adbd-cd7b" type="rule"/>
             <infoLink id="579e-7b6f-68f3-6d98" name="Maneater" hidden="false" targetId="e065-1ee8-af58-569b" type="profile"/>
+            <infoLink id="5610-7c14-e779-90fb" name="Motley Crew" hidden="false" targetId="5c23-5b1c-8b01-0554" type="rule"/>
+            <infoLink id="8740-8517-1d32-32d7" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+            <infoLink id="56ae-6534-4eaf-6d09" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="550a-c4b4-984d-9e4c" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="80d0-c54a-ff8c-0dd6">
@@ -3647,6 +3679,52 @@
                     <cost name="pts" typeId="points" value="6.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="c009-1520-c3bc-93cd" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aea0-aade-cecd-da8b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6b64-ddf8-f265-5246" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="30a2-4e6b-73d7-8019" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="201a-d080-a6a8-b1b6" name="Hand Weapon &amp; Ironfist" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9a1-e6ab-31d8-2231" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1580-d5ef-c688-df88" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="7e33-55e4-c8a5-b83f" name="Ironfist" hidden="false" targetId="6762-6a5b-4d19-dc9f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="4.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b60f-5496-c8e8-5ee1" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2948-4033-fbac-acaf" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2806-0d89-7494-e4fd" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e2ba-3d5d-5bda-177f" name="Oriental Longsword" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2166-8f9d-f58b-2a9f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="82b7-eed8-0d33-14ca" name="Oriental Longsword" hidden="false" targetId="e388-1cbe-41d3-a093" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="5205-8529-e006-975d" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="38a7-e627-6fa7-1a66">
@@ -3681,7 +3759,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
+            <cost name="pts" typeId="points" value="42.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3750,29 +3828,20 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="994b-ff49-47d9-e90a" name="Been there, Done That" hidden="false" collective="false" import="true" targetId="0f54-ad2b-57d2-307d" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d22-83cc-f0a1-e5bb" name="Golgfag&apos;s Maneaters" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="8d22-83cc-f0a1-e5bb" name="Golgfag&apos;s Maneaters" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="4f82-8ee1-4b3d-9b06" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcdc-11fa-7c17-f666" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="f0dd-0999-ab95-772d" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcdc-11fa-7c17-f666" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f0dd-0999-ab95-772d" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4f82-8ee1-4b3d-9b06" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f0dd-0999-ab95-772d" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="250e-ccf5-1d07-bb74" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -3787,74 +3856,11 @@
             <infoLink id="83db-be8c-de75-bf4b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="7160-00d3-b234-3577" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="33b8-f0f6-d9a4-cab4" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
-            <infoLink id="f79f-1197-c752-cc9f" name="Been there, Done That" hidden="false" targetId="1eff-7bfb-adbd-cd7b" type="rule"/>
             <infoLink id="7024-c8d0-e908-d06e" name="Maneater" hidden="false" targetId="e065-1ee8-af58-569b" type="profile"/>
+            <infoLink id="7cab-cada-d30b-a5d0" name="Motley Crew" hidden="false" targetId="5c23-5b1c-8b01-0554" type="rule"/>
+            <infoLink id="8466-4e89-0655-92e7" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="fd16-2637-4fbf-7469" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce45-7628-6d70-533d">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f51-5ac2-4482-7300" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dfe-3274-91ba-671a" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="ce45-7628-6d70-533d" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2652-29e3-963f-1301" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="7692-94fd-0d81-3b07" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3150-6e1f-3f19-9913" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2b7-b6dd-0f81-ca61" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="38dc-9ee7-d973-8e46" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c3a7-8ba0-3c88-c14f" name="Brace of Ogre Pistols" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1576-38ff-5fee-dfa4" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="21fc-89c9-767f-80d1" name="Brace of Ogre Pistols" hidden="false" targetId="fc4d-475b-638e-5f2a" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="9.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5dfa-14ad-517e-85c4" name="Hand Weapon &amp; Ogre Pistol" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1bf-de3c-7a88-c062" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="43de-6e14-e1e1-dc2e" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="1b28-30f5-6256-91f1" name="Ogre Pistol" hidden="false" targetId="1d0a-34f6-8614-a223" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="6.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="56a0-9f1e-2a1b-5956" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3184-67b7-fd4a-66a3" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="8911-5856-6d28-3cb8" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="6.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
             <selectionEntryGroup id="b5de-9f99-e753-30cc" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="1890-fbc9-3198-3cc5">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6743-f2a7-3fed-b9b1" type="max"/>
@@ -3878,6 +3884,116 @@
                   </constraints>
                   <infoLinks>
                     <infoLink id="9d11-b4d0-b2b7-40cc" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9921-bf85-6139-835e" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e493-349d-66a6-bad9">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29d6-03af-8634-5ede" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd3e-d17f-a684-9866" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="e493-349d-66a6-bad9" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2c7-291e-5b95-1e9f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f011-328c-bc74-a7cf" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ff01-36be-e366-d18b" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd49-096b-117e-273b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c33b-f9c0-5370-d975" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5c38-b298-8060-3fc1" name="Brace of Ogre Pistols" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07fb-137a-d3e6-9eee" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ad11-0399-b688-d6f2" name="Brace of Ogre Pistols" hidden="false" targetId="fc4d-475b-638e-5f2a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="9.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f861-03a0-a6e0-e047" name="Hand Weapon &amp; Ogre Pistol" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0047-c6df-8729-88dd" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e419-eb29-a1f0-490b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="9eea-0029-b2d6-831d" name="Ogre Pistol" hidden="false" targetId="1d0a-34f6-8614-a223" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="566a-25c5-f821-10ad" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b103-4551-7dc8-c22a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="713b-255a-4c69-d2e7" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bbdd-a382-2cfe-5113" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1313-3e31-270b-e983" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7e77-c031-88dc-54f5" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="5f75-7db7-126f-0c89" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a68d-c457-11e3-becb" name="Hand Weapon &amp; Ironfist" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1921-3900-d66d-e30d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f4e6-27b6-aaa5-7779" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="de0d-bb7c-830f-7c0d" name="Ironfist" hidden="false" targetId="6762-6a5b-4d19-dc9f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="4.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cbdb-a143-1824-bb18" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd2a-6178-3e4e-5c31" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="cf4e-58e1-e022-21f0" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ce45-7566-124e-ea45" name="Oriental Longsword" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="317d-f61c-bb2c-86b8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="19ae-c222-c37b-55c0" name="Oriental Longsword" hidden="false" targetId="e388-1cbe-41d3-a093" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="3.0"/>
@@ -3956,9 +4072,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="b900-93b2-0319-c5b4" name="Been there, Done That" hidden="false" collective="false" import="true" targetId="0f54-ad2b-57d2-307d" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4125,7 +4238,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="41.0"/>
+            <cost name="pts" typeId="points" value="38.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4195,7 +4308,7 @@
         <categoryLink id="3373-a9a3-5a2c-5f7b" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="55.0"/>
+        <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="29da-3473-5c68-f206" name="Rhinox War Chariot" hidden="false" collective="false" import="true" type="model">
@@ -4521,12 +4634,20 @@
     </selectionEntry>
     <selectionEntry id="0e47-e4fa-0867-d196" name="Grimhorn Rhinox Riders" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f82-6eb2-20e1-f0af" type="atLeast"/>
-          </conditions>
+        <modifier type="set" field="90c9-8a57-acb9-5949" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59f2-092a-586e-6dba" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a58-c5fd-4a14-1b17" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="90c9-8a57-acb9-5949" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="e3ba-e75d-fadb-b71c" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
@@ -4853,45 +4974,45 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
           </characteristics>
         </profile>
         <profile id="6ef1-270a-b039-08c0" name="Result" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="2002-3bd3-9a18-b79a" typeName="Pick up and... Chart (Slavegiant)">
           <characteristics>
-            <characteristic name="1" typeId="5ca8-bba6-ad1a-c1ac">Stuff into Bag: The model is removed as a casualty.</characteristic>
-            <characteristic name="2" typeId="5fb2-10b7-2993-e223">Throw Back into Combat: The victim is removed as a casualty, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
+            <characteristic name="1" typeId="5ca8-bba6-ad1a-c1ac">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
+            <characteristic name="2" typeId="5fb2-10b7-2993-e223">Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 S 6 Hits which Ignores Armour saves, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
             <characteristic name="3" typeId="9a32-ed42-f04f-9e96">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits (save as normal). Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
             <characteristic name="4" typeId="46fa-41f7-64f6-fafd">Squash: The model is removed as a casualty.</characteristic>
             <characteristic name="5" typeId="14f7-08df-3aa4-d1e7">Eat: The model is removed as a casualty.</characteristic>
-            <characteristic name="6" typeId="ce4a-093d-13e6-8214">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. The second victim makes a single attack as usual to avoid being picked up — if he fails, roll again on this table.</characteristic>
+            <characteristic name="6" typeId="ce4a-093d-13e6-8214">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
           </characteristics>
         </profile>
         <profile id="8cf1-030c-9bde-5699" name="Result" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="1c07-e75c-f50c-09f1" typeName="Big Things Chart (Slavegiant)">
           <characteristics>
             <characteristic name="1" typeId="c81c-a4ad-dc41-bf5d">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw).</characteristic>
             <characteristic name="2-4" typeId="74e3-28f3-9ca2-7075">Throttle with Chain: The target must take a T test. If this is failed, it sustains 2D6 wounds with no Armour Save allowed.</characteristic>
-            <characteristic name="5-6" typeId="926b-b314-20e5-911d">&apos;Eadbutt: The Giant automatically inflicts 1 wound with no armour saves allowed. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
+            <characteristic name="5-6" typeId="926b-b314-20e5-911d">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
           </characteristics>
         </profile>
         <profile id="cb8a-3dfc-3503-0105" name="Result" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="4bc3-9893-db6d-959c" typeName="Small Things Chart (Slavegiant)">
           <characteristics>
-            <characteristic name="1" typeId="e392-20d2-7b99-4e84">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw).</characteristic>
-            <characteristic name="2" typeId="eb1c-ff33-9629-bb04">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its feet, the target unit sustains 2D6 S 6 hits. Work out damage and saves as usual. Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if it is able to, assuming that it did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends.</characteristic>
-            <characteristic name="3" typeId="ce5c-ccc1-13b8-a1e5">Pick Up and...: The Giant grabs a single model in base contact from the target unit (Giant player&apos;s choice). The target must make a single attack to try to fend off the Giant&apos;s clumsy hand. If this attack causes an unsaved wound, the Giant&apos;s attack fails. Otherwise, the Giant grabs the model and the player rolls a D6 on the Pick up and... Table.</characteristic>
+            <characteristic name="1" typeId="e392-20d2-7b99-4e84">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
+            <characteristic name="2" typeId="eb1c-ff33-9629-bb04">Jump Up and Down: The Giant jumps up and down vigorously on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks. Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if it is able to, assuming that it did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends.</characteristic>
+            <characteristic name="3" typeId="ce5c-ccc1-13b8-a1e5">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things chart until you get another result. The Giant grabs the model and the player rolls a D6 on the Pick Up and... table.</characteristic>
             <characteristic name="4-6" typeId="857e-1cfe-ddec-27f3">Flail with Chain: The Slavegiant inflicts D6 S 6 hits on the target unit, allocated as shooting hits.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
         <rule id="e5b9-e2e5-bb08-cf61" name="Giant Special Attacks" publicationId="9e23-79cb-pubN78137" page="99" hidden="false">
-          <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the tables. Which table you use depends on the size of the Giant&apos;s victim. When fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, anything with Towering, roll on the Big Things Chart. Use the Small Things Chart when fighting anything not covered by the Big Things chart, above.</description>
+          <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the tables. Which table you use depends on the size of the Giant&apos;s victim. Use the Small Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with Large Target.</description>
         </rule>
         <rule id="739a-4cf8-961b-ebc0" name="Fall Over" publicationId="9e23-79cb-pubN78137" page="99" hidden="false">
           <description>A Giant must test to see whether it falls over if any of the following apply:
@@ -4906,13 +5027,11 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
 
 To see if a Giant falls over roll a D6. On a roll of 1, the Giant falls over. A slain Giant falls over automatically.
 
-To determine in which direction the Giant falls, roll a scatter dice. Place the Fallen Giant template with its feet at the model&apos;s base and its head in the direction of the fall — the Fallen Giant template is a special shaped template, which otherwise uses all the template rules from the Warhammer rulebook (so any models lying completely or partially under it are automatically hit).
-
-A model hit by a falling Giant takes a S 6 hit that causes Multiple Wounds (D3). If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result.
+To determine in which direction the Giant falls, roll a scatter dice. Any unit within 4&quot; of the direction the Giant falls suffers 2D6 S 6 Hits that have Multiple Wounds (D3), distributed as hits from shooting, though no single model may suffer more than 1 Hit – any excess Hits are ignored. If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result.
 
 A Giant that falls over automatically suffers 1 wound. If the Giant is in combat then this wound counts towards combat resolution.
 
-Once on the ground (you may lie the model down if you wish) a Giant may get up in his following Movement phase, but may not move that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain. If the Giant gets the opportunity to pursue his foes whilst he&apos;s on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up.</description>
+Once on the ground a Giant may get up in his following Movement phase, but may not move that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain. If the Giant gets the opportunity to pursue his foes whilst he&apos;s on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4940,7 +5059,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="150.0"/>
+        <cost name="pts" typeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4c6e-f463-7614-380c" name="Stonehorn" hidden="false" collective="false" import="true" type="model">
@@ -5005,7 +5124,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4463-fcfb-9c07-15fc" name="Thundertusk" hidden="false" collective="false" import="true" type="model">
@@ -5017,8 +5136,8 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <infoLink id="a8fb-60e6-64cb-416e" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="6480-477a-7316-c771" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="3d09-5862-3cb7-0cca" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-        <infoLink id="072c-3236-f34b-9462" name="Numbing Chill" hidden="false" targetId="203c-3742-7c1c-6435" type="rule"/>
         <infoLink id="cfa7-a1a9-5b49-4dd3" name="Sphere of Frost-wreathed Ice" hidden="false" targetId="9014-b156-9887-ed88" type="profile"/>
+        <infoLink id="5726-e997-d8af-dfee" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0797-64ee-d488-135d" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5078,14 +5197,14 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e98f-ec8e-d372-4a67" name="Ice Mammoth" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="d96b-5c22-4e73-764e" name="Ice Mammoth" publicationId="9e23-79cb-pubN78137" page="89" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">10</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">7</characteristic>
@@ -5107,7 +5226,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <profile id="686d-ed43-c894-f17d" name="Result" publicationId="9e23-79cb-pubN78137" page="91" hidden="false" typeId="87e3-7053-1d16-9d13" typeName="Small Targets Table (Ice Mammoth)">
           <characteristics>
             <characteristic name="1-2" typeId="a0c1-5f83-563b-cb79">Trample: A single enemy unit suffers D6 S 7 hits for each rank of five or more models it has.</characteristic>
-            <characteristic name="3-4" typeId="4ffc-eb64-9ba8-ef4c">Stomp: The Mammoth does not make a normal attack this turn, but its Thunderstomp Attack causes 2D6 hits this round.</characteristic>
+            <characteristic name="3-4" typeId="4ffc-eb64-9ba8-ef4c">Stomp: The Mammoth makes three Stomp attacks this turn.</characteristic>
             <characteristic name="5" typeId="9677-ddbe-75dd-956b">Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The army fielding the Mammoth automatically wins the combat by 3 points.</characteristic>
             <characteristic name="6" typeId="5eec-16c2-20bd-16a8">Pick up and...: This attack may target model in base contact or touching a model in base contact. The target may make a single attack to fend off the trunk: If this attack hits and wounds the Mammoth, than the Mammoth&apos;s attack fails. If not then the Mammoth grabs the model. Roll a D6 and consult the Pick up and... Table.</characteristic>
           </characteristics>
@@ -5199,7 +5318,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
             <infoLink id="ca3e-6d05-4f2b-1a94" name="Ogre Beast Rider" hidden="false" targetId="ddb4-d5a2-78ec-387a" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="7f9d-1553-ad8f-7979" name="Primary Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="7f9d-1553-ad8f-7979" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="34a7-e33c-bddc-7f2d">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32e5-47e2-9280-fa0c" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b989-417e-ebd4-61ff" type="min"/>
@@ -5236,17 +5355,30 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="pts" typeId="points" value="325.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59f2-092a-586e-6dba" name="Leadbelcher (Ghark)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="59f2-092a-586e-6dba" name="Leadbelcher (Ghark Ironskin as General)" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="14d3-c3c6-ef35-1d5d" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f82-6eb2-20e1-f0af" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="14d3-c3c6-ef35-1d5d" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca7a-8a16-e227-97aa" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e47-e4fa-0867-d196" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="14d3-c3c6-ef35-1d5d" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="f4e4-4a18-0836-76d0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -5260,7 +5392,6 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
             <infoLink id="a311-08b2-73a3-3566" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="b615-6eba-a7a5-49ff" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="da39-9d08-7d6b-635e" name="Leadbelcher" hidden="false" targetId="ac16-e68f-ac81-2de5" type="profile"/>
-            <infoLink id="6221-1838-0707-4061" name="The Ironskin Tribe" hidden="false" targetId="3e6a-6862-a63e-a3a0" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="9dda-4554-45c4-b5a5" name="Light Armor" hidden="false" collective="true" import="true" type="upgrade">
@@ -5362,14 +5493,27 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3a58-c5fd-4a14-1b17" name="Grimhorn Rhinox Riders (Ghark)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="3a58-c5fd-4a14-1b17" name="Grimhorn Rhinox Riders (Ghark Ironskin as General)" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="3917-d8d3-c412-0ea2" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f82-6eb2-20e1-f0af" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="3917-d8d3-c412-0ea2" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca7a-8a16-e227-97aa" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e47-e4fa-0867-d196" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3917-d8d3-c412-0ea2" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="9cdf-f2e0-c8e1-3a07" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -5382,7 +5526,6 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
             <infoLink id="695b-a57a-dcbb-21de" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="f96e-52ff-74f6-2e77" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="d0bb-1beb-5932-10ad" name="Rhinox Rider" hidden="false" targetId="c611-c16c-2b96-3ef4" type="profile"/>
-            <infoLink id="0bd3-8e84-1975-8d5f" name="The Ironskin Tribe" hidden="false" targetId="3e6a-6862-a63e-a3a0" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="8a1b-2812-c6fc-6df5" name="Rhinox" hidden="false" collective="true" import="true" type="model">
@@ -5720,7 +5863,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
           <profiles>
             <profile id="630b-67dd-2ecd-7d00" name="Longstrider" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
               <characteristics>
-                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Longstrider big name has the Swiftstride special rule.</characteristic>
+                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Longstrider big name gains +1 to its M value.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5736,7 +5879,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
           <profiles>
             <profile id="bc88-ca03-070b-186c" name="Brawlerguts" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
               <characteristics>
-                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">Brawlerguts (but not their mounts) re-roll failed To Wound rolls from their Impact Hits.</characteristic>
+                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">Model on foot only. Brawlerguts gain Impact Hits (D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5752,12 +5895,12 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
           <profiles>
             <profile id="617b-5a01-799a-8fb3" name="Mawseeker" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
               <characteristics>
-                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Mawseeker name has +1 T on his profile he also suffers from Stupidity.</characteristic>
+                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Mawseeker name has +1 T on his profile. It also suffers from Stupidity.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5777,12 +5920,14 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great Weapon. The wielder may choose to exchange all of his Attacks in close combat to make a single &apos;Thundercrush Attack&apos;. Roll To Hit against the highest WS amongst the enemy models in base contact. If the Thundercrush Attack hits, place the small template anywhere so that it is touching the wielder&apos;s base. Any infantry, war beasts or swarm models that lie underneath the template (friend or foe!) suffer a single S 3 hit. The model under the template&apos;s central hole instead suffers a single S 9 hit with Multiple Wounds (D3). A model with any other troop type beneath the template is too big to be crushed, and doesn&apos;t suffer any hits.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. The wielder may choose to exchange all of his Attacks in close combat to make a single
+&apos;Thundercrush Attack&apos;. Roll To Hit against the highest WS amongst the enemy models in base contact.
+If the Thundercrush Attack hits, place the small template anywhere so that it is touching the wielder&apos;s base. Any infantry, war beasts or swarm models that lie underneath the template (friend or foe!) suffer a single S 3 hit. The model under the template&apos;s central hole instead suffers a single S 9 hit with Multiple Wounds (D3). A model with any other troop type beneath the template is too big to be crushed, and doesn&apos;t suffer any hits.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f7a8-0648-f3db-0f39" name="Siegebreaker" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -5823,7 +5968,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. If the wearer is killed by an attack that is not made in close combat, roll a D6; on a 2+, he will remain in play with one Wound remaining.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium Armour. If the wearer is killed by an attack that is not made in close combat, roll a D6; on a 2+, he will remain in play with one Wound remaining.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5841,7 +5986,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. An Ogre wearing the Gut Maw has Terror. In addition, he recovers one lost Wound (up to his starting number) for each unsaved Wound he causes in a challenge.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium Armour. An Ogre wearing the Gut Maw has Terror. In addition, he recovers one lost Wound (up to his starting number) for each unsaved Wound he causes in a challenge.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5849,25 +5994,17 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="d623-dfcc-f026-5785" name="Magic Armour" hidden="false" collective="false" import="true" targetId="557c-c8c5-0c0f-d2b3" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="0b2a-4231-9ac0-22ab" name="Talismans" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d46d-031b-f502-bfbc" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="058e-23e8-2958-f8b8" name="Greedy Fist" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="497c-0947-f604-54e5" name="Greedy Fist" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6580-b4a4-0ba5-3b49" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf2f-a690-62c2-5513" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b77f-ceb4-0bcb-25dd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c13-b2cc-e590-5590" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1d29-9978-a2d4-089b" name="Greedy Fist" publicationId="9e23-79cb-pubN78137" page="116" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="7617-ae51-1c3b-4628" name="Greedy Fist" publicationId="9e23-79cb-pubN78137" page="116" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The wearer has +1 S and a 6+ ward save. If a Magic Weapon inflicts a Wound that is saved by this ward save, its magical properties are consumed by the Greedy Fist; it is treated as a normal, non-magical weapon of the same type for the remainder of the game. If no type is listed, it is treated as a hand weapon. In addition, an enemy Wizard loses a Wizard level and a randomly selected spell each time they are hit by an Ogre wearing the Greedy Fist.</characteristic>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Ironfist. The wearer gains +1 S and a Ward save (6+). If a Magic Weapon inflicts a Wound that is saved by this Ward save, it is treated as a normal, non-magical weapon of the same type for the remainder of the game. In addition, an enemy Wizard loses a Wizard level and a randomly selected spell each time they are hit by an Ogre wearing the Greedy Fist.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5877,7 +6014,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="51ac-05f4-5b71-113b" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
+        <entryLink id="d623-dfcc-f026-5785" name="Magic Armour" hidden="false" collective="false" import="true" targetId="557c-c8c5-0c0f-d2b3" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5b18-41f0-a03d-edb3" name="Arcane Items" hidden="false" collective="false" import="true">
@@ -5898,7 +6035,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="71e7-2349-e62b-975c" name="Hellheart" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -5935,7 +6072,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
           <profiles>
             <profile id="c2e7-e71f-01d9-ca29" name="Gnoblar Thiefstone" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the Gnoblar Thiefstone Table when the model is deployed to see if the Thiefstone has helped them to &apos;find&apos; any useful items. Note that this may result in the bearer of the Thiefstone having two Magic Talismans (the Thiefstone and the item from the table). In addition, if the item that has been &apos;found&apos; is being used by another character (friend or foe), then the other character loses the item — it&apos;s been stolen!</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the Gnoblar Thiefstone Table when the model is deployed to see if the Thiefstone has helped them to &apos;find&apos; any useful items. Note that this may result in the bearer of the Thiefstone having two Talismans. In addition, if a character is killed in close combat while being in base contact with the model wearing the Thiefstone, you will automatically be allowed to pick up any one Magic Item (except Magic Standards) that the slain character might have had. The model with the Thiefstone may then use that item itself for the rest of the battle.</characteristic>
               </characteristics>
             </profile>
             <profile id="e1bc-9b34-bc32-3a2f" name="Result" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="baa5-047a-38b7-c294" typeName="Gnoblar Thiefstone Table">
@@ -5943,14 +6080,14 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
                 <characteristic name="1" typeId="4975-464e-2e25-69f0">Nothing</characteristic>
                 <characteristic name="2" typeId="1180-6add-bc78-dfaa">Luckstone</characteristic>
                 <characteristic name="3" typeId="875b-805d-259a-be2f">Talisman of Protection</characteristic>
-                <characteristic name="4" typeId="824d-845b-b0c5-83a6">Trickster&apos;s Shard</characteristic>
+                <characteristic name="4" typeId="824d-845b-b0c5-83a6">The Other Trickster&apos;s Shard</characteristic>
                 <characteristic name="5" typeId="e612-4fee-fefe-eff9">The Ruby Ring of Ruin</characteristic>
-                <characteristic name="6" typeId="cb1c-c8cf-7d6b-28f7">Talisman of Protection</characteristic>
+                <characteristic name="6" typeId="cb1c-c8cf-7d6b-28f7">Talisman of Preservation</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5976,7 +6113,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="28cb-d91f-f00a-37a2" name="Dragonhide Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -5987,7 +6124,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
           <profiles>
             <profile id="5d40-9d04-7839-809a" name="Dragonhide Banner" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Models in a unit with the Dragonhide Banner can re-roll all To Hit, To Wound and saving throw rolls of 1 on the turn they make a successful charge. In addition, the bearer of the banner can use it to unleash an icy blast. This is a S 3 Breath Weapon. A unit hit by the icy blast has Always Strikes Last until the end of its next turn.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Models in a unit with the Dragonhide Banner can re-roll all To Hit, To Wound and saving throw rolls of 1 on the turn they make a successful charge. In addition, the bearer of the banner can use it to unleash an icy blast. This is a S 3 Breath Weapon with Ice Attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5999,98 +6136,6 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
       <entryLinks>
         <entryLink id="156f-d530-20e7-6d1c" name="Magic Standards" hidden="false" collective="false" import="true" targetId="2613-24d7-a26e-eb37" type="selectionEntryGroup"/>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="0f54-ad2b-57d2-307d" name="Been there, Done That" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7afe-9ea1-6f55-b0cd" type="max"/>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5325-9eee-1046-e13a" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="258c-bd51-b34f-dabc" name="Immunity (Psychology)" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6ab-afd5-d0d5-f923" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f821-aebb-7887-8e09" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4aa6-3549-9af7-dd9e" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="829c-58c5-35f3-721d" name="Poisoned Attacks" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22c3-d812-3d52-21d2" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b57-aadf-cf88-34f9" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e848-6a8b-3aff-9607" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ad81-37bc-5a05-6994" name="Scouts" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e027-f2fa-d754-8ef4" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3fda-6fa0-d72d-657c" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="a73d-5e6f-fead-dd4a" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0fd6-e332-bf07-c2ae" name="Sniper" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f04-6e94-6293-5a1f" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3843-8d7b-807a-9d4e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="40e6-e1b4-f7da-a199" name="Sniper" hidden="false" targetId="8977-b58c-704d-705e" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="eacb-8efa-4dee-2249" name="Strider" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32aa-b38d-9363-a675" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9bd6-5701-bcd9-e91a" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="92a4-dca9-7891-c240" name="Strider" hidden="false" targetId="c270-3956-9b64-b587" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="20a7-f3b3-f948-e01c" name="Stubborn (Must be picked if the unit is Golgfag&apos;s Maneaters)" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6a4-2556-4aaa-c75d" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7c9-2464-90de-483b" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="c4cf-787f-f8af-6331" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a40e-d532-22d3-59e3" name="Vanguard" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41d7-a1f1-e969-d014" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3aca-de05-94e9-b286" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6c3f-8ad9-e3a8-6fdc" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -6107,7 +6152,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
       <description>An Ogre with a Sword-Gnoblar benefits from one extra S 2 attack per close combat round, at the WS of the owning model.</description>
     </rule>
     <rule id="12a8-9baf-19f9-6cda" name="Tooth-Gnoblar" publicationId="9e23-79cb-pubN78137" page="57" hidden="false">
-      <description>One use only. Before attempting to cast a spell from the Lore of the Great Maw, a Butcher with a Tooth-Gnoblar may choose to sacrifice one to get +1 to his casting value.</description>
+      <description>One use only. After attempting to cast a spell from the Lore of the Great Maw, a Butcher with a Tooth-Gnoblar may choose to sacrifice one to get +1 to his casting value.</description>
     </rule>
     <rule id="c1ac-3da4-f49c-8a9c" name="Look-out Gnoblar" publicationId="9e23-79cb-pubN78137" page="57" hidden="false">
       <description>Any character or champion in a unit with a Look-out Gnoblar benefits from the &apos;Look Out Sir!&apos; as long as there are three rank and file models of the same troop type remaining in the unit.</description>
@@ -6122,10 +6167,10 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
       <description>Unit can not be joined by character models other than Hunters.</description>
     </rule>
     <rule id="9561-ca26-3d02-fa97" name="Down to the Ironguts" publicationId="9e23-79cb-pubN78137" page="69" hidden="false">
-      <description>If a friendly unit of Ogres within 6&quot; breaks and flees from combat, the unit may re-roll 1&apos;s when rolling To Hit and To Wound in their next close combat phase.</description>
+      <description>If a friendly unit of Ogres within 6&quot; breaks and flees from combat, this unit of Ironguts may re-roll 1&apos;s when rolling To Hit and To Wound in their next close combat phase.</description>
     </rule>
     <rule id="90a0-4316-c43b-7340" name="Aura of Frost" publicationId="9e23-79cb-pubN78137" page="84" hidden="false">
-      <description>While any enemy models are in base contact with this model, they suffer a -1 penalty to their WS and I. In addition, the model has Magical Attacks.</description>
+      <description>Yhetees have Ice Attacks and Magical Attacks.</description>
     </rule>
     <rule id="b689-b096-3baa-96a2" name="Scale Terrain" publicationId="9e23-79cb-pubN78137" page="84" hidden="false">
       <description>The model treat all undefended obstacles, cliffs, rocks, boulders, scree and woods as clear ground.</description>
@@ -6139,17 +6184,14 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
     <rule id="9ce0-d6b7-284b-d737" name="Smooth Ride" publicationId="9e23-79cb-pubN78137" page="89" hidden="false">
       <description>The riders of a this Monster does not count as Moving and Shooting.</description>
     </rule>
-    <rule id="203c-3742-7c1c-6435" name="Numbing Chill" publicationId="9e23-79cb-pubN78137" page="89" hidden="false">
-      <description>Any enemy model within 6&quot; of a Thundertusk has Always Strikes Last.</description>
-    </rule>
     <rule id="a07f-3534-f3c1-b420" name="Beneath Contempt" publicationId="9e23-79cb-pubN78137" page="93" hidden="false">
       <description>Gnoblars are have Expendable. In addition, Ogre characters may not join units of Gnoblars.</description>
     </rule>
     <rule id="d99d-6da7-c8fd-bd98" name="Bicker" publicationId="9e23-79cb-pubN78137" page="93" hidden="false">
       <description>Roll a D6 at the beginning of the turn for this unit if it is not in combat, fleeing or subject to any compulsory movement. If the unit rolls a 1 it may do nothing at all this turn.</description>
     </rule>
-    <rule id="3cb0-d496-30dc-6325" name="One model must take the Lore of the Great Maw" publicationId="9e23-79cb-pubN78137" page="61" hidden="false">
-      <description>If you field any Butchers and/or Slaughtermasters in your army, at least one of them must choose his spells from the Lore of the Great Maw.</description>
+    <rule id="3cb0-d496-30dc-6325" name="One wizard must take the Lore of the Great Maw" publicationId="9e23-79cb-pubN78137" page="61" hidden="false">
+      <description>If you field any Butchers/Slaughtermasters in your army, at least one of them must choose his spells from the Lore of the Great Maw.</description>
     </rule>
     <rule id="597a-056b-0c4b-4595" name="Loner" publicationId="9e23-79cb-pubN78137" page="63" hidden="false">
       <description>Hunters cannot join any unit except a Sabretusk Pack or Cragbeasts, and can never be the General of an Ogre army.</description>
@@ -6157,14 +6199,8 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
     <rule id="6687-ca6c-5c08-27b1" name="Fire Breath" publicationId="9e23-79cb-pubN78137" page="62" hidden="false">
       <description>All Firebellies have a S 3 Breath Weapon with Flaming Attacks.</description>
     </rule>
-    <rule id="1eff-7bfb-adbd-cd7b" name="Been there, Done That" publicationId="9e23-79cb-pubN78137" page="73" hidden="false">
-      <description>When selecting a unit of Maneaters, you must pick two different rules. The rules apply to all Maneaters in that unit. If your army includes more than one unit of Maneaters, then each must choose different skills — you may not choose the samel rule more than once in your army.</description>
-    </rule>
-    <rule id="3e6a-6862-a63e-a3a0" name="The Ironskin Tribe" publicationId="9e23-79cb-pubN78137" page="105" hidden="false">
-      <description>If Ghark is the army&apos;s General, you may take Leadbelchers as a core choice and Grimhorn Rhinox Riders as a special choice.</description>
-    </rule>
-    <rule id="d27f-f396-7b73-9916" name="The Goldtooth Tribe" publicationId="9e23-79cb-pubN78137" page="102" hidden="false">
-      <description>At least two units of Ironguts must be fielded in an army led by Greasus. These units may take Magic Standards worth up to 50 pts.</description>
+    <rule id="5c23-5b1c-8b01-0554" name="Motley Crew" publicationId="9e23-79cb-pubN78137" page="73" hidden="false">
+      <description>The models in a unit of Maneaters are often armed with a variety of different weapons. If they are, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6172,7 +6208,8 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">An ironfist can be used as either an additional hand weapon or a shield in close combat, even when mounted. You must choose which function you want to use at the start of each close combat round.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">An ironfist can be used as either an additional hand weapon or a buckler in close combat, even when
+mounted. You must choose which function you want to use at the start of each close combat round.</characteristic>
       </characteristics>
     </profile>
     <profile id="fc4d-475b-638e-5f2a" name="Brace of Ogre Pistols" publicationId="9e23-79cb-pubN78137" page="56" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -6194,7 +6231,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Stone Thrower</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945">6-24&quot;</characteristic>
         <characteristic name="Strength" typeId="6ca0-d074-628f-e276">3(6)</characteristic>
-        <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3). This attack may be made even if the Thundertusk moves, but not if it marches. Do not use the Stone Thrower Misfire chart if the sphere of frost-wreathed ice suffers a misfire Instead, a misfire means that the sphere does not fire this turn.</characteristic>
+        <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Ice Attacks. Multiple Wounds (D3). This attack may be made even if the Thundertusk moves, but not if it marches. Do not use the Stone Thrower Misfire chart if the sphere of frost-wreathed ice suffers a misfire Instead, a misfire means that the sphere does not fire this turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="f151-300b-a2da-39f5" name="Mournfang" publicationId="9e23-79cb-pubN78137" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -6433,7 +6470,7 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Move or Fire. Armour Piercing (1). Multiple Shots (D6). Slow to Fire. Leadbelcher guns ignore the To Hit modifiers for Multiple Shots.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Multiple Shots (D6). Slow to Fire. Leadbelcher guns ignore the To Hit modifiers for Multiple Shots.</characteristic>
       </characteristics>
     </profile>
     <profile id="7a76-66b8-73bb-d4b1" name="Ogre" publicationId="9e23-79cb-pubN78137" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -6448,6 +6485,13 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Cavalry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e388-1cbe-41d3-a093" name="Oriental Longsword" publicationId="9e23-79cb-pubN78137" page="73" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">An Oriental longsword gives the wielder Armour Piercing (1) and Parry (6+).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

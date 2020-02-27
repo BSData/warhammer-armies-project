@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7d72-ca7f-447c-58c6" name="Martial Arts Fighting Style">
       <characteristicTypes>
@@ -673,7 +673,7 @@ mounted). For each successful Parry she makes, she may make a single attack back
             </selectionEntry>
             <selectionEntry id="44b5-545f-f7cb-86d7" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="e12e-43fd-b17f-4ad5" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30fa-1dbd-ac9e-bd27" type="atLeast"/>
                   </conditions>
@@ -691,14 +691,14 @@ mounted). For each successful Parry she makes, she may make a single attack back
             </selectionEntry>
             <selectionEntry id="1d34-c966-a19a-476c" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="11dc-f470-0727-614f" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30fa-1dbd-ac9e-bd27" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11dc-f470-0727-614f" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11dc-f470-0727-614f" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="08df-bddc-e534-4f98" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1031,7 +1031,7 @@ Points, just like the Battle Standard.</description>
       </profiles>
       <rules>
         <rule id="f8f7-401d-f6dc-d1f5" name="Captain of the Imperial Guard" publicationId="8abe-59b3-1084-5e51" page="101" hidden="false">
-          <description>Guan Bu must be accompanied by a unit of Imperial Guard, and he maynot leave this unit. As long as he remains in it, he and his unit may re-roll failed Break Tests, and always test of 3D6, discarding the highest result.</description>
+          <description>Guan Bu must be accompanied by a unit of Imperial Guard, and he may not leave this unit. As long as he remains in it, he and his unit may re-roll failed Break Tests, and always test of 3D6, discarding the highest result.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1576,7 +1576,7 @@ Points, just like the Battle Standard.</description>
       <selectionEntries>
         <selectionEntry id="afa3-0d99-5a43-e9fa" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="cdf3-9ef6-1083-ac8a" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af9e-a047-6eac-f3ef" type="atLeast"/>
               </conditions>
@@ -1851,7 +1851,7 @@ Points, just like the Battle Standard.</description>
             </selectionEntry>
             <selectionEntry id="65b1-32fe-4fcb-a861" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="dacb-8a61-0d9f-273b" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c568-b84f-1958-279f" type="atLeast"/>
                   </conditions>
@@ -1867,16 +1867,16 @@ Points, just like the Battle Standard.</description>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7b49-7354-f8fc-483b" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7b49-7354-f8fc-483b" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="cff3-3438-b385-026f" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c568-b84f-1958-279f" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cff3-3438-b385-026f" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cff3-3438-b385-026f" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="52f3-c411-db53-236a" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1955,7 +1955,7 @@ Points, just like the Battle Standard.</description>
               <selectionEntries>
                 <selectionEntry id="af9e-a047-6eac-f3ef" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="c6e7-0529-e3a3-b702" value="0">
                       <conditions>
                         <condition field="selections" scope="8054-4581-1250-9397" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afa3-0d99-5a43-e9fa" type="atLeast"/>
                       </conditions>
@@ -2723,7 +2723,7 @@ Points, just like the Battle Standard.</description>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="147d-83ba-84e9-f2d3" type="min"/>
           </constraints>
           <profiles>
-            <profile id="437d-fbd6-8e9b-44e1" name="Levy Bowmen" publicationId="8abe-59b3-1084-5e51" page="72" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="437d-fbd6-8e9b-44e1" name="Imperial Bowmen" publicationId="8abe-59b3-1084-5e51" page="72" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>

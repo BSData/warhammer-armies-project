@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1948-df7e-0b86-9296" name="Entombed Beneath the Sands Mishap Table">
       <characteristicTypes>
@@ -235,7 +235,7 @@
     </selectionEntry>
     <selectionEntry id="93fa-c8f0-81ce-9d06" name="High Queen Khalida Neferher" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="41b9-30ca-91bd-88b6" value="0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ac-3ea3-4f4d-4a84" type="atLeast"/>
           </conditions>
@@ -653,7 +653,7 @@
     </selectionEntry>
     <selectionEntry id="84ac-3ea3-4f4d-4a84" name="King Phar" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="d242-ea8c-114f-f8ba" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1005,12 +1005,15 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
     </selectionEntry>
     <selectionEntry id="f5b5-f16a-35ed-2caa" name="Tomb King" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="79b6-85e3-f27a-ca5a" value="0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ac-3ea3-4f4d-4a84" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79b6-85e3-f27a-ca5a" type="max"/>
+      </constraints>
       <profiles>
         <profile id="5eaa-19b8-c036-d03b" name="Tomb King" publicationId="feeb-1927-4a99-f849" page="69" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -1525,7 +1528,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           <description>Tutankhanut has a 2+ armour save.</description>
         </rule>
         <rule id="660e-87bc-5f9f-926d" name="Scythan Warriors" publicationId="feeb-1927-4a99-f849" page="113" hidden="false">
-          <description>Scythan Warriors always treat Tutankhanut as the army&apos;s General for all purposes.</description>
+          <description>If your army contains Tutankhanut you may include units of Scythan Warriors. These follow the unit entry and equipment of Skeleton Horse Archers, but do not have Arrows of Asaph and Undead. Scythan Warriors always treat Tutankhanut as the army&apos;s General for all purposes.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2087,7 +2090,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           <selectionEntries>
             <selectionEntry id="d42d-e58a-ba2e-682e" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="1b98-1357-bde7-1a23" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e533-c5ee-360e-0401" type="atLeast"/>
                   </conditions>
@@ -2136,16 +2139,16 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="027a-6699-66e4-5f88" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="027a-6699-66e4-5f88" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="e56e-80bb-3c26-8203" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e533-c5ee-360e-0401" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e56e-80bb-3c26-8203" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e56e-80bb-3c26-8203" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="8f5a-fbed-f886-975a" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2392,7 +2395,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         </selectionEntry>
         <selectionEntry id="635f-16e2-3f4a-3a89" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="9eec-8f73-ee02-682e" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="99fe-f994-9854-eae5" type="atLeast"/>
               </conditions>
@@ -2422,7 +2425,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           <selectionEntries>
             <selectionEntry id="42c3-b487-bb6b-dd23" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="8bf5-ea6e-a19f-dc7a" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ea-874a-ceb9-5fd1" type="atLeast"/>
                   </conditions>
@@ -2471,16 +2474,16 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="82a8-f41d-f69b-dd7e" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="82a8-f41d-f69b-dd7e" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="3e34-8695-bbff-f0de" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ea-874a-ceb9-5fd1" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e34-8695-bbff-f0de" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e34-8695-bbff-f0de" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="3d4a-d9de-9bf0-c5cf" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2595,7 +2598,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               <selectionEntries>
                 <selectionEntry id="99fe-f994-9854-eae5" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="c792-6475-f3e5-b289" value="0">
                       <conditions>
                         <condition field="selections" scope="b789-c32e-a561-07ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="635f-16e2-3f4a-3a89" type="atLeast"/>
                       </conditions>

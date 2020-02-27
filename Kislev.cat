@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="443d-406a-91b3-9788" name="Kislev" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="443d-406a-91b3-9788" name="Kislev" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9fbd-5eb3-4c58-bce4" name="Drunken Stupor Table">
       <characteristicTypes>
@@ -892,14 +892,14 @@
             </selectionEntry>
             <selectionEntry id="732a-7731-141c-9a52" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="7140-b957-9495-0ecf" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="237c-4d57-561b-0688" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7140-b957-9495-0ecf" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7140-b957-9495-0ecf" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="6e82-c1c1-ecd1-e144" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1058,6 +1058,7 @@
             <entryLink id="83dc-f647-d94e-0c75" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="1b5b-dd85-76c5-af35" type="selectionEntryGroup"/>
             <entryLink id="4fc3-2ef4-3ecb-a21d" name="Talismans" hidden="false" collective="false" import="true" targetId="285d-a8d2-6aca-cb1b" type="selectionEntryGroup"/>
             <entryLink id="226d-44db-4272-f3f9" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="3968-48e7-fdf1-bde5" type="selectionEntryGroup"/>
+            <entryLink id="9ca7-2dc4-6d39-e7e1" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magice Armour (wiz)" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1756,7 +1757,7 @@
         </selectionEntry>
         <selectionEntry id="a80b-b562-e65a-c84c" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="cd0b-c20f-f04c-71c6" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e388-2d84-79a4-1659" type="atLeast"/>
               </conditions>
@@ -1831,16 +1832,16 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="513d-74ed-6660-3918" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="513d-74ed-6660-3918" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="662c-bdad-ffdf-7391" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f84-bc6c-b5df-0089" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="662c-bdad-ffdf-7391" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="662c-bdad-ffdf-7391" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="ed67-5224-2d83-bae1" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1959,7 +1960,7 @@
               <selectionEntries>
                 <selectionEntry id="e388-2d84-79a4-1659" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="c355-3b68-5cec-87a5" value="0">
                       <conditions>
                         <condition field="selections" scope="199c-e370-ccd7-999d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a80b-b562-e65a-c84c" type="atLeast"/>
                       </conditions>
@@ -2038,6 +2039,7 @@
             <entryLink id="563f-d021-f981-e81c" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="1b5b-dd85-76c5-af35" type="selectionEntryGroup"/>
             <entryLink id="09c9-74ef-2f8f-bb05" name="Talismans" hidden="false" collective="false" import="true" targetId="285d-a8d2-6aca-cb1b" type="selectionEntryGroup"/>
             <entryLink id="0f24-e853-27f7-545f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="3968-48e7-fdf1-bde5" type="selectionEntryGroup"/>
+            <entryLink id="1b45-7b8d-c8a9-56d4" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magice Armour (wiz)" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2573,16 +2575,16 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1ba9-5e92-077b-76bc" name="Mark of the Bear God" hidden="true" collective="true" import="true" type="upgrade">
+            <selectionEntry id="1ba9-5e92-077b-76bc" name="Mark of the Bear God" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="e703-322b-9b25-1436" value="1.0">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="321e-52cf-8764-3802" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e703-322b-9b25-1436" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e703-322b-9b25-1436" type="max"/>
               </constraints>
               <rules>
                 <rule id="1057-8669-97ce-c985" name="Mark of the Bear God" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false">
@@ -2725,7 +2727,8 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c47-aa4a-4f48-d36d" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="b057-e118-fa57-cba5" name="Pike" hidden="false" targetId="2c1e-e11e-fadf-b4cf" type="profile"/>
+                    <infoLink id="b057-e118-fa57-cba5" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+                    <infoLink id="1848-3087-dae9-6b81" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4934,6 +4937,26 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="5b8c-99ec-47b3-f684" name="Ice-armour of Jekaterina" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab74-a4e9-2b7f-7450" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="161b-60ad-e53d-ac19" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8101-c39e-1e83-0a7a" name="Ice-armour of Jekaterina" publicationId="1607-bfe9-82af-d3dc" page="84" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+          <characteristics>
+            <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+            <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+            <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">This Armour save cannot be improved by any means. The armour save never falls below 4+, even if the opponents S or magical weapon would reduce it to less. If the save ever fails the armour is destroyed. Wizards can wear the Ice Armour without it affecting their ability to cast spells.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b5b-dd85-76c5-af35" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>
@@ -5004,27 +5027,10 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
             <cost name="pts" typeId="points" value="65.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9fa0-5623-e5e6-85a7" name="Ice-armour of Jekaterina" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f123-bd1f-898f-4c80" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32d4-3f75-52cd-0797" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1d86-3983-7afa-d773" name="Ice-armour of Jekaterina" publicationId="1607-bfe9-82af-d3dc" page="84" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
-              <characteristics>
-                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">1+</characteristic>
-                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">1+</characteristic>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">This Armour save cannot be improved by any means. The armour save never falls below 4+, even if the opponents S or magical weapon would reduce it to less. If the save ever fails the armour is destroyed. Wizards can wear the Ice Armour without it affecting their ability to cast spells.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="8586-36b1-a4cd-1e36" name="Magic Armour" hidden="false" collective="false" import="true" targetId="557c-c8c5-0c0f-d2b3" type="selectionEntryGroup"/>
+        <entryLink id="9ef5-ddfe-8789-59d1" name="Ice-armour of Jekaterina" hidden="false" collective="false" import="true" targetId="5b8c-99ec-47b3-f684" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3968-48e7-fdf1-bde5" name="Enchanted Items" hidden="false" collective="false" import="true">
@@ -5184,6 +5190,14 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
       </selectionEntries>
       <entryLinks>
         <entryLink id="3ff5-8f5a-732e-4527" name="Magic Standards" hidden="false" collective="false" import="true" targetId="2613-24d7-a26e-eb37" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="Magice Armour (wiz)" name="Magic Armour" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="741f-536e-c740-73da" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="b5b7-7043-bbcc-a39f" name="Ice-armour of Jekaterina" hidden="false" collective="false" import="true" targetId="5b8c-99ec-47b3-f684" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

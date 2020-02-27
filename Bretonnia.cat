@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
       <characteristicTypes>
@@ -1265,7 +1265,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
             </selectionEntry>
             <selectionEntry id="e759-f11c-c673-83b2" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="8336-c4cb-545f-2d2a" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62ba-3b25-3740-7d85" type="atLeast"/>
                   </conditions>
@@ -1281,21 +1281,21 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <cost name="pts" typeId="points" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="121b-a71c-8c6b-5462" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="121b-a71c-8c6b-5462" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="069d-352e-0f08-d5aa" value="0.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94fa-c4db-0cac-08b9" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="069d-352e-0f08-d5aa" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62ba-3b25-3740-7d85" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="069d-352e-0f08-d5aa" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="069d-352e-0f08-d5aa" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="9fd2-2818-4813-3f76" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1598,7 +1598,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
     </selectionEntry>
     <selectionEntry id="338e-3cea-2d05-35f8" name="Repanse de Lyonesse" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="cba2-55a5-1f4a-323d" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1737,7 +1737,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
     </selectionEntry>
     <selectionEntry id="e701-275d-8b2a-167b" name="Armand D&apos;Aquitaine" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="41bb-447e-5df4-49b5" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2551,7 +2551,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
         </selectionEntry>
         <selectionEntry id="171f-10d4-dbfc-4008" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="67e3-1e72-e9a6-0030" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98c9-6f3d-e3f6-8c37" type="atLeast"/>
               </conditions>
@@ -2707,7 +2707,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
           <selectionEntries>
             <selectionEntry id="ABS P" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="ceec-605f-81b7-845a" value="0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -2728,7 +2728,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
               <selectionEntries>
                 <selectionEntry id="98c9-6f3d-e3f6-8c37" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="5798-289c-a8c3-7084" value="0">
                       <conditions>
                         <condition field="selections" scope="435e-f593-3b48-af1d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="171f-10d4-dbfc-4008" type="atLeast"/>
                       </conditions>
@@ -2784,7 +2784,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
             </selectionEntry>
             <selectionEntry id="1b0c-7ef4-41b3-d2b7" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="3da0-cea6-1153-7366" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3aac-1485-54a2-f222" type="atLeast"/>
                   </conditions>
@@ -2800,21 +2800,21 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="df7b-549b-7733-d740" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="df7b-549b-7733-d740" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="c5c9-936c-c04a-f89e" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3aac-1485-54a2-f222" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="c5c9-936c-c04a-f89e" value="0.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e2d-01d3-2483-7056" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5c9-936c-c04a-f89e" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5c9-936c-c04a-f89e" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="0e3c-56a0-0e5b-8236" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -3131,7 +3131,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
             </selectionEntry>
             <selectionEntry id="cc9b-6778-2fa8-57c6" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="5c1b-56e7-7de8-508c" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac13-2144-c71c-fe8a" type="atLeast"/>
                   </conditions>
@@ -3147,16 +3147,16 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e1e7-d1fb-cd61-451b" name="Lance (mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e1e7-d1fb-cd61-451b" name="Lance (mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="504d-a5e0-6260-c8af" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac13-2144-c71c-fe8a" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="504d-a5e0-6260-c8af" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="504d-a5e0-6260-c8af" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="d258-cec2-042e-4d65" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -5347,21 +5347,21 @@ In addition, the presence of the Grail Reliquae means that the entire unit will 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6835-cbf0-04c2-e59d" name="Bowmen of Bergerac" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="6835-cbf0-04c2-e59d" name="Bowmen of Bergerac" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="da66-c164-d681-d2ca" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b5c-50ee-e640-b4bb" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="da66-c164-d681-d2ca" value="1.0">
+        <modifier type="set" field="69f5-4318-9cf9-c46b" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b5c-50ee-e640-b4bb" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="69f5-4318-9cf9-c46b" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="69f5-4318-9cf9-c46b" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da66-c164-d681-d2ca" type="min"/>
       </constraints>
       <categoryLinks>
@@ -7664,7 +7664,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c0a2-f079-ccc3-d3b3" name="The Silver Lance of the Blessed" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7709,7 +7709,7 @@ phase is suffered, all subsequent wounds suffered during that phase are ignored.
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

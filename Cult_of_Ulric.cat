@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="1" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="dc49-a383-6108-ad49" name="Talisman of Ulric">
       <characteristicTypes>
@@ -247,7 +247,7 @@
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -364,7 +364,7 @@
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -675,16 +675,16 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="368a-0e77-9771-f468" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="368a-0e77-9771-f468" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="b1f2-6d9c-07d8-378b" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edda-9757-c3b9-f0c9" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1f2-6d9c-07d8-378b" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1f2-6d9c-07d8-378b" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="af0d-95eb-0c2f-a24e" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -827,23 +827,27 @@
     </selectionEntry>
     <selectionEntry id="a1a3-e3c3-c4ed-05da" name="General of the Empire" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="3a5a-d764-f2b4-e64c" name="General of the Empire" publicationId="315d-135b-135c-07ce" page="148" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="3a5a-d764-f2b4-e64c" name="General of the Empire" publicationId="315d-135b-135c-07ce" page="174" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="f417-93ae-7236-74f6" name="Magic Standard for State Troops" publicationId="315d-135b-135c-07ce" page="247" hidden="false">
+          <description>For each General of the Empire your army includes, one unit of State Troops with a Standard Bearer may take a Magic Standard worth up to 25 points.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="327c-3962-4920-9e00" name="Magic Standard for State Troops" hidden="false" targetId="71ee-894b-e7a7-9d4e" type="rule"/>
         <infoLink id="c9db-62a5-f880-b10c" name="Hold the Line!" hidden="false" targetId="eaf2-7e09-e71c-7057" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1037,16 +1041,16 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1cec-7ee3-1529-5e90" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1cec-7ee3-1529-5e90" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="a3ce-2f54-7cad-41f2" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76da-7f61-258b-97d5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3ce-2f54-7cad-41f2" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3ce-2f54-7cad-41f2" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="a87e-4056-0efa-6277" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1393,21 +1397,21 @@
                 <cost name="pts" typeId="points" value="45.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9c75-7433-8df7-4984" name="Imperial Griffon" hidden="true" collective="false" import="true" type="model">
+            <selectionEntry id="9c75-7433-8df7-4984" name="Imperial Griffon" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="afc7-843e-4003-c977" value="1.0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f67d-40eb-7727-e8df" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f68-de02-2ed7-0715" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Beasts 3" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Beasts 4" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afc7-843e-4003-c977" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afc7-843e-4003-c977" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="8eae-d9cc-04f0-2a66" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
@@ -1482,6 +1486,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5779-68dd-2d9c-c73b" name="Vorn Thugenheim" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="8444-8968-0622-5def" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41e1-5308-f76f-5e3e" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8444-8968-0622-5def" type="max"/>
       </constraints>
@@ -2061,7 +2072,7 @@
     </selectionEntry>
     <selectionEntry id="f093-b407-f458-2140" name="Witch Hunter" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="c50d-567a-ba50-e62c" name="Witch Hunter" publicationId="315d-135b-135c-07ce" page="157" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="c50d-567a-ba50-e62c" name="Witch Hunter" publicationId="315d-135b-135c-07ce" page="183" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -2077,14 +2088,14 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="f025-2ef1-8381-04a5" name="Tools of Judgement" publicationId="315d-135b-135c-07ce" page="157" hidden="false">
-          <description>When attacking Wizards, Undead or Daemonic models in close combat, a Witch Hunter re-rolls failed rolls To Wound.</description>
+        <rule id="f025-2ef1-8381-04a5" name="Tools of Judgement" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
+          <description>When attacking Wizards, or models with Daemonic, Undead or Vampiric in close combat, a Witch Hunter re-rolls failed rolls To Wound.</description>
         </rule>
-        <rule id="e5ca-d2c2-59b4-efee" name="Accusation" publicationId="315d-135b-135c-07ce" page="157" hidden="false">
-          <description>After deployment, but before the first turn begins, select a single model in your opponent&apos;s army to accuse of heresy. The Witch Hunter may re-roll all failed To Hit rolls and has Killing Blow (including missile attacks) and Sniper against this model.</description>
+        <rule id="e5ca-d2c2-59b4-efee" name="Accusation" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
+          <description>After deployment, but before the first turn begins, select a single model in your opponent&apos;s army to accuse of heresy. This is the Witch Hunter&apos;s primary quarry. The Witch Hunter&apos;s may re-roll all failed To Hit against his primary quarry. Every hit he inflicts on that models also has Killing Blow, even if they were from a shooting attack. Finally, the Witch Hunter may also choose to shoot at the primary quarry as if he had Sniper.</description>
         </rule>
-        <rule id="809a-cc0d-dba1-f3cc" name="Grim Resolve" publicationId="315d-135b-135c-07ce" page="157" hidden="false">
-          <description>Witch Hunters have Immunity (Fear). In addition, Witch Hunters, and any unit they are in, treat Terror-causing creatures as causing Fear instead.</description>
+        <rule id="809a-cc0d-dba1-f3cc" name="Grim Resolve" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
+          <description>Witch Hunters, and any unit they are in, have Immunity (Fear).</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2214,7 +2225,7 @@
     </selectionEntry>
     <selectionEntry id="d963-5a9d-9a38-9430" name="Captain of the Empire" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="a8b4-a075-7642-92e4" name="Captain of the Empire" publicationId="315d-135b-135c-07ce" page="148" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="a8b4-a075-7642-92e4" name="Captain of the Empire" publicationId="315d-135b-135c-07ce" page="175" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -2247,7 +2258,7 @@
         </selectionEntry>
         <selectionEntry id="418d-e55e-42cb-bf4d" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="953d-6c7e-9e54-2ae2" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41e1-5308-f76f-5e3e" type="atLeast"/>
               </conditions>
@@ -2276,7 +2287,7 @@
           <selectionEntries>
             <selectionEntry id="41e1-5308-f76f-5e3e" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="af11-a932-575c-99a0" value="0">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5779-68dd-2d9c-c73b" type="atLeast"/>
                   </conditions>
@@ -2292,7 +2303,7 @@
               <selectionEntries>
                 <selectionEntry id="007a-b7d5-be23-626f" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="6af1-c199-a530-6129" value="0">
                       <conditions>
                         <condition field="selections" scope="d963-5a9d-9a38-9430" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="418d-e55e-42cb-bf4d" type="atLeast"/>
                       </conditions>
@@ -2335,16 +2346,16 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d5f4-b733-e6ca-8b5a" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d5f4-b733-e6ca-8b5a" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="f1fa-008b-f451-4fa5" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76e0-978e-8f22-2c27" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1fa-008b-f451-4fa5" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1fa-008b-f451-4fa5" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="1efd-57d1-cc56-ed1f" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -3336,7 +3347,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0ff-20f6-d6df-39dd" type="min"/>
           </constraints>
           <profiles>
-            <profile id="9cff-be17-35a4-a7b4" name="Spearman" publicationId="315d-135b-135c-07ce" page="162" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="9cff-be17-35a4-a7b4" name="Spearman" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -3355,27 +3366,15 @@
             <infoLink id="fc27-fc25-ba1c-ab4e" name="State Troops" hidden="false" targetId="3874-4a61-1b0a-4094" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="a357-1c6f-8a55-753c" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e515-7b30-8463-9539" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7c03-8cf8-d164-c1da" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="d283-78bf-7323-e402" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c885-fa13-3b50-649b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99c6-dfd2-63d2-a01b" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="76e9-ff99-382c-5e4a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3408,11 +3407,23 @@
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="936b-4e15-deb8-03fa" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="558f-7ae3-db57-ac34" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="82b5-5f9e-d445-415b" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+                    <infoLink id="9854-0b90-3804-b2f4" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3473,7 +3484,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fd2-8cb1-be9d-23e6" type="min"/>
           </constraints>
           <profiles>
-            <profile id="6470-2bef-8321-2b32" name="Halberdier" publicationId="315d-135b-135c-07ce" page="161" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="6470-2bef-8321-2b32" name="Halberdier" publicationId="315d-135b-135c-07ce" page="187" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -3517,10 +3528,9 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="18be-6cfd-cf5d-a69c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bee-f36d-2a85-a1a2">
+            <selectionEntryGroup id="18be-6cfd-cf5d-a69c" name="Armour" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9ae-34b9-efcf-08cb" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f655-6d1f-2c38-4a8e" type="min"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="3e3e-9bb6-9acb-6422" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -3531,7 +3541,7 @@
                     <infoLink id="a2dc-d39b-b943-d4d8" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1bee-f36d-2a85-a1a2" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -3542,14 +3552,14 @@
                     <infoLink id="8804-4ef6-ca8c-5afe" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="6.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3610,7 +3620,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f565-f229-4bd2-6cd2" type="min"/>
           </constraints>
           <profiles>
-            <profile id="4c4d-29e4-318e-5f2e" name="Swordsman" publicationId="315d-135b-135c-07ce" page="162" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="4c4d-29e4-318e-5f2e" name="Swordsman" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3618,7 +3628,7 @@
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
@@ -3644,13 +3654,12 @@
             <selectionEntry id="5411-2c2d-e872-3340" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1023-f96e-8ef9-2e5e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc18-526d-eb8b-db75" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="9c3c-2f40-9fda-a27a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f82a-26eb-35a2-94de" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -3667,7 +3676,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="6.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3728,7 +3737,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e10-4ef6-9e1a-bf0f" type="min"/>
           </constraints>
           <profiles>
-            <profile id="1364-4771-7ff6-b7ab" name="Archer" publicationId="315d-135b-135c-07ce" page="162" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="1364-4771-7ff6-b7ab" name="Archer" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -3856,7 +3865,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7025-c5f3-3c2e-4409" type="min"/>
           </constraints>
           <profiles>
-            <profile id="42f8-6992-6213-f07d" name="Huntsman" publicationId="315d-135b-135c-07ce" page="164" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="42f8-6992-6213-f07d" name="Huntsman" publicationId="315d-135b-135c-07ce" page="190" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -3936,7 +3945,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3eed-321e-918d-2f43" type="max"/>
               </constraints>
               <profiles>
-                <profile id="066f-730c-40d4-4b35" name="Tracker" publicationId="315d-135b-135c-07ce" page="164" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="066f-730c-40d4-4b35" name="Tracker" publicationId="315d-135b-135c-07ce" page="190" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -3975,7 +3984,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db0-a0bb-5241-7db7" type="min"/>
           </constraints>
           <profiles>
-            <profile id="aec8-f0c2-2f5a-61e7" name="Militia Fighter" publicationId="315d-135b-135c-07ce" page="163" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="aec8-f0c2-2f5a-61e7" name="Militia Fighter" publicationId="315d-135b-135c-07ce" page="189" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -4093,7 +4102,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a15a-5d76-358d-a9e2" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f414-87ba-8f2f-3875" name="Militia Leader" publicationId="315d-135b-135c-07ce" page="163" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="f414-87ba-8f2f-3875" name="Militia Leader" publicationId="315d-135b-135c-07ce" page="189" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -4132,7 +4141,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc8-6a2d-ccb1-7cde" type="min"/>
           </constraints>
           <profiles>
-            <profile id="8c91-e746-b10f-f627" name="Crossbowman" publicationId="315d-135b-135c-07ce" page="162" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="8c91-e746-b10f-f627" name="Crossbowman" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -4249,7 +4258,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7b-ad86-1f6c-8d03" type="min"/>
           </constraints>
           <profiles>
-            <profile id="0962-b27b-e094-798d" name="Handgunner" publicationId="315d-135b-135c-07ce" page="162" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="0962-b27b-e094-798d" name="Handgunner" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -4424,7 +4433,7 @@
     </selectionEntry>
     <selectionEntry id="f9ad-d2f3-16a8-a3f8" name="Mortar" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="32b9-e27f-4435-b34e" name="Mortar" publicationId="315d-135b-135c-07ce" page="180" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="32b9-e27f-4435-b34e" name="Mortar" publicationId="315d-135b-135c-07ce" page="207" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215"/>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
@@ -4438,7 +4447,7 @@
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine (Stone Thrower)</characteristic>
           </characteristics>
         </profile>
-        <profile id="832f-6ca7-b334-1699" name="Mortar" publicationId="315d-135b-135c-07ce" page="181" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+        <profile id="832f-6ca7-b334-1699" name="Mortar" publicationId="315d-135b-135c-07ce" page="207" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
           <characteristics>
             <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Stone Thrower</characteristic>
             <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-48&quot;</characteristic>
@@ -4487,7 +4496,7 @@
     </selectionEntry>
     <selectionEntry id="9ea5-9043-0c0d-1f98" name="Great Cannon" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="a2a2-56b6-2efb-9092" name="Great Cannon" publicationId="315d-135b-135c-07ce" page="180" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="a2a2-56b6-2efb-9092" name="Great Cannon" publicationId="315d-135b-135c-07ce" page="206" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215"/>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
@@ -4555,7 +4564,7 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="144f-7d60-db63-ab91" type="min"/>
           </constraints>
           <profiles>
-            <profile id="a944-ec2d-b4d3-e448" name="Greatsword" publicationId="315d-135b-135c-07ce" page="165" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="a944-ec2d-b4d3-e448" name="Greatsword" publicationId="315d-135b-135c-07ce" page="191" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4563,7 +4572,7 @@
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
@@ -4632,7 +4641,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="9.0"/>
+            <cost name="pts" typeId="points" value="8.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4680,7 +4689,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6db-2fdd-cc78-96a1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="481c-5819-7b99-3f21" name="Count&apos;s Champion" publicationId="315d-135b-135c-07ce" page="165" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="481c-5819-7b99-3f21" name="Count&apos;s Champion" publicationId="315d-135b-135c-07ce" page="191" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4688,7 +4697,7 @@
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
@@ -5407,22 +5416,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f6f-9710-0301-1966" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="7dd0-da7a-bffd-9708" name="Inner Circle Knight" publicationId="7f0c-7d47-a39d-8c68" page="43" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="1d85-425a-6699-8b45" name="Inner Circle Knight" hidden="false" targetId="67ee-75e0-fdfb-d0b9" type="profile"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="84d1-0bb2-947f-1ee1" name="Lance (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -5513,24 +5509,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e24-e9a7-8013-9ca1" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="69b4-8fb7-9825-aadc" name="Inner Circle Preceptor" publicationId="7f0c-7d47-a39d-8c68" page="43" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="1eff-f307-7cad-7f01" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="6c6a-94b3-f0c7-3c35" name="Inner Circle Preceptor" hidden="false" targetId="8607-b5a8-57d1-ffdd" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -5867,9 +5848,6 @@
         <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3a5c-cf73-3c18-d74b" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a94-2f6f-2da1-b665" type="max"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="eb25-f33a-e596-c675" name="Magic Standard for State Troops" hidden="false" targetId="71ee-894b-e7a7-9d4e" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="b168-c488-a5ed-b2ac" name="Magic Standards" hidden="false" collective="false" import="true" targetId="512d-8341-110b-e010" type="selectionEntryGroup"/>
       </entryLinks>
@@ -6199,7 +6177,7 @@
     <rule id="da4f-edda-2d3a-b8c3" name="Arabyan Warhorse" publicationId="7f0c-7d47-a39d-8c68" page="42" hidden="false">
       <description>The Knights Panther ride horses with a blood lineage from the great steeds of Araby. When charging, the Knights may add an extra D3&quot; to their Charge range.</description>
     </rule>
-    <rule id="3874-4a61-1b0a-4094" name="State Troops" publicationId="315d-135b-135c-07ce" page="146" hidden="false">
+    <rule id="3874-4a61-1b0a-4094" name="State Troops" publicationId="315d-135b-135c-07ce" page="172" hidden="false">
       <description>State Troops are trained to support and protect each other in battle. If an enemy unit declares a charge against a State Troop unit, and the State Troops do not flee as a charge reaction, then all unengaged State Troop units within 3&quot; can make either a Support Fire or a Counter Charge action. These actions are declared immediately after their State Troops&apos; charge reaction. If the charged State Troops unit does not get a charge reaction for any reason then the other State Troops units within range cannot make a Support Fire or a Counter Charge action.
 
 Additionally, a State Troop unit can only declare one Support Fire action, one Stand and Shoot reaction or one Counter Charge action per turn.
@@ -6210,7 +6188,7 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
 
 • Counter Charge: If a Counter Charge action is declared, the unit makes an out of sequence move that is resolved as it had just declared a charge against the charging unit. This move is made after your opponent has moved all of his charging units, as long as one or more enemy units has successfully completed a charge against the charged State Troop unit. The enemy does not get to make any charge reactions against a Counter Charge, but otherwise all the normal charging rules and bonuses apply.</description>
     </rule>
-    <rule id="eaf2-7e09-e71c-7057" name="Hold the Line!" publicationId="315d-135b-135c-07ce" page="148" hidden="false">
+    <rule id="eaf2-7e09-e71c-7057" name="Hold the Line!" publicationId="315d-135b-135c-07ce" page="174" hidden="false">
       <description>While this character is in a unit, the unit rolls 3D6 for any Break test it is required to take, and uses the two lowest scores.</description>
     </rule>
     <rule id="a541-d984-83fd-c482" name="Bloodroar" publicationId="315d-135b-135c-07ce" page="192" hidden="false">
@@ -6230,9 +6208,6 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
     </rule>
     <rule id="b752-0e0c-ea7e-d450" name="Two Heads" publicationId="315d-135b-135c-07ce" page="192" hidden="false">
       <description>The Griffon gains an extra A.</description>
-    </rule>
-    <rule id="71ee-894b-e7a7-9d4e" name="Magic Standard for State Troops" publicationId="315d-135b-135c-07ce" page="226" hidden="false">
-      <description>Each General of the Empire allows one unit of State Troops to pick a Magic Standard.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6327,13 +6302,13 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
       </characteristics>
     </profile>
-    <profile id="78f2-4a74-c0fa-1098" name="Sergeant" publicationId="315d-135b-135c-07ce" page="161" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="78f2-4a74-c0fa-1098" name="Sergeant" publicationId="315d-135b-135c-07ce" page="187" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -6355,13 +6330,13 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
       </characteristics>
     </profile>
-    <profile id="5c9b-0cdf-d4d2-b2ec" name="Marksman" publicationId="315d-135b-135c-07ce" page="162" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="5c9b-0cdf-d4d2-b2ec" name="Marksman" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -6375,7 +6350,7 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
       </characteristics>
     </profile>
-    <profile id="5b1f-1f80-4d4c-bb33" name="Crew" publicationId="315d-135b-135c-07ce" page="180" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="5b1f-1f80-4d4c-bb33" name="Crew" publicationId="315d-135b-135c-07ce" page="206" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -6425,7 +6400,7 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>

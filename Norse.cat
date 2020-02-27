@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b7f1-0dfa-b690-b138" name="Norse" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b7f1-0dfa-b690-b138" name="Norse" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1507-81b3-767a-5985" name="Skald Songs and Stories">
       <characteristicTypes>
@@ -545,14 +545,14 @@
             </selectionEntry>
             <selectionEntry id="54a4-c1ca-9ed0-686c" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="65b2-5d72-2939-1f8c" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4f-cf16-c0f4-6213" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65b2-5d72-2939-1f8c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65b2-5d72-2939-1f8c" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="03ed-65e1-3610-4e14" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -563,7 +563,7 @@
             </selectionEntry>
             <selectionEntry id="e2da-bf9c-d68e-1ca4" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="f71d-68c1-524e-6ef8" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4f-cf16-c0f4-6213" type="atLeast"/>
                   </conditions>
@@ -1112,7 +1112,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
       <selectionEntries>
         <selectionEntry id="7cca-d998-cbde-0ba5" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="8277-393b-ad64-0d03" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4970-ea06-a3c1-7df1" type="atLeast"/>
               </conditions>
@@ -1243,16 +1243,16 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8861-a28f-69c0-d3fb" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8861-a28f-69c0-d3fb" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="29f0-f590-b7c9-1a2f" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e699-889d-9fa7-24ce" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29f0-f590-b7c9-1a2f" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29f0-f590-b7c9-1a2f" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="2f9b-ef96-8706-e096" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1263,7 +1263,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
             </selectionEntry>
             <selectionEntry id="5112-82a5-9846-2164" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="b368-0d4d-cac2-89a4" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e699-889d-9fa7-24ce" type="atLeast"/>
                   </conditions>
@@ -1318,7 +1318,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
           <selectionEntries>
             <selectionEntry id="d80d-84ff-48fc-ce04" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="2bb2-884c-b448-1f95" value="0">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f6b-bc10-47ca-b1c5" type="atLeast"/>
                   </conditions>
@@ -1334,7 +1334,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
               <selectionEntries>
                 <selectionEntry id="4970-ea06-a3c1-7df1" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="eeed-5528-e1f1-9043" value="0">
                       <conditions>
                         <condition field="selections" scope="f1a2-0abc-6114-dd52" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cca-d998-cbde-0ba5" type="atLeast"/>
                       </conditions>
@@ -1580,7 +1580,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
         </selectionEntry>
         <selectionEntry id="7f6b-bc10-47ca-b1c5" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="d5f9-ac36-3ed3-a949" value="0">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d80d-84ff-48fc-ce04" type="atLeast"/>
               </conditions>
@@ -1596,7 +1596,7 @@ In addition, roll a D6 at beginning of the Norse turn. On a roll of a 6 the Rave
           <selectionEntries>
             <selectionEntry id="7470-ece9-9e39-12b5" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="6416-9dd2-de8f-f8f2" value="0">
                   <conditions>
                     <condition field="selections" scope="b1ae-27e2-a85e-894e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2eeb-b1b8-e68b-d24c" type="atLeast"/>
                   </conditions>

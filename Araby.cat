@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5388-e68f-6e10-6be4" name="Bladedances">
       <characteristicTypes>
@@ -19,7 +19,7 @@
   <selectionEntries>
     <selectionEntry id="bdc6-07bf-c574-3e65" name="Khalil Al-Zahir" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="ba65-abcf-ebe0-3c1b" value="0">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2663-6359-86f8-e2a6" type="atLeast"/>
           </conditions>
@@ -163,7 +163,7 @@
     </selectionEntry>
     <selectionEntry id="2663-6359-86f8-e2a6" name="Sultan Jaffar" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="b28b-9d35-8f2c-2806" value="0">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdc6-07bf-c574-3e65" type="atLeast"/>
           </conditions>
@@ -996,16 +996,16 @@
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="74dd-6238-31f8-fc11" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="74dd-6238-31f8-fc11" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="722a-0109-2074-2733" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fb7-96ed-0354-d1e1" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="722a-0109-2074-2733" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="722a-0109-2074-2733" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="8a38-58ad-bf54-5c87" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2279,7 +2279,7 @@
         </selectionEntry>
         <selectionEntry id="7fe9-e27a-3471-a993" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="a70f-23ce-50d5-1e53" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1cee-b389-72c8-ec5a" type="atLeast"/>
               </conditions>
@@ -2347,16 +2347,16 @@
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3be3-d7bb-9448-2c6b" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3be3-d7bb-9448-2c6b" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="47aa-8f69-d28f-6cb2" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1749-be1d-1a1e-5369" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47aa-8f69-d28f-6cb2" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47aa-8f69-d28f-6cb2" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="fc50-6c5d-40d0-72b2" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2613,7 +2613,7 @@
               <selectionEntries>
                 <selectionEntry id="1cee-b389-72c8-ec5a" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="3bb0-f0f2-4cae-8294" value="0">
                       <conditions>
                         <condition field="selections" scope="9005-669d-b763-6805" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe9-e27a-3471-a993" type="atLeast"/>
                       </conditions>
@@ -4511,14 +4511,14 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="52d0-a4fb-2be0-09e3" name="The First Division" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="52d0-a4fb-2be0-09e3" name="The First Division" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="23b0-820c-8ca7-5a42" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="670e-f160-ee55-682d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="23b0-820c-8ca7-5a42" value="1.0">
+        <modifier type="set" field="279f-5274-1160-30f7" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="670e-f160-ee55-682d" type="atLeast"/>
           </conditions>
@@ -4526,7 +4526,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b0-820c-8ca7-5a42" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="279f-5274-1160-30f7" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="279f-5274-1160-30f7" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="590c-f3f8-0f20-1423" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -4630,7 +4630,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="80e4-6042-6bf9-f593" name="Secondary Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="80e4-6042-6bf9-f593" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3a8f-13b7-90e6-3c10">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d347-c656-fb78-0574" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ea2-8ae0-1e36-391a" type="min"/>

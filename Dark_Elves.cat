@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
       <characteristicTypes>
@@ -584,7 +584,7 @@
       </profiles>
       <rules>
         <rule id="2546-c908-486a-2c0c" name="Queen of Khaine" publicationId="9e23-79cb-pubN76150" page="158" hidden="false">
-          <description>If Hellebron is your General, you must take Witch Elves as Core units rather than as Special units.</description>
+          <description>If Hellebron is your General, all Witch Elves are taken as Core units rather than as Special units.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1084,16 +1084,16 @@
                 <cost name="pts" typeId="points" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1e66-65d1-14d1-930c" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1e66-65d1-14d1-930c" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="dd3a-6d36-76fe-011a" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="391e-8ec6-29de-7dfc" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd3a-6d36-76fe-011a" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd3a-6d36-76fe-011a" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="1dd2-35f2-c519-ad07" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1113,16 +1113,16 @@
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="08ca-0186-d450-07a4" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="08ca-0186-d450-07a4" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="8f2c-ef46-4aca-1221" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="391e-8ec6-29de-7dfc" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f2c-ef46-4aca-1221" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f2c-ef46-4aca-1221" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="e072-0caa-efca-bebd" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -1133,7 +1133,7 @@
             </selectionEntry>
             <selectionEntry id="4874-fa0a-40e6-a2fd" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="1701-0ee2-08ba-e495" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="391e-8ec6-29de-7dfc" type="atLeast"/>
                   </conditions>
@@ -2280,7 +2280,7 @@
         </selectionEntry>
         <selectionEntry id="53a0-620b-b768-46d2" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="fe89-0129-7153-5bae" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e18-6543-6dfa-641d" type="atLeast"/>
               </conditions>
@@ -2486,6 +2486,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="ABS M" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e866-8690-fa41-f752" value="0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS DH" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e07d-7ad4-5db3-c4a3" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e866-8690-fa41-f752" type="max"/>
@@ -2496,7 +2503,7 @@
               <selectionEntries>
                 <selectionEntry id="3e18-6543-6dfa-641d" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="cbc7-416a-41a1-a8ed" value="0">
                       <conditions>
                         <condition field="selections" scope="8899-d33f-a3d2-ab0a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53a0-620b-b768-46d2" type="atLeast"/>
                       </conditions>
@@ -2563,14 +2570,14 @@
             </selectionEntry>
             <selectionEntry id="8a53-93d1-625f-7d09" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="acb8-526f-86b1-de6a" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="805b-4573-e0e4-e08c" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acb8-526f-86b1-de6a" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acb8-526f-86b1-de6a" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="3c62-05ec-5073-eff5" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2590,16 +2597,16 @@
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cf74-8afa-7a24-97f4" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cf74-8afa-7a24-97f4" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="c19d-7fee-0e06-1260" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="805b-4573-e0e4-e08c" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c19d-7fee-0e06-1260" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c19d-7fee-0e06-1260" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="5672-6ac1-d038-39f0" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -2610,7 +2617,7 @@
             </selectionEntry>
             <selectionEntry id="2abb-6404-208e-1134" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="ab68-7902-be85-47f1" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="805b-4573-e0e4-e08c" type="atLeast"/>
                   </conditions>
@@ -3212,7 +3219,7 @@
         </selectionEntry>
         <selectionEntry id="c707-4da3-d7af-16ee" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="b980-a5d3-da79-d296" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f87f-e774-5947-6b4e" type="atLeast"/>
               </conditions>
@@ -3241,7 +3248,7 @@
           <selectionEntries>
             <selectionEntry id="ABS DH" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="e206-1277-e2c8-352c" value="0">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS M" type="atLeast"/>
                   </conditions>
@@ -3257,7 +3264,7 @@
               <selectionEntries>
                 <selectionEntry id="f87f-e774-5947-6b4e" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="6d21-f682-5fdd-d019" value="0">
                       <conditions>
                         <condition field="selections" scope="6f0e-38c5-f28d-3931" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c707-4da3-d7af-16ee" type="atLeast"/>
                       </conditions>
@@ -4638,14 +4645,27 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cebb-830e-dc13-93b2" name="Witch Elves (Crone Hellebron)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="cebb-830e-dc13-93b2" name="Witch Elves (Hellebron as General)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="e73b-d0f5-fb1e-a202" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccf0-8e58-6b28-51aa" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="e73b-d0f5-fb1e-a202" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d195-a492-ae23-f518" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a68-0a36-aadb-f84e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e73b-d0f5-fb1e-a202" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="2fa3-92c7-3a4d-ef0a" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -4753,12 +4773,15 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
     </selectionEntry>
     <selectionEntry id="d195-a492-ae23-f518" name="Witch Elves" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="b1e0-193b-b93c-d4bb" value="0">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccf0-8e58-6b28-51aa" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cebb-830e-dc13-93b2" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b1e0-193b-b93c-d4bb" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="fe81-a881-1289-4162" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -6809,27 +6832,18 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a68-0a36-aadb-f84e" name="Witch Elves" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="1a68-0a36-aadb-f84e" name="Witch Elves" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f0e-38c5-f28d-3931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c97-ff6d-573b-c50a" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="increment" field="f5a2-2b52-5750-ecd4" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f0e-38c5-f28d-3931" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c97-ff6d-573b-c50a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccf0-8e58-6b28-51aa" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="f5a2-2b52-5750-ecd4" value="0.0">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccf0-8e58-6b28-51aa" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cebb-830e-dc13-93b2" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>

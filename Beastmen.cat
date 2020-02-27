@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
       <characteristicTypes>
@@ -788,7 +788,7 @@
                         <infoLink id="90a6-ecf0-8417-75b0" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="1.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -1947,7 +1947,7 @@
                                 <infoLink id="168a-0d5a-5beb-8e7e" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                               </infoLinks>
                               <costs>
-                                <cost name="pts" typeId="points" value="1.0"/>
+                                <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
                           </selectionEntries>
@@ -3087,7 +3087,7 @@
         </selectionEntry>
         <selectionEntry id="6955-d81c-4437-4d39" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="cc2c-a517-48ca-23c9" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7573-a28a-60cc-9631" type="atLeast"/>
               </conditions>
@@ -7081,13 +7081,8 @@ but if the Giant should be slain, any enemy trapped in its bag are freed at the 
         <profile id="ec28-748b-772e-aff5" name="Result" publicationId="9e23-79cb-pubN71963" page="92" hidden="false" typeId="5c9e-5912-4cca-84b7" typeName="Small Things Chart">
           <characteristics>
             <characteristic name="1" typeId="e05d-5881-8f79-57fc">Yell and Brawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points or more (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
-            <characteristic name="2" typeId="38ae-9a7e-d247-8d2c">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before it starts, the
-Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its feet, the target unit sustains 2D6 S 6 hits. Work out damage and saves as usual. Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round
-will automatically do so in the following round if it is able to, assuming that it did not fall over in the
-previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same
-target until it falls over, the target is destroyed, or the combat ends.</characteristic>
-            <characteristic name="3" typeId="acab-4f80-dff4-9e64">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit
-(Giant player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things until you get another result. The Giant grabs the model and the player rolls a D6 on the Pick Up and...:</characteristic>
+            <characteristic name="2" typeId="38ae-9a7e-d247-8d2c">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its feet, the target unit sustains 2D6 S 6 hits. Work out damage and saves as usual. Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if it is able to, assuming that it did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends.</characteristic>
+            <characteristic name="3" typeId="acab-4f80-dff4-9e64">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things until you get another result. The Giant grabs the model and the player rolls a D6 on the Pick Up and... table.</characteristic>
             <characteristic name="4-6" typeId="72d8-1f75-82a5-7698">Swing with club: The Giant fights using the Random Attacks (2D6) this round.</characteristic>
           </characteristics>
         </profile>
@@ -7237,7 +7232,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
                 <infoLink id="b9ef-d1f9-63f2-a046" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7250,9 +7245,9 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
         <cost name="pts" typeId="points" value="225.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3a14-19b1-b661-f660" name="The Sons of Ghorros" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="3a14-19b1-b661-f660" name="The Sons of Ghorros" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="324b-73f5-dc8c-b01c" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="27ea-623d-3d4d-18d2" type="atLeast"/>
           </conditions>
@@ -7265,7 +7260,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="103e-df03-eac0-c076" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="324b-73f5-dc8c-b01c" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="324b-73f5-dc8c-b01c" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="3ae4-b3c2-f1d6-dfa0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>

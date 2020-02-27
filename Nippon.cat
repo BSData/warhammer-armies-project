@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9854-e1a2-2d5c-9b43" name="Duelling Techniques">
       <characteristicTypes>
@@ -377,16 +377,16 @@
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bf7e-77b9-60c6-896b" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bf7e-77b9-60c6-896b" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="6325-44ed-ab0e-cb56" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="278c-022d-06c1-6fca" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6325-44ed-ab0e-cb56" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6325-44ed-ab0e-cb56" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="cc84-c266-268f-62a3" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -397,7 +397,7 @@
             </selectionEntry>
             <selectionEntry id="f875-579d-73ba-3980" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="38b5-d092-e1f8-466c" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="278c-022d-06c1-6fca" type="atLeast"/>
                   </conditions>
@@ -1105,16 +1105,16 @@
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="edd6-4fd8-2df5-2689" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="edd6-4fd8-2df5-2689" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="d484-a564-afb9-20ea" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49b5-0b0a-3768-4f2d" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d484-a564-afb9-20ea" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d484-a564-afb9-20ea" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="2491-93bd-7c79-a7ce" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1125,7 +1125,7 @@
             </selectionEntry>
             <selectionEntry id="bd86-4740-8aa7-df67" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="f903-6aa5-f081-7962" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49b5-0b0a-3768-4f2d" type="atLeast"/>
                   </conditions>
@@ -1478,7 +1478,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       <selectionEntries>
         <selectionEntry id="34eb-8283-ec8a-280a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="72cb-fe3a-f145-9d0c" value="0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2433-c0f7-53e6-7076" type="atLeast"/>
               </conditions>
@@ -1587,16 +1587,16 @@ A character may only have one Yojimbo assigned to it at any time, although a new
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f6ee-8de1-8982-8eda" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f6ee-8de1-8982-8eda" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="759e-27e4-e362-e3bc" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="093f-7ac2-0a18-ad16" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="759e-27e4-e362-e3bc" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="759e-27e4-e362-e3bc" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="3de3-c4d8-f7f4-d6eb" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -1607,7 +1607,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
             </selectionEntry>
             <selectionEntry id="548f-714d-24b7-1273" name="Spear (Infantry)" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="badf-53c5-f35b-164f" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="093f-7ac2-0a18-ad16" type="atLeast"/>
                   </conditions>
@@ -1694,7 +1694,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
               <selectionEntries>
                 <selectionEntry id="2433-c0f7-53e6-7076" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="e87c-395c-a13b-9ae4" value="0">
                       <conditions>
                         <condition field="selections" scope="2795-5c33-8311-9179" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34eb-8283-ec8a-280a" type="atLeast"/>
                       </conditions>
@@ -2331,7 +2331,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
             </selectionEntry>
             <selectionEntry id="27dc-7b93-ac6a-afc5" name="Horo Cloak" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="b06a-3304-b4d8-78f1" value="0">
                   <conditions>
                     <condition field="selections" scope="f9de-6fa6-1c37-660b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b695-cf32-473b-3015" type="atLeast"/>
                   </conditions>
@@ -2434,7 +2434,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="b695-cf32-473b-3015" name="Sashimonos" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="6cc2-6b0c-3a8c-3e49" value="0">
               <conditions>
                 <condition field="selections" scope="f9de-6fa6-1c37-660b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27dc-7b93-ac6a-afc5" type="atLeast"/>
               </conditions>
@@ -3821,7 +3821,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
             </selectionEntry>
             <selectionEntry id="3eca-f34b-67f6-ef01" name="Horo Cloak" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="d14a-a746-7b31-af61" value="0">
                   <conditions>
                     <condition field="selections" scope="3c92-b0d7-0adc-e07e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f6b-366b-c152-002b" type="atLeast"/>
                   </conditions>
@@ -3881,7 +3881,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="3f6b-366b-c152-002b" name="Sashimonos" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="5ae7-1668-5298-9977" value="0">
               <conditions>
                 <condition field="selections" scope="3c92-b0d7-0adc-e07e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3eca-f34b-67f6-ef01" type="atLeast"/>
               </conditions>
@@ -4649,7 +4649,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
             </selectionEntry>
             <selectionEntry id="cdb2-52a0-cf5d-3189" name="Horo Cloak" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="e136-f069-1d93-e5f7" value="0">
                   <conditions>
                     <condition field="selections" scope="ecbc-ecae-244d-422e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3817-7360-fd00-0a7d" type="atLeast"/>
                   </conditions>
@@ -4733,6 +4733,13 @@ A character may only have one Yojimbo assigned to it at any time, although a new
           </costs>
         </selectionEntry>
         <selectionEntry id="3817-7360-fd00-0a7d" name="Sashimonos" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="d86a-db7d-88bd-0137" value="0">
+              <conditions>
+                <condition field="selections" scope="ecbc-ecae-244d-422e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cdb2-52a0-cf5d-3189" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d86a-db7d-88bd-0137" type="max"/>
           </constraints>
@@ -5417,7 +5424,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       <selectionEntries>
         <selectionEntry id="467f-a020-614a-8ee5" name="Mon of the Shinzei Clan" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8347-4ae4-7d49-42a0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4de-fa37-b9f7-bdaa" type="max"/>
           </constraints>
           <infoLinks>
@@ -5429,7 +5435,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="76f0-b938-5e03-3046" name="Mon of the Uruchi Clan" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="095d-86d2-1962-1811" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae22-a42c-7e33-9ebb" type="max"/>
           </constraints>
           <infoLinks>
@@ -5441,7 +5446,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="388f-a2d5-160a-8745" name="Mon of the Daimatzu Clan" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6e6-580d-40a5-ac3d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8709-5e1b-8a2b-04e6" type="max"/>
           </constraints>
           <infoLinks>
@@ -5453,7 +5457,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="8b69-f19a-869f-ae25" name="Mon of the Taneka Clan" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca5b-4b34-4a6d-a407" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b13e-fa79-ceee-63e5" type="max"/>
           </constraints>
           <infoLinks>
@@ -5465,7 +5468,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="33a3-8224-419f-5b3a" name="Mon of the Ashiwara Clan" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b23f-8049-4f85-eb20" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae14-7c88-97a4-b472" type="max"/>
           </constraints>
           <infoLinks>
@@ -5477,7 +5479,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="fc34-2aae-2882-4ca4" name="Mon of the Horumi Clan" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a423-961a-6f97-357a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3acd-33c5-8452-fa86" type="max"/>
           </constraints>
           <infoLinks>
@@ -5496,7 +5497,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       <selectionEntries>
         <selectionEntry id="c335-b1e1-8fa5-e07c" name="Mon of the Shinzei Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd5d-658f-5500-36ca" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c5e-13b5-a1e9-c3ec" type="max"/>
           </constraints>
           <infoLinks>
@@ -5508,7 +5508,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="eee2-708c-6a07-b83b" name="Mon of the Uruchi Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="37dc-e7d5-7f0f-67bf" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c898-38c9-1f37-6608" type="max"/>
           </constraints>
           <infoLinks>
@@ -5520,7 +5519,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="3a15-c41a-02fd-4747" name="Mon of the Daimatzu Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="37e5-31f5-9399-46d3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc6d-1b8d-76eb-065e" type="max"/>
           </constraints>
           <infoLinks>
@@ -5532,7 +5530,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="cb40-f7f3-59bc-02cb" name="Mon of the Taneka Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4928-94b8-bd94-06f8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d92-19e1-6f2c-d149" type="max"/>
           </constraints>
           <infoLinks>
@@ -5544,7 +5541,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="f62f-b1e1-ee0f-a095" name="Mon of the Ashiwara Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="94ae-8887-2ed1-58d6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa9b-08c8-708c-a736" type="max"/>
           </constraints>
           <infoLinks>
@@ -5556,7 +5552,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="1dd8-f928-6a77-220b" name="Mon of the Horumi Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1782-9786-bddc-7182" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d279-1451-fa33-f669" type="max"/>
           </constraints>
           <infoLinks>
@@ -5568,7 +5563,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="e5cc-7e78-609a-be0d" name="Mon of the Mushagi Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff28-41c1-f65c-6b6d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc1d-a6ce-acca-de3e" type="max"/>
           </constraints>
           <infoLinks>
@@ -5580,7 +5574,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         </selectionEntry>
         <selectionEntry id="e44c-01b5-30e8-4ecf" name="Mon of the Batake Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d0f-886c-44fc-f67c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f44-d463-2524-e0e2" type="max"/>
           </constraints>
           <infoLinks>
@@ -5599,7 +5592,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       <selectionEntries>
         <selectionEntry id="eb7e-b9b1-6fa0-86ac" name="Mon of the Batake Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cec4-2ec1-de0b-4938" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e91-8cbd-0cb6-0d06" type="max"/>
           </constraints>
           <infoLinks>

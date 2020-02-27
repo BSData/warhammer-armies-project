@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9a0d-50bf-b007-6cef" name="Animosity Table">
       <characteristicTypes>
@@ -85,7 +85,7 @@
   <selectionEntries>
     <selectionEntry id="0528-8bb5-4384-fc43" name="Gorbad Ironclaw" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="4129-ad83-b4be-fcc9" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -129,12 +129,14 @@
         <rule id="8ab9-9445-1396-edad" name="Da Boss &apos;as a Plan!" publicationId="9e23-79cb-pubN78975" page="168" hidden="false">
           <description>Gorbad must be army&apos;s General, and he also has the &quot;Hold Your Ground&quot; ability like a Battle Standard. In addition, the range of Gorbad&apos;s Inspiring Presence and Hold Your Ground! Abilities is increased from 12&quot; to 18&quot;. Note that you may not choose a separate Battle Standard in an army that includes Gorbad.</description>
         </rule>
+        <rule id="24d5-be2b-71f8-285b" name="Orcs are da Best" publicationId="9e23-79cb-pubN78975" page="168" hidden="false">
+          <description>An Orc &amp; Goblin army that includes Gorbad may upgrade any number of units of Orc Boyz and/or Orc Boar Boyz to Big &apos;Uns.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="c308-bcf3-5944-947e" name="Waaagh!" hidden="false" targetId="72cd-f563-0e75-b280" type="rule"/>
         <infoLink id="e5e3-eafa-a87f-7ef2" name="Size Matters" hidden="false" targetId="f6b8-e24e-974c-015a" type="rule"/>
         <infoLink id="d8c8-df5c-0bdd-0ed8" name="Choppas" hidden="false" targetId="2017-de4c-6670-21ba" type="rule"/>
-        <infoLink id="39b2-2de4-f26d-6f81" name="Orcs are da Best" hidden="false" targetId="51aa-14fb-7d7a-c596" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9201-3a9f-a758-8966" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -212,7 +214,7 @@
     </selectionEntry>
     <selectionEntry id="16f7-ae1d-f8c5-206c" name="Azhag the Slaughterer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="67e3-9cf2-4079-ee34" value="0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
           </conditions>
@@ -397,7 +399,7 @@
     </selectionEntry>
     <selectionEntry id="cbb3-15f1-cbc2-82eb" name="Grimgor Ironhide" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="1758-3e69-0f1d-2322" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -428,12 +430,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="b904-52d3-29eb-5605" name="Da Immortulz" publicationId="9e23-79cb-pubN78975" page="172" hidden="false">
+          <description>Grimgor must always be accompanied by his grizzled Black Orc bodyguard, and may join no other unit. The Immortulz are a unit of Black Orcs with an additional +1 WS. Grimgor must deploy with this unit and may not leave it. No other character may join the unit. As long as Grimgor is alive, the Immortulz have Hatred.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="db39-bd36-1bab-cd15" name="Waaagh!" hidden="false" targetId="72cd-f563-0e75-b280" type="rule"/>
         <infoLink id="a3d7-933d-58a1-54f0" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="38c8-c384-94c7-d8fc" name="Choppas" hidden="false" targetId="2017-de4c-6670-21ba" type="rule"/>
         <infoLink id="1ea3-e733-9c70-d9e6" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
-        <infoLink id="e794-ba3f-647d-1d9b" name="Da Immortulz" hidden="false" targetId="fa46-42a9-e73d-5f9d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3172-909f-16a9-cf1d" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -502,7 +508,7 @@
     </selectionEntry>
     <selectionEntry id="3ee3-f397-0b28-b83b" name="Gorfang Rotgut" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="7a6d-437c-c551-0749" value="0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
           </conditions>
@@ -584,7 +590,7 @@
     </selectionEntry>
     <selectionEntry id="13c1-8814-f6ac-9bda" name="Morglum Necksnapper" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="ecbd-eb5e-1e2f-c932" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -862,7 +868,7 @@
     </selectionEntry>
     <selectionEntry id="905c-751e-25b9-405d" name="Grom the Paunch" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="3bc5-444f-5499-0609" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1364,12 +1370,14 @@
         <rule id="01d1-5645-7115-5287" name="Keep Your Enemies Closer" publicationId="9e23-79cb-pubN78975" page="182" hidden="false">
           <description>If your army includes Grimgor, then you may never deploy Borgut further than 6&quot; from him when setting up your army.</description>
         </rule>
+        <rule id="7334-bfae-236b-8b2f" name="Do as I say and wot I do" publicationId="9e23-79cb-pubN78975" page="182" hidden="false">
+          <description>If Borgut is included in your army, then you may upgrade one additional units of Orc Boyz into Big &apos;Uns. Borgut must deploy and remain with this unit for the entirety of the battle.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="de5d-56da-9357-3b31" name="Quell Animosity" hidden="false" targetId="6eb2-2213-5721-ac9e" type="rule"/>
         <infoLink id="11e2-c621-df30-af3f" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="69d0-cd89-ed29-5257" name="Choppas" hidden="false" targetId="2017-de4c-6670-21ba" type="rule"/>
-        <infoLink id="07eb-ac32-ae01-61e9" name="Do as I say and wot I do" hidden="false" targetId="9fd9-f68f-54ff-bf3e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="547c-02e2-99a4-4a74" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
@@ -1523,9 +1531,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="7251-a26b-92e0-a046" name="Da Howlerz" publicationId="9e23-79cb-pubN78975" page="184" hidden="false">
+          <description>Da Howlerz are a unit of Goblin Wolf Riders with an additional +1 BS and Quick to Fire. Gitilla must set up with this unit and may not leave it. No other character may join the unit.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="6a4d-95ab-78d4-b102" name="Fear Elves" hidden="false" targetId="8568-17b2-9805-2665" type="rule"/>
-        <infoLink id="1e52-c665-ae3a-1510" name="Da Howlerz" hidden="false" targetId="4d04-89ee-2628-240d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="580e-8594-4d08-47c6" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
@@ -1644,10 +1656,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="4a51-7632-f729-ba9a" name="Deff Creepers" publicationId="9e23-79cb-pubN78975" page="185" hidden="false">
+          <description>The Deff Creepers are a unit of Forest Goblin Spider Riders with Ambushers, Devastating Charge and Hatred (Empire). In addition, they cause Fear in any turn that they successfully charge into combat. Snagla must set up with this unit and may not leave it. No other character may join the unit.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="76ea-7e96-01c1-fdf8" name="Fear Elves" hidden="false" targetId="8568-17b2-9805-2665" type="rule"/>
         <infoLink id="6e6a-5e05-0234-78c3" name="Hatred (The Empire)" hidden="false" targetId="1308-62b9-5692-6880" type="rule"/>
-        <infoLink id="3874-d942-f153-c92e" name="Deff Creepers" hidden="false" targetId="17c4-75bd-2cad-0ef5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7eaa-3e01-58d2-0792" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
@@ -1888,7 +1904,7 @@
           <selectionEntries>
             <selectionEntry id="077a-051b-bcd4-eb56" name="Savage Orc Warboss" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="fcc8-fe64-10e4-97ac" value="0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -1898,6 +1914,9 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fcc8-fe64-10e4-97ac" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="4157-ec8c-6a91-86a6" name="Savage Orc Warboss" publicationId="9e23-79cb-pubN78975" page="112" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
@@ -1991,7 +2010,7 @@
                     </selectionEntry>
                     <selectionEntry id="715b-15d2-3f97-a180" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="bfaa-aef7-c1ec-c5e6" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1f-f5a8-575c-654d" type="atLeast"/>
                           </conditions>
@@ -2009,14 +2028,14 @@
                     </selectionEntry>
                     <selectionEntry id="e4fe-651e-90e6-f0e6" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="f198-9289-041c-1738" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a1f-f5a8-575c-654d" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f198-9289-041c-1738" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f198-9289-041c-1738" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="fa08-dcc8-bda1-851c" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2125,7 +2144,7 @@
             </selectionEntry>
             <selectionEntry id="22ea-d1c8-6a46-c371" name="Orc Warboss" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="c3f7-7d44-6f4c-5be7" value="0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -2135,6 +2154,9 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c3f7-7d44-6f4c-5be7" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="2641-0b94-37e3-47d4" name="Orc Warboss" publicationId="9e23-79cb-pubN78975" page="103" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
@@ -2226,7 +2248,7 @@
                     </selectionEntry>
                     <selectionEntry id="07b5-6d20-6e39-511d" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="e755-1b1d-6184-eb51" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="823e-2839-9ea9-5d0c" type="atLeast"/>
                           </conditions>
@@ -2244,14 +2266,14 @@
                     </selectionEntry>
                     <selectionEntry id="4dd1-853c-54ec-b31d" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="f4a0-c582-98db-2e8c" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="823e-2839-9ea9-5d0c" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4a0-c582-98db-2e8c" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4a0-c582-98db-2e8c" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="3461-d3c7-17c5-f033" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2576,7 +2598,7 @@
                     </selectionEntry>
                     <selectionEntry id="caf6-cfb9-fb3b-5ba3" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="6310-6b66-de70-58a5" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="401f-0f50-3a87-cf85" type="atLeast"/>
                           </conditions>
@@ -2594,14 +2616,14 @@
                     </selectionEntry>
                     <selectionEntry id="cc56-9e7e-0be4-90a9" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="d597-280b-5f19-17e4" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="401f-0f50-3a87-cf85" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d597-280b-5f19-17e4" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d597-280b-5f19-17e4" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="75bc-33f8-ea8c-4846" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2733,7 +2755,7 @@
                     </selectionEntry>
                     <selectionEntry id="d637-9ddd-9b36-352d" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="20f2-d970-b851-3a0c" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03a6-1f25-6644-2928" type="atLeast"/>
                           </conditions>
@@ -2751,14 +2773,14 @@
                     </selectionEntry>
                     <selectionEntry id="9fad-e756-77cf-b8ea" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="bac0-000c-a189-dcf5" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03a6-1f25-6644-2928" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bac0-000c-a189-dcf5" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bac0-000c-a189-dcf5" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="a00c-1137-656f-4052" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2965,7 +2987,7 @@
                     </selectionEntry>
                     <selectionEntry id="1d59-32ac-356f-a1b1" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="37b2-2f57-50a0-81c1" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40f2-a210-72b9-43e7" type="atLeast"/>
                           </conditions>
@@ -2983,14 +3005,14 @@
                     </selectionEntry>
                     <selectionEntry id="a74e-af77-053c-a3d1" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="5657-c4f6-6da4-bc8d" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40f2-a210-72b9-43e7" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5657-c4f6-6da4-bc8d" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5657-c4f6-6da4-bc8d" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="a51f-f062-f7be-3d47" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -3057,16 +3079,15 @@
             </selectionEntry>
             <selectionEntry id="06db-31b0-1a22-c24a" name="Black Orc Warboss" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                <modifier type="set" field="71ed-674a-65fb-5dce" value="0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
+                  </conditions>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="71ed-674a-65fb-5dce" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="fdd1-4bd6-08e2-5d1a" name="Black Orc Warboss" publicationId="9e23-79cb-pubN78975" page="117" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
@@ -5125,7 +5146,7 @@
               <selectionEntries>
                 <selectionEntry id="b33a-c3dc-7edd-dc1c" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="97d1-a800-d931-5479" value="0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b34-e905-f2c3-2ba0" type="atLeast"/>
                       </conditions>
@@ -5280,7 +5301,7 @@
                   <selectionEntries>
                     <selectionEntry id="ABS BOBB" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="36ef-6fcc-e352-b414" value="0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -5306,7 +5327,7 @@
                       <selectionEntries>
                         <selectionEntry id="7b34-e905-f2c3-2ba0" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="59d1-3fb7-bc26-9758" value="0">
                               <conditions>
                                 <condition field="selections" scope="8dd8-04ec-04bc-7de5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b33a-c3dc-7edd-dc1c" type="atLeast"/>
                               </conditions>
@@ -5360,7 +5381,7 @@
               <selectionEntries>
                 <selectionEntry id="c8d2-0217-42a0-8337" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="92a3-77cf-1aff-db7f" value="0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f04b-5880-8b11-e068" type="atLeast"/>
                       </conditions>
@@ -5457,7 +5478,7 @@
                     </selectionEntry>
                     <selectionEntry id="8153-3933-8f13-c49a" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="311a-473e-5b76-84c8" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d21-f9f4-2c78-14f1" type="atLeast"/>
                           </conditions>
@@ -5475,14 +5496,14 @@
                     </selectionEntry>
                     <selectionEntry id="1bb5-8629-cc0e-275b" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="041a-e753-300a-0bc6" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d21-f9f4-2c78-14f1" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="041a-e753-300a-0bc6" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="041a-e753-300a-0bc6" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="2689-bec0-641a-aa0b" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -5576,7 +5597,7 @@
                   <selectionEntries>
                     <selectionEntry id="ABS GBB" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="722d-487d-46c3-e4b4" value="0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -5602,7 +5623,7 @@
                       <selectionEntries>
                         <selectionEntry id="f04b-5880-8b11-e068" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="5f21-60e2-228d-3af8" value="0">
                               <conditions>
                                 <condition field="selections" scope="5626-2557-df07-9336" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8d2-0217-42a0-8337" type="atLeast"/>
                               </conditions>
@@ -5656,7 +5677,7 @@
               <selectionEntries>
                 <selectionEntry id="7af8-7af0-8143-9658" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="3eea-ab57-927e-1625" value="0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a51a-1c5c-8389-2ec4" type="atLeast"/>
                       </conditions>
@@ -5752,7 +5773,7 @@
                     </selectionEntry>
                     <selectionEntry id="accd-c2e7-b2b7-c61f" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="070f-f8cd-1669-ccf6" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aded-9fa6-456d-473d" type="atLeast"/>
                           </conditions>
@@ -5770,14 +5791,14 @@
                     </selectionEntry>
                     <selectionEntry id="3c9c-7898-1182-0ec9" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="3c1f-c1ae-4f06-6311" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aded-9fa6-456d-473d" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c1f-c1ae-4f06-6311" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c1f-c1ae-4f06-6311" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="3a67-6df2-264e-32ec" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -5841,7 +5862,7 @@
                   <selectionEntries>
                     <selectionEntry id="ABS FGBB" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="a671-85a7-fe68-5fc5" value="0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -5867,7 +5888,7 @@
                       <selectionEntries>
                         <selectionEntry id="a51a-1c5c-8389-2ec4" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="906e-d7b6-3af1-a3f1" value="0">
                               <conditions>
                                 <condition field="selections" scope="2471-e146-9390-dbec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7af8-7af0-8143-9658" type="atLeast"/>
                               </conditions>
@@ -5922,7 +5943,7 @@
               <selectionEntries>
                 <selectionEntry id="93c4-569f-c47c-3c64" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="42bf-2765-685e-48a0" value="0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be6a-1a0e-926a-b5d6" type="atLeast"/>
                       </conditions>
@@ -5996,7 +6017,7 @@
                     </selectionEntry>
                     <selectionEntry id="2e33-cd1c-244a-344b" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="31aa-6207-ec2b-d3d2" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a61-7c66-e63c-60a4" type="atLeast"/>
                           </conditions>
@@ -6014,14 +6035,14 @@
                     </selectionEntry>
                     <selectionEntry id="32c4-dc5f-38a9-f9da" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="8581-bc19-7a41-8d18" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a61-7c66-e63c-60a4" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8581-bc19-7a41-8d18" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8581-bc19-7a41-8d18" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="d067-32d3-ed69-fb4c" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -6148,7 +6169,7 @@
                   <selectionEntries>
                     <selectionEntry id="ABS OBB" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="6264-1614-b9d7-e4ec" value="0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -6174,7 +6195,7 @@
                       <selectionEntries>
                         <selectionEntry id="be6a-1a0e-926a-b5d6" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="a513-d1c7-9b86-0ec7" value="0">
                               <conditions>
                                 <condition field="selections" scope="c531-8b88-9cfa-577f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93c4-569f-c47c-3c64" type="atLeast"/>
                               </conditions>
@@ -6231,7 +6252,7 @@
               <selectionEntries>
                 <selectionEntry id="7ab5-8f6e-65d5-1581" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="c3c0-b8a0-0875-b32d" value="0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c48-87e4-d54b-9ca5" type="atLeast"/>
                       </conditions>
@@ -6305,7 +6326,7 @@
                     </selectionEntry>
                     <selectionEntry id="5586-544f-3a2b-7639" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="cd6f-ed14-7e29-52e2" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bce3-91d4-9c32-ee5c" type="atLeast"/>
                           </conditions>
@@ -6323,14 +6344,14 @@
                     </selectionEntry>
                     <selectionEntry id="618f-4420-f291-f86c" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="407a-355c-3646-2401" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bce3-91d4-9c32-ee5c" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="407a-355c-3646-2401" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="407a-355c-3646-2401" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="00c6-0a10-997f-1952" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -6370,7 +6391,7 @@
                   <selectionEntries>
                     <selectionEntry id="ABS SOBB" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="b943-b246-ec29-08e9" value="0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -6396,7 +6417,7 @@
                       <selectionEntries>
                         <selectionEntry id="4c48-87e4-d54b-9ca5" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="e376-375a-379d-0dc3" value="0">
                               <conditions>
                                 <condition field="selections" scope="c6eb-21d4-f1bf-080b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ab5-8f6e-65d5-1581" type="atLeast"/>
                               </conditions>
@@ -6451,7 +6472,7 @@
               <selectionEntries>
                 <selectionEntry id="426d-4f9a-77ec-3d4f" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="fd14-b0f9-2f99-585b" value="0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="633d-bc02-3f67-7aaf" type="atLeast"/>
                       </conditions>
@@ -6565,7 +6586,7 @@
                     </selectionEntry>
                     <selectionEntry id="e8ca-33d3-68c0-849c" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="7ccb-b6d1-50cd-644e" value="0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd59-537b-92ee-5759" type="atLeast"/>
                           </conditions>
@@ -6583,14 +6604,14 @@
                     </selectionEntry>
                     <selectionEntry id="dd27-8f1e-fd06-9390" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="5d80-1541-c36b-6a4b" value="1.0">
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd59-537b-92ee-5759" type="atLeast"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d80-1541-c36b-6a4b" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d80-1541-c36b-6a4b" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="a590-780b-3df6-6601" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -6608,7 +6629,7 @@
                   <selectionEntries>
                     <selectionEntry id="ABS NGBB" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="b603-9ea7-1863-0bba" value="0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -6634,7 +6655,7 @@
                       <selectionEntries>
                         <selectionEntry id="633d-bc02-3f67-7aaf" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="f470-1ca9-d749-3aa3" value="0">
                               <conditions>
                                 <condition field="selections" scope="f75c-ff22-4f9d-f123" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="426d-4f9a-77ec-3d4f" type="atLeast"/>
                               </conditions>
@@ -6837,35 +6858,24 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="762a-50ef-b381-05c4" name="Orc Big &apos;Uns" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="762a-50ef-b381-05c4" name="Orc Big &apos;Uns" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="decrement" field="cdf6-af5d-22a1-24ce" value="1">
+        <modifier type="decrement" field="cdf6-af5d-22a1-24ce" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4926-8609-1c57-c09a" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0528-8bb5-4384-fc43" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="cdf6-af5d-22a1-24ce" value="1">
+        <modifier type="increment" field="cdf6-af5d-22a1-24ce" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ee3-f397-0b28-b83b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f7-ae1d-f8c5-206c" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22ea-d1c8-6a46-c371" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ee3-f397-0b28-b83b" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22ea-d1c8-6a46-c371" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f7-ae1d-f8c5-206c" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" field="cdf6-af5d-22a1-24ce" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0528-8bb5-4384-fc43" type="atLeast"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -7329,17 +7339,12 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3b19-7470-2d03-5319" name="Savage Orc Big &apos;Uns" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="3b19-7470-2d03-5319" name="Savage Orc Big &apos;Uns" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="increment" field="089c-e0eb-1281-35d8" value="1">
+        <modifier type="increment" field="089c-e0eb-1281-35d8" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077a-051b-bcd4-eb56" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077a-051b-bcd4-eb56" type="atLeast"/>
-          </conditions>
         </modifier>
         <modifier type="decrement" field="089c-e0eb-1281-35d8" value="1">
           <repeats>
@@ -7905,22 +7910,21 @@ At the start of each round of close combat in which a Goblin Jester is involved,
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b1d-7df3-a54d-355e" name="Da Howlerz" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="ae71-8fb9-fdb4-6708" value="1">
+    <selectionEntry id="0b1d-7df3-a54d-355e" name="Da Howlerz" hidden="false" collective="false" import="true" type="model">
+      <modifierGroups>
+        <modifierGroup>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81d-bac0-b418-7259" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81d-bac0-b418-7259" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" field="ae71-8fb9-fdb4-6708" value="1.0"/>
+            <modifier type="set" field="452c-2615-4bb9-4159" value="1.0"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ae71-8fb9-fdb4-6708" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="452c-2615-4bb9-4159" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="452c-2615-4bb9-4159" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="60b8-066e-afe6-05a8" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -7951,7 +7955,6 @@ At the start of each round of close combat in which a Goblin Jester is involved,
             <infoLink id="32ba-bac8-bddf-7996" name="Animosity" hidden="false" targetId="cd91-cbe9-af5c-3d55" type="rule"/>
             <infoLink id="18d3-177b-5aa6-d2f9" name="Result" hidden="false" targetId="Animosity" type="profile"/>
             <infoLink id="0011-e3d1-3d12-f010" name="Quick to Fire" hidden="false" targetId="2c6d-374e-56ca-ce87" type="rule"/>
-            <infoLink id="9c01-cf39-10fb-f114" name="Da Howlerz" hidden="false" targetId="4d04-89ee-2628-240d" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="215e-0e2d-5606-dd61" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -8621,20 +8624,19 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="27ab-18fe-4462-b518" name="Deff Creepers" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="2a3d-ae7f-8d1d-022c" value="1">
+      <modifierGroups>
+        <modifierGroup>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0792-a501-78d5-d80d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0792-a501-78d5-d80d" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" field="2a3d-ae7f-8d1d-022c" value="1.0"/>
+            <modifier type="set" field="2c70-de1c-8bdb-891a" value="1.0"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2c70-de1c-8bdb-891a" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2c70-de1c-8bdb-891a" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2a3d-ae7f-8d1d-022c" type="min"/>
       </constraints>
       <categoryLinks>
@@ -8668,7 +8670,6 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
             <infoLink id="6315-517f-f371-e4a5" name="Animosity" hidden="false" targetId="cd91-cbe9-af5c-3d55" type="rule"/>
             <infoLink id="68ad-517d-5e6a-aa91" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
             <infoLink id="ff40-7244-03e1-ac48" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
-            <infoLink id="ad2d-e971-d6c6-2104" name="Deff Creepers" hidden="false" targetId="17c4-75bd-2cad-0ef5" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="bc60-2b6c-51e6-032c" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
@@ -9203,25 +9204,14 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4926-8609-1c57-c09a" name="Orc Boar Boy Big &apos;Uns" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="4926-8609-1c57-c09a" name="Orc Boar Boy Big &apos;Uns" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ee3-f397-0b28-b83b" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22ea-d1c8-6a46-c371" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f7-ae1d-f8c5-206c" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="8408-d0b2-57d3-ed5d" value="0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0528-8bb5-4384-fc43" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="decrement" field="8408-d0b2-57d3-ed5d" value="1">
+        <modifier type="decrement" field="8408-d0b2-57d3-ed5d" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="762a-50ef-b381-05c4" repeats="1" roundUp="false"/>
           </repeats>
@@ -9555,16 +9545,21 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9450-b474-ca41-7f96" name="Orc Big &apos;Uns (Borgut)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="9450-b474-ca41-7f96" name="Orc Big &apos;Uns (Borgut)" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="e68d-b418-2242-d430" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bef-3188-ab87-41c4" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="e68d-b418-2242-d430" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0528-8bb5-4384-fc43" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e68d-b418-2242-d430" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e68d-b418-2242-d430" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="740f-aba8-e2e9-55a3" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -9581,7 +9576,6 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
             <infoLink id="013e-5d32-b0d1-f5ff" name="Result" hidden="false" targetId="Animosity" type="profile"/>
             <infoLink id="9147-dce4-694d-a39f" name="Orc Big &apos;Un" hidden="false" targetId="9477-8c7f-d3dc-6f32" type="profile"/>
             <infoLink id="9a2e-d9f5-b615-0a66" name="Big &apos;Uns" hidden="false" targetId="eabb-76e1-a7a7-6f2c" type="rule"/>
-            <infoLink id="3a2d-452b-eede-6667" name="Do as I say and wot I do" hidden="false" targetId="9fd9-f68f-54ff-bf3e" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="e139-08a7-22d4-69ed" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -9716,14 +9710,28 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b082-b13e-444f-24e1" name="Orc Boar Boy Big &apos;Uns (Gorbad)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="b082-b13e-444f-24e1" name="Orc Boar Boy Big &apos;Uns (Gorbad)" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="682c-029c-f950-3e5b" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0528-8bb5-4384-fc43" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="682c-029c-f950-3e5b" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4926-8609-1c57-c09a" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9450-b474-ca41-7f96" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="762a-50ef-b381-05c4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="682c-029c-f950-3e5b" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="3621-1be3-b069-6e55" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -9738,7 +9746,6 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
             <infoLink id="7819-30a2-a440-a632" name="Size Matters" hidden="false" targetId="f6b8-e24e-974c-015a" type="rule"/>
             <infoLink id="2184-666d-29cd-4db5" name="Result" hidden="false" targetId="Animosity" type="profile"/>
             <infoLink id="09fc-18bc-20c1-6afc" name="Orc Boar Boy Big &apos;Un" hidden="false" targetId="7aa7-7553-ba7f-c6b9" type="profile"/>
-            <infoLink id="1b2e-5f6c-622d-7784" name="Orcs are da Best" hidden="false" targetId="51aa-14fb-7d7a-c596" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="5647-1346-f121-74f7" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -9857,14 +9864,28 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2212-16fa-4ef7-eb06" name="Orc Big &apos;Uns (Gorbad)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="2212-16fa-4ef7-eb06" name="Orc Big &apos;Uns (Gorbad)" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="3fbf-188a-f116-a5f3" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0528-8bb5-4384-fc43" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="3fbf-188a-f116-a5f3" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4926-8609-1c57-c09a" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="762a-50ef-b381-05c4" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9450-b474-ca41-7f96" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3fbf-188a-f116-a5f3" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="e219-a818-a43c-7777" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -9879,7 +9900,6 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
             <infoLink id="e199-1d5b-da14-7099" name="Size Matters" hidden="false" targetId="f6b8-e24e-974c-015a" type="rule"/>
             <infoLink id="8d10-681e-36f4-938c" name="Result" hidden="false" targetId="Animosity" type="profile"/>
             <infoLink id="fc39-a10b-63a5-a9ab" name="Orc Big &apos;Un" hidden="false" targetId="9477-8c7f-d3dc-6f32" type="profile"/>
-            <infoLink id="cf2a-1427-932a-25ce" name="Orcs are da Best" hidden="false" targetId="51aa-14fb-7d7a-c596" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="86c7-0f1c-4733-6ab7" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -10014,9 +10034,9 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="09c1-1bcd-d291-cedd" name="Savage Orc Boar Boy Big &apos;Uns" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="09c1-1bcd-d291-cedd" name="Savage Orc Boar Boy Big &apos;Uns" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="decrement" field="b603-ea85-a301-ae96" value="1">
+        <modifier type="decrement" field="b603-ea85-a301-ae96" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b19-7470-2d03-5319" repeats="1" roundUp="false"/>
           </repeats>
@@ -10025,11 +10045,6 @@ Friendly units do not take Panic tests if a Fanatic is destroyed.</description>
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077a-051b-bcd4-eb56" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077a-051b-bcd4-eb56" type="atLeast"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -11702,22 +11717,21 @@ Note that if all of the Squig Gobba’s Tenders are removed from play for any re
         <cost name="pts" typeId="points" value="225.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f00b-e360-d922-f658" name="Da Immortulz" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="372e-27fd-c5ee-e12a" value="1">
+    <selectionEntry id="f00b-e360-d922-f658" name="Da Immortulz" hidden="false" collective="false" import="true" type="model">
+      <modifierGroups>
+        <modifierGroup>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb3-15f1-cbc2-82eb" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb3-15f1-cbc2-82eb" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" field="41cc-7d3f-5f7a-7ca9" value="1.0"/>
+            <modifier type="set" field="372e-27fd-c5ee-e12a" value="1.0"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="372e-27fd-c5ee-e12a" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="41cc-7d3f-5f7a-7ca9" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="41cc-7d3f-5f7a-7ca9" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="aec2-68be-6b94-620f" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -11748,7 +11762,6 @@ Note that if all of the Squig Gobba’s Tenders are removed from play for any re
             <infoLink id="f065-35f9-3a00-b31b" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
             <infoLink id="33fb-5fc8-33f9-0f11" name="Armed to da Teef" hidden="false" targetId="8ef0-eeec-a076-ad87" type="rule"/>
             <infoLink id="b6b7-50bb-e7a0-781b" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
-            <infoLink id="21ba-8536-bda9-dad5" name="Da Immortulz" hidden="false" targetId="fa46-42a9-e73d-5f9d" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="348b-3469-662a-0dd0" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -11966,9 +11979,9 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="22e2-a738-01f1-0f6a" name="Warpaint" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="22e2-a738-01f1-0f6a" name="Warpaint" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="3b3d-0e5f-63c3-07cd" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -12438,28 +12451,13 @@ In addition to this, an Orc or Goblin Character may only join a unit of the same
     <rule id="1f41-5c93-ec94-d3c3" name="Spider Venom" publicationId="9e23-79cb-pubN78975" page="132" hidden="false">
       <description>Forest Goblin Shamans may re-roll failed channelling rolls.</description>
     </rule>
-    <rule id="17c4-75bd-2cad-0ef5" name="Deff Creepers" publicationId="9e23-79cb-pubN78975" page="185" hidden="false">
-      <description>The Deff Creepers are a unit of Forest Goblin Spider Riders with Ambushers, Devastating Charge and Hatred (Empire). In addition, they cause Fear in any turn that they successfully charge into combat. Snagla must set up with this unit and may not leave it. No other character may join the unit.</description>
-    </rule>
     <rule id="f44c-19e9-1d24-b925" name="Big Stabba" publicationId="9e23-79cb-pubN78975" page="112" hidden="false">
       <description>A unit of Savage Orcs may be upgraded to carry Big Stabbas. This is represented by including one or more Big Stabba models in the unit. A unit of Savage Orcs that includes Big Stabbas and has two or more ranks of at least five models has Impact Hits (D3).
 
 Nominate a single model in the front rank of the unit to be the one that inflicts the Impact Hits. The Impact Hits have a S of 5 (no matter what the Strength of the model that inflicted them), and against any Towering model also causes Multiple Wounds (D3).</description>
     </rule>
-    <rule id="fa46-42a9-e73d-5f9d" name="Da Immortulz" publicationId="9e23-79cb-pubN78975" page="172" hidden="false">
-      <description>Grimgor must always be accompanied by his grizzled Black Orc bodyguard, and may join no other unit. The Immortulz are a unit of Black Orcs with an additional +1 WS. Grimgor must deploy with this unit and may not leave it. No other character may join the unit. As long as Grimgor is alive, the Immortulz have Hatred.</description>
-    </rule>
     <rule id="eabb-76e1-a7a7-6f2c" name="Big &apos;Uns" publicationId="9e23-79cb-pubN78975" page="107" hidden="false">
       <description>You may upgrade one unit to Big &apos;Uns for each Orc Warboss of the same type in your army (so a Savage Orc Warboss allows you to upgrade Savage Orcs to Big &apos;Uns for exemple).</description>
-    </rule>
-    <rule id="9fd9-f68f-54ff-bf3e" name="Do as I say and wot I do" publicationId="9e23-79cb-pubN78975" page="182" hidden="false">
-      <description>If Borgut is included in your army, then you may upgrade one additional units of Orc Boyz into Big &apos;Uns. Borgut must deploy and remain with this unit for the entirety of the battle.</description>
-    </rule>
-    <rule id="4d04-89ee-2628-240d" name="Da Howlerz" publicationId="9e23-79cb-pubN78975" page="184" hidden="false">
-      <description>Da Howlerz are a unit of Goblin Wolf Riders with an additional +1 BS and the Quick to Fire special rule. Gitilla must set up with this unit and may not leave it. No other character may join the unit.</description>
-    </rule>
-    <rule id="51aa-14fb-7d7a-c596" name="Orcs are da Best" publicationId="9e23-79cb-pubN78975" page="168" hidden="false">
-      <description>An Orc &amp; Goblin army that includes Gorbad may upgrade any number of units of Orc Boyz and/or Orc Boar Boyz to Big &apos;Uns.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

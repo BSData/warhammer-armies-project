@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1306-7f01-ae3c-4fa0" name="Eye of the Gods Table">
       <characteristicTypes>
@@ -119,8 +119,16 @@
   </profileTypes>
   <selectionEntries>
     <selectionEntry id="33c3-dc34-7c14-75cc" name="Archaon" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="df32-1fee-a3d1-b109" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a18a-5540-3bbe-6bcb" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c78-43f2-ef8d-c230" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="df32-1fee-a3d1-b109" type="min"/>
       </constraints>
       <profiles>
         <profile id="aa78-8c62-6643-d560" name="Archaon" publicationId="1a01-044f-047b-618f" page="220" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -311,8 +319,21 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f8a8-ef33-4b8c-8ba3" name="Vardek Crom" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="da31-9144-e7f1-948d" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d26-bc8f-c1e3-4254" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e548-accd-4061-d38f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f53e-ea01-13cc-cce3" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da31-9144-e7f1-948d" type="min"/>
       </constraints>
       <profiles>
         <profile id="f5c2-873d-b0d5-51e1" name="Vardek Crom" publicationId="1a01-044f-047b-618f" page="222" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -12637,25 +12658,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="8cdb-f7a0-9ebc-1109" name="Chaos Warhounds" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="32dd-888a-9827-d6b6" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ea4-ff8b-2a7e-d708" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9083-fe7a-eb75-e0aa" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="084f-02f2-b76e-cfd9" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2e4-4d69-103f-3aa4" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d26-bc8f-c1e3-4254" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c63-9a96-533a-feaf" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3d1-a7b0-722a-56d0" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f12-de23-0bef-d17f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e548-accd-4061-d38f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a3d-4c54-0b30-9438" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="32dd-888a-9827-d6b6" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ca26-d3c2-e28d-5689" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -12683,7 +12685,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
           <infoLinks>
             <infoLink id="8a53-6eeb-f2df-7940" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="d56b-1a54-31f8-7c7d" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="c555-a035-29c1-cd29" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="2725-3413-74b2-42d3" name="Natural Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -12714,6 +12715,9 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="44a2-3cdd-ff46-2569" name="Expendable" hidden="false" collective="false" import="true" targetId="b90d-9045-a6d5-9e7d" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -13449,25 +13453,6 @@ Forsaken of Nurgle have Fear.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="c767-b0ed-defe-70dc" name="Chaos Cultists" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="98f5-3ad2-c67c-df73" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ea4-ff8b-2a7e-d708" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9083-fe7a-eb75-e0aa" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="084f-02f2-b76e-cfd9" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2e4-4d69-103f-3aa4" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d26-bc8f-c1e3-4254" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c63-9a96-533a-feaf" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3d1-a7b0-722a-56d0" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f12-de23-0bef-d17f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e548-accd-4061-d38f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a3d-4c54-0b30-9438" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="98f5-3ad2-c67c-df73" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="6902-2561-87ed-0dd0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -13493,7 +13478,6 @@ Forsaken of Nurgle have Fear.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="d770-1f5f-73bd-deb7" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="0407-8ffd-ae97-85d0" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -13612,6 +13596,9 @@ Forsaken of Nurgle have Fear.</description>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d0e2-4a11-ee5f-d2ac" name="Expendable" hidden="false" collective="false" import="true" targetId="b90d-9045-a6d5-9e7d" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -16170,21 +16157,20 @@ The unit&apos;s models gain Poisoned Attacks.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a18a-5540-3bbe-6bcb" name="The Swords of Chaos" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
+    <selectionEntry id="a18a-5540-3bbe-6bcb" name="The Swords of Chaos" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33c3-dc34-7c14-75cc" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="9a65-bc50-59c2-12e6" value="1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33c3-dc34-7c14-75cc" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" field="9a65-bc50-59c2-12e6" value="1.0"/>
+            <modifier type="set" field="8aea-bc49-2840-1690" value="1.0"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8aea-bc49-2840-1690" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8aea-bc49-2840-1690" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9a65-bc50-59c2-12e6" type="min"/>
       </constraints>
       <categoryLinks>
@@ -18375,6 +18361,32 @@ Unlike other random movement, an Unbound Slaughterbrute can move into base conta
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="b90d-9045-a6d5-9e7d" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="e43c-0af0-b8a2-9769" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ea4-ff8b-2a7e-d708" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9083-fe7a-eb75-e0aa" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="084f-02f2-b76e-cfd9" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2e4-4d69-103f-3aa4" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d26-bc8f-c1e3-4254" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c63-9a96-533a-feaf" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3d1-a7b0-722a-56d0" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f12-de23-0bef-d17f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e548-accd-4061-d38f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a3d-4c54-0b30-9438" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0f10-36b8-bbc4-d6c9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="174a-9599-d701-9a75" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e43c-0af0-b8a2-9769" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="b75d-90e3-ae12-2b23" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

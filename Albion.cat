@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a10d-a6ff-f7f3-c8c5" name="Albion" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a10d-a6ff-f7f3-c8c5" name="Albion" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5483-d421-95cb-121b" name="Big Things Chart (Giant)">
       <characteristicTypes>
@@ -6261,23 +6261,8 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </costs>
     </selectionEntry>
     <selectionEntry id="47cc-4b80-0452-9039" name="War Hounds" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="increment" field="d1d7-29b3-7500-7d6b" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c90-c930-aaff-3cb8" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b27c-7b04-2d8e-c8d5" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2106-5d94-c574-da4e" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6dd-3d1c-7a89-a8da" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="031f-0520-c501-a665" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d1d7-29b3-7500-7d6b" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="103c-9260-8fc2-2bbe" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
-        <infoLink id="dc92-b983-9a99-fd9b" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
         <infoLink id="23f3-7abc-4197-bffa" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -6363,6 +6348,9 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="6954-b27d-1496-6386" name="Expendable" hidden="false" collective="false" import="true" targetId="87a3-fa44-cfcf-8af4" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6463,6 +6451,29 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="87a3-fa44-cfcf-8af4" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="18d2-44ba-2a6b-7c5c" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c90-c930-aaff-3cb8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b27c-7b04-2d8e-c8d5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2106-5d94-c574-da4e" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6dd-3d1c-7a89-a8da" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="031f-0520-c501-a665" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b155-d859-ff8b-b2eb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1b6c-25b2-1a09-60d9" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="18d2-44ba-2a6b-7c5c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ffca-0797-fa1b-f237" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="45ca-df54-213e-ff44" name="Arcane Items" hidden="false" collective="false" import="true">
       <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="8f52-2c37-b05e-63ac" name="Maleficent Gaze Table">
       <characteristicTypes>
@@ -3620,23 +3620,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
       </costs>
     </selectionEntry>
     <selectionEntry id="010f-3584-6969-0b1d" name="Snake Swarms" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="increment" field="65ae-7acc-4a2c-c47c" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="25da-8478-4511-e37a" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8de9-2d5a-484a-c12a" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c41c-b54b-686a-2073" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac2-007a-749d-a0b3" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4168-b58e-2cc8-1f4b" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fec-f88e-3501-ae30" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="65ae-7acc-4a2c-c47c" type="max"/>
-      </constraints>
       <infoLinks>
-        <infoLink id="b12e-d40b-1944-f4fe" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
         <infoLink id="b95a-ca1d-5d76-aa92" name="Lowborn Caste" hidden="false" targetId="5b4c-9990-2f3d-db5c" type="rule"/>
         <infoLink id="95f5-147a-484c-dc7c" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
         <infoLink id="4388-bbb2-7712-dd9c" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
@@ -3718,6 +3702,9 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="7678-1bd9-00ab-37f8" name="Expendable" hidden="false" collective="false" import="true" targetId="fba3-591d-d0f7-cf49" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5747,6 +5734,31 @@ is inflicted on a 5+, and so on to a maximum of 2+. Armour saves and regeneratio
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fba3-591d-d0f7-cf49" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="582b-0f5f-e2fa-b114" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="25da-8478-4511-e37a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8de9-2d5a-484a-c12a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c41c-b54b-686a-2073" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac2-007a-749d-a0b3" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4168-b58e-2cc8-1f4b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fec-f88e-3501-ae30" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c0f-3e5b-f1b0-85cd" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2574-825b-7f8c-e26b" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="582b-0f5f-e2fa-b114" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d42b-caba-9ff9-cdf6" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

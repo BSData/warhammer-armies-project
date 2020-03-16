@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9a0e-261d-9899-f1ae" name="Evocation of Death Chart">
       <characteristicTypes>
@@ -6821,7 +6821,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f8b-a9db-fbd1-ee36" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9f8b-a9db-fbd1-ee36" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="9964-42b3-661c-a090" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -7128,19 +7128,22 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
     </selectionEntry>
     <selectionEntry id="701d-3e58-e2b0-fe4f" name="Sylvanian Peasant Levy" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="d9e1-b062-0957-1a6d" value="-1.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6933-7707-efb6-161c" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09b0-4c69-23ba-e73b" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3a-b2c7-4edc-e11d" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9911-f01d-d685-ff84" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6933-7707-efb6-161c" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3a-b2c7-4edc-e11d" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9911-f01d-d685-ff84" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09b0-4c69-23ba-e73b" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9e1-b062-0957-1a6d" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="5130-dfec-3ef1-bd72" name="Peasant" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -7295,20 +7298,6 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       </costs>
     </selectionEntry>
     <selectionEntry id="803e-a139-fac8-1521" name="Dire Wolves" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="e28c-f80c-e615-b49f" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d11b-285d-80b0-a9a8" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2a9-72a5-e804-fc05" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c556-08a8-416e-7ed1" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="701d-3e58-e2b0-fe4f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3ae-fba9-4299-624c" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e28c-f80c-e615-b49f" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="10d5-18fc-aeac-5e27" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -7341,7 +7330,6 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           <infoLinks>
             <infoLink id="c42c-03a8-19c1-7931" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
             <infoLink id="f2a4-4ee0-bc07-a05b" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
-            <infoLink id="3811-985f-bfbc-f845" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="8218-b656-7a12-a0e8" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
           </infoLinks>
           <costs>
@@ -7382,25 +7370,14 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a7a3-8f8e-0cae-74b5" name="Expendable" hidden="false" collective="false" import="true" targetId="4e65-cfea-ccc4-f340" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a1ba-1b78-ae4f-8246" name="Fell Bats" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="22e6-17ce-377b-04ef" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d11b-285d-80b0-a9a8" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2a9-72a5-e804-fc05" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c556-08a8-416e-7ed1" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="701d-3e58-e2b0-fe4f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3ae-fba9-4299-624c" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="22e6-17ce-377b-04ef" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="741e-3618-f7d9-2db0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -7428,32 +7405,20 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           <infoLinks>
             <infoLink id="432d-6a5b-dbca-06ee" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
             <infoLink id="cc82-fd55-7030-3f52" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="89c5-b7df-ef32-dd7d" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="16.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="fad5-9679-0c04-200b" name="Expendable" hidden="false" collective="false" import="true" targetId="4e65-cfea-ccc4-f340" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8747-3db0-4dd8-1c92" name="Bat Swarms" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="1bb8-d6de-c69b-6da1" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d11b-285d-80b0-a9a8" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2a9-72a5-e804-fc05" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c556-08a8-416e-7ed1" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="701d-3e58-e2b0-fe4f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3ae-fba9-4299-624c" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1bb8-d6de-c69b-6da1" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="6531-35b8-4ae8-df9d" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -7486,7 +7451,6 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           <infoLinks>
             <infoLink id="17dd-4538-d116-46c8" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
             <infoLink id="9580-a212-48b2-7931" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
-            <infoLink id="22fd-c671-7440-85cc" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="203c-a63f-b4cb-819c" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <costs>
@@ -7494,6 +7458,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="d2c6-44ed-13ac-09b4" name="Expendable" hidden="false" collective="false" import="true" targetId="4e65-cfea-ccc4-f340" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -9108,6 +9075,27 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="4e65-cfea-ccc4-f340" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="e21e-14fc-4085-71a7" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d11b-285d-80b0-a9a8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2a9-72a5-e804-fc05" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c556-08a8-416e-7ed1" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="701d-3e58-e2b0-fe4f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3ae-fba9-4299-624c" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7ec5-b4ad-ac14-acdd" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="13d3-b3ab-43e1-1dca" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e21e-14fc-4085-71a7" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3381-c1d9-6424-e57b" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

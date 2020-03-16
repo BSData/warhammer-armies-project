@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1948-df7e-0b86-9296" name="Entombed Beneath the Sands Mishap Table">
       <characteristicTypes>
@@ -1365,7 +1365,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8026-d2de-489f-e3ed" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="c80d-ee0b-3149-8c6a" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 4" type="selectionEntry"/>
+                    <entryLink id="c80d-ee0b-3149-8c6a" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 4" type="selectionEntry"/>
                     <entryLink id="5276-53d8-42a3-4b9f" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 4" type="selectionEntry"/>
                     <entryLink id="2761-4b8f-e26a-d493" name="Lore of Nehekhara" hidden="false" collective="false" import="true" targetId="Lore of Nehekhara 4" type="selectionEntry"/>
                   </entryLinks>
@@ -2287,7 +2287,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7960-0aec-3db9-b6e8" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="55b4-e86f-744e-c052" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 2" type="selectionEntry"/>
+                    <entryLink id="55b4-e86f-744e-c052" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 2" type="selectionEntry"/>
                     <entryLink id="a06b-2423-b35f-868d" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 2" type="selectionEntry"/>
                     <entryLink id="791b-54a0-b201-29a1" name="Lore of Nehekhara" hidden="false" collective="false" import="true" targetId="Lore of Nehekhara 2" type="selectionEntry"/>
                   </entryLinks>
@@ -2915,20 +2915,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
       </costs>
     </selectionEntry>
     <selectionEntry id="20ae-a401-cb7b-9203" name="Tomb Swarms" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="4b0c-8f6c-633b-8896" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="993a-a6f5-584e-6134" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f2-4bae-1777-5bd4" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7ac-b77d-2ff2-cd0c" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97a5-140e-f21d-066a" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="965d-45d5-4c7e-6469" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4b0c-8f6c-633b-8896" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ac0e-b68f-bd29-1af2" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -2940,7 +2926,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           <infoLinks>
             <infoLink id="67c5-62e7-8cb0-7070" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
             <infoLink id="1d1e-1cfa-f259-9998" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
-            <infoLink id="f459-df7e-6023-b499" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="f004-7e00-23d2-f7aa" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
             <infoLink id="6a3d-fdf9-d711-b4bd" name="Entombed Beneath the Sands" hidden="false" targetId="eb9b-8590-beba-94b0" type="rule"/>
             <infoLink id="ac0a-fc03-8d96-8bfc" name="Tomb Swarm" hidden="false" targetId="06e5-3b86-de69-caf2" type="profile"/>
@@ -2951,6 +2936,9 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="3b40-4cbb-c4eb-ffd3" name="Expendable" hidden="false" collective="false" import="true" targetId="2a8c-82cd-c21f-04ea" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6737,6 +6725,30 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
       </constraints>
       <infoLinks>
         <infoLink id="4be3-7d61-38da-73d9" name="Hierophant" hidden="false" targetId="88ab-0ed4-9261-e417" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a8c-82cd-c21f-04ea" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="b7e3-e1e4-c971-0232" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="993a-a6f5-584e-6134" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f2-4bae-1777-5bd4" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7ac-b77d-2ff2-cd0c" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97a5-140e-f21d-066a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="965d-45d5-4c7e-6469" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4485-1e1b-225c-5728" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="136f-1a31-ef39-8cb6" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7e3-e1e4-c971-0232" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0c20-5680-68fb-8eb5" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>

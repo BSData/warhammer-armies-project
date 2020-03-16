@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.71"/>
     <publication id="9e23-79cb-pubN67565" name="Albion v.1.21"/>
@@ -8,8 +8,8 @@
     <publication id="9e23-79cb-pubN76150" name="Dark Elves v.1.32"/>
     <publication id="9e23-79cb-pubN77092" name="High Elves v.1.21"/>
     <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.22"/>
-    <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.2"/>
-    <publication id="9e23-79cb-pubN78975" name="Orcs &amp; Goblins v.1.02"/>
+    <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.21"/>
+    <publication id="9e23-79cb-pubN78975" name="Orcs &amp; Goblins v.1.22"/>
     <publication id="9e23-79cb-pubN116235" name="Regiments of Renown v.1.12"/>
     <publication id="aa7b-3583-0834-7bfa" name="Dwarfs v.1.21"/>
     <publication id="b3a3-a398-4838-11a1" name="Empire Knightly Orders v.1.11"/>
@@ -947,7 +947,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1ee7-9599-e191-164e" name="Dread Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -1027,7 +1027,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1aac-8bc7-07ca-4810" name="Banner of Might" page="" hidden="false" collective="false" import="true" type="upgrade">

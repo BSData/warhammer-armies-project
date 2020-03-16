@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c428-290d-c480-1dd1" name="Pirates of Sartosa" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c428-290d-c480-1dd1" name="Pirates of Sartosa" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="d934-6883-3859-d0d0" name="Grog Lubber Table">
       <characteristicTypes>
@@ -1672,9 +1672,9 @@
       <selectionEntries>
         <selectionEntry id="43e5-29ac-4c6d-eff7" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="66f3-f2b9-c0d0-fdf0" value="0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="701a-81a7-15c4-c3fb" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2229-cc2b-bd6e-576e" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1714,7 +1714,7 @@
           <selectionEntries>
             <selectionEntry id="2229-cc2b-bd6e-576e" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="d484-25d1-8759-3ffe" value="0">
                   <conditions>
                     <condition field="selections" scope="2fd9-1963-f472-39d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43e5-29ac-4c6d-eff7" type="atLeast"/>
                   </conditions>
@@ -2711,19 +2711,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c4cb-da2f-e00a-c089" name="Swabbies" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="1451-dfba-7b75-1cae" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="329e-315e-5e1a-298e" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6f9-bb87-2151-b521" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ef8-cbc0-d196-ea61" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7a4-e580-e07c-11b7" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1451-dfba-7b75-1cae" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="4641-3ef6-2b5c-034d" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -2748,9 +2735,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="7686-dc60-133b-392f" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry id="1db3-fc21-46e1-4bb9" name="Throwing Weapons" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -2835,6 +2819,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7de4-4cce-69a9-e121" name="Expendable" hidden="false" collective="false" import="true" targetId="5754-ba38-a3cc-6462" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4746,9 +4733,6 @@
                 <infoLink id="4be8-f09f-65d4-c775" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
                 <infoLink id="5d84-df2d-846b-44f4" name="Cumbersome" hidden="false" targetId="0c15-37e3-c5d6-884b" type="rule"/>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="b4b1-bb99-6cad-dae0" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="c95e-a637-b5fc-ff93" name="Crew" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -4847,9 +4831,6 @@
                 <infoLink id="18ac-1b62-cb8d-b553" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
                 <infoLink id="b0e8-7af3-fff2-d8fa" name="Cumbersome" hidden="false" targetId="0c15-37e3-c5d6-884b" type="rule"/>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="ce7c-9969-445d-1194" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="4452-835e-444e-0bc8" name="Crew" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -4947,9 +4928,6 @@
                 <infoLink id="d121-0adc-e5d3-bae3" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
                 <infoLink id="b008-d408-57cb-1f32" name="Cumbersome" hidden="false" targetId="0c15-37e3-c5d6-884b" type="rule"/>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="3701-b2e4-497c-6c3c" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="0ace-fe8d-fd90-0d03" name="Crew" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -5188,6 +5166,31 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="5754-ba38-a3cc-6462" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="a52d-6ebf-d0f8-2d13" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="329e-315e-5e1a-298e" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6f9-bb87-2151-b521" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ef8-cbc0-d196-ea61" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7a4-e580-e07c-11b7" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d1ee-d214-8118-5ff5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0bc2-d568-3831-cd20" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a52d-6ebf-d0f8-2d13" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4868-3f45-6a97-a4a4" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="2110-133d-e9e3-c5a1" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>

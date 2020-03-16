@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
       <characteristicTypes>
@@ -563,8 +563,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ccf0-8e58-6b28-51aa" name="Crone Hellebron" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="7cf3-407a-f7ee-cb1f" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cebb-830e-dc13-93b2" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b879-ae3a-79d4-6d5f" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7cf3-407a-f7ee-cb1f" type="min"/>
       </constraints>
       <profiles>
         <profile id="d406-9a9a-a640-a9ca" name="Hellebron" publicationId="9e23-79cb-pubN76150" page="158" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -4450,22 +4458,6 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
       </costs>
     </selectionEntry>
     <selectionEntry id="16d1-9765-76f3-508e" name="Slaves" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="07cf-ab2e-a00f-bfe2" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f503-9906-d3b0-bc7d" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-8167-2fc5-b877" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a44-d801-434f-7fcd" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cebb-830e-dc13-93b2" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac16-ef52-b9ff-e73f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ef-ecf2-55b9-e6ef" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fad6-9fe5-4dde-67cf" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="07cf-ab2e-a00f-bfe2" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d52d-4ecd-627d-479c" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -4491,7 +4483,6 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="0b52-12a4-3f90-4f3a" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="60b1-2295-719c-c116" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -4554,27 +4545,14 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d0ef-1975-66f9-23ee" name="Expendable" hidden="false" collective="false" import="true" targetId="2937-4c47-c712-8705" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e13e-de12-d6ec-c8a7" name="Harpies" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="1d9c-b6f6-1769-4937" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f503-9906-d3b0-bc7d" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-8167-2fc5-b877" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a44-d801-434f-7fcd" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fad6-9fe5-4dde-67cf" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac16-ef52-b9ff-e73f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ef-ecf2-55b9-e6ef" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cebb-830e-dc13-93b2" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1d9c-b6f6-1769-4937" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="20bc-02fd-7f31-99cf" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -4600,7 +4578,6 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="cb5f-3e32-f115-ec5a" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="5193-3e33-8240-984c" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
           </infoLinks>
           <costs>
@@ -4641,6 +4618,9 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3af2-fc3a-9f5c-2f11" name="Expendable" hidden="false" collective="false" import="true" targetId="2937-4c47-c712-8705" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6961,6 +6941,32 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="2937-4c47-c712-8705" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="140d-f81c-fdb7-98d2" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f503-9906-d3b0-bc7d" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-8167-2fc5-b877" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a44-d801-434f-7fcd" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a68-0a36-aadb-f84e" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac16-ef52-b9ff-e73f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ef-ecf2-55b9-e6ef" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fad6-9fe5-4dde-67cf" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cebb-830e-dc13-93b2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="94f2-6ea2-9d08-ae9a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="543f-9b87-d321-ec89" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="140d-f81c-fdb7-98d2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="22cb-4219-884e-614b" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f310-9ba8-f900-e01d" name="Gifts of Khaine" hidden="false" collective="false" import="true">
       <selectionEntries>

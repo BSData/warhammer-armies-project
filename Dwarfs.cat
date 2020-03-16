@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="2bfd-fe7d-294c-9853" name="Rules of the Runes Table">
       <characteristicTypes>
@@ -673,8 +673,22 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
       </costs>
     </selectionEntry>
     <selectionEntry id="d1b2-2798-72c0-bedb" name="Ungrim Ironfist" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="34d8-6629-00f0-9f93" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa51-abcf-79bc-2b70" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="974e-7c8a-61c5-6977" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="00ea-91ea-b054-fea5" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="34d8-6629-00f0-9f93" type="min"/>
       </constraints>
       <profiles>
         <profile id="eff6-82d9-b823-2320" name="Ungrim Ironfist" publicationId="aa7b-3583-0834-7bfa" page="193" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -1876,8 +1890,23 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
       </costs>
     </selectionEntry>
     <selectionEntry id="dba1-35a1-2bbb-9555" name="Garagrim Ironfist" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="2e71-a525-1874-ce30" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2ba-9fca-a29e-ad0a" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0dfb-364a-e8bf-cbe4" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1770-cff8-9887-69dc" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcab-fe17-e6d1-c271" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="364e-6f8c-ecc4-2a5d" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2e71-a525-1874-ce30" type="min"/>
       </constraints>
       <profiles>
         <profile id="7c29-9c73-a27a-42c1" name="Garagrim Ironfist" publicationId="aa7b-3583-0834-7bfa" page="194" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -2144,8 +2173,16 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
       </costs>
     </selectionEntry>
     <selectionEntry id="2d6d-438e-1d55-e73f" name="Josef Bugman" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="79fe-bafc-12e2-989b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ebef-0c28-ad41-de3d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6f5e-ea40-5e11-eb02" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="79fe-bafc-12e2-989b" type="min"/>
       </constraints>
       <profiles>
         <profile id="e121-f390-3e59-8ca2" name="Josef Bugman" publicationId="aa7b-3583-0834-7bfa" page="198" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -4353,20 +4390,20 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <infoLink id="b487-3b64-cedc-b91b" name="Giant Slayer" hidden="false" targetId="6dac-8ef5-d57c-4c5a" type="profile"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="6c41-6441-4823-0887" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1770-cff8-9887-69dc" name="Weapon Runes" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="7c8d-aa6b-7014-4bce" value="1.0">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dba1-35a1-2bbb-9555" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a29f-7777-701d-3ffc" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9595-dd1b-36c4-969c" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c8d-aa6b-7014-4bce" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6e22-82d2-d981-4c26" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="0913-10b3-7dc7-9410" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
+                    <entryLink id="fd78-2a42-a128-34cc" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4513,16 +4550,16 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <infoLink id="1b17-380e-0499-96ca" name="Giant Slayer" hidden="false" targetId="6dac-8ef5-d57c-4c5a" type="profile"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="fcab-fe17-e6d1-c271" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="fcab-fe17-e6d1-c271" name="Weapon Runes" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="b74a-619b-d067-1c46" value="1.0">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dba1-35a1-2bbb-9555" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b74a-619b-d067-1c46" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b74a-619b-d067-1c46" type="max"/>
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d463-0de4-45c2-5a83" type="max"/>
                   </constraints>
                   <entryLinks>
@@ -4689,20 +4726,20 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <infoLink id="e9c1-b57f-1d45-eb34" name="Giant Slayer" hidden="false" targetId="Giant Slayer (Brotherhood)" type="profile"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="51e0-749e-5b95-06cd" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a2ba-9fca-a29e-ad0a" name="Weapon Runes" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="b6af-5146-2117-8d64" value="1.0">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dba1-35a1-2bbb-9555" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd29-3d82-730a-856f" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1add-501d-540d-c02b" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6af-5146-2117-8d64" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c48c-dcd9-6f78-380b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="2587-919e-f270-d2ab" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
+                    <entryLink id="1085-e8fd-a974-a79b" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4906,16 +4943,16 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ebef-0c28-ad41-de3d" name="Bugman&apos;s Rangers" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ebef-0c28-ad41-de3d" name="Bugman&apos;s Rangers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="6aee-1c7a-943d-2145" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d6d-438e-1d55-e73f" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aee-1c7a-943d-2145" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6aee-1c7a-943d-2145" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="a70e-47e8-ef98-13d7" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -6329,20 +6366,20 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
                 <infoLink id="5674-62cd-085b-be5c" name="Giant Slayer" hidden="false" targetId="Giant Slayer (Brotherhood)" type="profile"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="4e79-21c1-97f1-5885" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="0dfb-364a-e8bf-cbe4" name="Weapon Runes" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="dca3-2a72-f0bc-6aed" value="1.0">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dba1-35a1-2bbb-9555" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45d8-a62d-5d0c-eece" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="98b3-4f36-4e66-982e" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dca3-2a72-f0bc-6aed" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3254-d239-04ff-0edf" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="3f2a-2308-f0bd-ced6" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
+                    <entryLink id="3e54-ae0a-dd30-108d" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
       <characteristicTypes>
@@ -91,8 +91,16 @@
   </profileTypes>
   <selectionEntries>
     <selectionEntry id="f95b-20b9-8fae-0797" name="Greasus Goldtooth" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="872b-4d71-1aa8-5c1b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec24-3be5-4b39-6a34" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6feb-b71a-ff29-48cf" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="872b-4d71-1aa8-5c1b" type="min"/>
       </constraints>
       <profiles>
         <profile id="e7ff-a5e8-d981-f01e" name="Greasus Goldtooth" publicationId="9e23-79cb-pubN78137" page="101" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -297,8 +305,21 @@ and Multiple Wounds (D3).</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f82-6eb2-20e1-f0af" name="Ghark Ironskin" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="55c3-8959-23db-7b16" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59f2-092a-586e-6dba" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a58-c5fd-4a14-1b17" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8783-0392-06fe-3d6d" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="55c3-8959-23db-7b16" type="min"/>
       </constraints>
       <profiles>
         <profile id="e9b3-3faa-7ea5-fcee" name="Ghark Ironskin" publicationId="9e23-79cb-pubN78137" page="105" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -929,7 +950,7 @@ and Multiple Wounds (D3).</characteristic>
               <description>A Slaughtermaster with a Cauldron gains Stubborn and will count as part of the crew, and may never leave the unit.</description>
             </rule>
             <rule id="36f9-c698-614f-6081" name="Blessing of the Great Maw" publicationId="9e23-79cb-pubN78137" page="61" hidden="false">
-              <description>A Slaughtermaster with a Butcher&apos;s Cauldron receives a Ward save (5+) and receives +1 to Cast spells.</description>
+              <description>A Slaughtermaster with a Butcher&apos;s Cauldron receives a Ward save (4+) and receives +1 to Cast spells. In addition, he may add +6&quot; to the range of any spell he attempts to cast.</description>
             </rule>
           </rules>
           <costs>
@@ -1104,8 +1125,16 @@ and Multiple Wounds (D3).</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcdc-11fa-7c17-f666" name="Golgfag Maneater" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="37de-8855-4812-461e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d22-83cc-f0a1-e5bb" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="54ee-d929-6fa5-722a" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="37de-8855-4812-461e" type="min"/>
       </constraints>
       <profiles>
         <profile id="b38b-27af-0b39-9cc4" name="Golgfag Maneater" publicationId="9e23-79cb-pubN78137" page="109" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -1237,7 +1266,7 @@ and Multiple Wounds (D3).</characteristic>
             <profile id="6fbd-1241-47bd-cde7" name="Great Gutgouger" publicationId="9e23-79cb-pubN78137" page="111" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"></characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
                 <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Flail. While Bragg is involved in a challenge, he gains Heroic Killing Blow. In addition, if Bragg slays his foe in a challenge, any enemy units in base contact with him are Disrupted for the remainder of the turn.</characteristic>
               </characteristics>
             </profile>
@@ -2908,18 +2937,6 @@ and Multiple Wounds (D3).</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="1fc0-273b-58de-2bce" name="Gnoblar Fighters" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="increment" field="bbac-1ccf-9928-3705" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec24-3be5-4b39-6a34" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6189-0e53-280c-ee07" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe5c-8851-dee4-6b23" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bbac-1ccf-9928-3705" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="5a74-0b57-7ffd-d017" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3054,6 +3071,9 @@ and Multiple Wounds (D3).</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1371-65cf-83db-3376" name="Expendable" hidden="false" collective="false" import="true" targetId="40c4-d1a9-293c-5424" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5740,6 +5760,28 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="40c4-d1a9-293c-5424" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="c411-a429-d9f1-29f7" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec24-3be5-4b39-6a34" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6189-0e53-280c-ee07" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe5c-8851-dee4-6b23" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59f2-092a-586e-6dba" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5852-1c0a-4dc7-65e7" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="449a-37b8-a024-12be" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c411-a429-d9f1-29f7" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="e7a8-e10a-7edc-7615" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b940-f3aa-fc1c-905a" name="Big Names" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -6072,7 +6114,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
           <profiles>
             <profile id="c2e7-e71f-01d9-ca29" name="Gnoblar Thiefstone" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the Gnoblar Thiefstone Table when the model is deployed to see if the Thiefstone has helped them to &apos;find&apos; any useful items. Note that this may result in the bearer of the Thiefstone having two Talismans. In addition, if a character is killed in close combat while being in base contact with the model wearing the Thiefstone, you will automatically be allowed to pick up any one Magic Item (except Magic Standards) that the slain character might have had. The model with the Thiefstone may then use that item itself for the rest of the battle.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">A Gnoblar Thiefstone grants the bearer Magic Resistance (1). In addition, roll on the Gnoblar Thiefstone Table when the model is deployed to see if the Thiefstone has helped them to &apos;find&apos; any useful items. Note that this may result in the bearer of the Thiefstone having two Talismans. In addition, if a character is killed in close combat while being in base contact with the model wearing the Thiefstone, you will automatically be allowed to pick up any one Magic Item (except Magic Standards) that slain character might have had, as long as the bearer does not already have a magic item of that type. The model with the Thiefstone may then use that item itself for the rest of the battle.</characteristic>
               </characteristics>
             </profile>
             <profile id="e1bc-9b34-bc32-3a2f" name="Result" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="baa5-047a-38b7-c294" typeName="Gnoblar Thiefstone Table">
@@ -6185,7 +6227,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
       <description>The riders of a this Monster does not count as Moving and Shooting.</description>
     </rule>
     <rule id="a07f-3534-f3c1-b420" name="Beneath Contempt" publicationId="9e23-79cb-pubN78137" page="93" hidden="false">
-      <description>Gnoblars are have Expendable. In addition, Ogre characters may not join units of Gnoblars.</description>
+      <description>Gnoblars have Expendable. In addition, Ogre characters may not join units of Gnoblars.</description>
     </rule>
     <rule id="d99d-6da7-c8fd-bd98" name="Bicker" publicationId="9e23-79cb-pubN78137" page="93" hidden="false">
       <description>Roll a D6 at the beginning of the turn for this unit if it is not in combat, fleeing or subject to any compulsory movement. If the unit rolls a 1 it may do nothing at all this turn.</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="2c06-e87d-1a85-d6a0" name="Ringing the Bell Table">
       <characteristicTypes>
@@ -5351,19 +5351,6 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
       </costs>
     </selectionEntry>
     <selectionEntry id="5df5-8e4d-2ea5-1c2f" name="Skavenslaves" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="4871-6d91-ada8-8241" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="acaa-9ecc-ea98-9d04" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5011-d252-f285-9d9c" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d13c-de9f-bc2d-a438" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a47-85d7-9ec0-0f19" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4871-6d91-ada8-8241" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="faf7-8bcc-b2ea-d9d0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -5399,7 +5386,6 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
           <infoLinks>
             <infoLink id="da44-5f35-0e75-d3b6" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
             <infoLink id="8433-65cd-05d3-d0f5" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
-            <infoLink id="6c92-c45a-0064-130a" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="43e1-b234-b731-8c68" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -5507,6 +5493,9 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e1e0-807f-9df3-1885" name="Expendable" hidden="false" collective="false" import="true" targetId="0620-c6af-fdad-9bc3" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5795,19 +5784,6 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
       </costs>
     </selectionEntry>
     <selectionEntry id="2707-f300-47f0-58ec" name="Giant Rats" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="increment" field="2d19-3524-316a-0198" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="acaa-9ecc-ea98-9d04" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5011-d252-f285-9d9c" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d13c-de9f-bc2d-a438" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a47-85d7-9ec0-0f19" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2d19-3524-316a-0198" type="max"/>
-      </constraints>
       <rules>
         <rule id="0dd8-dfde-5b74-ad27" name="Mainstay" publicationId="4086-1ccd-f433-39a2" page="169" hidden="false">
           <description>If your army General is a Clan Moulder Character, the Mainstay rule for Giant Rats does not apply.</description>
@@ -5815,7 +5791,6 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
       </rules>
       <infoLinks>
         <infoLink id="95ed-df2e-50a5-c08a" name="Mixed Unit" hidden="false" targetId="58e9-5716-dad1-961f" type="rule"/>
-        <infoLink id="280a-299e-6da4-5a50" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
         <infoLink id="9cb6-c9ed-216d-c881" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
         <infoLink id="deed-2989-2da1-086f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="d827-ff50-bba0-a148" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
@@ -5909,24 +5884,14 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="e622-5a43-8ba2-7da0" name="Expendable" hidden="false" collective="false" import="true" targetId="0620-c6af-fdad-9bc3" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f587-8413-6ceb-2c28" name="Rat Swarms" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="80d5-4423-3b48-b791" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="acaa-9ecc-ea98-9d04" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5011-d252-f285-9d9c" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d13c-de9f-bc2d-a438" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a47-85d7-9ec0-0f19" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="80d5-4423-3b48-b791" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="cbae-4bbe-e6de-59c3" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -5953,7 +5918,6 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="7e91-cdd4-0fee-3fc2" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="6755-1fb6-2929-cb2f" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="3eee-94fe-ec48-30fc" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
           </infoLinks>
@@ -5962,6 +5926,9 @@ For any of the warpstone generated dice that rolls a 1 the Wizard suffers a woun
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="fd3f-272d-71a4-2d2d" name="Expendable" hidden="false" collective="false" import="true" targetId="0620-c6af-fdad-9bc3" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -7444,6 +7411,28 @@ If you roll a misfire result something has gone awry. No more shots are fired th
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="0620-c6af-fdad-9bc3" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="759f-f80e-4ea4-fb84" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="acaa-9ecc-ea98-9d04" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5011-d252-f285-9d9c" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d13c-de9f-bc2d-a438" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a47-85d7-9ec0-0f19" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9986-0f8f-78a2-74bb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0e78-aba0-4bc8-78b5" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="759f-f80e-4ea4-fb84" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f456-7154-0dc7-3ee4" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e00e-6c4b-3cf0-6ce9" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5941-78ef-698e-a105" name="Empire" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5941-78ef-698e-a105" name="Empire" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="901c-8001-972f-89d7" name="Pigeon Bomb Table">
       <characteristicTypes>
@@ -439,8 +439,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3c17-8253-bf77-ff9d" name="Volkmar the Grim" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="94de-73f5-7590-2080" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e61-1399-6647-eee5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3796-edfa-054c-118f" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="94de-73f5-7590-2080" type="min"/>
       </constraints>
       <profiles>
         <profile id="7d79-38e0-03fb-ae33" name="Volkmar the Grim" publicationId="315d-135b-135c-07ce" page="225" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -4813,8 +4821,16 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
       </costs>
     </selectionEntry>
     <selectionEntry id="2c24-1d67-cd1c-db69" name="Markus Wulfheart" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="3a8f-849c-4ad0-eca8" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8133-1df8-6a01-0395" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cfc4-9e22-9125-3b99" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3a8f-849c-4ad0-eca8" type="min"/>
       </constraints>
       <profiles>
         <profile id="a3cf-491e-4691-658e" name="Markus Wulfheart" publicationId="315d-135b-135c-07ce" page="235" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -11327,7 +11343,7 @@ also choose to shoot at the primary quarry as if he had Sniper.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8133-1df8-6a01-0395" name="Wulfhart&apos;s Hunters" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="8133-1df8-6a01-0395" name="Wulfhart&apos;s Hunters" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="86de-3b45-e086-4786" value="1.0">
           <conditions>

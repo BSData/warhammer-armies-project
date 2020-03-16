@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
       <characteristicTypes>
@@ -476,8 +476,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9380-7b1b-1532-33e4" name="Kroq-Gar" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="b713-71e7-716e-142a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f9cb-e739-7b7f-eb4d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dcab-4a65-00c1-37b9" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b713-71e7-716e-142a" type="min"/>
       </constraints>
       <profiles>
         <profile id="aec9-4e6c-90cb-58e6" name="Kroq-Gar" publicationId="9e23-79cb-pubN77402" page="177" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -1609,8 +1617,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dfa0-c635-b6f0-7e4a" name="Tiktaq&apos;to" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="f5b7-0141-b8ee-70d3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="694f-ac5e-ca04-304d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f669-57d2-5819-b4c9" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f5b7-0141-b8ee-70d3" type="min"/>
       </constraints>
       <profiles>
         <profile id="3e06-232a-14a1-ce54" name="Tiktaq&apos;to" publicationId="9e23-79cb-pubN77402" page="185" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -3405,19 +3421,20 @@ Casualties are always taken from the rearmost rank of the appropriate model type
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa54-953b-e681-007c" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="6cf8-bf89-4b66-c924" name="Hand Weapon &amp; Javelins (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="6cf8-bf89-4b66-c924" name="Hand Weapon, Javelins (Poisoned Attacks) &amp; Shields" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c48-9622-0f6e-664a" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="bd89-bdb6-a6e8-15a3" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                     <infoLink id="51db-6c54-b7fe-75be" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
+                    <infoLink id="b73c-2407-93ce-5f50" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4193-9b7a-726b-0cf2" name="Hand Weapon &amp; Short Bows (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="4193-9b7a-726b-0cf2" name="Hand Weapon &amp; Shortbows (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8168-9bcc-179d-3eb4" type="max"/>
                   </constraints>
@@ -3487,19 +3504,6 @@ Casualties are always taken from the rearmost rank of the appropriate model type
       </costs>
     </selectionEntry>
     <selectionEntry id="f22b-497e-d160-57c6" name="Jungle Swarms" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="2e17-e7fa-c7d3-8ced" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cc5-af14-1ed1-4ec3" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9cb-e739-7b7f-eb4d" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3079-26f6-77c6-6ebc" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33a1-565c-d3fa-2abc" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2e17-e7fa-c7d3-8ced" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ea8d-98e7-4748-4783" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3525,7 +3529,6 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="4366-8d34-aee2-0a98" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="dbdc-7f0f-418d-ae65" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="e0df-d17a-1b90-329b" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
             <infoLink id="185c-271d-6dba-800f" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
@@ -3537,6 +3540,9 @@ Casualties are always taken from the rearmost rank of the appropriate model type
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="ee36-0101-8c93-52d2" name="Expendable" hidden="false" collective="false" import="true" targetId="4c81-c441-2d8f-96bf" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5634,6 +5640,31 @@ Casualties are always taken from the rearmost rank of the appropriate model type
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="4c81-c441-2d8f-96bf" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="2c1c-ef63-2225-a33b" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cc5-af14-1ed1-4ec3" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9cb-e739-7b7f-eb4d" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3079-26f6-77c6-6ebc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33a1-565c-d3fa-2abc" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a1e8-00c5-c52b-e71b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c47f-ee62-7e27-cdc1" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c1c-ef63-2225-a33b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="55a2-2912-68a6-84f4" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9116-e3d7-5fb1-32dd" name="Disciplines of the Old Ones" hidden="false" collective="false" import="true">
       <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="37f8-6eb5-3f67-40f1" name="Blessings of Rigg">
       <characteristicTypes>
@@ -2320,25 +2320,11 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
       </costs>
     </selectionEntry>
     <selectionEntry id="9066-2e61-75da-12a6" name="Jaguar Hunting Packs" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="increment" field="3f12-ff86-b4d4-0251" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fcf-eb6c-8885-b4fb" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0b6-fed3-41e0-12e2" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5fb-15dd-9a9d-cc0b" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b6e-46e2-e67d-8cb6" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3f12-ff86-b4d4-0251" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="59b6-9a0d-0329-fe42" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
         <infoLink id="346e-0072-85c3-f879" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="3572-66f3-58e1-001f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="517e-d234-98bd-b5a6" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
-        <infoLink id="90d6-f7dd-d893-c0e1" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ec8-5c56-5f31-1d99" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -2398,6 +2384,9 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="8ea5-3250-294c-08fa" name="Expendable" hidden="false" collective="false" import="true" targetId="d29f-978d-b8b8-3185" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -3774,6 +3763,31 @@ To drop rocks, select one unengaged enemy unit that the Terradons moved over in 
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="d29f-978d-b8b8-3185" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="3c7b-ea6f-8cb4-7525" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fcf-eb6c-8885-b4fb" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0b6-fed3-41e0-12e2" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5fb-15dd-9a9d-cc0b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b6e-46e2-e67d-8cb6" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d253-0f35-1530-18c7" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="453a-a2f5-49da-cae3" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c7b-ea6f-8cb4-7525" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="197d-8119-a1ba-dcff" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="579f-95cf-8aaf-4914" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>

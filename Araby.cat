@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5388-e68f-6e10-6be4" name="Bladedances">
       <characteristicTypes>
@@ -1358,8 +1358,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="670e-f160-ee55-682d" name="Ottokar Mehmed Agha" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="9e4b-81f3-ecca-c931" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="52d0-a4fb-2be0-09e3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="558f-a536-6d31-bbc3" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9e4b-81f3-ecca-c931" type="min"/>
       </constraints>
       <profiles>
         <profile id="7ac1-5ab1-edbb-c754" name="Ottokar Mehmed Agha" publicationId="d221-484d-439d-4310" page="84" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -3295,19 +3303,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="99a3-9fbd-a190-1769" name="Slave Levies" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="a541-3383-da75-77f0" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5db-83a3-79d9-7d98" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64b4-cc01-5a9e-c430" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9de6-cd5b-a024-dc0e" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7260-130d-629c-1d20" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a541-3383-da75-77f0" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d5d8-c8a4-d49a-67c8" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3332,9 +3327,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="a83a-2f8a-6aaf-573b" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="1f71-c4cd-cc1c-6a57" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2050-38df-7f8d-3145">
               <constraints>
@@ -3437,6 +3429,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6ea8-5ded-7eca-43a2" name="Expendable" hidden="false" collective="false" import="true" targetId="53ad-bdb5-9fa6-13e1" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4525,8 +4520,8 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b0-820c-8ca7-5a42" type="min"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="279f-5274-1160-30f7" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="23b0-820c-8ca7-5a42" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="279f-5274-1160-30f7" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="590c-f3f8-0f20-1423" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -6051,6 +6046,29 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="160.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53ad-bdb5-9fa6-13e1" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="cbcc-f26e-ace0-049d" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5db-83a3-79d9-7d98" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64b4-cc01-5a9e-c430" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9de6-cd5b-a024-dc0e" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7260-130d-629c-1d20" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="98ae-b342-128e-0925" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8205-07ae-9b24-21fb" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cbcc-f26e-ace0-049d" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3e1c-5f70-49d6-ab34" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

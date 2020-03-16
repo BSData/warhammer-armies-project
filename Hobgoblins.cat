@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="031d-268e-7c63-81b3" name="Hobgoblins" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="031d-268e-7c63-81b3" name="Hobgoblins" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="f3ee-001b-a3d8-3590" name="Treacherous Gits Table">
       <characteristicTypes>
@@ -1743,18 +1743,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b9ef-f5c1-47d5-54c7" name="Kharash" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="1602-5563-7357-fc6e" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69e7-0d31-7d02-d1aa" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad0a-9ff6-7a24-87f5" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db2a-81e7-eef6-588a" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1602-5563-7357-fc6e" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="5f56-04a2-7c9c-e800" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -1779,9 +1767,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="1efb-ff2d-f7da-2e91" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry id="91c2-95a0-9ce4-bd05" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -1846,26 +1831,16 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d1ad-98bc-a3c1-f91c" name="Expendable" hidden="false" collective="false" import="true" targetId="62b8-32fb-1d79-e521" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="096e-bb6b-6b30-b991" name="Hobhounds" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="increment" field="14d3-6d16-8883-929d" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db2a-81e7-eef6-588a" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69e7-0d31-7d02-d1aa" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad0a-9ff6-7a24-87f5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="14d3-6d16-8883-929d" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="7e37-dc61-9230-2bb2" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
-        <infoLink id="7922-89da-e713-c9ae" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
         <infoLink id="4983-36d3-9e1b-3e41" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1941,6 +1916,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="a212-299d-743e-66aa" name="Expendable" hidden="false" collective="false" import="true" targetId="62b8-32fb-1d79-e521" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -3627,6 +3605,27 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="62b8-32fb-1d79-e521" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="c8e2-c397-a513-62f5" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69e7-0d31-7d02-d1aa" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad0a-9ff6-7a24-87f5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db2a-81e7-eef6-588a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9016-dcd7-0580-06e3" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="24b7-6a0d-2016-7458" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8e2-c397-a513-62f5" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5242-7b0d-f0c6-582e" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="5b4d-ce31-1854-327f" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>

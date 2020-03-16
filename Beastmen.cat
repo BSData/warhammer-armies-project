@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
       <characteristicTypes>
@@ -2643,8 +2643,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="27ea-623d-3d4d-18d2" name="Ghorros Warhoof" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="6b78-5e7b-30d3-6aea" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a14-19b1-b661-f660" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ae3c-a443-3f49-3924" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6b78-5e7b-30d3-6aea" type="min"/>
       </constraints>
       <profiles>
         <profile id="18f7-2d10-064f-3d31" name="Ghorros" publicationId="9e23-79cb-pubN71963" page="104" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -5140,19 +5148,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9df8-a05d-272b-7ac0" name="Mutants" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="d797-ab57-eac7-e94a" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb0-d30a-99db-d88b" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c024-b7ac-3f8e-accc" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18e4-16dc-9b48-e960" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="967b-440e-5749-46fe" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d797-ab57-eac7-e94a" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="3451-16d2-299c-48d2" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -5192,9 +5187,6 @@
               <description>Roll a D6 at the start of the game to determine which mutation is the most prominent for the remainder of the game.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="4c34-99d5-d6f0-272d" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry id="9ff7-1458-b63f-5dce" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -5247,6 +5239,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1086-9bed-a464-33c7" name="Expendable" hidden="false" collective="false" import="true" targetId="437c-32c7-4262-cfc0" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5466,19 +5461,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3995-d207-7c84-b7c3" name="Chaos Warhounds" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="81f8-d1f1-3fa1-5642" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb0-d30a-99db-d88b" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c024-b7ac-3f8e-accc" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18e4-16dc-9b48-e960" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="967b-440e-5749-46fe" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="81f8-d1f1-3fa1-5642" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="fc74-df40-2946-3878" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -5506,7 +5488,6 @@
           <infoLinks>
             <infoLink id="3c8a-d8e3-bc65-a72a" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="aaa8-c83f-0f2b-a6e6" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="d75f-e93a-e9e2-95b4" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="4d81-926d-60cd-8eb5" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -5538,6 +5519,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="6014-f635-e1e6-0a42" name="Expendable" hidden="false" collective="false" import="true" targetId="437c-32c7-4262-cfc0" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -7259,8 +7243,8 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="103e-df03-eac0-c076" type="min"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="324b-73f5-dc8c-b01c" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="103e-df03-eac0-c076" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="324b-73f5-dc8c-b01c" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="3ae4-b3c2-f1d6-dfa0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -7522,6 +7506,28 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="437c-32c7-4262-cfc0" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="b544-242f-e058-49d9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb0-d30a-99db-d88b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c024-b7ac-3f8e-accc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18e4-16dc-9b48-e960" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="967b-440e-5749-46fe" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="91c2-5b75-9603-9b97" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6bfd-3044-ed31-ae56" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b544-242f-e058-49d9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4c72-0547-7627-c1d7" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f891-74c1-4325-9639" name="Gifts of Chaos" hidden="false" collective="false" import="true">
       <selectionEntries>

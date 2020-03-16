@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7d72-ca7f-447c-58c6" name="Martial Arts Fighting Style">
       <characteristicTypes>
@@ -3378,16 +3378,6 @@ as an additional attack.</characteristic>
     </selectionEntry>
     <selectionEntry id="1110-a313-1db4-b634" name="Steppe Nomads" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="fc08-0847-eeb1-d48e" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4fd-85df-8891-8ab7" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8249-395d-c225-79b5" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df95-9760-4fad-0e4f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b0f-19f0-9660-a600" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3120-b7d9-c5b5-1882" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="944a-27aa-55e2-7bcc" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" field="180d-e937-a001-d4ab" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e32d-8375-6605-53f2" type="atLeast"/>
@@ -3395,7 +3385,6 @@ as an additional attack.</characteristic>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fc08-0847-eeb1-d48e" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="180d-e937-a001-d4ab" type="min"/>
       </constraints>
       <categoryLinks>
@@ -3429,7 +3418,6 @@ as an additional attack.</characteristic>
           </rules>
           <infoLinks>
             <infoLink id="3116-4d72-96e6-56b2" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
-            <infoLink id="e1d2-2383-3dd4-2bb7" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="d11e-099d-40c5-6c96" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -3562,26 +3550,14 @@ as an additional attack.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="082a-b4b6-faa4-f6ee" name="Expendable" hidden="false" collective="false" import="true" targetId="4571-347b-450c-3b74" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c02-aaec-b3bc-6ec9" name="Hill Tribesmen" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="6407-5c33-c763-f76f" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4fd-85df-8891-8ab7" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8249-395d-c225-79b5" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df95-9760-4fad-0e4f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b0f-19f0-9660-a600" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3120-b7d9-c5b5-1882" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="944a-27aa-55e2-7bcc" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6407-5c33-c763-f76f" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="e57e-ec72-4bfe-7e9b" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3608,7 +3584,6 @@ as an additional attack.</characteristic>
           </profiles>
           <infoLinks>
             <infoLink id="445c-e664-5bb4-47df" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
-            <infoLink id="cd3b-81b9-b92d-b934" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="ea9f-117e-7b7f-022b" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e731-c0c3-5da4-b710">
@@ -3740,26 +3715,14 @@ as an additional attack.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1be6-6869-f883-9555" name="Expendable" hidden="false" collective="false" import="true" targetId="4571-347b-450c-3b74" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f09b-6ca5-b97d-fad4" name="Monkey Warriors" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="9c5f-362c-456e-211c" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4fd-85df-8891-8ab7" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8249-395d-c225-79b5" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df95-9760-4fad-0e4f" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b0f-19f0-9660-a600" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3120-b7d9-c5b5-1882" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="944a-27aa-55e2-7bcc" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c5f-362c-456e-211c" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="4556-0736-36c2-cfd3" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3786,7 +3749,6 @@ as an additional attack.</characteristic>
           </profiles>
           <infoLinks>
             <infoLink id="3615-aa63-0a2e-2b4d" name="Strider (Obstacle)" hidden="false" targetId="f099-a712-8bb3-8162" type="rule"/>
-            <infoLink id="8236-8f01-176b-32fa" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="3161-1cd1-40d5-21e6" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
             <infoLink id="42f0-cfe9-5ce4-69e2" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="9931-37b0-6540-43a7" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
@@ -3876,6 +3838,9 @@ as an additional attack.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b14c-5dd8-b2e7-7a18" name="Expendable" hidden="false" collective="false" import="true" targetId="4571-347b-450c-3b74" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6046,6 +6011,30 @@ After these hits are resolved, place the Phoenix at the line&apos;s end point. I
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="4571-347b-450c-3b74" name="Expendable" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="c5dc-5052-5fc8-8a5a" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4fd-85df-8891-8ab7" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8249-395d-c225-79b5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df95-9760-4fad-0e4f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b0f-19f0-9660-a600" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3120-b7d9-c5b5-1882" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="944a-27aa-55e2-7bcc" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6703-8be8-6a37-a12c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5f0f-b1aa-c2ed-7906" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c5dc-5052-5fc8-8a5a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="00d1-3214-a85b-12d1" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7d98-546a-fa53-3899" name="Stratagems" hidden="false" collective="false" import="true">
       <selectionEntries>

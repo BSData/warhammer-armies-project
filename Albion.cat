@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a10d-a6ff-f7f3-c8c5" name="Albion" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a10d-a6ff-f7f3-c8c5" name="Albion" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5483-d421-95cb-121b" name="Big Things Chart (Giant)">
       <characteristicTypes>
@@ -897,7 +897,7 @@
           <selectionEntries>
             <selectionEntry id="40db-e65d-62ba-f604" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="eb3f-c7fc-a751-ef1d" value="0.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84c1-005e-f1ce-7a47" type="atLeast"/>
                   </conditions>
@@ -946,16 +946,16 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bd8f-1750-ea50-e50c" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bd8f-1750-ea50-e50c" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="392a-f4cd-9330-ee2c" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84c1-005e-f1ce-7a47" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="392a-f4cd-9330-ee2c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="392a-f4cd-9330-ee2c" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="7728-c428-d746-4baa" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -6472,6 +6472,9 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       <infoLinks>
         <infoLink id="ffca-0797-fa1b-f237" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

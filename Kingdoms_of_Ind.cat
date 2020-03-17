@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="8f52-2c37-b05e-63ac" name="Maleficent Gaze Table">
       <characteristicTypes>
@@ -574,7 +574,7 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0863-b65d-d215-b987" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0863-b65d-d215-b987" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="8a7a-cd53-d56d-788d" value="1.0">
                   <conditions>
@@ -586,7 +586,7 @@
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a7a-cd53-d56d-788d" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5725-b621-98e8-ca43" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
+                <infoLink id="5725-b621-98e8-ca43" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
@@ -626,6 +626,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="3f73-fd07-3847-2cae" name="Pata" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="6210-f0df-8094-7341" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33b1-7bae-f2ad-0262" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6210-f0df-8094-7341" type="max"/>
               </constraints>
@@ -2282,19 +2289,19 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="07c8-1d94-0926-28c3" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="07c8-1d94-0926-28c3" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="d722-a9d1-722d-eb07" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0f-ea8e-197f-68e2" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d722-a9d1-722d-eb07" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d722-a9d1-722d-eb07" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="aa17-5757-c7dc-8f38" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
+                <infoLink id="aa17-5757-c7dc-8f38" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
@@ -2334,6 +2341,13 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
               </costs>
             </selectionEntry>
             <selectionEntry id="f6cc-3399-c2db-1a1d" name="Pata" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="49eb-d65c-c00e-8f37" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a0f-ea8e-197f-68e2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49eb-d65c-c00e-8f37" type="max"/>
               </constraints>

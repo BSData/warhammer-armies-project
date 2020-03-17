@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9a0e-261d-9899-f1ae" name="Evocation of Death Chart">
       <characteristicTypes>
@@ -1621,7 +1621,7 @@ The last two effects last until the start of the next Vampire Counts&apos; turn.
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Two hand weapons. This sword gives the Red Duke +1 To Hit in close combat.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Two/Additional Hand Weapons. This sword gives the Red Duke +1 To Hit in close combat.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5025,7 +5025,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
-                <selectionEntryGroup id="6d8f-23e9-cc3c-72a5" name="Wizard Level" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="6d8f-23e9-cc3c-72a5" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="37bc-9695-b53b-134a">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8b2-5d87-9a74-e28c" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8db9-b2c1-2aea-07aa" type="max"/>
@@ -6403,16 +6403,16 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fe1e-ccf5-1963-e33e" name="Lance (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fe1e-ccf5-1963-e33e" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="007a-1752-4d8c-058d" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51c8-4ab9-407b-cbb7" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="007a-1752-4d8c-058d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="007a-1752-4d8c-058d" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="e578-fbef-bc3c-1a9c" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
@@ -9096,6 +9096,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       <infoLinks>
         <infoLink id="3381-c1d9-6424-e57b" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

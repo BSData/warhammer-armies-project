@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
       <characteristicTypes>
@@ -72,7 +72,7 @@
       <modifiers>
         <modifier type="set" field="fc0c-70f1-73f8-d9e9" value="1.0">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="099d-abd7-afdb-8c19" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="099d-abd7-afdb-8c19" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -81,7 +81,7 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fc0c-70f1-73f8-d9e9" type="min"/>
       </constraints>
       <profiles>
-        <profile id="9858-86d4-b8ea-8ca2" name="Orion" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="9858-86d4-b8ea-8ca2" name="Orion" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
@@ -97,10 +97,10 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="ef62-1ba1-4acb-90a8" name="The Wild Hunt" publicationId="e967-620f-06be-096a" page="141" hidden="false">
+        <rule id="ef62-1ba1-4acb-90a8" name="The Wild Hunt" publicationId="e967-620f-06be-096a" page="144" hidden="false">
           <description>In an army led by Orion, Wild Riders may be taken as a Core choice. An army led by Orion must include at least one unit of Wild Riders.</description>
         </rule>
-        <rule id="34e5-08e8-ec08-a869" name="Orion&apos;s Equerries" publicationId="e967-620f-06be-096a" page="141" hidden="false">
+        <rule id="34e5-08e8-ec08-a869" name="Orion&apos;s Equerries" publicationId="e967-620f-06be-096a" page="144" hidden="false">
           <description>If Orion is accompanied by Hounds of Orion, they must be deployed as a unit. Orion cannot leave this unit, and cannot join other units.</description>
         </rule>
       </rules>
@@ -124,7 +124,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4deb-8580-48aa-5ac1" type="max"/>
           </constraints>
           <profiles>
-            <profile id="dbd7-3278-f751-4dc4" name="Horn of the Wild Hunt" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="dbd7-3278-f751-4dc4" name="Horn of the Wild Hunt" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. At the start of any turn, the Horn of the Wild Hunt may be sounded. Once it has, Orion and all friendly Wood Elf units within 18&quot; gain Devastating Charge and Fear for the remainder of the turn.</characteristic>
               </characteristics>
@@ -140,11 +140,11 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ebb-241f-c422-ba1d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f5b4-6bc3-28a0-d220" name="Spear of Kurnous" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="f5b4-6bc3-28a0-d220" name="Spear of Kurnous" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+2</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Wounds (D3). The Spear of Kurnous can be used to make shooting attacks using the same rules as a bolt thrower. This attack can be made if Orion moves (but not if he marches).</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. Armour Piercing (1). Multiple Wounds (D3). The Spear of Kurnous can be used to make shooting attacks using the same rules as a bolt thrower. This attack can be made if Orion moves (but not if he marches).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -158,7 +158,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c48-1b4b-c091-3d2a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="77fe-cec8-a9f4-e91e" name="Cloak of Isha" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="77fe-cec8-a9f4-e91e" name="Cloak of Isha" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Cloak of Isha grants Orion Ward save (5+) and Magic Resistance (5+). At the start of each of your turns, roll a D6. On a score of 6, Orion regains a Wound lost earlier in the battle.</characteristic>
               </characteristics>
@@ -174,7 +174,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0945-d76c-03a6-212a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9823-6bed-7509-4713" name="Hawk&apos;s Talon" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="9823-6bed-7509-4713" name="Hawk&apos;s Talon" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">5</characteristic>
@@ -199,7 +199,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9eca-0456-8a42-94c9" type="min"/>
           </constraints>
           <profiles>
-            <profile id="52ba-daf0-cccb-724e" name="Hound of Orion" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="52ba-daf0-cccb-724e" name="Hound of Orion" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -229,7 +229,7 @@
         <entryLink id="015a-b14e-7db1-65e8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="485.0"/>
+        <cost name="pts" typeId="points" value="385.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f55-9808-5d7d-7469" name="Ariel" hidden="false" collective="false" import="true" type="model">
@@ -237,7 +237,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d88a-74f2-4346-872c" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d6e7-078a-f7a8-e6f0" name="Ariel" publicationId="e967-620f-06be-096a" page="142" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="d6e7-078a-f7a8-e6f0" name="Ariel" publicationId="e967-620f-06be-096a" page="145" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -253,13 +253,13 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="f774-5230-2d30-10a8" name="Screech" publicationId="e967-620f-06be-096a" page="143" hidden="false">
+        <rule id="f774-5230-2d30-10a8" name="Screech" publicationId="e967-620f-06be-096a" page="145" hidden="false">
           <description>Ariel&apos;s Attack automatically Hits all enemy models in base contact. It Ignores Armour.</description>
         </rule>
-        <rule id="e951-8907-c0f4-a0e9" name="Earthbind" publicationId="e967-620f-06be-096a" page="143" hidden="false">
+        <rule id="e951-8907-c0f4-a0e9" name="Earthbind" publicationId="e967-620f-06be-096a" page="145" hidden="false">
           <description>Any units declaring a charge on Ariel count as moving through Dangerous Terrain for the duration of the turn. In addition, if Ariel flees from combat, any enemies attempting to pursue her roll an extra D6 when determining their pursuit distance and discard the highest result.</description>
         </rule>
-        <rule id="b36b-67ea-e556-7ba4" name="Aura of the Fey Queen" publicationId="e967-620f-06be-096a" page="143" hidden="false">
+        <rule id="b36b-67ea-e556-7ba4" name="Aura of the Fey Queen" publicationId="e967-620f-06be-096a" page="145" hidden="false">
           <description>Ariel has a Ward save (4+). In addition, all friendly units within 6&quot; of Ariel have Immunity (Panic).</description>
         </rule>
       </rules>
@@ -284,7 +284,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e45-5da9-80de-8887" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e667-07b3-b8f3-8664" name="The Dart of Doom" publicationId="e967-620f-06be-096a" page="143" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="e667-07b3-b8f3-8664" name="The Dart of Doom" publicationId="e967-620f-06be-096a" page="146" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">12&quot;</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -302,7 +302,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cdc-4c51-1015-f7c0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1ee3-d3c4-b179-4dcb" name="The Heartstone of Athel Loren" publicationId="e967-620f-06be-096a" page="143" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="1ee3-d3c4-b179-4dcb" name="The Heartstone of Athel Loren" publicationId="e967-620f-06be-096a" page="146" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">This item grants Ariel Magic Resistance (5+). In addition, if she successfully dispels a spell targeted at her, the casting Wizard must immediately take a LD test. If he fails, he immediately loses a Wizard level and may not cast that spell for the remainder of the game.</characteristic>
               </characteristics>
@@ -318,7 +318,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="659d-73af-471e-018c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="efac-524e-3e79-58d8" name="The Wand of Wych Elm" publicationId="e967-620f-06be-096a" page="143" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="efac-524e-3e79-58d8" name="The Wand of Wych Elm" publicationId="e967-620f-06be-096a" page="146" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">This staff allows any failed Dispel attempt to be re-rolled.</characteristic>
               </characteristics>
@@ -334,7 +334,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="85e1-416a-5d6c-17df" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ab50-fe21-e05a-8681" name="The Berry Wine" publicationId="e967-620f-06be-096a" page="143" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="ab50-fe21-e05a-8681" name="The Berry Wine" publicationId="e967-620f-06be-096a" page="146" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The wine can be drunk at the start of any phase. Ariel will immediately regain up to D3 Wounds previously lost during the battle.</characteristic>
               </characteristics>
@@ -350,7 +350,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="399f-19b4-cf8b-3689" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ff3c-8416-2fa5-876b" name="The Acorn of Ages" publicationId="e967-620f-06be-096a" page="143" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="ff3c-8416-2fa5-876b" name="The Acorn of Ages" publicationId="e967-620f-06be-096a" page="146" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. At the start of the game, after the battlefield has been set up, but before deployment begins, place a forest, no more than 12&quot; in diameter, on the battlefield. This forest can be placed anywhere at least 1&quot; away from another terrain feature and the edge of the battle field. Once the forest have been placed, it scatters 2D6&quot;. If this scatter causes a forest to end up within 1&quot; (or on top of) other terrain, or within 1&quot; of the battle field edge, reduce or increase the scatter by the smallest amount necessary to avoid the obstruction. When this has been done, declare which type of forest you want it to be – choose from the types on the Mysterious Forest table.</characteristic>
               </characteristics>
@@ -366,7 +366,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2d1-3195-906d-9d72" type="min"/>
           </constraints>
           <profiles>
-            <profile id="57ac-ef9d-451f-06e3" name="Ariel" publicationId="e967-620f-06be-096a" page="142" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="57ac-ef9d-451f-06e3" name="Ariel" publicationId="e967-620f-06be-096a" page="145" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
@@ -398,7 +398,7 @@
         <entryLink id="c34b-c04f-11c0-cf31" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="580.0"/>
+        <cost name="pts" typeId="points" value="450.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4521-ae61-d02e-0e89" name="Durthu Oakheart" hidden="false" collective="false" import="true" type="model">
@@ -406,7 +406,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d188-2d32-289e-a34e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6246-c844-4541-4d77" name="Durthu" publicationId="e967-620f-06be-096a" page="147" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="6246-c844-4541-4d77" name="Durthu" publicationId="e967-620f-06be-096a" page="150" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -458,7 +458,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e58-c6ca-9cc1-46fc" type="min"/>
           </constraints>
           <profiles>
-            <profile id="852c-4945-729d-4ca7" name="Durthu" publicationId="e967-620f-06be-096a" page="147" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="852c-4945-729d-4ca7" name="Durthu" publicationId="e967-620f-06be-096a" page="150" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
@@ -491,9 +491,11 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e84-72ef-a67d-2fa5" type="min"/>
           </constraints>
           <profiles>
-            <profile id="5430-c378-5073-5b18" name="Unburden of Thieflings" publicationId="e967-620f-06be-096a" page="147" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
+            <profile id="5430-c378-5073-5b18" name="Unburden of Thieflings" publicationId="e967-620f-06be-096a" page="150" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
               <characteristics>
-                <characteristic name="Special Rules" typeId="d65b-0ee6-7ec8-53ad">In close combat these spites give Durthu an additional D6 S 2 attacks. Any enemy units that suffer wounds from either of these attacks is suffer -1 To Hit and To Wound as well as -1 to their armour saves until the start of your next turn.</characteristic>
+                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">2</characteristic>
+                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Magical Attacks. Poisoned Attacks. Random Attacks (D6). Can be used in addition to Durthu&apos;s other attacks. Any enemy units that suffer wounds from either of these attacks suffer -1 To Hit and To Wound as well as -1 to their armour saves until the start of your next turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -507,7 +509,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16e4-c222-a4f0-7b98" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0af5-b065-e1b0-ba99" name="Sword of Daith" publicationId="e967-620f-06be-096a" page="147" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="0af5-b065-e1b0-ba99" name="Sword of Daith" publicationId="e967-620f-06be-096a" page="150" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -532,7 +534,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="73c4-deb1-67a7-b484" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9877-956c-3aec-b94d" name="Araloth" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="9877-956c-3aec-b94d" name="Araloth" publicationId="e967-620f-06be-096a" page="147" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
@@ -548,17 +550,16 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="833a-7de9-4659-979d" name="Boldest of the Bold" publicationId="e967-620f-06be-096a" page="144" hidden="false">
-          <description>Whilst Araloth is a lone character, he has Unbreakable (this replaces Stubborn).</description>
+        <rule id="833a-7de9-4659-979d" name="Boldest of the Bold" publicationId="e967-620f-06be-096a" page="147" hidden="false">
+          <description>Whilst Araloth is a lone character, he has Unbreakable.</description>
         </rule>
-        <rule id="9206-9be2-dc24-971b" name="Skaryn the Eye Thief" publicationId="e967-620f-06be-096a" page="144" hidden="false">
+        <rule id="9206-9be2-dc24-971b" name="Skaryn the Eye Thief" publicationId="e967-620f-06be-096a" page="147" hidden="false">
           <description>At the start of each of your turns, nominate a single enemy model within 18&quot; of Araloth. That model takes a S 4 hit. If the Wound is unsaved, and the To Wound roll was a 6, the model suffers a -5 penalty to WS, BS, and I (to a minimum of 1) for the rest of the game. A model can only suffer this penalty once.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="127e-b36a-f121-0301" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
         <infoLink id="db9a-cb40-c277-a664" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="f962-05cd-8303-ab54" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
         <infoLink id="9a18-7d67-2d7f-ff1f" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -607,7 +608,7 @@
         <entryLink id="9282-7bc4-86ca-dc81" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="230.0"/>
+        <cost name="pts" typeId="points" value="195.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a29-7c40-9773-0866" name="Thalandor" hidden="false" collective="false" import="true" type="model">
@@ -615,7 +616,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7310-683a-3425-41ff" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1ed5-27af-3bc9-7018" name="Thalandor" publicationId="e967-620f-06be-096a" page="145" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="1ed5-27af-3bc9-7018" name="Thalandor" publicationId="e967-620f-06be-096a" page="148" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
@@ -645,7 +646,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c260-7578-a9e3-f557" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9adb-1a08-31f5-3c68" name="Talisman of Qwarr" publicationId="e967-620f-06be-096a" page="145" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="9adb-1a08-31f5-3c68" name="Talisman of Qwarr" publicationId="e967-620f-06be-096a" page="148" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Enemies units suffer -1 To Hit against Thalandor and Gwandor with missile attacks.</characteristic>
               </characteristics>
@@ -661,7 +662,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8d1-fabd-c467-d824" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c601-2398-43ad-2733" name="Spear of Daith" publicationId="e967-620f-06be-096a" page="145" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="c601-2398-43ad-2733" name="Spear of Daith" publicationId="e967-620f-06be-096a" page="148" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -679,7 +680,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9468-3ca2-37d3-3a7f" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cc19-d805-b9d5-a880" name="Gwandor" publicationId="e967-620f-06be-096a" page="145" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="cc19-d805-b9d5-a880" name="Gwandor" publicationId="e967-620f-06be-096a" page="148" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">2</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -863,8 +864,15 @@
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="5c08-621e-b0d7-cbbb" name="Charioteer" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="038d-0330-18c8-c48c" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="aa28-8544-0ed6-0aa8" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c08-621e-b0d7-cbbb" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a17-54e6-ef68-618d" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a17-54e6-ef68-618d" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="038d-0330-18c8-c48c" type="min"/>
                   </constraints>
                   <infoLinks>
@@ -903,8 +911,15 @@
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f00b-3ea3-1fd3-a120" name="Elven Steed" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="2bb7-d5aa-3055-ea0d" value="4.0">
+                      <conditions>
+                        <condition field="selections" scope="aa28-8544-0ed6-0aa8" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f00b-3ea3-1fd3-a120" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0d5-df85-6e06-c919" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0d5-df85-6e06-c919" type="max"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bb7-d5aa-3055-ea0d" type="min"/>
                   </constraints>
                   <infoLinks>
@@ -1059,7 +1074,7 @@
                 <infoLink id="f512-9ee1-8d6b-1458" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
+                <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8a04-0d24-7d8e-d8e9" name="Swiftshiver Shards" hidden="false" collective="false" import="true" type="upgrade">
@@ -1301,7 +1316,7 @@
                 <infoLink id="da44-ddb2-0d94-5eff" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="60.0"/>
+                <cost name="pts" typeId="points" value="55.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1316,7 +1331,7 @@
     </selectionEntry>
     <selectionEntry id="506d-5102-0262-b931" name="Treeman Ancient" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="cd04-bfb7-4594-3bcc" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="133" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="cd04-bfb7-4594-3bcc" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -1380,7 +1395,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29d1-eb87-839f-e117" type="max"/>
               </constraints>
               <profiles>
-                <profile id="bb84-230a-04a2-a4cd" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="133" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                <profile id="bb84-230a-04a2-a4cd" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
@@ -1413,7 +1428,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fdb-973d-f737-2572" type="max"/>
               </constraints>
               <profiles>
-                <profile id="fd7a-eb92-b265-ff50" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="133" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                <profile id="fd7a-eb92-b265-ff50" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
@@ -1448,7 +1463,7 @@
         <entryLink id="9ecf-1619-6a98-6174" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="255.0"/>
+        <cost name="pts" typeId="points" value="245.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f5ba-3655-faf6-356d" name="Drycha" hidden="false" collective="false" import="true" type="model">
@@ -1456,7 +1471,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="57e1-0054-ad26-0e1e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="99c6-040e-a2c7-0eb1" name="Drycha" publicationId="e967-620f-06be-096a" page="149" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="99c6-040e-a2c7-0eb1" name="Drycha" publicationId="e967-620f-06be-096a" page="152" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
@@ -1472,15 +1487,15 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="bbb8-9b65-18d9-aa34" name="Roused to Wrath" publicationId="e967-620f-06be-096a" page="149" hidden="false">
+        <rule id="bbb8-9b65-18d9-aa34" name="Roused to Wrath" publicationId="e967-620f-06be-096a" page="152" hidden="false">
           <description>This rule cannot be used if there are no forests on the battlefield when it is time to deploy your army. When you deploy, you may choose D3 units wholly composed of Forest Spirits – these are not deployed at the start of the game, but are ‘slumbering’ somewhere on the battlefield.
 
 At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for each slumbering unit. On a roll of 1-2, nothing happens – roll again next turn. On a roll of 3-6, the unit awakens. Place it on the battlefield so that all models in the unit are wholly within a forest, and at least 1&quot; away from other units and impassable terrain. Treat units that cannot be placed as having rolled a 1-2. Any units that have not yet awoken by the time the game ends award victory points as if they had been destroyed.</description>
         </rule>
-        <rule id="d4f5-ec3a-99ce-ff91" name="Fanatical Resolve" publicationId="e967-620f-06be-096a" page="149" hidden="false">
+        <rule id="d4f5-ec3a-99ce-ff91" name="Fanatical Resolve" publicationId="e967-620f-06be-096a" page="152" hidden="false">
           <description>If Drycha suffers an unsaved Wound, her A increase by 1 for the remainder of the battle. Each time Drycha regains a Wound lost earlier in the battle, her A decrease by 1 for the remainder of the battle.</description>
         </rule>
-        <rule id="3fc9-da7d-d470-7f2d" name="Eternal Rage" publicationId="e967-620f-06be-096a" page="149" hidden="false">
+        <rule id="3fc9-da7d-d470-7f2d" name="Eternal Rage" publicationId="e967-620f-06be-096a" page="152" hidden="false">
           <description>Drycha has Hatred which applies in every round of close combat, not just the first.</description>
         </rule>
       </rules>
@@ -1502,7 +1517,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e809-ad88-9d75-d62c" type="min"/>
           </constraints>
           <profiles>
-            <profile id="0f68-5ec3-1e3a-819a" name="Drycha" publicationId="e967-620f-06be-096a" page="149" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="0f68-5ec3-1e3a-819a" name="Drycha" publicationId="e967-620f-06be-096a" page="152" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
@@ -1594,7 +1609,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2a2-503b-8a52-ce98" type="max"/>
               </constraints>
               <profiles>
-                <profile id="09fa-5400-0fae-109d" name="Talon of Dawn" publicationId="e967-620f-06be-096a" page="151" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                <profile id="09fa-5400-0fae-109d" name="Talon of Dawn" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
                     <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">5</characteristic>
@@ -1617,7 +1632,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da69-d062-6d0d-9eaa" type="min"/>
           </constraints>
           <profiles>
-            <profile id="2716-9446-f568-7c71" name="Arahan" publicationId="e967-620f-06be-096a" page="151" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="2716-9446-f568-7c71" name="Arahan" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -1658,11 +1673,11 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6986-c132-77f1-75ce" type="max"/>
               </constraints>
               <profiles>
-                <profile id="647b-e8a7-0714-1a6c" name="Talon of Dusk" publicationId="e967-620f-06be-096a" page="151" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                <profile id="647b-e8a7-0714-1a6c" name="Talon of Dusk" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
-                    <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">1</characteristic>
-                    <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Wounds (2D6). Poisoned Attacks.</characteristic>
+                    <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Shots (2D6). Poisoned Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1688,7 +1703,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="85f2-d41a-0a1a-4846" type="max"/>
               </constraints>
               <profiles>
-                <profile id="36c4-62b2-3c23-1922" name="Ceithin-Har" publicationId="e967-620f-06be-096a" page="151" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="36c4-62b2-3c23-1922" name="Ceithin-Har" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -1704,7 +1719,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 </profile>
               </profiles>
               <rules>
-                <rule id="003f-e73b-2035-2a2a" name="Impetuous" publicationId="e967-620f-06be-096a" page="151" hidden="false">
+                <rule id="003f-e73b-2035-2a2a" name="Impetuous" publicationId="e967-620f-06be-096a" page="155" hidden="false">
                   <description>If Ceithin-Har can declare a Charge during the Charge sub-phase, he must do so unless he passes a LD test.</description>
                 </rule>
               </rules>
@@ -1727,7 +1742,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fef-a35d-0b71-a5ec" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9bae-3a03-8dda-e197" name="Gwindalor" publicationId="e967-620f-06be-096a" page="151" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="9bae-3a03-8dda-e197" name="Gwindalor" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">2</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -1743,7 +1758,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 </profile>
               </profiles>
               <rules>
-                <rule id="d128-2715-8faf-a03f" name="Hunter&apos;s Mount" publicationId="e967-620f-06be-096a" page="151" hidden="false">
+                <rule id="d128-2715-8faf-a03f" name="Hunter&apos;s Mount" publicationId="e967-620f-06be-096a" page="155" hidden="false">
                   <description>When mounted on Gwindalor, Naestra and Arahan re-roll all failed To Hit rolls when making shooting attacks.</description>
                 </rule>
               </rules>
@@ -1771,7 +1786,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2d73-5f4a-3b6d-6164" type="max"/>
       </constraints>
       <profiles>
-        <profile id="cba9-4c7d-b892-7ed5" name="Naieth" publicationId="e967-620f-06be-096a" page="152" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="cba9-4c7d-b892-7ed5" name="Naieth" publicationId="e967-620f-06be-096a" page="156" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -1787,7 +1802,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         </profile>
       </profiles>
       <rules>
-        <rule id="8cb9-bd57-9117-4452" name="Othu the Owl" publicationId="e967-620f-06be-096a" page="152" hidden="false">
+        <rule id="8cb9-bd57-9117-4452" name="Othu the Owl" publicationId="e967-620f-06be-096a" page="156" hidden="false">
           <description>Othu may settle on any unit of Wood Elves with a Standard Bearer at the start of the shooting phase. This unit may then re-roll To Hit rolls of 1 with missile attacks this turn. The owl never settles on the same unit twice in succession. Othu is not vulnerable to weapons, missiles or magic, but if Naieth is removed from play Othu flies away.</description>
         </rule>
       </rules>
@@ -1807,7 +1822,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08d6-c6c4-97d1-1a08" type="min"/>
           </constraints>
           <profiles>
-            <profile id="5985-eddf-bc8f-23f8" name="Naieth" publicationId="e967-620f-06be-096a" page="152" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="5985-eddf-bc8f-23f8" name="Naieth" publicationId="e967-620f-06be-096a" page="156" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
@@ -1845,7 +1860,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b22b-04f9-6a2f-0768" type="max"/>
           </constraints>
           <profiles>
-            <profile id="978c-c23b-7d1a-dba1" name="The Rod of Divination" publicationId="e967-620f-06be-096a" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="978c-c23b-7d1a-dba1" name="The Rod of Divination" publicationId="e967-620f-06be-096a" page="156" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The rod give Naieth an extra Power dice at the start of each Magic phase.</characteristic>
               </characteristics>
@@ -1887,7 +1902,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8f47-95ba-8db8-0d57" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6fda-97e7-ce02-6b33" name="Lothlann" publicationId="e967-620f-06be-096a" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="6fda-97e7-ce02-6b33" name="Lothlann" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -1942,7 +1957,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="653f-cbf2-2e9e-3b53" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6691-6139-075f-f8a7" name="The Battle Standard of Athel Loren" publicationId="e967-620f-06be-096a" page="153" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="6691-6139-075f-f8a7" name="The Battle Standard of Athel Loren" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">This is the army&apos;s Battle Standard. Any enemy spell cast at a friendly unit within 12&quot; of the standard is automatically dispelled on the roll of a 5+.</characteristic>
               </characteristics>
@@ -1975,7 +1990,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ba61-36c1-82dd-f796" type="max"/>
       </constraints>
       <profiles>
-        <profile id="a4ce-bb50-7ab7-e935" name="Scarloc" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="a4ce-bb50-7ab7-e935" name="Scarloc" publicationId="e967-620f-06be-096a" page="158" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -2007,7 +2022,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="342d-d346-7d31-c478" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0685-3579-a539-ce32" name="Asyendi&apos;s Bane" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="0685-3579-a539-ce32" name="Asyendi&apos;s Bane" publicationId="e967-620f-06be-096a" page="158" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -2025,7 +2040,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f69-c2c9-9f64-54bd" type="max"/>
           </constraints>
           <profiles>
-            <profile id="df44-e6af-39d8-18fb" name="Runesword of Darkwood" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="df44-e6af-39d8-18fb" name="Runesword of Darkwood" publicationId="e967-620f-06be-096a" page="158" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -2047,7 +2062,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f17b-436d-8190-759e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="3114-0c62-a21e-769a" name="Skaw" publicationId="e967-620f-06be-096a" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="3114-0c62-a21e-769a" name="Skaw" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -2062,6 +2077,13 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="43c7-b9f5-2f30-cea2" name="Falcons" publicationId="e967-620f-06be-096a" page="160" hidden="false">
+          <description>Skaw may use his Falcons in addition to another missile weapon during the start of the Shooting phase. The Falcons can be directed against any enemy unit within line of sight, regardless of range. The enemy unit must take a WS test for each War Hawk targeting them; if failed, the unit takes a S 3 Hit.
+
+In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4, S 3 and I 4. These attacks no not benefit from any rules or items that Skaw might have.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="1f55-9176-8f44-8ab6" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="d2f5-95d7-9da8-1eb1" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
@@ -2077,31 +2099,11 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3748-a23f-ef27-d6e5" type="max"/>
           </constraints>
           <profiles>
-            <profile id="21f9-fac2-dd42-3975" name="The Cape of Feathers" publicationId="e967-620f-06be-096a" page="156" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="21f9-fac2-dd42-3975" name="The Cape of Feathers" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">4+</characteristic>
                 <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Ward save (6+).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="947e-6017-6409-a6a6" name="Falcons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="043e-2ac5-d4c6-bd38" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea0c-b681-23ed-8453" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="861d-6dec-9f6d-9ea3" name="Falcons" publicationId="e967-620f-06be-096a" page="156" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
-                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
-                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (3). Each falcon will hit on the To Hit roll of a 2+, and ignore all To Hit penalties.
-
-In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2115,7 +2117,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3db4-10e1-b883-ed0d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1d28-6475-e821-be7f" name="The Lash of Claws" publicationId="e967-620f-06be-096a" page="156" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="1d28-6475-e821-be7f" name="The Lash of Claws" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -2147,7 +2149,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="aa29-58e3-bcdc-b133" type="min"/>
           </constraints>
           <profiles>
-            <profile id="631f-fa92-6cac-5388" name="Gruath" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="631f-fa92-6cac-5388" name="Gruath" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -2163,7 +2165,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <rules>
-            <rule id="34cd-a325-dd97-5394" name="Beastmaster" publicationId="e967-620f-06be-096a" page="157" hidden="false">
+            <rule id="34cd-a325-dd97-5394" name="Beastmaster" publicationId="e967-620f-06be-096a" page="161" hidden="false">
               <description>The timber wolves may move away from Gruath if they wish, making a skirmishing unit of their own. They may return to Gruath later on if they wish, in which case the unit will revert back to the normal Monsters &amp; Handlers rules. Gruath can either move with the wolves or direct their movements with animal calls. He must always keep within 12&quot; of the wolves to do this. If the wolves become separated from him by more than 12&quot; they will always move towards the nearest enemy, charging if possible. They defend themselves if attacked and they will Hold if charged. If both wolves are slain, Gruarth becomes subject to Hatred.</description>
             </rule>
           </rules>
@@ -2192,7 +2194,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f61d-d723-494d-b4d7" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4740-7249-c70e-6b0b" name="The Binding Bolas" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                <profile id="4740-7249-c70e-6b0b" name="The Binding Bolas" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
                     <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">1</characteristic>
@@ -2210,7 +2212,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f87e-e63c-d991-4b47" type="max"/>
               </constraints>
               <profiles>
-                <profile id="346f-9507-9eed-9f30" name="Animal Hide Cape" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+                <profile id="346f-9507-9eed-9f30" name="Animal Hide Cape" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
                   <characteristics>
                     <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">6+</characteristic>
                     <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">5+</characteristic>
@@ -2236,7 +2238,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3106-c90e-a7e1-0db7" type="min"/>
           </constraints>
           <profiles>
-            <profile id="504f-ffa9-d9f9-dda7" name="Fang" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="504f-ffa9-d9f9-dda7" name="Fang" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -2264,7 +2266,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0c7-33dd-6c26-27ff" type="min"/>
           </constraints>
           <profiles>
-            <profile id="5531-317c-738f-3c74" name="Claw" publicationId="e967-620f-06be-096a" page="157" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="5531-317c-738f-3c74" name="Claw" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -2418,8 +2420,15 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="aff5-d97c-e9e5-0d20" name="Charioteer" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="0e48-dfc7-aa51-6dba" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="5598-adfd-a48f-3485" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aff5-d97c-e9e5-0d20" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edeb-0b06-a362-ec33" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edeb-0b06-a362-ec33" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e48-dfc7-aa51-6dba" type="min"/>
                   </constraints>
                   <infoLinks>
@@ -2458,8 +2467,15 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f39e-2b87-30e8-b44b" name="Elven Steed" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="545a-f3d5-4b5e-62e9" value="4.0">
+                      <conditions>
+                        <condition field="selections" scope="5598-adfd-a48f-3485" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f39e-2b87-30e8-b44b" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1775-e0a0-5cc4-980b" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1775-e0a0-5cc4-980b" type="max"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="545a-f3d5-4b5e-62e9" type="min"/>
                   </constraints>
                   <infoLinks>
@@ -2614,7 +2630,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <infoLink id="54e5-8fe4-36e1-68cf" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
+                <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2834-bc71-4abe-de30" name="Swiftshiver Shards" hidden="false" collective="false" import="true" type="upgrade">
@@ -2902,7 +2918,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <infoLink id="0e5f-9812-4ffc-68e8" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="60.0"/>
+                <cost name="pts" typeId="points" value="55.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2917,7 +2933,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
     </selectionEntry>
     <selectionEntry id="2ffc-4ced-b17d-10d6" name="Shadowdancer" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="c6a2-61e5-2314-4f14" name="Shadowdancer" publicationId="e967-620f-06be-096a" page="117" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="c6a2-61e5-2314-4f14" name="Shadowdancer" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
@@ -2979,7 +2995,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e6c-033c-924b-176f" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ff01-ea9f-481a-f2ae" name="Shadowdancer" publicationId="e967-620f-06be-096a" page="117" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="ff01-ea9f-481a-f2ae" name="Shadowdancer" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
@@ -3016,7 +3032,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
     </selectionEntry>
     <selectionEntry id="a2f2-a658-9457-4992" name="Waystalker" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="0038-fec9-a786-18db" name="Waystalker" publicationId="e967-620f-06be-096a" page="107" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="0038-fec9-a786-18db" name="Waystalker" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -3155,7 +3171,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
     </selectionEntry>
     <selectionEntry id="3cbc-98fa-e30e-043f" name="Branchwraith" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="2d04-a6ad-de1b-ce5e" name="Branchwraith" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="2d04-a6ad-de1b-ce5e" name="Branchwraith" publicationId="e967-620f-06be-096a" page="128" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -3188,7 +3204,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eed3-e757-42a0-f3c7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="eb68-bef1-d0b3-be1d" name="Branchwraith" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="eb68-bef1-d0b3-be1d" name="Branchwraith" publicationId="e967-620f-06be-096a" page="128" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
@@ -3246,7 +3262,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6314-df64-a149-30ca" type="min"/>
           </constraints>
           <profiles>
-            <profile id="63b1-646f-9047-1584" name="Glade Guard" publicationId="e967-620f-06be-096a" page="110" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="63b1-646f-9047-1584" name="Glade Guard" publicationId="e967-620f-06be-096a" page="111" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3317,7 +3333,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <infoLink id="6b83-7f7b-6da7-c1c8" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5416-99e9-1b57-f781" name="Swiftshiver Shards" hidden="false" collective="true" import="true" type="upgrade">
@@ -3391,7 +3407,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5956-4867-b562-4654" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b154-43fd-6e16-2a6c" name="Lord&apos;s Bowman" publicationId="e967-620f-06be-096a" page="110" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="b154-43fd-6e16-2a6c" name="Lord&apos;s Bowman" publicationId="e967-620f-06be-096a" page="111" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3430,7 +3446,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="149a-0fba-00d6-adf6" type="min"/>
           </constraints>
           <profiles>
-            <profile id="d802-88af-5f16-f8ab" name="Deepwood Scout" publicationId="e967-620f-06be-096a" page="111" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="d802-88af-5f16-f8ab" name="Deepwood Scout" publicationId="e967-620f-06be-096a" page="112" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3445,6 +3461,11 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="ae7e-ffd1-6ef3-2b91" name="Deepwood Scout" publicationId="e967-620f-06be-096a" page="178" hidden="false">
+              <description>You may not have more models of Deepwood Scouts than you have models of Glade Guard.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="f629-db06-0cbc-7fb7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
             <infoLink id="a727-dcaf-2a79-5d94" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
@@ -3503,7 +3524,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <infoLink id="0f40-fa2c-919d-54c4" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="25d5-2351-4471-9148" name="Swiftshiver Shards" hidden="false" collective="true" import="true" type="upgrade">
@@ -3577,7 +3598,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4366-b409-911e-bfd3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="50ca-be2a-df0b-bef7" name="Master Scout" publicationId="e967-620f-06be-096a" page="111" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="50ca-be2a-df0b-bef7" name="Master Scout" publicationId="e967-620f-06be-096a" page="112" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3616,7 +3637,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8830-e81e-5fe3-e3b6" type="min"/>
           </constraints>
           <profiles>
-            <profile id="eb3b-c741-28df-9869" name="Eternal Guard" publicationId="e967-620f-06be-096a" page="114" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="eb3b-c741-28df-9869" name="Eternal Guard" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -3662,7 +3683,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd53-1c64-dee9-f099" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f441-e981-6526-883b" name="Saearath" publicationId="e967-620f-06be-096a" page="114" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                    <profile id="f441-e981-6526-883b" name="Saearath" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
                         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
@@ -3738,7 +3759,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="811b-c9a1-21d7-96cb" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c58b-b19b-e6e8-dd77" name="Eternal Warden" publicationId="e967-620f-06be-096a" page="114" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="c58b-b19b-e6e8-dd77" name="Eternal Warden" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -3777,7 +3798,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2df-fc35-3eac-3408" type="min"/>
           </constraints>
           <profiles>
-            <profile id="a2f8-4a2c-7705-90b4" name="Dryad" publicationId="e967-620f-06be-096a" page="126" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="a2f8-4a2c-7705-90b4" name="Dryad" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3864,7 +3885,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b186-cd93-4d35-89db" type="min"/>
           </constraints>
           <profiles>
-            <profile id="524f-88da-1659-470d" name="Glade Rider" publicationId="e967-620f-06be-096a" page="112" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="524f-88da-1659-470d" name="Glade Rider" publicationId="e967-620f-06be-096a" page="113" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -3898,28 +3919,6 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="32e6-6349-57ef-aaaa" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b53c-0e4b-8d08-bfb4" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3ef2-766d-d24d-442a" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3745-90e7-67ca-eb16" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9b6-30b5-b4b0-1b3b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="278a-5a4a-d90f-0b51" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e712-9234-8620-6f5e" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
@@ -3972,7 +3971,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <infoLink id="c677-d80b-64ff-679d" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="175f-539c-8e50-4cec" name="Swiftshiver Shards" hidden="false" collective="true" import="true" type="upgrade">
@@ -4061,7 +4060,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5ad-a9ba-7edc-4e70" type="max"/>
               </constraints>
               <profiles>
-                <profile id="dad2-b52e-95b1-5cbc" name="Glade Knight" publicationId="e967-620f-06be-096a" page="112" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="dad2-b52e-95b1-5cbc" name="Glade Knight" publicationId="e967-620f-06be-096a" page="113" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4100,12 +4099,12 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac11-cdac-07d7-3073" type="min"/>
           </constraints>
           <profiles>
-            <profile id="99f9-4b64-cc21-20fb" name="Wildwood Ranger" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="99f9-4b64-cc21-20fb" name="Wildwood Ranger" publicationId="e967-620f-06be-096a" page="116" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
@@ -4116,7 +4115,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <rules>
-            <rule id="73ae-e180-5bda-d2f0" name="Guardians of the Wildwood" publicationId="e967-620f-06be-096a" page="115" hidden="false">
+            <rule id="73ae-e180-5bda-d2f0" name="Guardians of the Wildwood" publicationId="e967-620f-06be-096a" page="116" hidden="false">
               <description>If a model with this rule is in base contact with at least one enemy model with either the Fear or Terror, it has + 1 Attack.</description>
             </rule>
           </rules>
@@ -4152,7 +4151,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4200,7 +4199,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a908-be91-85fa-cf6f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="adc6-d2fc-9de8-42c6" name="Wildwood Warden" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="adc6-d2fc-9de8-42c6" name="Wildwood Warden" publicationId="e967-620f-06be-096a" page="116" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -4239,7 +4238,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef54-7a31-8ef9-8ba1" type="min"/>
           </constraints>
           <profiles>
-            <profile id="68ff-fa52-e093-6345" name="Wardancer" publicationId="e967-620f-06be-096a" page="117" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="68ff-fa52-e093-6345" name="Wardancer" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -4301,7 +4300,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67e1-455d-0c4b-6146" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ec5b-333b-c523-1e04" name="Bladesinger" publicationId="e967-620f-06be-096a" page="117" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="ec5b-333b-c523-1e04" name="Bladesinger" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -4507,9 +4506,6 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
       </costs>
     </selectionEntry>
     <selectionEntry id="e7ea-0cd5-0c31-8327" name="Meadow Chariot" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f39-494e-55e2-3a38" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="d49e-a95e-d898-9a1a" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
         <infoLink id="b53f-7ad6-759f-f74c" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
@@ -4520,8 +4516,15 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="73eb-0cf8-8a28-b8dc" name="Charioteer" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="cc6a-f522-ad79-4948" value="4.0">
+              <conditions>
+                <condition field="selections" scope="e7ea-0cd5-0c31-8327" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73eb-0cf8-8a28-b8dc" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbae-34b5-d12a-2868" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbae-34b5-d12a-2868" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc6a-f522-ad79-4948" type="min"/>
           </constraints>
           <infoLinks>
@@ -4556,24 +4559,31 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a4d6-b73a-1d62-c1c8" name="Elven Steed" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="0818-e805-ac0a-00f0" value="4.0">
+              <conditions>
+                <condition field="selections" scope="e7ea-0cd5-0c31-8327" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4d6-b73a-1d62-c1c8" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="668f-e944-b3c0-3cbd" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="668f-e944-b3c0-3cbd" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0818-e805-ac0a-00f0" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="4c40-0821-f32b-fdf9" name="Elven Steed" hidden="false" targetId="5114-24cc-3c58-89ec" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="2.5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="70.0"/>
+        <cost name="pts" typeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="92da-63ea-71f9-4529" name="Tree Kin" hidden="false" collective="false" import="true" type="unit">
@@ -4586,11 +4596,11 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d07f-750b-fcaf-743e" type="min"/>
           </constraints>
           <profiles>
-            <profile id="3bfc-3dd0-d4f9-df1f" name="Tree Kin" publicationId="e967-620f-06be-096a" page="131" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="3bfc-3dd0-d4f9-df1f" name="Tree Kin" publicationId="e967-620f-06be-096a" page="132" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -4607,9 +4617,10 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <infoLink id="b480-5591-19ac-9bc2" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
             <infoLink id="546e-a58b-a5b6-f6e0" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="4eca-0574-c704-232a" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+            <infoLink id="e73d-d93e-7a6d-51bf" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
+            <cost name="pts" typeId="points" value="48.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4621,11 +4632,11 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b179-d109-fa8a-cab1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7026-b9ee-bfca-c44c" name="Tree Kin Elder" publicationId="e967-620f-06be-096a" page="131" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="7026-b9ee-bfca-c44c" name="Tree Kin Elder" publicationId="e967-620f-06be-096a" page="132" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -4657,10 +4668,10 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
       <selectionEntries>
         <selectionEntry id="e2ae-dcab-56ba-a65a" name="Alter" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d31-491a-d265-163c" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d31-491a-d265-163c" type="min"/>
           </constraints>
           <profiles>
-            <profile id="cbb6-9c48-0d79-c663" name="Alter" publicationId="e967-620f-06be-096a" page="123" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="cbb6-9c48-0d79-c663" name="Alter" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4696,7 +4707,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5232-2901-ab19-6ae2" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7fd9-1b33-81f7-98d8" name="Wild Kin" publicationId="e967-620f-06be-096a" page="123" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="7fd9-1b33-81f7-98d8" name="Wild Kin" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4735,7 +4746,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96fc-d18d-8f6d-2bc4" type="min"/>
           </constraints>
           <profiles>
-            <profile id="0c69-5b0f-46d4-bf1b" name="Warhawk Rider" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="0c69-5b0f-46d4-bf1b" name="Warhawk Rider" publicationId="e967-620f-06be-096a" page="123" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4820,7 +4831,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <infoLink id="46ae-019a-077d-2bf9" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b73d-e0bc-3317-f4a2" name="Swiftshiver Shards" hidden="false" collective="true" import="true" type="upgrade">
@@ -4860,7 +4871,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="27.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4872,7 +4883,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e76-5ca1-605b-e5b2" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8d4d-9b02-8f33-46f3" name="Wind Rider" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="8d4d-9b02-8f33-46f3" name="Wind Rider" publicationId="e967-620f-06be-096a" page="123" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4911,7 +4922,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ba-3d46-5ea0-6241" type="min"/>
           </constraints>
           <profiles>
-            <profile id="00c4-3212-99ba-194e" name="Tree Revenant" publicationId="e967-620f-06be-096a" page="128" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="00c4-3212-99ba-194e" name="Tree Revenant" publicationId="e967-620f-06be-096a" page="129" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -4927,7 +4938,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <rules>
-            <rule id="2dee-0516-fc0e-3480" name="Martial Memories" publicationId="e967-620f-06be-096a" page="128" hidden="false">
+            <rule id="2dee-0516-fc0e-3480" name="Martial Memories" publicationId="e967-620f-06be-096a" page="129" hidden="false">
               <description>Models with this rule may re-roll failed rolls of 1 when rolling To Hit and To Wound.</description>
             </rule>
           </rules>
@@ -4980,7 +4991,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0981-37ec-3f78-894d" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7e71-f054-05fc-7dc9" name="Scion" publicationId="e967-620f-06be-096a" page="128" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="7e71-f054-05fc-7dc9" name="Scion" publicationId="e967-620f-06be-096a" page="129" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -5041,7 +5052,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b3-047f-39f9-dfe3" type="min"/>
           </constraints>
           <profiles>
-            <profile id="4a37-be63-79a2-069e" name="Spite Revenant" publicationId="e967-620f-06be-096a" page="129" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="4a37-be63-79a2-069e" name="Spite Revenant" publicationId="e967-620f-06be-096a" page="130" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -5057,11 +5068,8 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <rules>
-            <rule id="87df-868b-1b96-6d51" name="Whispers in the Dark" publicationId="e967-620f-06be-096a" page="129" hidden="false">
-              <description>Woods that contain any Spite Revenants are haunted by susurrating voices which hiss threats in an unknowable tongue. Enemy units within 6&quot; of such woods must roll three dice when taking LD tests, and use the two highest dice result. This has no effect on units that have Immunity (Psychology).</description>
-            </rule>
-            <rule id="3031-378f-ae9b-507a" name="Unbridled Malice" publicationId="e967-620f-06be-096a" page="129" hidden="false">
-              <description>Enemy units in base contact with any Spite Revenants must take a LD at the start of their first round of combat. If the test is failed, all models in the unit have their WS reduced to 1 for the remainder of that round of close combat. This has no effect on units that have Immunity (Psychology).</description>
+            <rule id="3031-378f-ae9b-507a" name="Unbridled Malice" publicationId="e967-620f-06be-096a" page="130" hidden="false">
+              <description>Enemy units in base contact with models with this rule must re-roll successful LD tests. This has no effect on units that have Immunity (Psychology).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5070,7 +5078,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <infoLink id="cc35-373a-7027-5f3a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="14.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5082,7 +5090,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="759d-8bda-ce40-8700" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2e8a-e170-b31f-4423" name="Shadestalker" publicationId="e967-620f-06be-096a" page="129" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="2e8a-e170-b31f-4423" name="Shadestalker" publicationId="e967-620f-06be-096a" page="130" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -5121,7 +5129,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="196c-8ab4-8796-bacf" type="min"/>
           </constraints>
           <profiles>
-            <profile id="73ff-fcc1-be02-5fb5" name="Waywatcher" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="73ff-fcc1-be02-5fb5" name="Waywatcher" publicationId="e967-620f-06be-096a" page="119" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -5137,7 +5145,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <rules>
-            <rule id="eb71-284d-b7c3-71f3" name="Forest Stalkers" publicationId="e967-620f-06be-096a" page="119" hidden="false">
+            <rule id="eb71-284d-b7c3-71f3" name="Forest Stalkers" publicationId="e967-620f-06be-096a" page="120" hidden="false">
               <description>While inside a wood, models with this rule are at an additional -1 to be Hit with missile attacks. In addition, they may deploy within 12&quot; of an enemy unit if they do so within a wood.</description>
             </rule>
           </rules>
@@ -5190,7 +5198,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <infoLink id="a257-12f2-ed7e-973b" name="Hagbane Tips" hidden="false" targetId="f7ab-c65f-502d-580c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a30c-72e6-f0b9-7a99" name="Swiftshiver Shards" hidden="false" collective="true" import="true" type="upgrade">
@@ -5311,7 +5319,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e04-f542-6557-d37e" type="min"/>
           </constraints>
           <profiles>
-            <profile id="b8b4-1bde-263f-fd2c" name="Sister of the Thorn" publicationId="e967-620f-06be-096a" page="121" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="b8b4-1bde-263f-fd2c" name="Sister of the Thorn" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -5364,7 +5372,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fdc8-7469-fc61-9851" type="min"/>
               </constraints>
               <profiles>
-                <profile id="3c67-e3a2-f3f4-d135" name="Steed of Isha" publicationId="e967-620f-06be-096a" page="121" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="3c67-e3a2-f3f4-d135" name="Steed of Isha" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -5393,7 +5401,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dada-3002-6e7d-5ee6" type="min"/>
               </constraints>
               <profiles>
-                <profile id="6fdc-90fe-18c9-7555" name="Sister of the Thorn" publicationId="e967-620f-06be-096a" page="121" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                <profile id="6fdc-90fe-18c9-7555" name="Sister of the Thorn" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e"/>
@@ -5403,7 +5411,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 </profile>
               </profiles>
               <rules>
-                <rule id="5564-e197-8d93-174c" name="Deepwood Coven" publicationId="e967-620f-06be-096a" page="121" hidden="false">
+                <rule id="5564-e197-8d93-174c" name="Deepwood Coven" publicationId="e967-620f-06be-096a" page="122" hidden="false">
                   <description>A unit of Sisters of the Thorn is considered to be a Level 2 Wizard that knows the spells Shield of Thorns (Lore of Life) and Curse of Anraheir (Lore of Beasts). This doesn’t prevent other friendly Wizards from knowing the same spells. The unit receives an additional +1 to cast for each rank of 4 or more models it has, after the first, to a maximum of +3. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister or Handmaiden of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.</description>
                 </rule>
               </rules>
@@ -5419,7 +5427,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="26.0"/>
+            <cost name="pts" typeId="points" value="24.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5467,7 +5475,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79f9-e888-8f5f-6b9f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="d120-2f10-5001-a89b" name="Handmaiden of the Thorn" publicationId="e967-620f-06be-096a" page="121" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="d120-2f10-5001-a89b" name="Handmaiden of the Thorn" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -5506,10 +5514,10 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f8e-f9a9-c56f-4653" type="min"/>
           </constraints>
           <profiles>
-            <profile id="b995-6f3e-f593-1fd9" name="Sylvan Hunter" publicationId="e967-620f-06be-096a" page="130" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="b995-6f3e-f593-1fd9" name="Sylvan Hunter" publicationId="e967-620f-06be-096a" page="131" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
@@ -5522,7 +5530,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <rules>
-            <rule id="e7c2-bf89-caa2-b315" name="Tanglethorn Thicket" publicationId="e967-620f-06be-096a" page="130" hidden="false">
+            <rule id="e7c2-bf89-caa2-b315" name="Tanglethorn Thicket" publicationId="e967-620f-06be-096a" page="131" hidden="false">
               <description>At the start of either player’s Movement phase, Sylvan Hunters can sprout a thick weave of thorned branches. Until the end of the turn, they cannot voluntarily move, but counts as being in Hard Cover.</description>
             </rule>
           </rules>
@@ -5567,7 +5575,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c19d-e075-591c-7372" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bb7e-0efe-e655-6065" name="Great Bow" publicationId="e967-620f-06be-096a" page="130" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                    <profile id="bb7e-0efe-e655-6065" name="Great Bow" publicationId="e967-620f-06be-096a" page="131" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">36&quot;</characteristic>
                         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>
@@ -5583,7 +5591,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="44.0"/>
+            <cost name="pts" typeId="points" value="46.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5595,10 +5603,10 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77b6-effc-a89f-3f4c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8df0-9988-a687-cc34" name="Huntmaster" publicationId="e967-620f-06be-096a" page="130" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="8df0-9988-a687-cc34" name="Huntmaster" publicationId="e967-620f-06be-096a" page="131" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
@@ -5650,7 +5658,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
     </selectionEntry>
     <selectionEntry id="d0d5-28e7-c7cb-286e" name="Treeman" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="d110-9ff4-9ac5-cce9" name="Treeman" publicationId="e967-620f-06be-096a" page="133" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="d110-9ff4-9ac5-cce9" name="Treeman" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -5693,7 +5701,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="210.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2494-2d05-e880-0eaf" name="Forest Dragon" hidden="false" collective="false" import="true" type="model">
@@ -5914,6 +5922,82 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="123b-afd6-5667-55b9" name="Arch-Revenant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="302e-704e-0b7d-5836" name="Arch-Revenant" publicationId="e967-620f-06be-096a" page="110" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f8c0-047d-5a10-3f23" name="Call to Battle" publicationId="e967-620f-06be-096a" page="110" hidden="false">
+          <description>All friendly units with Forest Spirit within 6&quot; gain Frenzy as long as they remain within range.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1020-be44-f652-b981" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="2611-8f45-3ea0-1290" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
+        <infoLink id="fa10-d5d3-f32b-7a9d" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0c34-9f2f-d2a9-4cae" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
+        <categoryLink id="8d9d-7ca2-7c8c-8d84" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="72b8-2665-4a1f-a332" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a68-9668-2845-6792" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3538-ea56-b860-8447" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2a87-4725-d91a-8726" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ec6b-8483-238c-d6b7" name="Spites of Athel Loren" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be0e-ac95-1344-d7b0" type="max"/>
+            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c62f-1a70-8615-0da3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c4ba-e1c0-af19-0207" name="Spites of Athel Loren" hidden="false" collective="false" import="true" targetId="599f-9dbe-a7d7-795c" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f352-8a24-ff59-b710" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82b8-4eed-7a40-be5f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4ff-bf84-2d16-91f5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a5be-f921-1a32-80e7" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a55e-a97a-7aab-42ef" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="115.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4dce-a8c6-cc41-e0a5" name="A Befuddlement of Mischiefs" hidden="false" collective="false" import="true" type="upgrade">
@@ -5922,7 +6006,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c286-13f4-935b-3f7d" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6836-6f82-ddde-855c" name="A Befuddlement of Mischiefs" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+        <profile id="6836-6f82-ddde-855c" name="A Befuddlement of Mischiefs" publicationId="e967-620f-06be-096a" page="165" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
           <characteristics>
             <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -5942,14 +6026,14 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65ab-ce3d-d762-3a55" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9754-b547-a833-7098" name="A Blight of Terrors" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
+        <profile id="9754-b547-a833-7098" name="A Blight of Terrors" publicationId="e967-620f-06be-096a" page="164" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
           <characteristics>
             <characteristic name="Special Rules" typeId="d65b-0ee6-7ec8-53ad">A model with a Blight of Terrors causes Terror.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="533a-3138-ecdd-4884" name="A Cluster of Radiants" hidden="false" collective="false" import="true" type="upgrade">
@@ -5958,14 +6042,14 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6359-51b4-c164-2992" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9a7a-742e-a5e2-2861" name="A Cluster of Radiants" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
+        <profile id="9a7a-742e-a5e2-2861" name="A Cluster of Radiants" publicationId="e967-620f-06be-096a" page="164" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
           <characteristics>
             <characteristic name="Special Rules" typeId="d65b-0ee6-7ec8-53ad">Treemen Ancients and Branchwraiths only. A character with Radiants adds one extra dice to their Dispel pool in their opponent&apos;s Magic phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e41-e64f-2e75-7b72" name="A Lamentation of Despairs" hidden="false" collective="false" import="true" type="upgrade">
@@ -5974,7 +6058,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="138a-c2f2-ee17-ce41" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ed05-9339-96a6-a987" name="A Lamentation of Despairs" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+        <profile id="ed05-9339-96a6-a987" name="A Lamentation of Despairs" publicationId="e967-620f-06be-096a" page="165" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
           <characteristics>
             <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -5994,7 +6078,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a8e9-c7e3-22a6-9c34" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5bc4-9cfd-39b6-e58c" name="A Murder of Spites" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+        <profile id="5bc4-9cfd-39b6-e58c" name="A Murder of Spites" publicationId="e967-620f-06be-096a" page="165" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
           <characteristics>
             <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
             <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">2</characteristic>
@@ -6003,7 +6087,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb06-828e-8d61-9f7b" name="A Muster of Malevolents" hidden="false" collective="false" import="true" type="upgrade">
@@ -6012,7 +6096,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b575-0c0d-76ef-b19b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="c4c1-d6d7-7413-e3e6" name="A Muster of Malevolents" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+        <profile id="c4c1-d6d7-7413-e3e6" name="A Muster of Malevolents" publicationId="e967-620f-06be-096a" page="164" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
           <characteristics>
             <characteristic name="Range" typeId="4285-3917-6bf9-348b">12&quot;</characteristic>
             <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">2</characteristic>
@@ -6021,7 +6105,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="20.0"/>
+        <cost name="pts" typeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="13b7-c0d8-ae74-0cfa" name="A Pageant of Shrikes" hidden="false" collective="false" import="true" type="upgrade">
@@ -6030,7 +6114,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="053b-8116-ddb5-bf18" type="max"/>
       </constraints>
       <profiles>
-        <profile id="cc15-241f-838e-a9c2" name="A Pageant of Shrikes" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+        <profile id="cc15-241f-838e-a9c2" name="A Pageant of Shrikes" publicationId="e967-620f-06be-096a" page="165" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
           <characteristics>
             <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
             <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
@@ -6039,7 +6123,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="20.0"/>
+        <cost name="pts" typeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1da0-01bf-846f-2328" name="A Resplendence of Luminescents" hidden="false" collective="false" import="true" type="upgrade">
@@ -6048,14 +6132,14 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1ec-8e80-1dda-c7dc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="c17e-f0d2-a2ee-2d4c" name="A Resplendence of Luminescents" publicationId="e967-620f-06be-096a" page="161" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
+        <profile id="c17e-f0d2-a2ee-2d4c" name="A Resplendence of Luminescents" publicationId="e967-620f-06be-096a" page="165" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
           <characteristics>
             <characteristic name="Special Rules" typeId="d65b-0ee6-7ec8-53ad">A Resplendence of Luminescents give the character and any unit they join Magical Attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b07-affc-6aae-34a4" name="An Annoyance of Netlings" hidden="false" collective="false" import="true" type="upgrade">
@@ -6064,7 +6148,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1506-581c-0b50-7b0a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9543-871d-393e-d98d" name="An Annoyance of Netlings" publicationId="e967-620f-06be-096a" page="160" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
+        <profile id="9543-871d-393e-d98d" name="An Annoyance of Netlings" publicationId="e967-620f-06be-096a" page="164" hidden="false" typeId="ef35-2c21-8d1a-6aae" typeName="Spites of Athel Loren">
           <characteristics>
             <characteristic name="Special Rules" typeId="d65b-0ee6-7ec8-53ad">Any enemy attempting to strike a character with an Annoyance of Netlings in close combat will suffer -1 To Hit.</characteristic>
           </characteristics>
@@ -6081,20 +6165,20 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5f1-04bf-9121-5a43" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="ee12-f1aa-029f-96bf" name="The Thymer&apos;s Harp" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ee12-f1aa-029f-96bf" name="The Rhymer&apos;s Harp" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e577-09d1-f628-d82d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9aa8-57a0-7b07-126d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8737-bb53-95ca-798f" name="The Thymer&apos;s Harp" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="8737-bb53-95ca-798f" name="The Rhymer&apos;s Harp" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">This item bestows a 5+ Ward Save on the bearer, their mount, and any unit they join. In addition, the bearer, their mount, and any unit they join gains Strider.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="75.0"/>
+            <cost name="pts" typeId="points" value="60.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6113,7 +6197,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3f9-191c-c374-2cbd" type="max"/>
           </constraints>
           <profiles>
-            <profile id="08a6-84a0-41d7-8081" name="Daith&apos;s Reaper" publicationId="e967-620f-06be-096a" page="162" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="08a6-84a0-41d7-8081" name="Daith&apos;s Reaper" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Melee</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -6131,16 +6215,34 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27f9-4503-57cd-d215" type="max"/>
           </constraints>
           <profiles>
-            <profile id="06c4-2aa0-5fb7-8427" name="The Bow of Loren" publicationId="e967-620f-06be-096a" page="162" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="06c4-2aa0-5fb7-8427" name="The Bow of Loren" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">3</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
                 <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Shots (A+1). The bow fires a number of shots equal to 1 plus the wielder’s A. It cannot fire enchanted arrows.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5776-3915-7aa0-f6c0" name="The Spirit Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7545-067a-3919-ae15" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e57-c5d2-91e4-ec97" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e9bd-7f1d-b217-b757" name="The Spirit Sword" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Melee</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour saves cannot be taken against Wounds caused by the Spirit Sword. Furthermore, immediately when an enemy Monster or Character suffers one or more unsaved Wounds from the Spirit Sword, both they and the wielder must roll 2D6 and add their respective LD values. If the wounded model’s total is higher, or the totals are the same, nothing else happens. If the wounded model’s total is lower, it immediately suffers a Wound which Ignores Armour Saves for each point by which its total was exceeded. This has no effect on Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6159,7 +6261,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8591-9217-89da-358a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="782b-9901-a8fa-a887" name="The Banner of the Eternal Queen" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="782b-9901-a8fa-a887" name="The Banner of the Eternal Queen" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The bearer has the Magic Resistance (4+). In addition, once per game, all models in the same unit as the Banner of the Eternal Queen have Unbreakable until the end of the turn, or until the bearer is slain (whichever comes first). Declare you are using this ability at the start of any turn.</characteristic>
               </characteristics>
@@ -6175,7 +6277,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb98-06d5-cad0-226b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="073a-5054-a579-f5f3" name="The Banner of the Hunter King" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="073a-5054-a579-f5f3" name="The Banner of the Hunter King" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All models in the same unit as the Banner of the Hunter King have Vanguard. In addition the bearer’s unit re-roll their first failed charge of the game.</characteristic>
               </characteristics>
@@ -6201,7 +6303,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="864e-de60-f923-6187" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0272-b303-12d9-4448" name="The Helm of the Hunt" publicationId="e967-620f-06be-096a" page="162" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="0272-b303-12d9-4448" name="The Helm of the Hunt" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
@@ -6210,7 +6312,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6229,7 +6331,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2305-8173-5e2e-a61b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d105-5da6-8981-26b8" name="Moonstone of the Hidden Ways" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="d105-5da6-8981-26b8" name="Moonstone of the Hidden Ways" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">If the bearer’s unit is wholly within a forest at the end of your Movement phase, and is not in close combat, it can forestwalk. If it does so, remove it from the battlefield and immediately replace it, wholly within any forest on the battlefield, in the same formation, but facing any direction. A forestwalking unit cannot be placed within 1&quot; of an enemy unit or impassable terrain. A unit that forestwalks counts as having marched in the Movement phase.</characteristic>
               </characteristics>
@@ -6245,12 +6347,12 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7fcb-63d4-f86b-ceef" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5995-7487-00be-3a5c" name="Hail of Doom Arrow" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="5995-7487-00be-3a5c" name="Hail of Doom Arrow" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Hail of Doom arrow can be used instead of making a Shooting attack with the bearer’s Asrai longbow. Declare that the Hail of Doom Arrow is being used before any dice are rolled.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. Glade Lord or Glade Captain with Asrai longbow only. The Hail of Doom arrow can be used instead of making a Shooting attack with the bearer’s Asrai longbow. Declare that the Hail of Doom Arrow is being used before any dice are rolled.</characteristic>
               </characteristics>
             </profile>
-            <profile id="b1e4-9d6a-4fde-4835" name="Hail of Doom Arrow" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="b1e4-9d6a-4fde-4835" name="Hail of Doom Arrow" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
@@ -6278,7 +6380,7 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44b4-5e5d-4d91-84ae" type="max"/>
           </constraints>
           <profiles>
-            <profile id="dcf5-a935-5122-3157" name="Calaingor&apos;s Stave" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="dcf5-a935-5122-3157" name="Calaingor&apos;s Stave" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">When casting the Tree Singing spell, the bearer may re-roll the distance the forest moves, or the number of Hits it inflicts.</characteristic>
               </characteristics>
@@ -6325,10 +6427,10 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="455a-b0e3-ceea-f0a6" name="Elven Grace" publicationId="e967-620f-06be-096a" page="106" hidden="false">
-      <description>Models with this special rule get Parry (6+) against enemies with a lower I value. This Parry save also applies to models that are mounted.</description>
+      <description>Models with this special rule have Dodge (6+) in close combat. However, this cannot be used against enemies attacking with a higher I value than the defending model.</description>
     </rule>
     <rule id="cc70-29e9-de9a-4802" name="Blessings of the Ancients" publicationId="e967-620f-06be-096a" page="106" hidden="false">
-      <description>Any model that has this rule, and is within a forest, adds +1 to all attempts to cast spells.</description>
+      <description>Any model that has this rule, and is within 6&quot; of a forest, adds +1 to all attempts to cast and dispel spells.</description>
     </rule>
     <rule id="d033-aa65-9f72-75d8" name="Forest Spirit" publicationId="e967-620f-06be-096a" page="106" hidden="false">
       <description>A model with this rule has Fear, Strider (Forest), Magical Attacks, Immunity (Psychology) and Ward save (6+). In addition, units of Forest Spirits may only be joined by characters that are also Forest Spirits.</description>
@@ -6336,39 +6438,39 @@ In close combat, the birds give Skaw an additional 3 A at a S and WS of 4.</char
     <rule id="1022-f68d-8b72-1dc0" name="Asrai Archery" publicationId="e967-620f-06be-096a" page="106" hidden="false">
       <description>Models with this rule do not suffer the normal -1 To Hit penalty for moving and shooting.</description>
     </rule>
-    <rule id="aaf8-e0d9-c1f1-71ea" name="Shadow Dances of Loec" publicationId="e967-620f-06be-096a" page="117" hidden="false">
+    <rule id="aaf8-e0d9-c1f1-71ea" name="Shadow Dances of Loec" publicationId="e967-620f-06be-096a" page="118" hidden="false">
       <description>At the start of each round of close combat in which they are fighting, models with this rule choose one of the dances, the effect of which lasts until the end of that turn or until a new dance is chosen. This is done before Impact Hits are resolved. All dancers in the same unit must choose the same dance. Dancers cannot choose the same dance in two consecutive rounds of combat.</description>
     </rule>
-    <rule id="cd7f-3ad6-61f2-86d3" name="Lethal Shot" publicationId="e967-620f-06be-096a" page="119" hidden="false">
+    <rule id="cd7f-3ad6-61f2-86d3" name="Lethal Shot" publicationId="e967-620f-06be-096a" page="120" hidden="false">
       <description>Models with this rule have Killing Blow with their missile attacks.</description>
     </rule>
-    <rule id="2c34-8348-2be2-4629" name="Traps" publicationId="e967-620f-06be-096a" page="119" hidden="false">
+    <rule id="2c34-8348-2be2-4629" name="Traps" publicationId="e967-620f-06be-096a" page="120" hidden="false">
       <description>A Waywatcher unit which is within a wood is automatically assumed to set traps around its positions. Any enemy charging the unit through the woods will activate the traps as soon as the enemy unit touches the wood. If the chargers are already inside the wood when the charge is declared the traps are activated as soon as the charge is declared. Roll a dice on the Waywatcher Trap Table to determine the type and effect of the trap.</description>
     </rule>
-    <rule id="fca4-0d36-e304-5bca" name="Animal Form" publicationId="e967-620f-06be-096a" page="123" hidden="false">
+    <rule id="fca4-0d36-e304-5bca" name="Animal Form" publicationId="e967-620f-06be-096a" page="124" hidden="false">
       <description>At the start of each of your turns, models with this rule choose one of the Animal Forms, the effect of which lasts until the end of that turn or until a new Form is chosen. All Alters in the same unit must choose the same Form. Alters cannot choose the same Form in two consecutive rounds of combat.</description>
     </rule>
-    <rule id="743f-f76f-6efe-aab4" name="Tree Aspects" publicationId="e967-620f-06be-096a" page="126" hidden="false">
+    <rule id="743f-f76f-6efe-aab4" name="Tree Aspects" publicationId="e967-620f-06be-096a" page="127" hidden="false">
       <description>At the start of each round of close combat in which they are fighting, models with this rule choose one of the Tree Aspects, the effect of which lasts until the end of that turn or until a new aspect is chosen. This is done before Impact Hits are resolved. All Dryads in the same unit must choose the same aspect. Dryads cannot choose the same Tree Aspects in two consecutive rounds of combat.</description>
     </rule>
-    <rule id="dbbf-6698-99eb-8404" name="Spirit-walk" publicationId="e967-620f-06be-096a" page="128" hidden="false">
+    <rule id="dbbf-6698-99eb-8404" name="Spirit-walk" publicationId="e967-620f-06be-096a" page="129" hidden="false">
       <description>Instead of moving normally, the unit can walk the spirit paths during the Remaining Moves sub-phase. Remove it from play, and set it up so that the centre of the unit are within any wood on the table.</description>
     </rule>
-    <rule id="acf4-35ec-b910-c6cb" name="Tree Whack" publicationId="e967-620f-06be-096a" page="133" hidden="false">
+    <rule id="acf4-35ec-b910-c6cb" name="Tree Whack" publicationId="e967-620f-06be-096a" page="134" hidden="false">
       <description>A model with this rule can choose to make a single Tree Whack in place of making his normal close combat attacks. If a model is making a Tree Whack, it must be declared before rolling To Hit.
 
 To resolve a Tree Whack, nominate an enemy model in base contact. That model must pass an I test or suffer D6 Wounds with no armour saves allowed. A character with this rule may make a Tree Whack in a challenge.</description>
     </rule>
-    <rule id="96e7-9714-57c7-73b2" name="Impale" publicationId="e967-620f-06be-096a" page="137" hidden="false">
+    <rule id="96e7-9714-57c7-73b2" name="Impale" publicationId="e967-620f-06be-096a" page="139" hidden="false">
       <description>Unicorns gain +1 S to their Impact Hits.</description>
     </rule>
-    <rule id="cd88-3a4e-624f-f662" name="Soporific Breath" publicationId="e967-620f-06be-096a" page="139" hidden="false">
+    <rule id="cd88-3a4e-624f-f662" name="Soporific Breath" publicationId="e967-620f-06be-096a" page="141" hidden="false">
       <description>A Forest Dragon has a S 2 Breath Weapon. Armour saves taken against Wounds caused by Soporific Breath suffer a -3 penalty. All models in a unit that suffers one or more hits from Soporific Breath gain Stupidity for the remainder of the game.</description>
     </rule>
-    <rule id="8019-e15c-4a5c-c6d8" name="Conjoined Destiny" publicationId="e967-620f-06be-096a" page="151" hidden="false">
+    <rule id="8019-e15c-4a5c-c6d8" name="Conjoined Destiny" publicationId="e967-620f-06be-096a" page="155" hidden="false">
       <description>If Naestra and Arahan have been reduced to less than 4 Wounds at the end any turn, they will both be restored to 4 Wounds. In addition, if either Naestra or Arahan issues or accepts a challenge, the other can attack (and be attacked) as part of the challenge.</description>
     </rule>
-    <rule id="1e00-a146-8714-588f" name="Sisters of Twilight" publicationId="e967-620f-06be-096a" page="151" hidden="false">
+    <rule id="1e00-a146-8714-588f" name="Sisters of Twilight" publicationId="e967-620f-06be-096a" page="155" hidden="false">
       <description>Naestra’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Destruction. Arahan’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Order.</description>
     </rule>
   </sharedRules>
@@ -6377,12 +6479,12 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">30&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2) (Only if the unit hasn&apos;t moved. Can&apos;t be used to Stand and Shoot). Volley Fire. Armour Piercing (1).</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2) (Only if the unit hasn&apos;t moved. Can&apos;t be used to Stand and Shoot). Volley Fire. All shots with this weapon have Armour Piercing (1).</characteristic>
       </characteristics>
     </profile>
     <profile id="5783-c473-612c-8965" name="Swiftshiver Shards" publicationId="e967-620f-06be-096a" page="106" hidden="false" typeId="c3a4-9eb1-eef6-d5ec" typeName="Enchanted Arrows">
       <characteristics>
-        <characteristic name="Special Rules" typeId="27f1-8a6e-ef6f-514b">If a model has enchanted arrows, they must use them when shooting with an Asrai Longbow. All Shooting attacks made with enchanted arrows count as Magical Attacks. Shooting attacks made with Swiftshiver Shards allow the model to fire Multiple Shots even when moving that turn. If they do not move, they instead ignore the To Hit penalty for firing Multiple Shots.</characteristic>
+        <characteristic name="Special Rules" typeId="27f1-8a6e-ef6f-514b">If a model has enchanted arrows, they must use them when shooting with an Asrai Longbow. All Shooting attacks made with enchanted arrows count as Magical Attacks. Shooting attacks made with Swiftshiver Shards allow the model to fire Multiple Shots even when moving that turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="f7ab-c65f-502d-580c" name="Hagbane Tips" publicationId="e967-620f-06be-096a" page="106" hidden="false" typeId="c3a4-9eb1-eef6-d5ec" typeName="Enchanted Arrows">
@@ -6405,7 +6507,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Special Rules" typeId="27f1-8a6e-ef6f-514b">If a model has enchanted arrows, they must use them when shooting with an Asrai Longbow. All Shooting attacks made with enchanted arrows count as Magical Attacks. Shooting attacks made with Arcane Bodkins have the Armour Piercing (1) special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="Effect Shadow Dances of Loec" name="Effect" publicationId="e967-620f-06be-096a" page="117" hidden="false" typeId="26c4-c8f5-52f1-7c9d" typeName="Shadow Dances of Loec">
+    <profile id="Effect Shadow Dances of Loec" name="Effect" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="26c4-c8f5-52f1-7c9d" typeName="Shadow Dances of Loec">
       <characteristics>
         <characteristic name="Whirling Death" typeId="0dc0-33a0-1d3d-70fb">While performing this dance, the Wardancers have Armour Piercing (1) and Killing Blow.</characteristic>
         <characteristic name="Storm of Blades" typeId="b78f-d698-467f-b8b6">While they perform this dance, each model in the unit is granted +1 A.</characteristic>
@@ -6413,7 +6515,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Woven Mist" typeId="e9d6-c32d-5212-cb81">When performing this dance, the Wardancers Always Strike First.</characteristic>
       </characteristics>
     </profile>
-    <profile id="Result Waywatcher Trap Table" name="Result" publicationId="e967-620f-06be-096a" page="119" hidden="false" typeId="dccd-986d-db57-7bf2" typeName="Waywatcher Trap Table">
+    <profile id="Result Waywatcher Trap Table" name="Result" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="dccd-986d-db57-7bf2" typeName="Waywatcher Trap Table">
       <characteristics>
         <characteristic name="1-2" typeId="3ac8-ceec-5e67-2f5e">Spikes: The enemy unit suffers D6 S 3 hits.</characteristic>
         <characteristic name="3" typeId="9d9d-1c4b-50be-5a61">Snares: The enemy unit deducts D3&quot; from the charge distance.</characteristic>
@@ -6422,7 +6524,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="6" typeId="63ae-0a70-11f1-841c">Impaler: Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined by the Wood Elf player.</characteristic>
       </characteristics>
     </profile>
-    <profile id="Effect Animal Forms" name="Effect" publicationId="e967-620f-06be-096a" page="123" hidden="false" typeId="8e2d-9cc8-c081-117a" typeName="Animal Forms">
+    <profile id="Effect Animal Forms" name="Effect" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="8e2d-9cc8-c081-117a" typeName="Animal Forms">
       <characteristics>
         <characteristic name="Form of the Bear" typeId="aff1-c70a-a990-8ad8">While in this form, the unit gains +1 M, +2 S, +1 T, -2 I, and +2 A.</characteristic>
         <characteristic name="Form of the Wolf" typeId="64c5-0fc1-e72b-a8ff">While in this form, the unit gains +4 M, +1 A,  Devastating Charge and Swiftstride.</characteristic>
@@ -6430,14 +6532,14 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Form of the Boar" typeId="d0be-89cf-adc2-4911">While in this form, the unit gains +2 M, +1 T, Swiftstride and +2 S on the turn that they charge.</characteristic>
       </characteristics>
     </profile>
-    <profile id="Effect Tree Aspects" name="Effect" publicationId="e967-620f-06be-096a" page="126" hidden="false" typeId="d872-10dc-1c71-c498" typeName="Tree Aspects">
+    <profile id="Effect Tree Aspects" name="Effect" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="d872-10dc-1c71-c498" typeName="Tree Aspects">
       <characteristics>
         <characteristic name="Birch Aspect" typeId="7920-f82a-1094-9701">While in this Aspect, the Dryads gain +1 A.</characteristic>
         <characteristic name="Oak Aspect" typeId="8982-67a5-ef7a-9466">While in this Aspect, the Dryads gain +1 T.</characteristic>
         <characteristic name="Willow Aspect" typeId="ddfa-dd3f-f38b-09f8">While in this Aspect, enemy models in base contact suffers -1 To Hit.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2e72-68a3-29f4-b15a" name="Strangleroots" publicationId="e967-620f-06be-096a" page="133" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="2e72-68a3-29f4-b15a" name="Strangleroots" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>
@@ -6454,7 +6556,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="6" typeId="dea4-20f8-19d7-4eeb">Wildwood: Roll for any unit at least partially within the Wildwood at the end of the Movement phase. On a 4+, the unit suffers D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="5114-24cc-3c58-89ec" name="Elven Steed" publicationId="e967-620f-06be-096a" page="135" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="5114-24cc-3c58-89ec" name="Elven Steed" publicationId="e967-620f-06be-096a" page="137" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -6468,7 +6570,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
       </characteristics>
     </profile>
-    <profile id="061c-51da-f135-76f3" name="Great Stag" publicationId="e967-620f-06be-096a" page="136" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="061c-51da-f135-76f3" name="Great Stag" publicationId="e967-620f-06be-096a" page="138" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6482,7 +6584,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec72-7319-d44b-2d84" name="Unicorn" publicationId="e967-620f-06be-096a" page="137" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="ec72-7319-d44b-2d84" name="Unicorn" publicationId="e967-620f-06be-096a" page="139" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">10</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6496,7 +6598,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
       </characteristics>
     </profile>
-    <profile id="2072-1a44-7062-fd03" name="Great Eagle" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="2072-1a44-7062-fd03" name="Great Eagle" publicationId="e967-620f-06be-096a" page="136" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">2</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6524,7 +6626,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
       </characteristics>
     </profile>
-    <profile id="5e17-02cd-610b-33c4" name="Forest Dragon" publicationId="e967-620f-06be-096a" page="139" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="5e17-02cd-610b-33c4" name="Forest Dragon" publicationId="e967-620f-06be-096a" page="141" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -6538,7 +6640,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
       </characteristics>
     </profile>
-    <profile id="164f-4028-3434-d081" name="Charioteer" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="164f-4028-3434-d081" name="Charioteer" publicationId="e967-620f-06be-096a" page="125" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215"/>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6552,7 +6654,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459"/>
       </characteristics>
     </profile>
-    <profile id="5cb9-6e41-dca6-43a4" name="Meadow Chariot" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="5cb9-6e41-dca6-43a4" name="Meadow Chariot" publicationId="e967-620f-06be-096a" page="125" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215"/>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
@@ -6566,7 +6668,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 5+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="2656-8bdd-2dcf-f491" name="Wild Hunter" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="2656-8bdd-2dcf-f491" name="Wild Hunter" publicationId="e967-620f-06be-096a" page="121" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6594,7 +6696,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
       </characteristics>
     </profile>
-    <profile id="1a07-7d7a-acf3-1159" name="Wild Rider" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="1a07-7d7a-acf3-1159" name="Wild Rider" publicationId="e967-620f-06be-096a" page="121" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>

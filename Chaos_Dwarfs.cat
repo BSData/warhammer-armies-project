@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="4" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="fd1a-59bd-75a6-4a0c" name="Animosity Chart">
       <characteristicTypes>
@@ -2635,7 +2635,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             </selectionEntry>
             <selectionEntry id="7f64-6eb1-4299-041b" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="4168-3b95-20cc-ae10" value="0.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d939-f307-450d-25ea" type="atLeast"/>
                   </conditions>
@@ -2651,16 +2651,16 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0cdf-7807-5181-f3d5" name="Spear (Mounted)" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0cdf-7807-5181-f3d5" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="bac2-156a-a1aa-b19c" value="1.0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d939-f307-450d-25ea" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bac2-156a-a1aa-b19c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bac2-156a-a1aa-b19c" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="06d1-aa50-1f08-542d" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
@@ -2871,12 +2871,13 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="667e-3d35-2bb1-707d" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="32dd-0f5b-045c-7152" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4176-1874-8e80-bb01" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2cb8-786a-5466-69b7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f4f-3439-619c-6d2d" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="f6c2-5659-095b-167f" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                    <infoLink id="349d-3b59-3a09-0477" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2913,12 +2914,13 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="71c6-287b-d7f4-8156" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="fc21-ddeb-570a-7ea2" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6193-7c95-1894-c298" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86d9-9f35-85ad-5d40" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="548c-fe7c-f18b-fd4e" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="3afb-1cca-4fdd-f4fa" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                    <infoLink id="2d27-5894-4732-aa73" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3122,6 +3124,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <selectionEntry id="a65e-9597-e66d-50fe" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5805-2016-2f8d-5768" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="912f-8a40-1bfc-68c5" type="min"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="d59a-3bb1-0e3c-c5e8" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
@@ -3161,12 +3164,13 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ac76-7d01-dd02-a9ed" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3044-f901-c5c1-1d90" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b1d-cb46-ff31-eddf" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fdbe-5494-c3c6-4c36" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72b3-6491-c95f-45a0" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="a0a5-b20a-05cc-f4d9" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                    <infoLink id="0a8a-221d-925b-953b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3421,7 +3425,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <infoLink id="07e6-ce17-e4ce-1fb8" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4510,7 +4514,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             <profile id="cad8-b99b-d65a-387f" name="Berzerker" publicationId="faf5-2026-3cea-6e96" page="62" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
@@ -4610,7 +4614,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <profile id="1d4c-1f4d-433e-450e" name="Ravager" publicationId="faf5-2026-3cea-6e96" page="62" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>

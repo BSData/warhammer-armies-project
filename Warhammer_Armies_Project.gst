@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.81"/>
-    <publication id="9e23-79cb-pubN67565" name="Albion v.1.23"/>
-    <publication id="9e23-79cb-pubN71963" name="Beastmen v.1.33"/>
-    <publication id="9e23-79cb-pubN75312" name="Bretonnia v.1.21"/>
+    <publication id="9e23-79cb-pubN67565" name="Albion v.1.24"/>
+    <publication id="9e23-79cb-pubN71963" name="Beastmen v.1.34"/>
+    <publication id="9e23-79cb-pubN75312" name="Bretonnia v.1.22"/>
     <publication id="9e23-79cb-pubN76150" name="Dark Elves v.1.32"/>
     <publication id="9e23-79cb-pubN77092" name="High Elves v.1.21"/>
     <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.22"/>
@@ -18,15 +18,15 @@
     <publication id="4086-1ccd-f433-39a2" name="Skaven v.1.51"/>
     <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos v.1.23"/>
     <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.21, Lizardmen v.1.22"/>
-    <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.33, Daemons of Chaos v.1.23, Warriors of Chaos v.1.21"/>
+    <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.34, Daemons of Chaos v.1.23, Warriors of Chaos v.1.21"/>
     <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.2"/>
     <publication id="10a5-5781-61f5-86ae" name="Vampire Counts v.1.22"/>
     <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.21"/>
-    <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.33, Warriors of Chaos v.1.21"/>
+    <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.34, Warriors of Chaos v.1.21"/>
     <publication id="e967-620f-06be-096a" name="Wood Elves v.1.12"/>
-    <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.11"/>
-    <publication id="d221-484d-439d-4310" name="Araby v.1.22"/>
-    <publication id="8abe-59b3-1084-5e51" name="Cathay v.1.12"/>
+    <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.12"/>
+    <publication id="d221-484d-439d-4310" name="Araby v.1.24"/>
+    <publication id="8abe-59b3-1084-5e51" name="Cathay v.1.13"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.21"/>
     <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric"/>
     <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.13"/>

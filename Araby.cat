@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5388-e68f-6e10-6be4" name="Bladedances">
       <characteristicTypes>
@@ -236,7 +236,7 @@
           <profiles>
             <profile id="a9e3-6309-dd9e-70b9" name="Serpent Staff" publicationId="d221-484d-439d-4310" page="79" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the start of the close combat phase, one enemy model is base contact must pass a Psychology test or it will come under Jaffar’s control for the duration of the combat phase, and will attack any friendly models in base contact (chosen by the Araby player), even if in a challenge.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the start of the close combat phase, one enemy model in base contact must pass a Psychology test or it will come under Jaffar’s control for the duration of the combat phase, and will attack any friendly models in base contact (chosen by the Araby player), even if in a challenge.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -393,7 +393,7 @@
       </profiles>
       <rules>
         <rule id="6291-1819-231a-c9a0" name="Righteousness of Faith" publicationId="d221-484d-439d-4310" page="80" hidden="false">
-          <description>Salâh ad-Dîn’s Inspiring Presence is 18&quot; rather than the normal 12&quot;, and any unit joined by Salâh ad-Dîn may re-roll failed Psychology tests and add +1 to their combat resolution.</description>
+          <description>If Salâh ad-Dîn is your Army General, his Inspiring Presence range is 18&quot; rather than the normal 12&quot;, and any unit joined by Salâh ad-Dîn may re-roll failed Psychology tests and add +1 to their combat resolution.</description>
         </rule>
         <rule id="f338-ce7b-b981-b06f" name="Strategic Genius" publicationId="d221-484d-439d-4310" page="80" hidden="false">
           <description>If Salâh ad-Dîn is the Army General, any Core unit in the army may deploy as Ambushers per the normal rules.</description>
@@ -1601,14 +1601,13 @@
             <infoLink id="1ace-3238-10b1-654e" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ab36-e32a-a1cd-d034" name="Lore of Magic" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="ab36-e32a-a1cd-d034" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2035-f2ed-8459-1dcf">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eed9-ded1-45a7-31f3" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61f1-e9d2-4f79-a696" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="2035-f2ed-8459-1dcf" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 2" type="selectionEntry"/>
-                <entryLink id="8656-2f94-812c-0849" name="Lore of the Desert" hidden="false" collective="false" import="true" targetId="Lore of the Desert 2" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1740,7 +1739,7 @@
       </profiles>
       <rules>
         <rule id="e977-c8af-b14c-e6df" name="Corsair Captain" publicationId="d221-484d-439d-4310" page="86" hidden="false">
-          <description>If Sindibadu is included in your army, all Corsairs may use his LD as if he was the army&apos;s General.</description>
+          <description>All Corsair models always treat Sindibadu as the Army&apos;s General for all purposes, regardless of what character is actually the Army General.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1891,7 +1890,7 @@
         <entryLink id="1525-ddb7-8caf-6457" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="205.0"/>
+        <cost name="pts" typeId="points" value="195.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="56e5-724e-5d74-de12" name="Sorcerer" hidden="false" collective="false" import="true" type="model">
@@ -2240,7 +2239,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="110.0"/>
+        <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9005-669d-b763-6805" name="Sheikh" hidden="false" collective="false" import="true" type="model">
@@ -3416,7 +3415,7 @@
                 <infoLink id="e938-eed0-d5cf-4377" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4897,14 +4896,14 @@
               <selectionEntries>
                 <selectionEntry id="31bb-eefa-7410-1c5a" name="Naphtha Siphon" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="a2a8-20e0-ddbe-b491" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8eb2-eedc-79ea-fba0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5216-f607-7f0f-45aa" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="3ac1-7fd4-c4b7-5b75" name="Naphtha Siphon" publicationId="d221-484d-439d-4310" page="73" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
                         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
-                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Breath Weapon. Flaming Attacks. Ignores Armour saves. An enemy unit taking a casualty from a Naphtha Siphon must take a Panic test. Naptha Siphons cannot be used in close combat, but may fire every round in the shooting phase – there is no need to roll a 4+ like other Breath Weapons.</characteristic>
+                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Breath Weapon. Flaming Attacks. Ignores Armour saves. An enemy unit taking a casualty from a Naphtha Siphon must take a Panic test. Naptha Siphons cannot be used in close combat, but may fire every round in the shooting phase – there is no need to roll a 4+ like with other Breath Weapons.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4916,15 +4915,9 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8983-3aec-a036-5e9c" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="1653-4e61-1ede-7fc2" name="Naphtha Bombs" publicationId="d221-484d-439d-4310" page="73" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
-                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Ignores Armour saves. Quick to Fire.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <infoLinks>
+                    <infoLink id="ea84-b7e4-5514-78f8" name="Naphtha Bombs" hidden="false" targetId="6e81-1f73-8598-e7c3" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -4985,15 +4978,9 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b8c-172c-b875-ff99" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="18e3-96b7-b6c9-15e5" name="Naphtha Bombs" publicationId="d221-484d-439d-4310" page="73" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
-                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Ignores Armour saves. Quick to Fire.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <infoLinks>
+                    <infoLink id="10f4-94d7-4121-b2e0" name="Naphtha Bombs" hidden="false" targetId="6e81-1f73-8598-e7c3" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -5141,7 +5128,7 @@
           </profiles>
           <rules>
             <rule id="c2c2-b214-14ef-51d9" name="Carpet Bombing" publicationId="d221-484d-439d-4310" page="69" hidden="false">
-              <description>Once per turn, during the Remaining Moves segment of the Movement phase, a unit of Carpet Riders may carpet bomb an enemy unit at least one of its models has moved over during that phase. Each Carpet Bomb inflicts D6 S 2 Hits with Poisoned Attacks.</description>
+              <description>Once per turn, during the Remaining Moves segment of the Movement phase, a unit of Carpet Riders may carpet bomb an enemy unit at least one of its models has moved over during that phase. Each Carpet Bomb inflicts D3 S 2 Hits with Poisoned Attacks.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5273,12 +5260,12 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
@@ -5332,12 +5319,12 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
@@ -6198,7 +6185,7 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="70.0"/>
+            <cost name="pts" typeId="points" value="60.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ae49-d38b-8f7e-b2f6" name="Martyr&apos;s Shard" hidden="false" collective="false" import="true" type="upgrade">
@@ -6436,7 +6423,7 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
       <description>Models with this rule add their combat resolution score to their Unit Strength value when determining if they are Steadfast. In addition, in the first round of combat, they always take their Break tests using 3D6, discarding the highest result.</description>
     </rule>
     <rule id="f19f-3812-9763-7466" name="Genie Binding" publicationId="d221-484d-439d-4310" page="56" hidden="false">
-      <description>A Genie may be summoned at the start of any of your turns by passing a LD test for the Sorcerer who controls the Genie. Place the Genie within 6&quot; of the Sorcerer, at least 1&quot; away from other units or impassable terrain. If the Genie is slain, it can be summoned back in a later turn, but the Sorcerer will suffer a cumulative -1 penalty to the LD test required every time he tries to do so. However, if the Sorcerer is slain, the Genie is immediately banished back to its container and removed as a casualty.</description>
+      <description>A Genie may be summoned at the start of any of your turns by passing a LD test for the Sorcerer who controls the Genie. Place the Genie within 6&quot; of the Sorcerer, at least 1&quot; away from other units or impassable terrain. It may act normally in the turn it is summoned. If the Genie is slain, it can be summoned back in a later turn, but the Sorcerer will suffer a cumulative -1 penalty to the LD test required every time he tries to do so. However, if the Sorcerer is slain, the Genie is removed as a casualty.</description>
     </rule>
     <rule id="7e64-1b32-e64c-5e86" name="Djinn" publicationId="d221-484d-439d-4310" page="56" hidden="false">
       <description>A Djinn has Fly. They can cast the spell Wind Blast from the Lore of Heavens as an innate Bound Spell, power level 7.</description>
@@ -6451,7 +6438,7 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
       <description>A Marid has Magic Resistance (2) and Immunity (Ice Attacks). They can cast the spell Iceshard Blizzard from the Lore of Heavens as an innate Bound Spell, power level 7.</description>
     </rule>
     <rule id="16eb-10d2-3b28-209e" name="Disciplined" publicationId="d221-484d-439d-4310" page="66" hidden="false">
-      <description>Janissaries have Immunity (Panic) and may roll 3D6, discarding the highest dice, when taking LD test to Redirect Charges, Restrain Pursuit, March and Reform.</description>
+      <description>Janissaries have Immunity (Panic) and may roll 3D6, discarding the highest dice, when taking LD tests to Redirect Charges, Restrain Pursuit, March and Reform.</description>
     </rule>
     <rule id="a6d9-4620-9422-a156" name="Cumbersome" publicationId="d221-484d-439d-4310" page="74" hidden="false">
       <description>Due to their size, Monster Bombards may not be moved after deployment, but may pivot on the spot as normal.</description>
@@ -6614,6 +6601,13 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6e81-1f73-8598-e7c3" name="Naphtha Bombs" publicationId="d221-484d-439d-4310" page="73" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Ignores Armour saves. Quick to Fire.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

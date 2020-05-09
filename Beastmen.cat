@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
       <characteristicTypes>
@@ -310,8 +310,9 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="b19b-b8b5-c95f-02e4" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
+        <infoLink id="b19b-b8b5-c95f-02e4" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
         <infoLink id="c514-fcde-faa2-8432" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+        <infoLink id="402c-5bdf-fc36-219f" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2b3b-7d18-01da-a0a3" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -568,7 +569,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -685,7 +687,7 @@
       <infoLinks>
         <infoLink id="8fb5-6ed2-e475-487b" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
         <infoLink id="3cf1-84b4-9384-71e8" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="41b5-27fe-ba22-bd6c" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
+        <infoLink id="41b5-27fe-ba22-bd6c" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fcfe-5d5d-063a-eab5" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -1040,26 +1042,11 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="55a1-4f23-a963-0981" name="Great Bray-Shaman of Tzeentch" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="014c-3a82-bd2c-530a" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="d3fb-7a20-ba30-be9f" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="ac60-fa4a-a0c1-bde6" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="c467-47fe-d493-4087" name="Mark of Tzeentch" hidden="false" targetId="62af-86be-bb67-9a3a" type="rule"/>
+                <infoLink id="f5a9-4b11-0a2a-4912" name="Great Bray-Shaman" hidden="false" targetId="b8c9-36fb-c394-d85d" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="b3b0-b54b-f495-5e35" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -1117,18 +1104,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a673-64dc-38e7-6641" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="fddf-cd5d-d9a0-e60f" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="254e-a49c-ce86-4024" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="101b-685d-943f-a1cb" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="25c6-0816-1c08-0407" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -1149,18 +1127,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5558-de52-3b5f-e249" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ff07-4a50-8e8d-5484" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="5b34-8b98-f952-d1ae" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="fe15-a459-c4f9-7fb6" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="027e-a69e-83d4-d3e4" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -1353,26 +1322,11 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7a0f-7790-7fbb-d1d3" name="Great Bray-Shaman of Slaanesh" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="22e2-a22f-a2c2-7855" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="1c9a-4213-e9e2-3b3c" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="d3d5-e045-ecbb-8bf0" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="d099-0979-fe2f-5637" name="Mark of Slaanesh" hidden="false" targetId="2d41-4e7a-af27-6ad1" type="rule"/>
+                <infoLink id="c169-2dd7-e3f9-6489" name="Great Bray-Shaman" hidden="false" targetId="b8c9-36fb-c394-d85d" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="84c9-99ce-d4ae-38af" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -1430,18 +1384,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fda-e5a3-9dcc-33e9" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a9fb-945e-f944-b1f1" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="6673-f344-3846-3854" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="6f8c-bf91-cec4-e63e" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="ebaf-a070-ce23-ea96" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -1462,18 +1407,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="740c-26a4-5419-510b" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="b455-4e95-06c8-3465" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="a97f-2280-ea58-2144" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="1d98-81b9-ac2e-81b8" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="810b-ef2f-84b3-c673" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -1666,25 +1602,10 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="b321-03dd-348c-9902" name="Great Bray-Shaman" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="9c42-e4ec-e43e-0d5a" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
-                <infoLink id="7136-6691-792f-9da6" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
+                <infoLink id="7136-6691-792f-9da6" name="Great Bray-Shaman" hidden="false" targetId="b8c9-36fb-c394-d85d" type="profile"/>
                 <infoLink id="51f4-4a22-ca0a-8063" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+                <infoLink id="c804-d5fb-396d-e851" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="d760-2fee-6191-e2ea" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -1742,18 +1663,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aabc-143c-d9e8-7cde" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="cd8c-f0fc-0801-dbb8" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="2b6c-f1b0-f8f9-d2f4" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="67bb-89fe-0f47-7559" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="ff9a-45f1-3d84-b3f6" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -1777,18 +1689,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12d5-bc82-bed2-5ce6" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="fc7e-bcab-d893-cc98" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
-                        <infoLink id="d9ca-2009-8ccd-bf7f" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="d9ca-2009-8ccd-bf7f" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 3" type="profile"/>
+                        <infoLink id="59b1-05eb-c369-190b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="a917-e72b-739f-0fd5" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -1984,26 +1887,11 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="c387-872c-6bdc-10b4" name="Great Bray-Shaman of Nurgle" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="ffe1-36e9-f016-7998" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="d335-d657-7846-4917" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="ac8b-0027-0782-511b" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="131d-ea1a-ca1c-51f9" name="Mark of Nurgle" hidden="false" targetId="e111-31f2-8123-8025" type="rule"/>
+                <infoLink id="6371-ec34-d1b4-fae8" name="Great Bray-Shaman" hidden="false" targetId="b8c9-36fb-c394-d85d" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="9b8b-a382-0eda-63cf" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -2061,18 +1949,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="007f-8582-61fd-4412" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a21e-92a9-48d4-395e" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="2106-d0b4-3c0e-27f2" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="be22-4ca9-0e1f-63b4" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="300b-d845-53b5-dd34" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -2093,18 +1972,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0917-a7cd-03fa-53d7" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ae18-a895-1337-30a3" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="a86a-8a3a-3307-527b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="cd04-e48e-32be-980a" name="Great Bray-Shaman" hidden="false" targetId="Great Bray-Shaman 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="8db0-6243-6282-e628" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -2661,7 +2531,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2753,7 +2624,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3278,25 +3150,11 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
           </constraints>
           <selectionEntries>
             <selectionEntry id="238c-e361-c1fc-4427" name="Bray-Shaman" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="883e-fd3e-22e1-e6a0" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="af5c-a45d-4580-41e6" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="3382-6ac1-fa43-8bf0" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+                <infoLink id="4a21-732b-66a1-db13" name="Bray-Shaman" hidden="false" targetId="eff2-9d53-0083-9e9b" type="profile"/>
+                <infoLink id="2324-6f9d-7170-649b" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="6829-62e1-5a46-59b1" name="Gifts of Chaos &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -3339,18 +3197,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac7f-f2cc-8f40-c657" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9375-4b75-ce6d-c027" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="d9f0-b456-a6a0-0d5f" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="8150-edb9-9c61-5174" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="7e84-b51a-a3aa-a56f" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -3374,18 +3223,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df83-3591-c7fa-3b31" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="0d93-be39-071b-aa18" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
-                        <infoLink id="563a-39c9-2b22-7378" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="563a-39c9-2b22-7378" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 1" type="profile"/>
+                        <infoLink id="811e-33e6-ee36-7031" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="d069-3007-fc69-1683" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -3542,26 +3382,12 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
               </costs>
             </selectionEntry>
             <selectionEntry id="175a-a180-21d3-e5eb" name="Bray-Shaman of Nurgle" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="15aa-cf7a-cf49-4f69" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="4f8d-d3e5-c64b-75f2" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="be8a-e69f-ae16-57b1" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="413b-8592-709c-469d" name="Mark of Nurgle" hidden="false" targetId="e111-31f2-8123-8025" type="rule"/>
+                <infoLink id="7196-e7b6-95a0-e487" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
+                <infoLink id="4fa0-62a3-d7d7-899c" name="Bray-Shaman" hidden="false" targetId="eff2-9d53-0083-9e9b" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="3f73-ab32-5d11-ac85" name="Gifts of Chaos &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -3604,18 +3430,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb9a-0d88-28c9-33a7" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="629e-acc8-19db-f69f" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="b813-8e17-6b37-ea76" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="fe50-ab04-6bd7-77cf" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="a78f-6f6d-f7da-b734" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -3636,18 +3453,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e7e4-cd26-8691-6e90" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="cb6d-c730-de24-8696" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="734d-4389-2f20-bdd1" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="6e39-13d8-88d3-849b" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="778e-43a1-480e-c356" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -3801,26 +3609,12 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
               </costs>
             </selectionEntry>
             <selectionEntry id="e078-9469-2695-4806" name="Bray-Shaman of Slaanesh" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="d258-2821-7c1e-c383" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="dcc8-ff46-cf3d-9257" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="222e-1925-8ae6-c810" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="8171-3684-604d-bf5a" name="Mark of Slaanesh" hidden="false" targetId="2d41-4e7a-af27-6ad1" type="rule"/>
+                <infoLink id="746c-8ad2-27fa-f01b" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
+                <infoLink id="e92a-2b69-bef6-2b3a" name="Bray-Shaman" hidden="false" targetId="eff2-9d53-0083-9e9b" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="30dc-3b9e-4802-ee1f" name="Gifts of Chaos &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -3863,18 +3657,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6585-5d08-be15-dd7f" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="4290-7a7d-435d-b2b6" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="5013-3249-bc9b-9133" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="bd21-390e-ee58-5ca7" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="c588-d4b2-d899-5cfd" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -3895,18 +3680,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf43-10dc-1994-8420" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="88c9-8d2b-7b6d-9792" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="1d64-5385-d491-abc2" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="dd8d-673f-6f74-c5ca" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="02f2-fe60-038d-e91e" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -4060,26 +3836,12 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
               </costs>
             </selectionEntry>
             <selectionEntry id="ed97-248f-2dda-9fb3" name="Bray-Shaman of Tzeentch" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="0d2b-df6a-cd5a-116a" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="02d4-fe5b-e35a-a01e" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
                 <infoLink id="6d15-3c23-8563-8509" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="1cb9-f92a-16a5-c6cb" name="Mark of Tzeentch" hidden="false" targetId="62af-86be-bb67-9a3a" type="rule"/>
+                <infoLink id="5f71-9232-b993-6d93" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
+                <infoLink id="645e-d3f6-a690-cf8d" name="Bray-Shaman" hidden="false" targetId="eff2-9d53-0083-9e9b" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="db73-6849-3808-0d7d" name="Gifts of Chaos &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -4122,18 +3884,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4731-df72-8290-0d2c" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="2544-3a36-6344-fa0b" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="c6e4-0fdd-458e-25c3" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="053c-1ab8-d3de-4b16" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="2023-baac-b549-8f9b" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -4154,18 +3907,9 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e734-05ec-3eab-c16c" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="64c5-d5f1-c8f7-162b" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                          <characteristics>
-                            <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
-                            <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
-                            <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="05e1-e2fb-9ae6-41c6" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+                        <infoLink id="bc1d-d4f0-3281-d1ee" name="Bray-Shaman" hidden="false" targetId="Bray-Shaman 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="0972-5e19-a596-c383" name="Lore of Magic" hidden="false" collective="false" import="true">
@@ -5121,6 +4865,18 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="22b9-4d8c-3333-00b4" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80ee-4ad1-1db9-ec75" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81c2-74e9-eecb-596e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f112-3e5b-8b08-96ff" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5730,7 +5486,7 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
             <infoLink id="e9b0-08db-9e98-6f0e" name="Drunken" hidden="false" targetId="e266-edfb-e9f4-02d1" type="rule"/>
             <infoLink id="f25d-7fb6-fbfa-d98d" name="Result" hidden="false" targetId="b7b0-9a67-5ee2-a8bf" type="profile"/>
             <infoLink id="adc5-44ae-ce03-ff93" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-            <infoLink id="5b8f-b318-8e6c-06a4" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
+            <infoLink id="bc9c-e6ab-db5f-ef6e" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="c440-41b1-cb7c-216c" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -5911,7 +5667,8 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
           </constraints>
           <infoLinks>
             <infoLink id="602c-c12b-fbbb-d91e" name="Razorgor" hidden="false" targetId="b564-a41f-f391-8c9e" type="profile"/>
-            <infoLink id="5263-e643-50d7-b53a" name="Thunderous Charge" hidden="false" targetId="0ca0-8541-95c8-2de3" type="rule"/>
+            <infoLink id="5263-e643-50d7-b53a" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+            <infoLink id="b74e-5b76-8575-79b3" name="Thunderous Charge" hidden="false" targetId="0ca0-8541-95c8-2de3" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5961,6 +5718,18 @@ against units from the Empire, Bretonnia and Beastmen army books. However, Ungro
               </constraints>
               <infoLinks>
                 <infoLink id="9dbd-389e-67fd-e12e" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="71d1-8df6-2a1f-7053" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2b9-e3df-36d6-def6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63c9-368b-d142-8c78" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="246d-88b5-49a0-34d5" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6227,7 +5996,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
             <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
@@ -6268,7 +6037,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="de9f-f927-5eb8-9726" name="Insane Bloodlust" hidden="false" collective="false" import="true" type="upgrade">
@@ -6676,7 +6445,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                 <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Stone Thrower</characteristic>
                 <characteristic name="Range" typeId="1c88-efb0-083f-b945">24&quot;</characteristic>
                 <characteristic name="Strength" typeId="6ca0-d074-628f-e276">4(10)</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6). A Cygor may move in the same turn it uses this ability, though it may not march. A Misfire will do a single wound to the Cygor.</characteristic>
+                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6). Slow to Fire. A Cygor may move in the same turn it uses this ability, though it may not march. If a misfire is rolled, the Cygor suffers 1 Wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7684,7 +7453,7 @@ Models with this Mark add +1 to their T but suffer -2 to their I.</description>
       <description>All models with this follow the Berserk Rage rules from Frenzy. In addition, if they are forced to charge as a result of a failed Berserk Rage test, they may re-roll failed charge distance results.</description>
     </rule>
     <rule id="ac57-e28c-5e7b-ba9c" name="Beastmen Ambush" publicationId="9e23-79cb-pubN71963" page="62" hidden="false">
-      <description>Beastmen add +1 to any rolls to determine whether or not they enter the table using the Ambushers special rule.</description>
+      <description>Models with this rule have Ambushers, though this is lost if they have any kind of mount. In addition, they add +1 to any rolls to determine whether or not they enter the table when using Ambushers. Note that your Army General must deploy normally.</description>
     </rule>
     <rule id="a0e0-e4fa-1f28-cff8" name="Bagrar the Tamer" publicationId="9e23-79cb-pubN71963" page="98" hidden="false">
       <description>If Gorthor is mounted on a Chariot, he may re-roll all Fleeing and Pursuit distance rolls.</description>
@@ -7702,7 +7471,7 @@ Models with this Mark add +1 to their T but suffer -2 to their I.</description>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour Save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour Save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="00d0-3973-6454-616a" name="Tuskgor" publicationId="9e23-79cb-pubN71963" page="76" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7730,7 +7499,7 @@ Models with this Mark add +1 to their T but suffer -2 to their I.</description>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour Save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour Save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="5273-0880-563d-0efe" name="Ramhorn" publicationId="9e23-79cb-pubN71963" page="95" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7813,6 +7582,70 @@ Models with this Mark add +1 to their T but suffer -2 to their I.</description>
     <profile id="2bf7-0aa7-6086-a349" name="Skull of Mugrar" publicationId="9e23-79cb-pubN71963" page="98" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
       <characteristics>
         <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">When rolling for the chariot&apos;s impact hits, the Skull of Mugrar allows an extra dice to be rolled, and the highest result to be chosen. In addition, it gives Gorthor Immunity (Multiple Wounds).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="Bray-Shaman 1" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+      <characteristics>
+        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
+        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
+        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="Bray-Shaman 2" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+      <characteristics>
+        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eff2-9d53-0083-9e9b" name="Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8c9-36fb-c394-d85d" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="Great Bray-Shaman 3" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+      <characteristics>
+        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
+        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
+        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="Great Bray-Shaman 4" name="Great Bray-Shaman" publicationId="9e23-79cb-pubN71963" page="65" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+      <characteristics>
+        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

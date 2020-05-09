@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1306-7f01-ae3c-4fa0" name="Eye of the Gods Table">
       <characteristicTypes>
@@ -177,7 +177,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -475,7 +476,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -926,7 +928,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1138,6 +1141,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="9f56-b05e-41b3-088d" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59e7-2a4b-5aa0-ca7d" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2e3-f8ea-2eaf-5cdd" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="3063-6d4d-53cf-c700" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -1201,6 +1216,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="d296-80bd-8d6b-84dd" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="3344-3ae4-2ea3-8712" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89b8-5e5c-fa25-068d" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25e8-821d-bd58-a5c9" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="a0a1-f0b4-4bb3-0392" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -1601,6 +1628,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="6db4-eba8-13f1-6aef" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="638f-777f-854d-7613" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b22d-bec7-cacf-d2e8" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="7e4b-eb64-5d08-db81" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -1664,6 +1703,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="bc17-13a9-df55-8175" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="d741-719c-4e88-54d2" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9250-c910-f64d-9cf2" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edb1-fdb0-3690-918d" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="ae50-c0b0-ca7f-93e8" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2064,6 +2115,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="d567-bd05-6c26-4a03" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="713f-367b-11a0-c910" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b2f-9030-e4e6-5416" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="9bf4-448a-d844-01bf" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -2127,6 +2190,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="8e35-7923-aeba-4bac" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="5522-f409-f302-dab2" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03f1-4262-76ea-4585" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65d9-c587-12a3-6226" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="d098-b108-6031-decf" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2524,6 +2599,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="7bca-62ff-dcd9-f635" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c167-cb8b-5d92-8fe7" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea0c-18de-9575-4117" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="9562-1ca8-7eb8-d006" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -2586,6 +2673,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="19e7-a6b2-443f-444c" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="98ee-155e-6616-0249" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a823-2051-99c9-d142" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9282-3e00-c15d-a697" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="ced4-cf68-3715-ebdb" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2969,6 +3068,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="4e7a-a45a-cea9-faf4" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b29-1cb6-8897-5b27" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82ec-3493-9352-3083" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="c2f2-4681-edbd-742c" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -3032,6 +3143,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="70c6-6a47-06b4-c490" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="96ef-fd2f-ef59-f99b" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2176-f8ce-4c8d-a1ec" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fa7-1a86-e5ca-c478" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="4474-4eb5-7866-03d8" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -3283,7 +3406,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <infoLink id="1ca3-04db-f390-9106" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="bffa-0b6b-6eb9-720e" name="Daemonic" hidden="false" targetId="a6d9-b8e9-21b2-96ff" type="rule"/>
                 <infoLink id="9600-3632-e640-3bcd" name="Daemon Prince" hidden="false" targetId="b6a9-0fe9-848a-2d66" type="profile"/>
-                <infoLink id="4ee7-20da-1087-44d0" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="891d-d8b0-9d6c-c4f3" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="0330-d62e-42fc-9edb" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3466,7 +3589,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <infoLink id="e9f8-a961-e52e-2029" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="3c5b-08df-fbd0-723e" name="Daemonic" hidden="false" targetId="a6d9-b8e9-21b2-96ff" type="rule"/>
                 <infoLink id="03bd-d44a-d79f-0066" name="Daemon Prince" hidden="false" targetId="b6a9-0fe9-848a-2d66" type="profile"/>
-                <infoLink id="3630-4c4c-d9f6-d20e" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="1f10-fe31-26bd-c31c" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="104a-faac-cbfd-8ec4" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3649,7 +3772,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <infoLink id="6628-4b40-6843-b80d" name="Daemon of Nurgle" hidden="false" targetId="0b9b-1baf-5bcd-1ec3" type="rule"/>
                 <infoLink id="a3aa-f33a-528a-bacf" name="Daemonic" hidden="false" targetId="a6d9-b8e9-21b2-96ff" type="rule"/>
                 <infoLink id="729f-3038-c8f6-686e" name="Daemon Prince" hidden="false" targetId="b6a9-0fe9-848a-2d66" type="profile"/>
-                <infoLink id="d435-c518-7fd2-5ab9" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="82ca-2d5f-c0b2-2b89" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="96c0-09a4-0bd9-2715" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3829,7 +3952,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
             <selectionEntry id="f825-1903-cfc8-f00a" name="Daemon Prince" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="c05c-2648-852f-ffae" name="Daemon Prince" hidden="false" targetId="b6a9-0fe9-848a-2d66" type="profile"/>
-                <infoLink id="44e2-19de-0e28-9a7f" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="44e2-19de-0e28-9a7f" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                 <infoLink id="6782-b3a6-337a-4a4f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="e5b5-f95a-23eb-0c3d" name="Daemonic" hidden="false" targetId="a6d9-b8e9-21b2-96ff" type="rule"/>
               </infoLinks>
@@ -4025,7 +4148,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <infoLink id="d9c8-5fa4-9780-80b7" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="d76a-db4f-e7f5-a608" name="Daemonic" hidden="false" targetId="a6d9-b8e9-21b2-96ff" type="rule"/>
                 <infoLink id="504c-c5d6-5f7a-aec5" name="Daemon Prince" hidden="false" targetId="b6a9-0fe9-848a-2d66" type="profile"/>
-                <infoLink id="1974-e26d-003d-54f3" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="a5e1-3369-7a6c-bb55" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="d1aa-14c2-23fb-2c66" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -4277,6 +4400,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="7f17-b6be-aed3-7ef2" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="d080-7ff4-9144-7f2f" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c840-16dd-2a53-2277" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f94-91cb-2370-3a8e" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="2b70-640c-8cb5-c29b" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4691,6 +4826,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="8b78-6307-824f-ce27" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9e3-d0f3-41dd-f202" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0be2-3641-0862-3ac3" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="b59b-a6eb-bc28-88fb" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -5097,6 +5244,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="d219-6cf9-534b-f875" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f362-b785-1c4a-dd67" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3dff-10ad-0505-53e1" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="0df4-51d1-894f-de44" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -5490,6 +5649,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="4096-59df-602c-14f7" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="6dfd-847b-bbaf-5cfa" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="947e-d599-b117-c014" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bafb-eba4-a191-b5b5" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="7b8c-9e74-92b3-557b" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6216,7 +6387,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7390,6 +7562,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="9b13-4160-c3b9-1085" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2e5-d8de-b359-4379" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7be0-0823-d525-55e5" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="ab3a-cb01-1f3d-2f84" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -7453,6 +7637,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="92e8-ba22-9218-8ce2" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="2481-d5ec-fbe4-dab7" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af93-9c61-9e01-62c1" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4094-f12f-63ee-4834" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="22b5-7c8d-69e0-4e59" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -7923,6 +8119,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="7ce6-6191-8920-d890" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27f7-db1b-3284-5172" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6306-07bd-013e-1ef7" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="6dfd-03a2-8943-f405" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -7986,6 +8194,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="e8d6-b2f2-c706-64e8" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="e625-e072-0d62-04ee" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5f6-a307-c8f4-1280" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec33-9750-f3e0-7faf" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="2bd8-186b-99f7-7efd" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -8456,6 +8676,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="345f-dad8-74b5-7d5d" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df9a-506d-ecb4-f881" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78b4-aa75-1437-626d" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="ea95-ffef-dff3-6583" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -8519,6 +8751,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="fcd1-7bab-6c8f-451f" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="c9bb-e60d-60cf-724d" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fafa-b4a6-a01e-ea1c" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="578b-16dd-a5ad-5931" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="f82d-e22d-c630-19a4" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -8986,6 +9230,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="94c9-db18-7e23-b9f7" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da25-b311-90e8-7a65" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b058-162f-bda2-8b5c" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="46f5-4efa-cbc3-756e" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -9048,6 +9304,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="c13f-2822-da30-8261" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="c0c6-444e-ac35-72dd" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c38-9132-8163-ee8a" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8308-2db7-8705-c28f" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="3998-3653-7a08-12e6" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -9501,6 +9769,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="b4a0-f929-b184-5bf6" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08b8-5023-f014-3207" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbd4-6236-28da-1201" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="900c-a9cd-9e03-13fb" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -9564,6 +9844,18 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                               </constraints>
                               <infoLinks>
                                 <infoLink id="57bb-9e76-774b-793e" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="434f-bcf0-2b4b-b110" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e868-ff43-5365-14d0" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d981-c221-e6b0-0952" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="5e3c-054c-936c-487e" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -9919,6 +10211,50 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
           </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2c9b-9806-e9c8-945c" name="Chaos Warshrine of Khorne" hidden="false" collective="false" import="true" type="model">
+          <infoLinks>
+            <infoLink id="b270-67a9-91ec-3ddd" name="Favour of Khorne" hidden="false" targetId="f1b3-9a1d-ee50-9b9f" type="profile"/>
+            <infoLink id="e882-6298-c7f4-363e" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+            <infoLink id="0ff9-0851-7a46-8a6c" name="Giver of Glory" hidden="false" targetId="29d8-56a5-ea8a-80e4" type="rule"/>
+            <infoLink id="52f6-da1f-88b0-6837" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
+            <infoLink id="82f5-2f4d-cb45-2eb4" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
+            <infoLink id="4a52-acf4-0641-b282" name="Will of Chaos" hidden="false" targetId="d658-f5e9-8cbf-0cbb" type="rule"/>
+            <infoLink id="1d6a-afd5-9ed5-798c" name="Mark of Khorne" hidden="false" targetId="Mark of Khorne" type="rule"/>
+            <infoLink id="a0b1-c24f-89b7-0d24" name="Chaos Warshrine" hidden="false" targetId="cd60-020c-c3f2-a5fa" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="482b-4877-8849-a44c" name="Chaos Shrine Bearers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="935e-1c59-fe29-6004" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b11-f061-8919-d82a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b569-8bff-a721-7357" name="Chaos Shrine Bearers" hidden="false" targetId="a631-99f6-e75a-5a8d" type="profile"/>
+                <infoLink id="9c0e-e4fe-dc3b-dab6" name="Random Attacks (D6+2)" hidden="false" targetId="33f1-4ddd-d26b-281a" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="fc8a-9c3c-a058-59ff" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a98-0fdb-51d3-d5d2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18f5-0008-12d8-225c" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="20b7-00ec-14d0-1398" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="95.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -12261,7 +12597,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <infoLink id="7067-0aad-3a57-5592" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c835-a52f-5f8e-43b6" name="Marauder Horsemaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -12526,7 +12862,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <infoLink id="643a-7e94-09dd-f04d" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8b1b-8f46-7464-aaac" name="Elite Marauder Horsemaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -12812,6 +13148,29 @@ Forsaken of Nurgle have Fear.</description>
               </constraints>
               <infoLinks>
                 <infoLink id="1a2c-0022-7bee-9ad5" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a6be-7cfe-bbac-360d" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe15-3613-d39b-b2b1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1023-b947-6d0c-3b31" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dc9f-f2de-8175-e3ef" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="468e-5628-0ee2-8869" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a2d-2e54-146f-891a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d4c7-0cb3-4a8f-f9b7" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -13585,6 +13944,18 @@ Forsaken of Nurgle have Fear.</description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="08d9-c0f7-aa3f-de25" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a8-5570-d32e-e52f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba2c-f6f6-3a61-bc6f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="88cc-5398-c663-02f3" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -13700,6 +14071,18 @@ Forsaken of Nurgle have Fear.</description>
               </constraints>
               <infoLinks>
                 <infoLink id="effc-c9a6-2ff1-4457" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4516-bfe0-dc24-83cd" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40fe-bc96-bb62-d260" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf29-f204-cccf-b1a2" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0434-4252-3130-fb29" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -14334,7 +14717,7 @@ Forsaken of Nurgle have Fear.</description>
                 <infoLink id="42c5-4a8a-157a-260b" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a25d-f515-3598-a63f" name="Elite Marauder Horsemaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -14878,7 +15261,7 @@ Forsaken of Nurgle have Fear.</description>
                 <infoLink id="e7e9-8ad0-f5ba-3893" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -16734,7 +17117,8 @@ The unit&apos;s models gain Poisoned Attacks.</description>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17034,17 +17418,6 @@ The unit&apos;s models gain Poisoned Attacks.</description>
               </costs>
             </selectionEntry>
             <selectionEntry id="5616-6a24-a1b1-5ce4" name="Chaos Warshrine of Khorne" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="28f0-668b-205f-26b2" name="Favour of Khorne" publicationId="1a01-044f-047b-618f" page="193" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                    <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of your next magic phase, the target unit can re-roll all failed To Hit rolls.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="d95a-1344-93d1-8cb9" name="Chaos Warshrine" hidden="false" targetId="cd60-020c-c3f2-a5fa" type="profile"/>
                 <infoLink id="a495-0f4e-caef-b6b3" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
@@ -17053,6 +17426,7 @@ The unit&apos;s models gain Poisoned Attacks.</description>
                 <infoLink id="b221-0e3d-9624-8a70" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
                 <infoLink id="2984-03bd-2bb3-8013" name="Will of Chaos" hidden="false" targetId="d658-f5e9-8cbf-0cbb" type="rule"/>
                 <infoLink id="894a-715a-6dc9-6284" name="Mark of Khorne" hidden="false" targetId="Mark of Khorne" type="rule"/>
+                <infoLink id="1807-e0fb-d3ce-ddb8" name="Favour of Khorne" hidden="false" targetId="f1b3-9a1d-ee50-9b9f" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="6eb7-7ca2-6f53-eef5" name="Chaos Shrinemaster" hidden="false" collective="false" import="true" type="model">
@@ -19116,7 +19490,7 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
           <profiles>
             <profile id="a869-364b-b31c-a712" name="Hellshriek" publicationId="1a01-044f-047b-618f" page="245" hidden="false" typeId="49dc-2fd8-b942-dbc2" typeName="Chaos Mutations and Powers">
               <characteristics>
-                <characteristic name="Special Rules" typeId="7ab4-c2c7-7e2c-9cb0">One use only. The character can use this ability at the start of any Magic phase, immediately after rolling for the Winds of Magic. All enemy Wizards within 18&quot; immediately suffer a Miscast. Roll a D3 and add it to the result.</characteristic>
+                <characteristic name="Special Rules" typeId="7ab4-c2c7-7e2c-9cb0">One use only. The character can use this ability at the start of any Magic phase, immediately after rolling for the Winds of Magic. All enemy Wizards within 18&quot; must immediately roll 2D6 on the Miscast table.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19187,7 +19561,7 @@ Note that the Chaos Champion itself must cause the last unsaved Wound on a model
       <description>Units with this rule always re-roll failed Panic tests.</description>
     </rule>
     <rule id="a6d9-b8e9-21b2-96ff" name="Daemonic" publicationId="1a01-044f-047b-618f" page="162" hidden="false">
-      <description>Models with this rule have Fear and Magical Attacks. In addition, models that are not mounts also have Ward save (5+) and Unstable.</description>
+      <description>Models with this rule have Fear and Magical Attacks. In addition, models that are not mounts also have Immunity (Poisoned Attacks), Ward save (5+) and Unstable.</description>
     </rule>
     <rule id="Mark of Khorne" name="Mark of Khorne" publicationId="1a01-044f-047b-618f" page="163" hidden="false">
       <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
@@ -19355,7 +19729,7 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 2+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="0b1e-3b66-a4c5-f3cf" name="Gorebeast" publicationId="1a01-044f-047b-618f" page="178" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -19489,7 +19863,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
       </characteristics>
     </profile>
     <profile id="Daemon Prince 3" name="Daemon Prince" publicationId="1a01-044f-047b-618f" page="171" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -19497,7 +19872,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
       </characteristics>
     </profile>
     <profile id="Daemon Prince 2" name="Daemon Prince" publicationId="1a01-044f-047b-618f" page="171" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -19505,7 +19881,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>
     </profile>
     <profile id="Daemon Prince 1" name="Daemon Prince" publicationId="1a01-044f-047b-618f" page="171" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -19513,7 +19890,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>
     </profile>
     <profile id="1e26-16e3-01da-e228" name="Chaos Lord" publicationId="1a01-044f-047b-618f" page="165" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -19549,7 +19927,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
       </characteristics>
     </profile>
     <profile id="Chaos Sorcerer Lord 4" name="Chaos Sorcerer Lord" publicationId="1a01-044f-047b-618f" page="168" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -19557,7 +19936,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
       </characteristics>
     </profile>
     <profile id="50d0-ca71-152f-8cba" name="Chaos Sorcerer" publicationId="1a01-044f-047b-618f" page="168" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -19579,7 +19959,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>
     </profile>
     <profile id="Chaos Sorcerer 2" name="Chaos Sorcerer" publicationId="1a01-044f-047b-618f" page="168" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -19587,7 +19968,8 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>
     </profile>
     <profile id="c8f6-2a85-a4c3-042e" name="Exalted Hero" publicationId="1a01-044f-047b-618f" page="165" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -19615,7 +19997,7 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 5+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="1847-c0e4-4eac-56a7" name="Marauder Charioteer" publicationId="1a01-044f-047b-618f" page="174" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -19777,6 +20159,15 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f1b3-9a1d-ee50-9b9f" name="Favour of Khorne" publicationId="1a01-044f-047b-618f" page="193" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of your next magic phase, the target unit can re-roll all failed To Hit rolls.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

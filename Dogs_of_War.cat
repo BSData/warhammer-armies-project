@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="35d0-e027-3d89-392c" name="Hobgoblin Animosity Chart">
       <characteristicTypes>
@@ -280,6 +280,9 @@
           <description>Any friendly Human unit within 8&quot; of Lucrezzia Rally automatically during your Compulsory Movement phase. This does not affect any troops that have Immunity (Psychology).</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="294c-e9e4-8d87-c810" name="The Best Money Can Buy" hidden="false" targetId="2c67-26d2-b08b-3286" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c506-eb34-5616-23c5" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
         <categoryLink id="2fa1-00a9-abce-57a5" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
@@ -326,7 +329,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1039,7 +1043,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1328,7 +1332,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9621-f9bf-8b18-ed0b" name="Griffon" hidden="false" collective="false" import="true" type="model">
@@ -1404,7 +1408,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="125.0"/>
+                <cost name="pts" typeId="points" value="150.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1672,7 +1676,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1711,7 +1716,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1812,7 +1818,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2033,7 +2039,7 @@ Dice, Scatter Dice, or To Hit roll per turn.
           <profiles>
             <profile id="fa27-754d-ec82-ed75" name="The Crest of Mydas" publicationId="8ada-88a0-cdcd-9b5e" page="80" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Crest of Mydas gives all models in Mydas’ unit Magical Attacks..</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Mydas and all models in the same unit gains Magical Attacks. In addition, enemy models must re-roll successful Ward Saves caused by close combat attacks from the unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2266,7 +2272,7 @@ Dice, Scatter Dice, or To Hit roll per turn.
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2595,7 +2601,8 @@ Dice, Scatter Dice, or To Hit roll per turn.
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2634,7 +2641,8 @@ Dice, Scatter Dice, or To Hit roll per turn.
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5451,7 +5459,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </constraints>
                   <rules>
                     <rule id="6d22-63a0-21b3-4aee" name="Net Fighters" publicationId="8ada-88a0-cdcd-9b5e" page="55" hidden="false">
-                      <description>At the start of each round of close combat, Pit Fighters armed with nets must attempt to entangle one of the units they are fighting. Roll a D6; on a 3+, the enemy unit has become entangled. A unit that has been entangled are reduced to WS 1 until the end of the combat round. This only affects models in base contact with the Pit Fighters themselves.</description>
+                      <description>When it is their turn to attack, roll a D6 for each model armed with nets. On a 2+, one enemy model in base contact is ensnared and suffers -1 Attack (both rider and mount) for the remainder of the close combat phase.</description>
                     </rule>
                   </rules>
                   <infoLinks>
@@ -7101,15 +7109,17 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
         </profile>
         <profile id="ba20-1558-0f78-01be" name="Result" publicationId="8ada-88a0-cdcd-9b5e" page="68" hidden="false" typeId="283e-1abd-ce89-3ff0" typeName="Man-sized Things Chart">
           <characteristics>
-            <characteristic name="1" typeId="0d11-d165-d261-fb15">Yell and Bawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
-            <characteristic name="2" typeId="0047-83bd-8d24-159f">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before he starts, the Giant must test to determine if he falls over. If he falls over, work out where he falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on his feet, the target unit sustains 2D6 S 6 hits. Work out damage and saves as usual. Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if he is able to, assuming that he did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until he falls over, the target is destroyed, or the combat ends.</characteristic>
+            <characteristic name="1" typeId="0d11-d165-d261-fb15">Yell and Bawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
+            <characteristic name="2" typeId="0047-83bd-8d24-159f">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before he starts, the Giant must test to determine if he falls over. If he falls over, work out where he falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks.
+
+Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if he is able to, assuming that he did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until he falls over, the target is destroyed, or the combat ends.</characteristic>
             <characteristic name="3" typeId="94bd-4607-fdd3-508d">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things until you get another result. The Giant grabs the model and the player rolls a D6 on the Pick Up and... table.</characteristic>
             <characteristic name="4-6" typeId="7ac4-c7a9-e904-3aae">Swing with club: The Giant fights using the Random Attacks (2D6) this round.</characteristic>
           </characteristics>
         </profile>
         <profile id="6622-7b5e-f2d3-6c1f" name="Result" publicationId="8ada-88a0-cdcd-9b5e" page="68" hidden="false" typeId="ae7e-88dc-c3b6-6123" typeName="Big Things Chart">
           <characteristics>
-            <characteristic name="1" typeId="98eb-8996-b542-8a2f">Yell and Bawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
+            <characteristic name="1" typeId="98eb-8996-b542-8a2f">Yell and Bawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
             <characteristic name="2-4" typeId="9c78-a29c-fe9d-4acf">Thump with Club: The Giant brings down its club on a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an I test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 wounds which Ignores Armour Saves. If a double is rolled the Giant&apos;s club embeds itself in the ground and the Giant cannot attack at all in the following round of the same combat whilst it recovers its weapon.</characteristic>
             <characteristic name="5-6" typeId="0ce0-28d1-b95d-8e0d">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
           </characteristics>
@@ -7118,7 +7128,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           <characteristics>
             <characteristic name="1" typeId="17ef-47fd-4b1d-0b60">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
             <characteristic name="2" typeId="ea5a-3d3e-b5b5-78b2">Throw Back into Combat: The victim suffers D3 S 6 Hits which Ignores Armour saves, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
-            <characteristic name="3" typeId="25f6-83ad-a001-9f93">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim suffers D3 S 6 Hits which Ignores Armour saves, and the unit takes D6 S 3 hits (save as normal). Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
+            <characteristic name="3" typeId="25f6-83ad-a001-9f93">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits. Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
             <characteristic name="4" typeId="e5df-26c4-2220-5c3b">Squash: The model is removed as a casualty.</characteristic>
             <characteristic name="5" typeId="3d17-c4a7-742b-a542">Eat: The model is removed as a casualty.</characteristic>
             <characteristic name="6" typeId="af4b-564b-f053-7b98">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
@@ -8663,15 +8673,15 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f33e-5879-a36f-d175" name="Standard of Miragliano" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f33e-5879-a36f-d175" name="Eagle Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ed3-2b66-33fb-9355" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ccef-fcff-aed1-2199" type="max"/>
           </constraints>
           <profiles>
-            <profile id="becf-bafa-ceee-4604" name="Standard of Miragliano" publicationId="8ada-88a0-cdcd-9b5e" page="87" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="becf-bafa-ceee-4604" name="Eagle Banner" publicationId="8ada-88a0-cdcd-9b5e" page="87" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit carrying this standard may re-roll any 1&apos;s To Hit with missile weapons and in close combat.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Enemies can never get the Outnumber, Flank or Rear combat resolution bonus against the unit carrying this banner.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8997,7 +9007,7 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
       <description>If a Merchant Prince is included in your army, one Dogs of War unit (which is not a Regiment of Renown, character, monster or war machine) may increase its armour save by +1 or gain Armour Piercing (1). This costs +1 point per model for Infantry, and 2 points per model for other troop types. Alternatively, the unit may take a Magic Standard worth up to 50 points.</description>
     </rule>
     <rule id="dabf-011d-48c3-3ad8" name="Resolute" publicationId="8ada-88a0-cdcd-9b5e" page="56" hidden="false">
-      <description>Models with this rule roll 3D6 for any Break tests taken in the first round of combat, and discard the highest dice.</description>
+      <description>When taking Break tests, models with this rule count as having lost the combat with 1 point less than they actually have.</description>
     </rule>
     <rule id="3c9f-7efb-2171-88c0" name="Ogre Charge" publicationId="8ada-88a0-cdcd-9b5e" page="61" hidden="false">
       <description>Each model with Ogre Charge that successfully charges an enemy has Impact Hits (1). Models with this rule that are part of a unit with ranks add their current Rank Bonus to the S of the Impact Hits they inflict.</description>
@@ -9006,7 +9016,7 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
       <description>Units entirely composed of models with this rule do not need to pass a LD test in order to march, regardless of the proximity of enemy units.</description>
     </rule>
     <rule id="e62f-b679-cec3-40a2" name="Ancestral Grudge" publicationId="8ada-88a0-cdcd-9b5e" page="56" hidden="false">
-      <description>Dwarfs always have Hatred (Orcs &amp; Goblins) and Hatred (Skaven).</description>
+      <description>Dwarfs have Hatred (Orcs &amp; Goblins, Skaven, Hobgoblins).</description>
     </rule>
     <rule id="d214-7789-dea9-d76f" name="Short and Nimble" publicationId="8ada-88a0-cdcd-9b5e" page="59" hidden="false">
       <description>Enemies attacking models with this rule suffer -1 To Hit in close combat.</description>

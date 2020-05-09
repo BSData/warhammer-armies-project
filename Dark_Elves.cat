@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
       <characteristicTypes>
@@ -155,7 +155,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -360,7 +361,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -418,7 +420,7 @@
         <entryLink id="e567-5671-5267-0aeb" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="375.0"/>
+        <cost name="pts" typeId="points" value="355.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="969d-95b8-7567-24fe" name="Malus Darkblade" hidden="false" collective="false" import="true" type="model">
@@ -586,7 +588,7 @@
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">9</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Hag Queen)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -938,6 +940,18 @@
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="fa2e-0ece-14fc-aa79" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d5a-6a4d-a424-6c52" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c39f-3ef7-e569-c8c3" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0100-2a2e-0b71-d476" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
                   </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -992,7 +1006,7 @@
                 <infoLink id="4bea-898f-0e75-a0ae" name="Dark Pegasus" hidden="false" targetId="2775-9321-c358-1756" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="044f-3175-ae8b-a01f" name="Dark Steed" hidden="false" collective="false" import="true" type="model">
@@ -1240,7 +1254,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1278,7 +1293,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1372,7 +1388,7 @@
                 <infoLink id="d3f5-28fa-4b8a-1de9" name="Dark Pegasus" hidden="false" targetId="2775-9321-c358-1756" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="07c6-8b5c-0cad-b5b2" name="Dark Steed" hidden="false" collective="false" import="true" type="model">
@@ -2384,6 +2400,18 @@
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="77b0-f79a-8313-f864" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1ed-ed07-ae07-bd93" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df92-79fa-41bd-320e" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="20fd-08ad-eeee-21ed" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
                   </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2420,7 +2448,7 @@
                 <infoLink id="4440-4461-713b-1a9e" name="Dark Pegasus" hidden="false" targetId="2775-9321-c358-1756" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c4eb-413d-8546-730b" name="Dark Steed" hidden="false" collective="false" import="true" type="model">
@@ -2713,7 +2741,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2751,7 +2780,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2827,7 +2857,7 @@
                 <infoLink id="d824-7b7d-ea83-0ee9" name="Dark Pegasus" hidden="false" targetId="2775-9321-c358-1756" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c6ae-c12a-d458-843f" name="Dark Steed" hidden="false" collective="false" import="true" type="model">
@@ -2990,6 +3020,18 @@
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="61f9-ba63-2ebe-0e24" name="Sea Dragon Cloak" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d30-0e56-629c-b0d5" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb4a-1226-8b4d-abd3" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="e13c-828a-f6f9-bbfa" name="Sea Dragon Cloak" hidden="false" targetId="ce36-359a-77b4-506d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
                   </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3022,7 +3064,7 @@
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="90.0"/>
+                <cost name="pts" typeId="points" value="80.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4408,7 +4450,7 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <infoLink id="7cbc-f646-72d0-2325" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b7bb-338e-ec1a-a620" name="Herald" hidden="false" collective="false" import="true" type="upgrade">
@@ -5367,6 +5409,18 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="2ba5-3cd1-8a83-aa5b" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e12d-f7ca-d039-8e20" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe71-bbe0-1e94-d5df" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3d85-a083-af19-ac5e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5440,6 +5494,18 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="75e4-d00a-1477-40aa" name="Sea Dragon Cloak" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f874-be33-b641-27bb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88a3-e18a-acf9-d265" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="57c1-8131-1be9-bd29" name="Sea Dragon Cloak" hidden="false" targetId="ce36-359a-77b4-506d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5472,7 +5538,7 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="90.0"/>
+        <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e3a4-9651-d4a5-95da" name="Shades" hidden="false" collective="false" import="true" type="unit">
@@ -6230,15 +6296,16 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <profile id="e6d1-1fd0-ae43-59e8" name="Doomfire Warlock" publicationId="9e23-79cb-pubN76150" page="134" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e"/>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"/>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule id="8ac3-24f2-95f1-2509" name="Cursed Coven" publicationId="9e23-79cb-pubN76150" page="134" hidden="false">
-                  <description>A unit of Doomfire Warlocks is considered to be a Level 2 Wizard that knows the spells Soulblight and Doombolt. This doesn&apos;t stop other Wizards from knowing those same spells. The unit receives an additional +1 to cast for each rank of 4 or more models in the unit, after the first, to a maximum of +3. Each time the unit casts a spell, you must nominate one Master of Warlocks or Doomfire Warlock as the caster for the purposes of line of sight, range, etc. In the event that a Doomfire Warlock unit rolls a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no armour saves allowed. If the unit is targeted by a rule that affects a Wizard, your opponent must choose one Master of Warlocks or Doomfire Warlock as the target.</description>
+                  <description>A unit of Doomfire Warlocks is considered to be a Level 2 Wizard that knows the spells Soulblight and Doombolt. This doesn&apos;t stop other Wizards from knowing those same spells. The unit receives an additional +1 to cast for each rank of 5 or more models in the unit, after the first, to a maximum of +3. Each time the unit casts a spell, you must nominate one Master of Warlocks or Doomfire Warlock as the caster for the purposes of line of sight, range, etc. In the event that a Doomfire Warlock unit rolls a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no armour saves allowed. If the unit is targeted by a rule that affects a Wizard, your opponent must choose one Master of Warlocks or Doomfire Warlock as the target.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -7156,7 +7223,7 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
           <profiles>
             <profile id="2824-f6bc-15e7-1884" name="Cloak of Twilight" publicationId="9e23-79cb-pubN76150" page="171" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The wearer of the Cloak of Twilight has a Ward save (3+) against Wounds caused by shooting attacks and spells.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The wearer of the Cloak of Twilight has a Ward save (3+) against Wounds caused by enemy shooting attacks and spells.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7387,7 +7454,7 @@ following Close Combat phase.</characteristic>
       <description>At the start of each Close Combat phase, before challenges are issued, enemy models in base contact with this model must pass an I test or suffer a S 4 hit with Killing Blow and no armour saves allowed. This is a magical attack.</description>
     </rule>
     <rule id="5fbf-c37d-f1be-dcc2" name="Impale" publicationId="9e23-79cb-pubN76150" page="148" hidden="false">
-      <description>On a turn in which it charges, a Dark Pegasus gains Strength Bonus (1).</description>
+      <description>Dark Pegasi gain +1 S to their Impact Hits.</description>
     </rule>
     <rule id="15c3-e08b-0738-0239" name="Noxious Breath" publicationId="9e23-79cb-pubN76150" page="150" hidden="false">
       <description>A Black Dragon has a S 3 Breath Weapon. All models in a unit that has suffered one or more casualties from the attack suffers a -1 penalty to their WD and BS until the end of the following turn.</description>

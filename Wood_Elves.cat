@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
       <characteristicTypes>
@@ -371,7 +371,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -463,7 +464,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -831,7 +833,7 @@
                 <infoLink id="1de8-cc59-b3c9-e7c4" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9d7b-9d95-9974-9cb1" name="Forest Dragon" hidden="false" collective="false" import="true" type="model">
@@ -945,6 +947,34 @@
                 <infoLink id="e0fe-8bb3-5566-a627" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="43b6-d995-c6ca-0b29" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e14e-f6cf-cb80-5dee" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="84c2-522b-2bc2-57b8" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6efa-b91f-7d0b-8e7b" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="21e4-4554-b6b8-ca81" name="Shredding Talons" hidden="false" targetId="c985-c6aa-5e73-f7b1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0b19-39f1-dd12-5bfd" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4ec-0c8d-0781-a8b2" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="8dfb-1fe0-6b3c-51b3" name="Swiftsense" hidden="false" targetId="3805-f2d7-2c86-77e3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
               </costs>
@@ -1193,7 +1223,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1229,7 +1260,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1285,7 +1317,7 @@
                 <infoLink id="8a2f-5b91-6f1a-caff" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="869c-60ec-b730-6685" name="Great Eagle" hidden="false" collective="false" import="true" type="model">
@@ -1299,6 +1331,34 @@
                 <infoLink id="c5ee-ffe9-2cb9-cd92" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="c0e7-4dae-4fa2-5cb1" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6fe2-a618-73c0-0747" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="b455-cfb3-1642-b42a" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6008-2b8a-f5b1-d155" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="89bf-235e-fb8b-0640" name="Shredding Talons" hidden="false" targetId="c985-c6aa-5e73-f7b1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c5a3-bde8-1e71-aa80" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1e3-1020-ee68-8854" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5e70-5ba4-0fce-07b1" name="Swiftsense" hidden="false" targetId="3805-f2d7-2c86-77e3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
               </costs>
@@ -1316,7 +1376,7 @@
                 <infoLink id="da44-ddb2-0d94-5eff" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="55.0"/>
+                <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1334,13 +1394,13 @@
         <profile id="cd04-bfb7-4594-3bcc" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Character)</characteristic>
           </characteristics>
@@ -1400,7 +1460,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1433,7 +1494,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1463,7 +1525,7 @@
         <entryLink id="9ecf-1619-6a98-6174" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="245.0"/>
+        <cost name="pts" typeId="points" value="270.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f5ba-3655-faf6-356d" name="Drycha" hidden="false" collective="false" import="true" type="model">
@@ -1521,7 +1583,8 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1765,6 +1828,34 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <infoLink id="c81a-3549-fd34-3638" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
                 <infoLink id="6a62-bca3-413c-0afa" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ad78-5a09-9db6-b6ca" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="3b40-3d86-dea8-9e13" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="807c-0132-3321-bba3" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="a41c-8e83-d69b-4eb7" name="Shredding Talons" hidden="false" targetId="c985-c6aa-5e73-f7b1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0d84-96c7-91c6-9687" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fba-5e8f-2a6f-41a5" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="9eb2-fa65-79e3-daf7" name="Swiftsense" hidden="false" targetId="3805-f2d7-2c86-77e3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
@@ -1824,7 +1915,8 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2074,7 +2166,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
       </profiles>
       <rules>
         <rule id="43c7-b9f5-2f30-cea2" name="Falcons" publicationId="e967-620f-06be-096a" page="160" hidden="false">
-          <description>Skaw may use his Falcons in addition to another missile weapon during the start of the Shooting phase. The Falcons can be directed against any enemy unit within line of sight, regardless of range. The enemy unit must take a WS test for each War Hawk targeting them; if failed, the unit takes a S 3 Hit.
+          <description>Skaw may use his 3 Falcons in addition to another missile weapon during the start of the Shooting phase. The Falcons can be directed against any enemy unit within line of sight, regardless of range. The enemy unit must take a WS test for each War Hawk targeting them; if failed, the unit takes a S 3 Hit.
 
 In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4, S 3 and I 4. These attacks no not benefit from any rules or items that Skaw might have.</description>
         </rule>
@@ -2398,7 +2490,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="9cb3-afb4-01a4-29b0" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5598-adfd-a48f-3485" name="Meadow Chariot" hidden="false" collective="false" import="true" type="model">
@@ -2493,8 +2585,36 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="a073-fd13-ae0d-7e08" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="48b9-d5d1-bbd4-e8c8" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b24a-b514-31d6-3383" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="ae4e-5c65-8eec-789c" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ded8-0195-9e24-a649" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="9e94-10ac-7950-6b06" name="Shredding Talons" hidden="false" targetId="c985-c6aa-5e73-f7b1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="3b55-1c20-496a-9f75" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e083-aad2-e39c-5cf0" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="c173-2a97-9077-e960" name="Swiftsense" hidden="false" targetId="3805-f2d7-2c86-77e3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="75.0"/>
+                <cost name="pts" typeId="points" value="65.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f7d3-07a5-dd76-81f9" name="Great Stag" hidden="false" collective="false" import="true" type="model">
@@ -2786,7 +2906,8 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2822,7 +2943,8 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2878,7 +3000,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="cd8a-7ea3-23ea-3f2a" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="eeeb-5e3a-b845-7973" name="Great Eagle" hidden="false" collective="false" import="true" type="model">
@@ -2892,8 +3014,36 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="8c4e-7a52-dfd9-ad9e" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="8c75-c27e-9b3b-6827" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ebf9-7fb8-9ea1-05cd" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="b1d4-dadf-466b-958d" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="848b-b9d6-8869-a65e" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0393-9468-29b2-4f40" name="Shredding Talons" hidden="false" targetId="c985-c6aa-5e73-f7b1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="3ddc-51cd-c382-3bae" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f2b-5cdf-45d0-c48f" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="bc3c-e99b-fb1f-4e6c" name="Swiftsense" hidden="false" targetId="3805-f2d7-2c86-77e3" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="75.0"/>
+                <cost name="pts" typeId="points" value="65.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c23d-39b8-8528-ef4e" name="Unicorn" hidden="false" collective="false" import="true" type="model">
@@ -2909,7 +3059,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="0e5f-9812-4ffc-68e8" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="55.0"/>
+                <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2990,7 +3140,8 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3197,7 +3348,8 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4040,7 +4192,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="4b1a-9ffd-cb2b-652c" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6b9e-fb82-2224-9b05" name="Glade Knight" hidden="false" collective="false" import="true" type="upgrade">
@@ -4471,7 +4623,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="90f8-d5fd-70d4-56f7" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e577-b886-5c06-50c3" name="Wild Hunter" hidden="false" collective="false" import="true" type="upgrade">
@@ -4913,7 +5065,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <profile id="00c4-3212-99ba-194e" name="Tree Revenant" publicationId="e967-620f-06be-096a" page="129" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
@@ -4967,7 +5119,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="14.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4982,7 +5134,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <profile id="7e71-f054-05fc-7dc9" name="Scion" publicationId="e967-620f-06be-096a" page="129" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
@@ -5057,7 +5209,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </profiles>
           <rules>
             <rule id="3031-378f-ae9b-507a" name="Unbridled Malice" publicationId="e967-620f-06be-096a" page="130" hidden="false">
-              <description>Enemy units in base contact with models with this rule must re-roll successful LD tests. This has no effect on units that have Immunity (Psychology).</description>
+              <description>Spite Revenants&apos; Hatred applies in all rounds of combat, not just the first. In addition, enemy units in base contact with them must re-roll successful LD tests. This has no effect on units that have Immunity (Psychology).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5066,7 +5218,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="cc35-373a-7027-5f3a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5392,9 +5544,10 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <profile id="6fdc-90fe-18c9-7555" name="Sister of the Thorn" publicationId="e967-620f-06be-096a" page="122" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e"/>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"/>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5567,7 +5720,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                       <characteristics>
                         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">36&quot;</characteristic>
                         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>
-                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Volley Fire.</characteristic>
+                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Longbow. Magical Attacks.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5635,6 +5788,34 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="6f9d-0c32-a27e-46fc" name="Great Eagle" hidden="false" targetId="2072-1a44-7062-fd03" type="profile"/>
             <infoLink id="6fc9-cc4d-a984-d32f" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ed56-4579-4408-190a" name="Upgrades" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="2076-bcb4-9baa-d07b" name="Shredding Talons" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9fc5-354c-d920-d940" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5a77-6cbb-54ff-dc0a" name="Shredding Talons" hidden="false" targetId="c985-c6aa-5e73-f7b1" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3db1-84e8-6d92-3c13" name="Swiftsense" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d96e-fbd0-1344-6451" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f33b-2333-6e42-5a17" name="Swiftsense" hidden="false" targetId="3805-f2d7-2c86-77e3" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -5887,7 +6068,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <infoLink id="2489-c395-d1d3-602a" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5a8d-d92d-1ae0-5476" name="Wild Hunter" hidden="false" collective="false" import="true" type="upgrade">
@@ -6185,7 +6366,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           <profiles>
             <profile id="08a6-84a0-41d7-8081" name="Daith&apos;s Reaper" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Melee</characteristic>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
                 <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All failed To Hit and To Wound rolls made with Daith’s Reaper must be re-rolled, as must all successful armour saves taken against Wounds caused by this weapon.</characteristic>
               </characteristics>
@@ -6221,9 +6402,9 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           <profiles>
             <profile id="e9bd-7f1d-b217-b757" name="The Spirit Sword" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Melee</characteristic>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour saves cannot be taken against Wounds caused by the Spirit Sword. Furthermore, immediately when an enemy Monster or Character suffers one or more unsaved Wounds from the Spirit Sword, both they and the wielder must roll 2D6 and add their respective LD values. If the wounded model’s total is higher, or the totals are the same, nothing else happens. If the wounded model’s total is lower, it immediately suffers a Wound which Ignores Armour Saves for each point by which its total was exceeded. This has no effect on Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour saves cannot be taken against Wounds caused by the Spirit Sword. Furthermore, immediately when an enemy single model unit (that is not an Animated Construct) or Character suffers one or more unsaved Wounds from the Spirit Sword, both they and the wielder must roll 2D6 and add their respective LD values. If the wounded model’s total is higher, or the totals are the same, nothing else happens. If the wounded model’s total is lower, it immediately suffers a Wound which Ignores Armour Saves for each point by which its total was exceeded.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6335,7 +6516,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           <profiles>
             <profile id="5995-7487-00be-3a5c" name="Hail of Doom Arrow" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. Glade Lord or Glade Captain with Asrai longbow only. The Hail of Doom arrow can be used instead of making a Shooting attack with the bearer’s Asrai longbow. Declare that the Hail of Doom Arrow is being used before any dice are rolled.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. Model with Asrai longbow only. The Hail of Doom arrow can be used instead of making a Shooting attack with the bearer’s Asrai longbow, though it cannot be used with Sniper. Declare that the Hail of Doom Arrow is being used before any dice are rolled.</characteristic>
               </characteristics>
             </profile>
             <profile id="b1e4-9d6a-4fde-4835" name="Hail of Doom Arrow" publicationId="e967-620f-06be-096a" page="167" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
@@ -6454,10 +6635,16 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
       <description>A Forest Dragon has a S 2 Breath Weapon. Armour saves taken against Wounds caused by Soporific Breath suffer a -3 penalty. All models in a unit that suffers one or more hits from Soporific Breath gain Stupidity for the remainder of the game.</description>
     </rule>
     <rule id="8019-e15c-4a5c-c6d8" name="Conjoined Destiny" publicationId="e967-620f-06be-096a" page="155" hidden="false">
-      <description>If Naestra and Arahan have been reduced to less than 4 Wounds at the end any turn, they will both be restored to 4 Wounds. In addition, if either Naestra or Arahan issues or accepts a challenge, the other can attack (and be attacked) as part of the challenge.</description>
+      <description>If Naestra and Arahan have been reduced to less than 4 Wounds at the end any turn, they will be restored to 4 Wounds.</description>
     </rule>
     <rule id="1e00-a146-8714-588f" name="Sisters of Twilight" publicationId="e967-620f-06be-096a" page="155" hidden="false">
       <description>Naestra’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Destruction. Arahan’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Order.</description>
+    </rule>
+    <rule id="3805-f2d7-2c86-77e3" name="Swiftsense" publicationId="e967-620f-06be-096a" page="136" hidden="false">
+      <description>The model gains +1 I.</description>
+    </rule>
+    <rule id="c985-c6aa-5e73-f7b1" name="Shredding Talons" publicationId="e967-620f-06be-096a" page="136" hidden="false">
+      <description>The model gains Armour Piercing (1).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6577,7 +6764,7 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>

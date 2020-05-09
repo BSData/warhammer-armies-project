@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1948-df7e-0b86-9296" name="Entombed Beneath the Sands Mishap Table">
       <characteristicTypes>
@@ -203,7 +203,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -382,7 +383,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">5</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">5</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">7</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -589,7 +591,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -906,22 +909,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8d34-d6f4-0e05-2611" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="9b50-7f24-f1c4-e9f7" name="Sehenesmet" publicationId="feeb-1927-4a99-f849" page="112" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="3d0d-6ab4-92d5-7bd6" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                 <infoLink id="a3f5-314b-320b-6ee7" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
@@ -1409,7 +1396,8 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1443,7 +1431,8 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1539,6 +1528,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="0ab1-6b03-48b3-2cec" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9dea-ab05-a9df-bc0d" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51ce-22e9-2fa6-48d9" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="fac9-2273-81a0-b7a5" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
                   </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1546,7 +1547,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="130.0"/>
+                <cost name="pts" typeId="points" value="125.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2345,7 +2346,8 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2379,7 +2381,8 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2864,7 +2867,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="5995-5a2e-3275-c75a" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="144c-354b-edb4-06f7" name="Master of Arms" hidden="false" collective="false" import="true" type="upgrade">
@@ -2964,7 +2967,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="5ba4-3353-bbbb-d183" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a530-8cae-d043-ad82" name="Master of Arrows" hidden="false" collective="false" import="true" type="upgrade">
@@ -3130,7 +3133,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="9f55-7882-4a52-fc77" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8f1e-9fd9-602f-e6d8" name="Master of Horse" hidden="false" collective="false" import="true" type="upgrade">
@@ -3242,7 +3245,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="e4a7-4406-b9d5-7f98" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1465-ecf2-ed2a-f8cc" name="Master of Scouts" hidden="false" collective="false" import="true" type="upgrade">
@@ -3406,7 +3409,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="abfb-8bd6-ea9b-f95b" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0b8a-c448-f0a0-62eb" name="Master of Chariots" hidden="false" collective="false" import="true" type="upgrade">
@@ -3542,7 +3545,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="1f36-753b-794f-bc77" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e5a7-f606-9caa-c37c" name="Master of Scouts" hidden="false" collective="false" import="true" type="upgrade">
@@ -3658,7 +3661,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="53f1-5c04-c9ee-d1b2" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="43b6-3217-9ea8-444e" name="Master of Arms" hidden="false" collective="false" import="true" type="upgrade">
@@ -3797,7 +3800,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="1ded-72a1-39e3-f9f6" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8052-1e41-74cb-e013" name="Master of Scouts" hidden="false" collective="false" import="true" type="upgrade">
@@ -3954,7 +3957,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="eaa2-c6c4-9f7b-fa98" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="58e6-9f4c-5b4c-0ae8" name="Master of Chariots" hidden="false" collective="false" import="true" type="upgrade">
@@ -4084,7 +4087,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="cf2c-ebfb-d3d8-5209" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cd10-ea8f-7998-04ad" name="Master of Horse" hidden="false" collective="false" import="true" type="upgrade">
@@ -4210,7 +4213,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="c5fe-9475-5378-3dfe" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4ea1-ed62-7119-c5e2" name="Master of Scouts" hidden="false" collective="false" import="true" type="upgrade">
@@ -4335,7 +4338,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="24f4-4e3a-306c-9c48" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7c7e-2a16-5d90-4f81" name="Tomb Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -4467,7 +4470,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="dd0f-3d8c-08f8-5ece" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e9c0-b15c-b69b-df6e" name="Tomb Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -4610,7 +4613,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="6957-8ffc-c006-3e14" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6046-67f3-f6da-2806" name="Necropolis Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -4760,7 +4763,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="95ae-76f3-189f-6b32" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0db0-f595-9300-10a3" name="Necropolis Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -5416,7 +5419,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="cefb-f2ee-a22d-de3e" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f731-644e-7b63-5087" name="Master of Arrows" hidden="false" collective="false" import="true" type="upgrade">
@@ -5953,6 +5956,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="9ed4-a1a8-7876-74ee" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4af-5812-ff57-c8d2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e48-aaaf-efe4-1805" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="adce-5a4d-12c5-4bea" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5960,7 +5975,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="130.0"/>
+        <cost name="pts" typeId="points" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c461-cc29-9925-59d9" name="Tomb Barque of Usirian (Sehenesmet)" hidden="true" collective="false" import="true" type="model">
@@ -6021,6 +6036,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d5f1-68e1-9e48-ec64" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b7ac-c312-fa18-d5dd" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b25-085b-724f-228f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="73b4-ae54-0d41-2422" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -6028,7 +6055,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="130.0"/>
+        <cost name="pts" typeId="points" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a9f0-cda3-94b6-80ed" name="Khemrian Warsphinx" hidden="false" collective="false" import="true" type="model">
@@ -7136,18 +7163,20 @@ The Hierophant, and all models in the same unit, have Regeneration (6+).
 
 At the end of the phase in which the Hierophant is removed as a casualty, and at the start of every friendly turn thereafter, all friendly Undead units (except characters) on the battlefield must take a LD test. If the test is failed, the unit immediately suffers a number of Wounds equal to the amount by which it failed the LD test, with no saves of any kind allowed. These Wounds are distributed as if from a shooting attack.
 
-If, at the start of any of your turns following the death of the Hierophant, there is one or more friendly Wizards on the table who know spells from the Lore of Nehekhara, then one of these models may be designated the new Hierophant by passing a LD test. If passed, he becomes the new Hierophant following all the normal rules, and no unit in the army needs to take the LD test to avoid losing Wounds while he remains alive.</description>
+If, at the start of any of your turns following the death of the Hierophant, there is one or more friendly Wizard Characters on the table who know spells from the Lore of Nehekhara, then one of these models may be designated the new Hierophant by passing a LD test. If passed, he becomes the new Hierophant following all the normal rules, and no unit in the army needs to take the LD test to avoid losing Wounds while he remains alive.</description>
     </rule>
     <rule id="eb9b-8590-beba-94b0" name="Entombed Beneath the Sands" publicationId="feeb-1927-4a99-f849" page="69" hidden="false">
       <description>A unit with this ability has Ambushers, with the following exceptions.
 
 When these units enter the battle in the Remaining Moves sub-phase, they do not move onto the board as reinforcements in the normal way. Instead, when a unit that is Entombed Beneath the Sands enters the battle, place a small marker (such as a coin) anywhere on the battlefield, but not in impassable terrain or within 1&quot; of a deployed unit.
 
-Roll a scatter dice and an artillery dice. If you roll a Hit on the scatter dice, the marker stays in place. If you roll an arrow, move the marker the number, in inches, indicated by the artillery dice in the direction shown. If the marker is under a unit (friend or foe), impassable terrain or a building, place it 1&quot; away from the closest edge of the unit/terrain.
+Roll a scatter dice and an artillery dice. If you roll a Hit on the scatter dice, the marker stays in place. If you roll an arrow, move the marker the number, in inches, indicated by the artillery dice in the direction shown. If the marker is under a friendly unit, impassable terrain or a building, place it 1&quot; away from the closest edge of the unit/terrain.
 
-Once the final position of the marker is established, place the emerging unit in a legal formation such that it touches the marker, facing any direction. If you roll a misfire, or if for any reason some of the models in the unit cannot be placed, then the unit does not emerge. Instead, remove the marker and roll on the Mishap table. If a unit emerges successfully, it may act normally this turn.
+Once the final position of the marker is established, place the emerging unit in a legal formation such that it touches the marker, facing any direction. If the marker is under an enemy unit, you may place your unit into base contact with the enemy unit in any arc of your choosing; your unit will counts as charging this turn.
 
-Only characters that are Entombed Beneath the Sands can be deployed within such units. If you have several units Entombed Beneath the Sands, then repeat this process, one unit at a time.</description>
+If you roll a misfire, or if for any reason some of the models in the unit cannot be placed, then the unit does not emerge. Instead, remove the marker and roll on the Mishap table. If a unit emerges successfully, it may act normally this turn.
+
+Only characters that have Entombed Beneath the Sands can be deployed within such units. If you have several units Entombed Beneath the Sands, then repeat this process, one unit at a time.</description>
     </rule>
     <rule id="d00e-1ed4-0408-e5e8" name="Arrows of Asaph" publicationId="feeb-1927-4a99-f849" page="69" hidden="false">
       <description>Units with Arrows of Asaph never count any bonuses or penalties to hit when shooting, regardless of the source of the modifier.</description>
@@ -7313,7 +7342,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="1-2" typeId="150e-54b9-ccf9-3a93">Reaping Blades: The Khemric Titan inflicts D6 S 6 hits on the enemy unit.</characteristic>
         <characteristic name="3" typeId="d548-6cd8-4463-d258">Flesh-eating Scarabs: The Khemric Titan inflicts 3D6 S 2 hits on the enemy unit.</characteristic>
         <characteristic name="4" typeId="2f9e-a735-e002-5c72">Breath of the Night: The Khemric Titan does not attack, but instead automatically wins the combat with a combat resolution of 2 (unless this would be higher from other sources).</characteristic>
-        <characteristic name="5" typeId="64eb-0812-20b6-4cd6">Devouring Jaws: The Khemric Titan picks a single model in base contact. That models suffers a single S 6 hit with Heroic Killing Blow.</characteristic>
+        <characteristic name="5" typeId="64eb-0812-20b6-4cd6">Devouring Jaws: The Khemric Titan inflicts a S 6 hit with Heroic Killing Blow on all enemy models in base contact.</characteristic>
         <characteristic name="6" typeId="b9b0-397a-b58f-ba10">Soul Slaying Hunger: The Khemric Titan inflicts 2D6 hits on the enemy. Roll a D6 for each hit, on a 5+ it inflicts a Wound with no armour saves allowed and Multiple Wounds (D3). This is a Magical Attack.</characteristic>
       </characteristics>
     </profile>
@@ -7370,7 +7399,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="Skeletal Crew Tomb Barque" name="Skeleton Crew" publicationId="feeb-1927-4a99-f849" page="84" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7699,8 +7728,9 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"></characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>
     </profile>
     <profile id="9002-f9e2-3e64-d02b" name="Ammut" publicationId="feeb-1927-4a99-f849" page="90" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7862,7 +7892,8 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-        <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>
     </profile>
     <profile id="451a-1400-2bdd-75b4" name="Sehenesmet" publicationId="feeb-1927-4a99-f849" page="117" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

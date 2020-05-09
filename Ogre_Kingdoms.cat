@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
       <characteristicTypes>
@@ -274,7 +274,8 @@ and Multiple Wounds (D3).</characteristic>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af"/>
               </characteristics>
             </profile>
           </profiles>
@@ -488,7 +489,8 @@ and Multiple Wounds (D3).</characteristic>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -611,22 +613,7 @@ and Multiple Wounds (D3).</characteristic>
         <categoryLink id="5669-a58f-c785-e648" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e787-dded-8989-56ae" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b589-5836-1b5b-4f97" type="max"/>
-            <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b8c8-69ac-550d-b9db" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8946-dd85-f5f7-5934" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="817f-75f6-8699-4cd2" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
-            <entryLink id="b71a-1e4e-9d6d-147b" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
-            <entryLink id="21f4-04d8-7b46-de25" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7ca1-efe5-e82b-b7eb" name="Big Names" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7ca1-efe5-e82b-b7eb" name="Big Names &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="increment" field="2135-8430-971a-03fc" value="15">
               <repeats>
@@ -636,10 +623,14 @@ and Multiple Wounds (D3).</characteristic>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ed6-0447-987b-5316" type="max"/>
-            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2135-8430-971a-03fc" type="max"/>
+            <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2135-8430-971a-03fc" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="8d61-1989-a192-c6f8" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+            <entryLink id="c6ae-34a1-52fd-7955" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
+            <entryLink id="98d8-ecd3-7c00-010b" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
+            <entryLink id="bdf5-c4d0-ac6c-2913" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
+            <entryLink id="dc21-bd71-5955-ea68" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -827,7 +818,7 @@ and Multiple Wounds (D3).</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d88-0410-d05b-f5ac" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5e0c-982d-198e-8abe" name="Impact Hits (D6+2)" hidden="false" targetId="d078-4dd8-8ffb-876a" type="rule"/>
+                <infoLink id="5e0c-982d-198e-8abe" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
                 <infoLink id="a1b7-c24c-8bc2-d689" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="70c8-01f4-45b4-5b7e" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
                 <infoLink id="b8d5-4838-017c-212e" name="Rhinox War Chariot" hidden="false" targetId="17f0-326b-1d42-a423" type="profile"/>
@@ -840,6 +831,7 @@ and Multiple Wounds (D3).</characteristic>
                   </constraints>
                   <infoLinks>
                     <infoLink id="890d-5e65-54a6-863d" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+                    <infoLink id="125b-a402-68d8-6472" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -998,18 +990,6 @@ and Multiple Wounds (D3).</characteristic>
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f6d7-5569-8df5-2635" name="Hand Weapon &amp; Ironfist" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d41-9609-6b49-f745" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f39a-9b00-ece8-5b6a" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                <infoLink id="fd0b-cd77-7de7-41aa" name="Ironfist" hidden="false" targetId="6762-6a5b-4d19-dc9f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="aeb9-2d3c-f85a-0a73" name="Gnoblars" hidden="false" collective="false" import="true">
@@ -1054,7 +1034,8 @@ and Multiple Wounds (D3).</characteristic>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1089,7 +1070,8 @@ and Multiple Wounds (D3).</characteristic>
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1502,6 +1484,7 @@ and Multiple Wounds (D3).</characteristic>
                 <infoLink id="c58a-afaf-5bff-4f6a" name="Mournfang" hidden="false" targetId="f151-300b-a2da-39f5" type="profile"/>
                 <infoLink id="dbd0-c97a-2065-3f46" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
                 <infoLink id="96bd-6538-15ab-ead2" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+                <infoLink id="f712-9485-4cb4-2531" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="45.0"/>
@@ -1516,6 +1499,7 @@ and Multiple Wounds (D3).</characteristic>
                 <infoLink id="64b2-01fc-d76c-b14b" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
                 <infoLink id="7602-688e-4fdc-b6a8" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="e824-7ce5-da13-7c10" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+                <infoLink id="750c-aa32-873a-9580" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
@@ -1535,6 +1519,7 @@ and Multiple Wounds (D3).</characteristic>
                 <infoLink id="044f-f829-6c88-e64a" name="Stone Skeleton" hidden="false" targetId="c65c-f846-aec9-4814" type="rule"/>
                 <infoLink id="3ffb-66d5-3bd4-708d" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
                 <infoLink id="c0bb-d8e9-eead-8b42" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+                <infoLink id="c103-2829-c4fd-5b41" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -1553,7 +1538,8 @@ and Multiple Wounds (D3).</characteristic>
                 <infoLink id="2910-effd-44d1-793b" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                 <infoLink id="6c11-a7f9-6adf-7ad3" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="4c37-5743-ec05-be4c" name="Sphere of Frost-wreathed Ice" hidden="false" targetId="9014-b156-9887-ed88" type="profile"/>
-                <infoLink id="7005-6060-516e-14fd" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
+                <infoLink id="7005-6060-516e-14fd" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
+                <infoLink id="cf9a-1af5-c4c5-82af" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -1595,42 +1581,29 @@ and Multiple Wounds (D3).</characteristic>
         <categoryLink id="d8f4-a91c-d4fc-2551" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="2c07-af81-7bef-b7f6" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="2804-c8d5-a599-3857" value="0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb31-0258-90d2-36d1" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2804-c8d5-a599-3857" type="max"/>
-            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e1a-f2a2-113c-a637" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f1e1-161f-39cc-279a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="5925-11ff-417d-c2e5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
-            <entryLink id="cd65-c9b0-aa2a-3e2e" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
-            <entryLink id="d14c-9515-beae-05fe" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5417-4592-b3bb-771f" name="Big Names" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5417-4592-b3bb-771f" name="Big Names &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="increment" field="b3a8-78f9-b12e-ac7a" value="15">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54fd-36d6-8f47-cbd9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" field="16f2-6fc5-957a-febc" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb31-0258-90d2-36d1" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16f2-6fc5-957a-febc" type="max"/>
-            <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b3a8-78f9-b12e-ac7a" type="max"/>
+            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b3a8-78f9-b12e-ac7a" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="e87a-0420-0fba-69cf" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+            <entryLink id="6493-caf0-0fcf-0a72" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
+            <entryLink id="d7ba-2734-8c33-d224" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
+            <entryLink id="9c95-6323-2364-2d02" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
+            <entryLink id="eec3-31ac-f6d1-c0ce" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1818,7 +1791,7 @@ and Multiple Wounds (D3).</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92af-fab8-2022-6fbb" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d1d1-dc2f-7da9-db8e" name="Impact Hits (D6+2)" hidden="false" targetId="d078-4dd8-8ffb-876a" type="rule"/>
+                <infoLink id="d1d1-dc2f-7da9-db8e" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
                 <infoLink id="f966-a800-ca5d-5657" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="e279-cdd0-361c-79ee" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
                 <infoLink id="e59b-e4f4-f902-2e12" name="Rhinox War Chariot" hidden="false" targetId="17f0-326b-1d42-a423" type="profile"/>
@@ -1831,6 +1804,7 @@ and Multiple Wounds (D3).</characteristic>
                   </constraints>
                   <infoLinks>
                     <infoLink id="90e1-0c49-b811-1ad3" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+                    <infoLink id="9273-50ef-5c78-643f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1861,7 +1835,7 @@ and Multiple Wounds (D3).</characteristic>
                   <modifiers>
                     <modifier type="set" field="6fd8-71af-1336-6635" value="0">
                       <conditions>
-                        <condition field="selections" scope="16bd-cf4e-7102-c09f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c07-af81-7bef-b7f6" type="atLeast"/>
+                        <condition field="selections" scope="16bd-cf4e-7102-c09f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5417-4592-b3bb-771f" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2015,18 +1989,6 @@ and Multiple Wounds (D3).</characteristic>
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0abc-1138-d5e3-2235" name="Hand Weapon &amp; Ironfist" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba01-4903-51d8-0217" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b227-d62e-52e1-8f74" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                <infoLink id="0461-b573-90d0-4aa1" name="Ironfist" hidden="false" targetId="6762-6a5b-4d19-dc9f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="3640-4940-be1f-d96a" name="Gnoblars" hidden="false" collective="false" import="true">
@@ -2068,10 +2030,11 @@ and Multiple Wounds (D3).</characteristic>
               <profiles>
                 <profile id="fbf6-f3d1-179e-aa4d" name="Butcher" publicationId="9e23-79cb-pubN78137" page="61" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
-                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2103,10 +2066,11 @@ and Multiple Wounds (D3).</characteristic>
               <profiles>
                 <profile id="694c-f681-8275-15a9" name="Butcher" publicationId="9e23-79cb-pubN78137" page="61" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
-                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
+                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2169,28 +2133,17 @@ and Multiple Wounds (D3).</characteristic>
         <categoryLink id="29c6-43b8-0489-4bd1" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9271-53f9-d9f9-7ee5" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d646-e169-0777-56c1" type="max"/>
-            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dd24-749f-601e-65a4" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="d119-8677-8b96-7dbd" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
-            <entryLink id="a36a-2335-b312-7048" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
-            <entryLink id="3199-812e-0a57-fc50" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
-            <entryLink id="c99b-2466-3d2d-879b" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c1fd-f202-464e-09a0" name="Big Names" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c1fd-f202-464e-09a0" name="Big Names &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7ff-122a-68f3-650c" type="max"/>
-            <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8d07-e8b2-41e1-6b21" type="max"/>
+            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8d07-e8b2-41e1-6b21" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="49f6-973b-8b46-55e5" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+            <entryLink id="a372-b149-f457-4be6" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
+            <entryLink id="ba68-5d31-f471-8473" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
+            <entryLink id="8016-63f7-6fbe-84a1" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
+            <entryLink id="f631-8eb8-d11a-7331" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2269,6 +2222,7 @@ and Multiple Wounds (D3).</characteristic>
                 <infoLink id="7ce8-5a44-11a4-aa79" name="Stone Skeleton" hidden="false" targetId="c65c-f846-aec9-4814" type="rule"/>
                 <infoLink id="0dc7-efaa-9f64-7073" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
                 <infoLink id="2786-9ba2-9ae3-855b" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+                <infoLink id="84fb-99f5-a143-46d9" name="Hunter" hidden="false" targetId="1473-ae44-e14c-a3cd" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -2288,6 +2242,7 @@ and Multiple Wounds (D3).</characteristic>
                 <infoLink id="95b2-382a-27c3-be08" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="f6a6-cc37-0926-43f5" name="Sphere of Frost-wreathed Ice" hidden="false" targetId="9014-b156-9887-ed88" type="profile"/>
                 <infoLink id="6ba9-45f5-5eed-3b40" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
+                <infoLink id="2548-5ca2-0c90-ec5f" name="Hunter" hidden="false" targetId="1473-ae44-e14c-a3cd" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -2463,10 +2418,11 @@ and Multiple Wounds (D3).</characteristic>
               <profiles>
                 <profile id="7067-d1ca-4011-da64" name="Firebelly" publicationId="9e23-79cb-pubN78137" page="62" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
-                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2495,10 +2451,11 @@ and Multiple Wounds (D3).</characteristic>
               <profiles>
                 <profile id="8f81-0595-7a23-f747" name="Firebelly" publicationId="9e23-79cb-pubN78137" page="62" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                   <characteristics>
-                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
+                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3272,7 +3229,8 @@ and Multiple Wounds (D3).</characteristic>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3371,7 +3329,7 @@ and Multiple Wounds (D3).</characteristic>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="43.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3690,18 +3648,6 @@ and Multiple Wounds (D3).</characteristic>
                     <cost name="pts" typeId="points" value="6.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c009-1520-c3bc-93cd" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aea0-aade-cecd-da8b" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="6b64-ddf8-f265-5246" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="30a2-4e6b-73d7-8019" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="201a-d080-a6a8-b1b6" name="Hand Weapon &amp; Ironfist" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9a1-e6ab-31d8-2231" type="max"/>
@@ -3962,18 +3908,6 @@ and Multiple Wounds (D3).</characteristic>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="6.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bbdd-a382-2cfe-5113" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1313-3e31-270b-e983" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="7e77-c031-88dc-54f5" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="5f75-7db7-126f-0c89" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a68d-c457-11e3-becb" name="Hand Weapon &amp; Ironfist" hidden="false" collective="true" import="true" type="upgrade">
@@ -4324,7 +4258,7 @@ and Multiple Wounds (D3).</characteristic>
     </selectionEntry>
     <selectionEntry id="29da-3473-5c68-f206" name="Rhinox War Chariot" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="2fc0-4117-8ced-f664" name="Impact Hits (D6+2)" hidden="false" targetId="d078-4dd8-8ffb-876a" type="rule"/>
+        <infoLink id="2fc0-4117-8ced-f664" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
         <infoLink id="f8dd-64c4-2c58-fd9c" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
         <infoLink id="8e7f-76a4-df51-b743" name="Rhinox War Chariot" hidden="false" targetId="17f0-326b-1d42-a423" type="profile"/>
         <infoLink id="7cf3-60c3-a81e-1a42" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
@@ -4340,6 +4274,7 @@ and Multiple Wounds (D3).</characteristic>
           </constraints>
           <infoLinks>
             <infoLink id="cc5f-de1a-52a1-bacd" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+            <infoLink id="bfcf-ad8a-5c96-26d0" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4354,13 +4289,25 @@ and Multiple Wounds (D3).</characteristic>
             <infoLink id="3c7f-1488-1d6a-eb6d" name="Ogre" hidden="false" targetId="7a76-66b8-73bb-d4b1" type="profile"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="9b68-763e-7f6b-ec5d" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="9b68-763e-7f6b-ec5d" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="394c-c52f-6d3b-3d64" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e386-729e-5eba-32eb" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="bb43-9c5e-2cf1-9fae" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ac10-8aff-6114-1900" name="Light Armor" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9ad-6ed4-e618-8454" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7781-70d3-f7d7-3889" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="69e8-93d8-99af-842f" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4403,7 +4350,7 @@ and Multiple Wounds (D3).</characteristic>
           </profiles>
           <rules>
             <rule id="b6ea-e4fb-f5b0-af02" name="Trappers" publicationId="9e23-79cb-pubN78137" page="97" hidden="false">
-              <description>Every model in an enemy unit that successfully charges the Gnoblars front must take a Dangerous Terrain test as soon as the charge is completed.</description>
+              <description>Each enemy unit that successfully charges the Gnoblar Trappers&apos; front must take D3 Dangerous Terrain tests for each Trapper as soon as the charge is completed.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -4493,7 +4440,7 @@ and Multiple Wounds (D3).</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save (5+)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot Armour save (6+)</characteristic>
           </characteristics>
         </profile>
         <profile id="417f-539f-8e96-8a36" name="Scraplauncher Catapult" publicationId="9e23-79cb-pubN78137" page="95" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
@@ -4523,6 +4470,7 @@ and Multiple Wounds (D3).</characteristic>
           </constraints>
           <infoLinks>
             <infoLink id="223b-242b-f1b4-89de" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+            <infoLink id="5623-aa5b-e0e9-b2e5" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4572,7 +4520,7 @@ and Multiple Wounds (D3).</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save (5+)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot Armour save (6+)</characteristic>
           </characteristics>
         </profile>
         <profile id="1c3d-6b32-9c1a-41b6" name="Skewerslinger" publicationId="9e23-79cb-pubN78137" page="96" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
@@ -4607,6 +4555,7 @@ and Multiple Wounds (D3).</characteristic>
           </constraints>
           <infoLinks>
             <infoLink id="a6d7-a885-5192-5190" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+            <infoLink id="8cb2-41c6-67cf-74a9" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4852,7 +4801,7 @@ and Multiple Wounds (D3).</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save (5+)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot Armour save (6+)</characteristic>
           </characteristics>
         </profile>
         <profile id="1a27-e461-e6f6-6216" name="Cannon of the Sky-titans" publicationId="9e23-79cb-pubN78137" page="80" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
@@ -4904,6 +4853,7 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
           </constraints>
           <infoLinks>
             <infoLink id="389b-a4e0-636a-1abb" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
+            <infoLink id="7f5f-6d8e-ac88-df89" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4969,6 +4919,18 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="bea3-5246-2d11-cc6d" name="Light Armor" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1911-54eb-644f-4c93" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b0-2065-2e95-f198" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7a8b-f163-1dd4-d775" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4976,7 +4938,7 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="170.0"/>
+        <cost name="pts" typeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="916e-f0d1-28b4-2ab1" name="Slavegiant" hidden="false" collective="false" import="true" type="model">
@@ -5007,15 +4969,17 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
         </profile>
         <profile id="8cf1-030c-9bde-5699" name="Result" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="1c07-e75c-f50c-09f1" typeName="Big Things Chart (Slavegiant)">
           <characteristics>
-            <characteristic name="1" typeId="c81c-a4ad-dc41-bf5d">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw).</characteristic>
+            <characteristic name="1" typeId="c81c-a4ad-dc41-bf5d">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
             <characteristic name="2-4" typeId="74e3-28f3-9ca2-7075">Throttle with Chain: The target must take a T test. If this is failed, it sustains 2D6 wounds with no Armour Save allowed.</characteristic>
             <characteristic name="5-6" typeId="926b-b314-20e5-911d">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
           </characteristics>
         </profile>
         <profile id="cb8a-3dfc-3503-0105" name="Result" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="4bc3-9893-db6d-959c" typeName="Small Things Chart (Slavegiant)">
           <characteristics>
-            <characteristic name="1" typeId="e392-20d2-7b99-4e84">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
-            <characteristic name="2" typeId="eb1c-ff33-9629-bb04">Jump Up and Down: The Giant jumps up and down vigorously on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks. Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if it is able to, assuming that it did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends.</characteristic>
+            <characteristic name="1" typeId="e392-20d2-7b99-4e84">Yell and Brawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
+            <characteristic name="2" typeId="eb1c-ff33-9629-bb04">Jump Up and Down: The Giant jumps up and down vigorously on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks. 
+
+Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if it is able to, assuming that it did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends.</characteristic>
             <characteristic name="3" typeId="ce5c-ccc1-13b8-a1e5">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things chart until you get another result. The Giant grabs the model and the player rolls a D6 on the Pick Up and... table.</characteristic>
             <characteristic name="4-6" typeId="857e-1cfe-ddec-27f3">Flail with Chain: The Slavegiant inflicts D6 S 6 hits on the target unit, allocated as shooting hits.</characteristic>
           </characteristics>
@@ -5231,21 +5195,21 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
           <characteristics>
             <characteristic name="1-2" typeId="48ba-a116-01c6-c096">Butt: The Mammoth inflicts one automatic hit against one model in base contact (your choice), causing D3 S 7 hits with Multiple Wounds (D3).</characteristic>
             <characteristic name="3-5" typeId="dc3a-1443-f365-33b8">Gore: The Mammoth makes D6 attacks against a chosen unit in dose combat with Heroic Killing Blow.</characteristic>
-            <characteristic name="6" typeId="3eca-abd3-505e-e4f5">Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The army fielding the Mammoth automatically wins the combat by 3 points.</characteristic>
+            <characteristic name="6" typeId="3eca-abd3-505e-e4f5">Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The Mammoth automatically wins the combat by 3 points or more. This result has no effect against Animated Constructs.</characteristic>
           </characteristics>
         </profile>
         <profile id="686d-ed43-c894-f17d" name="Result" publicationId="9e23-79cb-pubN78137" page="91" hidden="false" typeId="87e3-7053-1d16-9d13" typeName="Small Targets Table (Ice Mammoth)">
           <characteristics>
             <characteristic name="1-2" typeId="a0c1-5f83-563b-cb79">Trample: A single enemy unit suffers D6 S 7 hits for each rank of five or more models it has.</characteristic>
             <characteristic name="3-4" typeId="4ffc-eb64-9ba8-ef4c">Stomp: The Mammoth makes three Stomp attacks this turn.</characteristic>
-            <characteristic name="5" typeId="9677-ddbe-75dd-956b">Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The army fielding the Mammoth automatically wins the combat by 3 points.</characteristic>
-            <characteristic name="6" typeId="5eec-16c2-20bd-16a8">Pick up and...: This attack may target model in base contact or touching a model in base contact. The target may make a single attack to fend off the trunk: If this attack hits and wounds the Mammoth, than the Mammoth&apos;s attack fails. If not then the Mammoth grabs the model. Roll a D6 and consult the Pick up and... Table.</characteristic>
+            <characteristic name="5" typeId="9677-ddbe-75dd-956b">Bellow: Neither the Mammoth nor any unit in contact with it fight if they have not already done so this turn. The Mammoth automatically wins the combat by 3 points or more. This result has no effect against Animated Constructs.</characteristic>
+            <characteristic name="6" typeId="5eec-16c2-20bd-16a8">Pick up and...: The Mammoth uses its agile trunk to grab a helpless enemy Character from the target unit (Mammoth player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things Chart until you get another result. Roll a D6 on the Pick up and... Table.</characteristic>
           </characteristics>
         </profile>
         <profile id="bf07-5791-6b29-28b3" name="Result" publicationId="9e23-79cb-pubN78137" page="91" hidden="false" typeId="0e31-9fb9-8678-1678" typeName="Pick up and... Table (Ice Mammoth)">
           <characteristics>
-            <characteristic name="1-2" typeId="10d2-137f-eb05-aae8">Throw Back into Combat: This causes D6 wounds on the grabbed model with no armour saving throws allowed, and 2D6 S 4 hits (saves as normal) on the enemy unit. If the thrown model survives, place it back in the unit where it may carry on as normal.</characteristic>
-            <characteristic name="3-4" typeId="70db-d602-db26-4c00">Hurl: This works as per the ‘Throw back into combat’ result above except that the target unit may be any chosen enemy unit within 18&quot; If no such unit is available, treat this as a ‘Throw back into combat’ result instead. In either case should the hurled victim survive, it is placed in the back rank of the impacted unit.</characteristic>
+            <characteristic name="1-2" typeId="10d2-137f-eb05-aae8">Throw Back into Combat: The victim is hurled back into their own unit like a missile. The victim suffers D3 S 6 Hits which Ignores Armour saves, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
+            <characteristic name="3-4" typeId="70db-d602-db26-4c00">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Mammoth – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits. Unsaved Wounds from these hits count towards the Mammoth&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
             <characteristic name="5" typeId="4380-595a-db66-317d">Eat: The victim model is removed as a casualty, and the Mammoth may immediately recover a single wound it has lost previously in the game.</characteristic>
             <characteristic name="6" typeId="f600-5b21-c388-bda4">Squash and grab another: The model is removed as a casualty and the Mammoth then picks another victim. Roll again on the ‘Pick up and...’ chart-to see what happens.</characteristic>
           </characteristics>
@@ -5253,7 +5217,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
       </profiles>
       <rules>
         <rule id="78b4-1483-03f9-c492" name="Mammoth Attacks" publicationId="9e23-79cb-pubN78137" page="91" hidden="false">
-          <description>When the Ice Mammoth attacks, roll on the appropriate table to determine its action. Roll on the Small Targets table when fighting Swarms, Infantry, Cavalry or War Beasts. Roll on the Other Targets table when fighting anything else.</description>
+          <description>When the Ice Mammoth attacks, roll on the appropriate table to determine its action. Roll on the Man-sized Things Chart table when fighting Swarms, Infantry, Cavalry or War Beasts. Roll on the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with Large Target.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5443,7 +5407,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="43.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5818,7 +5782,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
           <profiles>
             <profile id="2229-1515-8335-de89" name="Kineater" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
               <characteristics>
-                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">Tyrants only. Any friendly unit within 12&quot; of a Kineater may re-roll failed Panic tests.</characteristic>
+                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">Tyrants only. Any friendly unit within 12&quot; of a Kineater roll 3D6 for their Panic tests and discards the highest dice rolled.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5935,7 +5899,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6081,7 +6045,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
           <profiles>
             <profile id="52c3-8947-63e4-e62d" name="Hellheart" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One Use Only. The Hellheart can be used at the start of one of the opposing side&apos;s Magic phases, immediately after rolling for the Winds of Magic. All enemy Wizards within 12&quot; of the bearer must roll on the Miscast table. Special rules or magic items that affect a normal miscast roll can be used against miscasts caused by the Hellheart. After resolving all the miscasts, add an extra dispel dice to the Ogre&apos;s dispel pool for each enemy Wizard that was forced to roll on the Miscast table.</characteristic>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One Use Only. The Hellheart can be used at the start of one of the opposing side&apos;s Magic phases, immediately after rolling for the Winds of Magic. All enemy Wizards within 12&quot; of the bearer must roll 2D6 on the Miscast table. Special rules or magic items that affect a normal miscast roll can be used against miscasts caused by the Hellheart. After resolving all the Miscasts, add an extra dispel dice to the Ogre&apos;s dispel pool for each enemy Wizard that was forced to roll on the Miscast table.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6220,7 +6184,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
       <description>The riders of a this Monster does not count as Moving and Shooting.</description>
     </rule>
     <rule id="a07f-3534-f3c1-b420" name="Beneath Contempt" publicationId="9e23-79cb-pubN78137" page="93" hidden="false">
-      <description>Gnoblars have Expendable. In addition, Ogre characters may not join units of Gnoblars.</description>
+      <description>Gnoblars have Expendable. In addition, even other Gnoblars treat them as being Expendable.</description>
     </rule>
     <rule id="d99d-6da7-c8fd-bd98" name="Bicker" publicationId="9e23-79cb-pubN78137" page="93" hidden="false">
       <description>Roll a D6 at the beginning of the turn for this unit if it is not in combat, fleeing or subject to any compulsory movement. If the unit rolls a 1 it may do nothing at all this turn.</description>
@@ -6236,6 +6200,12 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
     </rule>
     <rule id="5c23-5b1c-8b01-0554" name="Motley Crew" publicationId="9e23-79cb-pubN78137" page="73" hidden="false">
       <description>The models in a unit of Maneaters are often armed with a variety of different weapons. If they are, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.</description>
+    </rule>
+    <rule id="1473-ae44-e14c-a3cd" name="Hunter" publicationId="9e23-79cb-pubN78137" page="125" hidden="false">
+      <description>A Hunter with a mount loses Scouts.</description>
+    </rule>
+    <rule id="cde9-e208-3420-4544" name="Jhared the Red" publicationId="9e23-79cb-pubN78137" page="123" hidden="false">
+      <description>If Jhared picks a mount, he loses Scouts.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6308,7 +6278,7 @@ mounted. You must choose which function you want to use at the start of each clo
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="60f7-5ede-98ef-b409" name="Stonehorn" publicationId="9e23-79cb-pubN78137" page="87" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -6477,7 +6447,7 @@ mounted. You must choose which function you want to use at the start of each clo
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -6491,7 +6461,7 @@ mounted. You must choose which function you want to use at the start of each clo
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>

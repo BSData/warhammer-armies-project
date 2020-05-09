@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9a0d-50bf-b007-6cef" name="Animosity Table">
       <characteristicTypes>
@@ -364,7 +364,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -797,7 +798,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1902,6 +1904,18 @@
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="a48c-20d5-b806-ff3d" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4b4-5974-f459-b026" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b1c-e62a-fa96-9f26" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="a7df-ac59-6e23-3786" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
                   </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1915,6 +1929,7 @@
                   <infoLinks>
                     <infoLink id="88dc-e2d9-1ee2-c575" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
                     <infoLink id="73f3-3ea9-cbc2-bd66" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+                    <infoLink id="3f41-56bc-9f1f-0bb0" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2179,7 +2194,7 @@
                         <infoLink id="94fa-a20d-01a1-3c68" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="220.0"/>
+                        <cost name="pts" typeId="points" value="250.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="ced0-af5d-62c2-a9b8" name="Wyvern" hidden="false" collective="false" import="true" type="model">
@@ -2462,6 +2477,18 @@
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="940e-8198-7cba-baca" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd2b-bc50-5efd-2ae0" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3236-bfa4-64d4-5577" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="c1d9-8ca8-c524-693b" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -2474,7 +2501,8 @@
                           </constraints>
                           <infoLinks>
                             <infoLink id="8b44-5e7c-3f01-608f" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
-                            <infoLink id="3e05-2eb4-de92-6b29" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+                            <infoLink id="3e05-2eb4-de92-6b29" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+                            <infoLink id="b89b-79f8-f812-239b" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -2500,7 +2528,7 @@
                         <infoLink id="99df-247d-c6a5-baa2" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="220.0"/>
+                        <cost name="pts" typeId="points" value="250.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="beb7-81cb-2474-0a30" name="Wyvern" hidden="false" collective="false" import="true" type="model">
@@ -2920,6 +2948,18 @@
                               </constraints>
                               <infoLinks>
                                 <infoLink id="8c80-31b4-3c86-9803" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="c2cf-dcb0-5039-f133" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c200-429c-b75d-9a50" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fc9-184d-c45f-3926" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="8ba2-c40e-2cbc-37f5" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -3372,6 +3412,18 @@
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="3574-feb9-7c2e-ca36" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af7f-ae56-363d-659b" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67ab-9044-5af0-3bea" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="a040-53d0-8a2a-3b47" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -3385,6 +3437,7 @@
                           <infoLinks>
                             <infoLink id="03cc-b7b3-90ae-4233" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
                             <infoLink id="e9b1-d7b6-e314-ad4c" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+                            <infoLink id="3bdd-d77f-90a3-3b74" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -3410,7 +3463,7 @@
                         <infoLink id="680d-cf1e-8746-c6e6" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="220.0"/>
+                        <cost name="pts" typeId="points" value="250.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="2330-8300-9e66-9bd1" name="Wyvern" hidden="false" collective="false" import="true" type="model">
@@ -3576,6 +3629,18 @@
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="c8c8-485e-1976-bbbc" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f962-ba9a-e99b-4b9a" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e528-b29c-38c3-138c" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="d431-e7e6-e86a-c593" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -3589,6 +3654,7 @@
                           <infoLinks>
                             <infoLink id="85c2-0fb0-1d91-15ef" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
                             <infoLink id="938d-cc20-0c56-7c09" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+                            <infoLink id="f223-a25d-deb0-bec1" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -3635,7 +3701,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3667,7 +3734,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3819,7 +3887,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3851,7 +3920,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3952,7 +4022,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3984,7 +4055,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4131,6 +4203,18 @@
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="5b87-d991-2cb5-b695" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df07-2cbc-898a-7887" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3f6-cfea-7495-8d00" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="6b6f-a0ef-78ae-ee31" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="3.0"/>
@@ -4171,7 +4255,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4203,7 +4288,8 @@
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4446,7 +4532,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4478,7 +4565,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4614,7 +4702,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4646,7 +4735,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4747,7 +4837,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4779,7 +4870,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4899,7 +4991,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4931,7 +5024,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5044,7 +5138,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5076,7 +5171,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5191,7 +5287,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5223,7 +5320,8 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                             <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                             <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                             <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                            <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                            <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                            <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -5423,6 +5521,18 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="60e9-9908-cbea-0781" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22ee-d565-f8f7-1736" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3c5-dc1f-badd-b974" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="84a2-aa89-0f59-061c" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -5436,6 +5546,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                           <infoLinks>
                             <infoLink id="328c-8e21-f832-fe7b" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
                             <infoLink id="9742-bbb8-b17a-eadb" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+                            <infoLink id="b559-449b-8d49-1323" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -5715,6 +5826,18 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                               </constraints>
                               <infoLinks>
                                 <infoLink id="12a1-2713-4bcc-6747" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="729b-94ef-25fb-aa00" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce8f-5631-e7cd-274c" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55e6-00e7-52d6-19fb" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="016d-829d-f0f9-1c3b" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                               </infoLinks>
                               <costs>
                                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6321,6 +6444,18 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                                 <cost name="pts" typeId="points" value="0.0"/>
                               </costs>
                             </selectionEntry>
+                            <selectionEntry id="805a-dec4-e234-64b5" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b86-6132-7d61-a6b0" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2846-60e0-700a-bb04" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="a9ba-e6f9-ae02-58fc" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
                           </selectionEntries>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -6334,6 +6469,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                           <infoLinks>
                             <infoLink id="2057-1d38-76d8-0f85" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
                             <infoLink id="19f1-74eb-4744-8be7" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+                            <infoLink id="7084-6215-b9b1-9ce8" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -8031,55 +8167,63 @@ At the start of each round of close combat in which a Goblin Jester is involved,
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="ff99-5f58-0699-9453" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f367-d969-9270-893d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f792-ddee-0362-997f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="41a3-9d5a-3aae-fc02" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="4e82-803a-75c6-e454" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fe6b-0ef8-3df7-2b9e">
+            <selectionEntryGroup id="4e82-803a-75c6-e454" name="Equipment" hidden="false" collective="false" import="true" defaultSelectionEntryId="fe6b-0ef8-3df7-2b9e">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c5f-f080-183a-942f" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4de-f902-4c80-0eeb" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="dbf6-b1a7-cbce-b82d" name="Spear (Mounted) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="dbf6-b1a7-cbce-b82d" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cb9-491f-fcdd-df4f" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="823d-0fbc-e4f4-eeaa" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
-                    <infoLink id="26ce-8c7d-ff25-a8e5" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="41e9-5204-f91b-0fe2" name="Hand Weapon &amp; Shortbow" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="41e9-5204-f91b-0fe2" name="Shortbow" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eaab-94bd-65ed-4956" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="ae17-6eb3-7059-0d29" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
-                    <infoLink id="951c-171d-dfaf-85a6" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="fe6b-0ef8-3df7-2b9e" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="fe6b-0ef8-3df7-2b9e" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8bc-1b95-dcac-f8d2" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="f278-d5a9-511f-6c4b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                     <infoLink id="285f-9fdd-1912-63bb" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="9.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8121,7 +8265,7 @@ At the start of each round of close combat in which a Goblin Jester is involved,
                 <infoLink id="8376-7ab4-3490-b655" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="44aa-67b6-7405-6465" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -8216,55 +8360,63 @@ At the start of each round of close combat in which a Goblin Jester is involved,
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="e03c-752b-26d8-f970" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc2e-021f-198b-844d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e1f-654f-dfac-6d22" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0b31-2dab-7fbb-ebe2" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="57df-6e6d-f58d-c30a" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="40c6-d1bd-8815-88e3">
+            <selectionEntryGroup id="fc78-c745-1500-d233" name="Equipment" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c70d-5afa-ac39-a001" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb01-5fca-77fd-dfec" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e867-4378-5aad-3ea0" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="42cc-6157-4caa-b2cc" name="Spear (Mounted) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="f24d-4d8c-63a5-3291" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1133-a5be-193f-9d60" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afd6-7e81-7cb8-e214" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="d233-e448-df87-3463" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
-                    <infoLink id="1575-3890-1a66-9e3c" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                    <infoLink id="dea0-dc5c-9a53-89f9" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d291-3fb6-fcbe-8625" name="Hand Weapon &amp; Shortbow" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="42ee-ccad-c288-d6a1" name="Shortbow" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bbb-cbe9-91d2-7954" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b60-ed1a-eb92-655e" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="6591-23d3-72f9-e0bc" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
-                    <infoLink id="aab6-b7db-32f2-6a65" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="84fa-c490-b9d1-0427" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d542-4579-e8a0-bd43" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e51e-ef90-8162-ed5a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="354a-6430-f492-c1f0" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="40c6-d1bd-8815-88e3" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3586-b2eb-c1ab-17bc" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="27b2-3ee8-f4b5-656a" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="d28c-0775-2ee0-28fb" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8306,7 +8458,7 @@ At the start of each round of close combat in which a Goblin Jester is involved,
                 <infoLink id="d8da-0613-19ab-5e6d" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="aa7a-c3f3-5500-cde2" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -8874,7 +9026,7 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
                 <infoLink id="fb82-7e0c-321c-d3b0" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a36f-c39d-2e79-bc97" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -9074,7 +9226,7 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
                 <infoLink id="1e7f-690d-d58f-56ca" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="169a-03db-e215-a441" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
@@ -10612,6 +10764,18 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="f2d3-79ca-3e34-9f11" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9dca-38a1-3101-4172" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="549a-af83-3530-e952" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9ae9-7db8-7f8d-eec6" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -10625,6 +10789,7 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
           <infoLinks>
             <infoLink id="8847-7a50-a94c-4e9d" name="War Boar" hidden="false" targetId="e5ff-5bf1-2cf1-e269" type="profile"/>
             <infoLink id="3332-3282-622a-c55a" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+            <infoLink id="3a37-dd70-a32a-8329" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -10681,6 +10846,18 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
                   </constraints>
                   <infoLinks>
                     <infoLink id="bffb-20aa-2b5d-0abc" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="85b0-8dfd-271c-c1ea" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f56f-ecca-eb93-cf17" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e32-1537-91ab-0fd9" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0e02-e9db-5156-89da" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -11875,7 +12052,7 @@ When Mangler Squigs move through a unit (friend or foe) they inflict 2D6 S 6 hit
           <characteristics>
             <characteristic name="1-4" typeId="6498-d33c-fe29-da67">Acid Guts: Every model within 6&quot; of the Squig Gobba (including the Night Goblin Tenders) takes a Strength 2 Hit which Ignores Armour saves.</characteristic>
             <characteristic name="5-9" typeId="c438-2be4-66a7-4ddb">Stomach Rumblings: Nothing happens this turn, but you must instead roll 4D6 when firing the Squig Gobba next shooting phase.</characteristic>
-            <characteristic name="10-16" typeId="c3c9-b845-2ebb-789b">Squig Torrent: This is resolved as a shot from a Stone Thrower that uses the large template with a range of 24&quot;. Any model covered by the template suffers a S 4 hit. If a misfire is rolled, the Squig Gobba suffers D3
+            <characteristic name="10-16" typeId="c3c9-b845-2ebb-789b">Squig Torrent: This is resolved as a shot from a Stone Thrower that uses the large template with a range of 36&quot;. Any model covered by the template suffers a S 4 hit. If a misfire is rolled, the Squig Gobba suffers D3
 Wounds and the shot is wasted.</characteristic>
             <characteristic name="17-18" typeId="bd78-d377-d3b7-83b2">Intestinal Explosion: The Squig Gobba immediately makes a Breath Weapon Attack at S 6. After the attack has been resolved, the Squig Gobba suffers D3 Wounds.</characteristic>
           </characteristics>
@@ -12487,7 +12664,8 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13171,8 +13349,7 @@ Roll a D6 for each eligible unit. If the dice roll is a 2 or more, the unit beha
       <description>The only unit a Night Goblin character mounted on a Great Cave Squig is allowed to join is a Squig Hopper unit. He is allowed to do this even though characters are not normally allowed to join Squig Hopper units.</description>
     </rule>
     <rule id="1f41-5c93-ec94-d3c3" name="Spider Venom" publicationId="9e23-79cb-pubN78975" page="156" hidden="false">
-      <description>Forest Goblin Shamans may re-roll one dice (except 6&apos;s) when casting spells. However, if they roll a Miscast, they will count as having failed a
-Stupidity test.</description>
+      <description>Forest Goblin Shamans may re-roll one dice (except 1&apos;s) when casting spells. However, if they roll a miscast, they will also count as having failed a Stupidity test (if they survive).</description>
     </rule>
     <rule id="f44c-19e9-1d24-b925" name="Big Stabba" publicationId="9e23-79cb-pubN78975" page="122" hidden="false">
       <description>A unit of Savage Orcs may be upgraded to include Big Stabbas. A unit of Savage Orcs may be upgraded to include Big Stabbas. This is represented by upgrading two models and by including one or more Big Stabba models in the unit. A Big Stabba is mounted on two Infantry bases and must be placed to cover both the first and second rank of the unit, but is otherwise equipped like the rest of the unit. Each Big Stabba model causes D3 Impact Hits with Multple Wounds (D3). Big Stabbas are always the last models to be removed as casualties; the weapons are picked up by other Savage Orcs in the unit (excluding any Command Group models) should they be slain.</description>
@@ -13258,7 +13435,7 @@ Stupidity test.</description>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 5+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="e2eb-d580-9bef-090d" name="Grunta" publicationId="9e23-79cb-pubN78975" page="118" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -13286,7 +13463,7 @@ Stupidity test.</description>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="c731-a6d8-8750-c8e5" name="Wyvern" publicationId="9e23-79cb-pubN78975" page="179" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

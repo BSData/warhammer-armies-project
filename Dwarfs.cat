@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="2bfd-fe7d-294c-9853" name="Rules of the Runes Table">
       <characteristicTypes>
@@ -155,6 +155,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
         <infoLink id="d06d-2486-038d-3232" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
         <infoLink id="9745-e8c0-a4a0-c7c5" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="1204-dab6-1876-165e" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+        <infoLink id="b48e-9b35-de6c-6da3" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="64d5-3677-cebb-bb18" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -228,7 +229,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Gromril heavy armour. The Armour of Skaldour is inscribed with the Master Rune of Skaldour which gives him a Ward save (4+), a Rune of Preservation and a Rune of Stone.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. The Armour of Skaldour is inscribed with the Master Rune of Skaldour which gives him a Ward save (4+), a Rune of Preservation and a Rune of Stone.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -353,6 +354,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
           <infoLinks>
             <infoLink id="3d73-a07d-8f27-9872" name="Anvil of Doom" hidden="false" targetId="17c3-44e8-eb49-193b" type="rule"/>
             <infoLink id="c50d-5131-d04a-f8a1" name="Locus of Power" hidden="false" targetId="b8e0-2cfd-0dae-8e2a" type="rule"/>
+            <infoLink id="4cb9-519a-5b10-f721" name="Anvil of Doom" hidden="false" targetId="6859-c610-8917-4444" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="6023-907e-f5df-0859" name="Kraggi" hidden="false" collective="false" import="true" type="model">
@@ -435,20 +437,39 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
               <infoLinks>
                 <infoLink id="3b53-8388-e302-49a5" name="Anvil Guards" hidden="false" targetId="d5ac-7845-cb67-f1f1" type="profile"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="3e37-fa50-51dc-3010" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="086c-aedf-5212-4e23" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="57df-adeb-02f4-85d4">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b45-7e75-9b1c-1c7c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8aa-9819-a372-c210" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d50-4042-b12d-e189" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b92-2032-d00d-e7af" type="min"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="9066-64ed-5090-162f" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+                  <selectionEntries>
+                    <selectionEntry id="57df-adeb-02f4-85d4" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0edd-52b6-ed06-35c0" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="546e-fd6b-cd99-2e90" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                        <infoLink id="37e8-532c-992e-1c7c" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="eb09-9cd2-84e6-f526" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da4d-f2e5-f256-90e5" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="2d78-fb3a-fbf4-0bac" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="1.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -463,7 +484,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <entryLink id="46e2-7afc-d5fd-5a38" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="350.0"/>
+        <cost name="pts" typeId="points" value="330.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="763f-fc3b-b5f1-e13b" name="Belegar Ironhammer" hidden="false" collective="false" import="true" type="model">
@@ -496,6 +517,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <infoLink id="1fc4-9277-da70-dbd4" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="bff5-6f0b-6dd6-2645" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
         <infoLink id="e2c1-0cdd-da50-fc78" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+        <infoLink id="ff18-bb56-9f47-9c36" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="77b7-e92a-2127-83b1" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -554,13 +576,13 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d042-2c2b-5dc6-9293" name="Gromril Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d042-2c2b-5dc6-9293" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5117-4ef7-efdd-b9aa" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9445-f0f3-75b5-67ae" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="523d-caae-43c9-efeb" name="Gromril Full Plate Armour" hidden="false" targetId="7eb8-a680-5bd0-3e2a" type="profile"/>
+            <infoLink id="523d-caae-43c9-efeb" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -598,6 +620,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <infoLink id="7f50-ec22-8b60-7b9b" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
         <infoLink id="e1c3-0f13-0098-d6c8" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="1d93-de48-bbff-3502" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+        <infoLink id="1c24-bf5b-eab2-5022" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c428-f847-d9cb-67eb" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -614,7 +637,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Gromril medium armour. The Armour of the King of Karak Azul is inscribed with one Rune of Fortitude and a Rune of Resistance.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. The Armour of the King of Karak Azul is inscribed with one Rune of Fortitude and a Rune of Resistance.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -720,6 +743,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <infoLink id="1aca-d0d1-454c-6db1" name="Daemon Slayer" hidden="false" targetId="96e9-1cf9-efcf-5b46" type="rule"/>
         <infoLink id="f2ce-2e6a-4651-a4e4" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
         <infoLink id="60b7-8504-f0e3-6cf0" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
+        <infoLink id="c3aa-e487-7f02-501b" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f2bd-abe2-f27f-aed4" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -746,13 +770,13 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3918-2364-0175-095f" name="Gromril Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3918-2364-0175-095f" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="828d-ac58-913f-cdb5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c09a-0995-7e9c-00b7" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="e5e0-e790-b2fe-241d" name="Gromril Medium Armour" hidden="false" targetId="aa8c-8cb0-30f5-f6a3" type="profile"/>
+            <infoLink id="e5e0-e790-b2fe-241d" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -839,6 +863,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <infoLink id="ba44-784e-3e30-69b9" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
         <infoLink id="17c3-152e-4367-afba" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="b9d2-3b00-7495-ad74" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+        <infoLink id="c130-9ac8-546d-6475" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2a2e-0521-23e5-deb6" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -928,7 +953,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Gromril heavy armour. Hrappi-klad is inscribed with a Rune of Shielding.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. Hrappi-klad is inscribed with a Rune of Shielding.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -987,6 +1012,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <infoLink id="214e-f9a9-896a-e30e" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
         <infoLink id="106a-5b13-0097-f4cf" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="801b-1599-ddf5-d195" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+        <infoLink id="8f54-e51b-8642-efd3" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9cf7-e5b8-0acb-6af5" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -1025,7 +1051,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Gromril medium armour. Byrrmoth’s Armour is inscribed with two Runes of Warding.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. Byrrmoth’s Armour is inscribed with two Runes of Warding.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1188,6 +1214,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <infoLink id="b91f-d901-56be-91b3" name="Forgefire" hidden="false" targetId="bb72-6ff9-97d0-2b93" type="rule"/>
         <infoLink id="4f49-07eb-a826-ae2c" name="Runelore" hidden="false" targetId="ea4e-4c94-bec3-7f03" type="rule"/>
         <infoLink id="0002-733c-10b0-8958" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+        <infoLink id="5d4b-1284-70f9-6772" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7a18-e99e-957a-7815" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -1233,13 +1260,13 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="383b-785d-08ad-9f65" name="Gromril Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="383b-785d-08ad-9f65" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="48e8-eb2a-2253-c8c1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abce-a968-91af-6234" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="6afa-ec92-8a30-bc40" name="Gromril Medium Armour" hidden="false" targetId="aa8c-8cb0-30f5-f6a3" type="profile"/>
+            <infoLink id="4827-ca8e-5082-7509" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1250,7 +1277,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <entryLink id="982c-c184-aac2-65ff" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="190.0"/>
+        <cost name="pts" typeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="84b7-fd43-ba2f-1296" name="Grombrindal" hidden="false" collective="false" import="true" type="model">
@@ -1384,8 +1411,9 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
       </profiles>
       <infoLinks>
         <infoLink id="e5ad-8806-f34c-eef5" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
-        <infoLink id="0e13-6ec4-8ada-8dab" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+        <infoLink id="0e13-6ec4-8ada-8dab" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
         <infoLink id="e0a4-bb37-5a0f-6a1b" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+        <infoLink id="a15a-18c5-3516-ea50" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="25a5-60e5-706d-feae" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -1459,34 +1487,34 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6af5-4cd1-8df6-d9e4" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3125-ace8-64d1-6a41" name="Gromril Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3125-ace8-64d1-6a41" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c71-0076-8b73-4ec1" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2e55-e35b-df6d-ad98" name="Gromril Full Plate Armour" hidden="false" targetId="7eb8-a680-5bd0-3e2a" type="profile"/>
+                <infoLink id="eb69-6581-8f72-f065" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4720-f6a2-cb87-bef9" name="Gromril Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4720-f6a2-cb87-bef9" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6535-1b3c-a25c-34fd" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d838-a096-ae12-79a6" name="Gromril Heavy Armour" hidden="false" targetId="6633-a69d-b4c9-b92a" type="profile"/>
+                <infoLink id="d838-a096-ae12-79a6" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1345-c8e6-3f49-cd93" name="Gromril Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1345-c8e6-3f49-cd93" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28ea-b434-fee4-7537" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="1779-4595-804e-91d5" name="Gromril Medium Armour" hidden="false" targetId="aa8c-8cb0-30f5-f6a3" type="profile"/>
+                <infoLink id="0c94-5ee0-a342-2a69" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -1608,6 +1636,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <infoLink id="1308-53fb-cbd9-ee02" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="16f8-f883-b80c-9297" name="Runelore" hidden="false" targetId="ea4e-4c94-bec3-7f03" type="rule"/>
         <infoLink id="3d08-580d-2a7a-4de5" name="Forgefire" hidden="false" targetId="bb72-6ff9-97d0-2b93" type="rule"/>
+        <infoLink id="793c-e5bb-b7a1-1f4d" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bc21-e087-dd45-282b" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -1647,6 +1676,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
           <infoLinks>
             <infoLink id="1808-4bd6-72fc-4ad9" name="Anvil of Doom" hidden="false" targetId="17c3-44e8-eb49-193b" type="rule"/>
             <infoLink id="d5ad-a5c7-0251-1676" name="Locus of Power" hidden="false" targetId="b8e0-2cfd-0dae-8e2a" type="rule"/>
+            <infoLink id="fc9b-9177-9254-ec62" name="Anvil of Doom" hidden="false" targetId="6859-c610-8917-4444" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="0050-d460-07f2-0833" name="Anvil Guard" hidden="false" collective="false" import="true" type="model">
@@ -1657,20 +1687,39 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
               <infoLinks>
                 <infoLink id="1484-6a2c-3ad2-689e" name="Anvil Guards" hidden="false" targetId="d5ac-7845-cb67-f1f1" type="profile"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="cff1-8d66-5375-f916" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7c60-987b-56a7-2c6e" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8403-f06c-8f68-6f5c">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12d5-7e63-0e77-f5ce" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbe9-7dde-a451-c26e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2650-c543-15a0-ad85" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4e1-29d4-921e-60a5" type="min"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="a63f-b984-e5b6-d226" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+                  <selectionEntries>
+                    <selectionEntry id="8403-f06c-8f68-6f5c" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf70-d2bc-758c-82ea" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="1f3d-85f9-42e8-eaba" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                        <infoLink id="d8b4-f576-b098-9c4e" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="3851-ca4b-8676-00e5" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbaf-ccd7-821c-4269" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="bf72-b79e-720a-1a70" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="1.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1702,34 +1751,34 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fa2-8910-a4bf-b4a6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c078-0f15-3220-8a80" name="Gromril Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c078-0f15-3220-8a80" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92fa-dcde-e7a3-ff93" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="4f80-903a-99a7-b6b8" name="Gromril Light Armour" hidden="false" targetId="e519-9fbd-5902-912b" type="profile"/>
+                <infoLink id="4f80-903a-99a7-b6b8" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ffee-0981-1f7b-a8f7" name="Gromril Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ffee-0981-1f7b-a8f7" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56c2-f28c-e63d-9f00" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8819-80b5-b7d1-5da1" name="Gromril Heavy Armour" hidden="false" targetId="6633-a69d-b4c9-b92a" type="profile"/>
+                <infoLink id="191b-fffd-81ed-c2bb" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="80c4-364f-d35d-74f7" name="Gromril Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="80c4-364f-d35d-74f7" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b330-3877-764d-fbc5" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="db66-bea5-a375-dc62" name="Gromril Medium Armour" hidden="false" targetId="aa8c-8cb0-30f5-f6a3" type="profile"/>
+                <infoLink id="f35b-fec4-218e-a3a2" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="9.0"/>
@@ -1783,7 +1832,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <entryLink id="955b-38fc-779b-2673" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="140.0"/>
+        <cost name="pts" typeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a79c-83d6-72f9-1063" name="Daemon Slayer" hidden="false" collective="false" import="true" type="model">
@@ -2220,6 +2269,8 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <infoLink id="d35b-18f2-a614-398d" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
         <infoLink id="b4e1-22ba-26eb-3a80" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
         <infoLink id="c65b-22bb-3a69-bb58" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
+        <infoLink id="4948-1798-09a6-2bec" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
+        <infoLink id="9752-ea23-72f9-0fe3" name="Beer Gut" hidden="false" targetId="a37b-fbd9-c266-3919" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5199-463d-13ca-d69d" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2280,7 +2331,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <entryLink id="7741-d06f-fcce-876d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="170.0"/>
+        <cost name="pts" typeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f37-a58a-850a-60bd" name="Thane" hidden="false" collective="false" import="true" type="model">
@@ -2304,6 +2355,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <infoLink id="e0f7-5312-abdf-95ca" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
         <infoLink id="82e5-65aa-1b81-2877" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
         <infoLink id="89e0-f714-2139-8381" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+        <infoLink id="8046-a3de-370d-dfa4" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f733-114c-c00e-6f0e" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2361,34 +2413,34 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80fa-73b1-3a3e-a828" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="682f-8a3a-a7ae-3e4e" name="Gromril Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="682f-8a3a-a7ae-3e4e" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="743d-95f8-5ec2-612e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7b38-b2fa-ef2f-a03b" name="Gromril Medium Armour" hidden="false" targetId="aa8c-8cb0-30f5-f6a3" type="profile"/>
+                <infoLink id="3f37-1b63-0104-6a39" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5db4-4aca-d12a-1b72" name="Gromril Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5db4-4aca-d12a-1b72" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cc2-5cbb-d7d5-a1dd" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5cd3-bfd5-1a35-027d" name="Gromril Heavy Armour" hidden="false" targetId="6633-a69d-b4c9-b92a" type="profile"/>
+                <infoLink id="ccf7-8fc9-5af2-b517" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="152f-e6a7-06cb-4bf5" name="Gromril Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="152f-e6a7-06cb-4bf5" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b77a-e93e-8ad6-359c" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="cd03-e508-95fe-b717" name="Gromril Full Plate Armour" hidden="false" targetId="7eb8-a680-5bd0-3e2a" type="profile"/>
+                <infoLink id="5b19-a66d-8563-605c" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="4.0"/>
@@ -2549,6 +2601,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
         <infoLink id="995c-ad2a-623d-705b" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
         <infoLink id="8cd0-6658-7662-67d8" name="Runelore" hidden="false" targetId="ea4e-4c94-bec3-7f03" type="rule"/>
         <infoLink id="2140-ef5c-403a-cfd6" name="Forgefire" hidden="false" targetId="bb72-6ff9-97d0-2b93" type="rule"/>
+        <infoLink id="ed76-8f28-65dc-2311" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a2e6-9a16-059d-1847" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2587,34 +2640,34 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14e8-b4c0-b67f-78f0" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="9a38-32ff-bb23-71d8" name="Gromril Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9a38-32ff-bb23-71d8" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="396c-f18f-37b3-6eae" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5f3f-eef3-edd4-155f" name="Gromril Medium Armour" hidden="false" targetId="aa8c-8cb0-30f5-f6a3" type="profile"/>
+                <infoLink id="35fc-62e7-72d1-9cd8" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b69e-cac1-a84d-e223" name="Gromril Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b69e-cac1-a84d-e223" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b340-9105-3c31-97ca" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="be51-0396-acce-aad7" name="Gromril Light Armour" hidden="false" targetId="e519-9fbd-5902-912b" type="profile"/>
+                <infoLink id="c0f1-6e4e-8458-8fd5" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d268-8884-7239-a473" name="Gromril Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d268-8884-7239-a473" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57e3-6a17-2844-62b1" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2a13-ce8e-555a-2793" name="Gromril Heavy Armour" hidden="false" targetId="6633-a69d-b4c9-b92a" type="profile"/>
+                <infoLink id="6458-9af5-69a4-9d56" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="8.0"/>
@@ -2834,16 +2887,14 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
       </profiles>
       <rules>
         <rule id="04e4-18ae-5e68-44a9" name="Beer Casks" publicationId="aa7b-3583-0834-7bfa" page="145" hidden="false">
-          <description>At the start of each Dwarf turn, the Brewmaster can bestow one of the beers to the unit he is with. Whenever the Brewmaster has given out a draught of brew, roll a D6. If you roll a &apos;1&apos;, he and his unit suffer -1 to their WS, BS and I this turn.</description>
-        </rule>
-        <rule id="28d8-3caa-8a72-74bd" name="Beer Gut" publicationId="aa7b-3583-0834-7bfa" page="145" hidden="false">
-          <description>Enemy attacks against the Brewmaster&apos;s front suffer -1 To Wound.</description>
+          <description>At the start of each Dwarf turn, the Brewmaster can bestow one of the following beers to himself and the unit he is with. Whenever the Brewmaster has given out a draught of brew, roll a D6. If you roll a &apos;1&apos;, he and his unit suffer -1 to their WS, BS and I this turn.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="21f2-eae7-9b04-024b" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
-        <infoLink id="dc88-6e15-b8b7-3746" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+        <infoLink id="dc88-6e15-b8b7-3746" name="Beer Gut" hidden="false" targetId="a37b-fbd9-c266-3919" type="rule"/>
         <infoLink id="48f6-55f5-5f9d-bdb2" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+        <infoLink id="ada3-9202-82e3-66f0" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dbcb-62bd-954d-479b" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -3459,18 +3510,6 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f38b-57bb-5391-ccc2" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3353-9fe4-fc0d-b852" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ca5-050b-e6df-9a80" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9a53-60f3-3251-a2d3" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="f5be-336d-ff36-2775" name="Crossbow" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a32c-e86c-6098-262a" type="max"/>
@@ -3511,6 +3550,36 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="cc84-aaa2-ac35-ebb9" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce5f-88c2-8dd2-7d47">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5a9-7e47-60aa-c25f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83f6-5bf5-ffbd-0dcd" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ce5f-88c2-8dd2-7d47" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d32-03ee-3302-81e1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3a6c-5d45-2fc6-e28d" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="35a9-5b34-fdc6-0aec" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="48bd-4a73-c5ec-fb30" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e4b2-faf1-bcf2-7472" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3607,18 +3676,6 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a615-82ad-08b9-5514" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89d4-3440-efbd-7fbb" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb97-59d7-ac00-23fe" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5484-044e-354c-b699" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="1711-7f6b-0630-e6ef" name="Dwarf Handgun" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e36-8f5c-7ddf-e9eb" type="max"/>
@@ -3645,6 +3702,38 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="bee9-bdd9-83e1-ec9b" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="7cc3-4583-ba83-cc69">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b74c-8cb6-4075-60da" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d0d-6911-8615-664a" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7cc3-4583-ba83-cc69" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41f1-60b0-f68c-f323" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2cc6-ffa3-6b3e-2e45" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="853b-57e2-f121-9bf0" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5d1-a717-b8cd-0506" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="54d2-52e3-1781-146e" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="13.0"/>
           </costs>
@@ -3932,6 +4021,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <infoLink id="987b-167a-c4d4-1e37" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
             <infoLink id="9f3a-8af7-f953-7812" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="c41d-98fd-41d5-5fc9" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+            <infoLink id="1503-17a9-bc14-672d" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="1096-455d-81ac-a2a4" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -3958,12 +4048,12 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fca2-6c4f-6c05-1e1f" name="Gromril Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="fca2-6c4f-6c05-1e1f" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8da-ad7f-e754-7e8a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="f2cc-673f-44e1-bad7" name="Gromril Full Plate Armour" hidden="false" targetId="7eb8-a680-5bd0-3e2a" type="profile"/>
+                <infoLink id="ad31-3623-5e24-e761" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -5556,6 +5646,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <infoLink id="517e-a642-b828-9af8" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="9cf8-6941-5004-470d" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="6fc7-ada5-397a-87fc" name="Immunity (Flaming Attacks)" hidden="false" targetId="49c7-526e-cb3e-d7b7" type="rule"/>
+            <infoLink id="58b8-5cb5-b428-f0f6" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="4a87-ad3d-370c-3568" name="Drakegun" hidden="false" collective="true" import="true" type="upgrade">
@@ -5582,12 +5673,12 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f86c-cb0c-b565-4c6e" name="Gromril Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="f86c-cb0c-b565-4c6e" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aed4-c6be-fd78-527e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3d74-5306-2b45-348a" name="Gromril Full Plate Armour" hidden="false" targetId="7eb8-a680-5bd0-3e2a" type="profile"/>
+                <infoLink id="e5c2-98e4-41b5-72da" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6527,7 +6618,10 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         </profile>
       </profiles>
       <rules>
-        <rule id="5c25-14cf-3176-95b1" name="Dive Bomb" publicationId="aa7b-3583-0834-7bfa" page="175" hidden="false">
+        <rule id="5c25-14cf-3176-95b1" name="Gyrocopter" publicationId="aa7b-3583-0834-7bfa" page="224" hidden="false">
+          <description>You may take 0-2 Gyrocopters as a single Rare choice.</description>
+        </rule>
+        <rule id="c862-6489-bf61-dbcf" name="Dive Bomb" publicationId="aa7b-3583-0834-7bfa" page="175" hidden="false">
           <description>Once per game, during the Remaining Moves sub-phase, models with this special rule may drop bombs unless they are fleeing or have declared a charge that turn.
 
 To Dive Bomb, select one unengaged enemy unit that the Gyrocopter moved over in that turn. To determine the damage caused by the bombs, roll an artillery dice; this is the number of hits inflicted. If a misfire is rolled, the Gyrocopter takes a single Wound with no armour save allowed.
@@ -8548,32 +8642,29 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
       <description>Units entirely composed of models with this rule do not need to pass a LD test in order to march, regardless of the proximity of enemy units.</description>
     </rule>
     <rule id="7da8-9e3b-77c9-cc8a" name="Resolute" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>The models roll 3D6 for any Break tests taken in the first round of combat, and discard the highest dice.</description>
+      <description>When taking Break tests, models with this rule count as having lost the combat with 1 point fewer than they actually have.</description>
     </rule>
     <rule id="59e6-d52c-a438-cc94" name="Oathstone" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>A unit that contains one or more models with an Oath Stone can never choose to flee as a charge reaction, cannot be disrupted and, if any of its models are armed with hand weapon and shield, they can make Parry saves against attacks made to their flanks and rear. Furthermore, a character with an Oath Stone must always accept a challenge (if your unit contains more than one character with an Oath Stone, you can choose which of them accepts the challenge).</description>
+      <description>A unit that contains one or more models with an Oath Stone can never choose to flee as a charge reaction, cannot be disrupted and, if any of its models are armed with hand weapon and shield, they can make Parry saves against attacks made to their flanks and rear. In addition, the presence of the stone with the unit confers Magic Resistance (1) as its runes act to absorb wild magic. Furthermore, a character with an Oath Stone must always accept a challenge (if your unit contains more than one character with an Oath Stone, you can choose which of them accepts the challenge). However, if a model on an Oathstone fails a Break Test, he is removed as a casualty as he fights to the very last.</description>
     </rule>
     <rule id="a0d2-719d-c2ef-627e" name="Shieldbearers" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>Shieldbearers follow the rules for Mounts, and gives the whole model Unit Strength 3.</description>
+      <description>Shieldbearers should be placed on a 40x20mm base and add +2 to the Unit Strength of any model mounted on them.</description>
     </rule>
     <rule id="bb72-6ff9-97d0-2b93" name="Forgefire" publicationId="aa7b-3583-0834-7bfa" page="139" hidden="false">
-      <description>A Runesmith and Runelord, and all friendly infantry models in a unit joined by one of them, gain Armour Piercing (1) for as long as they remain with the unit.</description>
+      <description>A Runesmith and Runelord, and all friendly infantry models in a unit joined by one or more of them, gain Armour Piercing (1) for as long as they remain with the unit.</description>
     </rule>
     <rule id="ea4e-4c94-bec3-7f03" name="Runelore" publicationId="aa7b-3583-0834-7bfa" page="139" hidden="false">
       <description>A Runesmith/Runelord follows the rules for a Level 2/4 Wizard for the purposes of dispelling, and have Magic Resistance (1/2), respectively.</description>
     </rule>
     <rule id="b8e0-2cfd-0dae-8e2a" name="Locus of Power" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false">
-      <description>If you have one or more Anvils of Doom on the battlefield at the start of any Magic phase, add one dice to both your power and your dispel pool.</description>
+      <description>For each friendly Anvil of Doom on the battlefield at the start of any Magic phase, add one dice to both your power and your dispel pool.</description>
     </rule>
     <rule id="17c3-44e8-eb49-193b" name="Anvil of Doom" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false">
-      <description>A Runelord with an Anvil of Doom gains +2 to his W characteristic. He also gains Ward Save (5+) and Unbreakable. In addition, his troop type changes to War Machine with the following rules:
-
-A Runelord, his Anvil Guards and his Anvil of Doom are treated as single model – the Runelord cannot dismount. There are, however, two sets of characteristics, one for the Runelord and one shared profile for the Anvil Guards. The Runelord and the Anvil Guards use their own WS, S, I and A characteristics when they attack. Each can attack any opponent in base contact. The Anvil Guards’ Attacks do not benefit from any weapon, runic or otherwise, carried by the Runelord.
-
-The Anvil Guards and the Anvil have no W or T values, and can therefore never be attacked separately. However, if the Runelord is removed as a casualty, we assume that the Anvil Guards were slain alongside their master and the whole model is removed from play. If the model is attacked in close combat, it is the Runelord’s WSl that is used for the purposes of the enemy rolling To Hit.</description>
+      <description>A Runelord with an Anvil of Doom gains Ward Save (4+) and Unbreakable. In addition, his troop type changes to War Machine and he counts as being part of the crew. The Runelord can never choose to leave the Anvil during the game. If the Runelord is killed, the whole Anvil is also removed as a casualty.</description>
     </rule>
     <rule id="01a2-3b93-87d9-b91e" name="Strike the Runes" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false">
-      <description>A model mounted on an Anvil of Doom can use each of the following bound spells once per friendly Magic Phase. The Anvil can pivot on the spot before casting, and the range of the bound spells is measured from the Anvil itself.</description>
+      <description>A model mounted on an Anvil of Doom can use each of the following bound spells once per friendly Magic Phase. In addition, it may use up to
+4 Power Dice when attempting to cast each spell. The Anvil can pivot on the spot before casting, and the range of the bound spells is measured from the Anvil itself.</description>
     </rule>
     <rule id="3f1d-5a74-f98c-bf18" name="Artillery Master" publicationId="aa7b-3583-0834-7bfa" page="143" hidden="false">
       <description>If a Master Engineer is not fleeing, a single war machine that is within 3&quot; of him can use his BS and re-roll one artillery dice during the Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces or a
@@ -8605,6 +8696,12 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
     <rule id="1707-3abf-d5c8-97c0" name="Deathblow" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false">
       <description>If a Slayer is killed by normal Close Combat Attacks, it will immediately make a single Attack back against the unit or model that killed it before the Slayer is removed as a casualty.</description>
     </rule>
+    <rule id="6502-468e-b48f-4540" name="Gromril Armour" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
+      <description>Models with this rule add +1 to their armour saves if they wear light, medium, heavy or full plate armour.</description>
+    </rule>
+    <rule id="a37b-fbd9-c266-3919" name="Beer Gut" publicationId="aa7b-3583-0834-7bfa" page="145" hidden="false">
+      <description>Enemy attacks against the Brewmaster&apos;s front suffer -1 To Wound.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="a639-e694-8e14-945e" name="Dwarf Handgun" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -8614,22 +8711,22 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Move or Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="c578-94dc-987e-f225" name="Rune of Hearth and Home" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="c578-94dc-987e-f225" name="Rune of Hearth and Hold" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate bound spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets every friendly Dwarf unit in range. The target units gain Immune (Psychology) until the start of the next friendly Magic phase.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf unit anywhere on the battlefield. The target unit gains Stubborn until the start of the next friendly Magic phase. If the unit is already Stubborn, it becomes Unbreakable instead.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e4f2-da0b-5be2-af74" name="Rune of Oath and Steel" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="e4f2-da0b-5be2-af74" name="Rune of Oath and Honour" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate bound spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf unit anywhere on the battlefield. The target unit increases their armour save by 1 (to a maximum of 1+) until the start of the next friendly Magic phase.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf unit anywhere on the battlefield. The target unit may immediately make an additional move as if were the Remaining Moves sub-phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="71b8-c2ff-e35a-4ea3" name="Rune of Wrath and Ruin" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8809,34 +8906,6 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
       </characteristics>
     </profile>
-    <profile id="6633-a69d-b4c9-b92a" name="Gromril Heavy Armour" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
-      <characteristics>
-        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">3+</characteristic>
-        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">3+</characteristic>
-        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
-      </characteristics>
-    </profile>
-    <profile id="7eb8-a680-5bd0-3e2a" name="Gromril Full Plate Armour" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
-      <characteristics>
-        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">2+</characteristic>
-        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">2+</characteristic>
-        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
-      </characteristics>
-    </profile>
-    <profile id="e519-9fbd-5902-912b" name="Gromril Light Armour" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
-      <characteristics>
-        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">5+</characteristic>
-        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">5+</characteristic>
-        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
-      </characteristics>
-    </profile>
-    <profile id="aa8c-8cb0-30f5-f6a3" name="Gromril Medium Armour" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
-      <characteristics>
-        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">4+</characteristic>
-        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">4+</characteristic>
-        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
-      </characteristics>
-    </profile>
     <profile id="9208-26f4-7d27-4cdd" name="Master Rune of Skalf Blackhammer" publicationId="aa7b-3583-0834-7bfa" page="201" hidden="false" typeId="be21-8ba1-7009-d43e" typeName="Weapon Rune">
       <characteristics>
         <characteristic name="Effect" typeId="daeb-8a2c-9eae-f2dd">A weapon engraved with the Master Rune of Skalf Blackhammer will Wound any model not in magic armour on a To Wound roll of 2+, regardless of the target&apos;s T. Against models in magic armour, a roll of 3+ is required.</characteristic>
@@ -8952,6 +9021,29 @@ A second Rune of Spell breaking maintains the previous effect and, after the spe
     <profile id="070c-c416-7588-2ecf" name="Master Rune of Smiting" publicationId="aa7b-3583-0834-7bfa" page="201" hidden="false" typeId="be21-8ba1-7009-d43e" typeName="Weapon Rune">
       <characteristics>
         <characteristic name="Effect" typeId="daeb-8a2c-9eae-f2dd">A weapon engraved with the Master Rune of Smiting causes Multiple Wounds (D6).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6859-c610-8917-4444" name="Anvil of Doom" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">10</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6b4d-ca97-1223-ca26" name="Rune of Stone and Steel" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate bound spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf unit anywhere on the battlefield. The target unit increases their armour save by 1 (to a maximum of 1+) until the start of the next friendly Magic phase.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

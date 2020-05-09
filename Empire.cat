@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5941-78ef-698e-a105" name="Empire" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5941-78ef-698e-a105" name="Empire" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="901c-8001-972f-89d7" name="Pigeon Bomb Table">
       <characteristicTypes>
@@ -198,7 +198,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="75ca-cdd2-199f-af80" name="Deathclaw" hidden="false" collective="false" import="true" type="model">
@@ -698,7 +698,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -725,7 +726,7 @@
         <entryLink id="005d-1f2d-baa8-3f91" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="365.0"/>
+        <cost name="pts" typeId="points" value="350.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c0b3-6442-c70e-d7cb" name="Thyrus Gormann" hidden="false" collective="false" import="true" type="model">
@@ -788,7 +789,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3872,7 +3874,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4e2a-b809-f24b-8858" name="Imperial Griffon" hidden="false" collective="false" import="true" type="model">
@@ -3975,7 +3977,7 @@
                 <infoLink id="090b-5604-721a-335b" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cebb-9c7f-3f34-b3a4" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3986,7 +3988,7 @@
                 <infoLink id="a01c-23da-ef9c-04ec" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f893-6dbb-8659-59b0" name="Two/Additional Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -4001,6 +4003,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="cab8-7b6d-b4ae-62ac" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e199-bb22-867b-8377" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65f0-091d-16af-78ab" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e199-bb22-867b-8377" type="max"/>
               </constraints>
@@ -4008,7 +4017,7 @@
                 <infoLink id="efe9-afca-bc00-cbaa" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9ffa-f8a7-ebb0-0055" name="Hand Weapon &amp; Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -4020,7 +4029,7 @@
                 <infoLink id="a97e-7490-16c8-7d3d" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4038,7 +4047,7 @@
                 <infoLink id="58a1-0c73-2bc7-a5dd" name="Handgun" hidden="false" targetId="bd57-9e45-342f-ee49" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="24ac-1a81-4860-3f67" name="Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -4049,7 +4058,7 @@
                 <infoLink id="b54d-9b50-d299-18dd" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4170,7 +4179,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4209,7 +4219,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4310,7 +4321,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="03ad-c5a0-c732-a519" name="Imperial Griffon" hidden="false" collective="false" import="true" type="model">
@@ -5210,7 +5221,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <infoLink id="41b6-3ef0-c3af-cf57" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3819-a6f2-9741-04c0" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -5221,7 +5232,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <infoLink id="5725-c95f-13f1-a1a9" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="465a-5941-43b1-d1d9" name="Two/Additional Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -5236,6 +5247,13 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
               </costs>
             </selectionEntry>
             <selectionEntry id="9445-c269-e88c-5f57" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e6ba-c855-7753-f6de" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b50-0297-de5a-d02b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e6ba-c855-7753-f6de" type="max"/>
               </constraints>
@@ -5243,7 +5261,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <infoLink id="931b-99b2-d235-7c8f" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f6a3-8d3e-6b44-a29a" name="Hand Weapon &amp; Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -5400,7 +5418,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5502,7 +5520,8 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5541,7 +5560,8 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7160,7 +7180,7 @@ also choose to shoot at the primary quarry as if he had Sniper.</description>
                 <infoLink id="a5ca-e517-99f5-dc67" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="70c8-9644-747a-b583" name="Outrider" hidden="false" collective="false" import="true" type="upgrade">
@@ -8664,6 +8684,7 @@ also choose to shoot at the primary quarry as if he had Sniper.</description>
                     <infoLink id="b482-4de7-646e-fa24" name="Vampire Slayers" hidden="false" targetId="9b3a-0642-04ef-807a" type="rule"/>
                     <infoLink id="6e92-91e4-c4cc-a88d" name="Pariahs" hidden="false" targetId="f08c-2f16-eee1-d264" type="rule"/>
                     <infoLink id="10bb-1f06-5575-413e" name="Knight" hidden="false" targetId="Knight (Cav)" type="profile"/>
+                    <infoLink id="6339-2f44-aa72-fd79" name="Immunity (Fear)" hidden="false" targetId="9fed-6076-6c75-b774" type="rule"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="cd0f-f77f-4f34-7151" name="Warhorse" hidden="false" collective="true" import="true" type="model">
@@ -12378,7 +12399,7 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
                 <infoLink id="fd88-7b11-a567-8346" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="efa7-035c-7ee4-570c" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
@@ -15686,6 +15707,7 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
                     <infoLink id="0f74-26aa-31e3-cf3d" name="Vampire Slayers" hidden="false" targetId="9b3a-0642-04ef-807a" type="rule"/>
                     <infoLink id="3bb9-0676-0b29-95b1" name="Pariahs" hidden="false" targetId="f08c-2f16-eee1-d264" type="rule"/>
                     <infoLink id="6ee8-6a03-b1ea-557e" name="Inner Circle Knight" hidden="false" targetId="Inner Circle Knight (Cav)" type="profile"/>
+                    <infoLink id="9563-5fea-87c9-8c9e" name="Immunity (Fear)" hidden="false" targetId="9fed-6076-6c75-b774" type="rule"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="b0ce-73f5-e41c-acf9" name="Warhorse" hidden="false" collective="true" import="true" type="model">
@@ -16983,12 +17005,12 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8280-0731-4a4a-a514" type="min"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="0756-a005-9224-ed47" name="Repeater Handgun" hidden="false" collective="false" import="true" type="upgrade">
+                        <selectionEntry id="0756-a005-9224-ed47" name="Repeater Pistol" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="471a-4759-1687-655b" type="max"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="fec5-b1f7-9df2-140e" name="Repeater Handgun" hidden="false" targetId="e75c-712e-ec8b-35e9" type="profile"/>
+                            <infoLink id="fec5-b1f7-9df2-140e" name="Repeater Pistol" hidden="false" targetId="a7ff-a800-3ccc-4381" type="profile"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -17074,12 +17096,12 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e7a-d84f-200f-a86e" type="min"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="1ae2-2654-80e3-3385" name="Repeater Handgun" hidden="false" collective="false" import="true" type="upgrade">
+                        <selectionEntry id="1ae2-2654-80e3-3385" name="Repeater Pistol" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ee9-a515-508f-233d" type="max"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="1f31-cc05-c37e-43e3" name="Repeater Handgun" hidden="false" targetId="e75c-712e-ec8b-35e9" type="profile"/>
+                            <infoLink id="1f31-cc05-c37e-43e3" name="Repeater Pistol" hidden="false" targetId="a7ff-a800-3ccc-4381" type="profile"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -17164,12 +17186,12 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da35-006f-9d60-5d8e" type="min"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="e41e-7750-3bca-fe53" name="Repeater Handgun" hidden="false" collective="false" import="true" type="upgrade">
+                        <selectionEntry id="e41e-7750-3bca-fe53" name="Repeater Pistol" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1b7-3143-2ca1-6931" type="max"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="1f0f-d6f8-3cd9-0b3b" name="Repeater Handgun" hidden="false" targetId="e75c-712e-ec8b-35e9" type="profile"/>
+                            <infoLink id="1f0f-d6f8-3cd9-0b3b" name="Repeater Pistol" hidden="false" targetId="a7ff-a800-3ccc-4381" type="profile"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -17249,12 +17271,12 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ebd-d940-ca83-25dc" type="min"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="1cd0-360d-2b1f-4c6c" name="Repeater Handgun" hidden="false" collective="false" import="true" type="upgrade">
+                        <selectionEntry id="1cd0-360d-2b1f-4c6c" name="Repeater Pistol" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbf4-e27d-f25f-1004" type="max"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="47e0-1874-65c2-bade" name="Repeater Handgun" hidden="false" targetId="e75c-712e-ec8b-35e9" type="profile"/>
+                            <infoLink id="47e0-1874-65c2-bade" name="Repeater Pistol" hidden="false" targetId="a7ff-a800-3ccc-4381" type="profile"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>

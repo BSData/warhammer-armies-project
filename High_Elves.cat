@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="cfe9-a815-09c1-fecd" name="Attuned to Magic table">
       <characteristicTypes>
@@ -224,7 +224,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -377,7 +378,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -583,7 +585,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af"/>
               </characteristics>
             </profile>
           </profiles>
@@ -940,7 +943,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1207,7 +1211,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="80.0"/>
+            <cost name="pts" typeId="points" value="85.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1319,6 +1323,36 @@
                 <infoLink id="f2b6-b7c2-bc65-0a75" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                 <infoLink id="ddd5-e494-76f4-f5dd" name="Griffon" hidden="false" targetId="d1a3-6033-a3db-0081" type="profile"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="fbfd-c9e9-9acd-580f" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="ada7-dc21-9f4a-e599" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59b1-e8da-5b34-e106" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5b0f-5d4e-5bbd-b374" name="Shredding Talons" hidden="false" targetId="9e3d-1310-6e26-37de" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="04bc-8f7d-5525-52fe" name="Swooping Strike" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b29a-8b32-27e4-9865" type="max"/>
+                      </constraints>
+                      <rules>
+                        <rule id="dfce-17b3-6888-497f" name="Swooping Strike" publicationId="b724-d2c4-d151-2d9e" page="181" hidden="false">
+                          <description>The model gains Devastating Charge.</description>
+                        </rule>
+                      </rules>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="150.0"/>
               </costs>
@@ -1334,7 +1368,7 @@
                 <infoLink id="a177-9e37-19b8-6db0" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="52d8-eccb-88b3-2717" name="Elven Steed" hidden="false" collective="false" import="true" type="model">
@@ -1374,6 +1408,34 @@
                 <infoLink id="7e72-b10e-29e3-5d1b" name="Great Eagle" hidden="false" targetId="1ef4-a0a6-240d-c10d" type="profile"/>
                 <infoLink id="b7d0-cd77-0a46-19d1" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="a90e-3d28-7e89-e606" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="830f-d353-4646-a9a3" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="320e-4eee-e61a-f039" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="37ee-b6c9-d6fc-0b66" name="Shredding Talons" hidden="false" targetId="9e3d-1310-6e26-37de" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5bfa-6112-1ffa-b421" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7118-2cf2-5768-1042" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="7ed2-0122-390f-9350" name="Swiftsense" hidden="false" targetId="dd27-cab8-48e1-6354" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
               </costs>
@@ -1486,6 +1548,18 @@
                       <infoLinks>
                         <infoLink id="9026-560e-ef7d-b0ff" name="Woodman&apos;s Axe" hidden="false" targetId="863c-dd4c-59b4-5181" type="profile"/>
                         <infoLink id="358d-102f-6ca5-c8a2" name="Effect" hidden="false" targetId="3213-303a-b2f1-261d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="d991-06b6-0110-b6f4" name="Lion Cloak" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="451f-2a5b-5917-3730" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="349a-d91d-aa85-9f2c" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="6212-34f9-af8e-4643" name="Lion Cloak" hidden="false" targetId="59c2-04c7-02d5-c509" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -1818,7 +1892,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1858,7 +1933,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">2</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1931,6 +2007,34 @@
                 <infoLink id="f558-fccd-fea6-0edd" name="Great Eagle" hidden="false" targetId="1ef4-a0a6-240d-c10d" type="profile"/>
                 <infoLink id="8154-ae90-d600-3d96" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2ab8-053f-492c-cbe4" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="9e58-daa6-aed2-d46f" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f8a-d72a-d738-addb" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="9177-3b99-8465-48ff" name="Shredding Talons" hidden="false" targetId="9e3d-1310-6e26-37de" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0c91-3f0f-3a3a-5677" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="023a-3c10-6752-06d8" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="9f5a-fb3a-eba9-655a" name="Swiftsense" hidden="false" targetId="dd27-cab8-48e1-6354" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
               </costs>
@@ -1984,7 +2088,7 @@
                 <infoLink id="c8a0-8d29-8479-d4c5" name="Impale" hidden="false" targetId="0eea-3c8d-ec56-3333" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="55.0"/>
+                <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2236,7 +2340,8 @@
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                 <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2382,6 +2487,18 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="d5c4-17e0-c42a-9f43" name="Lion Cloak" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8165-e72e-3ca8-7852" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="065c-37f3-6620-c7c6" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9b56-8d0a-84f3-c442" name="Lion Cloak" hidden="false" targetId="59c2-04c7-02d5-c509" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2508,9 +2625,9 @@
             <infoLink id="d6e2-2664-03b2-5683" name="Attuned to Magic" hidden="false" targetId="bb58-1b96-8bbd-4333" type="rule"/>
             <infoLink id="d600-5229-9881-69e8" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="7fc7-74b6-16fc-e0b2" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
-            <infoLink id="475d-2240-1e12-6e12" name="Blizzard Aura" hidden="false" targetId="4876-9e47-4f07-e87e" type="rule"/>
             <infoLink id="2030-421c-13bd-ba6c" name="Result" hidden="false" targetId="4e87-81ef-2fb0-7324" type="profile"/>
-            <infoLink id="2226-272e-b818-af7c" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
+            <infoLink id="2226-272e-b818-af7c" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
+            <infoLink id="34b6-0439-1bd2-d5fa" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="250.0"/>
@@ -2864,7 +2981,7 @@
                 <infoLink id="10c0-97c5-234e-8cbd" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="233d-6aa4-7cdf-0796" name="Elven Steed" hidden="false" collective="false" import="true" type="model">
@@ -2904,6 +3021,34 @@
                 <infoLink id="c780-2d81-415f-c368" name="Great Eagle" hidden="false" targetId="1ef4-a0a6-240d-c10d" type="profile"/>
                 <infoLink id="8793-c8cd-de41-02e0" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="1319-e20b-5b85-9ffa" name="Upgrades" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="211c-c179-8997-ccbd" name="Shredding Talons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90d8-9e66-b144-9a4c" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5a11-ca80-0141-762d" name="Shredding Talons" hidden="false" targetId="9e3d-1310-6e26-37de" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="bfd3-7f7c-cdfb-0378" name="Swiftsense" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e59-05e7-e0a2-cf21" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="afd9-dcb7-6ae9-0925" name="Swiftsense" hidden="false" targetId="dd27-cab8-48e1-6354" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
@@ -2947,6 +3092,18 @@
                       <infoLinks>
                         <infoLink id="fae1-5e6b-e6fb-269c" name="Woodman&apos;s Axe" hidden="false" targetId="863c-dd4c-59b4-5181" type="profile"/>
                         <infoLink id="e0a6-0dd8-e2f3-67d8" name="Effect" hidden="false" targetId="3213-303a-b2f1-261d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f80b-75c5-6619-e99d" name="Lion Cloak" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b50-0540-363a-98d0" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e097-7d67-cebd-7da2" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="fa85-9467-0d42-f4b4" name="Lion Cloak" hidden="false" targetId="59c2-04c7-02d5-c509" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -3169,7 +3326,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3209,7 +3367,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3285,7 +3444,7 @@
                 <infoLink id="9e02-0ad9-aad5-7138" name="Impale" hidden="false" targetId="0eea-3c8d-ec56-3333" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="55.0"/>
+                <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3390,10 +3549,10 @@
                 <infoLink id="d324-6e6f-4f32-bffb" name="Attuned to Magic" hidden="false" targetId="bb58-1b96-8bbd-4333" type="rule"/>
                 <infoLink id="0ebe-be5c-ab74-99ed" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="c20d-966e-6f3f-a33e" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
-                <infoLink id="17b0-30b1-ef9e-4f70" name="Blizzard Aura" hidden="false" targetId="4876-9e47-4f07-e87e" type="rule"/>
                 <infoLink id="12bc-e0d3-0d47-2291" name="Frostheart Phoenix" hidden="false" targetId="10ef-98c3-71a1-9693" type="profile"/>
                 <infoLink id="5303-cf51-9bc0-e943" name="Result" hidden="false" targetId="4e87-81ef-2fb0-7324" type="profile"/>
                 <infoLink id="876b-13bc-e609-31c5" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
+                <infoLink id="8e48-352b-5aa9-c6c8" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="240.0"/>
@@ -3540,7 +3699,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="80.0"/>
+            <cost name="pts" typeId="points" value="85.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c0d0-4dd4-32af-d40e" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -3676,7 +3835,7 @@
       </profiles>
       <rules>
         <rule id="2479-ac57-2de9-e7f7" name="Reckless" publicationId="9e23-79cb-pubN77092" page="142" hidden="false">
-          <description>When a Dragon Mage casts a spell, a &apos;free&apos; Power dice is added to the casting attempt. This extra dice can cause a Irresistible Force or a Miscast as normal, and can cause the Dragon Mage to roll more dice than he is normally allowed to.</description>
+          <description>When a Dragon Mage casts a spell, a &apos;free&apos; Power dice is added to the casting attempt. This extra dice counts towards Ultimate Power and can cause a Miscast as normal, and allows the Dragon Mage to roll more dice than he is normally allowed to.</description>
         </rule>
         <rule id="8e28-da06-d4f6-9085" name="Warrior Mage" publicationId="9e23-79cb-pubN77092" page="142" hidden="false">
           <description>Dragon Mages get +2 to cast the spell Flaming Sword of Rhuin when targeting themselves.</description>
@@ -3768,7 +3927,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3800,7 +3960,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3904,7 +4065,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3974,7 +4136,8 @@
                     <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">1</characteristic>
                     <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">1</characteristic>
                     <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-3</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="d5d5-4c2e-491e-474a">1</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">3</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4789,7 +4952,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="24.0"/>
+            <cost name="pts" typeId="points" value="22.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4916,7 +5079,7 @@
                     <infoLink id="b95b-f350-70f8-f5b6" name="Ithilmar Barding" hidden="false" targetId="119e-6fba-31a3-cb8c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.5"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4932,7 +5095,7 @@
                 <infoLink id="4102-c725-840a-21db" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.5"/>
+                <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4951,7 +5114,7 @@
                     <infoLink id="f809-fd78-9251-af8b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.5"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d9b7-e6a3-ca26-c480" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -5038,7 +5201,7 @@
                 <infoLink id="a046-92c9-9e3a-bbbe" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="be95-b8e3-9e08-114e" name="Harbinger" hidden="false" collective="false" import="true" type="upgrade">
@@ -5380,6 +5543,18 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="8e08-e29a-b092-91a1" name="Lion Cloak" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22df-7a5c-ddb2-3516" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93b1-1dc6-ac9f-f0e8" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="27fb-707a-b92a-958c" name="Lion Cloak" hidden="false" targetId="59c2-04c7-02d5-c509" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5575,7 +5750,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="29.0"/>
+            <cost name="pts" typeId="points" value="28.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6327,6 +6502,34 @@
             <infoLink id="30d3-45d6-42d5-4804" name="Great Eagle" hidden="false" targetId="1ef4-a0a6-240d-c10d" type="profile"/>
             <infoLink id="92af-25f6-1ac6-ff84" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2b01-ebff-1398-415f" name="Upgrades" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="7930-3e1f-6e17-06e8" name="Shredding Talons" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="153f-5078-1578-afd4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="60c8-c989-2ec3-e65e" name="Shredding Talons" hidden="false" targetId="9e3d-1310-6e26-37de" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3610-05d7-ad42-567a" name="Swiftsense" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cdd4-f6c4-d48b-f15f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="74f4-86cd-326e-901b" name="Swiftsense" hidden="false" targetId="dd27-cab8-48e1-6354" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -6435,7 +6638,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="95.0"/>
+        <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d6b0-e075-c1de-794d" name="Phoenix" hidden="false" collective="false" import="true" type="model">
@@ -6488,13 +6691,13 @@
                 <infoLink id="347d-908a-4570-81e8" name="Attuned to Magic" hidden="false" targetId="bb58-1b96-8bbd-4333" type="rule"/>
                 <infoLink id="2fdb-95ae-e077-9d2d" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="9d2f-3188-6e30-d265" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
-                <infoLink id="3761-2777-af93-cfc9" name="Blizzard Aura" hidden="false" targetId="4876-9e47-4f07-e87e" type="rule"/>
                 <infoLink id="c705-3944-2ed9-223a" name="Frostheart Phoenix" hidden="false" targetId="10ef-98c3-71a1-9693" type="profile"/>
                 <infoLink id="0cf1-a32f-86ac-9bf4" name="Result" hidden="false" targetId="4e87-81ef-2fb0-7324" type="profile"/>
                 <infoLink id="b56a-4ecb-1b93-8043" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
+                <infoLink id="b5fb-6dbb-d601-92ca" name="Ice Attacks" hidden="false" targetId="fa30-0410-43da-e1d7" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="260.0"/>
+                <cost name="pts" typeId="points" value="245.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6847,9 +7050,6 @@
     <rule id="3e63-ad1a-583c-50b0" name="Swordmaster" publicationId="9e23-79cb-pubN77092" page="159" hidden="false">
       <description>Models with this rule ignore I penalties from great weapons and gain a Ward save (6+) against shots from all non-magical missile attacks fired at the model&apos;s front arc.</description>
     </rule>
-    <rule id="4876-9e47-4f07-e87e" name="Blizzard Aura" publicationId="9e23-79cb-pubN77092" page="177" hidden="false">
-      <description>Any enemy unit in base contact with a Frostheart Phoenix has Always Strikes Last and suffers -1 to its S (to a minimum of 1).</description>
-    </rule>
     <rule id="bb58-1b96-8bbd-4333" name="Attuned to Magic" publicationId="9e23-79cb-pubN77092" page="177" hidden="false">
       <description>When rolling to determine the strength of the Winds of Magic in the controlling player&apos;s Magic phase, compare the highest D6 rolled with the Attuned to Magic Table to determine what effects the Phoenix will have (the effect rolled will last until the start of the controlling player&apos;s next Magic phase):</description>
     </rule>
@@ -6868,7 +7068,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
       <description>If a Flamespyre Phoenix moves over an unengaged enemy unit in the Remaining Moves sub-phase, it suffers D6 S 4 hits with Flaming Attacks. This is a non-physical attack.</description>
     </rule>
     <rule id="0eea-3c8d-ec56-3333" name="Impale" publicationId="9e23-79cb-pubN77092" page="179" hidden="false">
-      <description>Unicorns gain Strength Bonus (1) in turns that they charge.</description>
+      <description>Unicorns gain +1 S to their Impact Hits.</description>
     </rule>
     <rule id="222e-52ff-ae92-083d" name="Fiery Breath" publicationId="9e23-79cb-pubN77092" page="148" hidden="false">
       <description>A Dragon has a S 4 Breath Weapon with Flaming Attacks.</description>
@@ -6878,6 +7078,15 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
     </rule>
     <rule id="4b1d-2010-d74e-666f" name="Windrider" publicationId="9e23-79cb-pubN77092" page="153" hidden="false">
       <description>A Sea Helm mounted on a Lothern Skycutter (and his Lothern Skycutter) has a 4+ ward save against shooting attacks. Furthermore, when mounted on a Lothern Skycutter, a Sea Helm re-rolls failed Dangerous Terrain tests.</description>
+    </rule>
+    <rule id="dd27-cab8-48e1-6354" name="Swiftsense" publicationId="b724-d2c4-d151-2d9e" page="180" hidden="false">
+      <description>The model gains +1 I.</description>
+    </rule>
+    <rule id="b2d0-e478-58a2-0b73" name="Swooping Strike" publicationId="b724-d2c4-d151-2d9e" page="181" hidden="false">
+      <description>The model gains Devastating Charge.</description>
+    </rule>
+    <rule id="9e3d-1310-6e26-37de" name="Shredding Talons" publicationId="b724-d2c4-d151-2d9e" page="180" hidden="false">
+      <description>The model gains Armour Piercing (1).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6890,16 +7099,16 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
     </profile>
     <profile id="63f3-694f-b72c-b6ea" name="Elven Bow" publicationId="9e23-79cb-pubN77092" page="138" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
-        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Volley Fire. Multiple Shots (2) (Only applies in turns the model has not moved. Cannot be used to Stand and Shoot.)</characteristic>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Elven Bows follow the rules for Bows. All shots with these weapons have Armour Piercing (1).</characteristic>
       </characteristics>
     </profile>
     <profile id="382b-9e51-5753-88bb" name="Elven Longbow" publicationId="9e23-79cb-pubN77092" page="138" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">30&quot;</characteristic>
-        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Volley Fire. Multiple Shots (2) (Only applies in turns the model has not moved. Cannot be used to Stand and Shoot.)</characteristic>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Elven Longbows follow the rules for Longbows. All shots with these weapons have Armour Piercing (1).</characteristic>
       </characteristics>
     </profile>
     <profile id="59c2-04c7-02d5-c509" name="Lion Cloak" publicationId="9e23-79cb-pubN77092" page="161" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
@@ -6979,7 +7188,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="3fa4-072f-d5f5-3cdd" name="Elven Steed" publicationId="9e23-79cb-pubN77092" page="179" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7133,7 +7342,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="4544-1720-a510-78b5" name="Tiranoc Chariot" publicationId="9e23-79cb-pubN77092" page="164" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7147,7 +7356,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="3213-303a-b2f1-261d" name="Effect" publicationId="9e23-79cb-pubN77092" page="161" hidden="false" typeId="c089-71d5-5b2f-2166" typeName="Lion Special Rules">
@@ -7187,9 +7396,9 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
     </profile>
     <profile id="172d-414b-217a-95b8" name="Bow of Avelorn" publicationId="9e23-79cb-pubN77092" page="169" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">30&quot;</characteristic>
-        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Volley Fire. Flaming Attacks. Magical Attacks. Multiple Shots (2) (Only applies in turns the model does not move.)</characteristic>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Longbow. All shots with this weapon are resolved at S 4 with Armour Piercing (1) and Magical Attacks.</characteristic>
       </characteristics>
     </profile>
     <profile id="dbd6-650d-51ba-1ba0" name="Illusory Assault" publicationId="9e23-79cb-pubN77092" page="143" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

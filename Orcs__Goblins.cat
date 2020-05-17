@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0d-50bf-b007-6cef" name="Animosity Table">
       <characteristicTypes>
@@ -79,6 +80,13 @@
         <characteristicType id="c466-9d2d-0801-f89e" name="2"/>
         <characteristicType id="1c28-6095-5f63-b155" name="3"/>
         <characteristicType id="cec3-d0d9-efb6-66d8" name="4-6"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="2719-1279-8051-60e9" name="Battle Brew Table">
+      <characteristicTypes>
+        <characteristicType id="997a-9674-1633-ba5b" name="1-2"/>
+        <characteristicType id="d41b-f2df-9c58-7012" name="3-4"/>
+        <characteristicType id="182f-fced-36f8-c286" name="5-6"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -6324,10 +6332,15 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                     </selectionEntry>
                     <selectionEntry id="2e33-cd1c-244a-344b" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="31aa-6207-ec2b-d3d2" value="0">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a61-7c66-e63c-60a4" type="atLeast"/>
-                          </conditions>
+                        <modifier type="set" field="31aa-6207-ec2b-d3d2" value="0.0">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a61-7c66-e63c-60a4" type="atLeast"/>
+                                <condition field="selections" scope="c531-8b88-9cfa-577f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9805-05a9-afa4-f3df" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -6343,9 +6356,14 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                     <selectionEntry id="32c4-dc5f-38a9-f9da" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
                         <modifier type="set" field="8581-bc19-7a41-8d18" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a61-7c66-e63c-60a4" type="atLeast"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a61-7c66-e63c-60a4" type="atLeast"/>
+                                <condition field="selections" scope="c531-8b88-9cfa-577f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9805-05a9-afa4-f3df" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -13073,13 +13091,29 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="139c-6629-6c00-1c5f" name="Lucky Shrunken Head" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="139c-6629-6c00-1c5f" name="Staff of Sneaky Stealin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b525-b9dc-37d0-af13" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7976-4133-d49c-f85d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="191b-cb54-5226-d9e7" name="Lucky Shrunken Head" publicationId="9e23-79cb-pubN78975" page="205" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="191b-cb54-5226-d9e7" name="Staff of Sneaky Stealin&apos;" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Goblins (of any type) only. During your Magic phase, the Staff of Sneaky Stealin&apos; allows you to remove one dice from the opponent&apos;s Dispel dice pool and add it to your own Power dice pool.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="45.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0013-bcb4-e89d-7203" name="Lucky Shrunken Head" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab63-ef55-aa51-8951" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c235-e430-7bd0-af2f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c5ee-c521-b63f-e3f7" name="Lucky Shrunken Head" publicationId="9e23-79cb-pubN78975" page="205" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Savage Orc Shamans and Savage Orc Great Shamans only. The Head Iincreases the Warpaint save of the bearer and any unit he joins from by +1.</characteristic>
               </characteristics>
@@ -13087,6 +13121,103 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dc4b-87c1-8d15-ba0f" name="Idol of Mork" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9061-9600-26b9-84ac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aec2-53b2-6f39-014e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f4fd-1f1a-fbfb-81c0" name="Idol of Mork" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Orcs (of any type) only. At the start of your magic phase, the Idol of Mork adds one power dice to your power
+pool for every friendly Orc unit (any type) with 20 or more models in combat within 24&quot; if the bearer. However, it removes one power dice from your power pool for every friendly fleeing Orc unit (any type) within 24&quot; of the bearer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4070-078d-6993-9ba5" name="Dangly Wotnotz" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eba2-4339-f3a5-f203" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ac6-dac5-12f3-8484" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4b67-207d-f4d1-0b9e" name="Dangly Wotnotz" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When casting a spell, the bearer of the Dangly Wotnotz may use to add +1 to the result of one of the dice rolled. This may cause Ultimate Power or prevent a Miscast.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3774-4fdb-fa60-c8f9" name="Ditto&apos;s Double Doin&apos; Doodahs" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c31-3b5f-ca6c-1c30" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c994-b837-1fda-65ea" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c918-a368-7587-da5d" name="Ditto&apos;s Double Doin&apos; Doodahs" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The bearer of Ditto&apos;s Double Doin&apos; Doodahs may choose to attempt to cast the same spell twice per Magic phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2396-f144-2858-e8f8" name="Buzgob&apos;s Knobbly Staff" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f6e-6037-1e9e-a544" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a8c-b17e-89c5-fd91" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d997-e7c1-d20b-a289" name="Buzgob&apos;s Knobbly Staff" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Buzgob&apos;s Knobbly Staff allows the wielder to reroll all power dice used to cast a spell once per Magic phase. This cannot be used if a miscast is rolled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e8f-1287-24ac-f018" name="Staff of Baduum" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f01c-d8e7-c125-4ff3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f49-e377-e2d2-d917" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0ea9-b7c4-b6bc-09b7" name="Staff of Baduum" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of Baduum gives the bearer a +1 bonus to the result of their spell casting attempts.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aafd-b4f3-fafa-92ef" name="Waaagh! Paint" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="15d6-f359-caf8-3b02" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f57e-7ec6-6b85-d47c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="05ea-0e75-27c8-6a56" name="Waaagh! Paint" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Savage Orc only. If the wearer of the Waaagh! Paint is in close combat at the start of your Magic phase, they receive +2 to the result of their spell casting attempts.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13124,6 +13255,241 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="bbfb-3500-16b8-cb8f" name="Bigged&apos;s &apos;Ed Kickin&apos; Boots" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca03-5ffe-dc65-17bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="298d-a0e0-acc2-5a46" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1e4f-80f9-539e-6f09" name="Bigged&apos;s &apos;Ed Kickin&apos; Boots" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The wearer of Bigged&apos;s &apos;Ed Kickin&apos; Boots gains Stomp.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9735-28f8-fdea-2472" name="The Pipes of Doom" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6cc-bab2-b88e-23d9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2aa-ebcf-2573-6e7c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bb8b-7816-9b5a-ed4d" name="The Pipes of Doom" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Night Goblins only. The Pipes of Doom can be used the start of the Shooting Phase. All enemy War Beasts, Cavalry, Monstrous Beasts, Monstrous Cavalry, Chariots (except those that do not have any mounts pulling them) and Monsters within 12&quot; must take a Panic test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9805-05a9-afa4-f3df" name="Ironback Boar" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a86-35f1-6eb2-1321" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e18-24f1-c4dd-b0c5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a20a-9f01-3db9-10d9" name="Ironback Boar" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Common Orcs and Black Orcs only. War Boar. The Ironback Boar has S 4 and Impact Hits (D3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="3a5a-eba0-f459-4ac2" name="Ironback Boar" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ea8-4a0a-6229-fe7b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fad6-8b45-406c-9ea8" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="36b1-3bf0-9a17-eec8" name="Ironback Boar" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">3</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="5792-a174-9a9c-dd1d" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
+                <infoLink id="ac2b-fdf2-6507-9c51" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+                <infoLink id="8125-31bb-3c67-87dd" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="3070-d05d-59ca-6000" name="Tusker Charge" hidden="false" targetId="9044-efe2-16a7-9850" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7d12-3249-bb6f-584c" name="&apos;Eadbuttin&apos; &apos;At" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c662-298e-83db-3da9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2e8-eddd-0bd0-89bb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0d10-9047-7719-30f3" name="&apos;Eadbuttin&apos; &apos;At" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Orcs (of any type) only. The &apos;Eadbuttin&apos; &apos;At gives the wearer +1 A with Always Strikes First and Killing Blow in challenges. This attack does not benefit from any other weapon rules the wearer might have.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6a6e-2562-a7c2-588a" name="Effigiy of Mork" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9008-3552-af59-3ceb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e41-e1cc-005e-fef8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5370-217e-261a-49bc" name="Effigiy of Mork" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Savage Orcs only. All close combat attacks made against the bearer of the Effigy of Mork suffer -1 To Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="49a3-769c-5f1e-c017" name="Tricksy Trinket" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="26f8-0a05-e37a-106b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ff9-cc75-fcad-aae4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="638e-04de-cf8a-6abd" name="Tricksy Trinket" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Goblins (of any type) only. No models in base contact with the wear of the Tricksy Trinket may take Ward Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4fbe-c59e-d116-1366" name="Mad Cap Mushrooms" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a8c1-02ec-2c14-9c3e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7035-3aee-c6b1-b91e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="93be-b4b8-5bba-6edf" name="Mad Cap Mushrooms" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Night Goblins only. One use only. If the model bearing the Mad Cap Mushrooms is in a unit containing one or more Night Goblin Fanatics, they may choose to give them each Mad Cap Mushroom before they are released. Each Fanatic from this unit inflicts an additional D6 Hits on any unit they move into base contact with this turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1854-9de7-0a75-6a61" name="Nibbla&apos;s &apos;Itty Ring" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd08-b08c-80c0-19df" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74cb-62fa-2d6d-9468" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0564-eb15-cae7-4dec" name="Nibbla&apos;s &apos;Itty Ring" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Bound Spell, Power Level 4. Nibbla&apos;s &apos;Itty Ring contains the &apos;Eadbutt spell from the Spells of the Big Waaagh! Roll a D6 each time it has successfully been cast; on the roll of a 1, the spell is resolved against the caster itself.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3fdf-c1c6-f0e5-ee37" name="&apos;Eadbutt (Bound Spell)" hidden="false" targetId="1d96-d5f1-0119-6daf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6b49-61c8-ed0e-0d36" name="Warboss Imbad&apos;s Iron Gnashas" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c562-73ca-f303-16f4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c0d-5b0e-c1de-fa3d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9ce5-38d8-a151-dd38" name="Warboss Imbad&apos;s Iron Gnashas" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Common Orcs and Black Orcs only. The wearer of Warboss Imbad&apos;s Iron Gnashas gains +1 A with Killing Blow. This attack does not benefit from any other weapon rules the wearer might have.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4280-38b2-fc54-8c73" name="Brimstone Bauble" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b85-2274-3013-6362" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0363-94cc-98c8-3cbb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cb5c-846c-995f-b83b" name="Brimstone Bauble" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Goblins only. If the bearer of the Brimstone Bauble is slain in close combat, all units in base contact suffer D6 S 6 Hits, distributed as Hits from shooting. Any Wounds caused count towards combat resolution.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a19d-0697-edb7-0cfe" name="Guzzla&apos;s Battle Brew" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af2d-3be4-ef00-cf21" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="831b-7877-8784-2590" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ed9c-c2fb-b43a-4e04" name="Guzzla&apos;s Battle Brew" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Roll a D6 for the bearer of Guzzla&apos;s Battle Brew at the start of the game and consult the battle brew table to see what effect it has.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="032a-dc66-644c-7a4f" name="Guzzla&apos;s Battle Brew" publicationId="e3da-3848-ff08-a482" page="40" hidden="false" typeId="2719-1279-8051-60e9" typeName="Battle Brew Table">
+              <characteristics>
+                <characteristic name="1-2" typeId="997a-9674-1633-ba5b">The model gains Stupidity.</characteristic>
+                <characteristic name="3-4" typeId="d41b-f2df-9c58-7012">The model gains Hatred.</characteristic>
+                <characteristic name="5-6" typeId="182f-fced-36f8-c286">The model gains Hatred and Frenzy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5a55-d19c-845b-dd53" name="Maad&apos;s Map" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="050c-785c-50af-1ad9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35fb-8ea6-411f-3d91" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6d9b-c8b9-da20-67ba" name="Maad&apos;s Map" publicationId="e3da-3848-ff08-a482" page="39" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model on foot only. Before deployment, roll a D6. On 4+, the bearer of Maad&apos;s Map gains Scouts. On a 1-3, the model has gotten lost and gains Ambushers instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="9911-b6c3-419e-b4ba" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="5857-a7aa-f954-a027" type="selectionEntryGroup"/>
@@ -13150,6 +13516,132 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="33d6-fc2a-aa60-0ba8" name="Ironskin Shield" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac02-7e22-48fe-fe7d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9d9-d4be-b1ce-9741" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8e83-e740-4029-3e06" name="Ironskin Shield" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. The Ironskin Shield gives the bearer Ward Save (4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3686-75c4-f026-0bd1" name="Armour of Protectyness" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e484-b5e6-a0bd-1bf7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0e4-1301-68c7-db6a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ce12-2b4e-82ce-ebd9" name="Armour of Protectyness" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. The Armour of Protectyness gives the wearer Regeneration (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5918-bf62-943a-6174" name="Armour of Mork" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9bf-cadc-3d77-b677" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3330-11de-a306-c057" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="598a-693c-80df-7b18" name="Armour of Mork" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. The Armour of Mork gives the wearer Magic Resistance (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2167-15ac-f2ec-60ab" name="Drog&apos;s Dead &apos;Ard Armour" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6e9-2a94-5c10-c054" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a06-91f1-3aa7-ad18" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b8ad-be3c-9a5b-6eab" name="Drog&apos;s Dead &apos;Ard Armour" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">1+</characteristic>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">1+</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Orcs (of any type) only.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8c16-3b89-9993-361f" name="Nobbla&apos;s Helmet" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f88e-d09c-e13d-434b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="557f-718e-49c1-c175" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d9a4-5e0b-5d07-c5cd" name="Nobbla&apos;s Helmet" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Goblins only. Nobbla&apos;s Helmet gives the wearer Ward save (6+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3450-bbba-2c67-e8ac" name="Ugbrag&apos;s Lucky Shield" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c29-4bd4-97b8-8fb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c43-5fd0-c9bd-d353" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0e2d-6ece-4ace-e128" name="Ugbrag&apos;s Lucky Shield" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. Ugbrag&apos;s Lucky Shield makes the wearer ignore the first Wounding Hit suffered in the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="30c1-099d-a69e-48c8" name="Spiteful Shield" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d432-f115-9a03-f1d9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2f6-af4a-038c-ce5f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f7c4-dad8-2a2c-2a78" name="Spiteful Shield" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. For each To Hit roll of a 1 against the bearer, the Spiteful Shield inflicts a S 5 Hit against the model that struck the blow.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13211,6 +13703,86 @@ Attacks. Models that already have Poisoned Attacks will automatically wound on T
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e538-7581-fc2b-23f1" name="Rowdy Grott&apos;s Big Red Raggedy Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8869-ecc5-ec18-3d21" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="96ec-5deb-aec7-ed8c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7952-6908-c894-60bc" name="Rowdy Grott&apos;s Big Red Raggedy Banner" publicationId="e3da-3848-ff08-a482" page="40" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Common Goblins only. All Common Goblins within 12&quot; of Rowdy Grott&apos;s Big Red Raggedy Banner may roll 3D6 for their Break Tests and Panic tests and discard the highest result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="12ef-6676-a015-d9e5" name="Gork&apos;s Waaagh! Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2bc-b98e-e497-30e9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae04-7bb0-f942-6731" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1a8b-13b3-a69e-7bd8" name="Gork&apos;s Waaagh! Banner" publicationId="e3da-3848-ff08-a482" page="40" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Orcs (of any type) only. The unit carrying Gork&apos;s Waaagh! Banner adds D6&quot; to its charge distance. If the charge is failed, the unit will move forward its normal failed charge distance.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2d45-6d5b-2b29-503d" name="Guff&apos;s Flag" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8e1c-e309-394e-cadf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3ec-134b-e365-ab49" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="74cc-bb10-d615-e6a9" name="Guff&apos;s Flag" publicationId="e3da-3848-ff08-a482" page="40" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying Guff&apos;s Flag has Immunity (Psychology).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="09ab-d5da-5404-658e" name="Nogg&apos;s Banner of Butchery" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7d3-2dc6-0476-9902" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2f0-c804-fe60-5b75" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c585-354a-4c34-b94f" name="Nogg&apos;s Banner of Butchery" publicationId="e3da-3848-ff08-a482" page="40" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">One use only. Nogg&apos;s Banner of Butchery may be used at the start of any close combat phase. All models in the unit (including mounts) carrying the Banner of Butchery gain +1 A for the remainder of the close combat phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="57d2-6396-06cf-9992" name="The Bashin&apos; Flag of Bork" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d3b-a521-c1ad-6119" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8175-e215-5427-e6f2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="806c-65d3-a4f4-be20" name="The Bashin&apos; Flag of Bork" publicationId="e3da-3848-ff08-a482" page="40" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The carrying the Bashin&apos; Flag of Bork ignores their first failed Animosity roll of the game – it passes the test instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="1c9f-0867-ed4e-2210" name="Magic Standards" hidden="false" collective="false" import="true" targetId="2613-24d7-a26e-eb37" type="selectionEntryGroup"/>
@@ -13239,13 +13811,13 @@ Attacks. Models that already have Poisoned Attacks will automatically wound on T
             <cost name="pts" typeId="points" value="85.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9698-325d-477a-69e1" name="Bashas Axe of Stunty Smashin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9698-325d-477a-69e1" name="Basha&apos;s Axe of Stunty Smashin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="391b-5c36-9295-d0a3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3cd-a148-517f-ebe6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6ce9-dd40-d1fc-0173" name="Bashas Axe of Stunty Smashin&apos;" publicationId="9e23-79cb-pubN78975" page="204" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="6ce9-dd40-d1fc-0173" name="Basha&apos;s Axe of Stunty Smashin&apos;" publicationId="9e23-79cb-pubN78975" page="204" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
@@ -13255,6 +13827,330 @@ Attacks. Models that already have Poisoned Attacks will automatically wound on T
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a09-f73f-bc5b-825b" name="Basha&apos;s Bloodaxe" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ae5-01ff-ea85-1e3a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="588a-b4e0-ad42-010f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="774e-4ffb-a75e-b9fc" name="Basha&apos;s Bloodaxe" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Common Orcs on foot only. The wielder of Basha&apos;s Bloodaxe gains Frenzy. However, they get +D6 Attacks (rolled before making their Attacks) and can never lose their Frenzy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="65.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7867-cf73-a6ab-b312" name="Warboss Ironclaw&apos;s Waaagh! Cleava" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6643-1b60-e706-9322" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b89-0dff-dc48-f5f1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5367-ea48-0193-7404" name="Warboss Ironclaw&apos;s Waaagh! Cleava" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Common Orcs only. All hits from Warboss Ironclaw&apos;s Waaagh! Cleave Wound automatically with Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="60.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4bb6-625a-22a5-b93d" name="Shaga&apos;s Screaming Sword" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df95-9031-07c6-066b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf65-eb0b-149f-06bb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="79dc-2c14-203b-cc4a" name="Shaga&apos;s Screaming Sword" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Shaga&apos;s Screaming Sword gives the wielder +1 S and +1 A for each enemy character within 12&quot;.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8d82-8c97-cec5-0ff1" name="Basha&apos;s Big Axe of Bashin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a7a-d224-e67a-4cdb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6658-3196-3f28-ea79" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c72f-5b2d-f091-9b27" name="Basha&apos;s Big Axe of Bashin&apos;" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Basha&apos;s Big Axe of Bashin&apos; gives wielder +2 A.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5c10-a002-9651-35ac" name="Fumpa&apos;s Club of Fumpin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9077-66ad-d20b-4029" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2177-5995-7c65-dd7a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5777-581f-2d77-e00e" name="Fumpa&apos;s Club of Fumpin&apos;" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+2</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89fe-2c49-4bc5-0f99" name="Hacka&apos;s Sword of Hackin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="54bf-fb17-a7d5-a73f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d229-ef31-b890-4151" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="881f-8521-db89-a93b" name="Hacka&apos;s Sword of Hackin&apos;" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Hacka&apos;s Sword of Hackin&apos; makes the wielder always Hit any opponent on roll of a 2+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2bdb-6741-fae8-d597" name="Kleeva&apos;s Cleaver of Cleavage" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b235-df89-bac9-e07f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="462d-76d4-c7e5-8c34" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3874-7e74-2b8c-6be1" name="Kleeva&apos;s Cleaver of Cleavage" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All hits with Kleeva&apos;s Cleaver of Cleavage Wound automatically. Armour saves are modified by the S of the bearer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0cd0-89e6-2382-6429" name="Krumpa&apos;s Club of Crumpin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcc1-8dfd-0976-fb2d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a71d-a868-5c08-04a6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="81f4-e934-244e-19fa" name="Krumpa&apos;s Club of Crumpin&apos;" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Krumpa&apos;s Club of Crumpin&apos; gives the wielder Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d349-b718-4db1-1124" name="Martog&apos;s Best Basha" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ced6-2231-43f3-2ce1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="167a-36c8-6390-0681" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="615e-dda4-b4df-82a9" name="Martog&apos;s Best Basha" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Martog&apos;s Best Basha gives the wielder +1 WS and +1 I.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9157-a15e-74e1-f292" name="Duffa&apos;s Club of Duffin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c91f-292f-e0cc-5961" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9a2-9b70-3643-199e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3e58-dac8-e8f3-1358" name="Duffa&apos;s Club of Duffin&apos;" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Duffa&apos;s Club of Duffin&apos; gives the wielder +3 A in the first round of close combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ce23-a7f3-1e5a-1cc9" name="Porko&apos;s Pigstikka" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a2cd-bfaa-3c1c-805f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1272-f9e7-65b5-39d2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bd41-a2e1-ed8a-8828" name="Porko&apos;s Pigstikka" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Orcs (of any type) only. Mounted characters only. Spear. On any turn that they charge, Porko&apos;s Pigstikka gives the wielder +1 A for each point of rank bonus that the unit they are attacking has (up to a maximum of +3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e347-6ba2-227e-5a2c" name="Ulag&apos;s Ak&apos;rit Axe" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1da7-8200-cc18-6d51" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="536c-bbdd-741d-9476" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d812-0a74-83d9-b0c4" name="Ulag&apos;s Ak&apos;rit Axe" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Ulag&apos;s Ak&apos;rit Axes allows the wielder to re-roll any failed To Hit rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="974b-461b-8533-2301" name="Kurbog&apos;s Curmudgeonly Clobbera" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="929d-9bd6-2232-53e9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c093-aa3a-f98a-ddf2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4664-7d18-11af-9f51" name="Kurbog&apos;s Curmudgeonly Clobbera" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Any model Wounded (but not slain) by Kurbog&apos;s Curmudgeonly Clobbera may not attack this close combat phase. If they have already attacked this close combat phase, they may not attack in the next close combat phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b2c8-cd25-b6c5-c7da" name="Backstabber&apos;s Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f08-0cb2-5005-d7db" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8c1-1af5-3806-83ce" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a75d-d62f-b5ff-d873" name="Backstabber&apos;s Blade" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Goblins (of any type) only. The Backstabber&apos;s Blade gives the wielder Poisoned Attacks. In addition, they get +1 S if they attack the enemy to their flank, or +2 S if they attack the enemy in their rear.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5a5e-f8f5-c5c2-9c56" name="Sneaky Skewerer" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d2f-a1c0-a650-5af3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="710d-e45b-fc7c-5abc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d94e-c4b7-5d85-d6c1" name="Sneaky Skewerer" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Goblins (of any type) only. The Sneaky Skewerer gives the wielder Armour Piercing (3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="00d2-d0a9-062c-8ea2" name="Lucky&apos;s Dirk" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="143f-3402-6a89-4030" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="caed-f701-cb75-0dd4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b346-1c14-8c85-9fc7" name="Lucky&apos;s Dirk" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Goblins (of any type) only. Lucky&apos;s Dirk gives the wielder +1 S for each Magic Item carried by any model he attempts to strike.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6665-6deb-2b04-e4c0" name="Owzat&apos;s Club of Smackin&apos;" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14b4-0bde-4fff-6ce6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9fe-8f51-f6ab-281f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8595-12ac-4a92-d382" name="Owzat&apos;s Club of Smackin&apos;" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">An Infantry model which is Wounded (but not slain) by Owzat&apos;s Club of Smackin&apos; is immediately knocked clean out of combat. Move the model D6&quot; backwards, stopping at least 1&quot; away from other units or impassable terrain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5a62-68b1-0f21-1893" name="Wollopa’s One Hit Wunda" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="563a-8b17-c192-90dd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be90-2fc5-786b-d166" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0643-af6d-dd78-df6e" name="Wollopa’s One Hit Wunda" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">One use only. Wollopa&apos;s One Hit Wunda may be used at the start of any close combat phase when it is the wielder&apos;s turn to attack. The wielder may replace all its normal Attacks with a special attack that is resolved at +3 S with Heroic Killing Blow.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13276,6 +14172,86 @@ Attacks. Models that already have Poisoned Attacks will automatically wound on T
             <profile id="6193-baa4-c840-ee1d" name="The Collar of Zorga" publicationId="9e23-79cb-pubN78975" page="204" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">War Beasts, Monstrous Beasts, Monsters, Cavalry mounts, Monstrous Cavalry mounts and beasts pulling chariots require 6&apos;s to hit the bearer. In addition, the wearer can attempt to take control of any one creature belonging to the above Troop Types at the start of each close combat phase. Each player roll a D6 and add the unmodified LD of the wearer of the Collar and the beast he is trying to control. If the Orc player scores equal or higher, he takes control of the beast who will now attack any friendly models in base contact for the remainder of the close combat phase. If the Orc player scores lower, the beast may act normally this turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5abb-920b-31ef-c6ab" name="Warboss Umm&apos;s Best Big Boss&apos;s At" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f599-5c4f-f4bf-760c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="405f-795d-adaa-8ef7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="07b9-594e-8dae-27af" name="Warboss Umm&apos;s Best Big Boss&apos;s At" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Warboss Umm&apos;s Best Big Boss&apos;s &apos;At gives the wearer Ward Save (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f49c-0d66-125d-6843" name="Amulet of Protectyness" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d3be-a0fd-ce98-851a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6341-8331-d4f4-915d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="783f-2eb4-7f8b-e29e" name="Amulet of Protectyness" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">When the bearer of the Amulet of Protectyness suffers an unsaved Wound, they count as having the same Ward save as the model that caused the Wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e45a-a3c3-6358-57e0" name="Sizzla&apos;s Shiny Baubles" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfd5-cb03-a2c7-6186" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ee2-9556-ed59-0e2b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e36c-665c-7e4c-ce24" name="Sizzla&apos;s Shiny Baubles" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Sizzla&apos;s Shiny Baubles can be used against any successfully cast enemy spell that targets the bearer or the unit they are with. Roll a D6; on 1-3 nothing happens; on a 4+ the spell is reflected back at the caster and their unit and affects them instead, following all the normal rules for the spell. The original caster may then attempt to dispel their own spell as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f74a-b438-a339-c4af" name="Glowy Green Amulet" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90c0-90f1-5b21-ced6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d354-3705-a75a-5d0c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dd31-85b7-378c-91e0" name="Glowy Green Amulet" publicationId="e3da-3848-ff08-a482" page="37" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Instead of making a normal dispel attempt, the wearer of the Glowy Green Amulet may attempt to nullify any enemy spell cast at the bearer or the unit they are with by a rolling a number of dice equal to the number of dice used to cast the spell. As long as no 1&apos;s are rolled, the spell is dispelled. However, if one or more 1&apos;s are rolled, the spell gets through as the Amulet overloads and explodes, killing the wearer outright (with no saves of any kind allowed).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e41f-5054-4a08-0df2" name="Magical Warpaint" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2862-58a4-56c4-6be9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1660-fe04-675a-b6b6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3541-fa8f-adc6-6566" name="Magical Warpaint" publicationId="e3da-3848-ff08-a482" page="38" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Savage Orcs only. The wearer of the Magical Warpaint may re-roll failed Ward Saves.</characteristic>
               </characteristics>
             </profile>
           </profiles>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1306-7f01-ae3c-4fa0" name="Eye of the Gods Table">
       <characteristicTypes>
@@ -18718,6 +18719,82 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="08d5-1b98-2763-0b73" name="Infernal Puppet" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9afd-51d2-1980-9b73" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6357-9319-3621-9ab5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5f4a-4bd0-a825-4ba0" name="Infernal Puppet" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The bearer of the Infernal Puppet may choose to modify any rolls on the Miscast table made by any Wizard on the battlefield by up to D3 each time.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e076-2d74-1d5f-b021" name="Staff of Change" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc8c-ee37-1dde-3bac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93a4-234d-10ce-e422" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3b60-6486-daf6-5e89" name="Staff of Change" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Mark of Tzeentch only. The bearer can re-roll any number of the dice rolled to cast or dispel a spell. This can effectively negate any effects of a Miscast and cause Ultimate Power. However, if the bearer casts a spell with Ultimate Power using the staff&apos;s re-roll ability, the staff will exhaust its power and cease working for the rest of the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="65.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9c8b-76f9-6d8e-e75a" name="Rod of Corruption" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="da3a-477b-6a5d-4df0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="493d-8b66-4a3a-1060" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="14c7-aa42-6f56-7620" name="Rod of Corruption" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Mark of Nurgle only. Bound Spell, Power Level 3.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="29aa-74c4-250e-604b" name="Corruption" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit suffers D6 S 2 Hits with Ignores Armour Saves. This has no effect against Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9d24-3e91-e629-2b99" name="Sceptre of Domination" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98e8-3c12-7fe4-4f9c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98a4-8cac-6867-f172" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4d8f-3cfe-921b-2a13" name="Sceptre of Domination" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Mark of Slaanesh only. Bound Spell, Power Level 4. The Sceptre of Domination contains the Pavane of Slaanesh spell from the Lore of Slaanesh.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a8d5-8a9e-5b3c-5f5c" name="Pavane of Slaanesh (Bound Spell)" hidden="false" targetId="a012-5764-3f62-c2bb" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="d1b7-a14a-d0ad-aeb8" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
@@ -18752,6 +18829,111 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1db0-0b9f-6249-3886" name="Blasphemous Amulet" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c33-2034-3d61-58a0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b92f-da93-bbdb-25fb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5adf-bc0d-e893-7641" name="Blasphemous Amulet" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the start of every close combat phase, all enemy models in base contact with the bearer of the Blasphemous Amulet must pass a T test or suffer one Wound which Ignores Armour Saves. This has no effect against Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e814-f51e-c936-637d" name="Rod of Torment" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1129-6d8b-5829-1be9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f170-3b63-ec32-b3d1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="854e-57a5-23a9-90ff" name="Rod of Torment" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the start of every close combat phase, all enemy models in base contact with the bearer of the Blasphemous Amulet must pass a T test or suffer one Wound which Ignores Armour Saves. This has no effect against Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="67d4-0c69-eaad-9f8d" name="Torment" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6 S 3 hits.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cc1f-3d07-0ca7-6ca3" name="Faithless Charm" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d4ed-cd2b-fa9c-f528" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9082-696a-82fd-a1ea" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dd66-ef4c-d264-bd6d" name="Faithless Charm" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Faithless Charm gives the bearer Always Strike First and Killing Blow. However, if they fail any LD test, they lose Always Strike First and gain Frenzy and Always Strike Last instead. The bearer cannot lose their Frenzy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2be6-ff04-d421-f9cb" name="Bindings of Slaanesh" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c2f-9a8a-0eac-7d7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e55c-d63f-4342-b57b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9108-ab2a-1d87-ea53" name="Bindings of Slaanesh" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Mark of Slaanesh only. Enemies cannot refuse challenges issued by the wearer of the Bindings of Slaanesh. In addition, they are subject to Always Strikes Last in challenges.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a33c-78b3-1d84-5b45" name="The Black Tongue" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a28-24eb-566c-f294" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14ae-0c0c-8e94-e2fe" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="60f5-f721-1086-e7f5" name="The Black Tongue" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Mark of Khorne only. One use only. The Black Tongue can be used whenever an enemy Wizard fails to cast a spell. When used, the spell counts as having been Miscast. The model bearing the Black Tongue then suffers a wound with no saves allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d3d1-f663-dbcc-f324" name="Favour of the Gods" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="012b-fbce-d002-9367" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b08f-6c90-13d7-8428" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b005-4833-2eaf-9e22" name="Favour of the Gods" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">After rolling on the Eye of the Gods table the bearer may add or subtract one from his roll. This may not affect a result of 2 or 12.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -18800,6 +18982,78 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="7ab3-039b-9d9c-6272" name="Armour of Morrslieb" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8cf-7cef-5c40-ff40" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e831-29c2-091c-50a4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a956-d1b3-4125-9dc7" name="Armour of Morrslieb" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The Armour of Morrslieb gives the wearer a Ward Save (4+) against non-Magical Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6bb1-fe1f-fa00-6ad4" name="Skinhidden Plate" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1da5-2f05-ff52-7546" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8c8-2071-ab16-116e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="31f5-0fb4-8856-bf57" name="Skinhidden Plate" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The Skinhidden Plate confers +1 T upon the wearer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9ec7-c4a9-9604-6353" name="The Bronze Armour of Zhrakk" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5021-b6a8-6378-fb45" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fa3-9c6c-f7e4-06a1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ccc3-ee98-3c0d-915e" name="The Bronze Armour of Zhrakk" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The Bronze Armour of Zhrakk gives the wearer Immunity (Psychology, Killing Blow, Multiple Wounds). However, no other model may use the model&apos;s LD.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="59e5-ac07-afc4-eae7" name="Armour of Tortured Souls" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a4b-096c-75a9-5eb7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1baa-9a1b-f590-ae14" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c976-1938-6ad2-ce50" name="Armour of Tortured Souls" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The Armour of Tortured Souls gives the wearer +1 T against non- Magical Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="ac58-75fc-92cc-9394" name="Magic Armour" hidden="false" collective="false" import="true" targetId="557c-c8c5-0c0f-d2b3" type="selectionEntryGroup"/>
@@ -18821,13 +19075,93 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Contains a bound spell.</characteristic>
               </characteristics>
             </profile>
-            <profile id="5e11-751d-368a-fc75" name="Banner of Wrath" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+            <profile id="5e11-751d-368a-fc75" name="Wrath" publicationId="1a01-044f-047b-618f" page="247" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
                 <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
                 <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If cast, it causes D6 S 4 hits. This is a Lightning attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aeb5-a128-c43b-ec40" name="Doom Totem" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c09e-cf9d-7863-5eac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="393a-542a-7513-7be9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f810-e431-4841-4257" name="Doom Totem" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All enemy units with Line of Sight to the Doom Totem suffer a -1 penalty to their LD. This standard has no effect on models with Immunity (Psychology).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="90ce-94ea-f0ed-729d" name="Banner of Rage" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="017b-4333-9398-306c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f74-d0fa-ce62-8312" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="db78-3e83-1cf4-04e8" name="Banner of Rage" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Mark of Khorne only. The unit carrying the Banner of Rage can never lose their Frenzy. In addition, it may re-roll failed Break Tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c72c-4667-9352-b284" name="Blasted Standard" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a6e-318d-ac19-b88d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d5e-efc7-4945-8b27" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6d3d-eee0-f6cc-6250" name="Blasted Standard" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Each time the unit carrying the Blasted Standard suffers a hit from a shooting attack, roll a D6 immediately before rolling To Wound. On the roll of 2+, the S of that hit is halved. However, if the result is a 1, the S of that hit is instead doubled. Attacks that do not roll To Wound, or that wound automatically, are not affected by the Blasted Standard.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d3cd-8555-2dcb-5d12" name="Festering Shroud" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f1e8-0374-d827-4e4b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebb8-838c-9d88-eb1a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3700-7c80-adc8-6966" name="Festering Shroud" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All models in base contact with the unit carrying the Festering Shroud must pass a T test or suffer a Wound which Ignores Armour Saves. This standard has no effect on models with the Mark of Nurgle or Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c6b2-77c5-4870-d61a" name="Rapturous Standard" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cae6-6088-4f22-9b7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b57d-e419-c7c4-0218" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0a2d-b79e-7dae-66f7" name="Rapturous Standard" publicationId="e3da-3848-ff08-a482" page="51" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Rapturous Standard gains Unbreakable.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18899,6 +19233,150 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="f27d-7be5-b402-da6c" name="Aethersword" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9250-ce46-8ac0-6669" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99b0-ce1b-1094-e63c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6b8b-751f-e8dd-d5a0" name="Aethersword" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Aethersword gives the wielder Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b3f8-8c08-b39b-d8ef" name="Berserker Sword" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="407f-523c-563e-1e02" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afdd-500b-ea91-079e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c085-03de-65a5-b6d2" name="Berserker Sword" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Mark of Khorne only. Model on foot only. The Berserker Sword gives the wielder +1 A for every enemy model in base contact.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="12ae-adac-be69-550e" name="Blade of Blood" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c45-2483-06ef-402c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aee0-8757-c2a9-fff6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ba29-1814-215f-2885" name="Blade of Blood" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">For every unsaved Wound caused by the Blade of Blood, the wielder may take a S test. If passed, the wielder regains 1 Wound previously lost during the game. However, if the test is failed, the wielder loses 1 Wound with no saves allowed instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ec41-74f8-6856-7f0e" name="Whip of Pleasure" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ddbc-3417-1bab-34f9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2430-16aa-af27-4035" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2536-48da-1261-7d5c" name="Whip of Pleasure" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Mark of Slaanesh only. Requires Two Hands. The Whip of Pleasure gives the wielder +1 A and Always Strikes First.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="684d-8e08-1dc3-b15b" name="Glaive of Putrefaction" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b8db-a4cb-2fa5-d244" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a64d-5ffa-8011-72f4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a7e6-e64b-5140-5099" name="Glaive of Putrefaction" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Mark of Nurgle only. Every unsaved Wound caused by the Glaive of Putrefaction makes the victim suffer -1 to their S and T for the remainder of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ffea-afe9-08d8-f521" name="Whip of Subversion" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1724-53c3-ec8c-1b45" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a20-1cc5-1a2b-09da" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1594-fcd3-e9bf-d123" name="Whip of Subversion" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Mark of Slaanesh only. If an enemy character or monster takes an unsaved wound from the Whip of Subversion and that model has not yet made its attacks for that round, then you may force it to allocate its attacks upon other models from its own side. Wounds caused count towards your combat resolution.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9b27-874d-2676-27bf" name="The Father of Blades" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5386-9acf-028b-5a45" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cadc-b075-d216-325d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="392b-01ec-0a28-1520" name="The Father of Blades" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All To Hit rolls of 1 directed against the wielder of the Father of Blades instead hit the attacking model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4d8f-edeb-bbcf-9e0d" name="Soul Cleaver" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e18d-f7cc-6732-4159" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd63-2a02-189c-aec7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4f50-6f54-f1ff-c31a" name="Soul Cleaver" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Any model that suffers an unsaved Wound from the Soul Cleaver must pass a T test or suffer an additional wound with no saves allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="915b-27cb-4bce-86b2" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
@@ -18923,6 +19401,38 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4946-e891-f632-5ec0" name="Collar of Khorne" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="96a2-eff9-2d20-09da" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be2b-0c9a-77d0-4fac" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e3e2-2e7c-d7df-1991" name="Collar of Khorne" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Mark of Khorne only. The Collar of Khorne gives the wearer the Magic Resistance (3) special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3309-8ac6-478b-9189" name="Gaze of the Gods" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87de-8e1d-c89c-7feb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="205c-1388-5825-7168" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="89c4-9c46-5b3b-fb15" name="Gaze of the Gods" publicationId="e3da-3848-ff08-a482" page="50" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Gaze of the Gods gives the wearer a Ward Save (4+). However, if the model flees for any reason, the wrath of the Chaos gods is visited upon him. After working out the Flee move, the model is turned into a Chaos Spawn, with the same number of wounds remaining as the character had. If you do not have a Spawn model to replace the character then he simply counts as slain. For Victory Points purposes, the character is not counted as slain or below half Wounds unless the Spawn he has turned into is slain or is below half Wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -19117,7 +19627,7 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d822-e200-0bfb-91a2" name="Horns" page="" hidden="false" collective="false" import="true" type="upgrade">

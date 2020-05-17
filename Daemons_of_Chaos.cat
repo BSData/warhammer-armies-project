@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="324d-b81e-296a-d5cd" name="Reign of Chaos Table">
       <characteristicTypes>
@@ -656,7 +657,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="32fd-7676-f95d-125d" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="32fd-7676-f95d-125d" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="522b-b96d-2603-126c" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c361-f014-bd6a-ad35" type="max"/>
@@ -664,8 +665,9 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
           <entryLinks>
             <entryLink id="3b33-b976-b09a-cfaf" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
             <entryLink id="d31e-d176-09aa-6581" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
-            <entryLink id="0044-aceb-b174-9953" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e734-c694-dcfa-6eff" type="selectionEntryGroup"/>
+            <entryLink id="0044-aceb-b174-9953" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
             <entryLink id="9282-fe6c-1759-6c22" name="Gifts of Khorne" hidden="false" collective="false" import="true" targetId="1cbd-c04a-acbd-57b9" type="selectionEntryGroup"/>
+            <entryLink id="5cac-816e-618c-7506" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e734-c694-dcfa-6eff" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -755,7 +757,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4cf1-0e6b-5155-8dd4" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4cf1-0e6b-5155-8dd4" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="642d-e890-d2fa-83da" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="50a1-7ea4-1704-9092" type="max"/>
@@ -765,6 +767,8 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <entryLink id="4e75-d586-381e-47cc" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="4e0f-8c53-296f-564c" name="Talismans" hidden="false" collective="false" import="true" targetId="7076-9cba-be01-b9e1" type="selectionEntryGroup"/>
             <entryLink id="6272-4f63-cf59-3b2e" name="Gifts of Tzeentch" hidden="false" collective="false" import="true" targetId="d406-65f6-d51e-0fe2" type="selectionEntryGroup"/>
+            <entryLink id="3218-c582-b036-b7d2" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
+            <entryLink id="09ed-09de-7174-13de" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -919,7 +923,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
         <categoryLink id="5e9a-cd19-e212-f413" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="62a9-1c8c-cc7a-bd16" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="62a9-1c8c-cc7a-bd16" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4667-e97e-abba-5c25" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7a53-476c-7e56-0eaa" type="max"/>
@@ -928,6 +932,8 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <entryLink id="7301-83b8-8861-b767" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
             <entryLink id="798c-d944-e0d8-9e6d" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="0196-5e9c-66b1-c270" name="Gifts of Nurgle" hidden="false" collective="false" import="true" targetId="2e39-1fa4-40a3-3c18" type="selectionEntryGroup"/>
+            <entryLink id="6fbd-5998-a043-769d" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
+            <entryLink id="f5fe-5cbe-f716-2443" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1145,7 +1151,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
         <categoryLink id="e12c-5ac5-a3e7-6fc3" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5324-dc2a-be5b-9fcf" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5324-dc2a-be5b-9fcf" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5683-a5cd-0bb3-ddd2" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="71c2-cd96-2bd0-3a42" type="max"/>
@@ -1154,6 +1160,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <entryLink id="f8a3-9ced-73ae-661a" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
             <entryLink id="d415-9398-be22-4bfc" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="7cc0-fc03-1319-553f" name="Gifts of Slaanesh" hidden="false" collective="false" import="true" targetId="a6c0-ee41-9842-7cc5" type="selectionEntryGroup"/>
+            <entryLink id="b0ba-b236-70c3-3f9e" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1358,7 +1365,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
         <categoryLink id="58eb-0eb1-1ecd-745c" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="c7a5-b92d-2c05-a1ec" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c7a5-b92d-2c05-a1ec" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e77-e262-2ca4-faf5" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6f7e-e970-9c5b-7f87" type="max"/>
@@ -1368,6 +1375,8 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <entryLink id="4afa-d4a1-bd10-1cc5" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="97ab-0012-adb4-e57e" name="Talismans" hidden="false" collective="false" import="true" targetId="7076-9cba-be01-b9e1" type="selectionEntryGroup"/>
             <entryLink id="62b7-ec4b-1fb1-9389" name="Gifts of Tzeentch" hidden="false" collective="false" import="true" targetId="d406-65f6-d51e-0fe2" type="selectionEntryGroup"/>
+            <entryLink id="7dfa-0b94-f49a-d1de" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
+            <entryLink id="8699-55d5-2cdb-f573" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1554,15 +1563,16 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
         <categoryLink id="1342-bf6d-5390-3c88" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7d7e-2fa6-1631-fbce" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7d7e-2fa6-1631-fbce" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8096-e2d3-8b08-6930" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7c91-aae4-8a41-05c0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="5c09-8c74-7f31-80dd" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
             <entryLink id="3ac8-796c-aec8-ded6" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="6a63-36b7-9026-a5a2" name="Gifts of Slaanesh" hidden="false" collective="false" import="true" targetId="a6c0-ee41-9842-7cc5" type="selectionEntryGroup"/>
+            <entryLink id="7fb1-0450-aedc-0dcc" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
+            <entryLink id="4473-1cee-cfd2-f91a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1620,7 +1630,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f334-716b-8fc6-4334" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f334-716b-8fc6-4334" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0771-bacd-73e6-363e" type="max"/>
                     <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e761-ddc8-5fdf-f433" type="max"/>
@@ -1630,6 +1640,8 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <entryLink id="db9e-719f-dd7b-2d21" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
                     <entryLink id="2773-c9b2-ed70-ccf7" name="Talismans" hidden="false" collective="false" import="true" targetId="7076-9cba-be01-b9e1" type="selectionEntryGroup"/>
                     <entryLink id="c840-596b-a217-5495" name="Gifts of Tzeentch" hidden="false" collective="false" import="true" targetId="d406-65f6-d51e-0fe2" type="selectionEntryGroup"/>
+                    <entryLink id="2efd-1321-63b3-cb28" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
+                    <entryLink id="7d2f-53ae-98d0-8e63" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1805,7 +1817,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4d4e-a614-708f-4324" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4d4e-a614-708f-4324" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1857-7c5f-a9c9-d9db" type="max"/>
                     <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="beac-74e6-4151-0d23" type="max"/>
@@ -1814,6 +1826,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <entryLink id="3629-5ac8-e3af-c5e5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                     <entryLink id="4e89-095e-95c2-da24" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
                     <entryLink id="06d1-764e-cfec-cb09" name="Gifts of Slaanesh" hidden="false" collective="false" import="true" targetId="a6c0-ee41-9842-7cc5" type="selectionEntryGroup"/>
+                    <entryLink id="f99d-303b-b73d-0809" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1989,7 +2002,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1b1a-27f5-1275-e8b7" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1b1a-27f5-1275-e8b7" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d4b-7b63-710a-ffce" type="max"/>
                     <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f0a5-afdd-2767-07e4" type="max"/>
@@ -1998,6 +2011,8 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <entryLink id="b04d-c11f-9c70-74f8" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                     <entryLink id="9f29-2e48-e37a-8f24" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
                     <entryLink id="00c8-63d4-8866-7c18" name="Gifts of Nurgle" hidden="false" collective="false" import="true" targetId="2e39-1fa4-40a3-3c18" type="selectionEntryGroup"/>
+                    <entryLink id="1cd6-5e14-be18-0acc" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
+                    <entryLink id="e994-b074-ac60-7e4f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2172,13 +2187,15 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ea8f-7785-7074-c871" name="Daemonic Gifts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ea8f-7785-7074-c871" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3156-36c9-f42d-e3c5" type="max"/>
                     <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e74-7dbf-bd68-e6e0" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="c969-00f5-9c54-357d" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
+                    <entryLink id="816f-cf41-2c62-53d9" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
+                    <entryLink id="12ce-e3da-2b38-0ac2" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2366,7 +2383,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4056-d6e8-dfbd-6b3f" name="Daemonic Gifts and Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4056-d6e8-dfbd-6b3f" name="Daemonic Gifts and Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="751e-ca57-42de-79ef" type="max"/>
                     <constraint field="points" scope="parent" value="150.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1c11-85c4-f98e-395c" type="max"/>
@@ -2376,6 +2393,7 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                     <entryLink id="6774-b738-644e-86d7" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
                     <entryLink id="c1b3-3fbc-98eb-fbaf" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e734-c694-dcfa-6eff" type="selectionEntryGroup"/>
                     <entryLink id="9c92-b6d1-fd1c-7875" name="Gifts of Khorne" hidden="false" collective="false" import="true" targetId="1cbd-c04a-acbd-57b9" type="selectionEntryGroup"/>
+                    <entryLink id="5964-11d9-5b95-f169" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3111,7 +3129,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1a25-9e66-7bf8-1cdb" name="Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1a25-9e66-7bf8-1cdb" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="22ea-ea81-fdce-92fc" value="0">
                       <conditions>
@@ -3131,6 +3149,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                   <entryLinks>
                     <entryLink id="c6ba-c02a-e3ec-14a0" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                     <entryLink id="1dcf-458d-b880-4ac2" name="Talismans" hidden="false" collective="false" import="true" targetId="7076-9cba-be01-b9e1" type="selectionEntryGroup"/>
+                    <entryLink id="6c05-3bde-d165-6e29" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
+                    <entryLink id="db59-ec70-cd17-41e7" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3462,7 +3482,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="20ab-63b9-c0ac-e769" name="Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="20ab-63b9-c0ac-e769" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="4486-6da5-7252-9e97" value="0">
                       <conditions>
@@ -3481,6 +3501,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                   </constraints>
                   <entryLinks>
                     <entryLink id="97c0-8cec-61ef-8b9c" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
+                    <entryLink id="5ff2-e0e3-91f4-ff8f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3739,7 +3760,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c459-43a3-8fe4-0354" name="Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c459-43a3-8fe4-0354" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="8208-5253-e7d0-0b09" value="0">
                       <conditions>
@@ -3758,6 +3779,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                   </constraints>
                   <entryLinks>
                     <entryLink id="ee59-9732-ea18-e7d2" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
+                    <entryLink id="2087-b8a8-aa81-9659" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
+                    <entryLink id="5490-99b3-189d-31f3" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3971,7 +3994,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="37db-7c90-6da5-3398" name="Hellforged Artefacts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="37db-7c90-6da5-3398" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="decrement" field="9cc4-f387-50e9-cbe3" value="1.0">
                       <repeats>
@@ -3990,7 +4013,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                   </constraints>
                   <entryLinks>
                     <entryLink id="7666-3cc8-c014-e5ac" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
-                    <entryLink id="f4b5-775d-8e0d-40fd" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e734-c694-dcfa-6eff" type="selectionEntryGroup"/>
+                    <entryLink id="f4b5-775d-8e0d-40fd" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
+                    <entryLink id="7544-dbfc-369f-94ce" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -6883,6 +6907,159 @@ but it may not fire grapeshot.</characteristic>
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d132-bfff-b706-899e" name="Standard of Chaos Glory" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9af0-bf30-b0dd-141c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e46-03b2-648e-0ac7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="03d8-fd32-208e-2ec5" name="Standard of Chaos Glory" publicationId="e3da-3848-ff08-a482" page="14" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The Standard of Chaos Glory allows all friendly units of Daemons within 12&quot; to roll 3D6 for their Daemonic Instability tests and discard the highest result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="99a7-bbaf-dc95-f4b9" name="Banner of Hellfire" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d83-3aa1-9936-c744" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1ac-e8b5-5893-ccf6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="84d1-4212-04b6-0a53" name="Banner of Hellfire" publicationId="e3da-3848-ff08-a482" page="14" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Bound Spell, Power Level 5.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9e66-72a4-cc2c-b0c9" name="Hellfire" publicationId="e3da-3848-ff08-a482" page="14" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">6&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all enemy units within range (including units in close combat). The target units suffer D6 S 5 Hits with Flaming Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1ad6-3c23-7ce4-b4fa" name="Great Icon of Despair" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eba2-37bf-fd2b-f390" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f759-1efe-da82-ea7b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6ed3-96a7-f7c1-5624" name="Great Icon of Despair" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All enemy units with Line of Sight to the Great Icon of Despair suffer a -1 penalty to their LD. This standard has no effect on models with Immunity (Psychology).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5000-9fd0-7aff-38b9" name="Banner of Unholy Victory" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="db09-81b1-2193-32ec" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f891-51bc-63ff-720b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e00f-8a3a-4665-74c5" name="Banner of Unholy Victory" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of Unholy Victory gains a +D3 combat resolution bonus.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8fc0-a913-2b58-3f8a" name="Great Standard of Sundering" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c78-146f-778f-584f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb6d-6fe8-acbc-a8df" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="12c3-c71d-d99e-ac41" name="Great Standard of Sundering" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">After both armies have been deployed, but before the roll for first turn, choose a Lore of Magic. All Wizards suffer a -2 penalty to cast spells from that Lore. In addition, any spells cast from the Lore of Light will miscast on the roll of a double 1&apos;s and 2&apos;s.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d396-1045-bc90-97ff" name="Skull Totem" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="11d5-568e-c5bc-62cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f62-9794-b5c5-106a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f963-fc8c-f6c8-cb58" name="Skull Totem" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Skull Totem can March three times their normal Movement value.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0400-7df3-f698-6ac3" name="Icon of Sorcery" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c320-4af1-d443-b8cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a946-0b93-1e96-66dc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="41bc-8980-4f5f-2e94" name="Icon of Sorcery" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Daemon of Tzeentch only. The unit carrying the Icon of Sorcery gains a +1 bonus to the result of their spell casting attempts.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6441-ad5f-2658-4f92" name="Standard of Seeping Decay" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5705-7add-30f5-eaf3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c36-a971-37b7-bd17" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fac6-37da-2924-4b03" name="Standard of Seeping Decay" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Standard of Seeping Decay re-roll failed rolls To Wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="baab-6b32-8382-bb76" name="Siren Standard" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c28-cb80-6bc9-91ec" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b88-0e1a-2ff6-3c7e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8fb6-5d80-2734-91fa" name="Siren Standard" publicationId="e3da-3848-ff08-a482" page="15" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Any enemy unit charged by the unit carrying the Siren Standard can only choose Hold as a charge reaction. This standard has no effect on models with Immunity (Psychology).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="679b-7ed4-80f9-48fa" name="Magic Standards" hidden="false" collective="false" import="true" targetId="2613-24d7-a26e-eb37" type="selectionEntryGroup"/>
@@ -6999,6 +7176,96 @@ but it may not fire grapeshot.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e29-3ce4-3fed-ee90" name="The Eternal Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="93be-2df7-5009-5594" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62b7-2d35-51ad-4387" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="627c-7eaa-1c0f-836e" name="The Eternal Blade" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Roll a D3 at the start of each round of combat – the bearer’s WS, S, I and A are increased by this amount until the end of the phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0733-48a2-e816-b013" name="Etherblade" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="853e-4df4-b1dd-a6f4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c17-33e9-34be-9863" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1800-3dca-4980-b081" name="Etherblade" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Slaanesh only. The Etherblade gives the wielder Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="762e-97fb-9689-32d3" name="Firestorm Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2463-de45-9777-7580" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33de-27ec-6dd7-2ebb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9c0f-afb7-7eae-5011" name="Firestorm Blade" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Khorne only. The Firestorm Blade gives the wielder Flaming Attacks and allows them to re-roll failed rolls To Wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2c44-f8ff-09f4-5d3f" name="Blade of Blood" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6855-e531-0091-003f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83e4-8144-dcf7-1f96" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="65d7-d880-0866-0fe8" name="Blade of Blood" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Khorne only. Attacks made with the Blade of Blood have Killing Blow.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1b05-f468-e561-9385" name="Torment Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4f86-77e8-5581-43a6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba08-41a5-072f-1402" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="105f-f537-f60b-d462" name="Torment Blade" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Slaanesh only. A model that suffers one or more unsaved wound from the Torment Blade must pass a LD test. If failed, they may not attack that close combat phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7501,6 +7768,113 @@ but it may not fire grapeshot.</characteristic>
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fa90-b934-7df2-70a8" name="Arcane Items" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f09-4b57-4734-b3b5" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5c4c-e1bf-49e7-43cd" name="Staff of Nurgle" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="07a1-0f58-5d9d-3ad1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="42df-f733-b09f-2af0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0d89-1683-239d-e2a8" name="Staff of Nurgle" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Bound Spell, Power Level 5. The Staff of Nurgle contains the Rancid Visitation spell from the Lore of Nurgle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4bee-bf03-87d3-2158" name="Rancid Visitations" hidden="false" targetId="Rancid Visitations (Bound Spell)" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d171-8d8b-1e88-01b4" name="Wand of Whimsy" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="db3f-39fe-acbb-6af9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c92-81d7-b4c7-7340" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d0d7-55a9-e8b1-9f7d" name="Wand of Whimsy" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Whenever the bearer successfully casts or dispels a spell, roll a D6 – the Wand of Whimsy gains a charge on a roll of 5+. The Wand of Whimsy grants the bearer a bonus to both S and A equal to the number of charges for the remainder of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f0d0-8155-93a0-b8ef" name="The Chromatic Tome" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="96de-f45d-c9ac-e93d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8dca-8faa-bb74-231f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8a0b-dadd-d976-33cc" name="The Chromatic Tome" publicationId="e3da-3848-ff08-a482" page="13" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Daemon of Tzeentch only. You can choose to reroll the Winds of Magic dice in your turn. However, if you do so, your opponent can also reroll the Winds of Magic dice in his turn, if he wishes. In either case, all of the Winds of Magic dice must be re-rolled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="61b2-fcce-6a37-363d" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="12fb-9043-3608-2fbe" name="Enchanted Items" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e17b-ac43-417f-c4a9" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="9dcb-bb84-6936-de2e" name="The Portal Glyph" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f093-b03b-ff2f-682b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e223-1235-43a9-f7b7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6c77-0ed2-0f3f-ce79" name="The Portal Glyph" publicationId="e3da-3848-ff08-a482" page="14" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">If your army contains the Portalglyph, you can choose to keep a single unit in the Realm of Chaos instead of deploying it at the start of the game. The Portalglyph can be placed in any of your Remaining Moves sub-phases. If the bearer is slain, he must immediately place the Portal Glyph before being removed as a casualty. In either case, place a counter or other suitable marker within 12&quot; of the bearer and scatter it 3D6&quot; (6D6&quot; if he was slain). If the counter ends up off the board, or within 1&quot; of a unit or impassable terrain, alter the scatter distance by the smallest amount possible to ensure the counter is placed 1&quot; before or beyond the obstruction.
+
+Once the Portalglyph has been placed, the unit in the Realm of Chaos can enter play through the Portalglyph during the Remaining Moves subphase of any subsequent friendly turn. When the unit does so, place it facing any direction, provided that: the rear of the back rank is in base contact with the counter, no model is more than 12&quot; from the counter, and the unit is not within 1&quot; of another unit, impassable terrain or the board edge. The unit can then move normally (but not march).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="34e0-1f79-b5b8-6094" name="The Rock of Inevitability" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="215d-651a-9142-1ad7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4026-dfb3-bcba-2bfd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5fe2-4ea3-bf7d-0440" name="The Rock of Inevitability" publicationId="e3da-3848-ff08-a482" page="14" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The bearer of the Rock of Inevitability can use it at the end of any Movement phase. Place a cursed bulwark (an obstacle up to 8&quot; long) anywhere within 6&quot; of the bearer. It cannot be placed on top of (or within 1&quot; of) a unit, or placed on a terrain feature other than a hill. At the end of each of your turns, roll a D6. On a score of 1-3 nothing happens. On a score of 4-5 place a further cursed bulwark. On a score of 6 place a cursed tower (a two story-building up to 6&quot; in diameter).
+
+Cursed terrain features placed in this way must be positioned touching an existing cursed terrain feature, and cannot be placed on top of a unit, or a terrain feature other than a hill or forest. If the terrain feature cannot be placed, or you don’t have the relevant terrain feature, then nothing is placed. Any unit from the Forces of Order within 6&quot; of a cursed tower or cursed bulwark suffers a -2 penalty to their I.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="db0a-38fc-70ce-598c" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="5857-a7aa-f954-a027" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

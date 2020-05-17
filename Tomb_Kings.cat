@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1948-df7e-0b86-9296" name="Entombed Beneath the Sands Mishap Table">
       <characteristicTypes>
@@ -6951,6 +6952,63 @@ Once the LD test has been resolved, roll a D6: on a 3 or more, choose another un
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="ffdf-66c6-ef03-e6f1" name="Staff of Ravening" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ca0-9f21-99f1-efc0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd70-3762-0cc3-8469" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4860-3605-cb51-97e6" name="Staff of Ravening" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Bound Spell, Power Level 3.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="8aae-bd06-c0c0-80cb" name="Ravening" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">3+</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">Magic Missile</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 3D6 S 2 hits.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6db9-8b05-4904-401c" name="Staff of Mastery" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c3e-a44b-576b-c5d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc0d-a791-ddbc-7959" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f4fe-4760-eede-e017" name="Staff of Mastery" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of Mastery gives the bearer a +1 bonus to the result of their spell casting attempts.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="933e-3bdf-50b9-da27" name="Hieratic Jar" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c6d-4542-f7ba-4145" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="948b-b753-498e-c32c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5470-e214-367a-5963" name="Hieratic Jar" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Hieratic Jar may be used at the start of any of your Magic phases. The bearer immediately gains +D3 Power dice. Only they may use these extra Power dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="06f1-4213-9e63-3d6f" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
@@ -6991,6 +7049,70 @@ Once the LD test has been resolved, roll a D6: on a 3 or more, choose another un
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7ef9-c005-9fdc-f3df" name="Brooch of the Great Desert" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe0-8142-5953-7659" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="121c-71f7-51c8-61f5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="af29-512d-05e3-a4ce" name="Brooch of the Great Desert" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. When an enemy spell has been cast, a model bearing the Brooch of the Great Desert can use it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. This may also be used to dispel spells that Remains in Play.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1d10-fa32-ae26-d5bb" name="Crown of Kings" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8ec-904e-6dc6-8090" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a3e-4cc2-3269-a233" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="77d0-a817-20c7-1c75" name="Crown of Kings" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Tomb King only. The Crown of Kings makes the Tomb King&apos;s &quot;My Will Be Done!&quot; affect all friendly units within 6&quot;.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fccf-0406-d497-940f" name="Chariot of Fire" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8aba-c8cf-73fc-af80" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6eeb-4a37-8566-2847" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cf12-d366-93a4-3107" name="Chariot of Fire" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model in Chariot only. The Chariot of Fire causes 2D6 impacts hits with Flaming Attacks and Magical Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bb37-2845-43fd-bf39" name="Icon of Rulership" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c40-3c98-76dd-b5f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f34-1771-121d-6d82" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5e91-fac3-f59b-d175" name="Icon of Rulership" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model in Chariot only. The Icon of Rulership gives +1 Combat Resolution bonus.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7074,6 +7196,86 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="8f76-3d3c-74a6-400c" name="Standard of the Sands" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff20-7e4b-3269-73b6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9ce-4b9a-f1ad-44f4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ed82-2a83-62d8-c152" name="Standard of the Sands" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">One use only. The Standard of the Sands may be activated in the beginning of any enemy Movement phase. For the remainder of the turn, no models within 36&quot; of the banner may March, and all units attempting to rally suffer -1 to their LD.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="60.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2cda-9982-2aaa-6f46" name="Icon of Rakaph" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f41-c35b-c2b2-26c1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fa2-aa3e-c66a-77c0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9079-ca5f-2750-7aeb" name="Icon of Rakaph" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Tomb Guard only. The unit carrying the Icon of Rakaph may make a Swift Reform at the start of their Movement phase. The unit may then move as normal (including declaring charges).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3f30-0424-5bc7-3104" name="Icon of the Sacred Eye" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7011-d3bb-39a4-5c8e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b45-e98b-f362-61fa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a96b-7251-d6d8-162f" name="Icon of the Sacred Eye" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Icon of the Sacred Eye gains +1 To Hit in the first round of close combat (including steeds).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="069f-4133-83cf-1d44" name="Mirage Standard" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c86-7824-789f-3cc4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a26e-bd6b-00f8-b904" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2ce7-ee8f-cf87-ed52" name="Mirage Standard" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The Mirage Standard forces all Hits from missile attacks targeting the unit carrying it to be re-rolled. This has no effect against Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d7f1-1baf-34ac-fe5e" name="Standard of the Cursing Word" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ecd-5812-eaec-061d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4657-2889-9b90-e46a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e17d-83b7-6371-f839" name="Standard of the Cursing Word" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All enemy units in base contact with the unit carrying the Standard of the Cursing Word must pass a LD test or suffer D6 Wounds which Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="4299-2f1f-3d56-ce45" name="Magic Standards" hidden="false" collective="false" import="true" targetId="2613-24d7-a26e-eb37" type="selectionEntryGroup"/>
@@ -7120,6 +7322,60 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="7962-919f-a638-befe" name="The Blade of Mourning" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04e8-9567-6019-7663" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff2f-2268-2d86-b876" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6321-8e99-deb1-fe60" name="The Blade of Mourning" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">If a unit suffers at least one wound from the Blade of Mourning and loses the combat, any negative modifiers to the unit&apos;s LD for the subsequent Break test are doubled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="46e1-3a17-c9bb-ea00" name="Blade of Setep" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="feb1-3d1a-c830-06d5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49c9-f870-997d-aead" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a398-9035-b426-fb0c" name="Blade of Setep" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Blade of Setep gives the wielder Ignores Armour Saves. If the model wears magical armour, the first Hit against this model is ignored, but the magical armour is destroyed for the remainder of the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0830-d045-abed-bad2" name="Serpent Staff" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1474-1254-c890-57db" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55f3-217b-3483-c619" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3a10-d406-de95-55be" name="Serpent Staff" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Wizards only. The Serpent Staff gives the wielder Poisoned Attacks. In addition, they may re-roll failed rolls To Wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="0d30-dd33-5738-747d" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
@@ -7144,6 +7400,38 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6b59-dd2a-2970-2ffe" name="Amulet of Pha-Stah" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9677-c2de-4a58-82df" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c080-aaee-9213-cfc5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3e8c-f374-2915-5b1a" name="Amulet of Pha-Stah" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">All enemy Magic Armours and Talismans have no effect while they remain in base contact with the wearer of the Amulet of Pha-Stah. Magic Armour are treated as mundane versions of the same type.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5d19-08d8-4029-8cff" name="Blue Khepra" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3477-4c0a-a1c4-dc4b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9147-e999-8bbb-1225" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3c6d-6b92-f601-cd7a" name="Blue Khepra" publicationId="e3da-3848-ff08-a482" page="44" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Blue Khepra gives the bearer Magic Resistance (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7728,7 +8016,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"></characteristic>
+        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"/>
         <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
         <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
       </characteristics>

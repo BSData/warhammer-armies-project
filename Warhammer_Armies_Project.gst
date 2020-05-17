@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.81"/>
     <publication id="9e23-79cb-pubN67565" name="Albion v.1.24"/>
@@ -38,6 +39,7 @@
     <publication id="5ff9-69dd-8810-183f" name="Nippon"/>
     <publication id="5884-1659-bf10-0d5a" name="Norse"/>
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa"/>
+    <publication id="e3da-3848-ff08-a482" name="Magic Items v.0.9"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0"/>

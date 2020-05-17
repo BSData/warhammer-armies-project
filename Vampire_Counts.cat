@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s|https://discordapp.com/invite/UrrPB3T" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0e-261d-9899-f1ae" name="Evocation of Death Chart">
       <characteristicTypes>
@@ -9105,9 +9106,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       <profiles>
         <profile id="bbcc-6e9f-825e-9a59" name="Nightshroud" publicationId="10a5-5781-61f5-86ae" page="242" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
           <characteristics>
-            <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
-            <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-            <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">The Nightshroud gives the wearer a 6+ armour save. Furthermore, enemy models in base contact with the wearer lose all S bonuses conferred from normal and magical weapons, and are subject to Always Strikes Last. Wizards can wear the Nightshroud with no penalty to cast spells.</characteristic>
+            <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
+            <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
+            <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Enemy models in base contact with the wearer lose all S bonuses conferred from normal and magical weapons, and are subject to Always Strikes Last. Wizards can wear the Nightshroud with no penalty to cast spells.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9137,6 +9138,24 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bec7-b67a-b5df-4d10" name="Armour of Bone" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5368-6c26-96e5-b627" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="174e-6b35-a612-b6fb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9eb6-ff01-e8f4-0b7d" name="Armour of Bone" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+          <characteristics>
+            <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+            <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+            <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. The Armour of Bone armour can be chosen by Wizards even though they are not normally allowed to wear armour. When the wearer fails his first armour save (or if he&apos;s wounded by an attack against which he cannot take an armour save at all), the Armour of Bone crumbles to dust and is destroyed, but the Wound is ignored.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -9217,7 +9236,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">At the beginning of the bearer&apos;s Magic phase, the bearer may choose to sacrifice D3 power dice from the pool. If they do so, roll a D6 on the Cursed Book Chart. Assuming there is a viable target for the indicated spell, that spell is automatically cast at its minimum casting value, requiring no power dice. A dispel attempt can be made as normal. If you don&apos;t have the requisite number of dice to sacrifice, then you lose what dice you have and the book has no effect this turn.</characteristic>
               </characteristics>
             </profile>
-            <profile id="ac14-700e-49a0-985d" name="The Cursed Book" hidden="false" typeId="cc28-feed-9c32-4102" typeName="Cursed Book Chart">
+            <profile id="ac14-700e-49a0-985d" name="The Cursed Book" publicationId="10a5-5781-61f5-86ae" page="243" hidden="false" typeId="cc28-feed-9c32-4102" typeName="Cursed Book Chart">
               <characteristics>
                 <characteristic name="1" typeId="d57e-7c28-1c58-2b1e">Melkoth&apos;s Mystifying Miasma</characteristic>
                 <characteristic name="2" typeId="3c21-1a67-9952-c94b">The Enfeebling Foe</characteristic>
@@ -9238,6 +9257,54 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3b63-a57b-9687-7a5e" name="Skull Staff" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e945-0044-2277-1c9f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b0d-7836-b001-bdc6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6649-c006-7082-72c9" name="Skull Staff" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Skull Staff gives the wielder +1 bonus to the result of their spell casting and dispel attempts.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="495b-f29c-c9dc-1d2d" name="Sceptre de Noirot" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d639-3127-203a-ce40" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="682f-7124-208b-149b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0c7e-1d5d-633e-058d" name="Sceptre de Noirot" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Sceptre de Noirot makes the bearer roll an additional D6 when determining the number of Zombies raised with the Raise Dead spell from the Lore of Necromancy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="757f-c7c3-1013-8abb" name="Crimson Gem of Lahmia" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf8c-77ba-ffca-7a80" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9cd-eb3c-4cdb-bbad" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6a5d-9784-8a9a-a33b" name="Crimson Gem of Lahmia" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Lahmian only. At any time in the Magic phase, the bearer of the Crimson Gem of Lahmia may sacrifice one of their Wounds to gain one power dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9275,6 +9342,63 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="c837-29d4-f6b2-98dc" name="The Hand of Dust" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd52-70a7-0614-1e2b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab8c-cb85-1886-97be" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e686-c21c-e6d9-b807" name="The Hand of Dust" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Bound Spell, Power Level 5.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="70db-38b5-a716-db1c" name="Hand of Dust" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets enemy units in base contact. The target unit suffers 2D6 S 5 hits.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ecd6-cb80-39b0-4bca" name="Talon of Death" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d84f-1312-232a-b78d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1edc-a455-44de-67f6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1959-e9cb-f38a-143e" name="Talon of Death" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All enemy models in base contact with the bearer of the Talon of Death suffer a S 5 Hit at the start of each round of close combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3065-dd09-d8e3-2095" name="Talisman of the Lycni" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="27c5-5496-dfaa-bfd7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95b2-8f0b-18f2-cf52" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f9e0-0468-2dd4-3a8f" name="Talisman of the Lycni" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Vampires only. Model on foot only. The bearer of the Talisman of the Lycni gains +4 to their M value and Swiftstride.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="133c-eeb2-35e9-312a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="5857-a7aa-f954-a027" type="selectionEntryGroup"/>
@@ -9284,9 +9408,138 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dcf8-4479-3f15-5959" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="b57c-45ee-df00-95d8" name="Helm of Commandment" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e524-991e-f789-a959" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5032-24c5-6f3f-6c85" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="668b-573a-742c-7838" name="Helm of Commandment" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">If the wearer is not in combat, one friendly Undead unit within 12&quot; may use their WS instead of their own in close combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8697-4092-fdf8-03a9" name="Armour of Night" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="687e-6d58-6f6d-5203" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d91b-0c76-21c4-460c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5ab8-8a7a-edf3-a2f7" name="Armour of Night" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Models on foot only. Heavy armour. The Armour of Night causes any missile attacks targeted at the wearer to suffer -2 To Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="34e1-3188-3558-0c28" name="The Cursed Shield of Mousillon" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af2b-fe50-e70d-0d38" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a82a-9a99-5eb8-a473" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6916-1294-a677-c45d" name="The Cursed Shield of Mousillon" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Blood Dragon only. Shield. The Cursed Shield of Mousillon causes one enemy model in base contact of your choice to suffer -1 A. In addition, all models in Warhammer: Bretonnia have Hatred against the bearer of the shield.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab15-4e37-dc95-98fa" name="Wailing Helm" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dc1a-e950-103e-abad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21e0-a5d5-7c0a-2109" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a926-3b13-528d-9ec5" name="Wailing Helm" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">6+</characteristic>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">6+</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">The Wailing Helm gives the wearer Terror.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f91a-ab3d-6627-11c4" name="The Flayed Hauberk" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="362f-ee59-7292-b4db" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f62-a7ad-2a1d-ccf9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b51a-a7a0-eac2-7ed4" name="The Flayed Hauberk" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017">2+</characteristic>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b">2+</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">The Flayed Hauberk gives the wearer an armour save that cannot be improved by any means.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="abad-3a3c-05eb-a185" name="The Accursed Armour" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d49-1ff6-4224-38c7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3237-9d6d-f4d4-4d0d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="22a1-45ff-1d76-a7ca" name="The Accursed Armour" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. The Accursed Armour gives the wearer +1 T, but makes them suffer -1 WS and I.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="edec-6f1c-f86f-4d80" name="The Cadaverous Cuirass" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e401-8fe9-e930-2f0a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ee8-4538-0b95-15f9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9f42-0f65-e987-b940" name="The Cadaverous Cuirass" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Vampires only. Heavy armour. The Cadaverous Cuirass gives the wearer Immunity (Killing Blow).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="5ece-e462-1890-6f42" name="Magic Armour" hidden="false" collective="false" import="true" targetId="557c-c8c5-0c0f-d2b3" type="selectionEntryGroup"/>
-        <entryLink id="9d51-2ba6-8996-6557" name="Nightshroud" hidden="false" collective="false" import="true" targetId="7905-e962-dbb3-d6cf" type="selectionEntry"/>
+        <entryLink id="9d51-2ba6-8996-6557" name="Armour of Bone" hidden="false" collective="false" import="true" targetId="bec7-b67a-b5df-4d10" type="selectionEntry"/>
+        <entryLink id="b04f-03f3-a463-b83b" name="Nightshroud" hidden="false" collective="false" import="true" targetId="7905-e962-dbb3-d6cf" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a3ca-ccf2-444b-f177" name="Magic Standards" hidden="false" collective="false" import="true">
@@ -9302,8 +9555,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           <profiles>
             <profile id="d717-69c8-ce1c-c4e5" name="The Flag of Blood Keep" publicationId="10a5-5781-61f5-86ae" page="192" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit of Blood Knights with the Flag of Blood Keep upgrade gains a Ward save (4+) against
-missile attacks.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit of Blood Knights with the Flag of Blood Keep upgrade gains a Ward save (4+) against missile attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9319,8 +9571,7 @@ missile attacks.</characteristic>
           <profiles>
             <profile id="532b-1bd3-5e97-4f70" name="Banner of the Barrows" publicationId="10a5-5781-61f5-86ae" page="243" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All Grave Guard, Black Knights and Wight Kings (including Krell) in the same unit as the Banner of the
-Barrows receive +1 To Hit in close combat. Note that the bonus is not conferred to any mounts they may have.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All Grave Guard, Black Knights and Wight Kings (including Krell) in the same unit as the Banner of the Barrows receive +1 To Hit in close combat. Note that the bonus is not conferred to any mounts they may have.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9336,13 +9587,188 @@ Barrows receive +1 To Hit in close combat. Note that the bonus is not conferred 
           <profiles>
             <profile id="d4f6-05ec-176f-3988" name="The Screaming Banner" publicationId="10a5-5781-61f5-86ae" page="243" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Enemy units on base contact with the unit carrying this banner must pass a LD at the start of each close
-combat phase. If failed, they require 6’s To Hit for the duration of the phase.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Enemy units on base contact with the unit carrying this banner must pass a LD at the start of each close combat phase. If failed, they require 6’s To Hit for the duration of the phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c119-016c-5b93-3b19" name="The Drakenhof Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b04f-41c5-d3dd-6398" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d890-a115-30f1-557c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="08d3-9ec2-0d58-ddef" name="The Drakenhof Banner" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All Undead models in the unit carrying the Drakenhof Banner gain Regeneration (4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7b67-8b2a-eae8-a996" name="Hell Banner" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac54-c1f6-d8c8-9ecc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="139a-5b74-dcfa-4b8f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="54eb-67f7-8971-83e1" name="Hell Banner" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All enemy units with Line of Sight to the Hell Banner suffer a -1 penalty to their LD. This standard has no effect on models with Immunity (Psychology).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="35ac-a307-6768-2696" name="Banner of Doom" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e4ef-ca46-eb91-1e67" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5eea-7c26-6b53-bb22" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b187-eedc-5c8f-cff3" name="Banner of Doom" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of Doom gains Regeneration (5+) against missile attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d113-8ea3-e6fb-078c" name="Banner of the Dead Legion" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="665f-e5a8-2dbb-4253" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61b2-3e4d-826c-c562" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3367-83ac-05bc-77cb" name="Banner of the Dead Legion" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of the Dead Legion counts as having twice its actual Unit Strength in close combat. This standard has no effect on Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d2b7-ab15-c64d-5de7" name="Banner of the Endless Nightmare" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="68db-bd99-b9c5-2d7e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b115-a105-8f88-f8b3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="40da-5e09-4525-0ddf" name="Banner of the Endless Nightmare" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of the Endless Nightmare counts as having one more rank than normal for the purpose of combat resolution, up to a maximum of +4. Note that the unit still needs to have at least one complete rank of 5 or more models for this rule to have any affect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c574-9435-1405-cf70" name="Icon of Vengeance" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="595e-75b9-1adb-3d70" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da38-4b58-75be-820a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4c5f-8e68-0a34-202c" name="Icon of Vengeance" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit the Icon of Vengeance carrying this standard never takes casualties as a result of the General&apos;s death.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f973-e986-72cc-7eed" name="Cursed Pennant of Mousillon" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e761-5b41-549e-d266" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c82-9e60-3a4b-b311" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bec2-5bde-6041-b3f2" name="Cursed Pennant of Mousillon" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Any enemy unit that is in base contact with the unit carrying the Cursed Pennant of Mousillon must reroll 6&apos;s when rolling To Hit, To Wound and when taking armour saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7664-61c1-cf29-9e01" name="Royal Standard of Strigos" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c8d-a967-a7fc-90ec" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9913-c680-ab3a-960e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d5a1-ef4f-26d7-6770" name="Royal Standard of Strigos" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Royal Standard of Strigos gains Hatred.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="356e-1e0a-8633-815b" name="Standard of Hellish Vigour" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c364-63a1-821c-8604" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc70-dcce-3d5c-888a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7b70-6d04-a289-c2ac" name="Standard of Hellish Vigour" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Undead only. The unit carrying the Standard of Hellish Vigour may March despite being Animated Constructs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f7d4-6dc6-da17-501a" name="Standard of Everlasting Death" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21d4-86c6-4264-d6c7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="675d-6998-9e9a-15c7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5de9-dda5-335f-8039" name="Standard of Everlasting Death" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Standard of Everlasting Death suffers one less Wound than they normally would due to Unstable.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4f50-7414-d16e-a787" name="Banner of Hellfire" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4cca-1222-c48d-e48e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bf4-d911-b995-89eb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c7f7-8797-bdd9-d702" name="Banner of Hellfire" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of Hellfire gains Flaming Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9394,6 +9820,60 @@ combat phase. If failed, they require 6’s To Hit for the duration of the phase
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="f6fa-56dc-9522-fd54" name="Dreadlance" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f1fe-8e5f-1204-8ecf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e43-078a-4396-dd85" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="91ac-f250-4fd9-f656" name="Dreadlance" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Blood Dragon or von Carstein only. Lance. All attacks with the Dreadlance Hit automatically.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4dd8-5be5-6939-126e" name="Sword of Kings" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8adb-e4d9-d435-42ba" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b00-c781-412e-7436" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f1ed-0583-4dd0-f572" name="Sword of Kings" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Wight Kings only. The Sword of Kings makes the models Killing Blow take effect on a 5+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="20c5-22ff-892f-dfad" name="The Balefire Spike" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="50be-7ee0-854c-51bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0be-ccc7-bcaf-e52c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="912c-0b83-d540-4e90" name="The Balefire Spike" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Blood Dragon or von Carstein only. Lance. The Balefire Spike gives the wielder Flaming Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="cc5b-db55-d62f-98d7" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
@@ -9413,6 +9893,70 @@ combat phase. If failed, they require 6’s To Hit for the duration of the phase
             <profile id="2b0b-bf1e-7ece-f554" name="Collar of Shapesh" publicationId="10a5-5781-61f5-86ae" page="118" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">For each unsaved Wound the bearer suffers (before calculating any Multiple Wounds), roll a D6: on a 4+ the Wound is transferred to any friendly model in base contact of the bearers choosing, with no saves of any kind allowed. These Wounds still counts towards combat resolution as normal. If there are no friendly models in base contact, then this rule has no effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="daca-01af-2fc5-a29d" name="Crown of the Damned" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3959-fc31-024f-1d0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c60-eefa-6165-133b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e7cf-46ce-7fa0-ea55" name="Crown of the Damned" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Crown of the Damned gives the wearer Stupidity and Ward Save (4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5628-0e10-927d-4c99" name="Wristbands of Black Gold" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2f5-f63e-31e3-c47c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfca-ebef-527f-4d33" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c92a-b9c2-7480-fd2a" name="Wristbands of Black Gold" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Wristbands of Black Gold gives the wearer a Ward Save (3+) against all missile attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fb25-e799-a1b3-ca45" name="The Gem of Blood" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb09-f99b-e9f3-2797" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82f7-31c2-c964-5163" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5c43-5796-00df-5b64" name="The Gem of Blood" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. The Gem of Blood activates when the bearer of the Gem of Blood suffers its first Wound in close combat (before saves). Roll a D6; on a roll of a 1 the wearer suffers the Wound as normal, and an additional Wound with no armour save allowed. On a 2+ the Wound is saved, and is rebounded onto the model that caused it with Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0331-f161-ced1-6d63" name="Ring of the Night" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d6f-f1af-983f-fe9f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c788-bd99-1cbb-160e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e3f1-9a5c-05a8-639d" name="Ring of the Night" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">All missile attacks targeted at the bearer of the Ring of Night or the unit they are with suffer -1 To Hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10117,6 +10661,7 @@ combat phase. If failed, they require 6’s To Hit for the duration of the phase
       </constraints>
       <entryLinks>
         <entryLink id="baa5-f944-0f1f-8fde" name="Nightshroud" hidden="false" collective="false" import="true" targetId="7905-e962-dbb3-d6cf" type="selectionEntry"/>
+        <entryLink id="dc9c-b5d2-8ffa-de1d" name="Armour of Bone" hidden="false" collective="false" import="true" targetId="bec7-b67a-b5df-4d10" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="2c06-e87d-1a85-d6a0" name="Ringing the Bell Table">
@@ -368,7 +368,7 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                 <infoLink id="fbba-6bc8-7789-0115" name="Large Target" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="87d0-388a-b42f-73c9" name="Primary Weapon" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="87d0-388a-b42f-73c9" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="35ae-837b-b258-fc76">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27d3-5e63-e5f9-ecf5" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8055-56cd-b41f-a0d8" type="min"/>
@@ -502,7 +502,7 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
             <selectionEntryGroup id="616a-6e32-8f0b-088d" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="8fb7-17cf-f51a-b8d5">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d232-7449-722d-57c5" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d013-45de-5e56-a134" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d013-45de-5e56-a134" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="8fb7-17cf-f51a-b8d5" name="Lore of Ruin" hidden="false" collective="false" import="true" targetId="Lore of Ruin Skreech" type="selectionEntry"/>
@@ -5590,6 +5590,11 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         </selectionEntry>
         <selectionEntry id="7c2d-cb84-3a31-d534" name="Packmaster" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="increment" field="d9df-a4f1-32b1-ab45" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="2707-f300-47f0-58ec" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e391-6d8c-b7df-bcd1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
             <modifier type="increment" field="e199-b8be-d18f-000e" value="1.0">
               <repeats>
                 <repeat field="selections" scope="2707-f300-47f0-58ec" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e391-6d8c-b7df-bcd1" repeats="1" roundUp="false"/>
@@ -5597,7 +5602,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9df-a4f1-32b1-ab45" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9df-a4f1-32b1-ab45" type="min"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e199-b8be-d18f-000e" type="max"/>
           </constraints>
           <infoLinks>
@@ -6222,9 +6227,14 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                 <repeat field="selections" scope="c16c-5072-d189-60f2" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac20-2e82-04c7-5d21" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="9187-0975-ec1e-1684" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c16c-5072-d189-60f2" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac20-2e82-04c7-5d21" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9187-0975-ec1e-1684" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9187-0975-ec1e-1684" type="min"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e0f-790a-a2c2-4517" type="max"/>
           </constraints>
           <infoLinks>
@@ -6774,7 +6784,7 @@ T test or suffer a Wound. On the To Hit roll of a 1, the Globadier hits himself 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="f651-cae9-79f3-5c22" name="Primary Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f651-cae9-79f3-5c22" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="655a-d67a-3e8d-6212">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f231-e4e5-305b-a382" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b23-9c8d-5663-4175" type="min"/>

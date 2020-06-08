@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="cfe9-a815-09c1-fecd" name="Attuned to Magic table">
@@ -134,7 +134,7 @@
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full Plate Armour. The Dragon Armour of Aenarion grants Tyrion Ward save (4+) and Immunity (Flaming Attacks).</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">The Dragon Armour of Aenarion grants Tyrion a +1 armour save, as well as Ward save (4+) and Immunity (Flaming Attacks).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -163,7 +163,7 @@
         <entryLink id="ce17-889b-626d-b52c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="470.0"/>
+        <cost name="pts" typeId="points" value="485.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7be4-167d-1b78-141b" name="Teclis" hidden="false" collective="false" import="true" type="model">
@@ -3051,7 +3051,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="75.0"/>
+                <cost name="pts" typeId="points" value="65.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5ac5-d204-9b9f-4305" name="Lion Chariot" hidden="false" collective="false" import="true" type="model">
@@ -4779,7 +4779,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5080,7 +5080,7 @@
                     <infoLink id="b95b-f350-70f8-f5b6" name="Ithilmar Barding" hidden="false" targetId="119e-6fba-31a3-cb8c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="1.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -5096,7 +5096,7 @@
                 <infoLink id="4102-c725-840a-21db" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5115,7 +5115,7 @@
                     <infoLink id="f809-fd78-9251-af8b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="1.5"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d9b7-e6a3-ca26-c480" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -5131,7 +5131,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="d190-d51f-4c78-693d" name="Primary Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="d190-d51f-4c78-693d" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2df9-07b9-34e5-ed8a">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6014-9481-8490-c3f1" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c74c-326a-4626-7e76" type="min"/>
@@ -5932,7 +5932,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="16.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6140,7 +6140,7 @@
         <selectionEntry id="0965-b81c-d0ee-1539" name="Sea Guard Crew" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c279-7547-356b-0207" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6fe-d0c2-fd82-0420" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6fe-d0c2-fd82-0420" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="8b64-73ba-c37e-b82f" name="Sea Guard crew" hidden="false" targetId="fd56-1283-21d5-6490" type="profile"/>
@@ -6175,12 +6175,12 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="60.0"/>
+        <cost name="pts" typeId="points" value="56.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fdbc-683e-4d5b-2c30" name="Phoenix Guard" hidden="false" collective="false" import="true" type="unit">
@@ -8175,7 +8175,7 @@ At the end of the game, remove all Phoenix Reborn counters from the board – th
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Longbow. All shots with this weapon are resolved at S 4 with Armour Piercing (1) and Magical Attacks.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Bow. All shots with this weapon are resolved at S 4 with Armour Piercing (1), Flaming Attacks and Magical Attacks.</characteristic>
       </characteristics>
     </profile>
     <profile id="dbd6-650d-51ba-1ba0" name="Illusory Assault" publicationId="9e23-79cb-pubN77092" page="143" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

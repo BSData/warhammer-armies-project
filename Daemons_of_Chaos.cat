@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="324d-b81e-296a-d5cd" name="Reign of Chaos Table">
@@ -5647,7 +5647,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
           </profiles>
           <rules>
             <rule id="2842-8497-98b5-b7bd" name="Soporific Musk" publicationId="ee54-3543-b9db-fe40" page="184" hidden="false">
-              <description>Models in base contact with one or more Fiends of Slaanesh suffer a -1 penalty to both WS and I. This has no effect on Animated Constructs or Daemons of Slaanesh.</description>
+              <description>Models in base contact with one or more Fiends of Slaanesh suffer a -1 penalty to both WS and I. This has no effect on Daemons of Slaanesh.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5886,7 +5886,7 @@ but it may not fire grapeshot.</characteristic>
                   <characteristics>
                     <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
                     <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Wounds (D3). Poisoned Attacks.</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Wounds (D3). Poisoned Attacks. Quick to Fire.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5980,8 +5980,8 @@ but it may not fire grapeshot.</characteristic>
             <characteristic name="M" typeId="09ad-18df-607b-1215"/>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
@@ -6176,7 +6176,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="2838-18e1-b5ed-7a36" name="Cloak of Constriction" publicationId="ee54-3543-b9db-fe40" page="189" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">At the start of each close combat phase, all models targeting Shalaxi Helbane must pass a S test or lose 1 Attack.</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">All models attempting to strike Shalaxi Helbane in close combat must pass a S test or lose 1 A.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6426,22 +6426,14 @@ but it may not fire grapeshot.</characteristic>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5db9-295e-0aca-5d15" name="Overwhelming Acquiescence " hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5db9-295e-0aca-5d15" name="Acquiescence " hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="269b-82cf-e4b7-b513" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c9b-066b-9bf1-62f5" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="95d1-a9ac-5ad0-a901" name="Overwhelming Acquiescence " publicationId="ee54-3543-b9db-fe40" page="188" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of you next Magic phase, all units targeting that unit in close combat may re-roll failed rolls To Hit. This spell has no effect on models with Immunity (Psychology).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="5937-a960-ee97-404f" name="Acquiescence (Bound Spell)" hidden="false" targetId="6f55-ca56-d941-b31d" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6712,7 +6704,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="a074-58f0-dae1-5bd1" name="Soul Hunger" publicationId="ee54-3543-b9db-fe40" page="202" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon may re-roll failed rolls To Hit and To Wound in the first round of any combat. This has no effect against Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon may re-roll failed rolls To Hit and To Wound in the first round of any combat.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7170,7 +7162,7 @@ but it may not fire grapeshot.</characteristic>
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Slaanesh only. Any character or monster that suffers one or more unsaved Wounds from the Witstealer Sword must immediately pass an I test or suffer another Wound with the Ignores Armour Saves special rule.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Slaanesh only. Any character or monster that suffers one or more unsaved Wounds from the Witstealer Sword must immediately pass an I test or suffer another Wound with Ignores Armour Saves.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7269,6 +7261,9 @@ but it may not fire grapeshot.</characteristic>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="0641-5b45-0a2b-3e77" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7076-9cba-be01-b9e1" name="Talismans" hidden="false" collective="false" import="true">
       <constraints>
@@ -7411,7 +7406,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="4576-90c2-06a8-84cd" name="Noxious Vapours" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">All enemy models in base contact with this Daemon is subject to Always Strikes Last in close combat. This has no effect on Animated Constructs or Daemons of Nurgle.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">All enemy models in base contact with this Daemon is subject to Always Strikes Last in close combat. This has no effect on Daemons of Nurgle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7426,7 +7421,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="2530-3e4f-0431-7e02" name="Nurgle&apos;s Rot" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Enemy models in base contact with the Daemon at the start of any close combat phase suffer a S 2 Hit which Ignores Armour Saves. Any wounds caused count towards combat resolution. This has no effect on Animated Constructs or Daemons of Nurgle.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Enemy models in base contact with the Daemon at the start of any close combat phase suffer a S 2 Hit which Ignores Armour Saves. Any wounds caused count towards combat resolution. This has no effect on Daemons of Nurgle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7452,7 +7447,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="78bf-8691-9059-3f9f" name="Pestilent Mucus" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">When this Daemon suffers a wound, all enemy models in base contact must pass a T test for each wound inflicted on the Daemon or themselves suffer a wound, which Ignores Armour Saves. This has no effect on Animated Constructs or Daemons of Nurgle.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">When this Daemon suffers a wound, all enemy models in base contact must pass a T test for each wound inflicted on the Daemon or themselves suffer a wound, which Ignores Armour Saves. This has no effect on Daemons of Nurgle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7478,7 +7473,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="d28d-ebd8-5622-221d" name="Stream of Bile" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">This is a S 4 Breath Weapon. It has no effect on Animated Constructs or Daemons of Nurgle.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">This is a S 4 Breath Weapon. It has no effect on Daemons of Nurgle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7527,7 +7522,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="3a4d-f4a4-4874-130f" name="Enrapturing Gaze" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Units in base contact with the Daemon must use their own, unmodified LD value. This has no effect on models with Immunity (Psychology).</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Units in base contact with the Daemon must use their own LD value. This has no effect on models with Immunity (Psychology).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7557,7 +7552,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="6d06-b200-e57e-941c" name="Soporific Musk" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Models in base contact with one or more models with this Gift suffer a -1 penalty to both WS and I. This has no effect on Animated Constructs or Daemons of Slaanesh.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Models in base contact with one or more models with this Gift suffer a -1 penalty to both WS and I. This has no effect on Daemons of Slaanesh.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7572,7 +7567,7 @@ but it may not fire grapeshot.</characteristic>
           <profiles>
             <profile id="75b5-6c20-a856-0af0" name="Spirit Swallower" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Roll a D6 for each unsaved wound the Daemon causes in close combat. On a 4+, the Daemon regains one wound lost earlier in the battle. This has no effect against Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Roll a D6 for each unsaved wound the Daemon causes in close combat. On a 4+, the Daemon regains one wound lost earlier in the battle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7961,7 +7956,7 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
       <description>During the Shooting phase, the Exalted Flamer can shoot either Pink Fire or Blue Fire. These do not have Move or Fire. If a misfire is rolled when resolving Pink Fire or Blue Fire, the Exalted Flamer suffers D6 S D6 hits with Flaming Attacks.</description>
     </rule>
     <rule id="eef4-b046-1853-ecce" name="Sensual barrage" publicationId="ee54-3543-b9db-fe40" page="174" hidden="false">
-      <description>All enemy models within 6&quot; of the Keeper of Secrets suffer a -1 penalty to their WS and I. This has no effect on Animated Constructs or Daemons of Slaanesh.</description>
+      <description>All enemy models within 6&quot; of the Keeper of Secrets suffer a -1 penalty to their WS and I. This has no effect on Daemons of Slaanesh.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

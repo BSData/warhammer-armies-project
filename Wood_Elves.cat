@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
@@ -669,7 +669,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. The Spear of Daith gives Thalandor a Parry save (5+), even while mounted.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. The Spear of Daith gives Thalandor a Parry save (4+), even while mounted.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3514,7 +3514,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3705,7 +3705,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4086,6 +4086,28 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="e9b1-dd32-d58a-762b" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12af-fc62-b151-96a0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="411f-ca2c-021c-eeb0" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9323-bf29-9734-7a69" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55d7-cfea-7e6b-5f9c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2c86-54fe-621f-6a6c" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.5"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="fa38-be25-16f1-7188" name="Enchanted Arrows" hidden="false" collective="false" import="true">
@@ -4152,7 +4174,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="18.0"/>
+            <cost name="pts" typeId="points" value="17.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4836,7 +4858,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="2baf-e97e-c1bb-1b40" name="Effect" hidden="false" targetId="Effect Animal Forms" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5292,7 +5314,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </rules>
           <infoLinks>
             <infoLink id="84a5-5b42-5ca1-8073" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
-            <infoLink id="0d5a-7cb9-3418-fb25" name="Traps" hidden="false" targetId="2c34-8348-2be2-4629" type="rule"/>
             <infoLink id="af70-aa17-5802-69f5" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="b101-3438-268a-1768" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
             <infoLink id="c627-7fb6-6080-064a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
@@ -5311,6 +5332,17 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ef83-ccef-c838-b6b6" name="Traps" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df62-cd5f-b548-8a29" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6f8b-02ab-b5e5-7734" name="Traps" hidden="false" targetId="2c34-8348-2be2-4629" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5554,7 +5586,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </profiles>
               <rules>
                 <rule id="5564-e197-8d93-174c" name="Deepwood Coven" publicationId="e967-620f-06be-096a" page="122" hidden="false">
-                  <description>A unit of Sisters of the Thorn is considered to be a Level 2 Wizard that knows the spells Shield of Thorns (Lore of Life) and Curse of Anraheir (Lore of Beasts). This doesn’t prevent other friendly Wizards from knowing the same spells. The unit receives an additional +1 to cast for each rank of 4 or more models it has, after the first, to a maximum of +3. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister or Handmaiden of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.</description>
+                  <description>A unit of Sisters of the Thorn is considered to be a Level 2 Wizard that knows the spells Shield of Thorns (Lore of Life) and Curse of Anraheir (Lore of Beasts). This doesn’t prevent other friendly Wizards from knowing the same spells. The unit receives an additional +1 to cast for each rank of 5 or more models it has, after the first, to a maximum of +3. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister or Handmaiden of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -6180,7 +6212,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
             <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
             <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
-            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The targeted unit counts as having failed a Stupdity test in their next turn. This has no effect on models with Immunity (Psychology).</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The targeted unit counts as having failed a Stupdity test in their next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7118,7 +7150,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       <description>A Waywatcher unit which is within a wood is automatically assumed to set traps around its positions. Any enemy charging the unit through the woods will activate the traps as soon as the enemy unit touches the wood. If the chargers are already inside the wood when the charge is declared the traps are activated as soon as the charge is declared. Roll a dice on the Waywatcher Trap Table to determine the type and effect of the trap.</description>
     </rule>
     <rule id="fca4-0d36-e304-5bca" name="Animal Form" publicationId="e967-620f-06be-096a" page="124" hidden="false">
-      <description>At the start of each of your turns, models with this rule choose one of the Animal Forms, the effect of which lasts until the end of that turn or until a new Form is chosen. All Alters in the same unit must choose the same Form. Alters cannot choose the same Form in two consecutive rounds of combat.</description>
+      <description>At the start of each of your turns, models with this special rule choose one of the following Animal Forms, the effect of which lasts until the end of that turn or until a new Form is chosen. All Alters in the same unit must choose the same Form. Alters cannot choose the same Form in two consecutive rounds of combat.</description>
     </rule>
     <rule id="743f-f76f-6efe-aab4" name="Tree Aspects" publicationId="e967-620f-06be-096a" page="127" hidden="false">
       <description>At the start of each round of close combat in which they are fighting, models with this rule choose one of the Tree Aspects, the effect of which lasts until the end of that turn or until a new aspect is chosen. This is done before Impact Hits are resolved. All Dryads in the same unit must choose the same aspect. Dryads cannot choose the same Tree Aspects in two consecutive rounds of combat.</description>

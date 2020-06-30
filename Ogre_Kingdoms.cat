@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
@@ -615,13 +615,6 @@ and Multiple Wounds (D3).</characteristic>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7ca1-efe5-e82b-b7eb" name="Big Names &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="increment" field="2135-8430-971a-03fc" value="15">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e1e-2ec1-ed30-e9d5" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ed6-0447-987b-5316" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2135-8430-971a-03fc" type="max"/>
@@ -771,11 +764,30 @@ and Multiple Wounds (D3).</characteristic>
             </selectionEntry>
             <selectionEntry id="3e1e-2ec1-ed30-e9d5" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3906-64e4-372c-c2d3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3906-64e4-372c-c2d3" type="max"/>
+                <constraint field="points" scope="parent" value="18.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2451-d88b-6a24-d415" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="290e-f7da-f4bd-e58b" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="7618-b86b-e7d6-997f" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="01be-57ed-0636-1b63" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3c3-2932-8983-a5d6" type="max"/>
+                <constraint field="points" scope="parent" value="18.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f182-7ab2-632c-c55e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1811-145a-542f-5672" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="00a8-61b9-b8f8-1cca" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
@@ -1584,11 +1596,6 @@ and Multiple Wounds (D3).</characteristic>
       <selectionEntries>
         <selectionEntry id="5417-4592-b3bb-771f" name="Big Names &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="increment" field="b3a8-78f9-b12e-ac7a" value="15">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54fd-36d6-8f47-cbd9" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
             <modifier type="set" field="16f2-6fc5-957a-febc" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb31-0258-90d2-36d1" type="atLeast"/>
@@ -1745,10 +1752,14 @@ and Multiple Wounds (D3).</characteristic>
             <selectionEntry id="54fd-36d6-8f47-cbd9" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fcd-9d76-6021-b829" type="max"/>
+                <constraint field="points" scope="parent" value="18.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="43dd-2320-2631-e15d" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="b0c6-6fdb-1077-1d07" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="4a9e-f9b7-6792-a3fb" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
@@ -1906,47 +1917,6 @@ and Multiple Wounds (D3).</characteristic>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7d35-4eb7-6b8c-ef80" name="Butcher&apos;s Cauldron" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c83-e994-4aa9-4b64" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6ab2-2601-b0d4-8e3e" name="Hunger of the Great Maw" publicationId="9e23-79cb-pubN78137" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Target unit may re-roll failed hit rolls in close combat until the wizard&apos;s next Magic phase. If until then, the unit has not won a round of close combat, each model in the unit suffers 1 wound, no saves allowed.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="5fd0-4841-c1ac-9d0d" name="Butcher&apos;s Cauldron" publicationId="9e23-79cb-pubN78137" page="61" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215"/>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="2fed-bd3a-6f8b-d58a" name="Butcher&apos;s Cauldron" publicationId="9e23-79cb-pubN78137" page="61" hidden="false">
-              <description>The Slaughtermaster may never leave the Cauldron and gains Stubborn.</description>
-            </rule>
-            <rule id="a7a0-f902-3050-b866" name="Blessing of the Great Maw" publicationId="9e23-79cb-pubN78137" page="61" hidden="false">
-              <description>Ward save (5+). +1 to cast spells.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="75.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4505,7 +4475,7 @@ and Multiple Wounds (D3).</characteristic>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="130.0"/>
+        <cost name="pts" typeId="points" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df76-b23e-405e-4a75" name="Gnoblar Skewerslinger" hidden="false" collective="false" import="true" type="model">
@@ -4590,7 +4560,7 @@ and Multiple Wounds (D3).</characteristic>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="90.0"/>
+        <cost name="pts" typeId="points" value="95.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e47-e4fa-0867-d196" name="Grimhorn Rhinox Riders" hidden="false" collective="false" import="true" type="model">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.81" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -40,9 +40,12 @@
     <publication id="5884-1659-bf10-0d5a" name="Norse" shortName="No" publisher="Warhammer - Norse 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e3da-3848-ff08-a482" name="Magic Items v.0.9" shortName="MI" publisher="Warhammer - Magic Items v.0.9" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.1" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.1" publicationDate="10.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.24, Zombie Pirates of the Vampire Coast v.1.0" shortName="VC, VP" publisher="Warhammer - Vampire Counts 9th Ed v.1.24, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.0" publicationDate="06.06.2020, 02.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.0" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.0" publicationDate="02.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
-    <costType id="points" name="pts" defaultCostLimit="-1.0"/>
+    <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="fc80-e52f-edf4-4e7e" name="Magic Standard">
@@ -243,9 +246,9 @@
   <forceEntries>
     <forceEntry id="6ee4-77bf-4402-f8ab" name="Standard" hidden="false">
       <categoryLinks>
-        <categoryLink id="ad45-e317-2036-b755" name="Core" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="false">
+        <categoryLink id="331b-a879-f664-e74e" name="Lords" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false">
           <constraints>
-            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="minPercentage" type="min"/>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="8877-5cef-efc0-d65b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e3e8-f89d-a94a-776d" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false">
@@ -253,19 +256,19 @@
             <constraint field="limit::points" scope="roster" value="35.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPercentage" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="331b-a879-f664-e74e" name="Lords" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false">
+        <categoryLink id="ad45-e317-2036-b755" name="Core" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="false">
           <constraints>
-            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="8877-5cef-efc0-d65b" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="6655-f7c6-f26b-92b6" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="false">
-          <constraints>
-            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPercentage" type="max"/>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="minPercentage" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="9241-6f7e-063e-d674" name="Special" hidden="false" targetId="fc26-7737-f7cb-8977" primary="false">
           <constraints>
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPercentage" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6655-f7c6-f26b-92b6" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPercentage" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>

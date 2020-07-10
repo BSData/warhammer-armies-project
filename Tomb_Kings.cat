@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1948-df7e-0b86-9296" name="Entombed Beneath the Sands Mishap Table">
@@ -3268,7 +3268,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ad99-0004-e915-69da" name="Skeleton Chariots (Sehenesmet)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="ad99-0004-e915-69da" name="Skeleton Chariots (Sehenesmet)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -3823,7 +3823,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="993a-a6f5-584e-6134" name="Skeleton Chariots" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="993a-a6f5-584e-6134" name="Skeleton Chariots" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4948-a323-d5de-1e8c" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -5647,7 +5647,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <cost name="pts" typeId="points" value="52.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f9ae-a91f-6fb9-cbbf" name="Screaming Skull Catapult" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f9ae-a91f-6fb9-cbbf" name="Screaming Skull Catapult" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="f214-c9ad-a574-0b64" name="Result" hidden="false" targetId="Stone Thrower Misfire Chart" type="profile"/>
         <infoLink id="18be-c39b-2288-50d0" name="Screaming Skull Catapult" hidden="false" targetId="0bee-4a9a-7941-3f00" type="profile"/>
@@ -5714,7 +5714,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a1ac-6339-53b8-6114" name="Screaming Skull Catapult (Sehenesmet)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="a1ac-6339-53b8-6114" name="Screaming Skull Catapult (Sehenesmet)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -5788,7 +5788,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6a4e-6e88-a136-a4f7" name="Bone Thrower" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6a4e-6e88-a136-a4f7" name="Bone Thrower" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="29c1-152f-a1b6-2ef0" name="Result" hidden="false" targetId="Stone Thrower Misfire Chart" type="profile"/>
         <infoLink id="b07d-3576-8d39-cbb3" name="Bone Thrower" hidden="false" targetId="a112-9a48-6656-ffeb" type="profile"/>
@@ -5844,7 +5844,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="282b-bd75-fbc5-2826" name="Bone Thrower (Sehenesmet)" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="282b-bd75-fbc5-2826" name="Bone Thrower (Sehenesmet)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -6861,6 +6861,26 @@ Once the LD test has been resolved, roll a D6: on a 3 or more, choose another un
       <entryLinks>
         <entryLink id="42cc-86bf-1a7c-2e68" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Tomb Kings Hero)" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2df9-955c-1ee4-7aa5" name="Resurrecting Fallen Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8dde-97a2-56e1-bc61" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1a71-22ca-a800-06eb" name="Resurrecting Fallen Warriors" publicationId="feeb-1927-4a99-f849" page="69" hidden="false">
+          <description>Some magic spells and items can restore lost Wounds and even resurrect fallen warriors in an Undead unit. Wounds regained in this way follow a strict order.
+
+First, the musician is resurrected, and then the standard bearer, displacing rank-and-file models as required. Then rank-and-file models with multiple Wounds (including command figures) are healed to their starting value. Resurrected command models displace rank and file models as required. Finally, any remaining Wounds resurrect rank-and-file models. In the case of multiple-Wound rank-and-file models, the
+first resurrected models must be fully healed before another can be resurrected.
+
+Resurrected models are added to the front rank until it reaches at least a full rank – additional models can then be added to the front or rear rank. Raised models may never displace enemy units; if there is not enough room, any excess models are wasted. Similarly, if you do not have enough models of the appropriate type, place as many as you can – the rest are wasted.
+
+A unit cannot be taken beyond its starting size unless specified, and no single model can ever exceed its starting Wounds value. Unless specifically stated otherwise, spells and magic items that restore lost Wounds cannot heal characters. If a character has joined a unit, only the unit will recover lost Wounds.</description>
+        </rule>
+      </rules>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>

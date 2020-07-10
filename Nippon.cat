@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9854-e1a2-2d5c-9b43" name="Duelling Techniques">
@@ -2135,6 +2135,13 @@ A character may only have one Yojimbo assigned to it at any time, although a new
               </constraints>
               <selectionEntries>
                 <selectionEntry id="fcb4-174c-2a44-9d94" name="Katana" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="6a90-ca0e-48dc-e10f" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a90-ca0e-48dc-e10f" type="max"/>
                   </constraints>
@@ -2146,6 +2153,13 @@ A character may only have one Yojimbo assigned to it at any time, although a new
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c235-6237-e049-cdaf" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="2acc-fe17-4fa2-549a" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2acc-fe17-4fa2-549a" type="max"/>
                   </constraints>
@@ -2157,6 +2171,13 @@ A character may only have one Yojimbo assigned to it at any time, although a new
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="96ab-514c-0e6c-6cec" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="5017-c011-a861-d5ea" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5017-c011-a861-d5ea" type="max"/>
                   </constraints>
@@ -2168,6 +2189,13 @@ A character may only have one Yojimbo assigned to it at any time, although a new
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="21ce-ac65-7446-2c45" name="Katana &amp; Longbow" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="e4db-31ed-9874-a82d" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e4db-31ed-9874-a82d" type="max"/>
                   </constraints>
@@ -2180,11 +2208,37 @@ A character may only have one Yojimbo assigned to it at any time, although a new
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4904-8bcc-0101-7842" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="b0dc-ba71-86c3-2360" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0dc-ba71-86c3-2360" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="779a-3c41-4e4e-e127" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="236b-0877-e8d8-0171" name="Hand Weapon &amp; Handgun" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="f129-90d6-6a6f-d0fc" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f129-90d6-6a6f-d0fc" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="449a-bbe6-63ff-849a" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="bbd2-572f-5f42-a981" name="Handgun" hidden="false" targetId="bd57-9e45-342f-ee49" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2198,6 +2252,13 @@ A character may only have one Yojimbo assigned to it at any time, although a new
           </costs>
         </selectionEntry>
         <selectionEntry id="1d44-fa26-db4a-ce1d" name="Sashimonos" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="4947-5432-ca09-46d7" value="0.0">
+              <conditions>
+                <condition field="selections" scope="51c0-b612-ca94-65fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44c-01b5-30e8-4ecf" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4947-5432-ca09-46d7" type="max"/>
           </constraints>
@@ -3263,6 +3324,18 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       </costs>
     </selectionEntry>
     <selectionEntry id="7ae4-0ae4-95a3-14c4" name="Onna Bushi" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="b876-2856-f1c2-c4f0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9698-caef-4c09-622f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="fc26-7737-f7cb-8977">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9698-caef-4c09-622f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="dda5-940d-d75b-896e" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -5012,7 +5085,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         <cost name="pts" typeId="points" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bbe6-a01d-a859-8be5" name="Mangonel" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="bbe6-a01d-a859-8be5" name="Mangonel" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="da02-e39b-4d15-d247" name="Mangonel" publicationId="5ff9-69dd-8810-183f" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -5096,7 +5169,7 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         <cost name="pts" typeId="points" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1da6-d47e-4788-df47" name="Flaming Arrow" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1da6-d47e-4788-df47" name="Flaming Arrow" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="d534-1f65-cfb4-a33c" name="Flaming Arrow" publicationId="5ff9-69dd-8810-183f" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>

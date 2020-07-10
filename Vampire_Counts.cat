@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0e-261d-9899-f1ae" name="Evocation of Death Chart">
@@ -7574,7 +7574,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <infoLink id="5681-42fb-7c15-d248" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="837b-b15a-598c-c867" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
@@ -7586,7 +7586,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <infoLink id="5b57-6860-8580-be02" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -8596,9 +8596,6 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
               <infoLinks>
                 <infoLink id="0ed5-2c2b-d363-30f2" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
               </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -8743,7 +8740,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
         <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e72d-5db1-aadc-137b" name="Cairn Wraiths" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e72d-5db1-aadc-137b" name="Cairn Wraiths" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="6d80-4cf9-6895-948a" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
@@ -8954,7 +8951,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
           </characteristics>
         </profile>
@@ -9108,6 +9105,26 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a4f2-ef74-3a82-f857" name="Resurrecting Fallen Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d9c-10de-87e5-0850" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3ff5-e802-4cd3-e03e" name="Resurrecting Fallen Warriors" publicationId="10a5-5781-61f5-86ae" page="166" hidden="false">
+          <description>Some magic spells and items can restore lost Wounds and even resurrect fallen warriors in an Undead unit. Wounds regained in this way follow a strict order.
+
+First, the musician is resurrected, and then the standard bearer, displacing rank-and-file models as required. Then rank-and-file models with multiple Wounds (including command figures) are healed to their starting value. Resurrected command models displace rank and file models as required. Finally, any remaining Wounds resurrect rank-and-file models. In the case of multiple-Wound rank-and-file models, the
+first resurrected models must be fully healed before another can be resurrected.
+
+Resurrected models are added to the front rank until it reaches at least a full rank – additional models can then be added to the front or rear rank. Raised models may never displace enemy units; if there is not enough room, any excess models are wasted. Similarly, if you do not have enough models of the appropriate type, place as many as you can – the rest are wasted.
+
+A unit cannot be taken beyond its starting size unless specified, and no single model can ever exceed its starting Wounds value. Unless specifically stated otherwise, spells and magic items that restore lost Wounds cannot heal characters. If a character has joined a unit, only the unit will recover lost Wounds.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="7905-e962-dbb3-d6cf" name="Nightshroud" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -9135,7 +9152,6 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d11b-285d-80b0-a9a8" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2a9-72a5-e804-fc05" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c556-08a8-416e-7ed1" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="701d-3e58-e2b0-fe4f" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3ae-fba9-4299-624c" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>

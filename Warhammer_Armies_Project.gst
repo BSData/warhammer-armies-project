@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.81" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -40,9 +40,9 @@
     <publication id="5884-1659-bf10-0d5a" name="Norse" shortName="No" publisher="Warhammer - Norse 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e3da-3848-ff08-a482" name="Magic Items v.0.9" shortName="MI" publisher="Warhammer - Magic Items v.0.9" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.1" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.1" publicationDate="10.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.24, Zombie Pirates of the Vampire Coast v.1.0" shortName="VC, VP" publisher="Warhammer - Vampire Counts 9th Ed v.1.24, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.0" publicationDate="06.06.2020, 02.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.0" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.0" publicationDate="02.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.11" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.24, Zombie Pirates of the Vampire Coast v.1.0" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.24, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="06.06.2020, 15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.0" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>

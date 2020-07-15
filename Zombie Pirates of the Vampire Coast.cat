@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5a4d-4069-fd13-1f1c" name="Zombie Pirates of the Vampire Coast" revision="2" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5a4d-4069-fd13-1f1c" name="Zombie Pirates of the Vampire Coast" revision="3" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="6432-c355-b85a-3bde" name="Necrofex Colossus Special Attack Table">
@@ -206,6 +206,28 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
           <infoLinks>
             <infoLink id="dfa8-dc9a-9452-14c0" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="dbb8-cc14-cc28-1858" name="Wraith Storm" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0978-843e-ba6f-d08f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69a5-f534-056c-0ddb" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="ee7c-7e76-6790-c345" name="Wraith Storm" publicationId="079e-9b65-30b3-2c59" page="29" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                  <characteristics>
+                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
+                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+</characteristic>
+                    <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place the large template anywhere within range; it will scatter D6&quot;. Any model touched by the template takes a S 3 hit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="07e7-85b3-c4f4-a3b4" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -1561,7 +1583,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                 <selectionEntry id="e4a0-57bb-ff3a-ab18" name="Brace of Pistols" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="31c0-c1a3-87dc-cc40" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7ab-3527-3fe7-0eba" type="min"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="5c72-9ad0-a272-67ca" name="Brace of Pistols" hidden="false" targetId="7259-6759-3c5f-ce3c" type="profile"/>

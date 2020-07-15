@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -3102,7 +3102,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3fbb-59f6-cb18-1b37" name="Primary Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3fbb-59f6-cb18-1b37" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="354d-006f-ae31-0778">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e95-6613-edfa-a01c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc37-1129-558d-7e4e" type="min"/>
@@ -3148,7 +3148,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e1e7-d1fb-cd61-451b" name="Lance (mounted)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e1e7-d1fb-cd61-451b" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="504d-a5e0-6260-c8af" value="1.0">
                   <conditions>
@@ -7724,9 +7724,9 @@ As long Spirits of the Fay remain partially within one of these terrain features
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc62-d03e-1f8f-b550" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b547-f0ea-a218-1da3" name="Tress of Isoulde" publicationId="e3da-3848-ff08-a482" page="11" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="b547-f0ea-a218-1da3" name="Tress of Isoulde" publicationId="9e23-79cb-pubN75312" page="181" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Lord or Paladin only. One use only. The bearer of the Tress of Isoulde may nominate one enemy model in base contact at the beginning of any Close Combat phase (after challenges have been issued and accepted). The bearer of the Tress of Isoulde hits that model on a 2+ for that Close Combat round, regardless of other modifiers.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. Nominate one enemy model in base contact at the beginning of any Close Combat phase (after challenges). The bearer hits that model on a 2+ for that Close Combat round, regardless of other modifiers.</characteristic>
               </characteristics>
             </profile>
           </profiles>

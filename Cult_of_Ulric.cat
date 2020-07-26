@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="7" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dc49-a383-6108-ad49" name="Talisman of Ulric">
@@ -178,7 +178,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The wielder&apos;s strikes have Ignores Armour saves. In addition, all enemy models in base to base contact with the wielder suffer from the Always Strikes Last special rule.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The wielder&apos;s strikes have Ignores Armour saves. In addition, all enemy models in base to base contact with the wielder suffer from Always Strikes Last.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5119,9 +5119,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4a93-2278-98dc-4b5b" name="Hunting Hounds" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="67d5-3d95-8f3e-c8cd" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="a1c8-e5bc-a204-7da5" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
         <infoLink id="f6cc-dce8-7680-8f8a" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
@@ -5139,7 +5136,7 @@
           <profiles>
             <profile id="c3ce-9b82-3aa2-0200" name="Hunting Hound" publicationId="7f0c-7d47-a39d-8c68" page="39" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
@@ -5264,16 +5261,16 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f882-133e-637b-53a8" type="min"/>
               </constraints>
               <profiles>
-                <profile id="9de4-3f37-488a-63f6" name="Warhorse" publicationId="315d-135b-135c-07ce" page="190" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="9de4-3f37-488a-63f6" name="Winter Wolf" publicationId="7f0c-7d47-a39d-8c68" page="39" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
                   </characteristics>
@@ -5892,20 +5889,20 @@
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c6dd-1ed2-4939-bf75" name="Banner of the Warrior Ture" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c6dd-1ed2-4939-bf75" name="Banner of the Warrior True" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="39bf-b3fe-4cae-55eb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1d3-1d95-5a9b-ee9b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2ef5-33af-55c4-88ad" name="Standard of the White Wolf" publicationId="7f0c-7d47-a39d-8c68" page="47" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="2ef5-33af-55c4-88ad" name="Banner of the Warrior True" publicationId="7f0c-7d47-a39d-8c68" page="47" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All missile fire against the unit (including magic missiles) suffers a -1 penalty to its S. Other types of attacks, including spells that are not magic missiles, are unaffected.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">When the unit carrying this banner takes a Break test, they count as having lost the combat by D3 fewer points than they really did. If this reduces the margin of the loss to 0 or lower, they still count as having lost the combat but test on their unmodified LD.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

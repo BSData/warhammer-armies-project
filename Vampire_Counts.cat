@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0e-261d-9899-f1ae" name="Evocation of Death Chart">
@@ -7158,7 +7158,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="701d-3e58-e2b0-fe4f" name="Sylvanian Peasant Levy" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="701d-3e58-e2b0-fe4f" name="Sylvanian Peasant Levy" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="d9e1-b062-0957-1a6d" value="-1.0">
           <conditionGroups>
@@ -8458,10 +8458,25 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc17-cea1-d049-5618" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="ba1e-616a-b0ea-ffe1" name="Handmaiden" publicationId="10a5-5781-61f5-86ae" page="185" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="d08e-9851-009b-2842" name="Vampiric" hidden="false" targetId="0f26-d445-00d9-2a92" type="rule"/>
             <infoLink id="1788-12df-a0db-0986" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-            <infoLink id="18ae-a022-70f0-841c" name="Handmaiden" hidden="false" targetId="c75f-b965-a435-abda" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="3b0e-0714-d26a-4571" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
@@ -8501,9 +8516,24 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f60f-c282-7b1a-4bf9" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="f436-e125-89df-3f5d" name="Royal Handmaiden" publicationId="10a5-5781-61f5-86ae" page="185" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="71ed-7bfd-1a56-ac9d" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="8c55-6313-c954-e068" name="Royal Handmaiden" hidden="false" targetId="36fe-d48e-2366-a575" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="3d7c-9686-5e8a-ba17" name="Asp Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -8596,6 +8626,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
               <infoLinks>
                 <infoLink id="0ed5-2c2b-d363-30f2" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -11219,34 +11252,6 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c75f-b965-a435-abda" name="Handmaiden" publicationId="10a5-5781-61f5-86ae" page="185" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="36fe-d48e-2366-a575" name="Royal Handmaiden" publicationId="10a5-5781-61f5-86ae" page="185" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0d-50bf-b007-6cef" name="Animosity Table">
@@ -317,7 +317,6 @@
           <infoLinks>
             <infoLink id="8136-93f9-0e7f-8548" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="85ab-1bdc-6105-8a9a" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-            <infoLink id="9a2b-a6ff-a619-ecbf" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
             <infoLink id="756e-9be4-8db3-d3fc" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
             <infoLink id="c450-4970-fd8c-3a55" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
             <infoLink id="9f1a-0161-06cf-3d12" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
@@ -1975,6 +1974,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="736a-efe4-56ba-c696" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="65.0"/>
       </costs>
@@ -2192,7 +2194,6 @@
                         <infoLink id="fe20-e46c-7f59-5747" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                         <infoLink id="5001-a0aa-1270-0561" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
                         <infoLink id="0d5a-530a-9dfc-65c8" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                        <infoLink id="2432-b705-fcb4-83ee" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="94fa-a20d-01a1-3c68" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                       </infoLinks>
                       <costs>
@@ -2205,7 +2206,6 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="87c8-223c-639a-bb69" name="Wyvern" hidden="false" targetId="c731-a6d8-8750-c8e5" type="profile"/>
-                        <infoLink id="6aa8-0721-edc8-c8bf" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="ff09-6a8a-e0c9-c084" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                         <infoLink id="c1f8-2ed3-2d84-b713" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="b41b-2f2c-d984-5988" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
@@ -2222,6 +2222,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="960b-16a6-b998-0cc3" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="efdc-8e41-553a-ef66" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="160.0"/>
@@ -2229,7 +2230,7 @@
             </selectionEntry>
             <selectionEntry id="22ea-d1c8-6a46-c371" name="Orc Warboss" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="c3f7-7d44-6f4c-5be7" value="0">
+                <modifier type="set" field="c3f7-7d44-6f4c-5be7" value="0.0">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
                   </conditions>
@@ -2526,7 +2527,6 @@
                         <infoLink id="1c19-504b-de45-3607" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                         <infoLink id="5056-5748-5e50-c0d5" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
                         <infoLink id="273b-9f0e-b8e3-dd96" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                        <infoLink id="e90f-2eb2-d57e-9ff6" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="99df-247d-c6a5-baa2" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                       </infoLinks>
                       <costs>
@@ -2539,7 +2539,6 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="2b6a-b88d-839a-575c" name="Wyvern" hidden="false" targetId="c731-a6d8-8750-c8e5" type="profile"/>
-                        <infoLink id="b352-d8a7-cd01-9b92" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="91d8-caf1-f927-dc79" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                         <infoLink id="2bef-de39-0d63-6b82" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="de4c-d1a9-0eed-6e1d" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
@@ -2556,6 +2555,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="9b2c-abb7-4942-1098" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="c8a2-3573-6c1d-abb5" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="130.0"/>
@@ -2749,6 +2749,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="fb6d-7b6d-cbc8-4f36" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="7411-7918-a3da-aa77" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="55.0"/>
@@ -3024,6 +3025,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="04e4-4f51-acfc-fa0f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="40b2-8a60-ceda-5901" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
@@ -3226,6 +3228,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="e609-582e-e6f0-82b2" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="b8ec-61db-8688-6413" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
@@ -3461,7 +3464,6 @@
                         <infoLink id="9656-3094-03bc-1a7d" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                         <infoLink id="40fa-7272-335b-10d7" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
                         <infoLink id="9f6e-1ce8-88f1-9ad7" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                        <infoLink id="b97e-36a0-7f62-b683" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="680d-cf1e-8746-c6e6" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                       </infoLinks>
                       <costs>
@@ -3474,7 +3476,6 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="9169-4d85-10b3-4925" name="Wyvern" hidden="false" targetId="c731-a6d8-8750-c8e5" type="profile"/>
-                        <infoLink id="3081-5aae-c341-1ea1" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="078c-a7fa-91e5-6511" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                         <infoLink id="4cc9-2739-9077-9abf" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="8303-ba6d-c9b4-3753" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
@@ -3491,6 +3492,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="ed71-417c-7ae4-35f7" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="a23f-f52b-6d89-7032" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="165.0"/>
@@ -3673,7 +3675,6 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="bf6b-a010-ded6-0575" name="Wyvern" hidden="false" targetId="c731-a6d8-8750-c8e5" type="profile"/>
-                        <infoLink id="55af-6e3e-ae5f-0396" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="d501-0455-4ce6-f647" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                         <infoLink id="eb8a-488b-8cd4-2a5c" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="142e-49e5-70dd-f12e" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
@@ -3764,6 +3765,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="fd35-17a3-c0c4-310a" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="8a43-36c0-21d6-8689" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="185.0"/>
@@ -3859,7 +3861,6 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="d296-9ea7-247e-8747" name="Wyvern" hidden="false" targetId="c731-a6d8-8750-c8e5" type="profile"/>
-                        <infoLink id="14cd-35ed-7a21-1fad" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="5899-d3c1-8cae-85eb" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                         <infoLink id="27aa-400f-20fd-f73b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="c20a-0a8a-e6a8-5083" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
@@ -3950,6 +3951,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="9147-2153-0878-4108" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="33a8-79d1-171a-54a7" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="200.0"/>
@@ -4085,6 +4087,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="e497-8808-2dc0-1a1b" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="0133-1a37-9295-c6c4" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150.0"/>
@@ -4318,6 +4321,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="1e5b-33a5-a62b-cf86" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="2edc-4279-edda-206a" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="155.0"/>
@@ -4433,7 +4437,6 @@
                         <infoLink id="3d77-199f-be3d-2b8c" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
                         <infoLink id="0f5e-74e1-a8ef-b39a" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="342e-7f8b-77a7-ff9a" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-                        <infoLink id="e6cb-6e52-fff6-785b" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
                         <infoLink id="ca77-6f0d-1a21-8b30" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
                         <infoLink id="2547-9161-b7e2-1750" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                         <infoLink id="934f-ce3f-966d-2f0e" name="Venom Surge" hidden="false" targetId="ef63-ba9b-b9c8-6f4b" type="rule"/>
@@ -4595,6 +4598,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="ce05-56dc-73a5-15b7" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="18de-8c91-0ad7-82e1" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="160.0"/>
@@ -4764,6 +4768,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="ce35-38b1-8d3e-0025" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="2ffd-9f6b-2d82-b308" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="90.0"/>
@@ -4899,6 +4904,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="5214-299a-cbb3-86cc" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="40fa-8519-8e8e-5557" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="55.0"/>
@@ -5053,6 +5059,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="9e66-bdbf-1ea7-de9c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="b33d-9b55-3f5b-33ce" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
@@ -5200,6 +5207,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="a9c6-abcd-fdc7-5f93" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="1970-baff-a602-ec7c" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60.0"/>
@@ -5349,6 +5357,7 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="7617-92ad-fb60-6999" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="41c2-9ca4-a471-e1e1" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
@@ -5619,6 +5628,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="8596-83af-5953-4d66" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="90.0"/>
               </costs>
@@ -5957,6 +5969,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2ce9-c60d-aa17-a80e" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
@@ -6222,6 +6237,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2fde-f8f1-9b2a-888d" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
@@ -6552,6 +6570,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="4634-778d-6b80-3654" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
               </costs>
@@ -6774,6 +6795,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="c937-347d-7f70-1e53" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="85.0"/>
               </costs>
@@ -7030,6 +7054,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="792e-763f-33cc-19af" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
@@ -7564,6 +7591,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   <infoLinks>
                     <infoLink id="58a6-0b42-356e-46c5" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="c98c-e284-936c-7fc4" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -7585,6 +7615,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                     <infoLink id="ad1a-738d-c37e-0bad" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
                     <infoLink id="d20d-eaaf-e860-923e" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -7762,6 +7795,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                   <infoLinks>
                     <infoLink id="8aa2-f8aa-61a8-a9a4" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="ac6e-f4cd-3abf-9ef5" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -7771,6 +7807,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                     <infoLink id="8f2f-c00c-ab53-eced" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                     <infoLink id="e7e2-503d-4258-aaea" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="f69a-ca87-b875-1e49" name="Hand Weapon &amp; Bow" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -7780,6 +7819,9 @@ da Spider God). In addition, he and any other friendly Wizard within 12&quot; of
                     <infoLink id="16a8-b999-ba53-f73c" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
                     <infoLink id="e812-5da6-6ee1-aead" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -12144,7 +12186,6 @@ Wounds and the shot is wasted.</characteristic>
         <infoLink id="99da-e8ee-a316-88f4" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="cef0-dc2c-6a73-5e14" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="05c3-51b4-dc38-b3f9" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="0b67-57f4-eada-1dda" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="21fd-8ccc-e171-2562" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="b8f3-b57b-da96-1c6d" name="Random Movement (4D6)" hidden="false" targetId="ece5-1f38-ee28-593e" type="rule"/>
       </infoLinks>
@@ -12166,7 +12207,6 @@ Wounds and the shot is wasted.</characteristic>
         <infoLink id="2ace-b5e5-7309-50d7" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
         <infoLink id="7dc3-f00a-1262-67be" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="a0f0-7fe3-c674-f803" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="d9c2-c59e-f07c-4293" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="626e-32fb-cb49-e6bb" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="9896-27bb-ec3e-6e58" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="68ea-929b-3871-5ffc" name="Venom Surge" hidden="false" targetId="ef63-ba9b-b9c8-6f4b" type="rule"/>
@@ -12255,7 +12295,6 @@ Wounds and the shot is wasted.</characteristic>
         <infoLink id="c250-a70d-03cc-9622" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
         <infoLink id="fb53-94a2-fe08-06d9" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="c7bb-0fcd-fa93-dc3d" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="6ff4-4664-0084-5be6" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="9315-ac99-1f31-fdeb" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="769e-2514-c5d8-519f" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
         <infoLink id="00e1-a7df-4462-0eaf" name="Natural Armour (2+)" hidden="false" targetId="b15c-9f50-7081-ba29" type="rule"/>
@@ -12516,7 +12555,6 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <infoLink id="b6f9-6590-9ad7-d096" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
         <infoLink id="9ebd-46ca-89e6-99b2" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="e44a-ee28-7ec9-1034" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="eab4-fe29-8c7c-6077" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="ec1b-a08f-9345-5d90" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -12627,7 +12665,6 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
         <infoLink id="d909-564f-0355-7677" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="de46-45ab-545a-cb7e" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="63d7-dd7e-dca9-99a8" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="fedd-e2d5-e1a5-018b" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="95a6-5709-8b98-0a51" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
         <infoLink id="3bd6-ed74-68fb-5987" name="Strider (Marsh)" hidden="false" targetId="686b-8e1b-4d01-05ba" type="rule"/>
         <infoLink id="254c-ff5d-b02a-908f" name="Strider (River)" hidden="false" targetId="48d5-6bee-c3f6-cec8" type="rule"/>
@@ -12983,7 +13020,6 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
       <infoLinks>
         <infoLink id="48b0-e183-df09-0dcd" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="7d02-1387-7625-ddd8" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="3f35-f945-a4bd-e9cb" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
         <infoLink id="a11f-a79f-43ba-4b77" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="622e-3720-f76b-480e" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
         <infoLink id="af84-4d7e-5e46-c298" name="Stupidity" hidden="false" targetId="755c-61c2-fa25-f4ce" type="rule"/>

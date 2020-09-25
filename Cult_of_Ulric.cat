@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="8" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dc49-a383-6108-ad49" name="Talisman of Ulric">
@@ -601,7 +601,6 @@
                 <infoLink id="09ad-aa82-aeb9-fc1c" name="Imperial Griffon" hidden="false" targetId="cc5a-d8b6-9057-fa0f" type="profile"/>
                 <infoLink id="321c-8d26-8c22-bd71" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="73a8-74a8-ece1-d1c8" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-                <infoLink id="68e9-660a-2e4f-a7fa" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2a4d-83d4-8b3c-b34c" name="Upgrades" hidden="false" collective="false" import="true">
@@ -821,6 +820,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1f02-bdd9-7483-22ea" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="185d-853e-e23b-b7d4" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="95.0"/>
@@ -967,7 +967,6 @@
                 <infoLink id="c322-10f9-c98a-d10c" name="Imperial Griffon" hidden="false" targetId="cc5a-d8b6-9057-fa0f" type="profile"/>
                 <infoLink id="8769-bfb7-7d43-9049" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="31fe-5427-cb02-630b" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-                <infoLink id="4417-fc01-883b-653c" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="8834-d5b4-6f1d-319d" name="Upgrades" hidden="false" collective="false" import="true">
@@ -1180,6 +1179,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3625-80c4-d247-9218" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="e17f-e2e8-2c84-8474" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="85.0"/>
@@ -1422,7 +1422,6 @@
                 <infoLink id="2063-e242-13d8-415c" name="Imperial Griffon" hidden="false" targetId="cc5a-d8b6-9057-fa0f" type="profile"/>
                 <infoLink id="152e-391b-eaf5-76bc" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="9bfe-ef1d-e1b8-acf1" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-                <infoLink id="f420-7dd4-217c-4b58" name="Towering" hidden="false" targetId="cf7e-179f-186f-8108" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a9e6-4d98-dd6e-57a3" name="Upgrades" hidden="false" collective="false" import="true">
@@ -1483,6 +1482,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8a52-6405-d43e-97cb" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="27a3-ac4f-19bd-3738" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="165.0"/>
@@ -1605,9 +1605,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3117-b0f0-95a7-0bce" name="Seneschal of the White Wolf" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ec1b-aaa7-4eee-02f6" type="max"/>
-      </constraints>
       <profiles>
         <profile id="d3f4-3472-32f1-11a8" name="Seneschal" publicationId="7f0c-7d47-a39d-8c68" page="33" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -1712,6 +1709,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="2fe0-dd2c-0242-37e4" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="a9b3-a731-a0fb-8b56" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="70.0"/>
@@ -1891,6 +1889,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c9bf-d741-271c-1745" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="d686-92ef-2ba5-25b4" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="70.0"/>
@@ -2066,6 +2065,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2112-77fc-f30e-e1e2" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="b3a4-9dd3-828e-4a40" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="65.0"/>
@@ -2556,6 +2556,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9723-f56e-d420-74ec" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="55.0"/>
       </costs>

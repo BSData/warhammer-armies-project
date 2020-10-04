@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="290c-8805-073e-3492" name="Estalia" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="290c-8805-073e-3492" name="Estalia" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="e5cf-9291-e237-c43a" name="Duelling Techniques">
@@ -3978,17 +3978,15 @@
     </selectionEntry>
     <selectionEntry id="73c5-a3cf-0d34-c883" name="Conquistadors" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set-primary" field="category" value="b876-2856-f1c2-c4f0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7f4-339d-d2bb-bd1a" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="fc26-7737-f7cb-8977">
+        <modifier type="set" field="982e-8b93-be62-3949" value="0.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7f4-339d-d2bb-bd1a" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="982e-8b93-be62-3949" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="4c02-b126-b7d5-90a4" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -5535,6 +5533,187 @@ When suffering casualties from shooting or magic, the Herders follow the rules f
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7af0-d134-66b6-f301" name="Conquistadors (Francisco Cortez)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="e4c2-6ff4-fc52-3a72" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7f4-339d-d2bb-bd1a" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e4c2-6ff4-fc52-3a72" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9d50-bcc6-62d4-5551" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a4c7-6b70-70e7-0cfa" name="Conquistador" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acf9-cbf9-1784-f8b3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="127a-3215-05dc-6a8f" name="Conquistador" publicationId="894a-5ecc-1ff7-958a" page="62" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f6b2-011b-fa69-fde6" name="Tactical Supremacy" hidden="false" targetId="988f-a5b4-56b9-dbcb" type="rule"/>
+            <infoLink id="419d-4c98-02b4-aef9" name="Fusillade" hidden="false" targetId="e488-694d-d577-b5d9" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="8d61-838c-f1a1-73d9" name="Warhorse" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b56f-48f5-f286-c6dd" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b27-af87-83b5-ba34" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0ec2-7852-172e-31e3" name="Warhorse" hidden="false" targetId="04a2-7e74-a077-da71" type="profile"/>
+                <infoLink id="84e0-b779-41d6-c681" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="153a-f343-5f5f-e564" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1e8a-08f4-36c2-f4e5" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc36-bc4a-bfc7-6b5a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4e2-3266-28c8-df68" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7ac8-dba1-9445-7eb4" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1150-a192-5aa6-0f1f" name="Pistol" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0386-fb60-858a-8c9f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6677-c32d-8227-a4e5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8625-ff89-ee9f-3088" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8508-0426-deaf-6981" name="Handgun" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a1b-51a8-e525-f6d0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11b1-f56d-b50e-0f5a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5ebd-1beb-d65b-707a" name="Handgun" hidden="false" targetId="bd57-9e45-342f-ee49" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0640-5b54-f963-d223" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f29e-7bf6-2223-e855" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b154-41d0-9ad4-0b0f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a11f-c9da-3ca9-d85e" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="24.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b93d-4732-b869-c287" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="ea6b-6be1-a660-9468" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfd5-2f27-0154-c26f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9763-5431-796a-7d3f" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="6685-781b-a66a-2e67" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="401e-3154-62b2-75cb" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7ab3-1d3b-8da8-31aa" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="891a-8f49-9c49-4202" name="Magic Standards" hidden="false" collective="false" import="true" targetId="1182-5614-d9fe-26dc" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0447-e7c7-ebec-e465" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="902d-a29f-e5c0-ed95" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c920-b267-045b-24b7" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2fd8-3bac-8699-56ae" name="Conquistador Captain" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9987-c9aa-9012-c1a6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="549c-6c0a-1e12-7f31" name="Conquistador Captain" publicationId="894a-5ecc-1ff7-958a" page="62" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6304-24fa-3c09-00c2" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1e6f-78c7-468a-3e09" name="Restricted Practise" hidden="false" collective="false" import="true" type="upgrade">
@@ -5572,6 +5751,7 @@ When suffering casualties from shooting or magic, the Herders follow the rules f
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cac-b191-45e5-3d5b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e90d-6fc8-924b-6a1b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d857-3c00-d1ab-38a1" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7af0-d134-66b6-f301" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5874-3245-b8d5-d897" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>

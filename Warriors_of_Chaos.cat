@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1306-7f01-ae3c-4fa0" name="Eye of the Gods Table">
@@ -16112,24 +16112,14 @@ The unit&apos;s models gain Poisoned Attacks.</description>
     </selectionEntry>
     <selectionEntry id="a318-4aee-10c0-31b8" name="Chaos Trolls" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="36c4-f2f4-f90c-724a" value="1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9e4-a225-f8ab-b07a" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="b876-2856-f1c2-c4f0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9e4-a225-f8ab-b07a" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="fc26-7737-f7cb-8977">
+        <modifier type="set" field="36c4-f2f4-f90c-724a" value="0.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9e4-a225-f8ab-b07a" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36c4-f2f4-f90c-724a" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36c4-f2f4-f90c-724a" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="773d-e971-07ca-387b" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -18653,6 +18643,109 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8fd5-b603-87ee-d841" name="Chaos Trolls (Throgg)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="3636-acb8-01e7-401d" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9e4-a225-f8ab-b07a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="006e-d032-48d1-8eea" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9e4-a225-f8ab-b07a" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="006e-d032-48d1-8eea" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3636-acb8-01e7-401d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eb26-0bd4-29a6-d916" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3177-903a-2bfa-6536" name="Chaos Troll" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="033e-379b-da67-c336" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="23ad-f6cf-332a-5d38" name="Troll Vomit" publicationId="1a01-044f-047b-618f" page="198" hidden="false">
+              <description>Instead of attacking normally, the whole unit can choose to vomit on the enemy. Each model inflicts one automatic S 5 hit which Ignores Armour Saves.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="9bb5-ff53-9038-05d0" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+            <infoLink id="2c27-ee0b-ff52-6673" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="e7ab-0317-7fb9-7a12" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
+            <infoLink id="190f-638d-c578-5b78" name="Stupidity" hidden="false" targetId="755c-61c2-fa25-f4ce" type="rule"/>
+            <infoLink id="3ce5-2233-d60f-c963" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+            <infoLink id="9846-be6b-1695-d70a" name="Chaos Troll" hidden="false" targetId="974b-bafc-dcc7-8f21" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="1fb9-5fa3-8203-2b2d" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="468a-1bf7-2f59-3842" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="58f4-6286-bd1f-67a0" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f027-41b1-c24b-168b" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed5c-042b-813f-a4ce">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f42-cf1a-deab-f07d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f163-cf20-361a-fc60" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1bde-bc15-04f6-1507" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7223-1e8b-012c-5e23" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b3b9-7065-8494-1877" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6d85-6fbb-22a9-6887" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c765-45b3-987f-bcaa" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1360-6c39-b895-7049" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ed5c-042b-813f-a4ce" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16f1-d0c2-59c3-8342" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c38e-4c6f-1c85-ce45" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="7e2e-df30-f192-116f" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
@@ -18689,6 +18782,7 @@ Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrin
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f12-de23-0bef-d17f" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e548-accd-4061-d38f" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a3d-4c54-0b30-9438" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fd5-b603-87ee-d841" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>

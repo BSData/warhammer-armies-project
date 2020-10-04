@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="443d-406a-91b3-9788" name="Kislev" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="443d-406a-91b3-9788" name="Kislev" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9fbd-5eb3-4c58-bce4" name="Drunken Stupor Table">
@@ -3462,17 +3462,15 @@
     </selectionEntry>
     <selectionEntry id="ea6f-6deb-0f86-79db" name="Gryphon Legion" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set-primary" field="category" value="b876-2856-f1c2-c4f0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7b6-4fce-4f8d-6f62" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="fc26-7737-f7cb-8977">
+        <modifier type="set" field="7d7c-aa52-78d1-ce68" value="0.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7b6-4fce-4f8d-6f62" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7d7c-aa52-78d1-ce68" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="33d5-5194-2211-54d1" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -4950,6 +4948,177 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c950-eecd-d453-7dd6" name="Gryphon Legion (Tordimir Lubovasyn)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="eba4-11ee-f1c2-537f" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7b6-4fce-4f8d-6f62" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="eba4-11ee-f1c2-537f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ca4f-1d73-990c-bcb8" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0e15-6a45-1973-3fd8" name="Gryphon Legionnaire" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8535-9214-bb25-b83c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3382-825c-1321-4245" name="Gryphon Legionnaire" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="df59-57dc-0ed5-7851" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+            <infoLink id="5a5d-dd1a-6c47-bee3" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+            <infoLink id="9fd8-ff54-4eb0-8d65" name="Glorious Charge" hidden="false" targetId="a6cf-6dc0-c104-1914" type="rule"/>
+            <infoLink id="a75f-9aee-e6fc-923d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="071f-1c5e-896f-6523" name="Warhorse" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1993-4daf-d01e-9d5d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7963-2da2-1073-8db8" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dc59-3458-8468-4fbe" name="Warhorse" hidden="false" targetId="7806-7f1c-581f-2931" type="profile"/>
+                <infoLink id="09b6-8e96-1d7d-c162" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="515b-bc72-42ec-5e27" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="55f5-86a5-6daf-8cda" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d75-4f2e-0e8d-d7ef" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c62a-8abd-c41a-362b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8cf8-6098-2b67-d62f" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1f74-7aa4-856f-f7a7" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4e0-6f60-b85a-12db" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f9e-9fca-8597-9903" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8fd2-2418-0010-cfd5" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="83f0-779b-af37-eedf" name="Lance (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7703-06f5-6032-9867" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2df-df62-6471-cf33" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="005a-5367-10bb-91b7" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="22.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bda7-0c53-576d-976d" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="5c70-4910-a885-412d" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5406-d652-206d-773e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c83b-f9fe-f786-e9d9" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="918b-407b-0678-5155" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9797-fe2d-b263-e43f" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c139-d68f-46f0-298a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="26df-a49f-7642-9e3a" name="Magic Standards" hidden="false" collective="false" import="true" targetId="36b5-7e17-a3d6-e5c7" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5172-6aca-a78b-c647" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="935e-32b0-df04-42c2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3771-fbb8-458b-611c" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b34b-825f-c556-63c8" name="Rotamaster" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eec0-0e22-6430-00d5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4783-d8af-3d3d-627d" name="Rotamaster" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="5663-9318-73ba-5d85" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="5b8c-99ec-47b3-f684" name="Ice-armour of Jekaterina" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -4979,6 +5148,7 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd18-b0c4-496a-c3af" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d74-26d2-e41c-05e1" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66b6-bafb-1da5-d22d" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c950-eecd-d453-7dd6" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>

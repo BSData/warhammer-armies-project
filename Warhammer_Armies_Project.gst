@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.9" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -195,14 +195,14 @@
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc26-7737-f7cb-8977" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="f412-f4d0-9f49-afab" value="3.0">
+        <modifier type="increment" field="f412-f4d0-9f49-afab" value="1.0">
           <repeats>
-            <repeat field="points" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f412-f4d0-9f49-afab" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f412-f4d0-9f49-afab" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d38a-73da-883b-bab9" name="Heroes" hidden="false"/>
@@ -214,14 +214,14 @@
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0eb4-f376-7725-b05b" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="5e3c-b5d6-a059-b5ab" value="3.0">
+        <modifier type="increment" field="5e3c-b5d6-a059-b5ab" value="1.0">
           <repeats>
-            <repeat field="points" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e3c-b5d6-a059-b5ab" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e3c-b5d6-a059-b5ab" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="0eb4-f376-7725-b05b" name="Rare" hidden="false">
@@ -232,14 +232,14 @@
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b876-2856-f1c2-c4f0" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="e0d7-75ba-de98-e3ff" value="3.0">
+        <modifier type="increment" field="e0d7-75ba-de98-e3ff" value="1.0">
           <repeats>
-            <repeat field="points" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e0d7-75ba-de98-e3ff" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e0d7-75ba-de98-e3ff" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>

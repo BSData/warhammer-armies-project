@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="2c06-e87d-1a85-d6a0" name="Ringing the Bell Table">
@@ -3369,9 +3369,9 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
       </rules>
       <infoLinks>
         <infoLink id="8303-e226-9969-effd" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
-        <infoLink id="5d56-f3e6-9ecd-1619" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
+        <infoLink id="5d56-f3e6-9ecd-1619" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
         <infoLink id="3fc3-fb2c-3678-d9d3" name="Verminous Valour" hidden="false" targetId="5c1c-bc13-7613-8134" type="rule"/>
-        <infoLink id="cf76-193c-0b4b-82e3" name="Mixed Unit" hidden="false" targetId="58e9-5716-dad1-961f" type="rule"/>
+        <infoLink id="2658-da0a-1e45-8e64" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="220f-ce4a-7bd8-67ee" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -5554,10 +5554,10 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="95ed-df2e-50a5-c08a" name="Mixed Unit" hidden="false" targetId="58e9-5716-dad1-961f" type="rule"/>
         <infoLink id="9cb6-c9ed-216d-c881" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
         <infoLink id="deed-2989-2da1-086f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="d827-ff50-bba0-a148" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
+        <infoLink id="90ba-975c-d476-e942" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="25b3-d21f-2b55-5ab1" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -5591,24 +5591,12 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </costs>
         </selectionEntry>
         <selectionEntry id="7c2d-cb84-3a31-d534" name="Packmaster" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="increment" field="d9df-a4f1-32b1-ab45" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="2707-f300-47f0-58ec" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e391-6d8c-b7df-bcd1" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="e199-b8be-d18f-000e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="2707-f300-47f0-58ec" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e391-6d8c-b7df-bcd1" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9df-a4f1-32b1-ab45" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e199-b8be-d18f-000e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9df-a4f1-32b1-ab45" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="4042-12bd-228c-72b5" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
+            <infoLink id="f7c3-0c25-8a17-36fa" name="Packmaster" hidden="false" targetId="ccd1-cb1f-61e9-0f0c" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="3138-2e8a-7b41-0469" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -6097,10 +6085,10 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
     </selectionEntry>
     <selectionEntry id="c16c-5072-d189-60f2" name="Rat Ogres" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="dfd4-78ac-a063-4f4a" name="Mixed Unit" hidden="false" targetId="58e9-5716-dad1-961f" type="rule"/>
         <infoLink id="8639-6698-6779-61ab" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
         <infoLink id="9eb4-be5f-dfe2-5a26" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="857d-a1f0-86e9-2e68" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
+        <infoLink id="7c14-f484-9687-105b" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5f52-38e1-8152-bd28" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -6223,22 +6211,14 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </costs>
         </selectionEntry>
         <selectionEntry id="263b-a0e0-8a21-a37e" name="Packmaster" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="increment" field="9e0f-790a-a2c2-4517" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="c16c-5072-d189-60f2" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac20-2e82-04c7-5d21" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9187-0975-ec1e-1684" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="c16c-5072-d189-60f2" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac20-2e82-04c7-5d21" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9187-0975-ec1e-1684" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e0f-790a-a2c2-4517" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9187-0975-ec1e-1684" type="min"/>
           </constraints>
+          <rules>
+            <rule id="9598-54a0-e15f-31f5" name="Packmaster" publicationId="4086-1ccd-f433-39a2" page="244" hidden="false">
+              <description>You must add 1 Packmaster for every 2 Rat Ogres in the unit.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="b84a-c43c-2868-d568" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
           </infoLinks>
@@ -7758,10 +7738,10 @@ If you roll a misfire result something has gone awry. No more shots are fired th
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="f9bd-28de-4d9e-e8a7" name="Mixed Unit" hidden="false" targetId="58e9-5716-dad1-961f" type="rule"/>
         <infoLink id="f85f-22cb-3756-278f" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
         <infoLink id="f40b-b349-3fa7-1242" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="242a-7d3a-c905-415c" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
+        <infoLink id="4e7f-64a3-ad5f-47eb" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8d43-a53b-b315-7528" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -7795,19 +7775,12 @@ If you roll a misfire result something has gone awry. No more shots are fired th
           </costs>
         </selectionEntry>
         <selectionEntry id="7dcd-46c4-ae43-438d" name="Packmaster" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="increment" field="0eab-bc4b-7780-b86d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="8642-b877-b44e-f203" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2b7-cb11-c373-19f5" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfd3-59d3-7b0f-046a" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0eab-bc4b-7780-b86d" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="5bc6-6ad9-12c2-7fc2" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
+            <infoLink id="2c3d-0445-5b49-f9ed" name="Packmaster" hidden="false" targetId="ccd1-cb1f-61e9-0f0c" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="948d-0712-138a-256c" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -9489,11 +9462,6 @@ If for any reason a Skaven unit loses its rank bonus, it also loses its LD bonus
     <rule id="77ea-023f-0095-0507" name="Sensei" publicationId="4086-1ccd-f433-39a2" page="174" hidden="false">
       <description>An Assassin cannot be your army General (this does not apply to Master Assassins). Only Eshin units can use their LD or Inspiring Presence.</description>
     </rule>
-    <rule id="58e9-5716-dad1-961f" name="Mixed Unit" publicationId="4086-1ccd-f433-39a2" page="114" hidden="false">
-      <description>Packmasters lead units of Giant Rats or Rat Ogres. They follow the rules for Champions, and may be placed in the rear rank of the unit. As long as at least a single Packmaster or Master Moulder is alive, the unit he is leading can use his LD and Strength in Numbers rule.
-
-If a unit of Giant Rats begins a turn without at least one Packmaster, they will move as quickly as possible towards the nearest enemy unit in their line of sight, charging if they can. If they have no visible targets they will reform to face the closest foe. If a unit of Rat Ogres begins a friendly turn without at least one Packmaster they are subject to Stupidity.</description>
-    </rule>
     <rule id="b29b-75ba-9d82-c0e2" name="Beastmaster" publicationId="4086-1ccd-f433-39a2" page="177" hidden="false">
       <description>Master Moulders and Master Mutators may join units of Giant Rats or Rat Ogres and act as their handlers following the Mixed Units rule. All friendly Clan Moulder units within 6&quot; of a Master Moulder or 12&quot; of a Master Mutator roll 3D6 for all
 LD tests and discard the highest dice.</description>
@@ -9573,6 +9541,9 @@ Roll an Artillery Dice to determine number of shots fired. After the first Artil
     </rule>
     <rule id="03e2-1030-42c5-4223" name="War-Litter" publicationId="4086-1ccd-f433-39a2" page="203" hidden="false">
       <description>A War-litter should be placed on a 40x40mm base, and adds +4 to the Unit Strength of any model mounted on them.</description>
+    </rule>
+    <rule id="ccd1-cb1f-61e9-0f0c" name="Packmaster" publicationId="4086-1ccd-f433-39a2" page="243" hidden="false">
+      <description>You must add 1 Packmaster for every 5 Giant Rats in the unit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

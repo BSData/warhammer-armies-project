@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.9" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -43,6 +43,9 @@
     <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.11" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.24, Zombie Pirates of the Vampire Coast v.1.0" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.24, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="06.06.2020, 15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.0" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.1" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.1" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters 1.0" shortName="Emp" publisher="Warhammer - Empire Special Characters 1.0" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.0" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.0" publicationDate="10.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>

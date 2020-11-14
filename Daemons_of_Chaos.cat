@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="324d-b81e-296a-d5cd" name="Reign of Chaos Table">
@@ -6628,6 +6628,535 @@ but it may not fire grapeshot.</characteristic>
         <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1b7f-05fe-79a3-bacb" name="Skaarac the Bloodborn" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5a6e-462a-5d3a-1060" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="66c4-4fa5-e051-a8bc" name="Skaarac" publicationId="acbb-53f3-d3f4-1f4e" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">0</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">6</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="49f0-3903-f286-589c" name="Life Eater" publicationId="acbb-53f3-d3f4-1f4e" page="1" hidden="false">
+          <description>Roll a D6 for each Wound inflicted by Skaarac in close combat. For each result of a 6, he may restore one Wound previously lost during the battle.</description>
+        </rule>
+        <rule id="be69-402d-5320-51f6" name="Burning Blood" publicationId="acbb-53f3-d3f4-1f4e" page="1" hidden="false">
+          <description>Scaarac has a Breath Weapon Attack with S 5 and Ignores Armour Saves.</description>
+        </rule>
+        <rule id="3c96-999a-9e4a-837f" name="Call of the Skull Throne" publicationId="acbb-53f3-d3f4-1f4e" page="1" hidden="false">
+          <description>All friendly Daemons of Khorne within 12&quot; of Skaarac may re-roll failed charge distances.</description>
+        </rule>
+        <rule id="c95c-c611-d340-2142" name="Undying Hate" publicationId="acbb-53f3-d3f4-1f4e" page="1" hidden="false">
+          <description>If this model is slain, before removing it, every model within D6&quot; suffers a S 5 Hit which Ignores Armour saves.</description>
+        </rule>
+        <rule id="7a4b-5220-3f80-e2f0" name="Infernal Iron" publicationId="acbb-53f3-d3f4-1f4e" page="1" hidden="false">
+          <description>All Wizards within 12&quot; of Skaarac suffer a -1 penalty when casting spells.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ce30-5f25-6d57-7018" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="1425-7046-f293-70f4" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+        <infoLink id="2a4c-e845-f7ce-ca9b" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="0fd5-0545-3def-5330" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="1e1f-74cc-c44c-50eb" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="3ab4-40d9-b6bb-bdb1" name="Daemon of Khorne" hidden="false" targetId="964e-697b-ab75-a66b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9e8f-b95f-28c5-aa99" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7302-5a4f-e6cc-8aac" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a15-3910-5892-325d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94ac-e5be-8952-7c71" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a633-5281-9bbf-1779" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="300.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2247-e89d-a40a-fd35" name="Mazarall the Butcher" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bd67-7a19-0dd4-6c55" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a727-bed6-dac3-a60f" name="Mazarall the Butcher" publicationId="acbb-53f3-d3f4-1f4e" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">7</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">6</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="59df-d401-14c7-13f1" name="The Butcher&apos;s Due" publicationId="acbb-53f3-d3f4-1f4e" page="2" hidden="false">
+          <description>At the start of each of your close combat phases, choose one friendly Daemon of Khorne unit within 12&quot;. The target unit may re-roll failed To Wound rolls of 1&apos;s until the start of your next close combat phase.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ea8f-8b7f-3e74-2d90" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="c097-af00-b857-a82b" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
+        <infoLink id="1256-b4c4-3b34-a6e4" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="fff3-547f-e09e-ef55" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="e502-3e77-fee1-98db" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="a44e-d95d-7992-5abf" name="Daemon of Khorne" hidden="false" targetId="964e-697b-ab75-a66b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0f71-2cc9-7fe8-1493" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6327-222b-b910-54d2" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8590-db33-3bbb-fe63" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a35e-9127-7c37-2723" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="dd07-7837-19b2-393a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab75-72c8-4321-4a46" name="Harrow Meat" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="64eb-0275-ca73-9de9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c668-32a8-2875-975d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="595e-3815-ac9c-d8cc" name="Harrow Meat" publicationId="acbb-53f3-d3f4-1f4e" page="2" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Roll a D6 for each model slain with Harrow Meat at the end of each round of close combat. For each 6 rolled, Mazarall gains +1 A for the remainder of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="56fb-4f29-eb4c-1a36" name="The Ancyte Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84d1-e44b-1c37-5554" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d01f-a1ec-b98a-4f8d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="362f-78f9-f582-2f5c" name="The Ancyte Shield" publicationId="acbb-53f3-d3f4-1f4e" page="2" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. The Ancyte Shield gives Mazarall Magic Resistance (3).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="1012-591f-fa4f-bf35" name="The Ancyte Shield" publicationId="acbb-53f3-d3f4-1f4e" page="2" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Multiple Shots (D6).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a3f8-f277-b590-06aa" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="460.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f898-ddf1-a314-24d7" name="Rotigus" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b174-2106-0bb7-1014" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3200-17a7-c366-c106" name="Rotigus" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">7</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e4c7-811b-b143-0683" name="Streams of Brackish Filth" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false">
+          <description>At the start of each of your Shooting phases, all enemy units within 6&quot; of Rotigus suffer D3 S 4 Hits.</description>
+        </rule>
+        <rule id="5510-68e5-6fc0-d8ad" name="Blubber and Bile" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false">
+          <description>For each Wound Rotigus successfully Regenerates in close combat, he inflicts a S 4 on the model which caused the Wound.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="43b1-18e1-da16-3267" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="2f8a-171c-5fca-4299" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="49f1-bae8-235f-dc30" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="f887-63bd-aa34-f6dd" name="Regeneration (5+)" hidden="false" targetId="5fed-df2e-b6d6-cc93" type="rule"/>
+        <infoLink id="ccff-633e-08d8-521f" name="Extreme Contagion" hidden="false" targetId="0d04-8dae-b6ab-7f70" type="rule"/>
+        <infoLink id="c221-d862-ba78-2668" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="a1f6-ee21-084b-bd78" name="Daemon of Nurgle" hidden="false" targetId="daf5-f973-a7d7-101e" type="rule"/>
+        <infoLink id="ea15-cf55-8e13-0158" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="471e-fca8-6eff-19c7" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="449d-f9c0-9557-1db5" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9846-9c47-6802-2f2e" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49ae-b462-529b-3ae3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="334b-1e33-0fc4-743b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="fa8c-c3de-59c9-dc08" name="Rotigus" publicationId="ee54-3543-b9db-fe40" page="3" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4f5a-c591-c576-b935" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a116-bf8d-18ee-eafd" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d1b-d3e4-0e61-a662">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5792-76e2-8ba4-9d63" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="679c-ea28-0a76-1d9f" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7d1b-d3e4-0e61-a662" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f2ec-8760-8270-1d6f" name="Gnarlrod of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d7e-d060-7647-f5eb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e18c-f8ee-e993-eef3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3828-9e2c-038b-09eb" name="Gnarlrod of Nurgle" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When cast, roll a D6; this is the number of enemy units affected by the spell, chosen by Rotigus. Each affected unit suffers D6 S 3 Hits which Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e1b9-0b65-4baf-a03d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="630.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6868-24fd-95dc-b93e" name="Azazel" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6168-8689-0418-da5a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9d17-8378-b79a-0c25" name="Azazel" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">9</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3dab-dce9-0677-89c1" name="Aura of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false">
+          <description>Any enemy unit in base contact with Azazel suffers a -1 penalty to its LD value.</description>
+        </rule>
+        <rule id="c36b-9f95-0b23-e33f" name="Dark Halo" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false">
+          <description>Azazel has a Ward Save (4+).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9a33-f7e9-b4be-9d58" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="d090-e707-f010-baa3" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="66a6-b74c-f3ce-96fa" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="3f63-7348-5619-aeb7" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="57a7-f5cc-0115-d0da" name="Daemon of Slaanesh" hidden="false" targetId="4f49-9bdd-696d-bc2d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e788-7af8-a32b-6c8f" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7b52-7dea-73d9-ea25" name="Daemonblade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b7e-ca8d-6a04-142d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eadc-3044-9b1a-e144" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="4263-877f-6200-1b38" name="Daemonblade" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All attacks made with the Daemonblade have Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ca3a-91ed-c082-a499" name="Temptator" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d99b-5f79-0a28-ca9d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9534-7511-0353-3676" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3aec-17bf-5c53-996d" name="Temptator" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the beginning of a combat, one enemy character in base contact with the Daemon must take a Psychology test. If the test is failed, the character will direct his attacks against friendly models or units chosen by the Daemon&apos;s controlling player. These wounds count towards the Daemon&apos;s combat resolution. If there are no suitable targets in base contact with the character, he or she does not attack at all this turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d84a-b7bb-6240-e0ca" name="Soporific Musk" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7905-663e-c8b3-d034" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bab-7ab7-4e19-40f8" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="182e-3225-09af-9c82" name="Soporific Musk" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Models in base contact with one or more models with this Gift suffer a -1 penalty to both WS and I. This has no effect on Daemons of Slaanesh.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4734-1459-d018-a584" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d166-14f0-7523-62c6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5067-a769-c200-6d34" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ffa5-12d3-c19d-d108" name="Azazel" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="bc0a-b896-fcd7-6a95" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="664d-595e-1100-eeda" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="02b1-2c61-e9de-4262">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="791d-3dc1-44e4-edc1" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="142b-3e6d-5ad5-23b8" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="02b1-2c61-e9de-4262" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ce7e-faa7-fbdb-b409" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="455.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d10-dc5a-934e-c170" name="Amon &apos;Chakai" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d73a-758f-3beb-a045" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a191-7b28-045b-c07a" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="054f-fe41-8223-8738" name="Daemonic Aura" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+          <description>Amon &apos;Chakai&apos;s Ward Save is increased to a 3+ against non-Magical Attacks.</description>
+        </rule>
+        <rule id="d966-235e-d4fe-4221" name="Dark Halo" publicationId="acbb-53f3-d3f4-1f4e" page="The Hand of Destiny" hidden="false">
+          <description>One enemy model, chosen by the Daemon player, is doomed to perish by Amon &apos;Chakai. All close combat and shooting attacks against this model will automatically hit. This lasts until the end of the battle, even if Amon &apos;Chakai is killed.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="c6ab-96bc-bac8-c9b8" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="3adb-1ee7-01ba-920d" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="bf4d-68d6-6cdc-b83d" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="ead9-a472-bc4f-3326" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="7c0a-109b-79bc-9511" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="3a75-2a3e-042a-5dd8" name="Daemon of Tzeentch" hidden="false" targetId="f763-a8b8-ef54-e22c" type="rule"/>
+        <infoLink id="4f5a-d720-c430-6b36" name="Barrage of Knowledge" hidden="false" targetId="8fde-69af-d8f8-e6d3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="38f3-975c-2ce8-b707" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="869c-daba-5f40-91d7" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d3c-09b8-d351-d654" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94a6-bc2f-d3f5-6eeb" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="357b-e10e-e498-375d" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="07b8-7d34-0663-3253" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8a73-9f18-b6ad-e124" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="e87c-8e04-3693-a23d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="644b-eb4a-fe77-3ba2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da05-3321-122f-01b2" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e87c-8e04-3693-a23d" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos Loremaster" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c4ca-9d60-b1b3-1e3c" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c02-a620-f590-bbf6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="631d-44dc-f46d-5f3e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="24e1-6705-aab3-3f40" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1a7c-3bb5-17ab-6eb9" name="All-seeing Eye" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acea-873f-e734-1d03" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9be3-e84b-54e9-d38a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5ef9-b2d0-5f58-0dc7" name="All-seeing Eye" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the start of each of your Magic Phases, you may pick one enemy unit within 24&quot; of the Daemon. That unit must reveal all Magic Items and Hidden units in it.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fce3-7d01-183d-a429" name="Master of Sorcery" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16c8-5921-1a58-5877" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ae3-a60a-e45e-17cb" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="54a2-4cfe-37af-39e2" name="Master of Sorcery" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon gains Loremaster. In addition, it can use any of the lores of Magic from the Warhammer rulebook instead of its normal Lore.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9323-3ce7-a6ea-2182" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="630.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="bcf9-fd98-1c56-6d29" name="Expendable" hidden="false" collective="false" import="true" type="model">
@@ -7689,25 +8218,6 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="a952-b587-804d-4238" name="Lore of Magic" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dee0-7437-6019-9e75" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="105b-a8a2-cace-f72f" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="64af-2712-dda3-9655" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life Loremaster" type="selectionEntry"/>
-                <entryLink id="e0ab-0201-1abe-86b6" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death Loremaster" type="selectionEntry"/>
-                <entryLink id="ca09-8976-5e03-9768" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal Loremaster" type="selectionEntry"/>
-                <entryLink id="bb81-26c4-5631-21f3" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow Loremaster" type="selectionEntry"/>
-                <entryLink id="0e04-3996-17f5-6916" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light Loremaster" type="selectionEntry"/>
-                <entryLink id="25c6-2e1a-ca07-f0dc" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens Loremaster" type="selectionEntry"/>
-                <entryLink id="8016-dbc3-1913-be73" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts Loremaster" type="selectionEntry"/>
-                <entryLink id="2714-d1fd-b855-ba71" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire Loremaster" type="selectionEntry"/>
-                <entryLink id="b31a-2079-a8b6-cab3" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos Loremaster" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>

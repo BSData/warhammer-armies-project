@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5941-78ef-698e-a105" name="Empire" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5941-78ef-698e-a105" name="Empire" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="901c-8001-972f-89d7" name="Pigeon Bomb Table">
@@ -5979,20 +5979,11 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="8709-28cd-f433-01eb" name="Tools of Judgement" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
-          <description>When attacking Wizards, or models with Daemonic, Undead or Vampiric in close combat, a Witch Hunter re-rolls failed rolls To Wound.</description>
-        </rule>
-        <rule id="0fc7-8bc9-23ea-cdda" name="Accusation" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
-          <description>After deployment, but before the first turn begins, select a single model in your opponent&apos;s army to accuse of heresy. This is the Witch Hunter&apos;s primary quarry. The Witch Hunter&apos;s may re-roll all failed To Hit against his primary quarry. Every hit he inflicts on that models also has Killing Blow, even if they were from a shooting attack. Finally, a Witch Hunter may
-also choose to shoot at the primary quarry as if he had Sniper.</description>
-        </rule>
-        <rule id="5075-b7a4-b5a0-7170" name="Grim Resolve" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
-          <description>Witch Hunters, and any unit they are in, have Immunity (Fear).</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink id="c694-6827-e0d1-03f3" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
+        <infoLink id="c694-6827-e0d1-03f3" name="Tools of Judgement" hidden="false" targetId="35d6-41e1-d92d-b3b2" type="rule"/>
+        <infoLink id="eac1-13ca-2c07-64a0" name="Grim Resolve" hidden="false" targetId="482b-fa6d-2435-131b" type="rule"/>
+        <infoLink id="7d71-8f7c-6110-93d6" name="Accusation" hidden="false" targetId="a2e7-0a0d-9844-7927" type="rule"/>
+        <infoLink id="1ebf-97c2-c984-eed1" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="238f-350f-4b6f-fd25" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -17020,7 +17011,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6bd7-4d36-d9a6-2f69" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="9ddb-cbbc-f9b2-237c" name="Steam Points" hidden="false" targetId="793a-6b4a-03d0-f7b6" type="rule"/>
+                <infoLink id="9ddb-cbbc-f9b2-237c" name="Steam Engine" hidden="false" targetId="95a7-6380-2733-9d40" type="rule"/>
                 <infoLink id="19be-a086-134f-b722" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
                 <infoLink id="afab-5323-1ff5-5ddb" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="8bdb-3a09-f8b7-8f53" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
@@ -17032,6 +17023,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <infoLink id="f243-9599-b1d7-8bb8" name="Steam Tank" hidden="false" targetId="88cf-a84e-788e-feeb" type="profile"/>
                 <infoLink id="9e5a-9e6b-04fa-537f" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
                 <infoLink id="83d7-b5db-a166-4355" name="Steam Cannon" hidden="false" targetId="6ffb-96b5-de04-dfc4" type="rule"/>
+                <infoLink id="2414-f535-a220-5764" name="Steam Points" hidden="false" targetId="793a-6b4a-03d0-f7b6" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="f3ed-7c52-8f3d-8571" name="Engineer Commander" hidden="false" collective="false" import="true" type="model">
@@ -17122,6 +17114,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <infoLink id="8a5f-413a-33cd-4d70" name="Steam Tank" hidden="false" targetId="88cf-a84e-788e-feeb" type="profile"/>
                 <infoLink id="4897-fcbf-fe7a-0257" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
                 <infoLink id="2747-5efd-11cf-7872" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
+                <infoLink id="969d-36a7-fa6f-19d6" name="Steam Engine" hidden="false" targetId="95a7-6380-2733-9d40" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="8a6f-2d76-39b0-b77c" name="Engineer Commander" hidden="false" collective="false" import="true" type="model">
@@ -17211,6 +17204,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <infoLink id="12ce-9bde-b683-b4ed" name="Steam Tank" hidden="false" targetId="88cf-a84e-788e-feeb" type="profile"/>
                 <infoLink id="1cba-eb25-225d-df3f" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
                 <infoLink id="4e01-b9ef-ccdd-70c9" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
+                <infoLink id="56e8-fbee-c2b9-38e3" name="Steam Engine" hidden="false" targetId="95a7-6380-2733-9d40" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="01c4-4972-19c6-5771" name="Engineer Commander" hidden="false" collective="false" import="true" type="model">
@@ -17313,6 +17307,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <infoLink id="4f58-cff6-e54f-4352" name="Steam Tank" hidden="false" targetId="88cf-a84e-788e-feeb" type="profile"/>
                 <infoLink id="3732-19be-f32d-d37f" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
                 <infoLink id="72c6-715b-58ef-2cf7" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
+                <infoLink id="e6b6-2859-9afc-70b9" name="Steam Engine" hidden="false" targetId="95a7-6380-2733-9d40" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="ca57-41f5-990c-278a" name="Engineer Commander" hidden="false" collective="false" import="true" type="model">
@@ -17392,6 +17387,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <infoLink id="9d05-0d9e-eafe-bbe9" name="Steam Tank" hidden="false" targetId="88cf-a84e-788e-feeb" type="profile"/>
                 <infoLink id="1f19-eb05-1704-e30e" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
                 <infoLink id="25bd-d00d-be41-a53a" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
+                <infoLink id="13f4-8385-29cd-57e2" name="Steam Engine" hidden="false" targetId="95a7-6380-2733-9d40" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="3ef7-0bf5-eb4c-bad6" name="Engineer Commander" hidden="false" collective="false" import="true" type="model">
@@ -17784,6 +17780,903 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
               <infoLinks>
                 <infoLink id="07e0-245f-b12a-aea9" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf31-0de3-7b9b-c000" name="Magistrix Elspeth von Draken" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e524-30a8-8a9d-ac0a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1013-116c-6524-79a5" name="Elspeth von Draken" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5029-01ac-a666-44e3" name="Darkwalker" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false">
+          <description>Elspeth has Immunity (Psychology) and all To Wound rolls made against her suffer a -1 penalty. She also suffers any extra effect that is listed as specifically damaging Daemons or the Undead.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2136-1495-0823-90a5" name="Loremaster (Lore of Death)" hidden="false" targetId="75e4-06e8-d7aa-8514" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="676e-8336-dd11-e07b" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="793f-0c56-619d-8fdc" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2a9d-8500-98ca-0504" name="Carmine Dragon" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ce4-81cd-5644-a827" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b344-2c45-3a3e-917b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a585-7741-334e-0917" name="Carmine Dragon" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ffe5-7021-fcbd-f7fa" name="Coruscating Blast" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false">
+              <description>This breath weapon works similarly to determining the effects of a cannon shot. The maximum range of the attack&apos;s target point is 12&quot; away from the monster and may be treated just like a normal breath weapon. After the target point has been selected, roll the Artillery dice to create a line of effect for the blast travelling in a straight line away from the dragon (just as for determining a &apos;bounce&apos; for a cannon shot). A Misfire result should be re-rolled. Any model caught in the line of the blast suffers D3 wounds with a S equivalent to 10, minus the target&apos;s T score, with no Armour saves possible.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="67ae-5fee-c03b-42f9" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="4441-d118-94ae-62bf" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
+            <infoLink id="e956-9ca9-0455-83c1" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+            <infoLink id="1602-2259-6601-5208" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+            <infoLink id="4382-2111-2211-adc2" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="851b-7616-0850-0e2c" name="Death&apos;s Timekeeper" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd13-8fc7-1898-dace" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8347-4b21-0660-e9fa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4b3e-9144-167c-f6c5" name="Death&apos;s Timekeeper" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Once per player turn, Elspeth von Draken can re-roll a single dice of her choice concerning her or the Carmine Dragon (this can include attacks, saving throws, magic dice and the Artillery dice used to determine the Carmine Dragon&apos;s Coruscating blast if desired). If this re-roll is not used, at the end of her player&apos;s turn Elspeth von Draken may recover a wound previously lost in the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e746-753d-1a76-024b" name="The Pale Scythe" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c16e-e0d2-459b-ca02" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3186-41ac-c2e6-24e7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fa58-389e-b1e9-9d84" name="The Pale Scythe" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">This weapon has Killing Blow, and adds +1 to Elspeth von Draken&apos;s dispelling rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e5cc-1b30-321e-1dcd" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bbd-ad60-6dc8-6695" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a53e-bb80-f587-872f" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="6718-aa6b-008f-5038" name="Elspeth von Draken" publicationId="dcfc-4992-9141-dee0" page="2" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9cc0-b642-8a9a-13df" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="233e-221d-46a5-e35f" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="c41d-168a-b18c-a33e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f79-923a-c274-9b33" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d6a-b63d-66b7-d7f5" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c41d-168a-b18c-a33e" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death Loremaster" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6d6a-968a-c7e5-b449" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="580.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="65c7-1656-a9f8-eb07" name="Theodore Bruckner" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="74d7-e9e7-5418-71a0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d104-d832-12a0-a703" name="Theodore Bruckner" publicationId="dcfc-4992-9141-dee0" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7de0-9603-a733-68c8" name="The Hand of Judgement" publicationId="dcfc-4992-9141-dee0" page="4" hidden="false">
+          <description>Bruckner cannot be the army&apos;s General. In addition, while fighting in a Challenge, Bruckner has Unbreakable.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c793-75b3-6578-028a" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="2c62-8d72-3c1e-2832" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bcda-5b5a-8cdc-ac0c" name="Reaper" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9307-69aa-8a53-e6a3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5e44-9aef-a6d1-a3ac" name="Reaper" publicationId="dcfc-4992-9141-dee0" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e906-b162-723c-800f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="46e1-f333-088d-8f34" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+            <infoLink id="7e35-27c9-ba79-ba5b" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="150.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f3b6-72c8-9645-eb84" name="Baleflame Amulet" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="033f-609f-01ff-2f64" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d88-78c4-569c-5857" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="26ee-4aff-4974-2244" name="Baleflame Amulet" publicationId="dcfc-4992-9141-dee0" page="4" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The amulet provides Bruckner with a Ward save (5+). In addition, if Bruckner is slain by a model in base contact, that model then immediately suffers D3 Wounds with Ignores Armour saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b06e-2630-4bd1-389d" name="Liarsbane" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4bd4-ee92-5806-17e0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1922-2819-5b99-09d7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e570-1d57-b5b7-0e17" name="Liarsbane" publicationId="dcfc-4992-9141-dee0" page="4" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Liarsbane give Bruckner +1 To Hit and To Wound in close combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e045-aa41-724a-6396" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94a3-03df-b573-6a7d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07d4-a54b-73de-06bc" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fdd9-3843-f4af-d175" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0889-7334-5715-2255" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f93-04f3-e147-e73b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f9e-9ad8-dccd-1f0c" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cd3a-b9e0-aff7-b29a" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5d2a-1117-0b16-1faa" name="Stormlance" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="b703-2afe-0f59-54d5" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bcda-5b5a-8cdc-ac0c" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="b9e5-ccf3-dfe5-6b27" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bcda-5b5a-8cdc-ac0c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b703-2afe-0f59-54d5" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9e5-ccf3-dfe5-6b27" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a2cf-036e-9bc7-b2b0" name="Stormlance" publicationId="dcfc-4992-9141-dee0" page="4" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Lance. When charging, Bruckner has Killing Blow. At all other times, he will use
+Liarsbane instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="49e2-6fec-0b43-0351" name="Jubal Falk" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0cef-4e7c-84a0-11f1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cb6f-3cc2-96a3-ed6e" name="Jubal Falk" publicationId="dcfc-4992-9141-dee0" page="5" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="878e-bf90-b944-e4eb" name="Black Powder Discipline" publicationId="dcfc-4992-9141-dee0" page="5" hidden="false">
+          <description>Any Handgunner unit that contains Jubal Falk may re-roll shooting to hit rolls of &apos;1&apos; with its handguns. Note that this doesn&apos;t apply to Jubal himself.</description>
+        </rule>
+        <rule id="9447-1747-27de-ad55" name="The Nuln Ironsides" publicationId="dcfc-4992-9141-dee0" page="5" hidden="false">
+          <description>If Jubal Falk is included in your army, one unit of Handgunners may be upgraded to wear medium armour for +1 point per model.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b587-b012-2482-2eba" name="Master of Ballistics" hidden="false" targetId="d1d2-d54e-b9b4-a115" type="rule"/>
+        <infoLink id="2699-9182-d444-4ca8" name="&quot;Stand Back, Sir!&quot;" hidden="false" targetId="ca3f-9796-4f47-dc1c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8cb8-7695-b350-ebc4" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="85dc-66f7-7f56-d8d8" name="Mercurial Shot" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab49-86c7-48ac-344e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e1f-4ba2-0ba3-b594" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="057b-3b74-dea9-2a06" name="Mercurial Shot" publicationId="dcfc-4992-9141-dee0" page="5" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. This is a one use attack which is used in conjunction with Falk&apos;s Hochland long rifle (with all its usual rules applying), and the player must declare its use before rolling to hit. If it strikes the target it hits with S 6, Armour piercing (1), and Multiple Wounds (2). If the shot misses, it is wasted.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="123f-9509-fd97-24d9" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9dbf-253f-b612-1435" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a74-0202-d9ff-04e2" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="56e9-84c2-96d9-d30a" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dd8d-15d9-3fce-297b" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cc1-9316-a7f2-8d6a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f18-5f5d-5e58-4917" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="aa41-abe5-0c33-410b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="459e-b304-aa98-4672" name="Hochland Long Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef40-16f4-baa8-1056" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf9b-72e3-17e5-e265" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0361-6778-8f92-3aae" name="Hochland Long Rifle" hidden="false" targetId="1191-597b-ae67-3b58" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d661-328a-8df8-a5f2" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f350-3e3d-2035-e2d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9373-3475-49f1-b76b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d8e3-7fcf-bfdc-87c8" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f630-396a-1697-f6c1" name="Mandred Skavenslayer" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8b18-a69c-592d-56e7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d02f-6ea1-8c80-b021" name="Count Mandred" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="08a0-e9fe-e56c-0078" name="Hold the Line!" hidden="false" targetId="d409-4212-2849-023f" type="rule"/>
+        <infoLink id="0501-7bea-07bb-5376" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0a82-db74-ac42-5746" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5c7b-1ad1-72e3-1d24" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c0d-0307-bb7b-0ef2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7949-b177-1ccc-7895" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="effc-da68-16a9-2ac2" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="226e-fbb9-0334-c111" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+            <infoLink id="a09d-6451-5676-182e" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="7099-6b6d-8dba-1b90" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a9b-df31-5ebc-ad5a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b91-a3ff-96bf-ea7a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a55f-46f6-4c53-162e" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="56f8-8513-47b0-4561" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d482-e266-0414-1208" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8275-c9c8-4bad-72f2" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="331e-f9bd-06cf-73b6" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="60eb-4a76-4964-86f5" name="Verminbane" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cef0-d43c-2a31-d8f3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b787-3fe4-e4b7-2f71" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c47b-f657-dab3-819d" name="Verminbane" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. All attacks made with Verminbane against models from Warhammer: Skaven have Multiple Wounds (D3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="147a-433b-a492-dbc3" name="Horn of the White Wolf" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f22-b2ae-ee94-4db3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca24-ef49-eacf-0598" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8fb8-b9f8-14bd-4cf3" name="Horn of the White Wolf" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Whenever Mandred declares a charge, the target must take a Panic test before choosing their charge reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9d92-6ee3-7192-3cc8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a7d-72d2-7b37-b21c" name="Rutger Wolfrick" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="29e2-a4c1-add6-f036" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7b1c-df7a-384c-87c8" name="Rutger Wolfrick" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="466f-573d-da3f-0dd6" name="Fear and Loathing" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false">
+          <description>Rutger has Hatred (Warriors of Chaos). However, he also treats all models from Warhammer: Warriors of Chaos as causing Fear against him. If they already cause Fear, they now cause Terror instead.</description>
+        </rule>
+        <rule id="c04c-3942-b369-74ce" name="Mentally Unbalanced" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false">
+          <description>If half or more of any unit&apos;s starting models that Rutger joins are killed at any point during the battle, Rutger
+will lose it completely! From then onwards he gains Frenzy for the remainder of the game.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1744-b71a-fc34-b468" name="Hold the Line!" hidden="false" targetId="d409-4212-2849-023f" type="rule"/>
+        <infoLink id="a54d-7af3-bcc5-dfec" name="Accusation" hidden="false" targetId="a2e7-0a0d-9844-7927" type="rule"/>
+        <infoLink id="2612-2d24-dc4c-d2bc" name="Grim Resolve" hidden="false" targetId="482b-fa6d-2435-131b" type="rule"/>
+        <infoLink id="a2c0-49ba-4920-a3b0" name="Tools of Judgement" hidden="false" targetId="35d6-41e1-d92d-b3b2" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c9fc-9854-cf6a-69df" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="91f2-78a2-0b3e-3cba" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="922c-c169-df38-d642" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5f1-adae-7cc1-6d9e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="eca5-df84-bfe2-94a8" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7bf7-b7a9-85a9-2de7" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5bb9-cdaf-e68d-e5d8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f92-63a2-0175-662d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ebde-2be8-f4b2-06b9" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="51e3-32b3-d3d0-5429" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f34-d8b3-2217-af3f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa84-c0fd-2b92-72a9" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b13f-e98e-9db7-d993" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c376-1032-30c6-a8ac" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="23b1-4a3e-18d9-9c1c" name="Brother Valdemar" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7c47-1cca-7244-45c8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6b84-5498-289d-a412" name="Brother Valdemar" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="93e3-6ec4-ace4-37d1" name="Courage of the Believer" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false">
+          <description>Brother Valdemar and any unit he joins gains Immunity (Fear).</description>
+        </rule>
+        <rule id="8209-4c81-de51-05f2" name="Faith in Sigmar" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false">
+          <description>Brother Valdemar and any unit he joins may re-roll failed Break tests.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4e6b-49f7-1cca-eeba" name="Divine Power" hidden="false" targetId="44e1-ad81-2f8b-49db" type="rule"/>
+        <infoLink id="d9ea-8acc-c421-36eb" name="Righteous Fury" hidden="false" targetId="7be5-1e5e-a127-8426" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="de60-21c2-86c2-1826" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="dfb7-7689-3eb6-73cb" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c44-dab8-e3ae-00e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb2f-5a9a-1dc4-1b79" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b596-bf10-e5d0-b80b" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ce12-4ae5-bb6a-f588" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba21-1810-54d7-adfb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d492-e5a0-cb36-c6fc" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="eb10-5999-985f-14fc" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="66e2-5ea9-7d29-87a7" name="Battle Prayers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4706-ad25-112b-5e4f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2db-3eb7-9cfc-06c3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e0b7-6f36-6f0e-4dcd" name="Battle Prayers" hidden="false" targetId="2fc8-8eef-c508-0f80" type="rule"/>
+            <infoLink id="4f0f-a743-75b2-4f88" name="Soulfire" hidden="false" targetId="dd1f-6720-2d30-c6e8" type="profile"/>
+            <infoLink id="7e31-2706-3df8-1286" name="Shield of Faith" hidden="false" targetId="742a-aa0e-34c7-ae36" type="profile"/>
+            <infoLink id="245d-d560-a441-1861" name="Hammer of Sigmar" hidden="false" targetId="adec-808a-e49a-d7c9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3f3c-7356-e7e2-27ec" name="Book of Uncommon Prayer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec1b-4fe7-83b1-dc19" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49c4-8842-9351-43d0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="652c-ea7a-0bd0-dcc4" name="Book of Uncommon Prayer" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Once per Magic phase, Brother Valdemar may re-roll one power dice when he attempts to cast one of his Battle Prayers.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="cdf9-c3e1-8267-9a1c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="105.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ad6-afb8-1b6a-1e5b" name="The Nuln Ironsides" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="d8d9-d2b5-5f4a-258c" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49e2-6fec-0b43-0351" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d8d9-d2b5-5f4a-258c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="db1d-a7d8-95fd-a2b0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a59d-4fb9-c560-d476" name="Handgunner" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a4-9c7d-2231-38fa" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ff26-ba03-5441-d8a7" name="Handgunner" publicationId="315d-135b-135c-07ce" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="fd79-72d4-304b-862b" name="State Troops" hidden="false" targetId="a805-76db-d1fc-6a51" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="7653-0405-a870-9398" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2eb-8245-c3f1-0071" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d2c-d237-b80d-221f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2116-ab00-90d5-ffe0" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="86e8-6d47-53d6-cc9b" name="Handgun" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d79-46f6-214b-2215" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29fb-1320-f233-8257" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4f1b-4961-2b8b-a357" name="Handgun" hidden="false" targetId="bd57-9e45-342f-ee49" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c168-3589-d7ec-4eda" name="Armour" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51d7-2aea-1347-8946" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7eb9-03e7-b876-62fb" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab56-f829-292d-8c40" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9b7f-4434-48c9-1f21" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cf78-5a49-d923-b04f" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="befb-384f-1aad-2606" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7d34-1735-0f85-6a16" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="8.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="204c-fae5-a755-30b8" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="973a-bc5a-1dcf-e102" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="938b-700f-65d7-13b5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="639f-424d-950e-5427" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="bf1b-091f-32dc-45f4" name="Magic Standard" hidden="false" collective="false" import="true" targetId="cd54-5eeb-25c2-e100" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="66dd-f624-1711-8b43" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5521-d973-0882-ba2a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="161f-1042-a47c-3f80" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c5f3-23f3-d934-dbf6" name="Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b3b-fb02-a879-654d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d700-0854-374c-ed6a" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="1e93-4dec-008e-45dc" name="Marksman" hidden="false" targetId="a858-3047-207a-b6d8" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="92d2-3137-976a-bced" name="Primary Weapon" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36b0-e059-e73c-b2ce" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d480-6c1b-9524-5f86" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="a30c-411f-c11f-85ba" name="Hochland Long Rifle" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e91c-874a-33f9-60ad" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="53bb-47fa-4298-765c" name="Hochland Long Rifle" hidden="false" targetId="1191-597b-ae67-3b58" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c1f7-6d2a-b0a1-063b" name="Repeater Handgun" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03e6-84cf-623b-1386" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="fabe-379a-191f-dc1c" name="Repeater Handgun" hidden="false" targetId="e75c-712e-ec8b-35e9" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="794d-07fb-128e-5438" name="Brace of Pistols" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86da-e147-8c33-b8c9" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="4f3c-5e5b-cbce-c767" name="Brace of Pistols" hidden="false" targetId="7259-6759-3c5f-ce3c" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="3188-4e26-b31a-d0bd" name="Handgun" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fa8-a2b0-84c3-e262" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3c9b-9f71-c2ac-3c66" name="Handgun" hidden="false" targetId="bd57-9e45-342f-ee49" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -18729,6 +19622,15 @@ Panic tests.</description>
 If you expend a single Steam Point, the Steam Cannon can fire with a maximum range of 12&quot;. For each additional Steam Point you expend, the maximum range of the Steam Cannon is increased by 12&quot;. The Steam Cannon can only be fired directly ahead.
 
 If the first artillery dice roll is a misfire, the Steam Cannon does not fire and the Steam Tank immediately loses D3 Wounds with no armour saves allowed. The Steam Cannon cannot fire grapeshot.</description>
+    </rule>
+    <rule id="a2e7-0a0d-9844-7927" name="Accusation" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
+      <description>After deployment, but before the first turn begins, select a single model in your opponent&apos;s army to accuse of heresy. This is the Witch Hunter&apos;s primary quarry. The Witch Hunter&apos;s may re-roll all failed To Hit against his primary quarry. Every hit he inflicts on that models also has Killing Blow, even if they were from a shooting attack. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had Sniper.</description>
+    </rule>
+    <rule id="482b-fa6d-2435-131b" name="Grim Resolve" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
+      <description>Witch Hunters, and any unit they are in, have Immunity (Fear).</description>
+    </rule>
+    <rule id="35d6-41e1-d92d-b3b2" name="Tools of Judgement" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
+      <description>When attacking Wizards, or models with Daemonic, Undead or Vampiric in close combat, a Witch Hunter re-rolls failed rolls To Wound.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

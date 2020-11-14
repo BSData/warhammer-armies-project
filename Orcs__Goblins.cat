@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0d-50bf-b007-6cef" name="Animosity Table">
@@ -13044,6 +13044,235 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="215.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a32-5b39-d4b7-baa2" name="Gordrakk" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="67ce-673f-3323-d2e9" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="67ce-673f-3323-d2e9" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d560-a332-17dc-9c14" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="04d3-967d-ec8f-8061" name="Gordrakk" publicationId="15a5-c139-f130-a940" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character; Orc)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b277-0208-99bf-d38c" name="Voice of Gork" publicationId="15a5-c139-f130-a940" page="1" hidden="false">
+          <description>All friendly units within 12&quot; of Gordrakk gain Devastating Charge.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3eb6-5a5e-55ff-5273" name="Waaagh!" hidden="false" targetId="72cd-f563-0e75-b280" type="rule"/>
+        <infoLink id="ead3-4726-f542-f00b" name="Size Matters" hidden="false" targetId="f6b8-e24e-974c-015a" type="rule"/>
+        <infoLink id="ecb3-382c-a293-2b2c" name="Choppas" hidden="false" targetId="2017-de4c-6670-21ba" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="177a-02c5-b1e1-373c" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="89d6-5014-daed-b2b5" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ac3f-e7dd-4497-31db" name="Bigteef" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4763-021f-560d-9944" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db45-1c4d-f873-2e2b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ad95-60ed-80ed-cc85" name="Bigteef" publicationId="15a5-c139-f130-a940" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">0</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3bce-e8ee-fd44-04dd" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="15f8-5333-a2b2-d6dd" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+            <infoLink id="474e-c7f8-b0eb-8a77" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+            <infoLink id="68b0-edcd-ea2a-9cf9" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+            <infoLink id="956c-bd53-ca5e-6dd9" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
+            <infoLink id="51c4-4b95-2baf-d107" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ef2-5683-9256-7260" name="Smasha and Kunnin&apos;" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d884-2bf3-db9e-6a9c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1fe-0e62-7847-a05c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f27e-70a3-8f81-b7d1" name="Smasha and Kunnin&apos;" publicationId="15a5-c139-f130-a940" page="1" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Two/Additional Hand Weapons. When targeting a Wizard in close combat, Gordrakk may re-roll failed rolls To Hit and gains Multiple Wounds (D3). When targeting a Character that is not a Wizard in close combat, Gordrakk may reroll failed rolls To Wound and gains Killing Blow.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3a9d-40a2-3848-c2a4" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="460.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b8b-ae19-6ac3-3d38" name="Skragrott" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6def-7f2e-1428-e2f9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2f80-7661-1df8-28dc" name="Skragrott" publicationId="15a5-c139-f130-a940" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character; Night Goblin)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="790b-f57f-1f9b-5262" name="The Moon King&apos;s Entreaty" publicationId="15a5-c139-f130-a940" page="3" hidden="false">
+          <description>Skragrott can always choose to re-roll any number of dice when determining how far the template from the Curse of da Bad Moon spell moves.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e875-b893-a9d4-d033" name="Magic Mushrooms" hidden="false" targetId="35e6-988f-5bb0-ff28" type="rule"/>
+        <infoLink id="8eba-580b-3d3f-a5bc" name="Fear Elves" hidden="false" targetId="8568-17b2-9805-2665" type="rule"/>
+        <infoLink id="a830-701d-c40c-2d41" name="Hatred (Dwarfs)" hidden="false" targetId="da8d-d10d-b525-a19a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0697-beb5-c957-a3eb" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="2ed1-8432-4f3b-0772" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c6b7-7cc8-e581-1c37" name="Da Moon Onna Stikk" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dcf-786e-b489-24b5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3148-e8cd-f915-cc72" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1698-d426-131c-ca24" name="Da Moon Onna Stikk" publicationId="15a5-c139-f130-a940" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">If an enemy model suffers one or more unsaved Wounds from Da Moon Onna Stikk, they must pass a T test at the start of each Movement phase or suffer 1 additional Wound with no saves allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="934d-f198-4907-7710" name="Moon King&apos;s Crown" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e8d-4fe6-d643-70c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec61-b2a0-eaae-7ffd" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1390-4024-19c0-b381" name="Moon King&apos;s Crown" publicationId="15a5-c139-f130-a940" page="3" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Moon King&apos;s Crown gives Skragrott +1 to cast spells and Ward Save (4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="586f-5b68-b579-cea6" name="Babbling Wand" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6514-cbb8-3a13-a3bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93d7-e502-f63e-180e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="dfbb-756a-a0d9-feab" name="Babbling Wand" publicationId="15a5-c139-f130-a940" page="3" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Babbling Wand allows Skragrott to re-roll any failed Channelling rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3935-f858-b5e5-d7b6" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bdf-3b60-d1b3-227c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb0e-9784-be34-a0d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3ec4-1593-f989-1df2" name="Skragrott" publicationId="15a5-c139-f130-a940" page="3" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a5b5-1929-1e58-a7c4" name="Result" hidden="false" targetId="dcf1-a9e8-6c68-3b58" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="aabd-c12e-d6d3-18cf" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2a2f-3c1d-22b5-9d35">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e321-bc7b-a4a0-0b07" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8849-c39e-4aa1-7a6d" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2a2f-3c1d-22b5-9d35" name="Lore of the Bad Moon" hidden="false" collective="false" import="true" targetId="Lore of the Bad Moon 4" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9b1d-07eb-5c2d-67f3" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

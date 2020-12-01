@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="324d-b81e-296a-d5cd" name="Reign of Chaos Table">
@@ -5479,7 +5479,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="c609-c5fe-69aa-7000" name="Daemon of Slaanesh" hidden="false" targetId="4f49-9bdd-696d-bc2d" type="rule"/>
+            <infoLink id="c609-c5fe-69aa-7000" name="Daemon of Tzeentch" hidden="false" targetId="f763-a8b8-ef54-e22c" type="rule"/>
             <infoLink id="e4da-e23f-31cb-c3b7" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
             <infoLink id="2ed3-11ec-2c64-8d41" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="5966-63fd-a14c-a18a" name="Flaming Attacks" hidden="false" targetId="8600-a090-2761-d661" type="rule"/>
@@ -6877,7 +6877,12 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e18c-f8ee-e993-eef3" type="min"/>
           </constraints>
           <profiles>
-            <profile id="3828-9e2c-038b-09eb" name="Gnarlrod of Nurgle" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+            <profile id="ae91-5127-e20d-a2fa" name="Gnarlrod of Nurgle" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Gnarlrod of Nurgle contains a spell.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="6796-5418-d507-1d0a" name="Gnarlrod of Nurgle" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -6984,9 +6989,6 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="4734-1459-d018-a584" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>

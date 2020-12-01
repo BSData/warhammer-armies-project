@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="cfe9-a815-09c1-fecd" name="Attuned to Magic table">
@@ -31,6 +31,14 @@
         <characteristicType id="6310-1b42-5483-9fbb" name="Lion Rampant"/>
         <characteristicType id="43ea-dfcc-099d-0f96" name="Lion Leaping"/>
         <characteristicType id="7e0c-fb15-85f0-1c6c" name="Lion Claw"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="9856-91b1-66db-f41e" name="Fighting Style">
+      <characteristicTypes>
+        <characteristicType id="8c3b-7511-def2-d3fa" name="Way of the Willow Branch"/>
+        <characteristicType id="f08e-2205-a753-74f6" name="Way of the Winter Breeze"/>
+        <characteristicType id="6d46-3d16-2bda-c5df" name="Way of the Swooping Eagle"/>
+        <characteristicType id="f3f0-771c-7fef-06ae" name="Way of the Breaking Storm"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -472,6 +480,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8ae7-7ec5-30a7-717f" name="Eltharion the Grim" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="4f5d-fc99-7546-999c" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7116-e716-9d5e-3ad4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4f5d-fc99-7546-999c" type="max"/>
       </constraints>
@@ -6780,6 +6795,1072 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7116-e716-9d5e-3ad4" name="Eltharion the Blind" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="db90-eb94-63f2-3d17" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ae7-7ec5-30a7-717f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="db90-eb94-63f2-3d17" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3b36-5dc5-43ca-5da1" name="Eltharion" publicationId="1354-aa33-a41b-202a" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">7</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bfeb-aaaa-fa20-30ab" name="The Dark Within" publicationId="1354-aa33-a41b-202a" page="2" hidden="false">
+          <description>Eltharion and any unit he joins is subject to the Berserk Rage part of Frenzy.</description>
+        </rule>
+        <rule id="c976-c731-2c20-953a" name="Great Leap" publicationId="1354-aa33-a41b-202a" page="2" hidden="false">
+          <description>At the start of any round of combat, before attacks are allocated or challenges issued, Eltharion may be moved to anywhere in the same combat (even leaving one unit and joining another, or becoming an independent character). He may not use this to position himself out of combat, or if he is already involved in a challenge.</description>
+        </rule>
+        <rule id="0318-7d11-2dbb-fa76" name="Lord of Hoeth" publicationId="1354-aa33-a41b-202a" page="2" hidden="false">
+          <description>If Eltharion is your General, you may take one unit of Swordmasters as a Core choice. Any unit of Swordmasters joined by Eltharion becomes Stubborn.</description>
+        </rule>
+        <rule id="d6b1-c308-9862-06f2" name="Impenetrable Defence" publicationId="1354-aa33-a41b-202a" page="2" hidden="false">
+          <description>Eltharion has Dodge (5+) and Immunity (Killing Blow).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b8ec-9671-23f5-0bc2" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="cac5-84e4-8131-fa80" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="7a12-7de8-7a5f-955b" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+        <infoLink id="11a7-f0a5-86ab-2f18" name="Hatred (Dark Elves)" hidden="false" targetId="8d5b-32ea-4349-ff13" type="rule"/>
+        <infoLink id="3550-a8f0-8ff4-c85f" name="Hatred (Orcs &amp; Goblins)" hidden="false" targetId="0b20-ae38-065f-96ce" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ac6c-dfd8-2a79-a9de" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="ca23-d936-3695-b4b4" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bebd-2293-5c4d-e6ea" name="The White Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97bc-39fa-b066-d45a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="027e-84da-6eef-362f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3c00-1854-647c-c77b" name="The White Sword" publicationId="1354-aa33-a41b-202a" page="2" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">At the start of each round of combat, Eltharion must declare which fighting style he is using for that whole round.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4202-478f-b8ac-e3c6" name="Fighting Styles" hidden="false" typeId="9856-91b1-66db-f41e" typeName="Fighting Style">
+              <characteristics>
+                <characteristic name="Way of the Willow Branch" typeId="8c3b-7511-def2-d3fa">Any close combat attacks against Eltharion require 6&apos;s To Hit, before any other modifications, and regardless of relative WS or any other special rules.</characteristic>
+                <characteristic name="Way of the Winter Breeze" typeId="f08e-2205-a753-74f6">Eltharion gains +1 To Hit and ignores Parry saves in close combat.</characteristic>
+                <characteristic name="Way of the Swooping Eagle" typeId="6d46-3d16-2bda-c5df">Eltharion gains +2 S.</characteristic>
+                <characteristic name="Way of the Breaking Storm" typeId="f3f0-771c-7fef-06ae">Eltharion gains +2 A.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="131e-0c62-b606-2950" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="beeb-3724-c5dc-9832" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a2d-cef7-7047-53be" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b414-8f86-3acb-431d" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4025-21ec-fdcd-aa9d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e7bb-06e3-dc54-2b1e" name="Swordmasters of Hoeth (Eltharion the Blind as General)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="6113-98c4-5eac-b53d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7116-e716-9d5e-3ad4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6113-98c4-5eac-b53d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="342d-62f3-508a-c145" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3afd-6fc7-eb75-c91e" name="Swordmaster" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f796-f858-4868-55bf" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1e98-1260-3648-5ceb" name="Swordmaster" publicationId="9e23-79cb-pubN77092" page="159" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0bf7-4877-d5d9-2cf5" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+            <infoLink id="c8fc-0e17-ef7d-d393" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+            <infoLink id="c249-3a87-7063-d181" name="Swordmaster" hidden="false" targetId="3e63-ad1a-583c-50b0" type="rule"/>
+            <infoLink id="9629-c8d0-5482-621e" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="fedf-05a2-0688-e689" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1c7-4bf1-c369-7598" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b44a-6758-d5ac-9c1c" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="713c-b95a-5cfb-8ee2" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f69c-391b-ed21-f894" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cab7-4e16-3cd9-e4d0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2f9-aa66-c4c2-3e2b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3488-89ef-f9ba-ca1e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="16.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="88e7-ce33-6842-5af5" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="1e35-1c38-900f-203b" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ccf9-87db-ecb4-10e4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="230e-2766-11ad-930e" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="4ebb-a889-61e6-ea89" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c53-465d-7544-f51f" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="95f6-3bb7-359a-20aa" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b71a-7f73-a8bf-d6cb" name="Magic Standards" hidden="false" collective="false" import="true" targetId="56e3-510c-aff0-f738" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="edba-967f-0ab9-4bf6" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3883-faa4-99ce-5e72" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3dcc-baa8-5b06-1d57" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a8f5-e16f-4041-7ac8" name="Bladelord" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="655b-03bb-d5f1-5eb5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9571-4853-d5fb-c3ae" name="Bladelord" publicationId="9e23-79cb-pubN77092" page="159" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="4416-e181-5386-2d36" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8c89-e54e-b4de-ecb1" name="Finnubar the Seafarer" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9054-34b2-9fd5-c77a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1a8b-4a90-7a1a-3b96" name="Finnubar the Seafarer" publicationId="1354-aa33-a41b-202a" page="10" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">7</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="59fa-62bf-d458-2461" name="Phoenix King" publicationId="1354-aa33-a41b-202a" page="10" hidden="false">
+          <description>Finubar has Immunity (Flaming Attacks, Psychology) and Ward Save (5+).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2014-1aac-04ba-f218" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+        <infoLink id="dc75-06f1-2ee9-a7c1" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="6f36-daf7-cbad-c482" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aabe-046a-bfbd-b95c" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="d307-05f1-619c-bf85" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9ff5-3438-d7a2-5e18" name="Royal Sceptre of Ulthuan" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b94-38d7-47f2-c16c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78a3-50f9-5031-5a07" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c163-25d1-e5c0-305c" name="Royal Sceptre of Ulthuan" publicationId="1354-aa33-a41b-202a" page="10" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Additional hand weapon. The Royal Sceptre gives Finubar +1 S and Flaming Attacks. In addition, it contains a Bound Spell.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9da2-91e4-6774-c5f4" name="Blazing Aura of Flames" publicationId="1354-aa33-a41b-202a" page="10" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When cast, all enemy models in base contact suffer a S 5 Hit with Flaming Attacks and Multiple Wounds (D3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4d12-bb8f-f155-5497" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5e1-1c67-7e63-e42c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7978-319b-9464-41c0" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="831d-cc1b-4b26-f9ca" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cd29-72f2-2a7d-a5bf" name="Crown of the Phoenix King" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3838-061d-3e93-f961" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e172-488c-bd7b-6f48" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cb89-74d7-bc40-f1ba" name="Crown of the Phoenix King" publicationId="1354-aa33-a41b-202a" page="10" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Enemy missile attacks suffer a -1 To Hit penalty when firing at Finubar or any unit he is with. In addition, it makes Finubar and any unit he joins Unbreakable. Finally, all friendly units within 6&quot;
+of Finubar are Stubborn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="62bd-a19f-245b-059a" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ba03-3b20-6886-172a" name="Thaindal" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a354-edc0-c1af-ef0a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="27de-f743-2213-53c5" name="Thaindal" publicationId="1354-aa33-a41b-202a" page="11" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">7</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ad19-2b1f-d7ef-9829" name="Hatred (Dark Elves)" hidden="false" targetId="8d5b-32ea-4349-ff13" type="rule"/>
+        <infoLink id="803a-1ffb-4809-afcd" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="4d2f-28d2-fb36-2ace" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7820-3d60-c8fe-dc15" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="42f0-0024-5ab9-c2f9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5ed4-f7d3-51c6-5200" name="Cloudcleaver" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f224-1a3a-e35b-ea84" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d14b-4aed-2201-5fa6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fc7b-6647-d861-9307" name="Cloudcleaver" publicationId="1354-aa33-a41b-202a" page="10" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Polearm. All attacks made with Cloudcleaver have Ignores Armour Saves. In addition, it gives Thaindal Fear. Against Warbeasts, Cavalry, Monstrous Cavalry and ridden Monsters, he
+causes Terror.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="40ce-9f0f-37ac-1acd" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b54-dc1e-05a6-0991" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9f1-9252-e5d4-6140" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7564-dd09-6c27-21f8" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="94b0-e862-8082-f2fe" name="Chariot of Kings" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9b7-e8a6-1331-c33f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4526-5218-f922-ac23" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a014-dc19-c8a7-4450" name="Chariot of Kings" publicationId="1354-aa33-a41b-202a" page="11" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4269-0a96-dd75-4305" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+            <infoLink id="2d77-ce6b-d29f-f4a7" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="03d0-5978-6b4f-aae2" name="Elven Steed" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfcb-5f0b-694d-bda7" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="667c-61c6-f546-8f06" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="46fb-e834-53b2-96f0" name="Elven Steed" hidden="false" targetId="3fa4-072f-d5f5-3cdd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dad0-ab17-29b5-f45f" name="Scythes" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39cf-3b8b-f6b3-a4bf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="061d-9a60-888b-43f4" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8f4f-536d-a4c2-fbc3" name="Scythes" hidden="false" targetId="d896-d52f-cc64-ab43" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="13a7-bb6a-7601-d364" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="255.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbaf-d123-ff25-ba0e" name="Hallar the Swordmaster" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6a4f-ad7f-4a20-5986" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e050-00dc-52a4-3a13" name="Hallar" publicationId="1354-aa33-a41b-202a" page="12" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">9</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">7</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">9</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5814-e551-5ef6-7535" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+        <infoLink id="8442-24b1-d6cc-6ac0" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="974c-4fec-f472-6dbe" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+        <infoLink id="bc07-dbca-5681-e109" name="Parry (5+)" hidden="false" targetId="f210-1e7c-a315-2849" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="41fb-71d2-3541-73d3" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3f94-e7f9-e189-a02b" name="Sword of Victory" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f536-7671-3e1c-50c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9ca-4688-3f79-2edc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="68da-324f-a704-3b17" name="Sword of Victory" publicationId="1354-aa33-a41b-202a" page="12" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Additional hand weapon. The Sword of Victory gives Hallar Always Strikes First and Armour Piercing (1). In addition, he will always Wound on a 2+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1eac-682c-94b9-2913" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8984-28e0-136e-5ab2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c009-16e7-1f94-5a8e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="848f-77be-33f1-882a" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="13c7-7127-8faf-731c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="155.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3d17-eb00-281f-0d9a" name="Gilead &amp; Fithvael" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7f62-d315-5712-5154" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2736-9687-db8e-2444" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="90e9-aa41-ff8d-f71a" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2f90-09b3-d445-7a18" name="Gilead" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fae7-7f4a-e8eb-effd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f00a-0b29-08b9-6d14" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d7af-ba6e-046c-8fa7" name="Gilead" publicationId="1354-aa33-a41b-202a" page="14" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">7</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="564e-24e3-0caa-ae5d" name="Shadowfast" publicationId="1354-aa33-a41b-202a" page="14" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">10</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">10</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">8</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="aeed-666b-5824-abef" name="Melancholic Distractions" publicationId="1354-aa33-a41b-202a" page="14" hidden="false">
+              <description>At the start of each of his turns, Gilead must take a LD test, unless he is engaged in combat. If this test is failed, roll a dice. On a 1-3 Gilead cannot move that turn. On a 4-6 Gilead must move his full movement for that turn towards the closest table edge. If he leaves the table, he is treated as a casualty and will not return. If Gilead is engaged in combat, he will fight as normal.</description>
+            </rule>
+            <rule id="f723-7af3-885c-7145" name="Doom-saga" publicationId="1354-aa33-a41b-202a" page="14" hidden="false">
+              <description>At the beginning of the battle, after deployment, nominate one enemy character. Against this particular target, Gilead re-rolls all failed rolls To Hit and To Wound.</description>
+            </rule>
+            <rule id="3f4c-74b0-b780-8020" name="Shadowfast" publicationId="1354-aa33-a41b-202a" page="14" hidden="false">
+              <description>Once per game, at the start of any of the High Elf player&apos;s movement phase, Gilead may enter Shadowfast. Until the start of his next turn, Gilead&apos;s stat line will change to his Shadowfast characteristics. In addition, while Shadowfast, Gilead also gains Always Strikes First and Dodge (4+).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f8dd-8843-f910-9ee6" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+            <infoLink id="1bd6-7df7-60c6-d124" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+            <infoLink id="a1e3-813e-0acd-5015" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2008-f381-e556-ed4a" name="Blade of Galeth" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e645-9153-ad2f-991f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e7b-6e8c-95eb-2821" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3e41-decf-e9dd-8538" name="Blade of Galeth" publicationId="1354-aa33-a41b-202a" page="14" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                    <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                    <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All attacks made by Gilead with the Blade of Galeth have Armour Piercing (1).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="90a9-24e1-5a2a-d478" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d68-1f52-d11f-0958" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5b3-376e-a4eb-801c" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="adc2-9fe5-deff-d9a6" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b1e0-da3b-08a8-ce19" name="Elven Longbow" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2861-0a55-788f-33fc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="303d-a217-5d9b-c8e2" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5be9-0241-5f4b-7106" name="Elven Longbow" hidden="false" targetId="382b-9e51-5753-88bb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="782b-fd97-85f2-1212" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3de-f16d-f8c9-f51f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43d1-1c4f-67ae-485e" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7fe4-ba09-324d-ef00" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="fff5-103e-0899-b781" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="170.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="af27-655d-99cb-065c" name="Fithvael" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d737-5097-2752-83cb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e36c-87ad-95d1-06f0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d9ef-4396-076e-b9d0" name="Fithvael" publicationId="1354-aa33-a41b-202a" page="14" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c992-274a-1bee-bc1e" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+            <infoLink id="6007-b73d-e00e-f026" name="Multiple Shots (2)" hidden="false" targetId="0a0c-35fd-e8ef-5f4e" type="rule"/>
+            <infoLink id="02eb-7a3a-c08a-ce06" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+            <infoLink id="74a7-214e-b374-74e0" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="28f6-4b28-fc69-b409" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d64f-90b4-956f-4061" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="163b-ae9c-5254-f41f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7e8a-1031-e494-9f56" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0699-1562-f2ae-f9da" name="Elven Longbow" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2671-5961-0a3e-d0f7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70b1-b285-cae4-95b5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="afc8-db01-804a-df16" name="Elven Longbow" hidden="false" targetId="382b-9e51-5753-88bb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f87d-6f34-fa79-05a8" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a60-f203-ad3f-e4c9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51c3-ebb3-38e6-e526" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="579e-68ed-7d59-0a8d" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3269-395d-e7df-a614" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77c8-0468-e453-cbe3" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8a9-7402-02de-00c0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c009-3d30-2aef-89c6" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="70.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71f4-4952-4838-5703" name="Phytrion" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2f7f-32cf-9112-431a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9442-cb8c-05be-a9a4" name="Phytrion" publicationId="1354-aa33-a41b-202a" page="15" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4d30-df1a-aa8e-6989" name="Favour of Destiny" publicationId="1354-aa33-a41b-202a" page="15" hidden="false">
+          <description>Roll a D3 at the start of the game; this is the number of dice that Phytrion may re-roll of either To Hit, To Wound, Armour Saves or Ward Saves.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d905-2d92-f35a-be01" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+        <infoLink id="f788-09b1-4be5-13c9" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="dc1a-c093-b352-315b" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+        <infoLink id="9215-bdbb-80f7-6db3" name="Hatred (Warriors of Chaos)" hidden="false" targetId="2d90-9bab-f145-55ce" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="756a-8ea6-63bd-df34" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="40fb-832d-3549-dfbf" name="Sword of Retaliation" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41cb-8f4a-837a-f6e8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0feb-d242-8025-40cc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1a90-1198-3180-8656" name="Sword of Retaliation" publicationId="1354-aa33-a41b-202a" page="15" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All enemy models from the Forces of Destruction suffer -1 To Hit Phytrion in close combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="037a-7f1e-d49e-8b11" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8de9-75bf-ee89-8a53" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b127-8314-2cbc-fd77" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3d2d-6841-9d16-2b64" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ec5-18a6-8e15-f680" name="Moonshade Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b36f-f4e9-a2d8-9681" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee7a-1cdd-edc4-1ae1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ed3a-9998-3974-436c" name="Moonshade Armour" publicationId="1354-aa33-a41b-202a" page="15" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. The Moonshade Armour gives Phytrion Ward Save (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3479-cef0-60ec-2948" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7156-eaee-8abf-fb89" name="Salendor" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0517-b955-7a8a-f470" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f7ac-5c00-485a-dcf9" name="Salendor" publicationId="1354-aa33-a41b-202a" page="16" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">9</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="062f-75fe-b79f-4676" name="Master Tactician" publicationId="1354-aa33-a41b-202a" page="2" hidden="false">
+          <description>After deployment has finished, you may choose to redeploy one of your units. The unit can be moved to any area within your deployment zone.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="c51b-51f2-7464-436a" name="Armour Piercing (1)" hidden="false" targetId="bf4e-212e-fe1d-20c6" type="rule"/>
+        <infoLink id="aca2-95fe-4893-9574" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="d121-c29b-76a0-5295" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+        <infoLink id="f0fe-e6f8-f9f0-67a7" name="Dodge (4+)" hidden="false" targetId="5e3f-9736-a9c0-4a1c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b6e5-c396-cdac-4192" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="88c4-e4df-faab-0a42" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bb7a-9516-d4f5-90af" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ff8-ae53-ad59-2086" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a882-2fbb-67de-1d93" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="40b5-4c1a-63d2-37a7" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7ce3-ad6a-fe77-cbfe" name="Two/Additional Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c107-6a4d-86c6-3eb1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22e6-1573-1b02-e6f9" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8409-5e0b-4149-e9e6" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1317-b4bf-3702-0b83" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68af-2e98-924f-5ccd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1dcc-a4a8-7d72-f0bf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="960a-5b8c-6403-45c9" name="Salendor" publicationId="1354-aa33-a41b-202a" page="16" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0c30-adb9-7b16-32d2" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="fc45-abe2-0206-19a6" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="8450-c6a8-84b7-3897">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa90-61fc-739f-8cb6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="741f-2608-6fe1-7cc1" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="8450-c6a8-84b7-3897" name="Lore of High Magic" hidden="false" collective="false" import="true" targetId="Lore of High Magic High Elves 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3539-a599-ef28-6841" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="275.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dee9-b047-0e3e-f23e" name="Liandra Athinol" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7ee3-8486-0718-937f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6726-8bd4-6ee1-33db" name="Liandra" publicationId="1354-aa33-a41b-202a" page="17" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1f7f-99b0-8450-7ecc" name="Martial Prowess" hidden="false" targetId="74ff-21a4-9c8c-8156" type="rule"/>
+        <infoLink id="636e-4e60-1658-a055" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6921-a95d-cbdf-79c9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="52a1-8fe2-5367-4258" name="The Shield of Ithinar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1d0-c1a6-03e3-4889" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1440-d581-0298-972d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="88db-a719-fa18-aef8" name="The Shield of Ithinar" publicationId="1354-aa33-a41b-202a" page="17" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. All close combat attacks against Liandra suffer -1 To Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6615-69bd-500c-15cc" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3eaa-b192-4ace-ec02" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="613e-cb30-e8c2-8e71" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5b83-e167-82b4-92c6" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3308-61e3-0914-fd6b" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0ed-0692-fd24-56a6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f92f-8f60-a78c-6a21" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c5af-6ffd-4113-5940" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1121-13f6-d9b9-a571" name="The Signet of Athinol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="278e-c2ff-8607-09d0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b260-e139-cb75-22b6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="83a9-de14-82ae-ed1f" name="The Signet of Athinol" publicationId="1354-aa33-a41b-202a" page="17" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Any attacks made against Liandra suffer -1 to their S.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d121-c4c7-751f-c259" name="Borgash" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87f1-34e8-5cc6-648c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5af-f1ee-89a4-5935" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="62c0-6a5b-73eb-876c" name="Borgash" publicationId="1354-aa33-a41b-202a" page="17" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a122-b3c8-caf6-e144" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="9dda-91fc-4c12-9cc9" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+            <infoLink id="81c6-32b9-6d93-e5b2" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+            <infoLink id="85b6-1916-a5b8-4c15" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+            <infoLink id="fca5-1f91-7419-79fb" name="Fiery Breath" hidden="false" targetId="222e-52ff-ae92-083d" type="rule"/>
+            <infoLink id="bbaf-9dd2-6fbc-6220" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9886-84af-e4e9-7bbe" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

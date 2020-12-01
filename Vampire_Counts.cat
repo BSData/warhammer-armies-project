@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0e-261d-9899-f1ae" name="Evocation of Death Chart">
@@ -4540,6 +4540,18 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <cost name="pts" typeId="points" value="95.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="ec0c-a9ba-0069-1405" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb52-0afb-efbf-0afa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d157-5a3e-f905-c28b" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f513-9b3e-3760-3ef9" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="e29d-8777-5120-899b" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -4852,7 +4864,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                         <infoLink id="9712-91d8-5f41-3138" name="Hellsteed" hidden="false" targetId="43c3-7b6b-5d57-c78e" type="profile"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="30.0"/>
+                        <cost name="pts" typeId="points" value="20.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -5134,7 +5146,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                         <infoLink id="f33a-6fc8-08bd-b091" name="Hellsteed" hidden="false" targetId="43c3-7b6b-5d57-c78e" type="profile"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="30.0"/>
+                        <cost name="pts" typeId="points" value="20.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="2a07-c4fc-7b24-f1b6" name="Abyssal Terror" hidden="false" collective="false" import="true" type="model">
@@ -5495,7 +5507,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                         <infoLink id="3212-34d6-ee1f-3a82" name="Hellsteed" hidden="false" targetId="43c3-7b6b-5d57-c78e" type="profile"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="30.0"/>
+                        <cost name="pts" typeId="points" value="20.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -5801,7 +5813,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                         <infoLink id="2dc1-7476-1e9a-7fe7" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="30.0"/>
+                        <cost name="pts" typeId="points" value="20.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="0b04-e636-b303-0cd4" name="Abyssal Terror" hidden="false" collective="false" import="true" type="model">
@@ -9157,6 +9169,584 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
       </rules>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bbd6-5d75-f4c8-e64b" name="Gunther Spengler" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ae16-8312-2582-f162" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cbef-e521-15ee-1dc7" name="Gunther Spengler" publicationId="bf60-84de-5e13-5dbf" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c8f7-0134-abb1-5abd" name="The Generals of Undeath" hidden="false" targetId="f189-b1bd-2258-4c02" type="rule"/>
+        <infoLink id="8eaa-e18a-a3d2-1a50" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4b77-afc4-6eb7-bb77" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d691-b6e3-3204-80d9" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1615-45ff-d5f1-c704" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1168-9b28-9335-b2bf" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="07c1-84de-9e4d-d994" name="Gunther Spengler" publicationId="bf60-84de-5e13-5dbf" page="1" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="643d-7798-f61e-6305" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="761c-80c1-0cc0-30a4" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5e5-46cb-54b8-3f25">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7dd-780f-19e7-f5b1" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4843-e39e-d92e-a7d7" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="f5e5-46cb-54b8-3f25" name="Lore of Necromancy" hidden="false" collective="false" import="true" targetId="Lore of Necromancy 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c67c-fedc-5cb6-a89b" name="Talisman of Death" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="432f-49e2-2ac2-7c87" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="171b-d68f-c12a-36b2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="733d-cc33-57f8-7554" name="Talisman of Death" publicationId="bf60-84de-5e13-5dbf" page="1" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Talisman of Death gives Gunther Ward Save (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1acf-0ca6-117e-3d4e" name="Nathmar&apos;s Skull" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6c5-5c22-262c-cbaa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e8c-f8f7-76d7-1e5c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3391-98e4-b20b-3ed9" name="Nathmar&apos;s Skull" publicationId="bf60-84de-5e13-5dbf" page="1" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Any friendly unit of Skeletons or Zombies joined by Gunther gains +1 to their M value as long as he remains in the unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4961-0ca0-6fcc-f0fb" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8458-416e-afbd-1371" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7e7-f1c8-d8cf-8578" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="667b-4d1e-3918-7e0b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="46f0-e814-12d7-71f8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b956-2a49-66b1-e246" name="Lady Olynder" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="16ab-0f79-924d-fb0f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1d8d-5a65-441f-096a" name="Lady Olynder" publicationId="bf60-84de-5e13-5dbf" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="09ce-9a3b-db2c-602f" name="No Rest For the Wicked" publicationId="bf60-84de-5e13-5dbf" page="3" hidden="false">
+          <description>When casting the Invocating of Nehek spell on a unit with Ethereal, Lady Olynder may restore D3 lost Wounds rather than 1.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4ba4-89bd-582d-45ad" name="The Generals of Undeath" hidden="false" targetId="f189-b1bd-2258-4c02" type="rule"/>
+        <infoLink id="5eb1-d8a2-37fc-1bde" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="0882-1eb4-9f72-815a" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
+        <infoLink id="2a4a-834c-4414-16cb" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
+        <infoLink id="9c5f-19e9-f7be-0229" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
+        <infoLink id="1426-c1d0-ade6-aba6" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c04e-a57e-e728-9a98" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+        <categoryLink id="f238-7e8a-6eb4-acad" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c763-f3b5-eb79-a0ac" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ed8-4519-5793-2bd9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4606-e9ba-fd8e-7f71" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d402-2bda-c51e-a01b" name="Lady Olynder" publicationId="bf60-84de-5e13-5dbf" page="2" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="fcf0-aff0-4b7e-c119" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="8456-781b-bceb-dde6" name="Grief-stricken" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f0c-fcde-c6dc-12ac" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8640-568c-3040-6bc4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2755-fed6-307c-0487" name="Grief-stricken" publicationId="bf60-84de-5e13-5dbf" page="2" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                  <characteristics>
+                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
+                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
+                    <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next turn, the target unit suffer -1 To Hit in close combat, and models targeting them in close combat gain +1 To Hit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c69b-56cf-d248-d2be" name="Lore of Magic" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79ac-9779-5a65-f8e0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad7f-e043-e0e9-8d6b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="efad-30cd-99f1-aed7" name="Lore of Necromancy" hidden="false" collective="false" import="true" targetId="Lore of Necromancy 3" type="selectionEntry"/>
+                <entryLink id="2ae1-6beb-364a-1732" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="048b-f14c-c920-9f15" name="Grave-sands of Time" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d15-8cec-4cc8-4481" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f4d-9605-f037-8787" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f270-2073-3f41-934e" name="Grave-sands of Time" publicationId="bf60-84de-5e13-5dbf" page="3" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. The Grave-sands can be used at the start of any close combat phase to target one enemy model in base contact. The target model suffers D3 Wounds which Ignores Armour saves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ae73-8249-8155-e9ec" name="Staff of Midnight" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="108b-1a23-196d-f403" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b40-f60d-3203-1c03" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b1be-f385-0595-754b" name="Staff of Midnight" publicationId="bf60-84de-5e13-5dbf" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Staff of Midnight gives Lady Olynder Killing Blow.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a0ad-b739-f14d-e4f4" name="Lifting the Veil" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e35-5100-e7c0-4a6b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd72-328a-e2be-f6dd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2135-4aef-218e-bc1d" name="Lifting the Veil" publicationId="bf60-84de-5e13-5dbf" page="3" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Ignores Armour saves. Killing Blow. Multiple Shots (6). When rolling To Wound, substitute the target&apos;s T with its I value. This attack does not suffer any To Hit penalties.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0244-ff02-ac45-ffc3" name="Banshee Handmaidens" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40dd-ce5f-341f-e78d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5cd-7535-9df9-0a82" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b4a2-da8b-9938-e27c" name="Banshee Handmaiden" publicationId="bf60-84de-5e13-5dbf" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">0</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2"/>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8091-be85-f644-08e5" name="Ghostly Howl" hidden="false" targetId="084b-f0d8-2d3e-d611" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2be5-ad00-6307-e8b6" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e16a-d0bf-f868-3684" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1f6-889b-1c29-c040" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3086-785b-a758-b597" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a76c-b3ab-159e-17bf" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="380.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87fd-10b3-f4ae-6608" name="Kurdoss Valentian" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e167-d3c8-27e9-99ec" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="55b5-7ef6-c682-4dbd" name="Kurdoss Valentian" publicationId="bf60-84de-5e13-5dbf" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="30d9-998a-e473-c23f" name="If I cannot Rule, None Shall Rule!" publicationId="bf60-84de-5e13-5dbf" page="4" hidden="false">
+          <description>All enemy characters within 6&quot; of Kurdoss suffer a -1 penalty to their LD value.</description>
+        </rule>
+        <rule id="fda8-5865-7b0c-a781" name="Suffer No Rival" publicationId="bf60-84de-5e13-5dbf" page="4" hidden="false">
+          <description>Kurdoss has Hatred, but may re-roll failed rolls To Hit in every round of close combat, not just the first.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="764a-f3cb-b92a-e8b1" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="f69a-bef0-c379-c5e7" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
+        <infoLink id="a69e-bcd7-46ae-1ffc" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
+        <infoLink id="b200-da55-2e1e-bf7b" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
+        <infoLink id="65d5-0845-74ee-16cf" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c477-7333-8155-0361" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+        <categoryLink id="9907-a8f0-65a3-32ea" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="aea5-fe98-3a1d-c9b9" name="Sepulchral Sceptre" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="188e-2830-6961-9cc6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e56b-5b61-9627-9f5d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="849f-b8e3-be77-1734" name="Sepulchral Sceptre" publicationId="bf60-84de-5e13-5dbf" page="4" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. All attacks made with the Sepulchral Sceptre have Multiple Wounds (D3). However, for each natural To Wound roll of 6, that attack has Multiple Wounds (D6) instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d4dc-1022-0696-3912" name="Wraith Herald" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4218-680c-f690-47ef" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a644-6027-a80e-715b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6140-5b31-a474-e981" name="Wraith Herald" publicationId="bf60-84de-5e13-5dbf" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">0</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2"/>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="53c8-9513-b5ee-5512" name="Chill Grasp" hidden="false" targetId="1cec-8e53-53b2-2e4c" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="e8fb-3a4b-bb8f-4d15" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b64c-6d4a-8569-48c5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c3c-8b21-6cc8-9f3f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="abd2-a3ab-49df-1125" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="76da-e727-6ec5-476c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="225.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cab1-0956-bc79-b14f" name="Reikenor the Grimhailer" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e508-8463-bc41-303d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="44e1-5996-e50e-f0b2" name="Reikenor" publicationId="bf60-84de-5e13-5dbf" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1b3b-6f23-9225-03bd" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="878c-27d2-582e-6e48" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
+        <infoLink id="4323-b033-5e2d-904e" name="Chill Grasp" hidden="false" targetId="1cec-8e53-53b2-2e4c" type="rule"/>
+        <infoLink id="b87f-2897-e563-38ff" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
+        <infoLink id="940c-a097-abd2-b656" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d62a-e01e-0fc9-5463" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d501-2c8f-e426-94e0" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9212-dc19-312c-4783" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6fe-4753-79a4-213c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1b7e-4f30-1fc5-5426" name="Reikenor" publicationId="bf60-84de-5e13-5dbf" page="6" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="dea4-e2ff-e022-949d" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="48a0-7f27-aaa4-14db" name="Wraithstorm" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="810f-a652-0a21-1523" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9f3-ed17-b4ed-7071" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9d59-8175-e868-3fb2" name="Wraithstorm" publicationId="bf60-84de-5e13-5dbf" page="6" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                  <characteristics>
+                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
+                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+</characteristic>
+                    <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit inflicts D6 close combat attacks on itself. If any models in that unit are slain as a result of this spell, that unit immediately inflicts another D6 close combat attacks on itself. This has no effect on single model units.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8cf9-4b7a-2e7d-a345" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2a18-1ca3-0c96-dffe">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a493-833b-7e05-8c9c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f91d-efe8-7b4a-c848" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2a18-1ca3-0c96-dffe" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab02-637e-5680-415a" name="Corpse Candles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27cb-912b-a3c5-382a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46d2-52af-db7c-92ad" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f5a0-be49-3a9f-e643" name="Corpse Candles" publicationId="bf60-84de-5e13-5dbf" page="6" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">At the start of your Magic phase, before attempting to cast a spell, Reikenor may snuff out a corpse candle. If he does so, pick one enemy unit within 12&quot;. The target unit suffers 1 Wound which Ignores Armour saves. In addition, Reikenor gains +1 to cast for his first spell this turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bfcb-73c3-a87c-173f" name="Fellreaper" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5e4-4f61-595a-7ded" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45e7-5570-f011-77e7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="07b1-77ef-b6be-4c0c" name="Fellreaper" publicationId="bf60-84de-5e13-5dbf" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Reikenor gains +1 A for each rank of 5 or more models the target unit has, up to maximum of +3 A.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="673f-f583-85a9-2c7b" name="Kyllaron" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c31e-3567-f0a7-0904" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a3b-5462-ea13-30fa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="aef2-e601-750c-3b6f" name="Kyllaron" publicationId="bf60-84de-5e13-5dbf" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">3</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c82a-d225-4fd5-ec6e" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+            <infoLink id="1e2c-381f-443e-2bde" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="d59c-79f9-92cc-7bc3" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e88e-e164-d3b7-8e24" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="235.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

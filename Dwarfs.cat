@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="2bfd-fe7d-294c-9853" name="Rules of the Runes Table">
@@ -6703,6 +6703,372 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c760-6b93-25f4-3b9c" name="Brok Stonefist" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="657e-8c52-da3a-d534" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fce9-ae6b-4b72-23db" name="Brok Stonefist" publicationId="fef7-683c-50d7-d1bb" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="55a1-b0d5-2483-2e99" name="Lord of the Tunnels" publicationId="fef7-683c-50d7-d1bb" page="2" hidden="false">
+          <description>Up to 2 units of Miners may be taken as Core choices in an army led by Brok. In addition, when using Underground Advance, these units may re-roll the dice each turn to see if they arrive on the battlefield.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="62d2-555c-3c42-d370" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+        <infoLink id="7744-8c8d-db55-d2e1" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+        <infoLink id="edf6-c0f5-9b28-e899" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+        <infoLink id="3126-9633-0dd9-8e23" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c0d4-870e-8422-8ae5" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="9866-a005-43ad-a754" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9609-47b0-7c53-1cbb" name="Garaz Makaz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7736-631f-b6d1-4c48" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6334-a9ff-c371-efa0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="efd8-bf06-b2d2-5e38" name="Garaz Makaz" publicationId="fef7-683c-50d7-d1bb" page="2" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. This weapon is inscribed with the Master Rune of Breaking and the Master Rune of Alaric the Mad.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bada-bf3c-bfa1-45ec" name="The Rune Armour of Karak-Azgal" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7570-622f-5a67-4047" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47d6-f142-3d6a-ce9b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7cd3-fa3b-f38e-bf5f" name="The Rune Armour of Karak-Azgal" publicationId="fef7-683c-50d7-d1bb" page="2" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. The Rune Armour of Karak Azgal is inscribed with the Master Rune of Gromril and the Master Rune of Steel.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7970-8437-66de-2662" name="The Talisman of Steel" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c5b-6b09-e7a3-953b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49f0-6797-a311-e1f3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b9c5-fbb1-9fee-1632" name="The Talisman of Steel" publicationId="fef7-683c-50d7-d1bb" page="2" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Talisman of Stone gives Brok Regeneration (4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7bca-e65f-0cb3-6b4d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="290.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="080d-8533-cf2f-70aa" name="Miners (Brok Stonefist as General)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="6837-7528-438a-d7e6" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c760-6b93-25f4-3b9c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6837-7528-438a-d7e6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ad4e-f04b-306c-640a" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7202-d9a8-748c-18d4" name="Miner" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef92-e3ab-33fb-b194" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="fe0c-2d22-75b3-20e3" name="Miner" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="49f1-02c4-87ac-fb1d" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+            <infoLink id="0405-4223-811f-c5bc" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+            <infoLink id="31c7-a2cf-196c-b8d1" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+            <infoLink id="7229-a901-185e-b983" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="7c2c-10df-a57f-06c8" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3547-a858-42ba-29a1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="647b-c80f-ae7a-3c9f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="82d4-d3b6-12b8-b5d4" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e4f1-9c24-5daf-2a40" name="Blasting Charges" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1b6-fb1f-fdf9-558b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6234-2f4f-5b5c-5346" name="Blasting Charges" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">4&quot;</characteristic>
+                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">One use only. Armour Piercing (1). Flaming Attacks. Quick to Fire.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e4b1-1747-a75f-e3eb" name="Armour" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ae6-7a83-299e-bded" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7ce-b798-236b-ee27" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8e9b-e522-3945-c1ef" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4834-405e-ef4e-6b19" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="99e1-85f0-e40b-c2c9" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fc2c-f8b8-cb15-364a" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d72a-ac95-b3e1-e835" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a769-8123-67e7-83c4" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="9.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4ed9-c015-e332-b6e9" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="05bf-ccb4-6347-056d" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62ab-d410-ce63-e2de" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ccd8-206d-58c5-25bf" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8b44-13a4-22f7-d3af" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13a8-ed31-eba4-8f1a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="70a7-464f-f506-1ad1" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a497-9243-8a47-320d" name="Prospector" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10cd-402f-880c-8abb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bdb7-375a-557b-204a" name="Prospector" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="29b2-0469-8420-b53a" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2873-f6b5-05ee-dd21" name="Primary Weapon" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a67b-bda6-8529-5689" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="808a-80ba-e262-37be" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="61a2-75f0-6daf-99e7" name="Steam Drill" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f849-3c04-d975-5e89" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="2835-a456-ab38-33c6" name="Steam Drill" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Melee</characteristic>
+                            <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+3</characteristic>
+                            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">-2 I. Requires Two Hands. A Miner unit equipped with a steam drill can re-roll a failed arrival for Ambushers.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="e655-a5f3-9a0b-9e4a" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ca4-3c20-a674-04d1" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="ef7b-6122-15ad-2b14" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f176-8cd9-beb1-77e3" name="Crazed Khargrim" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="34ea-567c-5aa0-50cf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d3a9-f371-db45-2707" name="Brok Stonefist" publicationId="fef7-683c-50d7-d1bb" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="c014-4d7c-19a8-8f94" name="Unhinged" publicationId="fef7-683c-50d7-d1bb" page="3" hidden="false">
+          <description>Khargrim may not join any units and can never be the army&apos;s general.</description>
+        </rule>
+        <rule id="9aeb-91b6-486d-ef91" name="Counter-charge" publicationId="fef7-683c-50d7-d1bb" page="3" hidden="false">
+          <description>Khargrim always counts as charging in the first round of close combat.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="acad-fd0c-96b4-8d31" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+        <infoLink id="7841-7e01-0a7e-b0d3" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+        <infoLink id="6f8c-8579-00bd-5ef6" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
+        <infoLink id="3586-06da-0f54-7b77" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
+        <infoLink id="84aa-eaf4-7a5a-6855" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
+        <infoLink id="c4fd-40fd-9314-4a3b" name="Dragon Slayer" hidden="false" targetId="106b-08dd-8397-3a53" type="rule"/>
+        <infoLink id="1db9-9e13-6bfa-bfaf" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a832-9088-fc5a-66b9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="49ee-c83d-3576-ff1c" name="Chains of Binding" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef1d-86d0-5939-75f3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ed-1fbe-5722-37b8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6b3e-0edd-3a2a-e51f" name="Chains of Binding" publicationId="fef7-683c-50d7-d1bb" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. The Chains of Binding give Khargrim Magic Resistance (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

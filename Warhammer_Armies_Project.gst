@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.9" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN67565" name="Albion v.1.25" shortName="Alb" publisher="Warhammer - Albion 9th Ed 1.25" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN71963" name="Beastmen v.1.38" shortName="BM" publisher="Warhammer - Beastmen 9th Ed 1.38" publicationDate="08.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="9e23-79cb-pubN75312" name="Bretonnia v.1.23" shortName="Bret" publisher="Warhammer - Bretonnia 9th Ed 1.23" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="9e23-79cb-pubN75312" name="Bretonnia v.1.23" shortName="Bret" publisher="Warhammer - Bretonnia 9th Ed v.1.23" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN76150" name="Dark Elves v.1.35" shortName="DE" publisher="Warhammer - Dark Elves 9th Ed 1.35" publicationDate="08.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN77092" name="High Elves v.1.24" shortName="HE" publisher="Warhammer - High Elves 9th Ed v.1.24" publicationDate="08.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.24" shortName="LM" publisher="Warhammer - Lizardmen 9th Ed v.1.23" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -44,8 +44,12 @@
     <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.24, Zombie Pirates of the Vampire Coast v.1.0" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.24, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="06.06.2020, 15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.0" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.1" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.1" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters 1.0" shortName="Emp" publisher="Warhammer - Empire Special Characters 1.0" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.0" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.0" publicationDate="10.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters 1.2" shortName="Emp" publisher="Warhammer - Empire Special Characters 1.0" publicationDate="20.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.1" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.0" publicationDate="18.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters 1.0 " shortName="Bret" publisher="Warhammer - Bretonnia Special Characters 1.0" publicationDate="25.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="fef7-683c-50d7-d1bb" name="Dwarfs Special Characters 1.0" shortName="DW" publisher="Warhammer - Dwarfs Special Characters 1.0" publicationDate="27.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="1354-aa33-a41b-202a" name="High Elves Special Characters 1.0" shortName="HE" publisher="Warhammer - High Elves Special Characters 1.0" publicationDate="25.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters 1.0" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.0" publicationDate="27.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -2928,6 +2932,9 @@ Models that are Immune to all three above effects have Immunity (Psychology). Th
     </rule>
     <rule id="bff4-3615-a342-c3c4" name="Hatred (Norse)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
+    </rule>
+    <rule id="f210-1e7c-a315-2849" name="Parry (5+)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+      <description>Models with this rule gain a Ward save in close combat. The value of the Ward save is stated in the bracket. It cannot be used against attacks made against the model&apos;s flank or rear, nor can it be used against attacks that Hit automatically, attacks that are made at double the model&apos;s own Strength value, nor can it be used by mounted models, unless specified.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

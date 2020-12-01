@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="9a0d-50bf-b007-6cef" name="Animosity Table">
@@ -618,7 +618,7 @@
         <entryLink id="7f75-9ccf-98b7-f030" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="320.0"/>
+        <cost name="pts" typeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="13c1-8814-f6ac-9bda" name="Morglum Necksnapper" hidden="false" collective="false" import="true" type="model">
@@ -13104,7 +13104,7 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
               </characteristics>
@@ -13114,7 +13114,7 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
             <infoLink id="3bce-e8ee-fd44-04dd" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="15f8-5333-a2b2-d6dd" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
             <infoLink id="474e-c7f8-b0eb-8a77" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-            <infoLink id="68b0-edcd-ea2a-9cf9" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+            <infoLink id="68b0-edcd-ea2a-9cf9" name="Impact Hits (2D6)" hidden="false" targetId="f78e-8057-0e20-d89f" type="rule"/>
             <infoLink id="956c-bd53-ca5e-6dd9" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
             <infoLink id="51c4-4b95-2baf-d107" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
           </infoLinks>
@@ -13270,6 +13270,142 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
       </selectionEntries>
       <entryLinks>
         <entryLink id="9b1d-07eb-5c2d-67f3" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="335.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f8cb-51ed-3b86-7cfe" name="Grumlok &amp; Gazbag" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="a2cc-9c5b-456c-bca5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="905c-751e-25b9-405d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a2cc-9c5b-456c-bca5" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9641-64e9-1aca-8345" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2f5a-9add-d13d-bd8d" name="Grumlok" publicationId="15a5-c139-f130-a940" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character; Orc)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f19-69da-d553-c70d" name="Gazbag" publicationId="15a5-c139-f130-a940" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2"/>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="76d1-f341-f774-09c6" name="Waaagh!" hidden="false" targetId="72cd-f563-0e75-b280" type="rule"/>
+        <infoLink id="24e9-2186-080a-b922" name="Size Matters" hidden="false" targetId="f6b8-e24e-974c-015a" type="rule"/>
+        <infoLink id="c2df-4d58-eadd-c0c0" name="Choppas" hidden="false" targetId="2017-de4c-6670-21ba" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7ddf-3224-9001-89a1" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="21a5-155a-ccaf-abcf" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4d7c-b84c-4e4f-c59e" name="Malekith&apos;s Amulet" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e98-0ab6-02d9-1039" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d8a-96b8-421f-bc7f" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f96d-59de-e9cb-6d3d" name="Malekith&apos;s Amulet" publicationId="15a5-c139-f130-a940" page="4" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">This amulet gives Grumlok +1 S and Gazbag +1 to cast spells.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7569-525b-124e-fde6" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2504-defb-9a15-3711" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aac9-52a2-1875-7ba3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9737-6cb6-006a-d2d0" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4ec8-e521-a243-22f5" name="Medium Armor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f604-4739-d533-d57d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbe8-49fb-eee2-8d8f" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b6fd-7abf-590d-683e" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="68ca-8c53-c6af-6ef0" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b36-f167-dab6-e1f6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d3d-0eb2-cf50-09b3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9b84-4964-5ddd-97b2" name="Gazbag" publicationId="15a5-c139-f130-a940" page="4" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f7b6-2582-01b0-755e" name="Result" hidden="false" targetId="dcf1-a9e8-6c68-3b58" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="93b6-8b73-075b-1409" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="22aa-5f2c-53ab-188b">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e422-605c-f77b-86fa" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4536-7c7e-6430-8bd1" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="22aa-5f2c-53ab-188b" name="Lore of the Bad Moon" hidden="false" collective="false" import="true" targetId="Lore of the Bad Moon 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ce85-f3f9-7702-8b2f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="335.0"/>

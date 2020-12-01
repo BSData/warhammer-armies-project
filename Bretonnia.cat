@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -1316,9 +1316,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
       </costs>
     </selectionEntry>
     <selectionEntry id="626a-dfbc-1055-ba8f" name="Prophetess of the Lady" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3856-1b3e-252a-3f45" type="max"/>
-      </constraints>
       <profiles>
         <profile id="f4c3-0d03-be1b-8286" name="Prophetess" publicationId="9e23-79cb-pubN75312" page="123" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -2837,9 +2834,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
       </costs>
     </selectionEntry>
     <selectionEntry id="c3a3-0f04-a3ba-64b7" name="Damsel of the Lady" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2666-1dac-8e0e-2280" type="max"/>
-      </constraints>
       <profiles>
         <profile id="f5d1-08ba-d48b-b712" name="Damsel" publicationId="9e23-79cb-pubN75312" page="123" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -6807,6 +6801,586 @@ As long Spirits of the Fay remain partially within one of these terrain features
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2807-2d69-292f-3bab" name="Roland the Marshal" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="19f7-7e0a-578e-a406" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="56fe-829e-c04e-c68c" name="Roland" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b9d5-1039-55db-86f0" name="Marshal" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false">
+          <description>All friendly units within 12&quot; of Roland gain +1 LD when taking Rally tests. In addition, he counts as a musician in any unit he joins.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3ec8-7df4-8e70-f77a" name="Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
+        <infoLink id="d6ea-ec8a-1a9a-8a05" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+        <infoLink id="5108-fd69-04d3-4c5f" name="The Knight&apos;s Vow" hidden="false" targetId="d242-2846-8f1c-6860" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="177c-ea07-2ae4-34c3" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6d93-d0dc-33a6-545b" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="991b-93f3-236e-aaa0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6237-e1b7-ec66-d148" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="936a-46f6-169e-e7d4" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="609e-14e1-3c49-7f6a" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bad-9271-84a5-c7b4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8051-939f-bfa9-ace4" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="eff4-d327-6b24-43d5" name="Warhorse" hidden="false" targetId="1b59-fbaa-b006-c2ad" type="profile"/>
+            <infoLink id="1b8d-bcc2-0a15-8871" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="8a83-9494-3dc5-6485" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+            <infoLink id="8034-5e5d-8d3d-b6c2" name="Purebred Warhorse" hidden="false" targetId="1c9e-d354-9961-b23b" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="67c8-5a07-6ef9-a0a6" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8493-badd-d666-1627" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13a0-1988-b19a-fe54" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="24f2-0640-99fb-5a2a" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f5bd-ee2c-6f26-832b" name="Falcon-horn of Fredemund" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2787-7d1f-b13c-172e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1e1-1e05-cb54-f430" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8afe-2b06-43bc-858f" name="Falcon-horn of Fredemund" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Horn may be sounded at the start of any Bretonnian turn. Until the start of the next Bretonnian turn, no enemy unit may use Fly.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a13-f1e7-f39b-54e3" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2454-2f1d-841a-91a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="011a-b08e-8274-d2da" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1158-83e1-1abe-eecc" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f293-0641-9132-a135" name="Virtue of Stoicism" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a27-c917-fa9e-c07f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd2e-5cac-d1b1-5cef" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3278-63fa-83de-466b" name="Virtue of Stoicism" hidden="false" targetId="1c14-c1d8-676d-a698" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="65ab-bb0f-b14a-fcde" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="145.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53a4-c90a-0587-92fb" name="The Knight of the Perilous Lance" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1d14-f488-95dc-5c43" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cb84-0ea2-4a03-a878" name="The Knight" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="282b-46f6-9740-2617" name="The Parrying Shield" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
+          <description>The Knight of the Perilous Lance has Parry (6+), even though he is mounted.</description>
+        </rule>
+        <rule id="2175-6a27-0502-65b3" name="The Perilous Lance" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
+          <description>All attacks made by the Knight of the Perilous Lance have Ignores Armour Saves when charging.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9489-75bb-1748-d151" name="Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
+        <infoLink id="6e95-1985-b161-4085" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+        <infoLink id="ef7f-8829-7fcf-8eda" name="The Knight&apos;s Vow" hidden="false" targetId="d242-2846-8f1c-6860" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1aea-96c3-5eba-5ef7" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5f56-1795-79dd-f32d" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bb9-8ed4-2cc5-2150" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e56-39e7-dc3f-779b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f60b-7922-78f4-9343" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4599-5314-6191-d989" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a052-cc44-c856-36ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e53b-4ecc-62c9-8c36" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4962-2d4a-74b4-3728" name="Warhorse" hidden="false" targetId="1b59-fbaa-b006-c2ad" type="profile"/>
+            <infoLink id="e7f3-33d7-901e-c766" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="6f46-32cf-2462-326a" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+            <infoLink id="c103-ea2f-0d77-9be7" name="Purebred Warhorse" hidden="false" targetId="1c9e-d354-9961-b23b" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="11ff-db86-4417-35fe" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fb8-6416-fdeb-c072" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e7a-6324-8468-3073" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="57e4-59bf-b81f-fa59" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3dcc-0086-1b86-066c" name="Virtue of the Joust" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5490-fe16-43b7-de61" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73d5-00dd-8729-8ff2" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0b49-c969-ee4f-fe47" name="Virtue of the Joust" hidden="false" targetId="5c0b-dd81-de52-0983" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e061-611d-39ba-61ae" name="Lance (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="537b-dbbc-d3b0-e115" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cd4-6aa2-6644-8c67" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="06e0-2662-d405-8375" name="Lance" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ffdb-7bc9-a714-6fcf" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a19-a3d4-9762-45e2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9542-fe89-5023-07de" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8df3-894e-222c-d523" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2aa5-271a-0d95-1f1f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="140.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecba-4689-1852-8882" name="Jasperre the Fair" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="684c-564c-0afe-9ca9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="14a8-4db3-bf28-8ab8" name="The Knight" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5a71-d7bf-dcec-3757" name="The Parrying Shield" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
+          <description>The Knight of the Perilous Lance has Parry (6+), even though he is mounted.</description>
+        </rule>
+        <rule id="8311-15f7-0984-b92d" name="The Perilous Lance" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
+          <description>All attacks made by the Knight of the Perilous Lance have Ignores Armour Saves when charging.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ef65-8472-c183-1489" name="Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
+        <infoLink id="ac5b-3b0a-a942-cd30" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+        <infoLink id="9af0-5fff-048a-15e4" name="The Knight&apos;s Vow" hidden="false" targetId="d242-2846-8f1c-6860" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0bc7-0e1b-621e-2e23" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ca7c-1500-65fe-3f9a" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ade7-0cde-0449-eeb8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e91d-a26d-98e0-5223" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6179-a463-a38a-3498" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cff9-247f-754a-2efd" name="The Virtous Lance" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d457-03cf-b4b2-3c24" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f2d-769d-6ff9-15d3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="541d-dc00-826f-af22" name="The Virtous Lance" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Lance. This lance gives Jasperre Strength Bonus (1) and Multiple Wounds (D3) when he charges. When fighting Monsters, once you have established how many wounds have been inflicted, roll a D6 and add the number of wounds caused to the score. If the total is equal to 6 or more the Virtuous Lance has pierced the monster&apos;s heart – remove the model as a casualty. Note that Jasperre must cause at least one Wound for this rule to take effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="46d3-6e09-fecc-f8b7" name="Virtue of Audacity" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="924c-0278-c038-5d25" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d53-f057-2dd5-c48a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ffc0-6fa6-01e5-bb1f" name="Virtue of Audacity" hidden="false" targetId="4676-c661-1d9e-c181" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3375-6f38-3c45-4227" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c471-f5ea-32b6-695f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8472-cd19-76c2-d3fb" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="87ac-a77e-7724-dbee" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="faf0-1a1b-a409-9deb" name="Helm of the Dragon Slayer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de2f-b8a2-fae1-7ad5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed9d-70bd-2c6e-170d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e509-3922-88d7-4bcb" name="Helm of the Dragon Slayer" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">The Helm gives Jasperre a 6+ armour save. Jasperre Ward Save from the Blessing of the Lady is increased to 5+ against close combat attacks. In addition, Jasperre gains Immunity (Flaming Attacks).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d4c7-138e-a4d7-5bb9" name="Claw of Malgrimace" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4689-b205-c372-ccef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce9e-dc5e-cc2b-f2ee" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8ccd-d892-76d1-5be7" name="Claw of Malgrimace" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">When fighting Monsters, Jasperre may deduct D3 Attacks from his opponent (not including any rider), to a minimum of 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="75e5-24ee-b6d3-6c3b" name="Royal Pegasus" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f77d-55b9-a2c0-6adc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e902-112a-fe66-b05e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c838-904e-1582-9872" name="Royal Pegasus" hidden="false" targetId="42e6-e1b4-18d0-176f" type="profile"/>
+            <infoLink id="8342-8179-7ae4-be9b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="4e20-4fb1-94d0-d289" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+            <infoLink id="1ec1-989c-3075-1ee6" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="c020-a16d-188b-7cf9" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8145-c227-cc09-3762" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3873-c1c1-2e34-4f6e" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c4c1-0480-a120-73f4" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2765-32ec-4600-4469" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="180.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b5f-1ccf-1c57-1844" name="Reynard the Hunter" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="296d-b458-8ab9-1ecd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9d5b-98eb-18fd-eacc" name="Reynard" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9fc2-8aba-e2f3-01b5" name="Reynard&apos;s Hawk" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false">
+          <description>The hawk always attacks anyone who engages Reynard in close combat, giving Reynard an extra S 3 Attack. In addition, Reynard may use his Hawk in during the Shooting phase. The Hawk can be directed against any enemy unit within line of sight, regardless of range. The enemy unit must take a WS test or suffer a S 3 Hit.</description>
+        </rule>
+        <rule id="2585-8c82-0df2-0b20" name="Groffe and Griffe" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false">
+          <description>Reynard and his wolfhounds always move and fight together as a unit. If Reynard joins a unit, so will Groffe and Griffe.
+
+If Reynard is slain, Groffe and Griffe will be subject to Frenzy for the remainder of the game.
+
+If both his beloved wolfhounds are slain, Reynard immediately becomes subject to Hatred for the remainder of the game.</description>
+        </rule>
+        <rule id="b6a6-8963-f525-ec91" name="Hunting Party" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false">
+          <description>If Reynard joins a unit of Mounted Yeomen, the unit will follow Reynard&apos;s example and become subject to The Knight’s Vow for as long as he remains with it.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ad4d-32f0-a527-b4de" name="Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
+        <infoLink id="5e1d-d8c2-d34c-5276" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+        <infoLink id="9fa7-ca76-0cae-7965" name="The Knight&apos;s Vow" hidden="false" targetId="d242-2846-8f1c-6860" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="23d4-1aa1-f4d2-4ffe" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="607c-17ba-e4d9-088b" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d46-37be-cac6-566e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83dc-f5cc-2147-f016" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1bb4-2bc2-5aa2-be9e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3f68-d144-aef0-08de" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="620b-3b67-a66d-6e36" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df9c-2fb5-4721-6aa2" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5047-81c6-b74e-fb36" name="Warhorse" hidden="false" targetId="1b59-fbaa-b006-c2ad" type="profile"/>
+            <infoLink id="2bb0-df41-c69c-bca4" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="fb71-b242-e4ab-06fe" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+            <infoLink id="f318-2101-f737-6ed5" name="Purebred Warhorse" hidden="false" targetId="1c9e-d354-9961-b23b" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="cc5b-a23f-8a53-1e37" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ffb-0c1d-64a1-6483" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9395-8d4b-6e74-fc36" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="822f-7acc-8726-fec7" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5ea5-c260-de85-8115" name="Virtue of Audacity" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="439b-55d0-0e64-f7be" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2dec-148d-7cb6-fa53" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="192b-8360-8390-fc18" name="Virtue of Audacity" hidden="false" targetId="4676-c661-1d9e-c181" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4404-4e4f-ec65-f5f1" name="Reynard&apos;s Boar Spear" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f85-c62d-0a94-88b9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90c4-2659-dfa8-a0ce" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="283e-3711-bc9b-b39d" name="The Virtous Lance" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Lance. If Reynard&apos;s opponent is wounded by the boar spear, it may not Attack that turn. In addition, no Natural Armour saves may be taken against Wounds caused by the spear.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="96b0-4ebb-3ba7-3159" name="Groffe" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de3e-1573-e156-6dc8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526f-0c7f-4fa9-9955" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="fd8e-e34b-b159-5337" name="Groffe" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">0</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b92c-a96b-1f5a-2f1b" name="Griffe" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15e9-c799-d239-3277" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b16-66a8-627f-7175" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="cf4c-be12-b7c3-18a9" name="Griffe" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">0</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d740-2371-75d8-f46b" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="125.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dc49-a383-6108-ad49" name="Talisman of Ulric">
@@ -162,6 +162,10 @@
         <infoLink id="2a26-385d-3586-29f2" name="Streangth in Faith, Faith in Strength" hidden="false" targetId="42b3-4c8d-1992-b78a" type="rule"/>
         <infoLink id="e09c-e530-4e1b-3122" name="Fury of Ulric" hidden="false" targetId="baeb-c8ee-a7c2-e40d" type="rule"/>
         <infoLink id="dce6-8589-d640-8ef0" name="Blessing of Ulric" hidden="false" targetId="9ed1-2b81-24bc-aca3" type="rule"/>
+        <infoLink id="c0f2-0541-284b-d789" name="Battle Howl" hidden="false" targetId="895f-d80b-fdc4-7ed6" type="profile"/>
+        <infoLink id="275f-f2bb-c75d-5f88" name="Destruction" hidden="false" targetId="55d3-84a8-e7d8-a56a" type="profile"/>
+        <infoLink id="5089-7fae-e8df-d206" name="Winter&apos;s Chill" hidden="false" targetId="c436-182d-f74d-3480" type="profile"/>
+        <infoLink id="21ae-666a-0cb2-5b92" name="Prayers of Ulric" hidden="false" targetId="2c87-a36e-1344-1560" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="84b4-670c-49df-1b3e" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -200,21 +204,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3c3c-50c3-2d77-1fcc" name="Prayers of Ulric" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="506f-f365-ca17-1d28" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4922-1d81-2aba-c20c" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4b54-c44c-5184-dd9a" name="Prayers of Ulric" hidden="false" targetId="2c87-a36e-1344-1560" type="rule"/>
-            <infoLink id="bb17-7ee3-bace-9a19" name="Winter&apos;s Chill" hidden="false" targetId="c436-182d-f74d-3480" type="profile"/>
-            <infoLink id="de16-d9fa-97ef-f399" name="Destruction" hidden="false" targetId="55d3-84a8-e7d8-a56a" type="profile"/>
-            <infoLink id="9bf9-ca59-a349-4948" name="Battle Howl" hidden="false" targetId="895f-d80b-fdc4-7ed6" type="profile"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -1260,9 +1249,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d54c-9b9a-c135-d7ec" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="1ea9-47ce-7ac5-33f5" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1300,9 +1286,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="984b-2689-2ab4-7261" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="38f5-ce5d-e86f-8e7e" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1740,26 +1723,15 @@
         <infoLink id="1b8c-ab45-50c5-42ec" name="Streangth in Faith, Faith in Strength" hidden="false" targetId="42b3-4c8d-1992-b78a" type="rule"/>
         <infoLink id="d749-1f17-0142-0fe9" name="Fury of Ulric" hidden="false" targetId="baeb-c8ee-a7c2-e40d" type="rule"/>
         <infoLink id="f8ad-6a07-4fa9-e8bd" name="Blessing of Ulric" hidden="false" targetId="9ed1-2b81-24bc-aca3" type="rule"/>
+        <infoLink id="b9e0-bb96-3232-f3db" name="Battle Howl" hidden="false" targetId="895f-d80b-fdc4-7ed6" type="profile"/>
+        <infoLink id="1868-3b23-9058-0478" name="Destruction" hidden="false" targetId="55d3-84a8-e7d8-a56a" type="profile"/>
+        <infoLink id="0979-3046-32e6-97c5" name="Winter&apos;s Chill" hidden="false" targetId="c436-182d-f74d-3480" type="profile"/>
+        <infoLink id="725d-6b58-8437-b4c6" name="Prayers of Ulric" hidden="false" targetId="2c87-a36e-1344-1560" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1f5c-d202-c823-97b8" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3ff8-0f32-6ccf-5059" name="Prayers of Ulric" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ba9-1d71-c8dd-fbb8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f41-054c-ef68-6eb0" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="37e5-4271-c24d-dc74" name="Prayers of Ulric" hidden="false" targetId="2c87-a36e-1344-1560" type="rule"/>
-            <infoLink id="96f5-48fe-1645-764a" name="Winter&apos;s Chill" hidden="false" targetId="c436-182d-f74d-3480" type="profile"/>
-            <infoLink id="6de5-3787-17c1-0bca" name="Destruction" hidden="false" targetId="55d3-84a8-e7d8-a56a" type="profile"/>
-            <infoLink id="111b-4aca-dadc-8080" name="Battle Howl" hidden="false" targetId="895f-d80b-fdc4-7ed6" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="0da9-6055-eacc-ce39" name="Magic Items &amp; Talismans of Ulric" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd7c-cda0-15b5-528e" type="max"/>
@@ -1995,9 +1967,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="783d-723f-7afe-5d99" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="50a2-e549-38cf-d3ee" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2035,9 +2004,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="8bec-a76c-7bf9-74f0" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="974c-ca7a-cb19-a793" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -4458,9 +4424,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="8a8a-bb50-5526-3765" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="e750-ddef-1d80-51ba" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
@@ -4516,7 +4479,6 @@
       <infoLinks>
         <infoLink id="ade1-530a-8d54-0388" name="Great Cannon" hidden="false" targetId="7e43-605b-bfde-13c3" type="profile"/>
         <infoLink id="6fc9-e176-b3e5-259f" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="b5b8-d9d6-b11d-deb3" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c7f3-9bd1-f486-a81f" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>

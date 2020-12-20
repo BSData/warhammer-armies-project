@@ -1,53 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b68c-fa06-aafb-abce" name="Regiments of Renown" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="true" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b68c-fa06-aafb-abce" name="Regiments of Renown" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="true" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="5423-274f-5dcf-2680" name="Pick up and... Chart">
+    <profileType id="591c-24ac-19bd-3b4b" name="Mercenary Loyalty Table">
       <characteristicTypes>
-        <characteristicType id="0250-f69f-9d6e-a4e6" name="1"/>
-        <characteristicType id="1c82-db72-bc0f-2439" name="2"/>
-        <characteristicType id="7b03-8210-0c01-075d" name="3"/>
-        <characteristicType id="b4e0-39ea-d3e2-8f64" name="4"/>
-        <characteristicType id="7ca0-5878-b637-a79d" name="5"/>
-        <characteristicType id="ec29-6a74-d626-bb74" name="6"/>
+        <characteristicType id="fd30-ac37-4edf-2c88" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="41a2-25f8-254e-5586" name="Small Things Chart">
+    <profileType id="f1ab-233e-f56c-1851" name="Animosity Table">
       <characteristicTypes>
-        <characteristicType id="77dd-b058-bcfc-c0a3" name="1"/>
-        <characteristicType id="662e-b36e-1161-024c" name="2"/>
-        <characteristicType id="31a3-be08-ee3c-cb76" name="3"/>
-        <characteristicType id="5cac-0609-e3e7-bd96" name="4-6"/>
+        <characteristicType id="0785-73bd-fa4a-09d4" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="a254-26a2-8849-ab28" name="Big Things Chart">
+    <profileType id="4d1e-f578-3fd8-b4e1" name="Treacherous Gits Table">
       <characteristicTypes>
-        <characteristicType id="f6f5-de92-dfcc-e84c" name="1"/>
-        <characteristicType id="3749-c1ee-3586-bf43" name="2-4"/>
-        <characteristicType id="e053-490d-b3f1-fb6d" name="5-6"/>
+        <characteristicType id="d784-9d8b-9174-1fc8" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="ecef-4d45-b4cf-b587" name="Treacherous Gits Table">
+    <profileType id="fbcd-57e6-a11a-ea04" name="Big Things Chart">
       <characteristicTypes>
-        <characteristicType id="ceef-2d79-5123-0025" name="1"/>
-        <characteristicType id="21dc-b4bb-fca2-41ef" name="2-5"/>
-        <characteristicType id="a2a8-744c-4128-531b" name="6"/>
+        <characteristicType id="2939-1a1a-3434-5d0b" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="076c-e914-2501-0241" name="Animosity Table">
+    <profileType id="33a5-897f-ef30-453a" name="Small Things Chart">
       <characteristicTypes>
-        <characteristicType id="aa62-864b-8cf4-8ecf" name="1-2"/>
-        <characteristicType id="2c00-3163-6f27-d7de" name="3-6"/>
+        <characteristicType id="b221-6a63-f789-51dd" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="caa5-facb-db8d-a36b" name="Mercenary Loyalty Table">
+    <profileType id="1cd7-6c92-b126-318d" name="Pick up and... Chart">
       <characteristicTypes>
-        <characteristicType id="4dae-e5fe-3d80-e2ce" name="1-3"/>
-        <characteristicType id="b062-72d2-9379-6108" name="4-5"/>
-        <characteristicType id="1cd9-de03-8440-fc46" name="6"/>
+        <characteristicType id="0e89-736f-281b-1175" name="Result"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <selectionEntries>
+    <selectionEntry id="c4d4-84a1-e0af-7f27" name="Mercenary Loyalty Table" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5864-9d8e-1fa3-ba0d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7fd7-0fbc-fe67-e521" name="01-03 (Mercenary Loyalty)" publicationId="9e23-79cb-pubN116235" page="5" hidden="false" typeId="591c-24ac-19bd-3b4b" typeName="Mercenary Loyalty Table">
+          <characteristics>
+            <characteristic name="Result" typeId="fd30-ac37-4edf-2c88">Wavering Loyalty: All models in the unit suffer a -1 modifier to their LD for the rest of the battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a13-7bbd-ef48-17ba" name="04-05 (Mercenary Loyalty)" publicationId="9e23-79cb-pubN116235" page="5" hidden="false" typeId="591c-24ac-19bd-3b4b" typeName="Mercenary Loyalty Table">
+          <characteristics>
+            <characteristic name="Result" typeId="fd30-ac37-4edf-2c88">Soldier On: The unit flees as normal.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="719e-ed59-e1c0-aefa" name="06 (Mercenary Loyalty)" publicationId="9e23-79cb-pubN116235" page="5" hidden="false" typeId="591c-24ac-19bd-3b4b" typeName="Mercenary Loyalty Table">
+          <characteristics>
+            <characteristic name="Result" typeId="fd30-ac37-4edf-2c88">Stand Fast!: The unit counts as having passed its Break test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="452f-593c-6692-7cbb" name="Al Muktar&apos;s Desert Dogs" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -61,7 +73,6 @@
       <infoLinks>
         <infoLink id="c718-556a-38aa-a265" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
         <infoLink id="4623-0b6b-af3e-e750" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="5330-e6d0-9071-1a4a" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="c109-c086-4dd3-f6d4" name="Desert Dog" hidden="false" collective="false" import="true" type="model">
@@ -402,10 +413,40 @@
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
               </characteristics>
             </profile>
+            <profile id="c3f6-a400-8c54-aac9" name="Hammer of Sigmar" publicationId="9e23-79cb-pubN116235" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Wilhelm and his unit may re-roll failed To Wound rolls in close combat until the start of the next friendly Magic phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="03f9-6516-07a9-f6a1" name="Soulfire" publicationId="9e23-79cb-pubN116235" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Wilhelm and his unit gain Flaming Attacks until the start of the next friendly Magic phase. In addition, when cast, all enemy models in base contact with Wilhelm suffer a S 4 hit. Models with Daemonic, Undead or Vampiric in base contact suffer a S 5 hit instead, which Ignores Armour Saves.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a846-83da-2a41-9c6d" name="Shield of Faith" publicationId="9e23-79cb-pubN116235" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Wilhelm and his unit gain a Ward Save (5+) against all Wounds inflicted in close combat until the start of the next friendly Magic phase.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <rules>
             <rule id="a260-36e6-48da-1a81" name="Divine Power" publicationId="9e23-79cb-pubN116235" page="61" hidden="false">
               <description>Wilhelm can channel power and dispel dice in the same manner as a Level 1 Wizard.</description>
+            </rule>
+            <rule id="a4d5-71d8-edd3-4991" name="Battle Prayers" publicationId="9e23-79cb-pubN116235" page="61" hidden="false">
+              <description>Wilhelm knows three Battle Prayers. Battle Prayers are innate bound spells (power level 3). Battle Prayers are augment spells that target Wilhelm and his unit.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -427,49 +468,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0649-ab40-b2d1-eaac" name="Battle Prayers" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfac-801e-9002-5457" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34af-1a03-8d16-87ae" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a267-1325-8da8-7cde" name="Hammer of Sigmar" publicationId="9e23-79cb-pubN116235" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
-                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                    <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Wilhelm and his unit may re-roll failed To Wound rolls in close combat until the start of the next friendly Magic phase.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="1f44-3fc8-df7f-694a" name="Shield of Faith" publicationId="9e23-79cb-pubN116235" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
-                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                    <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Wilhelm and his unit gain a Ward Save (5+) against all Wounds inflicted in close combat until the start of the next friendly Magic phase.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="a2a0-2e1f-9848-3e16" name="Soulfire" publicationId="9e23-79cb-pubN116235" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-                  <characteristics>
-                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
-                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                    <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Wilhelm and his unit gain Flaming Attacks until the start of the next friendly Magic phase. In addition, when cast, all enemy models in base contact with Wilhelm suffer a S 4 hit. Models with Daemonic, Undead or Vampiric in base contact suffer a S 5 hit instead, which Ignores Armour Saves.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="dd06-d194-f4e3-c1e6" name="Battle Prayers" publicationId="9e23-79cb-pubN116235" page="61" hidden="false">
-                  <description>Wilhelm knows three Battle Prayers. Battle Prayers are innate bound spells (power level 3). Battle Prayers are augment spells that target Wilhelm and his unit.</description>
-                </rule>
-              </rules>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -705,7 +703,6 @@ order to march, regardless of the proximity of enemy units.</description>
       </constraints>
       <infoLinks>
         <infoLink id="1d79-a5fc-cb0f-b60c" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="04fd-6eaa-9bed-ca7b" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="855a-9444-3686-09ec" name="Forest Strider" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="fdf3-0a3a-7d51-2616" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="f8e3-e03a-5dd9-47a0" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
@@ -923,7 +920,6 @@ order to march, regardless of the proximity of enemy units.</description>
       </rules>
       <infoLinks>
         <infoLink id="40aa-312f-1ac2-0c03" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="f44f-e219-960d-baa9" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="f9fe-6b84-657b-252b" name="Amulet of Dragonheart" hidden="false" collective="false" import="true" type="upgrade">
@@ -1088,9 +1084,6 @@ order to march, regardless of the proximity of enemy units.</description>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="9270-c29c-f005-2b77" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="292a-0529-1e32-b923" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1155,10 +1148,20 @@ order to march, regardless of the proximity of enemy units.</description>
             <infoLink id="b272-3352-71c5-cd8d" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
             <infoLink id="2e3d-c02f-aa84-a1fe" name="Fall Over" hidden="false" targetId="e434-8ff9-fa05-3494" type="rule"/>
             <infoLink id="59be-90eb-e32f-6410" name="Giant Special Attacks" hidden="false" targetId="63d3-73fb-3208-92a5" type="rule"/>
-            <infoLink id="6704-e95b-926f-e1cf" name="Result" hidden="false" targetId="Result (Pick up and... Chart)" type="profile"/>
-            <infoLink id="0f25-1644-80f5-8af1" name="Result" hidden="false" targetId="Result (Small Things Chart)" type="profile"/>
-            <infoLink id="22d4-d8d3-7591-61cf" name="Result" hidden="false" targetId="Result (Big Things Chart)" type="profile"/>
+            <infoLink id="22d4-d8d3-7591-61cf" name="01 (Pick Up and...)" hidden="false" targetId="96c0-6630-0086-48be" type="profile"/>
             <infoLink id="27c1-e056-d5da-d36b" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+            <infoLink id="4bc2-3628-05d9-ede1" name="02-04 (Big Things)" hidden="false" targetId="9a36-128a-1297-ad27" type="profile"/>
+            <infoLink id="bb84-ce63-38cc-0c28" name="05-06 (Big Things)" hidden="false" targetId="d4f0-938b-6406-0158" type="profile"/>
+            <infoLink id="d7cd-3053-40cd-1b01" name="01 (Small Things)" hidden="false" targetId="4788-bcc3-d193-3cd5" type="profile"/>
+            <infoLink id="6182-a800-f43f-0730" name="02 (Small Things)" hidden="false" targetId="e830-9cf9-3b61-a594" type="profile"/>
+            <infoLink id="6d1a-8432-9505-7c1d" name="03 (Small Things)" hidden="false" targetId="d491-2644-f517-5a77" type="profile"/>
+            <infoLink id="7d89-8e14-1af1-b050" name="04-06 (Small Things)" hidden="false" targetId="a4d8-e63c-78a1-1603" type="profile"/>
+            <infoLink id="79f6-70f2-0d6a-e2c8" name="02 (Pick Up and...)" hidden="false" targetId="20d1-d583-0474-13ae" type="profile"/>
+            <infoLink id="c230-2f14-06d6-3a07" name="03 (Pick Up and...)" hidden="false" targetId="38bc-fe44-b7f5-3323" type="profile"/>
+            <infoLink id="505a-d497-ca97-b0d6" name="05 (Pick Up and...)" hidden="false" targetId="4ebf-eff1-493d-e180" type="profile"/>
+            <infoLink id="4c1c-1c20-fe78-6a68" name="06 (Pick Up and...)" hidden="false" targetId="37b6-4ff7-13f1-25ed" type="profile"/>
+            <infoLink id="a898-023a-db7b-9674" name="04 (Pick Up and...)" hidden="false" targetId="456a-7a29-c367-1314" type="profile"/>
+            <infoLink id="7278-78b5-bfe7-7497" name="01 (Big Things)" hidden="false" targetId="f145-9c15-12ce-5ae7" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="82ad-46a8-c56c-a217" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1205,10 +1208,20 @@ order to march, regardless of the proximity of enemy units.</description>
             <infoLink id="3f55-abd9-1b84-8e6b" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
             <infoLink id="debb-b429-eff8-ebf3" name="Fall Over" hidden="false" targetId="e434-8ff9-fa05-3494" type="rule"/>
             <infoLink id="5d6d-914c-9e95-2691" name="Giant Special Attacks" hidden="false" targetId="63d3-73fb-3208-92a5" type="rule"/>
-            <infoLink id="5cc0-c1a7-9e22-ea5c" name="Result" hidden="false" targetId="Result (Pick up and... Chart)" type="profile"/>
-            <infoLink id="ba09-02c8-232c-03e7" name="Result" hidden="false" targetId="Result (Big Things Chart)" type="profile"/>
-            <infoLink id="6636-cca9-7e6d-f9fc" name="Result" hidden="false" targetId="Result (Small Things Chart)" type="profile"/>
             <infoLink id="4f61-0568-8f4f-ca86" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+            <infoLink id="3b2e-ca2c-301e-242a" name="01 (Big Things)" hidden="false" targetId="f145-9c15-12ce-5ae7" type="profile"/>
+            <infoLink id="78bd-1459-1b66-8e3c" name="02-04 (Big Things)" hidden="false" targetId="9a36-128a-1297-ad27" type="profile"/>
+            <infoLink id="3077-5ab8-2669-f9bf" name="05-06 (Big Things)" hidden="false" targetId="d4f0-938b-6406-0158" type="profile"/>
+            <infoLink id="0d2d-c76c-a20e-0a5c" name="01 (Small Things)" hidden="false" targetId="4788-bcc3-d193-3cd5" type="profile"/>
+            <infoLink id="1f5d-3709-d4d9-6212" name="02 (Small Things)" hidden="false" targetId="e830-9cf9-3b61-a594" type="profile"/>
+            <infoLink id="19b9-9ef7-bd2f-86fe" name="03 (Small Things)" hidden="false" targetId="d491-2644-f517-5a77" type="profile"/>
+            <infoLink id="a1a7-5828-5d98-e7c9" name="04-06 (Small Things)" hidden="false" targetId="a4d8-e63c-78a1-1603" type="profile"/>
+            <infoLink id="4aa9-dfcc-a142-4ebe" name="01 (Pick Up and...)" hidden="false" targetId="96c0-6630-0086-48be" type="profile"/>
+            <infoLink id="d791-9327-d967-0f1e" name="02 (Pick Up and...)" hidden="false" targetId="20d1-d583-0474-13ae" type="profile"/>
+            <infoLink id="3346-08b7-c0bd-11d0" name="03 (Pick Up and...)" hidden="false" targetId="38bc-fe44-b7f5-3323" type="profile"/>
+            <infoLink id="5f3c-e0b5-a90c-83ce" name="04 (Pick Up and...)" hidden="false" targetId="456a-7a29-c367-1314" type="profile"/>
+            <infoLink id="e1e9-37be-27bd-9aa2" name="05 (Pick Up and...)" hidden="false" targetId="4ebf-eff1-493d-e180" type="profile"/>
+            <infoLink id="40ba-a164-e4fb-9611" name="06 (Pick Up and...)" hidden="false" targetId="37b6-4ff7-13f1-25ed" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="0318-86a3-5536-402e" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1401,7 +1414,6 @@ of the Goblin-hewer at all times. Malakai may always fire at a different target 
       </rules>
       <infoLinks>
         <infoLink id="4e29-98a1-8112-656e" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="1558-b20f-ff1b-78f6" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="2253-74ad-4442-3984" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
       </infoLinks>
       <selectionEntries>
@@ -1531,7 +1543,6 @@ of the Goblin-hewer at all times. Malakai may always fire at a different target 
       </rules>
       <infoLinks>
         <infoLink id="41f9-9b77-c962-ae05" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="d83a-8fe9-4b9b-f6e6" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="2fc4-f124-3af0-2d2f" name="Galloper Gun" hidden="false" collective="false" import="true" type="model">
@@ -1562,9 +1573,6 @@ of the Goblin-hewer at all times. Malakai may always fire at a different target 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="a50a-cfa5-f475-84ac" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry id="ee39-ba28-8d05-fc5c" name="Crew" hidden="false" collective="true" import="true" type="model">
               <constraints>
@@ -1758,7 +1766,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </constraints>
       <infoLinks>
         <infoLink id="4051-de09-1cd3-0b2a" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="cee8-3765-bc89-a4e5" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="8bfd-3be0-df67-7029" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
       </infoLinks>
       <selectionEntries>
@@ -1981,7 +1988,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </constraints>
       <infoLinks>
         <infoLink id="1598-332c-872a-e7ed" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="36b7-68dd-7c32-f7dd" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="8fdb-eae5-c903-15dd" name="Besieger" hidden="false" collective="false" import="true" type="model">
@@ -2183,7 +2189,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </constraints>
       <infoLinks>
         <infoLink id="ac87-3b53-13b6-1370" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="b180-097d-a103-2ba7" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="b0c6-c60b-2d0a-93a0" name="Manann&apos;s Blade" hidden="false" collective="false" import="true" type="model">
@@ -2386,7 +2391,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </rules>
       <infoLinks>
         <infoLink id="02b1-ac9d-85e7-fe0b" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="5302-9fce-2d7f-5968" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="308a-5e3f-08ed-d6fe" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
         <infoLink id="080d-94d7-bc1a-d885" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
       </infoLinks>
@@ -2578,7 +2582,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </constraints>
       <infoLinks>
         <infoLink id="bee2-bcf0-de9c-6afb" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="f4ef-46f1-5444-8ba3" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="52b7-fa5f-e214-97e2" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
       </infoLinks>
       <selectionEntries>
@@ -2875,7 +2878,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </rules>
       <infoLinks>
         <infoLink id="404a-ee2a-8926-6507" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="ea5f-36f8-3adc-cc43" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="e474-7409-db4f-5b0f" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
         <infoLink id="4cca-a1ad-83ff-4042" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="8d3f-9cb5-b965-36cb" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
@@ -3092,7 +3094,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </constraints>
       <infoLinks>
         <infoLink id="0a5a-65c9-7d7b-2b5c" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="44c8-94cb-4796-7cf9" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="67ef-3449-eaf4-cca0" name="Marksman" hidden="false" collective="false" import="true" type="model">
@@ -3280,7 +3281,6 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
       </rules>
       <infoLinks>
         <infoLink id="f8fb-a502-3816-63cf" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="c3b2-e17b-481e-3ac8" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="b9d6-83e8-7baa-5635" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
         <infoLink id="4af8-d28b-3d57-45c3" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="84bc-31e5-c77e-a24f" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
@@ -3485,11 +3485,19 @@ In addition, as long as Bronzino is within 3&quot; of a Galloper Gun, he is allo
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3771-b243-0b2c-5fb6" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9ecd-1039-94c7-56be" name="Result" publicationId="9e23-79cb-pubN116235" page="49" hidden="false" typeId="ecef-4d45-b4cf-b587" typeName="Treacherous Gits Table">
+        <profile id="9ecd-1039-94c7-56be" name="01" publicationId="9e23-79cb-pubN116235" page="49" hidden="false" typeId="4d1e-f578-3fd8-b4e1" typeName="Treacherous Gits Table">
           <characteristics>
-            <characteristic name="1" typeId="ceef-2d79-5123-0025">Traitor!: The Hobgoblins halt and shoot at the nearest regiment in their own army! Turn the Hobgoblins towards the unit and resolve the shooting immediately. Note that shooting due to Treachery is worked out before normal shooting. The Hobgoblins do nothing else this turn. If there isn&apos;t an eligible victim, the Wolf Boyz will Stay &apos;Ere instead.</characteristic>
-            <characteristic name="2-5" typeId="21dc-b4bb-fca2-41ef">We Stayz &apos;Ere!: The Hobgoblins refuse to shoot or charge the enemy, though otherwise they may act normally.</characteristic>
-            <characteristic name="6" typeId="a2a8-744c-4128-531b">Hiiyaaarrghh!: No further Treachery tests are made for the duration of the battle, and the unit may act normally this turn.</characteristic>
+            <characteristic name="Result" typeId="d784-9d8b-9174-1fc8">Traitor!: The Hobgoblins halt and shoot at the nearest regiment in their own army! Turn the Hobgoblins towards the unit and resolve the shooting immediately. Note that shooting due to Treachery is worked out before normal shooting. The Hobgoblins do nothing else this turn. If there isn&apos;t an eligible victim, the Wolf Boyz will Stay &apos;Ere instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f7d7-f0b6-bde2-9c8e" name="02-05" publicationId="9e23-79cb-pubN116235" page="49" hidden="false" typeId="4d1e-f578-3fd8-b4e1" typeName="Treacherous Gits Table">
+          <characteristics>
+            <characteristic name="Result" typeId="d784-9d8b-9174-1fc8">We Stayz &apos;Ere!: The Hobgoblins refuse to shoot or charge the enemy, though otherwise they may act normally.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44d2-f758-4460-9d77" name="06" publicationId="9e23-79cb-pubN116235" page="49" hidden="false" typeId="4d1e-f578-3fd8-b4e1" typeName="Treacherous Gits Table">
+          <characteristics>
+            <characteristic name="Result" typeId="d784-9d8b-9174-1fc8">Hiiyaaarrghh!: No further Treachery tests are made for the duration of the battle, and the unit may act normally this turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3506,7 +3514,6 @@ unit is already engaged in close combat, less than 5 models strong, or fleeing.<
       </rules>
       <infoLinks>
         <infoLink id="af6f-50ba-990a-5209" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="12a7-a875-f83f-5f00" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="ba8c-c12e-615d-1fe1" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
       </infoLinks>
       <selectionEntries>
@@ -3753,7 +3760,6 @@ rolled.</characteristic>
       </rules>
       <infoLinks>
         <infoLink id="8dbf-99db-d68a-8d21" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="e8a3-5e20-f951-6679" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5989-7796-21a4-46a9" name="Command Group" hidden="false" collective="false" import="true">
@@ -3948,7 +3954,6 @@ rolled.</characteristic>
       </constraints>
       <infoLinks>
         <infoLink id="2e82-4454-ed1f-bb83" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="9c70-b3f8-1341-d243" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="a6dd-75da-12ff-7fbd" name="Republican Guard" hidden="false" collective="false" import="true" type="model">
@@ -4095,10 +4100,14 @@ rolled.</characteristic>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2b8a-1ab4-9efb-6de5" type="max"/>
       </constraints>
       <profiles>
-        <profile id="a321-c331-4e75-73f9" name="Result" publicationId="9e23-79cb-pubN116235" page="40" hidden="false" typeId="076c-e914-2501-0241" typeName="Animosity Table">
+        <profile id="a321-c331-4e75-73f9" name="01-02" publicationId="9e23-79cb-pubN116235" page="40" hidden="false" typeId="f1ab-233e-f56c-1851" typeName="Animosity Table">
           <characteristics>
-            <characteristic name="1-2" typeId="aa62-864b-8cf4-8ecf">Let&apos;s show &apos;em what these crossbows can do!: Ruglud’s Armoured Orcs shoot at the closest unit, friend or foe. All models in the unit can fire without movement penalty at the nearest target in any direction, ignoring the usual restrictions for line of sight and fire arcs – this is an exception to the normal rules for shooting. The shots are worked out immediately, not in the Shooting phase, and the models themselves are not moved. The unit cannot do anything else that turn. If there are no units within range, the unit Squabbles instead.</characteristic>
-            <characteristic name="3-6" typeId="2c00-3163-6f27-d7de">Squabble: The unit can do nothing this turn.</characteristic>
+            <characteristic name="Result" typeId="0785-73bd-fa4a-09d4">Let&apos;s show &apos;em what these crossbows can do!: Ruglud’s Armoured Orcs shoot at the closest unit, friend or foe. All models in the unit can fire without movement penalty at the nearest target in any direction, ignoring the usual restrictions for line of sight and fire arcs – this is an exception to the normal rules for shooting. The shots are worked out immediately, not in the Shooting phase, and the models themselves are not moved. The unit cannot do anything else that turn. If there are no units within range, the unit Squabbles instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4f33-6aaa-e5cc-d844" name="03-06" publicationId="9e23-79cb-pubN116235" page="40" hidden="false" typeId="f1ab-233e-f56c-1851" typeName="Animosity Table">
+          <characteristics>
+            <characteristic name="Result" typeId="0785-73bd-fa4a-09d4">Squabble: The unit can do nothing this turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4115,7 +4124,6 @@ moves/fights normally this turn. On a roll of 1 the unit fails the test. To dete
       </rules>
       <infoLinks>
         <infoLink id="2a14-e266-c776-780a" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="e756-5c03-799d-054a" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="5ebd-a670-0ae7-df93" name="Armoured Orc" hidden="false" collective="false" import="true" type="model">
@@ -4350,7 +4358,6 @@ moves/fights normally this turn. On a roll of 1 the unit fails the test. To dete
       </constraints>
       <infoLinks>
         <infoLink id="97d9-830d-7b4b-81c9" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="c6c7-f502-c6cd-8c40" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="3159-fa1f-195e-93ad" name="Pikeman" hidden="false" collective="false" import="true" type="model">
@@ -4732,7 +4739,6 @@ moves/fights normally this turn. On a roll of 1 the unit fails the test. To dete
       </rules>
       <infoLinks>
         <infoLink id="f142-e51f-fad6-d253" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="9ec2-f4f6-9946-a4a8" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="c26c-ff7f-7419-0c1d" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
         <infoLink id="72fd-9592-b837-2ec3" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
       </infoLinks>
@@ -4919,7 +4925,6 @@ moves/fights normally this turn. On a roll of 1 the unit fails the test. To dete
       </rules>
       <infoLinks>
         <infoLink id="3ab2-be64-d3de-eb6a" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="2904-1953-bcc1-e53c" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
         <infoLink id="6f4d-a750-7e4c-f3fc" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
       </infoLinks>
       <selectionEntries>
@@ -5061,7 +5066,6 @@ moves/fights normally this turn. On a roll of 1 the unit fails the test. To dete
       </constraints>
       <infoLinks>
         <infoLink id="15e1-241f-b56c-4c30" name="Mercenaries" hidden="false" targetId="ec60-e2a8-8048-e6f1" type="rule"/>
-        <infoLink id="692b-d13c-6b43-6d06" name="Result" hidden="false" targetId="Result (Merc Table)" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="90c0-9682-3497-9277" name="Venator" hidden="false" collective="false" import="true" type="model">
@@ -6899,7 +6903,7 @@ A Giant that falls over automatically suffers 1 wound. If the Giant is in combat
 Once on the ground (you may lie the model down if you wish) a Giant may get up in his following Movement phase, but may not move that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain. If the Giant gets the opportunity to pursue his foes whilst he&apos;s on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up.</description>
     </rule>
     <rule id="63d3-73fb-3208-92a5" name="Giant Special Attacks" publicationId="9e23-79cb-pubN116235" page="57" hidden="false">
-      <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the specific tables. Which table you use depends on the size of the Giant&apos;s victim. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with Large Target.</description>
+      <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the specific tables. Which table you use depends on the size of the Giant&apos;s victim. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with</description>
     </rule>
     <rule id="5202-e10a-9d4e-ef43" name="Choppa" publicationId="9e23-79cb-pubN116235" page="40" hidden="false">
       <description>Ruglud’s Armoured Orcs carry brutal cleavers which give them Strength Bonus (1).</description>
@@ -6938,33 +6942,6 @@ Once on the ground (you may lie the model down if you wish) a Giant may get up i
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (2). Magical Attacks. Quick to Fire. Ward Save (6+).</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Result (Big Things Chart)" name="Result" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="a254-26a2-8849-ab28" typeName="Big Things Chart">
-      <characteristics>
-        <characteristic name="1" typeId="f6f5-de92-dfcc-e84c">Yell and Bawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points or more. This result has no effect against Animated Constructs.</characteristic>
-        <characteristic name="2-4" typeId="3749-c1ee-3586-bf43">Thump with Club: The Giant brings down its club on a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an I test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 wounds which Ignores Armour Saves. If a double is rolled the Giant&apos;s club embeds itself in the ground and the Giant cannot attack at all in the following round of the same combat whilst it recovers its weapon.</characteristic>
-        <characteristic name="5-6" typeId="e053-490d-b3f1-fb6d">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Result (Pick up and... Chart)" name="Result" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="5423-274f-5dcf-2680" typeName="Pick up and... Chart">
-      <characteristics>
-        <characteristic name="1" typeId="0250-f69f-9d6e-a4e6">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
-        <characteristic name="2" typeId="1c82-db72-bc0f-2439">Throw Back into Combat: The victim is removed as a casualty, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
-        <characteristic name="3" typeId="7b03-8210-0c01-075d">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits. Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
-        <characteristic name="4" typeId="b4e0-39ea-d3e2-8f64">Squash: The model is removed as a casualty.</characteristic>
-        <characteristic name="5" typeId="7ca0-5878-b637-a79d">Eat: The model is removed as a casualty.</characteristic>
-        <characteristic name="6" typeId="ec29-6a74-d626-bb74">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Result (Small Things Chart)" name="Result" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="41a2-25f8-254e-5586" typeName="Small Things Chart">
-      <characteristics>
-        <characteristic name="1" typeId="77dd-b058-bcfc-c0a3">Yell and Bawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
-        <characteristic name="2" typeId="662e-b36e-1161-024c">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before he starts, the Giant must test to determine if he falls over. If he falls over, work out where he falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks.
-
-Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if he is able to, assuming that he did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until he falls over, the target is destroyed, or the combat ends.</characteristic>
-        <characteristic name="3" typeId="31a3-be08-ee3c-cb76">Pick Up and...: The Giant grabs a single model in base contact from the target unit (Giant player&apos;s choice). The target must make a single attack to try to fend off the Giant&apos;s clumsy hand. If this attack causes an unsaved wound, the Giant&apos;s attack fails. Otherwise, the Giant grabs the model and the player rolls a D6 on the Pick up and... Chart.</characteristic>
-        <characteristic name="4-6" typeId="5cac-0609-e3e7-bd96">Swing with club: The Giant fights using Random Attacks (2D6) this round.</characteristic>
       </characteristics>
     </profile>
     <profile id="0098-3e0d-ef68-bd84" name="Horned One" publicationId="9e23-79cb-pubN116235" page="43" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7009,13 +6986,6 @@ Giants enjoy jumping up and down on their enemies so much that a Giant that does
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
       </characteristics>
     </profile>
-    <profile id="Result (Merc Table)" name="Result" publicationId="9e23-79cb-pubN116235" page="5" hidden="false" typeId="caa5-facb-db8d-a36b" typeName="Mercenary Loyalty Table">
-      <characteristics>
-        <characteristic name="1-3" typeId="4dae-e5fe-3d80-e2ce">Wavering Loyalty: All models in the unit suffer a -1 modifier to their LD for the rest of the battle.</characteristic>
-        <characteristic name="4-5" typeId="b062-72d2-9379-6108">Soldier On: The unit flees as normal.</characteristic>
-        <characteristic name="6" typeId="1cd9-de03-8440-fc46">Stand Fast!: The unit counts as having passed its Break test.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="511f-7e1e-640c-4b1f" name="Arabian Steed" publicationId="9e23-79cb-pubN116235" page="24" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
@@ -7028,6 +6998,73 @@ Giants enjoy jumping up and down on their enemies so much that a Giant that does
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f145-9c15-12ce-5ae7" name="01 (Big Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="fbcd-57e6-a11a-ea04" typeName="Big Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="2939-1a1a-3434-5d0b">Yell and Bawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points or more. This result has no effect against Animated Constructs.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d4f0-938b-6406-0158" name="05-06 (Big Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="fbcd-57e6-a11a-ea04" typeName="Big Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="2939-1a1a-3434-5d0b">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a36-128a-1297-ad27" name="02-04 (Big Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="fbcd-57e6-a11a-ea04" typeName="Big Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="2939-1a1a-3434-5d0b">Thump with Club: The Giant brings down its club on a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an I test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 wounds which Ignores Armour Saves. If a double is rolled the Giant&apos;s club embeds itself in the ground and the Giant cannot attack at all in the following round of the same combat whilst it recovers its weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4788-bcc3-d193-3cd5" name="01 (Small Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="33a5-897f-ef30-453a" typeName="Small Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="b221-6a63-f789-51dd">Yell and Bawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e830-9cf9-3b61-a594" name="02 (Small Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="33a5-897f-ef30-453a" typeName="Small Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="b221-6a63-f789-51dd">Jump Up and Down: The Giant jumps up and down on top of the enemy. Before he starts, the Giant must test to determine if he falls over. If he falls over, work out where he falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks.
+
+Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if he is able to, assuming that he did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until he falls over, the target is destroyed, or the combat ends.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d491-2644-f517-5a77" name="03 (Small Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="33a5-897f-ef30-453a" typeName="Small Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="b221-6a63-f789-51dd">Pick Up and...: The Giant grabs a single model in base contact from the target unit (Giant player&apos;s choice). The target must make a single attack to try to fend off the Giant&apos;s clumsy hand. If this attack causes an unsaved wound, the Giant&apos;s attack fails. Otherwise, the Giant grabs the model and the player rolls a D6 on the Pick up and... Chart.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a4d8-e63c-78a1-1603" name="04-06 (Small Things)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="33a5-897f-ef30-453a" typeName="Small Things Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="b221-6a63-f789-51dd">Swing with club: The Giant fights using Random Attacks (2D6) this round.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="96c0-6630-0086-48be" name="01 (Pick Up and...)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="1cd7-6c92-b126-318d" typeName="Pick up and... Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="0e89-736f-281b-1175">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="20d1-d583-0474-13ae" name="02 (Pick Up and...)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="1cd7-6c92-b126-318d" typeName="Pick up and... Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="0e89-736f-281b-1175">Throw Back into Combat: The victim is removed as a casualty, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ebf-eff1-493d-e180" name="05 (Pick Up and...)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="1cd7-6c92-b126-318d" typeName="Pick up and... Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="0e89-736f-281b-1175">Eat: The model is removed as a casualty.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="38bc-fe44-b7f5-3323" name="03 (Pick Up and...)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="1cd7-6c92-b126-318d" typeName="Pick up and... Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="0e89-736f-281b-1175">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits. Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="456a-7a29-c367-1314" name="04 (Pick Up and...)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="1cd7-6c92-b126-318d" typeName="Pick up and... Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="0e89-736f-281b-1175">Squash: The model is removed as a casualty.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="37b6-4ff7-13f1-25ed" name="06 (Pick Up and...)" publicationId="9e23-79cb-pubN116235" page="57" hidden="false" typeId="1cd7-6c92-b126-318d" typeName="Pick up and... Chart">
+      <characteristics>
+        <characteristic name="Result" typeId="0e89-736f-281b-1175">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5a4d-4069-fd13-1f1c" name="Zombie Pirates of the Vampire Coast" revision="5" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5a4d-4069-fd13-1f1c" name="Zombie Pirates of the Vampire Coast" revision="6" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="6432-c355-b85a-3bde" name="Necrofex Colossus Special Attack Table">
+    <profileType id="da59-69df-6426-2098" name="Necrofex Colossus Special Attack Table">
       <characteristicTypes>
-        <characteristicType id="29a9-bb74-9621-e336" name="1-2"/>
-        <characteristicType id="c2be-4bac-99ef-9506" name="3-4"/>
-        <characteristicType id="de1f-0ab4-7985-bb36" name="5-6"/>
+        <characteristicType id="1be5-3740-e03f-5b83" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="8879-d18f-1ff1-830f" name="Split Personality Table">
+    <profileType id="f6b2-a813-841c-520d" name="Split Personality Table">
       <characteristicTypes>
-        <characteristicType id="5071-b58c-5569-8a87" name="1-3"/>
-        <characteristicType id="a3a5-d245-a291-855f" name="4"/>
-        <characteristicType id="d7e8-1ff3-cf5a-f697" name="5"/>
-        <characteristicType id="12a0-7a06-4227-04cc" name="6"/>
+        <characteristicType id="71de-7c6b-3fbd-6243" name="Result"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -58,12 +53,24 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="6545-f3b1-2a81-c58b" name="Result" publicationId="079e-9b65-30b3-2c59" page="27" hidden="false" typeId="8879-d18f-1ff1-830f" typeName="Split Personality Table">
+        <profile id="6545-f3b1-2a81-c58b" name="01-03" publicationId="079e-9b65-30b3-2c59" page="27" hidden="false" typeId="f6b2-a813-841c-520d" typeName="Split Personality Table">
           <characteristics>
-            <characteristic name="1-3" typeId="5071-b58c-5569-8a87">Brainlock: Luthor follows the rules for Stupidity.</characteristic>
-            <characteristic name="4" typeId="a3a5-d245-a291-855f">Mad: Luthor follows the rules for Frenzy.</characteristic>
-            <characteristic name="5" typeId="d7e8-1ff3-cf5a-f697">Bad: Luthor may act normally.</characteristic>
-            <characteristic name="6" typeId="12a0-7a06-4227-04cc">Dangrous to Know: Luthor follows the rules for Hatred.</characteristic>
+            <characteristic name="Result" typeId="71de-7c6b-3fbd-6243">Brainlock: Luthor follows the rules for Stupidity.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e9a9-8ed9-89ce-1ecc" name="04" publicationId="079e-9b65-30b3-2c59" page="27" hidden="false" typeId="f6b2-a813-841c-520d" typeName="Split Personality Table">
+          <characteristics>
+            <characteristic name="Result" typeId="71de-7c6b-3fbd-6243">Mad: Luthor follows the rules for Frenzy.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5099-f3ee-7bfc-0689" name="05" publicationId="079e-9b65-30b3-2c59" page="27" hidden="false" typeId="f6b2-a813-841c-520d" typeName="Split Personality Table">
+          <characteristics>
+            <characteristic name="Result" typeId="71de-7c6b-3fbd-6243">Bad: Luthor may act normally.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="518d-f1c5-4c94-f273" name="06" publicationId="079e-9b65-30b3-2c59" page="27" hidden="false" typeId="f6b2-a813-841c-520d" typeName="Split Personality Table">
+          <characteristics>
+            <characteristic name="Result" typeId="71de-7c6b-3fbd-6243">Dangrous to Know: Luthor follows the rules for Hatred.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -203,9 +210,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="dfa8-dc9a-9452-14c0" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry id="dbb8-cc14-cc28-1858" name="Wraith Storm" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -257,8 +261,10 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
             <infoLink id="caeb-6ae1-0bd9-068a" name="Magical Attacks" hidden="false" targetId="03db-d81f-f264-84b8" type="rule"/>
             <infoLink id="2dd5-5c29-41e6-4974" name="Vortex of Death" hidden="false" targetId="942f-f6e4-4213-d099" type="rule"/>
             <infoLink id="8057-9e71-efd0-e6a2" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
-            <infoLink id="2116-28fd-51ef-a83d" name="Result" hidden="false" targetId="8cfa-8870-07ab-c223" type="profile"/>
+            <infoLink id="2116-28fd-51ef-a83d" name="03-04" hidden="false" targetId="7ba6-89d4-388e-7644" type="profile"/>
             <infoLink id="233b-2999-d2e0-e278" name="Cannon Arm" hidden="false" targetId="13ea-ccd1-1db0-cbbb" type="profile"/>
+            <infoLink id="2cb2-3dcc-c5e2-9f3d" name="05-06" hidden="false" targetId="fac4-1e77-52ec-154c" type="profile"/>
+            <infoLink id="f741-ace5-8d9d-f271" name="01-02" hidden="false" targetId="70ed-3d97-9191-ec35" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="275.0"/>
@@ -459,9 +465,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="7313-37e4-ae78-c470" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a774-40dc-5ea0-20bc" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -495,9 +498,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="869e-dcda-5a37-645a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="4a66-8c26-f096-6207" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -531,9 +531,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="ab21-8d70-a0f2-8a51" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="d5f7-499c-6672-a233" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -642,9 +639,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="7d74-ccd7-5c57-30aa" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="6b1a-8f82-a951-1aaa" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ee6-74d7-0683-79c0">
               <constraints>
@@ -1097,9 +1091,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="2229-8be2-41fc-c39d" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="b621-5886-9736-75d7" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1133,9 +1124,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="6211-9b9b-9b9e-8863" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="4ed5-dc71-0059-6b48" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2137,7 +2125,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
       <infoLinks>
         <infoLink id="da11-2b38-6947-a981" name="Cannon" hidden="false" targetId="4f25-d6c7-f4da-a808" type="profile"/>
         <infoLink id="e714-c839-ce51-160f" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="0bb1-4cce-9694-f82b" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="465c-4809-712f-2182" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -2200,9 +2187,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="0394-2553-2113-cd95" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="3bbf-da24-e773-bb8d" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -2519,8 +2503,10 @@ To resolve a Syreen’s Call, the target unit must pass a LD test or suffer -3 t
         <infoLink id="d1e2-208c-ff8b-e4b4" name="Magical Attacks" hidden="false" targetId="03db-d81f-f264-84b8" type="rule"/>
         <infoLink id="6203-79ed-2547-d97a" name="Vortex of Death" hidden="false" targetId="942f-f6e4-4213-d099" type="rule"/>
         <infoLink id="a8e5-5251-a980-8d3e" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
-        <infoLink id="9ea7-3852-eee5-efe0" name="Result" hidden="false" targetId="8cfa-8870-07ab-c223" type="profile"/>
+        <infoLink id="9ea7-3852-eee5-efe0" name="01-02" hidden="false" targetId="70ed-3d97-9191-ec35" type="profile"/>
         <infoLink id="a6af-d1d5-1a8c-9fbd" name="Cannon Arm" hidden="false" targetId="13ea-ccd1-1db0-cbbb" type="profile"/>
+        <infoLink id="8ccb-2ff6-9390-ee75" name="03-04" hidden="false" targetId="7ba6-89d4-388e-7644" type="profile"/>
+        <infoLink id="dd39-e089-2c0c-b36d" name="05-06" hidden="false" targetId="fac4-1e77-52ec-154c" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dc3c-db90-5fdd-6d51" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -2567,7 +2553,6 @@ If a Misfire is rolled, add -1 to the result on the Black Powder Misfire Chart.<
       <infoLinks>
         <infoLink id="a99b-35e4-612f-a6c7" name="Great Cannon" hidden="false" targetId="7e43-605b-bfde-13c3" type="profile"/>
         <infoLink id="e268-693d-2f4a-00a7" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="f986-aef5-5a24-3d0b" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f19f-b494-c039-e519" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -2972,14 +2957,6 @@ If, at the start of any of your turns following the death of the General, there 
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6/D3). A Necrofex Colossus may make shooting attack like a Cannon, even if it has moved (but not marched). If a Misfire is rolled, the Necrofex Colossus suffers D3 Wounds. ote that it cannot fire Grapeshot.</characteristic>
       </characteristics>
     </profile>
-    <profile id="8cfa-8870-07ab-c223" name="Result" publicationId="079e-9b65-30b3-2c59" page="22" hidden="false" typeId="6432-c355-b85a-3bde" typeName="Necrofex Colossus Special Attack Table">
-      <characteristics>
-        <characteristic name="1-2" typeId="29a9-bb74-9621-e336">Batter and Slash: The Necrofex Colossus fights using Random Attacks (D6+1).</characteristic>
-        <characteristic name="3-4" typeId="c2be-4bac-99ef-9506">Impale: Select one model in base contact; that model, and all models in the same file, must pass an I test or suffer a S 7 Hit with Multiple Wounds (D6).
-</characteristic>
-        <characteristic name="5-6" typeId="de1f-0ab4-7985-bb36">Screams of the Damned: The Necrofex Colossus may make a Death Shriek into close combat.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="081a-4f8d-31e0-b860" name="Necrofex Colossus" publicationId="079e-9b65-30b3-2c59" page="22" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
@@ -3006,6 +2983,21 @@ If, at the start of any of your turns following the death of the General, there 
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">2</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70ed-3d97-9191-ec35" name="01-02" publicationId="079e-9b65-30b3-2c59" page="22" hidden="false" typeId="da59-69df-6426-2098" typeName="Necrofex Colossus Special Attack Table">
+      <characteristics>
+        <characteristic name="Result" typeId="1be5-3740-e03f-5b83">Batter and Slash: The Necrofex Colossus fights using Random Attacks (D6+1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7ba6-89d4-388e-7644" name="03-04" publicationId="079e-9b65-30b3-2c59" page="22" hidden="false" typeId="da59-69df-6426-2098" typeName="Necrofex Colossus Special Attack Table">
+      <characteristics>
+        <characteristic name="Result" typeId="1be5-3740-e03f-5b83">Impale: Select one model in base contact; that model, and all models in the same file, must pass an I test or suffer a S 7 Hit with Multiple Wounds (D6).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fac4-1e77-52ec-154c" name="05-06" publicationId="079e-9b65-30b3-2c59" page="22" hidden="false" typeId="da59-69df-6426-2098" typeName="Necrofex Colossus Special Attack Table">
+      <characteristics>
+        <characteristic name="Result" typeId="1be5-3740-e03f-5b83">Screams of the Damned: The Necrofex Colossus may make a Death Shriek into close combat.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

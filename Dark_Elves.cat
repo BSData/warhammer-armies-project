@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
       <characteristicTypes>
         <characteristicType id="0f02-2954-b334-21af" name="Effect"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="e698-c2c3-bf32-4774" name="Badly Treated Table">
-      <characteristicTypes>
-        <characteristicType id="19c5-0272-8ac4-8413" name="1-2"/>
-        <characteristicType id="8f3f-64f4-0ac1-d180" name="3-4"/>
-        <characteristicType id="3ce4-f731-f593-3072" name="5-6"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -161,9 +154,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="8479-93e0-bacc-f460" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="29e9-11c4-830a-49f9" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="1cae-dc48-f062-6d0f">
               <constraints>
@@ -366,9 +356,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="a5c0-ed64-c34e-81d4" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="5d98-36c3-3989-1523" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -1256,9 +1243,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="0be2-2775-99a3-b683" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="085e-0480-4f8d-e590" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1295,9 +1279,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="007a-2805-e72d-b3dc" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a20a-5355-0f14-14ca" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2745,9 +2726,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="17d7-864d-ef8f-0044" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2553-3c88-6b89-7a5d" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2784,9 +2762,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d73c-3937-c58a-52aa" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="732f-12a3-99cf-4c49" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -3353,7 +3328,41 @@
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
           </characteristics>
         </profile>
+        <profile id="c7ef-34c9-ea8b-021f" name="Fist of Khaine" publicationId="9e23-79cb-pubN76150" page="119" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Disciple and his unit may re-roll all failed rolls To Hit and To Wound in close combat until the start of the next friendly Magic phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a6f4-b1b5-22fd-45de" name="Rend Soul" publicationId="9e23-79cb-pubN76150" page="119" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One enemy unit in base contact with the Disciple suffer D6 S 3 hits and suffer -1 to their S until the start of the next friendly Magic phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3b34-7c11-0c95-bf23" name="Restore Essence" publicationId="9e23-79cb-pubN76150" page="119" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Disciple and his unit gain Regeneration (5+) until the start of the next friendly Magic phase.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <rules>
+        <rule id="192e-34e3-c193-cb19" name="Blood Rites" publicationId="9e23-79cb-pubN76150" page="119" hidden="false">
+          <description>A Disciple of Khaine know three Blood Rites listed below. Blood Rites are innate bound spells (power level 3). Blood Rites are augment spells that target the Disciple and his unit.
+
+For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast in his next Magic phase, to a maximum of +3.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="b6a5-76a9-f1b8-cbce" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
         <infoLink id="b80f-5a23-458f-49ab" name="Murderous Prowess" hidden="false" targetId="1451-9754-507c-44a8" type="rule"/>
@@ -3375,51 +3384,6 @@
             <entryLink id="1eaf-91dc-10e0-54e5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="9d45-9519-de85-24bc" type="selectionEntryGroup"/>
             <entryLink id="24af-d141-0a0b-051e" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a31f-8c65-324b-4b37" type="selectionEntryGroup"/>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6e87-8923-dafc-845d" name="Blood Rites" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8c6-2ab8-39d4-a16a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32c4-cd72-3db5-1d63" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="48e2-a61e-2ab6-c443" name="Fist of Khaine" publicationId="9e23-79cb-pubN76150" page="119" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Disciple and his unit may re-roll all failed rolls To Hit and To Wound in close combat until the start of the next friendly Magic phase.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="45b5-ab77-aae8-62f0" name="Rend Soul" publicationId="9e23-79cb-pubN76150" page="119" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One enemy unit in base contact with the Disciple suffer D6 S 3 hits and suffer -1 to their S until the start of the next friendly Magic phase.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="4612-ec02-de52-4cd5" name="Restore Essence" publicationId="9e23-79cb-pubN76150" page="119" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Disciple and his unit gain Regeneration (5+) until the start of the next friendly Magic phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="3b9b-5659-80fb-c32b" name="Blood Rites" publicationId="9e23-79cb-pubN76150" page="119" hidden="false">
-              <description>A Disciple of Khaine know three Blood Rites listed below. Blood Rites are innate bound spells (power level 3). Blood Rites are augment spells that target the Disciple and his unit.
-
-For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast in his next Magic phase, to a maximum of +3.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -4348,7 +4312,7 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
           <infoLinks>
             <infoLink id="a64e-23fc-f42b-c698" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="b147-d093-97f9-e81b" name="Murderous Prowess" hidden="false" targetId="1451-9754-507c-44a8" type="rule"/>
-            <infoLink id="a194-776c-e712-b58d" name="Eternal Hatred" hidden="false" targetId="37e7-12b4-d17c-ee2f" type="rule"/>
+            <infoLink id="a194-776c-e712-b58d" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
             <infoLink id="54c5-a285-79af-2c4a" name="Elven Grace" hidden="false" targetId="eeeb-6f4d-7efc-ad5d" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -6233,10 +6197,22 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
               </characteristics>
             </profile>
+            <profile id="d16f-3f86-94f3-5bbc" name="Doomfire Warlock" publicationId="9e23-79cb-pubN76150" page="134" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"/>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <rules>
             <rule id="e91d-e281-acac-4535" name="Prey of the Dark prince" publicationId="9e23-79cb-pubN76150" page="134" hidden="false">
               <description>The models have a Ward save (4+), except against Wounds caused by models with the Daemon of Slaanesh special rule or models that have the Mark of Slaanesh.</description>
+            </rule>
+            <rule id="7ca6-5abf-69e1-c01c" name="Cursed Coven" publicationId="9e23-79cb-pubN76150" page="134" hidden="false">
+              <description>A unit of Doomfire Warlocks is considered to be a Level 2 Wizard that knows the spells Soulblight and Doombolt. This doesn&apos;t stop other Wizards from knowing those same spells. The unit receives an additional +1 to cast for each rank of 5 or more models in the unit, after the first, to a maximum of +3. Each time the unit casts a spell, you must nominate one Master of Warlocks or Doomfire Warlock as the caster for the purposes of line of sight, range, etc. In the event that a Doomfire Warlock unit rolls a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no armour saves allowed. If the unit is targeted by a rule that affects a Wizard, your opponent must choose one Master of Warlocks or Doomfire Warlock as the target.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -6245,6 +6221,10 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
             <infoLink id="1888-0703-1493-2ec7" name="Elven Grace" hidden="false" targetId="eeeb-6f4d-7efc-ad5d" type="rule"/>
             <infoLink id="925a-d21d-1d11-2317" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
             <infoLink id="76fd-8528-5773-569c" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
+            <infoLink id="e614-f21e-ea84-db7a" name="Doombolt of Kharaidon" hidden="false" targetId="83ce-8b5d-eef3-f48d" type="profile"/>
+            <infoLink id="a9dd-6a9f-d7fe-8e3d" name="Life Leeching" hidden="false" targetId="2c43-e445-f916-eae9" type="profile"/>
+            <infoLink id="c40f-6af2-ca76-f30d" name="Soulblight" hidden="false" targetId="a37e-0482-9785-ba81" type="profile"/>
+            <infoLink id="3dbb-b31f-563e-ad5e" name="Spiteful Conjuration" hidden="false" targetId="111d-86fc-0ac2-aa2e" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="8e24-2b81-26ae-3370" name="Dark Steed" hidden="false" collective="true" import="true" type="model">
@@ -6281,37 +6261,6 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
               </constraints>
               <infoLinks>
                 <infoLink id="b3eb-2e16-4f9d-f138" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0cca-150d-3357-69f0" name="Cursed Coven" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b74d-1881-d3da-db16" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97ac-5a7d-abdc-c3e8" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="e6d1-1fd0-ae43-59e8" name="Doomfire Warlock" publicationId="9e23-79cb-pubN76150" page="134" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                  <characteristics>
-                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e"/>
-                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="8ac3-24f2-95f1-2509" name="Cursed Coven" publicationId="9e23-79cb-pubN76150" page="134" hidden="false">
-                  <description>A unit of Doomfire Warlocks is considered to be a Level 2 Wizard that knows the spells Soulblight and Doombolt. This doesn&apos;t stop other Wizards from knowing those same spells. The unit receives an additional +1 to cast for each rank of 5 or more models in the unit, after the first, to a maximum of +3. Each time the unit casts a spell, you must nominate one Master of Warlocks or Doomfire Warlock as the caster for the purposes of line of sight, range, etc. In the event that a Doomfire Warlock unit rolls a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no armour saves allowed. If the unit is targeted by a rule that affects a Wizard, your opponent must choose one Master of Warlocks or Doomfire Warlock as the target.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="c116-8029-b5b6-7ba8" name="Doombolt of Kharaidon" hidden="false" targetId="83ce-8b5d-eef3-f48d" type="profile"/>
-                <infoLink id="b5ed-7979-9344-293e" name="Soulblight" hidden="false" targetId="a37e-0482-9785-ba81" type="profile"/>
-                <infoLink id="e28f-53e0-d10f-8a16" name="Spiteful Conjuration" hidden="false" targetId="111d-86fc-0ac2-aa2e" type="profile"/>
-                <infoLink id="3e8b-413f-bbb4-5a2b" name="Life Leeching" hidden="false" targetId="2c43-e445-f916-eae9" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>

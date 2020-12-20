@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="5388-e68f-6e10-6be4" name="Bladedances">
+    <profileType id="fac7-f094-ecff-930e" name="Bladedances">
       <characteristicTypes>
-        <characteristicType id="6f8d-abdd-627d-ad7f" name="Whirling Death"/>
-        <characteristicType id="357e-e41c-6e50-dc18" name="Bladestorm"/>
-        <characteristicType id="dff1-29ac-1c8d-e427" name="Seductive Shadow"/>
+        <characteristicType id="85d5-2d8a-fe0b-e8a6" name="Effect"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="4b6f-c74b-7f6c-082e" name="Commands">
+    <profileType id="243c-786a-e197-14ad" name="Commands">
       <characteristicTypes>
-        <characteristicType id="255a-4662-8d1f-b7e7" name="Strength of The One"/>
-        <characteristicType id="9e53-d285-097c-dd68" name="Fury of The One"/>
-        <characteristicType id="7612-3849-5255-a850" name="Faith of The One"/>
+        <characteristicType id="78ef-b45c-3d4d-3f7c" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -113,11 +109,19 @@
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the start of the Arabyan turn, Khalil al-Zahir may call out one of the commands to any friendly unit with Zealotry within 12&quot;. The chosen effect lasts until the start of the Araby player’s next turn.</characteristic>
               </characteristics>
             </profile>
-            <profile id="bb14-36e8-37f0-ffd2" name="Effect" publicationId="d221-484d-439d-4310" page="78" hidden="false" typeId="4b6f-c74b-7f6c-082e" typeName="Commands">
+            <profile id="bb14-36e8-37f0-ffd2" name="Fury of The One" publicationId="d221-484d-439d-4310" page="78" hidden="false" typeId="243c-786a-e197-14ad" typeName="Commands">
               <characteristics>
-                <characteristic name="Strength of The One" typeId="255a-4662-8d1f-b7e7">The unit may re-roll failed rolls To Hit and To Wound of 1 in Close Combat.</characteristic>
-                <characteristic name="Fury of The One" typeId="9e53-d285-097c-dd68">All models in the unit gain +1 A.</characteristic>
-                <characteristic name="Faith of The One" typeId="7612-3849-5255-a850">The unit gains Immunity (Psychology) and Stubborn.</characteristic>
+                <characteristic name="Effect" typeId="78ef-b45c-3d4d-3f7c">All models in the unit gain +1 A.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d417-7d32-6cf6-fc0e" name="Faith of The One" publicationId="d221-484d-439d-4310" page="78" hidden="false" typeId="243c-786a-e197-14ad" typeName="Commands">
+              <characteristics>
+                <characteristic name="Effect" typeId="78ef-b45c-3d4d-3f7c">The unit gains Immunity (Psychology) and Stubborn.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5332-c43e-6bf8-aba3" name="Strength of The One" publicationId="d221-484d-439d-4310" page="78" hidden="false" typeId="243c-786a-e197-14ad" typeName="Commands">
+              <characteristics>
+                <characteristic name="Effect" typeId="78ef-b45c-3d4d-3f7c">The unit may re-roll failed rolls To Hit and To Wound of 1 in Close Combat.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -165,7 +169,7 @@
     </selectionEntry>
     <selectionEntry id="2663-6359-86f8-e2a6" name="Sultan Jaffar" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="b28b-9d35-8f2c-2806" value="0">
+        <modifier type="set" field="b28b-9d35-8f2c-2806" value="0.0">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdc6-07bf-c574-3e65" type="atLeast"/>
           </conditions>
@@ -261,9 +265,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="8c4a-495e-a0ad-9bba" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="3587-1475-9bd8-c4b4" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -556,9 +557,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="e3aa-e789-8779-a09b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="dec3-d297-0553-5871" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -699,9 +697,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="fe5c-950c-5686-d53a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="f460-cfe6-b8d5-1cf7" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -738,9 +733,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="41bb-fc82-7d05-c27f" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="3202-01d4-98ee-e117" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1606,9 +1598,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="1ace-3238-10b1-654e" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="ab36-e32a-a1cd-d034" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2035-f2ed-8459-1dcf">
               <constraints>
@@ -1979,9 +1968,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="ae59-30a4-2711-185a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="48d3-1c29-2500-77c6" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2018,9 +2004,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d14a-4855-af6a-2fc2" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a976-4260-1cd3-7c9e" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -5286,11 +5269,19 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
-            <profile id="2969-4c57-2ae7-8fe3" name="Effect" publicationId="d221-484d-439d-4310" page="71" hidden="false" typeId="5388-e68f-6e10-6be4" typeName="Bladedances">
+            <profile id="2969-4c57-2ae7-8fe3" name="Whirling Death" publicationId="d221-484d-439d-4310" page="71" hidden="false" typeId="fac7-f094-ecff-930e" typeName="Bladedances">
               <characteristics>
-                <characteristic name="Whirling Death" typeId="6f8d-abdd-627d-ad7f">While performing this dance, the Bladedancers gains Killing Blow.</characteristic>
-                <characteristic name="Bladestorm" typeId="357e-e41c-6e50-dc18">While performing this dance, the Bladedancers gain +1 A.</characteristic>
-                <characteristic name="Seductive Shadow" typeId="dff1-29ac-1c8d-e427">While performing this dance, enemies suffer a -1 modifier To Hit the Bladedancers in close combat.</characteristic>
+                <characteristic name="Effect" typeId="85d5-2d8a-fe0b-e8a6">While performing this dance, the Bladedancers gains Killing Blow.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="be98-5b03-2cc4-010e" name="Bladestorm" publicationId="d221-484d-439d-4310" page="71" hidden="false" typeId="fac7-f094-ecff-930e" typeName="Bladedances">
+              <characteristics>
+                <characteristic name="Effect" typeId="85d5-2d8a-fe0b-e8a6">While performing this dance, the Bladedancers gain +1 A.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0899-14e2-3b63-4bae" name="Seductive Shadow" publicationId="d221-484d-439d-4310" page="71" hidden="false" typeId="fac7-f094-ecff-930e" typeName="Bladedances">
+              <characteristics>
+                <characteristic name="Effect" typeId="85d5-2d8a-fe0b-e8a6">While performing this dance, enemies suffer a -1 modifier To Hit the Bladedancers in close combat.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5708,7 +5699,6 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="dd77-9d5a-df70-46d4" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
         <infoLink id="899f-64d1-9540-b094" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -5774,7 +5764,6 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
       </profiles>
       <infoLinks>
         <infoLink id="9124-252a-141f-ae99" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="ba4d-fad1-abfe-80d3" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6b5d-a4dd-f496-6b05" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5828,10 +5817,40 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine</characteristic>
           </characteristics>
         </profile>
+        <profile id="1c25-28b4-b2e9-ffcb" name="Abeyance" publicationId="d221-484d-439d-4310" page="75" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound  Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. While active, you may choose to make the target forgo one of the following actions: move, cast spells, shoot or fight in close combat.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b7c-183a-1db4-bd4d" name="Gravedust" publicationId="d221-484d-439d-4310" page="75" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound  Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. While active, the target suffers -1 to its M, S, T and I. At the start of each following Arabyan Magic phase, these characteristics are further deducted by 1, and will continue to do until the spell is either dispelled or their S or T reaches 0.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d102-a89c-d94d-3f4f" name="Recede" publicationId="d221-484d-439d-4310" page="75" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound  Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. While active, the unit may either choose to fire twice in the Shooting phase or attack twice in the Close Combat phase.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="f551-d820-4392-fa80" name="Vessel of the Ages" publicationId="d221-484d-439d-4310" page="75" hidden="false">
           <description>All friendly units within 12&quot; of the Sandglass have Magic Resistance (1). In addition, the Hourglass generates 1 Power dice and Dispel Dice in the Magic phase. If the Sandglass is destroyed, the ground begins to shake as waves of sand erupts, smashing against all around it. Every unit within 12&quot; takes 2D6 S 4 hits.</description>
+        </rule>
+        <rule id="4ecc-b3ec-abae-1128" name="Sands of Time" publicationId="d221-484d-439d-4310" page="75" hidden="false">
+          <description>In the Arabyan Magic phase, the Sandglass may cast a spell as innate bound spell (power level 5).</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5882,49 +5901,6 @@ Enemy units that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned At
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6ff0-4d23-fdf2-cb0b" name="Sands of Time" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65f5-a452-a400-f1ee" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3991-2a6d-fd9e-5829" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="d920-e60f-0bb8-6240" name="Abeyance" publicationId="d221-484d-439d-4310" page="75" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound  Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. While active, you may choose to make the target forgo one of the following actions: move, cast spells, shoot or fight in close combat.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0f81-2b14-55ff-1a86" name="Gravedust" publicationId="d221-484d-439d-4310" page="75" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound  Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. While active, the target suffers -1 to its M, S, T and I. At the start of each following Arabyan Magic phase, these characteristics are further deducted by 1, and will continue to do until the spell is either dispelled or their S or T reaches 0.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="7e93-7768-ee9f-dfc8" name="Recede" publicationId="d221-484d-439d-4310" page="75" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound  Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. While active, the unit may either choose to fire twice in the Shooting phase or attack twice in the Close Combat phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="fb4a-4e9f-1256-0a2b" name="Sands of Time" publicationId="d221-484d-439d-4310" page="75" hidden="false">
-              <description>In the Arabyan Magic phase, the Sandglass may cast a spell as innate bound spell (power level 5).</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>

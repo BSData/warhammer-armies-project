@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="9" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="10" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="9854-e1a2-2d5c-9b43" name="Duelling Techniques">
-      <characteristicTypes>
-        <characteristicType id="a520-ee22-22f4-38d0" name="Drawing the Void"/>
-        <characteristicType id="c248-1b8d-4c79-0759" name="A Single Moment"/>
-        <characteristicType id="4a9f-acdb-d2e1-b286" name="Ritual of Steel"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="ee85-66e4-7ce4-dc86" name="Kabuki Dances">
-      <characteristicTypes>
-        <characteristicType id="0490-1f7c-2f5f-3ba1" name="Jidaimono"/>
-        <characteristicType id="0225-ae06-1ff6-c159" name="Sewawono"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="59f8-f38c-0bdd-cc1d" name="Poison">
       <characteristicTypes>
         <characteristicType id="efd1-b0a9-b9d3-1998" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="f450-1b9d-4880-5b13" name="Duelling Techniques">
+      <characteristicTypes>
+        <characteristicType id="40d6-6955-4e82-cb14" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="8b1c-18aa-1776-6045" name="Kabuki Dances">
+      <characteristicTypes>
+        <characteristicType id="0d6c-8c0c-e1b0-2d68" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -205,9 +202,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="b731-ad1b-2683-586f" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="9a30-ecaa-ce34-787b" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -552,9 +546,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="0901-6a8d-defd-0762" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="9cad-9c80-b35a-70d9" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -589,9 +580,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="dfab-5240-22b6-76bc" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="8c85-059a-e8f2-10bb" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1278,9 +1266,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="9ca2-6622-9318-617b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="317f-dd29-302f-5b01" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1315,9 +1300,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="cc3f-e9b1-fb19-26ab" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="c8bb-c6c4-7e18-536e" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1364,11 +1346,19 @@
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="ef43-cb2d-6572-ae29" name="Effect" publicationId="5ff9-69dd-8810-183f" page="54" hidden="false" typeId="9854-e1a2-2d5c-9b43" typeName="Duelling Techniques">
+        <profile id="ef43-cb2d-6572-ae29" name="Drawing of the Void" publicationId="5ff9-69dd-8810-183f" page="54" hidden="false" typeId="f450-1b9d-4880-5b13" typeName="Duelling Techniques">
           <characteristics>
-            <characteristic name="Drawing the Void" typeId="a520-ee22-22f4-38d0">The Kensai gains +1 To Hit and To Wound.</characteristic>
-            <characteristic name="A Single Moment" typeId="c248-1b8d-4c79-0759">The Kensai gains Always Strikes First.</characteristic>
-            <characteristic name="Ritual of Steel" typeId="4a9f-acdb-d2e1-b286">The Kensai gains +D3 Attacks.</characteristic>
+            <characteristic name="Effect" typeId="40d6-6955-4e82-cb14">The Kensai gains +1 To Hit and To Wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef85-d26c-611d-cbd5" name="A Single Moment" publicationId="5ff9-69dd-8810-183f" page="54" hidden="false" typeId="f450-1b9d-4880-5b13" typeName="Duelling Techniques">
+          <characteristics>
+            <characteristic name="Effect" typeId="40d6-6955-4e82-cb14">The Kensai gains Always Strikes First.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6a5a-f312-6d12-60fd" name="Ritual of Steel" publicationId="5ff9-69dd-8810-183f" page="54" hidden="false" typeId="f450-1b9d-4880-5b13" typeName="Duelling Techniques">
+          <characteristics>
+            <characteristic name="Effect" typeId="40d6-6955-4e82-cb14">The Kensai gains +D3 Attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1749,7 +1739,39 @@ A character may only have one Yojimbo assigned to it at any time, although a new
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
           </characteristics>
         </profile>
+        <profile id="b9bc-db9f-91ec-da6f" name="Prayer of Invigoration" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One friendly character within range of the Yamabushi will regain all Wounds previously lost during the battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6a4c-b4b6-1344-cd1d" name="Prayer of Potency" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One friendly character within range of the Yamabushi may re-roll all failed rolls To Hit and To Wound in close combat. Remains in play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b2f3-ac77-1759-02e5" name="Prayer of Protection" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One friendly character within range of the Yamabushi will gain a Ward save (4+) until the start of the caster’s next Magic phase.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <rules>
+        <rule id="1c2c-df87-b635-d964" name="Prayers of the Kami" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false">
+          <description>Yamabushi know the three Prayers. Prayers are innate bound spells (power level 3). All Prayers are augment spells. In addition, the Yamabushi may channel Power and Dispel dice just like a Wizard.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="ed2e-b5a6-1344-6f9f" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="ab8f-d6c1-1dbf-f188" name="Martial Arts" hidden="false" targetId="a796-ea91-2a9c-d601" type="rule"/>
@@ -1759,49 +1781,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
         <categoryLink id="ea66-9c3d-e53a-f025" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9b82-0f58-b4ed-6229" name="Prayers of the Kami" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1999-a7db-984f-db6d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8719-1edb-08c6-0183" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b8d5-2381-a5cc-a26d" name="Prayer of Invigoration" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One friendly character within range of the Yamabushi will regain all Wounds previously lost during the battle.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="2e6d-e6dd-0b19-76d3" name="Prayer of Potency" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One friendly character within range of the Yamabushi may re-roll all failed rolls To Hit and To Wound in close combat. Remains in play.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="7d35-1f1e-cd85-35ab" name="Prayer of Protection" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">One friendly character within range of the Yamabushi will gain a Ward save (4+) until the start of the caster’s next Magic phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="3dc9-f879-5261-8651" name="Prayers of the Kami" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false">
-              <description>Yamabushi know the three Prayers. Prayers are innate bound spells (power level 3). All Prayers are augment spells. In addition, the Yamabushi may channel Power and Dispel dice just like a Wizard.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="f898-44be-0277-e7ca" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c922-2a57-b934-1363" type="max"/>
@@ -3642,10 +3621,14 @@ A character may only have one Yojimbo assigned to it at any time, although a new
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
-            <profile id="a58f-9514-b89e-2c32" name="Effect" publicationId="5ff9-69dd-8810-183f" page="63" hidden="false" typeId="ee85-66e4-7ce4-dc86" typeName="Kabuki Dances">
+            <profile id="a58f-9514-b89e-2c32" name="Sewawono" publicationId="5ff9-69dd-8810-183f" page="63" hidden="false" typeId="8b1c-18aa-1776-6045" typeName="Kabuki Dances">
               <characteristics>
-                <characteristic name="Jidaimono" typeId="0490-1f7c-2f5f-3ba1">While performing this dance, the Kabuki Dolls have Always Strikes First.</characteristic>
-                <characteristic name="Sewawono" typeId="0225-ae06-1ff6-c159">While performing this dance, enemies must re-roll all successful rolls to Hit against the Kabuki Dolls.</characteristic>
+                <characteristic name="Effect" typeId="0d6c-8c0c-e1b0-2d68">While performing this dance, enemies must re-roll all successful rolls to Hit against the Kabuki Dolls.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="65b7-4dbd-6e21-ebbd" name="Jidaimono" publicationId="5ff9-69dd-8810-183f" page="63" hidden="false" typeId="8b1c-18aa-1776-6045" typeName="Kabuki Dances">
+              <characteristics>
+                <characteristic name="Effect" typeId="0d6c-8c0c-e1b0-2d68">While performing this dance, the Kabuki Dolls have Always Strikes First.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4956,7 +4939,39 @@ A character may only have one Yojimbo assigned to it at any time, although a new
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Shrine</characteristic>
           </characteristics>
         </profile>
+        <profile id="e8d4-2f2c-3c27-eea4" name="Blessing of Persistence" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Enemies attacking the unit suffer -1 To Wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11be-d225-ab8c-2193" name="Blessing of Strength" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit may re-roll all failed rolls To Wound in close combat.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eefa-6089-dc60-c863" name="Blessing of Swiftness" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit may re-roll the distance moved when charging and pursuing.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <rules>
+        <rule id="208d-4c58-10cd-4fb2" name="Blessings of the Kami" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false">
+          <description>Blessings of the Kami are innate bound spells (power level 4). All Blessings are augment spells with a range of 12&quot;. The effects of each Blessing lasts until the start of the next Nippon turn. If a unit with a Blessing flees for any reason, they immediately lose the Blessing and take D6 S 4 hits.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="b941-4f2a-9ce7-c465" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
         <infoLink id="496d-09ca-bb1b-f5a2" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
@@ -4965,51 +4980,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       <categoryLinks>
         <categoryLink id="63bf-3480-8e75-831c" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ea70-2a13-213a-ed0c" name="Blessings of the Kami" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1ce-2218-9c14-fe78" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1645-41c7-cbe6-1513" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="9411-5447-b15f-7e1a" name="Blessing of Persistence" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Enemies attacking the unit suffer -1 To Wound.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="823b-230a-498d-cc1b" name="Blessing of Strength" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit may re-roll all failed rolls To Wound in close combat.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="f3a0-347b-4ca2-5d3b" name="Blessing of Swiftness" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit may re-roll the distance moved when charging and pursuing.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="7494-d366-eaa0-918d" name="Blessings of the Kami" publicationId="5ff9-69dd-8810-183f" page="72" hidden="false">
-              <description>Blessings of the Kami are innate bound spells (power level 4). All Blessings are augment spells with a range of 12&quot;. The effects of each Blessing lasts until the start of the next Nippon turn. If a unit with a Blessing flees for any reason, they immediately lose the Blessing and take D6 S 4 hits.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="120.0"/>
       </costs>
@@ -5122,7 +5092,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
       </rules>
       <infoLinks>
         <infoLink id="1921-dfeb-ae18-9353" name="Stone Thrower" hidden="false" targetId="8651-78f3-14e9-f66b" type="profile"/>
-        <infoLink id="9e68-b1fd-c498-2587" name="Result" hidden="false" targetId="Stone Thrower Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cf86-7e88-6b03-515b" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5207,9 +5176,6 @@ A character may only have one Yojimbo assigned to it at any time, although a new
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="fec7-2eb4-f4bb-6b5a" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="b9fa-0ce5-bb86-8dee" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="37f8-6eb5-3f67-40f1" name="Blessings of Rigg">
+    <profileType id="1649-583c-3549-6e7d" name="Blessings of Rigg">
       <characteristicTypes>
-        <characteristicType id="4966-b9ec-6943-f6e0" name="Warfare"/>
-        <characteristicType id="bdcc-489d-ba59-a97c" name="Blood"/>
-        <characteristicType id="4f8d-bf4e-a43d-a847" name="Violent Death"/>
+        <characteristicType id="fbd9-9b3e-f3b9-b105" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -151,7 +149,7 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
       </profiles>
       <infoLinks>
         <infoLink id="cfd1-d56e-e03e-5617" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="2577-076f-4cc8-5444" name="Garland Warfare" hidden="false" targetId="f0b8-fe1c-4359-9db1" type="rule"/>
+        <infoLink id="2577-076f-4cc8-5444" name="Guerilla Tactics" hidden="false" targetId="f0b8-fe1c-4359-9db1" type="rule"/>
         <infoLink id="f33c-5a41-7391-05a9" name="Garland Warfare" hidden="false" targetId="3f0b-bbac-b519-f929" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -250,9 +248,6 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="70a6-b467-a01d-9b34" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="eeab-f046-2eb3-895c" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -702,9 +697,6 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="1300-30bb-3c99-2216" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="859a-5acf-076f-c815" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -739,9 +731,6 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="60ae-0f39-09dd-610a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="b911-a79e-1607-d0f8" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1276,9 +1265,6 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="4f7e-97c6-3442-1de9" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2784-b416-0559-5ccf" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1313,9 +1299,6 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="9466-294d-f05d-dff0" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="fc9d-1d48-38b5-8acc" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -3750,11 +3733,19 @@ To drop rocks, select one unengaged enemy unit that the Terradons moved over in 
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry</characteristic>
           </characteristics>
         </profile>
-        <profile id="beee-f076-8566-2d87" name="Effect" hidden="false" typeId="37f8-6eb5-3f67-40f1" typeName="Blessings of Rigg">
+        <profile id="beee-f076-8566-2d87" name="Warfare" publicationId="315c-6fd1-56a3-8b04" page="48" hidden="false" typeId="1649-583c-3549-6e7d" typeName="Blessings of Rigg">
           <characteristics>
-            <characteristic name="Warfare" typeId="4966-b9ec-6943-f6e0">The units may re-roll all failed charge distances.</characteristic>
-            <characteristic name="Blood" typeId="bdcc-489d-ba59-a97c">The units are subject to Frenzy. If the unit is already subject to Frenzy, it becomes subject to Hatred instead.</characteristic>
-            <characteristic name="Violent Death" typeId="4f8d-bf4e-a43d-a847">The units gains Killing blow.</characteristic>
+            <characteristic name="Effect" typeId="fbd9-9b3e-f3b9-b105">The units may re-roll all failed charge distances.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bca3-4a04-5857-3cd4" name="Violent Death" publicationId="315c-6fd1-56a3-8b04" page="48" hidden="false" typeId="1649-583c-3549-6e7d" typeName="Blessings of Rigg">
+          <characteristics>
+            <characteristic name="Effect" typeId="fbd9-9b3e-f3b9-b105">The units gains Killing blow.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a7f2-46f9-f228-d155" name="Blood" publicationId="315c-6fd1-56a3-8b04" page="48" hidden="false" typeId="1649-583c-3549-6e7d" typeName="Blessings of Rigg">
+          <characteristics>
+            <characteristic name="Effect" typeId="fbd9-9b3e-f3b9-b105">The units are subject to Frenzy. If the unit is already subject to Frenzy, it becomes subject to Hatred instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="324d-b81e-296a-d5cd" name="Reign of Chaos Table">
-      <characteristicTypes>
-        <characteristicType id="28c0-8ab1-59f8-e6be" name="2"/>
-        <characteristicType id="f798-0a52-f205-7c27" name="3"/>
-        <characteristicType id="d3f8-a06d-1595-7e1d" name="4"/>
-        <characteristicType id="89f5-6d53-4994-8736" name="5"/>
-        <characteristicType id="6233-4c56-8e45-842a" name="6"/>
-        <characteristicType id="81c7-5ee4-25ec-c2cc" name="7"/>
-        <characteristicType id="e1e1-f358-c7c5-2c54" name="8"/>
-        <characteristicType id="a4d6-ab00-32d1-40f6" name="9"/>
-        <characteristicType id="6739-7c5c-7dc3-ded4" name="10"/>
-        <characteristicType id="9597-a1e3-b2cb-4406" name="11"/>
-        <characteristicType id="dc8a-6435-a425-afdf" name="12"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="0677-46df-dd88-f643" name="Tally of Pestilence Table">
-      <characteristicTypes>
-        <characteristicType id="dbf5-4091-40fe-d38d" name="0-6"/>
-        <characteristicType id="8f57-4cab-e815-af3e" name="7+"/>
-        <characteristicType id="6f00-e1fc-d68c-0f34" name="14+"/>
-        <characteristicType id="8131-5186-e6e6-00a0" name="21+"/>
-        <characteristicType id="2964-7780-41ea-7f65" name="28+"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="db42-f2a5-f701-41ad" name="Eternal Dance Table">
-      <characteristicTypes>
-        <characteristicType id="fe13-4b8f-7ff2-d0d5" name="The Fleshspasm Polka"/>
-        <characteristicType id="a993-38c0-60f9-4386" name="The Waltz of Lethargy"/>
-        <characteristicType id="b90d-e441-44de-51a9" name="The Dance of Dreaming"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="efb3-d0de-5567-f01a" name="Daemonic Gift">
       <characteristicTypes>
         <characteristicType id="4627-cfbc-c37e-235a" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="46d0-e001-e854-aa4f" name="Tally of Pestilence Table">
+      <characteristicTypes>
+        <characteristicType id="26c9-0598-bd86-5aa5" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="0347-fab8-2ad8-82c2" name="Reign of Chaos Table">
+      <characteristicTypes>
+        <characteristicType id="4d78-e258-a149-7bd9" name="Result"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="d700-81d2-52da-5e06" name="Eternal Dance Table">
+      <characteristicTypes>
+        <characteristicType id="948c-d622-cd49-c709" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -98,9 +82,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="4ddd-a1b3-c172-791f" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry id="72ac-39c8-5eff-2d07" name="Nightmare" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -372,9 +353,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="d180-104a-b79f-5f40" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="3b2f-a14e-1676-bb48" name="Lore of Magic (right head)" hidden="false" collective="false" import="true">
               <constraints>
@@ -448,22 +426,59 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2be0-5e94-7f0e-8685" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d34a-da7b-3729-6411" name="Result" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="324d-b81e-296a-d5cd" typeName="Reign of Chaos Table">
+        <profile id="bd30-7490-a541-ca83" name="02" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
           <characteristics>
-            <characteristic name="2" typeId="28c0-8ab1-59f8-e6be">The Winds Recede: All units with Daemonic Instability (friend or foe) must immediately take a Daemonic Instability test on their unmodified LD.</characteristic>
-            <characteristic name="3" typeId="f798-0a52-f205-7c27">Punished by the Gods: Randomly select one character with Daemonic Instability (friend or foe. If there are no characters with Daemonic Instability currently on the board, count this as The Eye of the Storm instead). The selected character must immediately take a LD test, losing 1 Wound (with no saves of any kind allowed) for each point by which the test is failed.</characteristic>
-            <characteristic name="4" typeId="d3f8-a06d-1595-7e1d">Chaotic Ebb: All models with Daemonic Instability (friend or foe) suffer a -1 penalty to their ward saves until you next roll for the Winds of Magic.</characteristic>
-            <characteristic name="5" typeId="89f5-6d53-4994-8736">Storm of Fire: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Nurgle, or models with the Mark of Nurgle, on the board. Do not roll for units that are engaged in close combat. On the roll of a 6, place a small round template centred directly over the centre of
-the unit – this then scatters D6&quot;. Any models wholly or partially beneath the template&apos;s final position suffer a
-single S 4 hit with Flaming Attacks and Magical Attacks.</characteristic>
-            <characteristic name="6" typeId="6233-4c56-8e45-842a">Rot, Glorious Rot: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Tzeentch, or models with the Mark of Tzeentch, on the board. Do not roll for units engaged in close combat. On the roll of a 6, that unit suffers D6+3 S 3 hits with Ignores Armour saves and Magical Attacks.</characteristic>
-            <characteristic name="7" typeId="81c7-5ee4-25ec-c2cc">The Eye of the Storm: Nothing happens, this time...</characteristic>
-            <characteristic name="8" typeId="e1e1-f358-c7c5-2c54">The Dark Prince Thirsts: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Khorne, or models with the Mark of Khorne, on the board. Do not roll for units that are engaged in close combat. On the roll of a 6, that unit must take a LD test on 3D6, adding the results together. If the test is passed, nothing happens. Otherwise, for each point by which the unit failed the test, it suffers a Wound, with Ignores Armour saves and Magical Attacks.</characteristic>
-            <characteristic name="9" typeId="a4d6-ab00-32d1-40f6">Khorne&apos;s Wrath: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Slaanesh, or models with the Mark of Slaanesh, on the board. Do not roll for units that are engaged in close combat. On the roll of a 6, place a small round template centred directly over the centre of the unit. This then scatters 3D6&quot;. Resolve damage as you would from a stone thrower shot, with the model under the centre of the template suffering a S 9 hit with Multiple Wounds (D6), and all other models wholly or partially under the
-template suffering a S 3 hit with Magical Attacks.</characteristic>
-            <characteristic name="10" typeId="6739-7c5c-7dc3-ded4">Chaotic Surge: All models with Daemonic Instability (friend and foe) gain Ward save (6+) until you next roll for the Winds of Magic.</characteristic>
-            <characteristic name="11" typeId="9597-a1e3-b2cb-4406">Daemonic Possession: Randomly select one enemy Wizard on the board who does not have Daemonic Instability (if there are no eligible enemy Wizards currently on the board, count this as The Eye of the Storm instead). The selected Wizard must pass a LD test or be removed as a casualty with no saves of any kind allowed. If the LD test is failed then before removing the Wizard, place a Herald of Khorne, Tzeentch, Nurgle or Slaanesh (your choice) anywhere within 6&quot; of the slain model that is more than 1&quot; from all units and impassable terrain. If you chose a Herald of Tzeentch, generate its spell immediately. This Herald can act normally in the turn it is created. This model do not have any upgrades or award victory points. If you do not have a spare Herald of Chaos model, or if one cannot be placed on the board according to the aforementioned restrictions, the selected Wizard is removed as a casualty but no Herald is placed.</characteristic>
-            <characteristic name="12" typeId="dc8a-6435-a425-afdf">Summoned from Beyond: Place a new unit consisting of 2D6+3 Bloodletters, Pink Horrors, Plaguebearers or Daemonettes (you choose). When placing this unit, it can be placed anywhere on the battlefield at least 1&quot; away from all units, buildings and impassable terrain. It can be placed in any legal formation, so long as the unit&apos;s front rank contains at least five models. This unit do not have any upgrades or award victory points. If the summoned unit cannot be placed (because there is not enough room or you do not have enough models), the unit does not enter play at all.</characteristic>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">The Winds Recede: All units with Daemonic Instability (friend or foe) must immediately take a Daemonic Instability test on their unmodified LD.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8040-f9fe-7397-32b6" name="03" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Punished by the Gods: Randomly select one character with Daemonic Instability (friend or foe. If there are no characters with Daemonic Instability currently on the board, count this as The Eye of the Storm instead). The selected character must immediately take a LD test, losing 1 Wound (with no saves of any kind allowed) for each point by which the test is failed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5064-a25b-5812-0ddd" name="04" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Chaotic Ebb: All models with Daemonic Instability (friend or foe) suffer a -1 penalty to their ward saves until you next roll for the Winds of Magic.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="be72-0481-a07a-e354" name="05" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Storm of Fire: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Nurgle, or models with the Mark of Nurgle, on the board. Do not roll for units that are engaged in close combat. On the roll of a 6, place a small round template centred directly over the centre of the unit – this then scatters D6&quot;. Any models wholly or partially beneath the template&apos;s final position suffer a single S 4 hit with Flaming Attacks and Magical Attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d7c3-5768-1379-a66f" name="06" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Rot, Glorious Rot: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Tzeentch, or models with the Mark of Tzeentch, on the board. Do not roll for units engaged in close combat. On the roll of a 6, that unit suffers D6+3 S 3 hits with Ignores Armour saves and Magical Attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0053-2090-fa1c-52c8" name="07" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">The Eye of the Storm: Nothing happens, this time...</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8383-834c-c893-eeb9" name="08" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">The Dark Prince Thirsts: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Khorne, or models with the Mark of Khorne, on the board. Do not roll for units that are engaged in close combat. On the roll of a 6, that unit must take a LD test on 3D6, adding the results together. If the test is passed, nothing happens. Otherwise, for each point by which the unit failed the test, it suffers a Wound, with Ignores Armour saves and Magical Attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="78f0-c0db-94a9-03f7" name="09" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Khorne&apos;s Wrath: Roll a D6 for each enemy unit, and each friendly unit that contains one or more Daemons of Slaanesh, or models with the Mark of Slaanesh, on the board. Do not roll for units that are engaged in close combat. On the roll of a 6, place a small round template centred directly over the centre of the unit. This then scatters 3D6&quot;. Resolve damage as you would from a stone thrower shot, with the model under the centre of the template suffering a S 9 hit with Multiple Wounds (D6), and all other models wholly or partially under the template suffering a S 3 hit with Magical Attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6296-d857-821d-e0e1" name="11" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Daemonic Possession: Randomly select one enemy Wizard on the board who does not have Daemonic Instability (if there are no eligible enemy Wizards currently on the board, count this as The Eye of the Storm instead). The selected Wizard must pass a LD test or be removed as a casualty with no saves of any kind allowed. If the LD test is failed then before removing the Wizard, place a Herald of Khorne, Tzeentch, Nurgle or Slaanesh (your choice) anywhere within 6&quot; of the slain model that is more than 1&quot; from all units and impassable terrain. If you chose a Herald of Tzeentch, generate its spell immediately. This Herald can act normally in the turn it is created. This model does not have any upgrades or award victory points. If you do not have a spare Herald of Chaos model, or if one cannot be placed on the board according to the aforementioned restrictions, the selected Wizard is removed as a casualty but no Herald is placed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2660-359e-a18c-5da6" name="12" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Summoned from Beyond: Place a new unit consisting of 2D6+3 Bloodletters, Pink Horrors, Plaguebearers or Daemonettes (you choose). When placing this unit, it can be placed anywhere on the battlefield at least 1&quot; away from all units, buildings and impassable terrain. It can be placed in any legal formation, so long as the unit&apos;s front rank contains at least five models. This unit does not have any upgrades or award victory points. If the summoned unit cannot be placed (because there is not enough room or you do not have enough models), the unit does not enter play at all.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c5e-5f29-7ce7-00f3" name="10" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false" typeId="0347-fab8-2ad8-82c2" typeName="Reign of Chaos Table">
+          <characteristics>
+            <characteristic name="Result" typeId="4d78-e258-a149-7bd9">Chaotic Surge: All models with Daemonic Instability (friend and foe) gain Ward save (6+) until you next roll for the Winds of Magic.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -526,9 +541,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="0f7d-88bd-aeef-c074" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="b4b4-81e9-fdeb-8f05" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4c3-848b-8422-09b7">
               <constraints>
@@ -792,9 +804,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="c2f4-dfcf-b06e-822a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="d8a8-c064-b28e-ea4d" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b49-e7df-6e7f-e75e">
                   <constraints>
@@ -825,9 +834,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="3832-6c8f-867a-31e0" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="0e47-41bd-5306-9c1b" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="5695-c822-2fa4-ce38">
                   <constraints>
@@ -858,9 +864,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="ec54-3154-15ae-8f41" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="31eb-3b8b-86d9-ae09" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd68-fa1d-0e5e-e72e">
                   <constraints>
@@ -956,9 +959,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="f31b-6fa6-bd12-3ec9" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="11c3-4de3-bdc0-cd8b" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5bc-d077-548b-04f2">
                   <constraints>
@@ -989,9 +989,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="b564-2e6e-08ea-9313" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="3495-f40b-d81e-1cb0" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f20-7fc1-f57d-4149">
                   <constraints>
@@ -1022,9 +1019,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="2062-8c0d-59bf-136a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="ecb6-b6ba-09a9-f49c" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccb7-c1f5-32e8-e4c5">
                   <constraints>
@@ -1055,9 +1049,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="2e05-a84b-2ce6-9c6a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="8f53-cdeb-bca3-2dbd" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="b3a2-8ce7-2603-c06f">
                   <constraints>
@@ -1205,9 +1196,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="c768-5e79-dec4-9a55" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="9b69-a25a-1bc8-55ab" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="9165-9b4c-b23f-6cce">
                   <constraints>
@@ -1238,9 +1226,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="361b-9ed1-d102-5f67" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="cd7a-da0b-9efa-36c9" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f195-852f-73e3-c15a">
                   <constraints>
@@ -1271,9 +1256,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="5f03-e7cc-663d-b850" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="b569-a8b1-d129-c35f" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ea0-0d50-ef74-3124">
                   <constraints>
@@ -1304,9 +1286,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="3c2a-56fb-d672-fb06" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="aba0-4ecd-93f3-7091" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="16e5-90b7-e33e-bd67">
                   <constraints>
@@ -1444,9 +1423,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="8db8-38c3-9e37-2d3b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="b7a0-f98b-d045-7773" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f0c9-544e-c907-0ce1">
                   <constraints>
@@ -1477,9 +1453,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="55e4-13b4-3726-2594" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="919e-e4f6-7d70-1f04" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="0eb0-5e5a-46cb-70f9">
                   <constraints>
@@ -1681,7 +1654,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8904-b9d3-2bcc-2845" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="62d0-7d64-b3da-f45b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="5c74-0bdb-a8b9-2796" name="Daemon Prince" hidden="false" targetId="Daemon Prince 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1704,7 +1676,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf56-0e70-70db-f1dd" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="bb8a-3dcf-02aa-8512" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="4c80-23c2-219a-94f9" name="Daemon Prince" hidden="false" targetId="Daemon Prince 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1727,7 +1698,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70f3-3bc1-4c03-bf0b" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="7082-61b3-9108-7849" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="d473-8b53-2d0e-0acd" name="Daemon Prince" hidden="false" targetId="Daemon Prince 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1750,7 +1720,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe8a-049a-ec8f-e99e" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="986c-10c5-f583-4fe3" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="e8c4-d37b-468d-aa62" name="Daemon Prince" hidden="false" targetId="Daemon Prince 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1867,7 +1836,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b22c-a0ae-eb79-7df0" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="43fd-11d9-dc23-07d0" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="ec34-a732-5602-f5c1" name="Daemon Prince" hidden="false" targetId="Daemon Prince 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1890,7 +1858,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcf6-84f1-ce88-7ea2" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="8b10-7c34-1d1b-1372" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="5f15-10b0-fb34-980b" name="Daemon Prince" hidden="false" targetId="Daemon Prince 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1913,7 +1880,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="48ad-ac84-55b6-24ba" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="69b9-0474-db3e-0fda" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="e47a-67e8-9b05-f40d" name="Daemon Prince" hidden="false" targetId="Daemon Prince 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -1936,7 +1902,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbd0-1bc8-29ac-9181" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="7007-126b-fca9-4874" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="b94a-a789-49a3-4faf" name="Daemon Prince" hidden="false" targetId="Daemon Prince 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2053,7 +2018,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18d1-0ea9-b38b-694d" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="553b-c453-2cf3-aafc" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="63c1-f694-3aff-da2e" name="Daemon Prince" hidden="false" targetId="Daemon Prince 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2076,7 +2040,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebf7-8a63-7b51-28f2" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="66c3-61cf-825c-7e19" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="2cc2-35e7-c4f0-25da" name="Daemon Prince" hidden="false" targetId="Daemon Prince 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2099,7 +2062,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89ec-a154-77ff-8577" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="54d6-fc6b-9a67-9a90" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="79bc-7ff1-9f51-cc95" name="Daemon Prince" hidden="false" targetId="Daemon Prince 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2122,7 +2084,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b770-3d68-76e4-7e7c" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="6df5-0dc5-a4fa-0757" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="6b88-744b-9a35-ce02" name="Daemon Prince" hidden="false" targetId="Daemon Prince 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2237,7 +2198,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c2c-d720-d5b9-d323" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="c498-cd94-4645-be08" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="a86d-9570-830a-27ab" name="Daemon Prince" hidden="false" targetId="Daemon Prince 4" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2263,7 +2223,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b588-d97b-2b87-1bda" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="e2bb-4f06-a9e0-a95a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="c5a5-2fe9-4681-3978" name="Daemon Prince" hidden="false" targetId="Daemon Prince 3" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2289,7 +2248,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28fe-2b9c-1493-7982" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="2674-eb2c-8ca2-e04b" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="7ef0-6a64-8386-5b4a" name="Daemon Prince" hidden="false" targetId="Daemon Prince 2" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2315,7 +2273,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c495-c183-f3d8-7784" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="cc15-f6d0-d72d-5080" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
                         <infoLink id="f86d-6d62-8575-c3d5" name="Daemon Prince" hidden="false" targetId="Daemon Prince 1" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
@@ -2790,9 +2747,6 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="3625-015b-f2b4-97d9" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="b4d7-919d-5b57-9cca" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="b0d2-31a8-a0a5-2e01">
               <constraints>
@@ -2835,13 +2789,29 @@ template suffering a S 3 hit with Magical Attacks.</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="2319-aeb3-bb54-a1e3" name="Result" publicationId="ee54-3543-b9db-fe40" page="169" hidden="false" typeId="0677-46df-dd88-f643" typeName="Tally of Pestilence Table">
+        <profile id="2319-aeb3-bb54-a1e3" name="00-06 Wounds" publicationId="ee54-3543-b9db-fe40" page="169" hidden="false" typeId="46d0-e001-e854-aa4f" typeName="Tally of Pestilence Table">
           <characteristics>
-            <characteristic name="0-6" typeId="dbf5-4091-40fe-d38d">No effect.</characteristic>
-            <characteristic name="7+" typeId="8f57-4cab-e815-af3e">All Daemons of Nurgle (friend and foe) gain +1 S.</characteristic>
-            <characteristic name="14+" typeId="6f00-e1fc-d68c-0f34">All Daemons of Nurgle (friend and foe) gain +1 T.</characteristic>
-            <characteristic name="21+" typeId="8131-5186-e6e6-00a0">All Daemons of Nurgle (friend and foe) gain Killing Blow.</characteristic>
-            <characteristic name="28+" typeId="2964-7780-41ea-7f65">All Daemons of Nurgle (friend or foe) re-roll failed ward saves.</characteristic>
+            <characteristic name="Effect" typeId="26c9-0598-bd86-5aa5">No effect.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b8d-6d05-f43a-5a5e" name="07+ Wounds" publicationId="ee54-3543-b9db-fe40" page="169" hidden="false" typeId="46d0-e001-e854-aa4f" typeName="Tally of Pestilence Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="26c9-0598-bd86-5aa5">All Daemons of Nurgle (friend and foe) gain +1 S.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7195-5e62-34a6-a633" name="14+ Wounds" publicationId="ee54-3543-b9db-fe40" page="169" hidden="false" typeId="46d0-e001-e854-aa4f" typeName="Tally of Pestilence Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="26c9-0598-bd86-5aa5">All Daemons of Nurgle (friend and foe) gain +1 T.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97af-46ab-dd8a-8fa9" name="21+ Wounds" publicationId="ee54-3543-b9db-fe40" page="169" hidden="false" typeId="46d0-e001-e854-aa4f" typeName="Tally of Pestilence Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="26c9-0598-bd86-5aa5">All Daemons of Nurgle (friend and foe) gain Killing Blow.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76ef-a261-0540-1760" name="28+ Wounds" publicationId="ee54-3543-b9db-fe40" page="169" hidden="false" typeId="46d0-e001-e854-aa4f" typeName="Tally of Pestilence Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="26c9-0598-bd86-5aa5">All Daemons of Nurgle (friend or foe) re-roll failed ward saves.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3017,11 +2987,19 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="19ec-fe33-e150-2489" name="Dance" publicationId="ee54-3543-b9db-fe40" page="191" hidden="false" typeId="db42-f2a5-f701-41ad" typeName="Eternal Dance Table">
+        <profile id="19ec-fe33-e150-2489" name="The Waltz of Lethargy" publicationId="ee54-3543-b9db-fe40" page="191" hidden="false" typeId="d700-81d2-52da-5e06" typeName="Eternal Dance Table">
           <characteristics>
-            <characteristic name="The Fleshspasm Polka" typeId="fe13-4b8f-7ff2-d0d5">-1 S</characteristic>
-            <characteristic name="The Waltz of Lethargy" typeId="a993-38c0-60f9-4386">-D3 I</characteristic>
-            <characteristic name="The Dance of Dreaming" typeId="b90d-e441-44de-51a9">-D3 LD</characteristic>
+            <characteristic name="Effect" typeId="948c-d622-cd49-c709">-D3 I</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c988-98c2-6d5e-1705" name="The Dance of Dreaming" publicationId="ee54-3543-b9db-fe40" page="191" hidden="false" typeId="d700-81d2-52da-5e06" typeName="Eternal Dance Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="948c-d622-cd49-c709">-D3 LD</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e5b-a04b-fc8c-c4aa" name="The Fleshspasm Polka" publicationId="ee54-3543-b9db-fe40" page="191" hidden="false" typeId="d700-81d2-52da-5e06" typeName="Eternal Dance Table">
+          <characteristics>
+            <characteristic name="Effect" typeId="948c-d622-cd49-c709">-1 S</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3174,9 +3152,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                           </characteristics>
                         </profile>
                       </profiles>
-                      <infoLinks>
-                        <infoLink id="bb91-d64d-db06-8ada" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-                      </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="c424-53d3-22f6-d3f9" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="580e-2363-b4b5-5955">
                           <constraints>
@@ -3207,9 +3182,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                           </characteristics>
                         </profile>
                       </profiles>
-                      <infoLinks>
-                        <infoLink id="8723-3d17-96b7-f525" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-                      </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="8a9e-9bc1-7434-20cd" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="422c-5dc4-b1aa-a08c">
                           <constraints>
@@ -3459,9 +3431,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                       </characteristics>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink id="a2bf-e96e-3e57-dfdb" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-                  </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="bfd0-acbd-efe2-773f" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f92a-372f-cce6-9a3f">
                       <constraints>
@@ -3797,9 +3766,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                       </characteristics>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink id="6ba1-6c3b-9404-919a" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-                  </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="f193-fbb9-4df4-8253" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="af30-36b3-22fa-b25a">
                       <constraints>
@@ -4659,9 +4625,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="692d-f4fc-c0cd-bebf" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="fd2b-d3a7-d1c4-0d07" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="0a39-4b79-a180-528d">
               <constraints>
@@ -5773,7 +5736,6 @@ but it may not fire grapeshot.</characteristic>
         <infoLink id="240c-6ea3-7c63-eb55" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="f77e-667d-ab58-8167" name="Gorefeast" hidden="false" targetId="bf93-4460-17ec-e206" type="rule"/>
         <infoLink id="eaa5-1a66-7da9-adbd" name="Scythes" hidden="false" targetId="d896-d52f-cc64-ab43" type="rule"/>
-        <infoLink id="8260-ad4f-b332-9242" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cc01-2d87-aae1-7c71" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -6229,9 +6191,6 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="614f-335a-4eb2-5890" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="2693-98af-ec80-6c50" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="9998-93aa-e36c-2ccc">
               <constraints>
@@ -6853,9 +6812,6 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="4f5a-c591-c576-b935" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="a116-bf8d-18ee-eafd" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d1b-d3e4-0e61-a662">
               <constraints>
@@ -6989,6 +6945,9 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4734-1459-d018-a584" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -7006,9 +6965,6 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="bc0a-b896-fcd7-6a95" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="664d-595e-1100-eeda" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="02b1-2c61-e9de-4262">
               <constraints>
@@ -7089,9 +7045,6 @@ but it may not fire grapeshot.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="07b8-7d34-0663-3253" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="8a73-9f18-b6ad-e124" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="e87c-8e04-3693-a23d">
               <constraints>

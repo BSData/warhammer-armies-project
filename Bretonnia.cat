@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -7,11 +7,9 @@
         <characteristicType id="93c5-9e46-407e-fab5" name="Effect"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="9bbb-35ea-5766-6889" name="Valourous Ballads">
+    <profileType id="db89-f4f2-ce9b-6507" name="Valourous Ballads">
       <characteristicTypes>
-        <characteristicType id="5ea0-bd3d-a031-1111" name="The Battle-hymn of Quenelles"/>
-        <characteristicType id="5e8a-a7f6-435c-bd96" name="The Grail Chorale"/>
-        <characteristicType id="6f26-870c-8872-37de" name="The Anthem of the Uniter"/>
+        <characteristicType id="38d0-820d-c4e6-de45" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -374,9 +372,6 @@ suffers a Wound with no saves allowed.</description>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="6f35-40cf-17d3-31bb" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="5a01-6292-e6d7-1465" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -1391,9 +1386,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="aeab-e594-cd3a-38be" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2c20-6641-6362-ecb9" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1428,9 +1420,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="3d28-3b17-2595-1a5d" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="5549-c84c-4b86-f1b2" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1523,6 +1512,10 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <infoLink id="d086-f62b-3728-8f3d" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
                 <infoLink id="d67a-0b49-97f6-6b4d" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="85fd-fdcd-6d2c-3ee5" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
+                <infoLink id="5861-2327-e1c6-9aeb" name="Radiant Light" hidden="false" targetId="3d80-dc35-6457-bf9b" type="profile"/>
+                <infoLink id="3b85-a9c5-287e-a783" name="Renewed Valour" hidden="false" targetId="7ad9-59b2-4474-cdbf" type="profile"/>
+                <infoLink id="4163-477d-d285-0e44" name="Shield of Faith" hidden="false" targetId="2491-5f85-63d2-ec58" type="profile"/>
+                <infoLink id="b2eb-eea1-175c-4287" name="Blessed Sanctum" hidden="false" targetId="40b9-5d00-6d65-b3d7" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="5692-3884-fd1d-4ce7" name="Warhorse" hidden="false" collective="false" import="true" type="model">
@@ -1533,21 +1526,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   <infoLinks>
                     <infoLink id="3adb-cc37-59ca-05ae" name="Warhorse" hidden="false" targetId="1b59-fbaa-b006-c2ad" type="profile"/>
                     <infoLink id="83ce-527a-ca60-0aa4" name="Purebred Warhorse" hidden="false" targetId="1c9e-d354-9961-b23b" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f231-2430-c324-68e1" name="Blessed Sanctum" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88db-d289-901a-1bce" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b05-5b15-4406-eaca" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="b452-988b-01f1-624d" name="Blessed Sanctum" hidden="false" targetId="40b9-5d00-6d65-b3d7" type="rule"/>
-                    <infoLink id="64e4-41dd-e97a-f0c1" name="Renewed Valour" hidden="false" targetId="7ad9-59b2-4474-cdbf" type="profile"/>
-                    <infoLink id="60c0-fe34-27db-04f1" name="Radiant Light" hidden="false" targetId="3d80-dc35-6457-bf9b" type="profile"/>
-                    <infoLink id="73e4-1ca9-66c3-aab7" name="Shield of Faith" hidden="false" targetId="2491-5f85-63d2-ec58" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2339,11 +2317,19 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
               </characteristics>
             </profile>
-            <profile id="e07f-0845-8b8e-5b40" name="Result" publicationId="9e23-79cb-pubN75312" page="170" hidden="false" typeId="9bbb-35ea-5766-6889" typeName="Valourous Ballads">
+            <profile id="e07f-0845-8b8e-5b40" name="The Grail Chorale" publicationId="9e23-79cb-pubN75312" page="170" hidden="false" typeId="db89-f4f2-ce9b-6507" typeName="Valourous Ballads">
               <characteristics>
-                <characteristic name="The Battle-hymn of Quenelles" typeId="5ea0-bd3d-a031-1111">While singing this song, Tristan adds +D3 combat resolution to any fight he is in.</characteristic>
-                <characteristic name="The Grail Chorale" typeId="5e8a-a7f6-435c-bd96">While he sings this song, the Ward save from the Blessing of the Lady is increased +1 for the unit accompanying Tristan.</characteristic>
-                <characteristic name="The Anthem of the Uniter" typeId="6f26-870c-8872-37de">Tristan and any unit he has joined are Stubborn while he sings this ballad.</characteristic>
+                <characteristic name="Effect" typeId="38d0-820d-c4e6-de45">While he sings this song, the Ward save from the Blessing of the Lady is increased +1 for the unit accompanying Tristan.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="64ec-4dde-3aa8-07fc" name="The Battle-hymn of Quenelles" publicationId="9e23-79cb-pubN75312" page="170" hidden="false" typeId="db89-f4f2-ce9b-6507" typeName="Valourous Ballads">
+              <characteristics>
+                <characteristic name="Effect" typeId="38d0-820d-c4e6-de45">While singing this song, Tristan adds +D3 combat resolution to any fight he is in.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="03cb-08ba-57d7-af2d" name="The Anthem of the Uniter" publicationId="9e23-79cb-pubN75312" page="170" hidden="false" typeId="db89-f4f2-ce9b-6507" typeName="Valourous Ballads">
+              <characteristics>
+                <characteristic name="Effect" typeId="38d0-820d-c4e6-de45">Tristan and any unit he has joined are Stubborn while he sings this ballad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2935,9 +2921,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="5588-7db7-ed35-d914" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="c365-1c10-5075-bafe" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2972,9 +2955,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="9681-bc65-2569-9e59" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="3798-8a8c-a85b-1929" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -3299,10 +3279,40 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
           </characteristics>
         </profile>
+        <profile id="5956-a9e1-b957-836c" name="Shallya&apos;s Endurance" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When cast, the unit the Priestess is with (but not herself) gets +1 to its T until the start of her next Magic Phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ce5-c52d-5221-68ac" name="Martyrdom" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Priestess creates a connection between her and one friendly character of your choice within 12&quot;. All wounds caused on the chosen character are ignored, and the Priestess suffers a S 3 hit with no saves allowed for each wound suffered instead. Remains in Play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f54b-04ad-0ce8-504c" name="Purify" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All Hex spells effecting friendly units within 12&quot; are automatically dispelled. In addition, any Undead or Daemonic units in base contact with the Priestess takes D6 S 5 hits.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="dd57-09fa-c646-8480" name="Healing Hands" publicationId="9e23-79cb-pubN75312" page="125" hidden="false">
           <description>The unit the Priestess is with (but not herself) gains Regeneration (6+).</description>
+        </rule>
+        <rule id="d12b-4147-e371-eac5" name="Blessings of Shallya" publicationId="9e23-79cb-pubN75312" page="125" hidden="false">
+          <description>Priestesses of Shallya know three Prayers. Prayers are innate bound spells (power level 3). All Prayers are augment spells. In addition, the Priestess may channel Power and Dispel dice just like a Level 1 Wizard.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3331,49 +3341,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
             <entryLink id="84af-b6ab-45df-55f0" name="Talismans" hidden="false" collective="false" import="true" targetId="f90e-6119-6dae-4b9a" type="selectionEntryGroup"/>
             <entryLink id="b389-14f4-fad6-dc26" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4815-9217-ed66-4522" type="selectionEntryGroup"/>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4166-3fdf-ee04-12a4" name="Blessings of Shallya" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7dd-cd5f-af5a-252a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adfd-5cb9-810d-8aae" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="8e02-a636-afed-6327" name="Martyrdom" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Priestess creates a connection between her and one friendly character of your choice within 12&quot;. All wounds caused on the chosen character are ignored, and the Priestess suffers a S 3 hit with no saves allowed for each wound suffered instead. Remains in Play.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="9757-231a-031a-7c14" name="Purify" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All Hex spells effecting friendly units within 12&quot; are automatically dispelled. In addition, any Undead or Daemonic units in base contact with the Priestess takes D6 S 5 hits.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="340c-a253-763f-47cb" name="Shallya&apos;s Endurance" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When cast, the unit the Priestess is with (but not herself) gets +1 to its T until the start of her next Magic Phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="296c-f44f-39d2-9c07" name="Blessings of Shallya" publicationId="9e23-79cb-pubN75312" page="125" hidden="false">
-              <description>Priestesses of Shallya know three Prayers. Prayers are innate bound spells (power level 3). All Prayers are augment spells. In addition, the Priestess may channel Power and Dispel dice just like a Level 1 Wizard.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6000,6 +5967,10 @@ As long Spirits of the Fay remain partially within one of these terrain features
         <infoLink id="2080-87cf-9881-c03b" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
         <infoLink id="07d9-de3e-060f-486d" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="8101-0725-86ef-1493" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
+        <infoLink id="5b79-fa88-0484-8902" name="Radiant Light" hidden="false" targetId="3d80-dc35-6457-bf9b" type="profile"/>
+        <infoLink id="4631-14b2-066c-2444" name="Renewed Valour" hidden="false" targetId="7ad9-59b2-4474-cdbf" type="profile"/>
+        <infoLink id="3423-3848-d986-2e96" name="Shield of Faith" hidden="false" targetId="2491-5f85-63d2-ec58" type="profile"/>
+        <infoLink id="ec25-780d-8c30-5fd4" name="Blessed Sanctum" hidden="false" targetId="40b9-5d00-6d65-b3d7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a4e4-1ccd-c208-af21" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -6053,21 +6024,6 @@ As long Spirits of the Fay remain partially within one of these terrain features
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="917a-1462-4070-60b7" name="Blessed Sanctum" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5724-d2e0-2d97-4ca1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3763-6c32-9465-9820" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="d6eb-b6d5-136c-44d0" name="Blessed Sanctum" hidden="false" targetId="40b9-5d00-6d65-b3d7" type="rule"/>
-            <infoLink id="9803-0698-b0ab-64fc" name="Renewed Valour" hidden="false" targetId="7ad9-59b2-4474-cdbf" type="profile"/>
-            <infoLink id="a630-b536-6efa-2c44" name="Radiant Light" hidden="false" targetId="3d80-dc35-6457-bf9b" type="profile"/>
-            <infoLink id="792e-de22-1299-3658" name="Shield of Faith" hidden="false" targetId="2491-5f85-63d2-ec58" type="profile"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6168,7 +6124,6 @@ As long Spirits of the Fay remain partially within one of these terrain features
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="c675-c8aa-c126-5124" name="Result" hidden="false" targetId="Stone Thrower Misfire Chart" type="profile"/>
         <infoLink id="b7e4-fa7c-be97-250e" name="Stone Thrower" hidden="false" targetId="8651-78f3-14e9-f66b" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -6244,9 +6199,6 @@ As long Spirits of the Fay remain partially within one of these terrain features
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="d8d3-9d69-5751-5fe3" name="Result" hidden="false" targetId="Stone Thrower Misfire Chart" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="9472-e2ea-7cc7-2993" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
@@ -6322,7 +6274,6 @@ As long Spirits of the Fay remain partially within one of these terrain features
       </profiles>
       <infoLinks>
         <infoLink id="f310-6368-4950-e0f7" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="aa51-04b8-842a-ce5b" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="05f0-95e5-ee79-04f5" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>

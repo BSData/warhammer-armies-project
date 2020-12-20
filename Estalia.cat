@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="290c-8805-073e-3492" name="Estalia" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="290c-8805-073e-3492" name="Estalia" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="e5cf-9291-e237-c43a" name="Duelling Techniques">
+    <profileType id="4915-9f81-8966-f15c" name="Insane Chart">
       <characteristicTypes>
-        <characteristicType id="201e-e5d7-8bae-acc8" name="Rapido"/>
-        <characteristicType id="6c2b-9ec0-027f-6550" name="Defensa"/>
-        <characteristicType id="de84-c008-a9be-56c8" name="Perforación"/>
+        <characteristicType id="0ad9-e834-c5d8-c212" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="08a5-5b82-52bb-4b44" name="Book of Wisdom spells">
+    <profileType id="4197-5b64-1131-de3a" name="Book of Wisdom spells">
       <characteristicTypes>
-        <characteristicType id="d31d-905f-038d-a12d" name="1"/>
-        <characteristicType id="aae6-db81-02ce-6911" name="2"/>
-        <characteristicType id="1b27-3600-0055-979b" name="3"/>
-        <characteristicType id="05d3-2d59-6100-c904" name="4"/>
-        <characteristicType id="e690-8491-4938-1a53" name="5"/>
-        <characteristicType id="6eed-7cd9-8a42-b685" name="6"/>
+        <characteristicType id="8d7e-2938-2e44-4dc0" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="bf89-a293-a65d-fcc9" name="Insane Chart">
+    <profileType id="8dcd-8c6c-b81d-ef64" name="Standard of Myrmidia bonuses">
       <characteristicTypes>
-        <characteristicType id="a3e5-0a3b-1fdf-2390" name="1"/>
-        <characteristicType id="5f46-c0bf-0b66-4952" name="2"/>
-        <characteristicType id="882a-b7da-567a-9bbb" name="3"/>
-        <characteristicType id="c136-b711-6e71-0733" name="4-5"/>
-        <characteristicType id="7c5e-8d24-78fb-1417" name="6"/>
+        <characteristicType id="ce5a-ecbf-52e8-d8df" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="cb9b-6a49-b422-9c38" name="Standard of Myrmidia bonuses">
+    <profileType id="334d-a336-f48c-e106" name="Duelling Techniques">
       <characteristicTypes>
-        <characteristicType id="7038-9ec6-cb59-063b" name="1"/>
-        <characteristicType id="109c-4e1d-4218-a779" name="2"/>
-        <characteristicType id="913a-4f18-e452-0ea0" name="3"/>
+        <characteristicType id="6759-3910-a749-0a4a" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -67,6 +54,10 @@
         <infoLink id="14a0-38b9-6fd0-9822" name="Tactical Supremacy" hidden="false" targetId="988f-a5b4-56b9-dbcb" type="rule"/>
         <infoLink id="f540-e125-372c-7ca3" name="Divine Power" hidden="false" targetId="abae-fccb-0698-8d72" type="rule"/>
         <infoLink id="55c9-abd0-2428-e8d1" name="Blessing of Myrmidia" hidden="false" targetId="80f2-5041-87e8-11b5" type="rule"/>
+        <infoLink id="0c49-5434-f208-c611" name="Command the Legion" hidden="false" targetId="b967-9af7-b31b-9cf5" type="profile"/>
+        <infoLink id="2d77-e561-a994-7906" name="Shield of Myrmidia" hidden="false" targetId="c2b9-30a8-1efe-d5a7" type="profile"/>
+        <infoLink id="fdb3-64d5-dbe8-a45a" name="Spear of Myrmidia" hidden="false" targetId="1423-aa45-d15f-5594" type="profile"/>
+        <infoLink id="e440-cfaa-5c4d-5182" name="Prayers of Myrmidia" hidden="false" targetId="659d-1537-180c-4696" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="523a-3e2b-efd4-87e6" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -121,21 +112,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bf39-e6ad-d567-2142" name="Prayers of Myrmidia" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c4d-64fd-2044-ad4d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9919-0997-7e60-38ef" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="ba59-f8c5-15ae-5990" name="Prayers of Myrmidia" hidden="false" targetId="659d-1537-180c-4696" type="rule"/>
-            <infoLink id="4c8c-a09b-cae8-aaba" name="Spear of Myrmidia" hidden="false" targetId="1423-aa45-d15f-5594" type="profile"/>
-            <infoLink id="60b4-67b4-8053-d3ec" name="Command the Legion" hidden="false" targetId="b967-9af7-b31b-9cf5" type="profile"/>
-            <infoLink id="cc7b-b194-10c3-7380" name="Shield of Myrmidia" hidden="false" targetId="c2b9-30a8-1efe-d5a7" type="profile"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -452,14 +428,34 @@
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Book of Wisdom contains a random spell from the Lore of Light each turn. Roll a D6 before casting to determine which spell.</characteristic>
               </characteristics>
             </profile>
-            <profile id="6416-70cd-dd68-5f5e" name="Result" hidden="false" typeId="08a5-5b82-52bb-4b44" typeName="Book of Wisdom spells">
+            <profile id="6416-70cd-dd68-5f5e" name="01" publicationId="894a-5ecc-1ff7-958a" page="76" hidden="false" typeId="4197-5b64-1131-de3a" typeName="Book of Wisdom spells">
               <characteristics>
-                <characteristic name="1" typeId="d31d-905f-038d-a12d">Pha&apos;s Protection.</characteristic>
-                <characteristic name="2" typeId="aae6-db81-02ce-6911">The Speed of Light.</characteristic>
-                <characteristic name="3" typeId="1b27-3600-0055-979b">Light of Battle.</characteristic>
-                <characteristic name="4" typeId="05d3-2d59-6100-c904">Net of Amyntok.</characteristic>
-                <characteristic name="5" typeId="e690-8491-4938-1a53">Banishment.</characteristic>
-                <characteristic name="6" typeId="6eed-7cd9-8a42-b685">Birona&apos;s Timewarp.</characteristic>
+                <characteristic name="Result" typeId="8d7e-2938-2e44-4dc0">Pha&apos;s Protection.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="dd04-1415-415a-3ab7" name="02" publicationId="894a-5ecc-1ff7-958a" page="76" hidden="false" typeId="4197-5b64-1131-de3a" typeName="Book of Wisdom spells">
+              <characteristics>
+                <characteristic name="Result" typeId="8d7e-2938-2e44-4dc0">The Speed of Light.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7330-bc82-5f6e-2552" name="03" publicationId="894a-5ecc-1ff7-958a" page="76" hidden="false" typeId="4197-5b64-1131-de3a" typeName="Book of Wisdom spells">
+              <characteristics>
+                <characteristic name="Result" typeId="8d7e-2938-2e44-4dc0">Light of Battle.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7cb1-8667-7488-6b4d" name="04" publicationId="894a-5ecc-1ff7-958a" page="76" hidden="false" typeId="4197-5b64-1131-de3a" typeName="Book of Wisdom spells">
+              <characteristics>
+                <characteristic name="Result" typeId="8d7e-2938-2e44-4dc0">Net of Amyntok.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3bca-fd44-1aa8-cf95" name="05" publicationId="894a-5ecc-1ff7-958a" page="76" hidden="false" typeId="4197-5b64-1131-de3a" typeName="Book of Wisdom spells">
+              <characteristics>
+                <characteristic name="Result" typeId="8d7e-2938-2e44-4dc0">Banishment.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3ddd-161f-fdc3-22f2" name="06" publicationId="894a-5ecc-1ff7-958a" page="76" hidden="false" typeId="4197-5b64-1131-de3a" typeName="Book of Wisdom spells">
+              <characteristics>
+                <characteristic name="Result" typeId="8d7e-2938-2e44-4dc0">Birona&apos;s Timewarp.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -962,9 +958,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="1bd4-bcae-2339-59f6" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="6960-f679-960d-d2f8" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -999,9 +992,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="328d-8d33-e44c-4cf4" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="8951-e003-5afc-da26" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1214,13 +1204,29 @@
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="d82e-97a1-1129-cf12" name="Result" publicationId="894a-5ecc-1ff7-958a" page="78" hidden="false" typeId="bf89-a293-a65d-fcc9" typeName="Insane Chart">
+        <profile id="d82e-97a1-1129-cf12" name="01" publicationId="894a-5ecc-1ff7-958a" page="78" hidden="false" typeId="4915-9f81-8966-f15c" typeName="Insane Chart">
           <characteristics>
-            <characteristic name="1" typeId="a3e5-0a3b-1fdf-2390">Don Lomente moves in a random direction using the Random Movement (2D6&quot;). He will stop within 1&quot; of a friendly unit.</characteristic>
-            <characteristic name="2" typeId="5f46-c0bf-0b66-4952">Don Lomente is so confused that he will not attack, even if he himself is attacked.</characteristic>
-            <characteristic name="3" typeId="882a-b7da-567a-9bbb">Don Lomente will not move, but may attack anyone who attacks him.</characteristic>
-            <characteristic name="4-5" typeId="c136-b711-6e71-0733">Don Lomente launches himself straight forward using Random Movement (3D6&quot;). If he comes into base contact with a forest or building he will immediately stop to fight that as well, but will respond to attacks made by another source as normal.</characteristic>
-            <characteristic name="6" typeId="7c5e-8d24-78fb-1417">The Mad King moves as the controlling player wishes.</characteristic>
+            <characteristic name="Result" typeId="0ad9-e834-c5d8-c212">Don Lomente moves in a random direction using the Random Movement (2D6&quot;). He will stop within 1&quot; of a friendly unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="af1a-4bc1-f727-148f" name="02" publicationId="894a-5ecc-1ff7-958a" page="78" hidden="false" typeId="4915-9f81-8966-f15c" typeName="Insane Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0ad9-e834-c5d8-c212">Don Lomente is so confused that he will not attack, even if he himself is attacked.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a142-5c7e-9822-ec4e" name="03" publicationId="894a-5ecc-1ff7-958a" page="78" hidden="false" typeId="4915-9f81-8966-f15c" typeName="Insane Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0ad9-e834-c5d8-c212">Don Lomente will not move, but may attack anyone who attacks him.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4a9d-e238-3de4-ecd5" name="04-05" publicationId="894a-5ecc-1ff7-958a" page="78" hidden="false" typeId="4915-9f81-8966-f15c" typeName="Insane Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0ad9-e834-c5d8-c212">Don Lomente launches himself straight forward using Random Movement (3D6&quot;). If he comes into base contact with a forest or building he will immediately stop to fight that as well, but will respond to attacks made by another source as normal.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="277d-2be7-a3df-8f86" name="06" publicationId="894a-5ecc-1ff7-958a" page="78" hidden="false" typeId="4915-9f81-8966-f15c" typeName="Insane Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0ad9-e834-c5d8-c212">The Mad King moves as the controlling player wishes.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1339,7 +1345,9 @@
         <infoLink id="5389-43f3-856e-ecc6" name="Tactical Supremacy" hidden="false" targetId="988f-a5b4-56b9-dbcb" type="rule"/>
         <infoLink id="c50e-9a16-0b04-84f9" name="Duelling Techniques" hidden="false" targetId="0225-7cf5-eae6-d64d" type="rule"/>
         <infoLink id="ab73-6e20-45ec-da4d" name="Face Me, You Coward!" hidden="false" targetId="08d2-54a5-5a3a-4989" type="rule"/>
-        <infoLink id="df63-c073-d01d-9db5" name="Effect" hidden="false" targetId="Effect (Duelling Techniques)" type="profile"/>
+        <infoLink id="df63-c073-d01d-9db5" name="Rapido" hidden="false" targetId="d54f-f72b-9f3c-4782" type="profile"/>
+        <infoLink id="3621-581a-8896-ea86" name="Defensa" hidden="false" targetId="3be7-c611-1ec3-1320" type="profile"/>
+        <infoLink id="ec99-25b3-ef8b-ead5" name="Perferación" hidden="false" targetId="821b-c21e-bfbc-ede3" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dc68-409d-b13c-2d2d" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -1808,7 +1816,9 @@
         <infoLink id="23de-8788-72c5-fd7a" name="Tactical Supremacy" hidden="false" targetId="988f-a5b4-56b9-dbcb" type="rule"/>
         <infoLink id="927c-c47c-b0ad-e70c" name="Duelling Techniques" hidden="false" targetId="0225-7cf5-eae6-d64d" type="rule"/>
         <infoLink id="75aa-1b52-af7c-2085" name="Face Me, You Coward!" hidden="false" targetId="08d2-54a5-5a3a-4989" type="rule"/>
-        <infoLink id="0ddc-52f4-f092-eaa0" name="Effect" hidden="false" targetId="Effect (Duelling Techniques)" type="profile"/>
+        <infoLink id="36c3-f8cb-1013-6a6d" name="Rapido" hidden="false" targetId="d54f-f72b-9f3c-4782" type="profile"/>
+        <infoLink id="5b3c-c57d-65de-69ef" name="Perferación" hidden="false" targetId="821b-c21e-bfbc-ede3" type="profile"/>
+        <infoLink id="4945-d8e2-ebf5-eda4" name="Defensa" hidden="false" targetId="3be7-c611-1ec3-1320" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="671a-d722-9950-fa4e" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2012,9 +2022,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="ac9b-55d0-6823-e347" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2513-740d-19c4-3ca8" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2049,9 +2056,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="abc0-8821-f216-aebc" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="87bb-3fa1-d770-24c2" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2218,6 +2222,10 @@
         <infoLink id="c49c-a99a-2363-4c1a" name="Tactical Supremacy" hidden="false" targetId="988f-a5b4-56b9-dbcb" type="rule"/>
         <infoLink id="a9db-e1f2-1265-a4d3" name="Divine Power" hidden="false" targetId="abae-fccb-0698-8d72" type="rule"/>
         <infoLink id="e2e7-d7aa-0034-485d" name="Blessing of Myrmidia" hidden="false" targetId="80f2-5041-87e8-11b5" type="rule"/>
+        <infoLink id="b976-b862-de2a-1dc9" name="Command the Legion" hidden="false" targetId="b967-9af7-b31b-9cf5" type="profile"/>
+        <infoLink id="c5bd-23c2-5112-314b" name="Shield of Myrmidia" hidden="false" targetId="c2b9-30a8-1efe-d5a7" type="profile"/>
+        <infoLink id="4f6f-246a-99a3-4dbd" name="Spear of Myrmidia" hidden="false" targetId="1423-aa45-d15f-5594" type="profile"/>
+        <infoLink id="3093-2f3b-9a2e-e41c" name="Prayers of Myrmidia" hidden="false" targetId="659d-1537-180c-4696" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bad9-dec7-b671-fb61" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2375,21 +2383,6 @@
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="100.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="00ab-adda-0fc4-17ed" name="Prayers of Myrmidia" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f398-2e54-18b1-56db" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ca6-5fa4-cd46-3b1e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4954-1e8f-9a27-1f73" name="Prayers of Myrmidia" hidden="false" targetId="659d-1537-180c-4696" type="rule"/>
-            <infoLink id="a6fa-4bbb-49e6-d0e2" name="Spear of Myrmidia" hidden="false" targetId="1423-aa45-d15f-5594" type="profile"/>
-            <infoLink id="f566-de8b-4ee9-b82d" name="Command the Legion" hidden="false" targetId="b967-9af7-b31b-9cf5" type="profile"/>
-            <infoLink id="4937-2074-3f2b-4b01" name="Shield of Myrmidia" hidden="false" targetId="c2b9-30a8-1efe-d5a7" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5135,7 +5128,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="72b3-c838-9def-1e88" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="6f09-8e6d-2755-3758" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4b12-f998-db03-139d" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -5191,7 +5183,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="c819-448a-c0e6-5d37" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="9bb9-43c6-fabe-11cb" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
         <infoLink id="d5fd-f2ce-1166-6078" name="Cannon" hidden="false" targetId="4f25-d6c7-f4da-a808" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -6131,14 +6122,22 @@ When suffering casualties from shooting or magic, the Herders follow the rules f
           <profiles>
             <profile id="a9ef-485a-c937-2dfc" name="Standard of Myrmidia" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Each time the unit carrying this banner destroys or breaks an enemy unit, they gain one of the aa bonus for as long as the banner remains in the unit.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Each time the unit carrying this banner destroys or breaks an enemy unit, they gain one of the following bonus for as long as the banner remains in the unit.</characteristic>
               </characteristics>
             </profile>
-            <profile id="da54-31bf-5e00-61a9" name="Units" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="cb9b-6a49-b422-9c38" typeName="Standard of Myrmidia bonuses">
+            <profile id="806b-6688-8d77-d6ad" name="01 Unit" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="8dcd-8c6c-b81d-ef64" typeName="Standard of Myrmidia bonuses">
               <characteristics>
-                <characteristic name="1" typeId="7038-9ec6-cb59-063b">The unit gains +1 to its WS.</characteristic>
-                <characteristic name="2" typeId="109c-4e1d-4218-a779">The unit gains +1 to its S.</characteristic>
-                <characteristic name="3" typeId="913a-4f18-e452-0ea0">The unit gains +1 A.</characteristic>
+                <characteristic name="Result" typeId="ce5a-ecbf-52e8-d8df">The unit gains +1 to its WS.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9344-f92c-cae1-ad7e" name="02 Units" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="8dcd-8c6c-b81d-ef64" typeName="Standard of Myrmidia bonuses">
+              <characteristics>
+                <characteristic name="Result" typeId="ce5a-ecbf-52e8-d8df">The unit gains +1 to its S.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9799-e1ca-7a6a-8428" name="03 Units" publicationId="894a-5ecc-1ff7-958a" page="83" hidden="false" typeId="8dcd-8c6c-b81d-ef64" typeName="Standard of Myrmidia bonuses">
+              <characteristics>
+                <characteristic name="Result" typeId="ce5a-ecbf-52e8-d8df">The unit gains +1 A.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6237,13 +6236,6 @@ Units of Crossbowmen or Handgunners within 3&quot; of a unit in Tercio Formation
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Priestess and her unit gain +1 S, Armour Piercing (1) and Magical Attacks. Remains in Play.</characteristic>
       </characteristics>
     </profile>
-    <profile id="Effect (Duelling Techniques)" name="Effect" publicationId="894a-5ecc-1ff7-958a" page="53" hidden="false" typeId="e5cf-9291-e237-c43a" typeName="Duelling Techniques">
-      <characteristics>
-        <characteristic name="Rapido" typeId="201e-e5d7-8bae-acc8">The Diestro gains Always Strikes First.</characteristic>
-        <characteristic name="Defensa" typeId="6c2b-9ec0-027f-6550">The Diestro gains the Parry (4+).</characteristic>
-        <characteristic name="Perforación" typeId="de84-c008-a9be-56c8">The Diestro gains Killing Blow.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="04a2-7e74-a077-da71" name="Warhorse" publicationId="894a-5ecc-1ff7-958a" page="74" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
@@ -6340,6 +6332,21 @@ Units of Crossbowmen or Handgunners within 3&quot; of a unit in Tercio Formation
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459"/>
+      </characteristics>
+    </profile>
+    <profile id="821b-c21e-bfbc-ede3" name="Perferación" publicationId="894a-5ecc-1ff7-958a" page="53" hidden="false" typeId="334d-a336-f48c-e106" typeName="Duelling Techniques">
+      <characteristics>
+        <characteristic name="Effect" typeId="6759-3910-a749-0a4a">The Diestro gains Always Strikes First.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3be7-c611-1ec3-1320" name="Defensa" publicationId="894a-5ecc-1ff7-958a" page="53" hidden="false" typeId="334d-a336-f48c-e106" typeName="Duelling Techniques">
+      <characteristics>
+        <characteristic name="Effect" typeId="6759-3910-a749-0a4a">The Diestro gains Parry (4+).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d54f-f72b-9f3c-4782" name="Rapido" publicationId="894a-5ecc-1ff7-958a" page="53" hidden="false" typeId="334d-a336-f48c-e106" typeName="Duelling Techniques">
+      <characteristics>
+        <characteristic name="Effect" typeId="6759-3910-a749-0a4a">The Diestro gains Killing Blow.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

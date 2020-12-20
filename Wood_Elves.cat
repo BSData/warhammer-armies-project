@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
@@ -7,51 +7,29 @@
         <characteristicType id="27f1-8a6e-ef6f-514b" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="26c4-c8f5-52f1-7c9d" name="Shadow Dances of Loec">
-      <characteristicTypes>
-        <characteristicType id="0dc0-33a0-1d3d-70fb" name="Whirling Death"/>
-        <characteristicType id="b78f-d698-467f-b8b6" name="Storm of Blades"/>
-        <characteristicType id="4e81-6602-62d4-93f7" name="The Shadows Coil"/>
-        <characteristicType id="e9d6-c32d-5212-cb81" name="Woven Mist"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="dccd-986d-db57-7bf2" name="Waywatcher Trap Table">
-      <characteristicTypes>
-        <characteristicType id="3ac8-ceec-5e67-2f5e" name="1-2"/>
-        <characteristicType id="9d9d-1c4b-50be-5a61" name="3"/>
-        <characteristicType id="8c00-a7a9-b455-fe43" name="4"/>
-        <characteristicType id="9f58-e22c-1a72-a7b6" name="5"/>
-        <characteristicType id="63ae-0a70-11f1-841c" name="6"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="8e2d-9cc8-c081-117a" name="Animal Forms">
-      <characteristicTypes>
-        <characteristicType id="aff1-c70a-a990-8ad8" name="Form of the Bear"/>
-        <characteristicType id="64c5-0fc1-e72b-a8ff" name="Form of the Wolf"/>
-        <characteristicType id="1333-93f0-18f1-4a18" name="Form of the Stag"/>
-        <characteristicType id="d0be-89cf-adc2-4911" name="Form of the Boar"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="d872-10dc-1c71-c498" name="Tree Aspects">
-      <characteristicTypes>
-        <characteristicType id="7920-f82a-1094-9701" name="Birch Aspect"/>
-        <characteristicType id="8982-67a5-ef7a-9466" name="Oak Aspect"/>
-        <characteristicType id="ddfa-dd3f-f38b-09f8" name="Willow Aspect"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="2c66-39d8-ed0b-3900" name="Mysterious Forest Table">
-      <characteristicTypes>
-        <characteristicType id="f727-13c4-3641-bac7" name="1"/>
-        <characteristicType id="9755-dbc2-e822-66e3" name="2"/>
-        <characteristicType id="99b5-685e-4ef3-7105" name="3"/>
-        <characteristicType id="3947-2396-3161-dcc7" name="4"/>
-        <characteristicType id="72fa-9e29-b2b4-1883" name="5"/>
-        <characteristicType id="dea4-20f8-19d7-4eeb" name="6"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="ef35-2c21-8d1a-6aae" name="Spites of Athel Loren">
       <characteristicTypes>
         <characteristicType id="d65b-0ee6-7ec8-53ad" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="f177-f216-6915-eaa4" name="Waywatcher Trap Table">
+      <characteristicTypes>
+        <characteristicType id="d3a9-1eef-31d3-21a7" name="Result"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="af2f-97fd-759c-6c43" name="Animal Forms">
+      <characteristicTypes>
+        <characteristicType id="d226-4dbf-1640-c40d" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="3e8c-5c0f-7652-a460" name="Tree Aspects">
+      <characteristicTypes>
+        <characteristicType id="bfa6-3c15-4006-7946" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="c98a-1b2d-79e2-889f" name="Shadow Dances of Loec">
+      <characteristicTypes>
+        <characteristicType id="a6b0-6fae-d219-5dc3" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -377,9 +355,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="b775-2b32-79af-a552" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="efde-91af-bb71-89f4" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="e225-5836-e4f8-015b">
               <constraints>
@@ -469,9 +444,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="dcff-df98-796a-acb8" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="7828-dd4c-c856-75ef" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="069b-a076-f68e-a66d">
               <constraints>
@@ -1228,9 +1200,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="0299-11ff-26f1-ad37" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="ad48-b321-673a-2dfe" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1265,9 +1234,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="f7c3-3374-878f-b550" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="d06e-694d-585e-e254" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1466,9 +1432,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d20e-a7f2-7785-acbd" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="b117-1e20-7572-3c17" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1500,9 +1463,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="e1c6-8341-f0ea-6566" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="e958-4e1c-e35d-a406" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1567,7 +1527,9 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <infoLink id="f34f-61c4-bf53-33cf" name="Tree Aspects" hidden="false" targetId="743f-f76f-6efe-aab4" type="rule"/>
         <infoLink id="c0d9-ac57-4fbd-826d" name="Spirit-walk" hidden="false" targetId="dbbf-6698-99eb-8404" type="rule"/>
         <infoLink id="6337-b150-cf01-eec5" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
-        <infoLink id="f044-ef7f-df39-5b0c" name="Effect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
+        <infoLink id="f044-ef7f-df39-5b0c" name="Birch Aspect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
+        <infoLink id="3197-4960-bd59-b47c" name="Oak Aspect" hidden="false" targetId="baf0-242a-0a41-766a" type="profile"/>
+        <infoLink id="34e1-0054-3c29-9543" name="Willow Aspect" hidden="false" targetId="607e-5d23-cbef-21d0" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1e65-74f4-e2e8-ca2a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -1589,9 +1551,6 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="a706-6761-a1c7-3485" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="4e6d-a2f3-8609-4e52" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -1920,9 +1879,6 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="6d5d-aa81-1c42-2696" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="3f1d-4dca-3621-7509" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -2258,7 +2214,10 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="d73b-9bd9-df00-2ba7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
             <infoLink id="6e8f-704e-7717-9091" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="4779-f25c-fba4-a213" name="Animal Form" hidden="false" targetId="fca4-0d36-e304-5bca" type="rule"/>
-            <infoLink id="bebd-1d07-c173-cd6b" name="Effect" hidden="false" targetId="Effect Animal Forms" type="profile"/>
+            <infoLink id="bebd-1d07-c173-cd6b" name="Form of the Bear" hidden="false" targetId="f838-ee10-df65-4b8e" type="profile"/>
+            <infoLink id="15b2-f4dc-e1a9-cbdc" name="Form of the Boar" hidden="false" targetId="bcc5-425c-7d36-8127" type="profile"/>
+            <infoLink id="a1d6-51e7-1ed9-ff0a" name="Form of the Stag" hidden="false" targetId="1e47-2785-1be4-545e" type="profile"/>
+            <infoLink id="4cc6-cef0-dc63-2d64" name="Form of the Wolf" hidden="false" targetId="5861-da88-9f8d-ccd8" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="7231-4b3e-f2b5-dd54" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2914,9 +2873,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="2aa9-2ec5-4cb1-1ff7" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="3889-581c-1bf5-8050" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2951,9 +2907,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="1cac-809e-701c-8c26" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="9a93-27fb-be48-ba6f" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -3100,7 +3053,10 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <infoLink id="e124-df8a-09c6-bcba" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
         <infoLink id="155c-f317-b85e-4498" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="b12e-aac9-5f95-9e02" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
-        <infoLink id="a4eb-f176-7988-049e" name="Effect" hidden="false" targetId="Effect Shadow Dances of Loec" type="profile"/>
+        <infoLink id="a4eb-f176-7988-049e" name="Storm of Blades" hidden="false" targetId="70aa-a723-123f-10f9" type="profile"/>
+        <infoLink id="5416-7615-0188-612b" name="Woven Mist" hidden="false" targetId="efdf-5ff4-ee10-a035" type="profile"/>
+        <infoLink id="df88-6cdc-9c3a-1637" name="The Shadows Coil" hidden="false" targetId="f369-0e1b-2d36-664d" type="profile"/>
+        <infoLink id="eeb8-7417-6b5d-1bee" name="Whirling Death" hidden="false" targetId="2c85-7f7b-5e9a-6aee" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1ccc-6fdd-7a91-c112" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -3149,9 +3105,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="ab41-8022-1a54-d6ec" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="6263-10b5-8fbe-6b34" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="5467-5552-24ce-5789">
               <constraints>
@@ -3200,7 +3153,11 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <infoLink id="5c6d-4feb-ce68-453d" name="Sniper" hidden="false" targetId="8977-b58c-704d-705e" type="rule"/>
         <infoLink id="08f4-ea6e-0fed-87da" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="0443-6cc8-c043-9336" name="Lethal Shot" hidden="false" targetId="cd7f-3ad6-61f2-86d3" type="rule"/>
-        <infoLink id="f5b4-7b16-87c5-4033" name="Result" hidden="false" targetId="Result Waywatcher Trap Table" type="profile"/>
+        <infoLink id="f5b4-7b16-87c5-4033" name="01-02" hidden="false" targetId="bb5e-e099-0dce-d91a" type="profile"/>
+        <infoLink id="a2d5-7d3f-a4e8-4eb9" name="03" hidden="false" targetId="be57-4cfd-8d88-0ae9" type="profile"/>
+        <infoLink id="ac87-7740-3975-6842" name="04" hidden="false" targetId="bd77-537f-e99d-8342" type="profile"/>
+        <infoLink id="9963-2e81-8138-55b3" name="05" hidden="false" targetId="fd06-4754-729a-652d" type="profile"/>
+        <infoLink id="750e-43d9-5218-90fc" name="06" hidden="false" targetId="481e-e0e8-4302-0039" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a8cf-b40c-e490-07ee" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -3340,7 +3297,9 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <infoLink id="07e1-3964-0144-1d93" name="Tree Aspects" hidden="false" targetId="743f-f76f-6efe-aab4" type="rule"/>
         <infoLink id="2832-5017-8647-8957" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
         <infoLink id="fad5-a99f-e511-77e4" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
-        <infoLink id="1772-bb77-b95a-00dd" name="Effect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
+        <infoLink id="1772-bb77-b95a-00dd" name="Birch Aspect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
+        <infoLink id="a0d4-02ac-8218-ef3d" name="Oak Aspect" hidden="false" targetId="baf0-242a-0a41-766a" type="profile"/>
+        <infoLink id="be3a-80db-a317-65fa" name="Willow Aspect" hidden="false" targetId="607e-5d23-cbef-21d0" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9dec-5113-02d8-f5aa" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -3361,9 +3320,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="efcd-abc1-c41a-ef6d" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="2bd6-27fe-2743-8c45" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -3585,6 +3541,16 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       </costs>
     </selectionEntry>
     <selectionEntry id="e494-846a-72e8-0283" name="Deepwood Scouts" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="8fab-f58b-a49c-8a26" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7d-1004-1aa0-1a23" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8fab-f58b-a49c-8a26" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="a5c5-535b-874d-3727" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3966,7 +3932,9 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="8afc-057e-c769-0d38" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
             <infoLink id="b81b-18c5-e790-1775" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
             <infoLink id="cc50-16b3-84df-272a" name="Tree Aspects" hidden="false" targetId="743f-f76f-6efe-aab4" type="rule"/>
-            <infoLink id="4330-88b2-e3d1-2f8d" name="Effect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
+            <infoLink id="4330-88b2-e3d1-2f8d" name="Birch Aspect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
+            <infoLink id="6573-0bcc-8af1-ce0a" name="Oak Aspect" hidden="false" targetId="baf0-242a-0a41-766a" type="profile"/>
+            <infoLink id="5684-c48c-dfe5-6bcf" name="Willow Aspect" hidden="false" targetId="607e-5d23-cbef-21d0" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="31f9-e143-f384-2c3d" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
@@ -4430,7 +4398,10 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="888c-8bd0-7b6d-e935" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
             <infoLink id="1090-5b29-630c-d4d6" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="e8fe-729a-686b-9873" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
-            <infoLink id="cfb1-72f2-b2f0-9d6c" name="Effect" hidden="false" targetId="Effect Shadow Dances of Loec" type="profile"/>
+            <infoLink id="cfb1-72f2-b2f0-9d6c" name="Woven Mist" hidden="false" targetId="efdf-5ff4-ee10-a035" type="profile"/>
+            <infoLink id="83d5-3bed-bb61-003f" name="Storm of Blades" hidden="false" targetId="70aa-a723-123f-10f9" type="profile"/>
+            <infoLink id="2b30-6259-ff8d-97e5" name="The Shadows Coil" hidden="false" targetId="f369-0e1b-2d36-664d" type="profile"/>
+            <infoLink id="1990-8617-fe96-6500" name="Whirling Death" hidden="false" targetId="2c85-7f7b-5e9a-6aee" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="86f4-bf68-74f9-c9fb" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
@@ -4862,7 +4833,10 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="5254-24ac-7504-61c1" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="e99b-1d13-6f6b-5ae4" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="7420-f252-b720-b0e6" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-            <infoLink id="2baf-e97e-c1bb-1b40" name="Effect" hidden="false" targetId="Effect Animal Forms" type="profile"/>
+            <infoLink id="2baf-e97e-c1bb-1b40" name="Form of the Boar" hidden="false" targetId="bcc5-425c-7d36-8127" type="profile"/>
+            <infoLink id="5e36-13ac-ddd3-ae74" name="Form of the Bear" hidden="false" targetId="f838-ee10-df65-4b8e" type="profile"/>
+            <infoLink id="71b4-799b-f3c9-6074" name="Form of the Stag" hidden="false" targetId="1e47-2785-1be4-545e" type="profile"/>
+            <infoLink id="63dd-e8c3-90c5-8712" name="Form of the Wolf" hidden="false" targetId="5861-da88-9f8d-ccd8" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="14.0"/>
@@ -5326,7 +5300,11 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="c627-7fb6-6080-064a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="2389-1fc0-bbbf-a96f" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
             <infoLink id="de66-f69c-0e07-c53c" name="Lethal Shot" hidden="false" targetId="cd7f-3ad6-61f2-86d3" type="rule"/>
-            <infoLink id="4259-2ca2-61b9-de3e" name="Result" hidden="false" targetId="Result Waywatcher Trap Table" type="profile"/>
+            <infoLink id="4259-2ca2-61b9-de3e" name="03" hidden="false" targetId="be57-4cfd-8d88-0ae9" type="profile"/>
+            <infoLink id="b1e8-9b04-fdaa-64df" name="04" hidden="false" targetId="bd77-537f-e99d-8342" type="profile"/>
+            <infoLink id="17e9-d0e8-91b1-689b" name="05" hidden="false" targetId="fd06-4754-729a-652d" type="profile"/>
+            <infoLink id="5edd-3925-31cc-4cc8" name="06" hidden="false" targetId="481e-e0e8-4302-0039" type="profile"/>
+            <infoLink id="00ea-aa3e-1e45-f212" name="01-02" hidden="false" targetId="bb5e-e099-0dce-d91a" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="5c59-8db4-68b5-abd4" name="Asrai Longbow" hidden="false" collective="true" import="true" type="upgrade">
@@ -7220,36 +7198,9 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Special Rules" typeId="27f1-8a6e-ef6f-514b">If a model has enchanted arrows, they must use them when shooting with an Asrai Longbow. All Shooting attacks made with enchanted arrows count as Magical Attacks. Shooting attacks made with Arcane Bodkins have the Armour Piercing (1) special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="Effect Shadow Dances of Loec" name="Effect" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="26c4-c8f5-52f1-7c9d" typeName="Shadow Dances of Loec">
+    <profile id="Effect Tree Aspects" name="Birch Aspect" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="3e8c-5c0f-7652-a460" typeName="Tree Aspects">
       <characteristics>
-        <characteristic name="Whirling Death" typeId="0dc0-33a0-1d3d-70fb">While performing this dance, the Wardancers have Armour Piercing (1) and Killing Blow.</characteristic>
-        <characteristic name="Storm of Blades" typeId="b78f-d698-467f-b8b6">While they perform this dance, each model in the unit is granted +1 A.</characteristic>
-        <characteristic name="The Shadows Coil" typeId="4e81-6602-62d4-93f7">While performing this dance, the Wardancers&apos; Ward Save is increased to 3+.</characteristic>
-        <characteristic name="Woven Mist" typeId="e9d6-c32d-5212-cb81">When performing this dance, the Wardancers Always Strike First.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Result Waywatcher Trap Table" name="Result" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="dccd-986d-db57-7bf2" typeName="Waywatcher Trap Table">
-      <characteristics>
-        <characteristic name="1-2" typeId="3ac8-ceec-5e67-2f5e">Spikes: The enemy unit suffers D6 S 3 hits.</characteristic>
-        <characteristic name="3" typeId="9d9d-1c4b-50be-5a61">Snares: The enemy unit deducts D3&quot; from the charge distance.</characteristic>
-        <characteristic name="4" typeId="8c00-a7a9-b455-fe43">Nets: All enemy models in base contact with the Waywatchers must pass a S test or be unable to attack in the ensuing close combat.</characteristic>
-        <characteristic name="5" typeId="9f58-e22c-1a72-a7b6">Camouflaged Pit: The enemy unit counts as moving through Dangerous Terrain. If the unit would already treat the forest as Dangerous Terrain, they instead fail the test on a 1-2.</characteristic>
-        <characteristic name="6" typeId="63ae-0a70-11f1-841c">Impaler: Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined by the Wood Elf player.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Effect Animal Forms" name="Effect" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="8e2d-9cc8-c081-117a" typeName="Animal Forms">
-      <characteristics>
-        <characteristic name="Form of the Bear" typeId="aff1-c70a-a990-8ad8">While in this form, the unit gains +1 M, +2 S, +1 T, -2 I, and +2 A.</characteristic>
-        <characteristic name="Form of the Wolf" typeId="64c5-0fc1-e72b-a8ff">While in this form, the unit gains +4 M, +1 A,  Devastating Charge and Swiftstride.</characteristic>
-        <characteristic name="Form of the Stag" typeId="1333-93f0-18f1-4a18">While in this form, the unit gains +4 M, +1 S, Impact Hits (1) and Swiftstride.</characteristic>
-        <characteristic name="Form of the Boar" typeId="d0be-89cf-adc2-4911">While in this form, the unit gains +2 M, +1 T, Swiftstride and +2 S on the turn that they charge.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Effect Tree Aspects" name="Effect" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="d872-10dc-1c71-c498" typeName="Tree Aspects">
-      <characteristics>
-        <characteristic name="Birch Aspect" typeId="7920-f82a-1094-9701">While in this Aspect, the Dryads gain +1 A.</characteristic>
-        <characteristic name="Oak Aspect" typeId="8982-67a5-ef7a-9466">While in this Aspect, the Dryads gain +1 T.</characteristic>
-        <characteristic name="Willow Aspect" typeId="ddfa-dd3f-f38b-09f8">While in this Aspect, enemy models in base contact suffers -1 To Hit.</characteristic>
+        <characteristic name="Effect" typeId="bfa6-3c15-4006-7946">While in this Aspect, the Dryads gain +1 A.</characteristic>
       </characteristics>
     </profile>
     <profile id="2e72-68a3-29f4-b15a" name="Strangleroots" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -7257,16 +7208,6 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (D6+1).</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="cb3b-8f74-2bae-c6f3" name="Result" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="2c66-39d8-ed0b-3900" typeName="Mysterious Forest Table">
-      <characteristics>
-        <characteristic name="1" typeId="f727-13c4-3641-bac7">No effect. The forest uses its standard rules.</characteristic>
-        <characteristic name="2" typeId="9755-dbc2-e822-66e3">Abyssal Wood: A unit with the majority of its models within an Abyssal Wood causes Fear.</characteristic>
-        <characteristic name="3" typeId="99b5-685e-4ef3-7105">Blood Forest: Whenever a spell is successfully cast by (or at) a model in a blood forest, all units wholly or partially within it suffer D6 S 4 hits. When any hits have been resolved, the Blood Forest moves 2D6&quot; in a random direction, moving around any intervening terrain features by the shortest route. This does not move the models that were in the Blood Forest.</characteristic>
-        <characteristic name="4" typeId="3947-2396-3161-dcc7">Fungus Forest: Any unit at least partially within the Fungus Forest is subject to the rules for Stupidity. Any Goblin unit at least partially within the Fungus Forest is also Stubborn.</characteristic>
-        <characteristic name="5" typeId="72fa-9e29-b2b4-1883">Venom Thicket: Any model in a Venom Thicket has Poisoned Attacks (applies to close combat attacks only). However, any model moving through a Venom Thicket must take a Dangerous Terrain test.</characteristic>
-        <characteristic name="6" typeId="dea4-20f8-19d7-4eeb">Wildwood: Roll for any unit at least partially within the Wildwood at the end of the Movement phase. On a 4+, the unit suffers D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="5114-24cc-3c58-89ec" name="Elven Steed" publicationId="e967-620f-06be-096a" page="137" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7421,6 +7362,81 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bb5e-e099-0dce-d91a" name="01-02" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="f177-f216-6915-eaa4" typeName="Waywatcher Trap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="d3a9-1eef-31d3-21a7">Spikes: The enemy unit suffers D6 S 3 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="be57-4cfd-8d88-0ae9" name="03" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="f177-f216-6915-eaa4" typeName="Waywatcher Trap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="d3a9-1eef-31d3-21a7">Snares: The enemy unit deducts D3&quot; from the charge distance.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bd77-537f-e99d-8342" name="04" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="f177-f216-6915-eaa4" typeName="Waywatcher Trap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="d3a9-1eef-31d3-21a7">Nets: All enemy models in base contact with the Waywatchers must pass a S test or be unable to attack in the ensuing close combat.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fd06-4754-729a-652d" name="05" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="f177-f216-6915-eaa4" typeName="Waywatcher Trap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="d3a9-1eef-31d3-21a7">Camouflaged Pit: The enemy unit counts as moving through Dangerous Terrain. If the unit would already treat the forest as Dangerous Terrain, they instead fail the test on a 1-2.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="481e-e0e8-4302-0039" name="06" publicationId="e967-620f-06be-096a" page="120" hidden="false" typeId="f177-f216-6915-eaa4" typeName="Waywatcher Trap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="d3a9-1eef-31d3-21a7">Impaler: Treat the unit as being hit by a bolt thrower in the front rank. The file it hits is determined by the Wood Elf player.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5861-da88-9f8d-ccd8" name="Form of the Wolf" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="af2f-97fd-759c-6c43" typeName="Animal Forms">
+      <characteristics>
+        <characteristic name="Effect" typeId="d226-4dbf-1640-c40d">While in this form, the unit gains +4 M, +1 A,  Devastating Charge and Swiftstride.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f838-ee10-df65-4b8e" name="Form of the Bear" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="af2f-97fd-759c-6c43" typeName="Animal Forms">
+      <characteristics>
+        <characteristic name="Effect" typeId="d226-4dbf-1640-c40d">While in this form, the unit gains +1 M, +2 S, +1 T, -2 I, and +2 A.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e47-2785-1be4-545e" name="Form of the Stag" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="af2f-97fd-759c-6c43" typeName="Animal Forms">
+      <characteristics>
+        <characteristic name="Effect" typeId="d226-4dbf-1640-c40d">While in this form, the unit gains +4 M, +1 S, Impact Hits (1) and Swiftstride.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bcc5-425c-7d36-8127" name="Form of the Boar" publicationId="e967-620f-06be-096a" page="124" hidden="false" typeId="af2f-97fd-759c-6c43" typeName="Animal Forms">
+      <characteristics>
+        <characteristic name="Effect" typeId="d226-4dbf-1640-c40d">While in this form, the unit gains +2 M, +1 T, Swiftstride and +2 S on the turn that they charge.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="baf0-242a-0a41-766a" name="Oak Aspect" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="3e8c-5c0f-7652-a460" typeName="Tree Aspects">
+      <characteristics>
+        <characteristic name="Effect" typeId="bfa6-3c15-4006-7946">While in this Aspect, the Dryads gain +1 T.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="607e-5d23-cbef-21d0" name="Willow Aspect" publicationId="e967-620f-06be-096a" page="127" hidden="false" typeId="3e8c-5c0f-7652-a460" typeName="Tree Aspects">
+      <characteristics>
+        <characteristic name="Effect" typeId="bfa6-3c15-4006-7946">While in this Aspect, enemy models in base contact suffers -1 To Hit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2c85-7f7b-5e9a-6aee" name="Whirling Death" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="c98a-1b2d-79e2-889f" typeName="Shadow Dances of Loec">
+      <characteristics>
+        <characteristic name="Effect" typeId="a6b0-6fae-d219-5dc3">While performing this dance, the Wardancers have Armour Piercing (1) and Killing Blow.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70aa-a723-123f-10f9" name="Storm of Blades" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="c98a-1b2d-79e2-889f" typeName="Shadow Dances of Loec">
+      <characteristics>
+        <characteristic name="Effect" typeId="a6b0-6fae-d219-5dc3">While they perform this dance, each model in the unit is granted +1 A.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f369-0e1b-2d36-664d" name="The Shadows Coil" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="c98a-1b2d-79e2-889f" typeName="Shadow Dances of Loec">
+      <characteristics>
+        <characteristic name="Effect" typeId="a6b0-6fae-d219-5dc3">While performing this dance, the Wardancers&apos; Ward Save is increased to 3+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="efdf-5ff4-ee10-a035" name="Woven Mist" publicationId="e967-620f-06be-096a" page="118" hidden="false" typeId="c98a-1b2d-79e2-889f" typeName="Shadow Dances of Loec">
+      <characteristics>
+        <characteristic name="Effect" typeId="a6b0-6fae-d219-5dc3">When performing this dance, the Wardancers Always Strike First.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

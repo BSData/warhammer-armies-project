@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="11" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
-    <profileType id="7d72-ca7f-447c-58c6" name="Martial Arts Fighting Style">
-      <characteristicTypes>
-        <characteristicType id="508f-73a1-e818-1d43" name="Black Tiger"/>
-        <characteristicType id="d38c-a601-59af-7d76" name="White Crane"/>
-        <characteristicType id="73df-7c63-9819-1810" name="Fanged Snkae"/>
-        <characteristicType id="fff0-6b49-b526-aa6f" name="Great Dragon"/>
-        <characteristicType id="78d5-6895-8330-4f99" name="Praying Mantis"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="7557-86fd-25f4-8e4c" name="Stratagem">
       <characteristicTypes>
         <characteristicType id="8fea-ed8b-8bc7-649a" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="550d-26fa-4188-2b88" name="Martial Arts Fighting Style">
+      <characteristicTypes>
+        <characteristicType id="67e2-8eae-143b-773b" name="Effect"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -416,9 +412,6 @@ mounted). For each successful Parry she makes, she may make a single attack back
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="9ea9-83d0-8a45-c5ea" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="351d-8ad6-bba6-a832" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb96-84f9-aeb4-ad35">
               <constraints>
@@ -868,9 +861,6 @@ mounted). For each successful Parry she makes, she may make a single attack back
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="d242-e9b6-1931-b179" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="621f-e777-e553-61c4" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -906,9 +896,6 @@ mounted). For each successful Parry she makes, she may make a single attack back
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="cff7-81db-8756-1e5d" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="11d2-3089-ec57-149d" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1226,13 +1213,29 @@ Points, just like the Battle Standard.</description>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="c6bd-41a2-9bf5-a539" name="Effect" publicationId="8abe-59b3-1084-5e51" page="103" hidden="false" typeId="7d72-ca7f-447c-58c6" typeName="Martial Arts Fighting Style">
+        <profile id="b231-97f7-98ed-c55c" name="Black Tiger" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
           <characteristics>
-            <characteristic name="Black Tiger" typeId="508f-73a1-e818-1d43">Cheng Long gains +D3 A.</characteristic>
-            <characteristic name="White Crane" typeId="d38c-a601-59af-7d76">Cheng Long gains Always Strikes First and +1 To Hit in close combat.</characteristic>
-            <characteristic name="Fanged Snkae" typeId="73df-7c63-9819-1810">Cheng Long gains Heroic Killing Blow.</characteristic>
-            <characteristic name="Great Dragon" typeId="fff0-6b49-b526-aa6f">Cheng Long gains +2 S.</characteristic>
-            <characteristic name="Praying Mantis" typeId="78d5-6895-8330-4f99">Cheng Long gains Dodge (3+).</characteristic>
+            <characteristic name="Effect" typeId="67e2-8eae-143b-773b">Cheng Long gains +D3 A.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4cc6-4661-ca0d-c432" name="Fanged Snake" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+          <characteristics>
+            <characteristic name="Effect" typeId="67e2-8eae-143b-773b">Cheng Long gains Heroic Killing Blow.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91b3-ff86-7c4d-03df" name="Great Dragon" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+          <characteristics>
+            <characteristic name="Effect" typeId="67e2-8eae-143b-773b">Cheng Long gains +2 S.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6a74-853b-2d07-ab33" name="Praying Mantis" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+          <characteristics>
+            <characteristic name="Effect" typeId="67e2-8eae-143b-773b">Cheng Long gains Dodge (3+).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9c35-f20b-a993-bdb2" name="White Crane" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+          <characteristics>
+            <characteristic name="Effect" typeId="67e2-8eae-143b-773b">Cheng Long gains Always Strikes First and +1 To Hit in close combat.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1288,7 +1291,11 @@ Points, just like the Battle Standard.</description>
         <infoLink id="12b5-9922-b072-4e4f" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
         <infoLink id="b2bd-839b-a789-302c" name="Strider" hidden="false" targetId="c270-3956-9b64-b587" type="rule"/>
         <infoLink id="173f-94ed-ac35-7bc1" name="Martial Arts Fighting Styles" hidden="false" targetId="9f07-af45-69b1-e3d3" type="rule"/>
-        <infoLink id="a813-5f6b-6cfb-3ff9" name="Effect" hidden="false" targetId="05c5-ff66-0445-4b38" type="profile"/>
+        <infoLink id="2a97-783f-485f-6d06" name="Praying Mantis" hidden="false" targetId="b39d-bc8e-2d1f-2691" type="profile"/>
+        <infoLink id="eb34-4c14-dbb0-f5ac" name="Black Tiger" hidden="false" targetId="ff8c-fc5e-6f6a-c185" type="profile"/>
+        <infoLink id="0705-0ff8-e364-4e9b" name="Great Dragon" hidden="false" targetId="3098-b779-3dc3-d145" type="profile"/>
+        <infoLink id="3d3a-86d6-6b80-83e0" name="Fanged Snake" hidden="false" targetId="baf8-e5b4-8451-42d3" type="profile"/>
+        <infoLink id="92bf-e13e-210a-0764" name="White Crane" hidden="false" targetId="ff56-437b-8c19-71fa" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8a18-a048-3c96-8847" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -1494,9 +1501,6 @@ Points, just like the Battle Standard.</description>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="a0ba-e1c7-eb6f-f10d" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="f01f-8f3d-047c-0fb6" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -1532,9 +1536,6 @@ Points, just like the Battle Standard.</description>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="ac25-5bc3-4f09-6252" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="c504-3624-c1c3-45e1" name="Lore of Magic" hidden="false" collective="false" import="true">
                   <constraints>
@@ -4284,12 +4285,16 @@ as an additional attack.</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="7703-080e-c875-7888" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
+            <infoLink id="7703-080e-c875-7888" name="Great Dragon" hidden="false" targetId="3098-b779-3dc3-d145" type="profile"/>
             <infoLink id="b17a-2929-3fa3-e00f" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
             <infoLink id="7336-6fb2-39f7-8e5a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="d659-af25-6954-235e" name="Strider" hidden="false" targetId="c270-3956-9b64-b587" type="rule"/>
             <infoLink id="bb1a-7c17-7484-310a" name="Martial Arts Fighting Styles" hidden="false" targetId="9f07-af45-69b1-e3d3" type="rule"/>
-            <infoLink id="8b35-1d92-0312-0266" name="Effect" hidden="false" targetId="05c5-ff66-0445-4b38" type="profile"/>
+            <infoLink id="cb51-94f7-5c5f-3604" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
+            <infoLink id="9127-a752-0046-ed23" name="Fanged Snake" hidden="false" targetId="baf8-e5b4-8451-42d3" type="profile"/>
+            <infoLink id="01f5-b40b-2c75-3da6" name="White Crane" hidden="false" targetId="ff56-437b-8c19-71fa" type="profile"/>
+            <infoLink id="9d1e-983d-51db-8c18" name="Praying Mantis" hidden="false" targetId="b39d-bc8e-2d1f-2691" type="profile"/>
+            <infoLink id="718e-cae5-6472-0b78" name="Black Tiger" hidden="false" targetId="ff8c-fc5e-6f6a-c185" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="35c0-a4ec-6ff7-8d89" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -5204,9 +5209,6 @@ as an additional attack.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <infoLinks>
-                        <infoLink id="61cb-f272-710b-0202" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
@@ -5277,9 +5279,6 @@ as an additional attack.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <infoLinks>
-                        <infoLink id="213a-c7bf-e18e-3a54" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
@@ -5459,7 +5458,6 @@ as an additional attack.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="67f9-1b5b-9929-e831" name="Stone Thrower" hidden="false" targetId="8651-78f3-14e9-f66b" type="profile"/>
-        <infoLink id="28fb-61b2-fd18-8049" name="Result" hidden="false" targetId="Stone Thrower Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cfc9-d779-db93-04ba" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -5533,9 +5531,6 @@ as an additional attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="77ef-ebdd-b578-04e1" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="e211-a368-98fb-c0f2" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -5696,9 +5691,6 @@ If the artillery dice shows a misfire, roll a D6 and consult the Blackpowder Mis
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="0ec0-13c2-d1f1-1652" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="8d5c-7ffa-4138-61a8" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
@@ -5780,7 +5772,6 @@ Place the centre of small template where the cannon ball lands, and resolve dama
       </rules>
       <infoLinks>
         <infoLink id="62a7-85bb-085b-3ddc" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
-        <infoLink id="a216-075f-cb01-87e0" name="Result" hidden="false" targetId="Black Powder Misfire Chart" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="45bc-0002-cb2d-1959" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5986,9 +5977,6 @@ After these hits are resolved, place the Phoenix at the line&apos;s end point. I
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="9bae-60a9-2a5e-15cc" name="Result" hidden="false" targetId="Miscast Table" type="profile"/>
-          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="db20-abfc-cfdf-6c99" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
@@ -6521,15 +6509,6 @@ All units of Field Engineers must deploy at the same time, just like War Machine
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Multiple Shots (3).</characteristic>
       </characteristics>
     </profile>
-    <profile id="05c5-ff66-0445-4b38" name="Effect" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="7d72-ca7f-447c-58c6" typeName="Martial Arts Fighting Style">
-      <characteristics>
-        <characteristic name="Black Tiger" typeId="508f-73a1-e818-1d43">The Dragon Monks gain +1 A.</characteristic>
-        <characteristic name="White Crane" typeId="d38c-a601-59af-7d76">The Dragon Monks gain Always Strikes First.</characteristic>
-        <characteristic name="Fanged Snkae" typeId="73df-7c63-9819-1810">The Dragon Monks gain Killing Blow.</characteristic>
-        <characteristic name="Great Dragon" typeId="fff0-6b49-b526-aa6f">The Dragon Monks gain +1 S.</characteristic>
-        <characteristic name="Praying Mantis" typeId="78d5-6895-8330-4f99">The Dragon Monks gain Dodge (5+).</characteristic>
-      </characteristics>
-    </profile>
     <profile id="13c4-a820-433a-13d0" name="Explosive Ammunition" publicationId="8abe-59b3-1084-5e51" page="90" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon</characteristic>
@@ -6649,6 +6628,31 @@ ball lands, and resolve damage as if it were a Stone Thrower. No Bounce roll is 
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War machine (Bolt Thorwer)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff8c-fc5e-6f6a-c185" name="Black Tiger" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+      <characteristics>
+        <characteristic name="Effect" typeId="67e2-8eae-143b-773b">The Dragon Monks gain +1 A.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff56-437b-8c19-71fa" name="White Crane" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+      <characteristics>
+        <characteristic name="Effect" typeId="67e2-8eae-143b-773b">The Dragon Monks gain Always Strikes First.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="baf8-e5b4-8451-42d3" name="Fanged Snake" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+      <characteristics>
+        <characteristic name="Effect" typeId="67e2-8eae-143b-773b">The Dragon Monks gain Killing Blow.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3098-b779-3dc3-d145" name="Great Dragon" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+      <characteristics>
+        <characteristic name="Effect" typeId="67e2-8eae-143b-773b">The Dragon Monks gain +1 S.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b39d-bc8e-2d1f-2691" name="Praying Mantis" publicationId="8abe-59b3-1084-5e51" page="78" hidden="false" typeId="550d-26fa-4188-2b88" typeName="Martial Arts Fighting Style">
+      <characteristics>
+        <characteristic name="Effect" typeId="67e2-8eae-143b-773b">The Dragon Monks gain Dodge (5+).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

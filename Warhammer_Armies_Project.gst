@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.9" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -46,10 +46,10 @@
     <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.1" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.1" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters 1.2" shortName="Emp" publisher="Warhammer - Empire Special Characters 1.0" publicationDate="20.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.1" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.0" publicationDate="18.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters 1.0 " shortName="Bret" publisher="Warhammer - Bretonnia Special Characters 1.0" publicationDate="25.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters 1.1" shortName="Bret" publisher="Warhammer - Bretonnia Special Characters 1.1" publicationDate="10.12.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fef7-683c-50d7-d1bb" name="Dwarfs Special Characters 1.0" shortName="DW" publisher="Warhammer - Dwarfs Special Characters 1.0" publicationDate="27.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="1354-aa33-a41b-202a" name="High Elves Special Characters 1.0" shortName="HE" publisher="Warhammer - High Elves Special Characters 1.0" publicationDate="25.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters 1.0" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.0" publicationDate="27.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="1354-aa33-a41b-202a" name="High Elves Special Characters 1.1" shortName="HE" publisher="Warhammer - High Elves Special Characters 1.1" publicationDate="10.12.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters 1.1" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.1" publicationDate="10.12.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -129,34 +129,6 @@
         <characteristicType id="d3a4-721b-f750-5564" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="130f-f4b6-557c-9411" name="Miscast Table">
-      <characteristicTypes>
-        <characteristicType id="e3e1-eaee-133a-76f2" name="1-3"/>
-        <characteristicType id="93d1-9e23-340c-d53a" name="4"/>
-        <characteristicType id="d6c5-f059-c34e-5919" name="5"/>
-        <characteristicType id="5f8a-9bec-6bc7-6f39" name="6"/>
-        <characteristicType id="9057-904d-3787-30c4" name="7"/>
-        <characteristicType id="6e0d-3e80-1c94-f094" name="8"/>
-        <characteristicType id="1c40-75a8-7d40-8d2b" name="9"/>
-        <characteristicType id="9abf-70d2-70ff-248e" name="10"/>
-        <characteristicType id="eb78-e0e0-e499-a543" name="11"/>
-        <characteristicType id="12b7-a88b-236d-0ee0" name="12"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="fa1b-20e7-cc4f-b975" name="Stone Thrower Misfire Chart">
-      <characteristicTypes>
-        <characteristicType id="7b86-9ca6-97dc-4067" name="1"/>
-        <characteristicType id="8406-bdac-e43b-f021" name="2-3"/>
-        <characteristicType id="32c6-89c7-2f31-0da7" name="4-6"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="a935-37c5-2020-f46b" name="Blackpowder Misfire Chart">
-      <characteristicTypes>
-        <characteristicType id="6ca9-f799-ee54-458a" name="1-2"/>
-        <characteristicType id="b12d-fe00-e4a3-d1a9" name="3-4"/>
-        <characteristicType id="b9f5-7356-399b-c6f9" name="5-6"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="c119-42f4-2cbe-71a5" name="Magic Weapon">
       <characteristicTypes>
         <characteristicType id="4285-3917-6bf9-348b" name="Range"/>
@@ -189,6 +161,32 @@
         <characteristicType id="21bd-8489-e79e-8efa" name="3000-3999 pts"/>
         <characteristicType id="6159-0a42-a77c-6b39" name="4000-4999 pts"/>
         <characteristicType id="91fb-666c-daf9-b7a1" name="Each +1000pts"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="121a-930d-b248-ee3e" name="Minimum Unit Requirement">
+      <characteristicTypes>
+        <characteristicType id="5f2a-99ce-f8a3-eac9" name="0-499 pts"/>
+        <characteristicType id="221f-5ad7-8b1c-4337" name="500-999 pts"/>
+        <characteristicType id="b079-6a7a-787c-584d" name="1000-1499 pts"/>
+        <characteristicType id="c5dd-526f-37a8-3c15" name="1499-2000 pts"/>
+        <characteristicType id="415d-0476-97ff-9680" name="2000-2499 pts"/>
+        <characteristicType id="f4ce-28ba-aee1-e961" name="2500-2999 pts"/>
+        <characteristicType id="5e64-d73e-fa3a-3c61" name="+ 500 points"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="1766-fa9f-6052-97c8" name="Miscast Table">
+      <characteristicTypes>
+        <characteristicType id="281f-07de-e7b1-1e4a" name="Result"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="4537-0079-60d2-4469" name="Blackpowder Misfire Chart">
+      <characteristicTypes>
+        <characteristicType id="0256-a2e8-e71c-22cc" name="Result"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="a9be-6f35-44aa-bf7d" name="Stone Thrower Misfire Chart">
+      <characteristicTypes>
+        <characteristicType id="d187-dd40-0edb-b165" name="Result"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -305,6 +303,147 @@
             <characteristic name="3000-3999 pts" typeId="21bd-8489-e79e-8efa">3</characteristic>
             <characteristic name="4000-4999 pts" typeId="6159-0a42-a77c-6b39">4</characteristic>
             <characteristic name="Each +1000pts" typeId="91fb-666c-daf9-b7a1">+1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9c6a-1990-ad07-074b" name="Duplicate Choices" publicationId="9e23-79cb-pubN66727" page="126" hidden="false">
+          <description>There is a limit on how many duplicates of each troop type you can include in your army. Remember, this limit applies only to duplicate Special or Rare unit choices of the same type, not to the total number of Special and Rare units overall. Note that this limit applies to the basic troop type and isn&apos;t dependent on the size of the unit or optional wargear. If a character has a Monster, Chariot or Shrine mount that is available as a Special or Rare choice, then these will also count towards the limit of duplicate choices.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c499-0467-232f-7466" name="Minimum Unit Requirement" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c87b-2f0e-27b0-02b1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f002-a001-8964-ad0c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="125" hidden="false" typeId="121a-930d-b248-ee3e" typeName="Minimum Unit Requirement">
+          <characteristics>
+            <characteristic name="0-499 pts" typeId="5f2a-99ce-f8a3-eac9">1</characteristic>
+            <characteristic name="500-999 pts" typeId="221f-5ad7-8b1c-4337">2</characteristic>
+            <characteristic name="1000-1499 pts" typeId="b079-6a7a-787c-584d">3</characteristic>
+            <characteristic name="1499-2000 pts" typeId="c5dd-526f-37a8-3c15">4</characteristic>
+            <characteristic name="2000-2499 pts" typeId="415d-0476-97ff-9680">5</characteristic>
+            <characteristic name="2500-2999 pts" typeId="f4ce-28ba-aee1-e961">6</characteristic>
+            <characteristic name="+ 500 points" typeId="5e64-d73e-fa3a-3c61">+1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d8a1-3a01-a893-f82c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="125" hidden="false">
+          <description>An army must contain at least one unit for every 500 points or more played, starting at a minimum of one.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a92c-dee5-1aa8-4a42" name="Miscast Table" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22de-1797-7260-b838" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6fb3-b0c8-656e-d475" name="12" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Damned by Chaos: The Wizard is immediately removed as a casualty, regardless of any protective magic item or rule they might have.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a511-7f28-0f3b-1a91" name="07" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Detonation: The Wizard and all models in base contact with him suffer a S 10 hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc70-79a8-a31c-c477" name="05" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Magical Feedback: The Wizard and every model on the same side within 12&quot; that can channel/generate power or dispel dice suffer a S 4 hit as a result of the magical backlash. The Wizard cannot attempt to cast further spells this phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d716-289e-2d74-e0c5" name="09" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Calamitous Detonation: Centre the small round template over the Wizard – every model underneath the template suffers a S 10 hit (including the Wizard – they do not benefit from Look Out Sir! in this case).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f0b3-811a-2c59-1669" name="08" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Amnesia: The caster forgets how to cast the spell and will not be able to cast it again during this battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f267-0d21-8489-77a3" name="04" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Lost Concentration: The opposing player may immediately cast any one of their own spells of the same casting difficulty rating or less. No casting roll is required – the spell is automatically cast – but it can be dispelled by the player whose turn it is as normal (by using power dice in the same way as dispel dice). They need to beat the basic casting value of the spell to dispel it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1a08-69de-ebfa-da11" name="11" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Dimensional Cascade: Centre the large round template over the Wizard – every model underneath the template (including the Wizard – they do not benefit from Look Out Sir! in this case) suffers a S 10 hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3893-4961-bc56-1cb8" name="10" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Deamonic Poessession: The caster suffers one S 10 hit and loses a Wizard level and their highest levelled spell. If the caster reaches Level 0, he stops counting as a Wizard for all purposes and therefore will not be able to use any arcane magic items he is carrying.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92e1-d44e-2735-96fc" name="06" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Power Drain: The casting player loses D3 dice from the power pool.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8424-e2b3-178b-a62c" name="01-03" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+          <characteristics>
+            <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Loss of Power: The Wizard cannot attempt to cast further spells this phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa37-e5db-5351-a408" name="Blackpowder Misfire Chart" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8ed-fd7d-58d1-f615" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="385d-5c05-b088-169b" name="01-02" publicationId="9e23-79cb-pubN66727" page="107" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0256-a2e8-e71c-22cc">Destroyed!: The war machine is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1adf-38fa-f9cd-97c8" name="03-04" publicationId="9e23-79cb-pubN66727" page="107" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0256-a2e8-e71c-22cc">Malfunction: The war machine cannot fire this turn or in the controlling player&apos;s next turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c47b-e500-a5b2-5143" name="05-06" publicationId="9e23-79cb-pubN66727" page="107" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="0256-a2e8-e71c-22cc">May not Shoot: The war machine can shoot as normal again in the controlling player&apos;s next turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7e0-ba91-0886-7916" name="Stone Thrower Misfire Chart" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2e5-059d-7b35-1ee2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f14c-d708-7ec1-d950" name="01" publicationId="9e23-79cb-pubN66727" page="109" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="d187-dd40-0edb-b165">Destroyed!: The war machine is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7a8-f42f-997c-7958" name="02-03" publicationId="9e23-79cb-pubN66727" page="109" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="d187-dd40-0edb-b165">Disabled: The stone thrower suffers a wound, with no armour saves allowed. The stone thrower cannot fire this turn or in the controlling player&apos;s next turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf7e-50c9-f10c-da28" name="04-06" publicationId="9e23-79cb-pubN66727" page="109" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
+          <characteristics>
+            <characteristic name="Result" typeId="d187-dd40-0edb-b165">May not Shoot: The stone thrower is unharmed and can shoot as normal again in the controlling player&apos;s next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2936,6 +3075,11 @@ Models that are Immune to all three above effects have Immunity (Psychology). Th
     <rule id="f210-1e7c-a315-2849" name="Parry (5+)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
       <description>Models with this rule gain a Ward save in close combat. The value of the Ward save is stated in the bracket. It cannot be used against attacks made against the model&apos;s flank or rear, nor can it be used against attacks that Hit automatically, attacks that are made at double the model&apos;s own Strength value, nor can it be used by mounted models, unless specified.</description>
     </rule>
+    <rule id="3c4c-827c-fe44-7b5c" name="Multiple Shots (3)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+      <description>The weapon enables its wielder to fire several shots at a time, rather than a single shot. The number of shots the weapon can fire is stated in brackets. Such weapons can either fire once without penalty, or as many times as indicated in the bracket with a -1 To Hit penalty (in addition to any other modifiers To Hit). War Machines with this rule do not suffer -1 To Hit for firing Multiple Shots.
+
+All models in the unit (excluding characters) must fire either single or Multiple Shots.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="3ecc-5d9c-7d29-ee2f" name="Javelins" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -3180,34 +3324,6 @@ Models that are Immune to all three above effects have Immunity (Psychology). Th
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Requires Two Hands. Strength Bonus (2).</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Black Powder Misfire Chart" name="Result" publicationId="9e23-79cb-pubN66727" page="107" hidden="false" typeId="a935-37c5-2020-f46b" typeName="Blackpowder Misfire Chart">
-      <characteristics>
-        <characteristic name="1-2" typeId="6ca9-f799-ee54-458a">Destroyed!: The war machine is destroyed.</characteristic>
-        <characteristic name="3-4" typeId="b12d-fe00-e4a3-d1a9">Malfunction: The war machine cannot fire this turn or in the controlling player&apos;s next turn.</characteristic>
-        <characteristic name="5-6" typeId="b9f5-7356-399b-c6f9">May not Shoot: The war machine can shoot as normal again in the controlling player&apos;s next turn.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Stone Thrower Misfire Chart" name="Result" publicationId="9e23-79cb-pubN66727" page="109" hidden="false" typeId="fa1b-20e7-cc4f-b975" typeName="Stone Thrower Misfire Chart">
-      <characteristics>
-        <characteristic name="1" typeId="7b86-9ca6-97dc-4067">Destroyed!: The war machine is destroyed.</characteristic>
-        <characteristic name="2-3" typeId="8406-bdac-e43b-f021">Disabled: The stone thrower suffers a wound, with no armour saves allowed. The stone thrower cannot fire this turn or in the controlling player&apos;s next turn.</characteristic>
-        <characteristic name="4-6" typeId="32c6-89c7-2f31-0da7">May not Shoot: The stone thrower is unharmed and can shoot as normal again in the controlling player&apos;s next turn.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="Miscast Table" name="Result" publicationId="9e23-79cb-pubN66727" page="38" hidden="false" typeId="130f-f4b6-557c-9411" typeName="Miscast Table">
-      <characteristics>
-        <characteristic name="1-3" typeId="e3e1-eaee-133a-76f2">Loss of Power: The Wizard cannot attempt to cast further spells this phase.</characteristic>
-        <characteristic name="4" typeId="93d1-9e23-340c-d53a">Lost Concentration: The opposing player may immediately cast any one of their own spells of the same casting difficulty rating or less. No casting roll is required – the spell is automatically cast – but it can be dispelled by the player whose turn it is as normal (by using power dice in the same way as dispel dice). They need to beat the basic casting value of the spell to dispel it.</characteristic>
-        <characteristic name="5" typeId="d6c5-f059-c34e-5919">Magical Feedback: The Wizard and every model on the same side within 12&quot; that can channel/generate power or dispel dice suffer a S 4 hit as a result of the magical backlash. The Wizard cannot attempt to cast further spells this phase.</characteristic>
-        <characteristic name="6" typeId="5f8a-9bec-6bc7-6f39">Power Drain: The casting player loses D3 dice from the power pool.</characteristic>
-        <characteristic name="7" typeId="9057-904d-3787-30c4">Detonation: The Wizard and all models in base contact with him suffer a S 10 hit.</characteristic>
-        <characteristic name="8" typeId="6e0d-3e80-1c94-f094">Amnesia: The caster forgets how to cast the spell and will not be able to cast it again during this battle.</characteristic>
-        <characteristic name="9" typeId="1c40-75a8-7d40-8d2b">Calamitous Detonation: Centre the small round template over the Wizard – every model underneath the template suffers a S 10 hit (including the Wizard – they do not benefit from Look Out Sir! in this case).</characteristic>
-        <characteristic name="10" typeId="9abf-70d2-70ff-248e">Deamonic Poessession: The caster suffers one S 10 hit and loses a Wizard level and their highest levelled spell. If the caster reaches Level 0, he stops counting as a Wizard for all purposes and therefore will not be able to use any arcane magic items he is carrying.</characteristic>
-        <characteristic name="11" typeId="eb78-e0e0-e499-a543">Dimensional Cascade: Centre the large round template over the Wizard – every model underneath the template (including the Wizard – they do not benefit from Look Out Sir! in this case) suffers a S 10 hit.</characteristic>
-        <characteristic name="12" typeId="12b7-a88b-236d-0ee0">Damned by Chaos: The Wizard is immediately removed as a casualty, regardless of any protective magic item or rule they might have.</characteristic>
       </characteristics>
     </profile>
     <profile id="4a1d-35f9-e891-b533" name="Fireball" publicationId="9e23-79cb-pubN66727" page="139" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

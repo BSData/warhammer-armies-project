@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="fac7-f094-ecff-930e" name="Bladedances">
@@ -662,7 +662,7 @@
         <selectionEntry id="faa2-4f1a-b985-4f63" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91c8-edaf-37d2-328b" type="max"/>
-            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f3fb-0f7f-0e61-9fd2" type="max"/>
+            <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f3fb-0f7f-0e61-9fd2" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d130-6c8b-1dc7-9bd8" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="5421-4657-cf36-86e2" type="selectionEntryGroup"/>
@@ -4965,28 +4965,19 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2d05-d23d-5dc9-088a" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f7ce-f884-05e5-a250">
+            <selectionEntry id="e4e4-48bb-6372-3709" name="Naphtha Bombs" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b450-d252-ec77-0681" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa2a-b5bf-e8dd-ac01" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ffb-7246-9ae3-90b8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="464e-2d88-b153-2fcf" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="f7ce-f884-05e5-a250" name="Naphtha Bombs" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b8c-172c-b875-ff99" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="10f4-94d7-4121-b2e0" name="Naphtha Bombs" hidden="false" targetId="6e81-1f73-8598-e7c3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="a973-9d70-258e-a9ab" name="Naphtha Bombs" hidden="false" targetId="6e81-1f73-8598-e7c3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>

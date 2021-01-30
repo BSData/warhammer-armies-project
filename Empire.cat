@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5941-78ef-698e-a105" name="Empire" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5941-78ef-698e-a105" name="Empire" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="ffb8-c6d9-01f6-a218" name="Land Ship Calamity Chart">
@@ -239,6 +239,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="8da9-53eb-2a25-e76e" name="Ghal Maraz" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="3ed8-d82a-8538-f3cd" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="273c-e436-93f5-5ab4" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ed8-d82a-8538-f3cd" type="max"/>
               </constraints>
@@ -1745,6 +1752,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="49cc-5b22-0e05-b983" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c203-7d8a-8651-7989" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="15b3-fee3-8a6c-edaa" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8c34-0f59-14b8-819d" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="2635-e537-1298-525a" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="a3ac-27dc-8b12-e388" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="7d36-3fa0-2da7-755b" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="a907-82b2-c122-c8d8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -1839,6 +1861,21 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="75fc-4907-3e75-b75e" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a54c-411b-6908-b846" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a293-e408-f8db-0a02" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="bab4-3b1f-8db3-5634" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="4709-2a0e-d8ff-cb35" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="fa2e-6248-2f20-57a7" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="2fcd-9a39-b6f5-33fe" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -1941,6 +1978,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="93f9-65b3-8e13-a48a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4754-c4ac-5652-46a3" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dd6b-a3fc-dfb2-5fe7" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="dbb0-b896-c7ce-4519" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="d7e6-1f5b-441a-7166" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="dc35-b8b1-6387-e17f" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="17bb-ed95-b14b-bd7f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="b3e3-ec51-2241-17d5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -2011,6 +2063,21 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1cd5-8f9f-005c-1d16" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2905-9dd8-c586-dfd3" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4344-9f75-dc82-e244" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c628-fbbe-47e3-b195" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="3750-5aff-007a-e459" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="ed46-1cc5-597a-117f" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="6540-d236-c229-9f52" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2147,6 +2214,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="3807-edba-b865-30cd" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81e8-a86d-4f99-506b" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bb9a-ffdc-44a0-e714" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="cb43-f7a0-efa1-3686" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="5cba-bceb-a8e9-5b23" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="cacc-684b-ccff-bbec" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="511b-ca2c-322b-62d5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="bf91-6527-538f-b83c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -2213,6 +2295,21 @@
                   <infoLinks>
                     <infoLink id="2054-6acf-73bc-2b22" name="Long Bow" hidden="false" targetId="cde7-c47d-3818-1e9d" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8277-720c-d722-b32b" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5aa-7eff-9ec9-dc0f" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dfc9-a832-de40-3d4a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6b1c-80c4-53e4-3cde" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="c398-f159-a07c-804b" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="f6c1-8c40-a8d5-c0c7" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="6295-07ae-3f1e-88a6" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2316,6 +2413,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="184f-bebe-d928-66da" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0aa-a844-8c5b-09ab" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="350a-cbec-b1bb-d320" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2be5-1c6e-c376-c310" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="5409-ac4b-46e2-b2f4" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="924f-ad34-5664-f285" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="673a-3eb5-7a38-5eb3" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="19e1-7710-d675-0c0e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -2410,6 +2522,21 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4bcd-37c4-c3bb-7428" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d4a-ea80-374e-4c12" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4463-8970-fb8b-32e7" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4e77-2f0c-9c48-433c" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="d147-c8cd-0a7c-dda1" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="836a-d1d2-6be3-d8cd" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="ef46-0239-89d1-6c27" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2509,6 +2636,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="4ad0-c284-c26c-64da" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90ea-967b-d352-9313" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3580-88d8-afc3-2b3a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2984-a3ef-9490-69cc" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="a3d7-7491-5842-1bee" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="d589-d6b3-fb76-340d" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="0257-0d97-7eba-5882" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="30d5-bb48-cde5-add4" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -2575,6 +2717,21 @@
                   <infoLinks>
                     <infoLink id="5c0f-8e45-391d-2ee7" name="Long Bow" hidden="false" targetId="cde7-c47d-3818-1e9d" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8f2c-f13d-8f88-6d22" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b71-38b3-fef1-c509" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="95ae-d432-24ff-d3ea" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d6dd-2303-3508-b352" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="64a7-9874-d679-bf7c" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="edca-39a0-21d7-c18a" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="ee34-09b2-2503-553e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2646,6 +2803,21 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3313-3d42-3180-a839" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f05d-030c-05e8-d822" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c1b5-4c21-6aec-cb6e" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="5899-f8a4-5527-648c" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="c800-eec5-3822-8667" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="fec2-094b-61b3-8409" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="7844-5e45-13af-dd8e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2730,6 +2902,21 @@
                   <infoLinks>
                     <infoLink id="6c48-20b1-1b31-202c" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="548e-1834-0e81-e9df" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="428c-7351-7427-b0ae" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d097-e250-9bf1-1b4d" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="5f58-8348-7658-a116" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="fbaf-d662-d5cc-d9ce" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="6eda-db06-5a84-8716" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="1f8f-8165-acfc-4faf" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2833,6 +3020,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="c351-be20-7abe-7c1e" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1182-5224-160b-c0be" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f572-8eb0-2a7f-1394" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="cee0-5719-2910-e4ff" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="e143-4221-4e5b-a848" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="bb1b-7f20-503f-d3cb" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="1d32-21df-2a96-a560" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="7994-2ab6-aaaf-3584" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -2913,6 +3115,21 @@
                   <infoLinks>
                     <infoLink id="de1a-74c1-76d7-d3e0" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="56d3-1d8d-54c4-c9b5" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb1f-5abe-bd84-0cad" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="47e1-3c86-cf02-a1e2" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6851-b2f9-59bf-23b4" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="7c15-5c97-a5c7-7619" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="8c9f-85fb-b71e-c1be" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="1c36-ec71-7934-4452" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2998,6 +3215,21 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="07ac-a677-d7dc-49bc" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7ee-c7e1-0243-fb43" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c7b-d56d-f68f-ef0c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="270c-173e-507d-c65c" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="2959-83a9-7e43-6e2d" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="b003-06ea-25aa-cfd8" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="9241-1de0-8fe7-68f1" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3100,6 +3332,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="4992-5caf-9285-d5a0" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b688-8d54-8934-96ba" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="73b9-440d-b4f2-14a9" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9564-9e4b-792c-ed9f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="e788-7c5b-faa6-a496" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="572b-f191-7823-c1ee" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="77a5-57fb-d48d-3c7d" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="ab58-10f0-6301-df4d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -3168,6 +3415,21 @@
                   <infoLinks>
                     <infoLink id="dccf-809f-8e5c-a278" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a82d-e8d6-b8af-114a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="96b4-b027-e929-4f26" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a103-14e2-4396-e56d" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0cb0-e941-a379-353c" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="7796-fb28-2e78-c98d" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="f3cf-ab01-9695-535a" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="7cb1-9cbe-b84b-2ceb" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3243,6 +3505,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="40ef-881c-6a85-cdd3" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a952-a021-bf0c-b26f" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e6d0-abb1-d337-f2db" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6d8f-ee3e-94b5-23a6" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="4604-7fef-922b-d5e6" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="bcd1-3dad-39a5-ba72" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="0e0d-620e-6eff-9b0f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="73c9-555b-ba4e-2b60" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -3299,6 +3576,21 @@
                   <infoLinks>
                     <infoLink id="84ce-4c4d-b76e-5b33" name="Brace of Pistols" hidden="false" targetId="7259-6759-3c5f-ce3c" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="260c-3a78-b249-011a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b4e-8246-74c1-9ac2" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5a72-9a79-dfc1-4d0d" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6d8f-8f45-a6b9-4f9a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="230f-a29a-493d-a36f" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="1b55-4494-a439-e30f" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="a072-44c5-d7ff-f92f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3373,6 +3665,21 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d55-3c5c-afd7-dd67" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="17c8-8998-ebc5-3436" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c92-b1e4-9ead-0d4c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="984f-3a23-1d2a-92d2" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="1d5b-c6f9-8d25-1686" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="7547-9089-b44c-22d1" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="1523-8ca5-c6d8-0b92" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3494,6 +3801,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="f9f2-5bec-932a-ee66" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="340e-5541-7303-e0ef" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ea65-7bf6-072d-dc90" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="44e6-2524-b484-0101" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="75db-eee7-cef3-dbe5" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="6318-c359-a614-62e8" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="eb45-60f2-cca3-8e19" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="18ab-3639-c536-7feb" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -3548,6 +3870,21 @@
                   <infoLinks>
                     <infoLink id="2f04-ea44-e35f-488d" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7284-594e-e9a8-7d01" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1bc-bfb2-61f8-8261" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b228-bc65-8593-4a75" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="bb22-ec0e-b906-e76d" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="5100-d6fb-506d-eb4d" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="02d3-75ff-55d1-8aa1" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="3af2-503d-1af2-57b4" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3636,6 +3973,21 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="86d8-363c-9090-0afd" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac33-35e7-0276-6ae2" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1395-77da-7f0a-b117" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="803c-78f5-01b6-9c76" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="c665-e619-8f73-5e48" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="26da-2bd5-8f93-3698" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="f244-85aa-ea3f-f344" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="b3b4-deea-72d3-99b0" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -3715,6 +4067,21 @@
                   <infoLinks>
                     <infoLink id="b106-ee19-a992-6da8" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d370-7852-a18a-51a0" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b76-84ad-caab-e5d7" type="max"/>
+                    <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e093-71b3-a97f-fc59" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6c9a-db5b-faf3-8e10" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="b35b-55d2-186f-6f25" type="selectionEntryGroup"/>
+                    <entryLink id="7c59-2dcd-5150-cc15" name="Talismans" hidden="false" collective="false" import="true" targetId="cec9-9857-b836-23e0" type="selectionEntryGroup"/>
+                    <entryLink id="f63c-58b0-fec2-6d88" name="Magic Armour" hidden="false" collective="false" import="true" targetId="6418-0e46-5741-a7a8" type="selectionEntryGroup"/>
+                    <entryLink id="eca9-b2e8-24fa-1885" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="284e-4851-02e6-1d3f" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -4989,6 +5356,13 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
       </costs>
     </selectionEntry>
     <selectionEntry id="b958-735b-1a8c-ea04" name="Valten" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="f67e-e7a5-f847-e2e7" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="273c-e436-93f5-5ab4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f67e-e7a5-f847-e2e7" type="max"/>
       </constraints>
@@ -5012,13 +5386,13 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
         <rule id="b1ff-f604-7aff-59f0" name="Iron Resolve" publicationId="315d-135b-135c-07ce" page="239" hidden="false">
           <description>Valten has a Ward save (5+). If Valten is killed, take a LD test for him at the end of that phase. If he passes, his astounding strength of will allows him to ignore the wound and continue fighting. He remains alive on 1 Wound, and the wounds that killed him are discounted. The effects of combat resolution, are worked out after determining whether Valten recovers. This rule does not apply if he is fleeing and is run down by chargers or pursuers, or slain by a Killing Blow.</description>
         </rule>
-        <rule id="4b5c-3d2e-fc23-ec79" name="Against the Odds" publicationId="315d-135b-135c-07ce" page="239" hidden="false">
-          <description>Enemy units can never gain the combat resolution bonus points for attacking in the flank or rear in a combat involving Valten. In addition, Valten and any unit he leads have Immunity (Psychology) and are Stubborn.</description>
-        </rule>
         <rule id="fa19-f589-d7a4-6721" name="Awesome Presence" publicationId="315d-135b-135c-07ce" page="239" hidden="false">
           <description>Wounds inflicted by Valten in close combat are counted towards the Empire combat resolution score of any combat within 12&quot; of him, not just the one he is taking part in. Valten may never be the army&apos;s General.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="d9d1-ba89-db59-a0ff" name="Against the Odds" hidden="false" targetId="a82a-ced8-152c-a647" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="575b-a917-c202-9ff9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
@@ -18135,7 +18509,7 @@ Liarsbane instead.</characteristic>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8b18-a69c-592d-56e7" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d02f-6ea1-8c80-b021" name="Count Mandred" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="d02f-6ea1-8c80-b021" name="Count Mandred" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -18204,7 +18578,7 @@ Liarsbane instead.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b787-3fe4-e4b7-2f71" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c47b-f657-dab3-819d" name="Verminbane" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="c47b-f657-dab3-819d" name="Verminbane" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -18222,7 +18596,7 @@ Liarsbane instead.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca24-ef49-eacf-0598" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8fb8-b9f8-14bd-4cf3" name="Horn of the White Wolf" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="8fb8-b9f8-14bd-4cf3" name="Horn of the White Wolf" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Whenever Mandred declares a charge, the target must take a Panic test before choosing their charge reaction.</characteristic>
               </characteristics>
@@ -18245,7 +18619,7 @@ Liarsbane instead.</characteristic>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="29e2-a4c1-add6-f036" type="max"/>
       </constraints>
       <profiles>
-        <profile id="7b1c-df7a-384c-87c8" name="Rutger Wolfrick" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="7b1c-df7a-384c-87c8" name="Rutger Wolfrick" publicationId="dcfc-4992-9141-dee0" page="10" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -18261,10 +18635,10 @@ Liarsbane instead.</characteristic>
         </profile>
       </profiles>
       <rules>
-        <rule id="466f-573d-da3f-0dd6" name="Fear and Loathing" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false">
+        <rule id="466f-573d-da3f-0dd6" name="Fear and Loathing" publicationId="dcfc-4992-9141-dee0" page="10" hidden="false">
           <description>Rutger has Hatred (Warriors of Chaos). However, he also treats all models from Warhammer: Warriors of Chaos as causing Fear against him. If they already cause Fear, they now cause Terror instead.</description>
         </rule>
-        <rule id="c04c-3942-b369-74ce" name="Mentally Unbalanced" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false">
+        <rule id="c04c-3942-b369-74ce" name="Mentally Unbalanced" publicationId="dcfc-4992-9141-dee0" page="10" hidden="false">
           <description>If half or more of any unit&apos;s starting models that Rutger joins are killed at any point during the battle, Rutger
 will lose it completely! From then onwards he gains Frenzy for the remainder of the game.</description>
         </rule>
@@ -18328,7 +18702,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7c47-1cca-7244-45c8" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6b84-5498-289d-a412" name="Brother Valdemar" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="6b84-5498-289d-a412" name="Brother Valdemar" publicationId="dcfc-4992-9141-dee0" page="11" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -18344,10 +18718,10 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
         </profile>
       </profiles>
       <rules>
-        <rule id="93e3-6ec4-ace4-37d1" name="Courage of the Believer" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false">
+        <rule id="93e3-6ec4-ace4-37d1" name="Courage of the Believer" publicationId="dcfc-4992-9141-dee0" page="11" hidden="false">
           <description>Brother Valdemar and any unit he joins gains Immunity (Fear).</description>
         </rule>
-        <rule id="8209-4c81-de51-05f2" name="Faith in Sigmar" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false">
+        <rule id="8209-4c81-de51-05f2" name="Faith in Sigmar" publicationId="dcfc-4992-9141-dee0" page="11" hidden="false">
           <description>Brother Valdemar and any unit he joins may re-roll failed Break tests.</description>
         </rule>
       </rules>
@@ -18393,7 +18767,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49c4-8842-9351-43d0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="652c-ea7a-0bd0-dcc4" name="Book of Uncommon Prayer" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="652c-ea7a-0bd0-dcc4" name="Book of Uncommon Prayer" publicationId="dcfc-4992-9141-dee0" page="11" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Once per Magic phase, Brother Valdemar may re-roll one power dice when he attempts to cast one of his Battle Prayers.</characteristic>
               </characteristics>
@@ -18617,7 +18991,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b497-1622-a0de-9194" type="max"/>
       </constraints>
       <profiles>
-        <profile id="0237-f206-b75f-bcab" name="Hubert Valentour" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="0237-f206-b75f-bcab" name="Hubert Valentour" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -18633,7 +19007,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
         </profile>
       </profiles>
       <rules>
-        <rule id="33f9-5d11-0581-deba" name="Hates Evil Magic" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false">
+        <rule id="33f9-5d11-0581-deba" name="Hates Evil Magic" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false">
           <description>Hubert gains Hatred against all Wizards from the following army books: Beastmen, Chaos Dwarfs, Daemons of Chaos, Dark Elves, Skaven, Vampire Counts, Warriors of Chaos.</description>
         </rule>
       </rules>
@@ -18689,7 +19063,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9dc0-6443-ab2b-2ea5" type="max"/>
           </constraints>
           <profiles>
-            <profile id="daf0-75a1-0f79-2368" name="Sanctified Silver Bullets" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="daf0-75a1-0f79-2368" name="Sanctified Silver Bullets" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All shots made using these bullets have Multiple Wounds (D3) against all models from Warhammer: Daemons of Chaos and Vampire Counts.</characteristic>
               </characteristics>
@@ -18705,7 +19079,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f17-5e09-7208-6f93" type="max"/>
           </constraints>
           <profiles>
-            <profile id="43c3-3579-b68f-9c4f" name="Eichelbaum&apos;s Scroll" publicationId="dcfc-4992-9141-dee0" page="7" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="43c3-3579-b68f-9c4f" name="Eichelbaum&apos;s Scroll" publicationId="dcfc-4992-9141-dee0" page="9" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Once per turn, when an enemy spell has been cast, Hubert can read Eichelbaum&apos;s Scroll instead of attempting to dispel the spell by using dispel dice. This gives him 3 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. This may also be used to dispel spells that Remains in Play. However, if the dispel attempt fails, the scroll is destroyed and cannot be used for the remainder of the battle. Hubert may use this item despite not being a Wizard.</characteristic>
               </characteristics>
@@ -18721,6 +19095,312 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="105.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa5e-3813-f1e9-ff25" name="Bertha Bestraufrung" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d4b6-dd8d-a5a8-7740" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b90b-5ea0-a6b8-f838" name="Bertha Bestraufrung" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b95e-3033-7fae-2227" name="High Martriarch" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false">
+          <description>Bertha must join a unit of Sisters of Sigmar if possible. In addition, the unit becomes Stubborn while she remains with it.</description>
+        </rule>
+        <rule id="4acd-7bbd-f621-2954" name="Sigmar&apos;s Handmaiden" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false">
+          <description>When casting Battle Prayers, Bertha gains a +1 casting bonus to the result.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d166-6b15-b9d6-6900" name="Divine Power" hidden="false" targetId="44e1-ad81-2f8b-49db" type="rule"/>
+        <infoLink id="5068-48c3-09d7-b31a" name="Immunity (Fear)" hidden="false" targetId="9fed-6076-6c75-b774" type="rule"/>
+        <infoLink id="6dba-8ef1-f41d-4993" name="Hammer of Sigmar" hidden="false" targetId="adec-808a-e49a-d7c9" type="profile"/>
+        <infoLink id="6fac-b425-ee7d-51e3" name="Shield of Faith" hidden="false" targetId="742a-aa0e-34c7-ae36" type="profile"/>
+        <infoLink id="0243-0b99-77df-179f" name="Soulfire" hidden="false" targetId="dd1f-6720-2d30-c6e8" type="profile"/>
+        <infoLink id="8a75-d9ec-2901-0729" name="Battle Prayers" hidden="false" targetId="2fc8-8eef-c508-0f80" type="rule"/>
+        <infoLink id="1774-2633-80cf-57fd" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
+        <infoLink id="bf4d-16ca-dfa3-38dd" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7705-7c8f-0f57-89e9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="54a7-5e88-d3fe-efca" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed78-ed2d-00a9-2019" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ce8-2198-ec44-7d24" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="45e4-4a95-a27c-40a5" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="466c-f7aa-f15d-b410" name="Sigmarite Hammers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ae2-458b-7a32-b5eb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d2e-5117-941e-6c8b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f5a8-02de-7df2-9925" name="Sigmarite Hammers" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Two/Additional Hand Weapons. The Sigmarite Warhammers give Bertha Armour Piercing (1). In addition, she gains +1 To Wound models with Daemonic, Undead or Vampiric.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0fb0-8f1a-4178-a953" name="Holy Relic" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bb4-c798-85f6-831f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e108-60ab-a529-82b1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1b7a-9647-8040-3e19" name="Holy Relic" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. The Holy Relic allows Bertha and any unit she joins to automatically pass the first LD they are required to make during the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0f81-a848-0cce-1ff1" name="Blessed Water" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6e7-8bf7-5a65-ce96" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7fc1-0577-5303-ce0a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1dc0-f24e-92f2-6412" name="Blessed Water" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. Blessed Water can be used in the same way as a throwing weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="83e2-be77-fa60-b381" name="Blessed Water" publicationId="dcfc-4992-9141-dee0" page="8" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">8&quot;</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Multiple Shots (2). Quick to Fire. One use only. If it hits, it inflicts one automatic Wound which Ignores Armour Saves against models with Daemonic, Undead or Vampiric.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="115.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="273c-e436-93f5-5ab4" name="Valten" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="2441-9409-d2ac-dc98" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8da9-53eb-2a25-e76e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b958-735b-1a8c-ea04" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2441-9409-d2ac-dc98" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="431f-50e8-eeac-6786" name="Valten" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fff9-31d2-4b14-d979" name="Chosen of Sigmar" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false">
+          <description>Valten has a Ward save (5+). In addition, once per game, he may harness the very power of Sigmar at the start of any close combat phase. Roll a D3; Valten adds the result to his WS, S, T and
+A characteristics until the end of the phase.</description>
+        </rule>
+        <rule id="7644-273a-d4a1-672f" name="Iron Resolve" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false">
+          <description>If Valten is killed, take a LD test for him at the end of that phase. If he passes, he remains alive on 1 Wound, and the wounds that killed him are discounted. The effects of combat resolution, are worked out after determining whether Valten recovers. This rule does not apply if he is fleeing and is run down by chargers or pursuers, or slain by a Killing Blow.</description>
+        </rule>
+        <rule id="009d-14df-aa4f-f4e9" name="Awesome Presence" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false">
+          <description>Wounds inflicted by Valten in close combat are counted towards the Empire combat resolution score of any combat within 12&quot; of him (up to a maximum of +3), not just the one he is taking part in. Valten may never be the army&apos;s General.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c9d4-629d-5da7-71dd" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+        <categoryLink id="aa54-5559-3803-8e2c" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5f8b-0ad6-61be-5060" name="Ghal Maraz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3533-1b52-2d7d-6c11" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8de-dcc6-dbc0-4bf7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="aaf2-6ed2-6f14-b6f5" name="Ghal Maraz" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Hits from Ghal Maraz wound automatically, Ignores Armour saves and cause Multiple Wounds (D3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2780-0711-6c09-c6ea" name="Exalted of Sigmar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0631-db2b-6b23-5f9a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9b6e-db71-57ee-f253" name="Armour of the Heldenhammer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="470d-ca7c-d4ba-48f6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72b0-6bda-d70a-2c17" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="67c0-a6ae-ee2d-ff41" name="Armour of the Heldenhammer" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+                  <characteristics>
+                    <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                    <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                    <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The Armour of the Heldenhammer provides +1 armour save and Magic Resistance (2). No model in base contact may cast any spells.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8849-296e-521c-cf65" name="Mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adf4-c304-a40c-53d5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9147-b327-c022-5ae3" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7818-1a69-8c5b-7783" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1c7a-037f-6684-60af" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="f70c-1d37-8668-6724" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="02b0-3849-c640-dd95" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="2901-c98c-a897-d7bb" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df9c-e887-b3a6-713c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec02-78eb-c0a5-f661" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fc3f-9ff4-de14-f350" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="24.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2eba-a86f-3a13-97aa" name="Althandin" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="b5a3-b687-8036-d0d4" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="273c-e436-93f5-5ab4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2780-0711-6c09-c6ea" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b5a3-b687-8036-d0d4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1d5f-2aec-372e-0db0" name="Althandin" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="d26b-46f9-5d8f-e363" name="Althandin" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false">
+                  <description>Althandin suffers no Movement penalties for wearing barding.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="f93f-6643-53f3-c057" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="71a7-4edc-a49f-0e5a" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="4c31-d075-5596-11c9" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5116-48af-c63a-d31a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbe0-e1b2-b9a1-aea8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ee8f-f8f1-5348-82fa" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="410.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -19673,6 +20353,9 @@ If the first artillery dice roll is a misfire, the Steam Cannon does not fire an
 If at least one model is removed as a martyr, the remaining models in the unit immediately gain one of the effects from the Martyr Table until the end of the current phase. The exact effect that applies will depend on the number of models removed as martyrs.
 
 In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD, except other Flagellants, Warrior Priests, Arch Lectors and Sisters of Sigmar.</description>
+    </rule>
+    <rule id="a82a-ced8-152c-a647" name="Against the Odds" publicationId="315d-135b-135c-07ce" page="239" hidden="false">
+      <description>Enemy units can never gain the combat resolution bonus points for attacking in the flank or rear in a combat involving Valten. In addition, Valten and any unit he leads have Immunity (Psychology) and are Stubborn.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

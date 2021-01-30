@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1649-583c-3549-6e7d" name="Blessings of Rigg">
@@ -2224,36 +2224,6 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1814-0218-825f-60cd" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="9eca-e46e-94e6-2598" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="376b-b9e4-a4f2-4132" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9eca-e46e-94e6-2598" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="4d8d-9456-8c14-6d0e" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3e7f-27f9-9dfd-ee89" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72f1-1da8-bf9d-1a54" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bba1-43ad-8c85-30b0" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5ffa-e2c0-ec31-cfcc" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="bad0-b402-8c32-1c08" name="Jaguar" hidden="false" collective="true" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a31-650e-741b-8239" type="max"/>
@@ -2275,7 +2245,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
               <modifiers>
                 <modifier type="set" field="dfeb-b489-eccf-a9b0" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1814-0218-825f-60cd" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b7e5-4a92-12bc-1876" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2303,6 +2273,43 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5ad7-05cb-6352-ff97" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7e5-4a92-12bc-1876">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f2d-3b9b-90f0-e1a7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f14d-b432-6596-547f" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="b7e5-4a92-12bc-1876" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="7efe-83a6-4943-04a4" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="376b-b9e4-a4f2-4132" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7efe-83a6-4943-04a4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1968-1558-c7d5-a454" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="564e-ac78-1253-1f59" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e178-dcce-c791-3996" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="79df-9735-0104-fb10" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3031,6 +3038,17 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="7c4f-7a96-adf4-e8d7" name="Amulet of the Moon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8dcc-f607-8fa1-e733" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="100b-0435-fb58-79ac" name="Amulet of the Moon" hidden="false" targetId="06b9-16bb-481d-9b59" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="11.0"/>
@@ -3126,36 +3144,6 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1aba-ec04-043b-68f0" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="1447-6bee-6522-81ec" value="0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="63cf-6734-4924-1dbe" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1447-6bee-6522-81ec" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9e1e-555f-1448-6720" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="adc7-50f9-a1d4-1bf0" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97c3-a80d-06cf-a8a9" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c251-cfc4-8ebf-def7" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="fcbf-5d3e-6a7c-42b9" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="7015-933b-84dc-aa0d" name="Culchan" hidden="false" collective="true" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="679a-d914-53d2-4119" type="max"/>
@@ -3177,7 +3165,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
               <modifiers>
                 <modifier type="set" field="cddf-6a93-92cf-bee5" value="0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1aba-ec04-043b-68f0" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd57-29b8-9ca3-a432" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3205,6 +3193,43 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a6ea-4cd6-fe76-9209" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bd57-29b8-9ca3-a432">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5906-2152-71f6-9ed6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2eed-d271-b4c9-313b" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="bd57-29b8-9ca3-a432" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="56bd-b1cd-1d92-1e91" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="63cf-6734-4924-1dbe" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56bd-b1cd-1d92-1e91" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4229-8872-1837-6c33" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d7dc-ab61-a9be-9570" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="071e-0a75-c62d-846e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2de1-1459-67d3-2fda" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3640,6 +3665,19 @@ To drop rocks, select one unengaged enemy unit that the Terradons moved over in 
             <infoLink id="8ce3-3297-ff7b-f225" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="e3c4-3fc7-e3de-91d6" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2226-c8ee-caa1-1971" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f58-da4b-8c10-e60b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="84d5-9bbc-d7bc-4319" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="4814-2f9c-dfc3-313d" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b18-0b33-7dbb-7419">
               <constraints>
@@ -4162,7 +4200,7 @@ In addition, she gains Ward save (6+).</characteristic>
     </profile>
     <profile id="b3a7-2d08-2ebf-636c" name="Culchan" publicationId="315c-6fd1-56a3-8b04" page="44" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">9</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>

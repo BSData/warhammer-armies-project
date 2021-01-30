@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="6aa2-7707-349b-6651" name="Armour Rune">
@@ -4160,27 +4160,12 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa9-7e87-f270-cf95" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="2627-97bc-6211-f694" name="Miner" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="e88e-7a24-671f-6ae9" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
             <infoLink id="3985-6d8f-394f-bf44" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="2338-078d-c29e-c555" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="ed90-cf8c-a179-0f24" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
+            <infoLink id="a88e-3b00-3af4-2ee5" name="Miner" hidden="false" targetId="4c4c-68c5-855c-767c" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="42e2-2b94-16c8-718c" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -4199,15 +4184,9 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c84-350d-f50f-b3e9" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="ea98-599c-ef5d-9b0e" name="Blasting Charges" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">4&quot;</characteristic>
-                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">One use only. Armour Piercing (1). Flaming Attacks. Quick to Fire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="0d29-303a-f9a5-f158" name="Blasting Charges" hidden="false" targetId="9b51-f20e-5625-f49a" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
@@ -4279,24 +4258,9 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d2e-4c7e-eba1-6647" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="ea63-eddf-5a53-5abc" name="Prospector" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="e781-f8ce-2f39-e737" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="6f8c-3450-6fea-ade7" name="Prospector" hidden="false" targetId="2aa9-c9e3-b19a-b083" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="4b8e-0ebc-627f-9e6d" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1670-2eae-3c5d-ff1e">
@@ -4309,15 +4273,9 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92cd-55b1-fc1d-55ce" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="df32-21f4-1c72-7ab7" name="Steam Drill" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Melee</characteristic>
-                            <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+3</characteristic>
-                            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">-2 I. Requires Two Hands. A Miner unit equipped with a steam drill can re-roll a failed arrival for Ambushers.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="1163-2f5d-11e3-70dd" name="Steam Drill" hidden="false" targetId="5923-fa29-16cf-19e9" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10.0"/>
                       </costs>
@@ -6833,27 +6791,12 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef92-e3ab-33fb-b194" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="fe0c-2d22-75b3-20e3" name="Miner" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="49f1-02c4-87ac-fb1d" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
             <infoLink id="0405-4223-811f-c5bc" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="31c7-a2cf-196c-b8d1" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="7229-a901-185e-b983" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
+            <infoLink id="87af-c38e-b313-ac6e" name="Miner" hidden="false" targetId="4c4c-68c5-855c-767c" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="7c2c-10df-a57f-06c8" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -6872,15 +6815,9 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1b6-fb1f-fdf9-558b" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="6234-2f4f-5b5c-5346" name="Blasting Charges" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">4&quot;</characteristic>
-                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">One use only. Armour Piercing (1). Flaming Attacks. Quick to Fire.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="2390-85b6-979c-42a8" name="Blasting Charges" hidden="false" targetId="9b51-f20e-5625-f49a" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
@@ -6952,24 +6889,9 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10cd-402f-880c-8abb" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="bdb7-375a-557b-204a" name="Prospector" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="29b2-0469-8420-b53a" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="c867-26e3-a5c6-b383" name="Prospector" hidden="false" targetId="2aa9-c9e3-b19a-b083" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2873-f6b5-05ee-dd21" name="Primary Weapon" hidden="false" collective="false" import="true">
@@ -6982,15 +6904,9 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f849-3c04-d975-5e89" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="2835-a456-ab38-33c6" name="Steam Drill" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Melee</characteristic>
-                            <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+3</characteristic>
-                            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">-2 I. Requires Two Hands. A Miner unit equipped with a steam drill can re-roll a failed arrival for Ambushers.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="bb33-bf85-4ce4-63d3" name="Steam Drill" hidden="false" targetId="5923-fa29-16cf-19e9" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10.0"/>
                       </costs>
@@ -9420,6 +9336,48 @@ A second Rune of Spell breaking maintains the previous effect and, after the spe
     <profile id="caaa-79d1-035f-b637" name="04-06" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
       <characteristics>
         <characteristic name="Result" typeId="b4d1-43ca-8017-8090">Dud: Only the model under the template&apos;s central hole is hit, suffering a single S 4 hit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9b51-f20e-5625-f49a" name="Blasting Charges" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">4&quot;</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">One use only. Armour Piercing (1). Flaming Attacks. Quick to Fire.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c4c-68c5-855c-767c" name="Miner" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2aa9-c9e3-b19a-b083" name="Prospector" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5923-fa29-16cf-19e9" name="Steam Drill" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Melee</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+3</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">-2 I. Requires Two Hands. A Miner unit equipped with a steam drill can re-roll a failed arrival for Ambushers.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

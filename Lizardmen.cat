@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
@@ -1636,7 +1636,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="20a6-a4c7-7e6a-df2b" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
         <infoLink id="5535-5e09-1ef8-a709" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
         <infoLink id="6b5d-a70d-ff67-b776" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
       </infoLinks>
@@ -1686,15 +1685,15 @@
           <profiles>
             <profile id="1226-7fae-2a68-a626" name="Zwup" publicationId="9e23-79cb-pubN77402" page="183" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">3</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
               </characteristics>
             </profile>
@@ -5633,6 +5632,347 @@ Casualties are always taken from the rearmost rank of the appropriate model type
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d6c0-0016-3365-c4fe" name="Lotl-Botl" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d62c-7c75-7395-f81f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c726-6c13-522e-9b87" name="Lotl-Botl" publicationId="fe07-d23f-5110-8489" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7504-2674-bda7-6dad" name="Blood-Curdling Roar" publicationId="fe07-d23f-5110-8489" page="1" hidden="false">
+          <description>Lotl-Botl has Fear in any turn whenever he charges.</description>
+        </rule>
+        <rule id="d59a-2621-8a81-7d08" name="Cold-Blooded Determination" publicationId="fe07-d23f-5110-8489" page="1" hidden="false">
+          <description>Any unit of Saurus Warriors Lotl-Botl joins gains a +1 bonus to their combat resolution as long as he is in the unit.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6459-1cc4-4e96-8307" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+        <infoLink id="c649-b5e0-3506-08b1" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+        <infoLink id="23ee-1ef5-ffdb-0d2d" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b506-f36b-8ca6-7b8d" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="65c6-fc70-8a7e-67c5" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d50b-6745-667b-3ac9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51b7-0e60-e59c-8548" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1ff9-fe39-400c-77f4" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="232d-b219-0e90-bd32" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d681-deeb-c409-f2d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b80e-e9dd-1fda-79b8" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e8a4-9330-001b-de40" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="06f8-149a-fa71-bbeb" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c95-a4c4-ea92-3210" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c47-afb0-0cbd-a7f6" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="384d-29b8-2692-8c2b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="267a-d342-ce8b-3a61" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8973-a416-e458-65a6" name="Ten-Zlati" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4379-cb81-c4a8-9a82" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a71c-3127-0412-253b" name="Ten-Zlati" publicationId="fe07-d23f-5110-8489" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5ac8-06bd-99d6-9058" name="Oracle of Loard Kroak" publicationId="9e23-79cb-pubN77402" page="3" hidden="false">
+          <description>Ten-zlati&apos;s Arcane Vassal can be used anywhere on the battlefield, not just within 24&quot;.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="8d46-98a6-d408-4c10" name="Arcane Vassal" hidden="false" targetId="fe06-6cc6-7ed9-1f16" type="rule"/>
+        <infoLink id="2f10-1fc6-6fea-6fa1" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="16d2-5c74-8367-a608" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8ff5-ab0f-3696-706a" name="Venom of the Firefly Frog" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a92-fd4a-2f56-7914" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="492f-7db1-cc4d-fd00" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5db8-ffc9-2ea2-3dbb" name="Venom of the Firefly Frog" publicationId="fe07-d23f-5110-8489" page="3" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Venom of the Firefly Frog gives the bearer Poisoned Attacks. If the bearer already has Poisoned Attacks, they may re-roll failed rolls To Wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f09e-cf96-b311-98fb" name="Terradon" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d819-5237-7911-1703" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dcb8-629a-2146-6032" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4f38-f62c-b8b8-9c10" name="Terradon" hidden="false" targetId="6c0d-aab8-87bf-6289" type="profile"/>
+            <infoLink id="670e-afc2-c72f-891d" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+            <infoLink id="fdf7-0693-7221-f56e" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+            <infoLink id="9115-0166-99ac-7336" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+            <infoLink id="d21d-0c09-8908-0e3b" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+            <infoLink id="c3cf-7b4d-ef0b-d85d" name="Drop Rocks" hidden="false" targetId="413f-0a05-3515-9db2" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1253-4314-ac67-34e0" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8604-96eb-78bd-d4c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b16c-60b9-d299-bb9a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8a28-2c28-ca47-73bf" name="Tetto&apos;eko" publicationId="fe07-d23f-5110-8489" page="2" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="cab2-d581-16c5-967e" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="3163-e90f-4c66-d406">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50a2-efe6-1e7c-2c91" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9038-fc5b-d340-c70f" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3163-e90f-4c66-d406" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fc30-f950-959b-b843" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52f0-54ce-61a5-48ac" name="Itzi-Bitzi" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a500-a620-9027-d4d0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d750-b213-8694-a535" name="Itzi-Bitzi" publicationId="fe07-d23f-5110-8489" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9981-f0e1-bd0a-166e" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
+        <infoLink id="bbe6-0cdb-bf82-4666" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="eebb-d59c-e177-a441" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9448-4671-0a76-fc68" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4648-b3d7-6899-e8e4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44ff-7cf2-3fc0-b54c" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5bb8-3de6-4ef8-fd9a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="17f0-1c8a-8ad0-f4e9" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="affa-32b7-ac01-8b95" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ae0-2d92-36f8-c1bb" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0904-ba19-5fd7-7fc0" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c6c4-211f-cec3-d332" name="The Incantation of Xetlipocutzl" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6b3-4304-a126-50e8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c12b-5545-9034-5836" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ffca-f14d-8942-d22a" name="The Incantation of Xetlipocutzl" publicationId="fe07-d23f-5110-8489" page="4" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. Itzi-Bitzi can use the incantation at any time in the Lizardman turn. All enemy units within 8&quot; must immedieately take a Panic test rolling 3D6, discarding the lowest result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a6ad-2eb7-a6a3-6f1a" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+        <entryLink id="188c-792c-1674-a60a" name="The Piranha Blade" hidden="false" collective="false" import="true" targetId="f278-3e9c-d8d1-87e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9699-e2fb-7ceb-9e4e" name="Kroq" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4fbe-ac14-3bd0-0200" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="33f0-c154-ce2a-0d0b" name="Kroq" publicationId="fe07-d23f-5110-8489" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="01a2-c6be-456d-1e88" name="Massive Jaws" publicationId="fe07-d23f-5110-8489" page="2" hidden="false">
+          <description>In addition to his normal attacks, Kroq has a special bite attack with his massive jaws. This attack has Ignores Armour Saves and Multiple Wounds (D3). It can only be used against models with Unit Strength 2 or less.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9427-2ffd-1fe8-1903" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+        <infoLink id="7258-834b-0a3f-9924" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
+        <infoLink id="6140-74f8-8425-7528" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f151-e88a-31d9-4ab8" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="39ea-c8c2-9591-c6bb" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8809-d5fb-7484-e5b4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22ce-de20-9c04-6e88" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="680b-c275-6f96-415f" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0138-a8bd-b747-c5c5" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be74-edab-0521-db52" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e330-8dac-dd3f-b075" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="53e6-ab85-ac46-32a6" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="271c-1268-cfac-f3be" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb1b-3ec1-4157-5042" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e7e-d6dc-4fbd-ec0a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3969-0682-9491-b43a" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="60b6-e750-b0ce-1919" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="110.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4c81-c441-2d8f-96bf" name="Expendable" hidden="false" collective="false" import="true" type="model">
@@ -5656,6 +5996,37 @@ Casualties are always taken from the rearmost rank of the appropriate model type
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f278-3e9c-d8d1-87e9" name="The Piranha Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="52f0-54ce-61a5-48ac" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="cd12-dc9a-6e14-8f81" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="52f0-54ce-61a5-48ac" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b47f-eddb-6035-2306" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd12-dc9a-6e14-8f81" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fcc8-a7e5-90a9-19a0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="eb93-52a1-d3a8-b97d" name="The Piranha Blade" publicationId="9e23-79cb-pubN77402" page="190" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+            <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+            <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The wielder has Multiple Wounds (D3) and Armour Piercing (1).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5850,24 +6221,6 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <cost name="pts" typeId="points" value="85.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1115-1752-484a-8f7c" name="The Piranha Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aaa8-ed26-7da1-cdea" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63dc-0d83-c1ef-6463" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e6f2-c275-6dfe-5f31" name="The Piranha Blade" publicationId="9e23-79cb-pubN77402" page="190" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The wielder has Multiple Wounds (D3) and Armour Piercing (1).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="a072-fc30-c184-20e4" name="Blade of Revered Tzunki" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9bf1-7c6a-e42f-d5d7" type="max"/>
@@ -6015,6 +6368,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
       </selectionEntries>
       <entryLinks>
         <entryLink id="0589-403f-d938-59ad" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
+        <entryLink id="3c4a-ae7c-4817-6ab3" name="The Piranha Blade" hidden="false" collective="false" import="true" targetId="f278-3e9c-d8d1-87e9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4392-6388-0d15-2410" name="Magic Standards" hidden="false" collective="false" import="true">

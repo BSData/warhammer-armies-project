@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1a86-ad23-323a-d30c" name="Quirk of Character">
@@ -1826,8 +1826,7 @@
         <rule id="43c5-7e23-4fcd-be68" name="Genius" publicationId="8ada-88a0-cdcd-9b5e" page="78" hidden="false">
           <description>You may set Leonardo&apos;s formidable intellect to each of the following problems:
 
-• Artillery Accuracy: As long as Leonardo is within 3&quot; of one war machine, that war machine may re-roll one Artillery
-Dice, Scatter Dice, or To Hit roll per turn.
+• Artillery Accuracy: As long as Leonardo is within 3&quot; of one war machine, that war machine may re-roll one Artillery Dice, Scatter Dice, or To Hit roll per turn.
 
 • Crossbow Accuracy: As long as Leonardo is with a unit armed with crossbows, the unit may re-roll all failed rolls of 1 To Hit in the Shooting phase.
 
@@ -8459,6 +8458,571 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9497-01fa-9717-f119" name="Aenur" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5db5-543e-bd9b-d476" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4a58-f26d-6a45-f640" name="Aenur" publicationId="72a4-a4fc-cfd6-d138" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Elf)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="34ac-36ae-bb5b-a672" name="Invincible Swordsman" publicationId="72a4-a4fc-cfd6-d138" page="1" hidden="false">
+          <description>Aenur always hits his opponents on a roll of 2+ in close combat.</description>
+        </rule>
+        <rule id="09d6-1aec-3525-81c2" name="Wanderer" publicationId="72a4-a4fc-cfd6-d138" page="1" hidden="false">
+          <description>Aenur may never be your Army General.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="217d-7e8a-b5d1-4e3d" name="Elven Grace" hidden="false" targetId="3005-243e-efd5-07e9" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0c82-69c7-706e-d508" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="512f-d561-8fed-bfea" name="Ienh-Khain" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf9f-e055-8b0c-70d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd63-26e3-628b-208b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3ac9-90d8-6876-4336" name="Ienh-Khain" publicationId="72a4-a4fc-cfd6-d138" page="1" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">This sword gives Aenur Killing Blow and Parry (6+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e153-9d02-5ccf-3659" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db13-6969-f522-84a1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e89-69a7-f4b6-e090" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3048-8fd3-6964-f8a0" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="813a-51b5-961b-b60a" name="Johann the Knife" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="27f3-7dfd-4a38-f181" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3827-a259-c891-6ee3" name="Johann the Knife" publicationId="72a4-a4fc-cfd6-d138" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b301-f841-2b67-71de" name="Black Lotus" publicationId="72a4-a4fc-cfd6-d138" page="2" hidden="false">
+          <description>If Johann rolls a natural 6 on his To Hit rolls, that attack will automatically Wound. Armour saves are
+taken as normal.</description>
+        </rule>
+        <rule id="4d72-0bf0-f18e-1329" name="Crimson Shade" publicationId="72a4-a4fc-cfd6-d138" page="2" hidden="false">
+          <description>One use only. Johan may use the Crimson Shade at the start of any of your turns. If he does so, he will gain +1 M, S, I and A for the duration of the turn.</description>
+        </rule>
+        <rule id="f7e9-4bb0-f9f3-b3f4" name="Knife Fighter Extraordinaire" publicationId="72a4-a4fc-cfd6-d138" page="2" hidden="false">
+          <description>Johann has Multiple Shots (3), which is increased to Multiple Shots (6) if he has not moved earlier this turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a0dd-63ac-45ff-ac7f" name="Dodge (4+)" hidden="false" targetId="5e3f-9736-a9c0-4a1c" type="rule"/>
+        <infoLink id="13bd-6d34-b668-e8f3" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+        <infoLink id="ffaa-04ad-f3f4-82d7" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
+        <infoLink id="8f3c-6031-820f-e321" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
+        <infoLink id="c920-cc36-6937-02ae" name="Hidden" hidden="false" targetId="2796-b399-4f98-a36f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="61d3-68b4-8f0a-2cd9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f10e-cfe2-aa10-caa8" name="Two/Additional Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fca8-905d-9798-677d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5386-9416-8ffb-fea6" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d693-bd59-fd62-4f2f" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1fe4-fb64-5f77-99c9" name="Throwing Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f21-cde9-77b2-d1e0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c19e-17ce-0755-89af" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5066-9921-90ae-b9ef" name="Throwing Weapons" hidden="false" targetId="fdcd-6526-0b8e-b291" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="135.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d32-b477-667b-c030" name="Marianna Chevaux" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fce1-5435-afea-00f9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4a10-e68f-ab21-4c30" name="Marianna Chevaux" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">9</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d08b-2327-8201-34eb" name="Vampiric" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false">
+          <description>Marianna has Fear and Immunity (Psychology). In addition, enemies must re-roll successful To Wound rolls against her. This does not apply to Magical Attacks, Flaming Attacks, or successful Killing Blows.</description>
+        </rule>
+        <rule id="0db5-c7bc-3cae-fb14" name="The Red Thirst" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false">
+          <description>Whenever Marianna kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 5+, the model recovers a single Wound lost earlier in the battle. This does not work against models with Animated Construct, Daemonic, Forest Spirit or Vampiric.</description>
+        </rule>
+        <rule id="7054-37d2-9e81-f24d" name="Vampire Hunter" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false">
+          <description>All models with Vampiric have Hatred against Marianna. In addition, Marianna counts as having Poisoned Attacks against models with Vampiric. However, she may never be the Army General.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="779c-cd68-2cd6-ea90" name="Dodge (5+)" hidden="false" targetId="cfff-6563-d1c6-820c" type="rule"/>
+        <infoLink id="4499-818f-8b3b-4442" name="Always Strikes First" hidden="false" targetId="00b2-9504-41a2-f664" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="790d-119b-e3fd-8e51" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7e50-992c-0005-0fea" name="Throwing Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad55-1dcf-c269-06c4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c35-24ad-b5c9-e523" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5d1e-2886-6c06-bc2a" name="Throwing Weapons" hidden="false" targetId="fdcd-6526-0b8e-b291" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0fc6-2e18-111c-a941" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ae5-a2a2-f30e-4393" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbe7-77ab-ea17-40c5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0d06-abaa-2b77-1e23" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="490f-91b2-fc3f-fccd" name="Crossbow" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="170c-30a4-e909-0723" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="438e-10a3-2f50-146e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4dd2-127c-9575-43e8" name="Crossbow" hidden="false" targetId="844f-f2d8-d2d9-61d4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8edd-b0cf-f6fd-2743" name="The Noctu" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9137-c162-d63c-13d5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac9f-3a5f-710c-4e84" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="03d7-4369-974f-a2ef" name="The Noctu" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All shooting attacks directed against Marianna or any unit she is with suffer -1 To Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="180.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c87d-cd7b-803c-a6f2" name="Ulli &amp; Marquand" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e25c-9c8e-10f6-5612" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d0ad-a1a5-48da-0128" name="Inseparable" publicationId="72a4-a4fc-cfd6-d138" page="4" hidden="false">
+          <description>Ulli and Marquand must remain with each other at all times, following the rules for Characters forming their own unit, though they may still join other units as normal. If one of them should be removed as a casualty, the surviving model will be subject to Hatred for the remainder of the game. However, neither of them may ever be the Army General.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1601-0f3d-6dd3-fe92" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7cf1-e4cc-885d-b438" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="51d0-379e-735a-6ddd" name="Ulli" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="31d0-e6f1-942c-4370" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="942d-bddf-f715-5051" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a788-ae9e-9eff-c60d" name="Ulli" publicationId="72a4-a4fc-cfd6-d138" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1508-36ef-7212-1041" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="ba1d-feec-dec4-927a" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3c2-f8d7-82cf-3777" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15eb-9735-99fc-6a0b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9d97-c6e3-1129-5962" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f654-676a-7788-0867" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2276-f550-0015-65d9" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39ad-ce7b-8f16-0725" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ce83-ba80-394b-a56c" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="933b-bfdc-b737-570a" name="Marquand" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ae53-27cd-986a-f3fd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dfc6-b375-1a7c-a0ab" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="acdd-28c1-44b0-fb47" name="Marquand" publicationId="72a4-a4fc-cfd6-d138" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="01a2-14a2-31b9-0559" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
+            <infoLink id="e36f-005f-5087-8f7d" name="Parry (6+)" hidden="false" targetId="e56f-d7d4-8987-dbdb" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="3571-57cc-896e-93f8" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f22-6e3d-e82c-4a79" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c59-d0bb-88c0-bef0" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4ef8-2a27-1b1f-af21" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="17d1-75f9-d464-4145" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2f8-8dc2-12ca-24d5" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df84-e5ba-3a52-e1b6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5f29-29d3-42a7-43f0" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cfdd-d5a2-05a9-cd0e" name="Throwing Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac05-37a6-136a-7bed" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4569-2d55-3c75-7139" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5547-16cd-bf4c-078a" name="Throwing Weapons" hidden="false" targetId="fdcd-6526-0b8e-b291" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd6c-fe79-8dcb-bb90" name="Nicodemus" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e8cf-5de8-43d9-09ed" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="df3b-56dd-c4fd-688f" name="Nicodemus" publicationId="72a4-a4fc-cfd6-d138" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="25e9-9c44-e67e-c66d" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="80dd-dd56-cd5a-9848" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="29e3-fca3-634b-7a63" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3052-6875-7e45-4e52" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d0b-704e-2974-d1a3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2960-a5e3-71b9-12ec" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7329-3599-7781-65f4" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c746-2c6c-56ba-17d4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1786-5d92-48f5-ce7c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="c125-f8b9-77d5-23d5" name="Nicodemus" publicationId="72a4-a4fc-cfd6-d138" page="6" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1429-b7b1-e9b1-d05b" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="9946-23cd-982a-7722">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60d1-b103-c4c9-1ea1" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5af-eccb-febe-24b4" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9946-23cd-982a-7722" name="Hedge Magic" hidden="false" collective="false" import="true" targetId="1564-9084-fce4-b473" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="155.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b344-b9f4-fca5-4b22" name="Simius Gantt" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ee83-0b72-0bc3-27ca" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8179-5221-ac4d-4514" name="Simius Gantt" publicationId="72a4-a4fc-cfd6-d138" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Human)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d112-1eb8-e2ff-248b" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c13b-79dd-103f-7f5a" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c14f-130c-4d9a-434c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e66-d609-2361-0837" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1a3f-9a47-92e6-4714" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9dd9-0dc1-cae1-5454" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0360-1f81-a05d-359e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f9a-18ae-8799-ae4e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="29cc-94f1-6d36-9c13" name="Simius Gantt" publicationId="72a4-a4fc-cfd6-d138" page="8" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="2ae4-dbea-14ff-3992" name="Decay of Ages" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="122a-7c91-3f60-3621" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be79-7868-e3af-dc03" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="8988-f87b-85e2-a9eb" name="Decay of Ages" publicationId="72a4-a4fc-cfd6-d138" page="8" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                  <characteristics>
+                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
+                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
+                    <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. The target unit must pass an immediate T test or lose -1 to their M, WS, BS, S, T and I. They must keep testing at the start of each subsequent Magic Phase until they pass the T test, the spell is dispelled or the unit is removed as a casualty. If the spell is dispelled or the unit passes the T test, the unit is restored to their original characteristics.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="6ee2-85cf-01b2-57f5" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="1287-62eb-70c2-3507">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b313-7b63-30f4-c183" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5c5-c7c1-b18b-c55d" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1287-62eb-70c2-3507" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9eca-9785-d0e5-0c01" name="Mantle of Crows" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e4e-739b-dc7b-0154" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bec-e377-22c1-d586" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3f1d-02a2-fee6-67b6" name="Mantle of Crows" publicationId="72a4-a4fc-cfd6-d138" page="8" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All enemy units in base contact with Simius suffers D6 S 2 Hits at the start of each close combat phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="135.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

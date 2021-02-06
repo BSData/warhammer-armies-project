@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
@@ -1490,6 +1490,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f5ba-3655-faf6-356d" name="Drycha" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="57e1-0054-ad26-0e1e" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bae2-f752-1a16-c971" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="57e1-0054-ad26-0e1e" type="max"/>
       </constraints>
@@ -1509,19 +1516,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="bbb8-9b65-18d9-aa34" name="Roused to Wrath" publicationId="e967-620f-06be-096a" page="152" hidden="false">
-          <description>This rule cannot be used if there are no forests on the battlefield when it is time to deploy your army. When you deploy, you may choose D3 units wholly composed of Forest Spirits – these are not deployed at the start of the game, but are ‘slumbering’ somewhere on the battlefield.
-
-At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for each slumbering unit. On a roll of 1-2, nothing happens – roll again next turn. On a roll of 3-6, the unit awakens. Place it on the battlefield so that all models in the unit are wholly within a forest, and at least 1&quot; away from other units and impassable terrain. Treat units that cannot be placed as having rolled a 1-2. Any units that have not yet awoken by the time the game ends award victory points as if they had been destroyed.</description>
-        </rule>
-        <rule id="d4f5-ec3a-99ce-ff91" name="Fanatical Resolve" publicationId="e967-620f-06be-096a" page="152" hidden="false">
-          <description>If Drycha suffers an unsaved Wound, her A increase by 1 for the remainder of the battle. Each time Drycha regains a Wound lost earlier in the battle, her A decrease by 1 for the remainder of the battle.</description>
-        </rule>
-        <rule id="3fc9-da7d-d470-7f2d" name="Eternal Rage" publicationId="e967-620f-06be-096a" page="152" hidden="false">
-          <description>Drycha has Hatred which applies in every round of close combat, not just the first.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="480e-0b07-c9e6-3a7c" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
         <infoLink id="f34f-61c4-bf53-33cf" name="Tree Aspects" hidden="false" targetId="743f-f76f-6efe-aab4" type="rule"/>
@@ -1530,6 +1524,9 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <infoLink id="f044-ef7f-df39-5b0c" name="Birch Aspect" hidden="false" targetId="Effect Tree Aspects" type="profile"/>
         <infoLink id="3197-4960-bd59-b47c" name="Oak Aspect" hidden="false" targetId="baf0-242a-0a41-766a" type="profile"/>
         <infoLink id="34e1-0054-3c29-9543" name="Willow Aspect" hidden="false" targetId="607e-5d23-cbef-21d0" type="profile"/>
+        <infoLink id="0596-430f-06eb-3a1a" name="Eternal Rage" hidden="false" targetId="c691-364a-1f00-d3fc" type="rule"/>
+        <infoLink id="982d-258f-9f18-c61e" name="Fanatical Resolve" hidden="false" targetId="ca7e-eab2-160f-be26" type="rule"/>
+        <infoLink id="c220-92ab-1f5b-0023" name="Roused to Wrath" hidden="false" targetId="268f-e221-cdaa-7e3f" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1e65-74f4-e2e8-ca2a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -6181,6 +6178,356 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <cost name="pts" typeId="points" value="115.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9267-d197-0f06-0343" name="Sceolan" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ad67-27ff-d89c-0b8f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="59a3-ab0f-2b74-9e5d" name="Sceolan" publicationId="f4eb-8c89-b57e-d2df" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">7</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="acfe-f02a-5cd2-c945" name="Ambush Master" publicationId="f4eb-8c89-b57e-d2df" page="1" hidden="false">
+          <description>If Sceolan is included in your army, one Core Unit of your choice may deploy using Ambushers.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4519-d24d-78b7-1162" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
+        <infoLink id="4fbe-1a03-d0b6-468a" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+        <infoLink id="858e-3674-3384-13b8" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
+        <infoLink id="05ed-ba0b-eb5e-57b8" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2ea2-ae80-8cee-d143" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="344e-1605-3d93-e80a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d8f6-a52e-92d1-ff7f" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95b2-2287-9e15-e3a6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8abf-8a57-8ae0-9eae" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8b92-eaa1-67ea-8865" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ba50-6bd6-7dcc-be65" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79b5-fb34-c449-660b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="218b-5a65-099f-8094" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="445b-14cf-93f9-c481" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2e95-8c16-6d66-67c8" name="Buckler of Bronze" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd30-88bd-2316-27eb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e3c-9d60-78be-7dcd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ad91-f4da-bf2b-e052" name="Buckler of Bronze" publicationId="f4eb-8c89-b57e-d2df" page="1" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+              <characteristics>
+                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Buckler. For each attack that Hits Sceolan in close combat, he may make an extra Attack back immediately.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a29a-89a4-eb8d-e306" name="The Bow of Loren" hidden="false" collective="false" import="true" targetId="2249-884c-4dd1-4fa8" type="selectionEntry"/>
+        <entryLink id="4c54-9fd6-bb06-cb62" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="185.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e138-58ac-77bd-15d8" name="Wychwethyl the Wild" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3af7-11e3-0068-890c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c986-3545-0261-1d14" name="Wychwethyl" publicationId="f4eb-8c89-b57e-d2df" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b8dc-9bf6-96c7-72ec" name="Choose Opponent" publicationId="f4eb-8c89-b57e-d2df" page="2" hidden="false">
+          <description>In close combat, Wychwethyl can choose to attack any enemy model in the enemy unit, not just the models in base contact with him.</description>
+        </rule>
+        <rule id="9528-a50a-edc0-c478" name="Dance of Doom" publicationId="f4eb-8c89-b57e-d2df" page="2" hidden="false">
+          <description>Once per battle, instead of attacking as normal, Wychwethyl may make one attack against each enemy model in the front rank of one enemy unit in close combat with him.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="73ed-0648-8d36-39fa" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="c8e3-6351-fe36-0915" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
+        <infoLink id="2dd6-c19d-53e4-c7bb" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
+        <infoLink id="f24d-cb7f-09d8-438d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="1e63-fbd8-a302-003b" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
+        <infoLink id="f2f4-13fa-1c66-d239" name="Woven Mist" hidden="false" targetId="efdf-5ff4-ee10-a035" type="profile"/>
+        <infoLink id="dc61-415b-1ec7-4578" name="Whirling Death" hidden="false" targetId="2c85-7f7b-5e9a-6aee" type="profile"/>
+        <infoLink id="162a-e304-5570-eb3a" name="The Shadows Coil" hidden="false" targetId="f369-0e1b-2d36-664d" type="profile"/>
+        <infoLink id="1cf9-6821-22e5-1d5e" name="Storm of Blades" hidden="false" targetId="70aa-a723-123f-10f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dad2-e013-fd83-c39a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d1c5-2a8e-db81-8c14" name="The Drum of Orcskin" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82d7-b27d-1bf3-9349" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e11-c3f4-be5b-6121" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d06c-5375-d2d7-3b96" name="The Drum of Orcskin" publicationId="f4eb-8c89-b57e-d2df" page="2" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Drum of Orcskin gives Wychwethyl and any unit he joins Swiftstride when they roll their charge distance.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c56e-93e5-1d86-90cf" name="Two/Additional Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="406c-1c89-1e6c-f8a6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d560-c12e-c5e6-4a30" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="480d-7127-1ae8-ac69" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2834-ae36-d256-eed1" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="125.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e992-e7a0-4fed-419e" name="Aethis the Wanderer" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="af90-325f-73da-57c1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b7fe-0787-78ad-7be8" name="Aethis" publicationId="f4eb-8c89-b57e-d2df" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a7a4-bd59-2297-aa78" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="2b89-7d5a-47c1-8f59" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
+        <infoLink id="9671-80cc-cd8b-1b71" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
+        <infoLink id="59ff-f216-0acf-35a8" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="59f2-b712-8a2a-a517" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
+        <infoLink id="7050-1051-2954-435f" name="Woven Mist" hidden="false" targetId="efdf-5ff4-ee10-a035" type="profile"/>
+        <infoLink id="dad6-df84-e7f1-3ab4" name="Whirling Death" hidden="false" targetId="2c85-7f7b-5e9a-6aee" type="profile"/>
+        <infoLink id="ad0e-fb97-a14f-0cf4" name="The Shadows Coil" hidden="false" targetId="f369-0e1b-2d36-664d" type="profile"/>
+        <infoLink id="6988-e1e6-8dc5-cfd5" name="Storm of Blades" hidden="false" targetId="70aa-a723-123f-10f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d284-5feb-a750-4f8f" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="287e-2480-9d08-92d6" name="Ariel&apos;s Belt" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bfa-c602-3582-aa2f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e30-271f-7a99-aa39" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b1ff-ca49-c477-87db" name="Ariel&apos;s Belt" publicationId="f4eb-8c89-b57e-d2df" page="3" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Ariel&apos;s Belt gives the wearer a Ward Save (6+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5a27-95a8-0cb8-c02d" name="Orion&apos;s Swords" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ccd-c795-5978-4548" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06b7-7cf4-3aa7-98e0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8d17-2ad3-ff54-93f1" name="Orion&apos;s Swords" publicationId="f4eb-8c89-b57e-d2df" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Two/Additional Hand Weapons. Orion&apos;s Swords adds +2 WS and S to the wielder. In addition, Aethis can choose to reduce the number of A of one enemy model in base contact of his choosing by 1 at the start of each close combat phase. However, if he does so, we will only gain +1 WS and S that close combat phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5bc6-8553-6072-9a52" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bae2-f752-1a16-c971" name="Drycha Hamadreth" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="6250-c681-d141-db34" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f5ba-3655-faf6-356d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6250-c681-d141-db34" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3f8f-f140-05d6-05d3" name="Drycha Hamadreth" publicationId="f4eb-8c89-b57e-d2df" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">7</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">6</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d44c-156f-1a1e-b311" name="The Colony of Flitterfuries" publicationId="f4eb-8c89-b57e-d2df" page="4" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">1</characteristic>
+            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2D6). Poisoned Attacks. The Colony of Flitterfuries suffers no To Hit penalties for firing Multiple Shots.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a71b-0ba5-62ef-6778" name="The Swarm of Squirmlings" publicationId="f4eb-8c89-b57e-d2df" page="4" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+            <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">1</characteristic>
+            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Random Attacks (2D6). Poisoned Attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5b83-0be5-6794-7494" name="Deadly Infestation" publicationId="f4eb-8c89-b57e-d2df" page="4" hidden="false">
+          <description>In addition to Drycha&apos;s normal attacks, she can also make two types of special attacks with the Colony of Flitterfuries and the Swarm of Squirmlings.</description>
+        </rule>
+        <rule id="6e1c-dc82-15c3-dd89" name="Mercurial Aspect" publicationId="f4eb-8c89-b57e-d2df" page="4" hidden="false">
+          <description>At the start of each of your turns, declare whether Drycha is Enraged or Embittered. If Drycha is
+Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Embittered, the Swarm of Squirmlings gains Random Attacks (3D6).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a1cf-b8f6-8971-5bb6" name="Fanatical Resolve" hidden="false" targetId="ca7e-eab2-160f-be26" type="rule"/>
+        <infoLink id="fc82-6710-13ba-198a" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
+        <infoLink id="b901-6f57-53df-0668" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
+        <infoLink id="7e22-820a-c32d-51df" name="Roused to Wrath" hidden="false" targetId="268f-e221-cdaa-7e3f" type="rule"/>
+        <infoLink id="d053-e764-7e98-70ac" name="Eternal Rage" hidden="false" targetId="c691-364a-1f00-d3fc" type="rule"/>
+        <infoLink id="2caf-636f-0018-bd71" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="c396-b8c3-77e5-4e50" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="cc73-d87c-810f-d829" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="2e7c-e6a9-7c19-6932" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
+        <infoLink id="29da-40a3-b3e4-01c4" name="Flammable" hidden="false" targetId="ec58-b231-6a2f-a163" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3b39-76a0-970c-b660" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+        <categoryLink id="c999-8820-4cd4-aaf1" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f9c6-b290-a91a-6779" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98ae-6e0f-93d7-b1ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="539c-4d9e-5cd4-fdcf" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="6e26-b82d-1be2-b317" name="Drycha Hamadreth" publicationId="f4eb-8c89-b57e-d2df" page="4" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="30e3-be1c-066d-399a" name="Lore of Magic" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b5a-7a60-a6cc-5f66" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ba1-38e6-b232-ba39" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0c07-931b-7d5b-938d" name="Lore of Athel Loren" hidden="false" collective="false" import="true" targetId="Lore of Athel Loren 2" type="selectionEntry"/>
+                <entryLink id="a63b-70f4-c5b3-be5f" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d179-c854-9d00-416d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="340.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4dce-a8c6-cc41-e0a5" name="A Befuddlement of Mischiefs" hidden="false" collective="false" import="true" type="upgrade">
@@ -6339,6 +6686,37 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2249-884c-4dd1-4fa8" name="The Bow of Loren" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="78f3-4306-760a-5a3e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9267-d197-0f06-0343" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="points" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9267-d197-0f06-0343" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ec7-af35-f45e-ead6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ce8-5bf8-654f-1fd4" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78f3-4306-760a-5a3e" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="c487-96f2-6af7-cb32" name="The Bow of Loren" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
+            <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Shots (A+1). The bow fires a number of shots equal to 1 plus the wielder’s A. It cannot fire enchanted arrows.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -6504,24 +6882,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="eaf6-8767-fea6-f88f" name="The Bow of Loren" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="94de-710b-5eb1-dd9a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27f9-4503-57cd-d215" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="06c4-2aa0-5fb7-8427" name="The Bow of Loren" publicationId="e967-620f-06be-096a" page="166" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Shots (A+1). The bow fires a number of shots equal to 1 plus the wielder’s A. It cannot fire enchanted arrows.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="5776-3915-7aa0-f6c0" name="The Spirit Sword" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7545-067a-3919-ae15" type="max"/>
@@ -6669,6 +7029,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       </selectionEntries>
       <entryLinks>
         <entryLink id="460e-3418-88ce-7612" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
+        <entryLink id="4483-2b7b-aee2-0715" name="The Bow of Loren" hidden="false" collective="false" import="true" targetId="2249-884c-4dd1-4fa8" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ab07-ec39-e82a-bea4" name="Magic Standards" hidden="false" collective="false" import="true">
@@ -7163,6 +7524,17 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
     </rule>
     <rule id="c985-c6aa-5e73-f7b1" name="Shredding Talons" publicationId="e967-620f-06be-096a" page="136" hidden="false">
       <description>The model gains Armour Piercing (1).</description>
+    </rule>
+    <rule id="c691-364a-1f00-d3fc" name="Eternal Rage" publicationId="e967-620f-06be-096a" page="152" hidden="false">
+      <description>Drycha has Hatred which applies in every round of close combat, not just the first.</description>
+    </rule>
+    <rule id="ca7e-eab2-160f-be26" name="Fanatical Resolve" publicationId="e967-620f-06be-096a" page="152" hidden="false">
+      <description>If Drycha suffers an unsaved Wound, her A increase by 1 for the remainder of the battle. Each time Drycha regains a Wound lost earlier in the battle, her A decrease by 1 for the remainder of the battle.</description>
+    </rule>
+    <rule id="268f-e221-cdaa-7e3f" name="Roused to Wrath" publicationId="e967-620f-06be-096a" page="152" hidden="false">
+      <description>This rule cannot be used if there are no forests on the battlefield when it is time to deploy your army. When you deploy, you may choose D3 units wholly composed of Forest Spirits – these are not deployed at the start of the game, but are ‘slumbering’ somewhere on the battlefield.
+
+At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for each slumbering unit. On a roll of 1-2, nothing happens – roll again next turn. On a roll of 3-6, the unit awakens. Place it on the battlefield so that all models in the unit are wholly within a forest, and at least 1&quot; away from other units and impassable terrain. Treat units that cannot be placed as having rolled a 1-2. Any units that have not yet awoken by the time the game ends award victory points as if they had been destroyed.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

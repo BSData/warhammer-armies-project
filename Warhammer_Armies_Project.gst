@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.1.9" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.1.81" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -54,6 +54,7 @@
     <publication id="f4eb-8c89-b57e-d2df" name="Wood Elves Special Characters v.1.1" shortName="WE" publisher="Warhammer - Wood Elves Special Characters 1.1" publicationDate="06.02.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fe07-d23f-5110-8489" name="Lizardmen Special Characters v.1.1" shortName="LM" publisher="Warhammer - Lizardmen Special Characters 1.1" publicationDate="06.02.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="72a4-a4fc-cfd6-d138" name="Dogs of War Special Characters v.1.1" shortName="DoW" publisher="Warhammer - Dogs of War Special Characters 1.1" publicationDate="06.02.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="f46b-8c4e-ed82-05f7" name="Warriors of Chaos Special Characters v.1.11" shortName="WoC" publisher="Warhammer - Warriors of Chaos Special Characters 1.11" publicationDate="26.03.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -211,7 +212,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f412-f4d0-9f49-afab" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f412-f4d0-9f49-afab" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d38a-73da-883b-bab9" name="Heroes" hidden="false"/>
@@ -230,7 +231,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e3c-b5d6-a059-b5ab" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e3c-b5d6-a059-b5ab" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="0eb4-f376-7725-b05b" name="Rare" hidden="false">
@@ -248,7 +249,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e0d7-75ba-de98-e3ff" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e0d7-75ba-de98-e3ff" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -1651,7 +1652,7 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="472c-90d3-fd34-9c83" name="Armour of Silvered Steel" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -2492,7 +2493,8 @@ A unit that is not fleeing and not engaged in combat can make a swift reform dur
       <description>Weapons with Slow to Fire cannot be used to Stand and Shoot.</description>
     </rule>
     <rule id="7bd0-8602-4375-a731" name="Fear" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
-      <description>Units in base contact with one or more models that cause Fear suffer -1 to their LD (including units that are Steadfast).
+      <description>Units in base contact with one or more models that cause Fear suffer -1 to their LD (including units that are Steadfast). 
+
 If the majority of the models in a unit cause Fear, they also gain Immunity (Fear), and ignore the -1 Leadership penalty.</description>
     </rule>
     <rule id="fdd9-fa75-5594-d363" name="Swiftstride" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">

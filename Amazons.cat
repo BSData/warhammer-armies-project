@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8267-4947-8aa7-91bc" name="Amazons" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1649-583c-3549-6e7d" name="Blessings of Rigg">
@@ -752,6 +752,71 @@ magic weapon, roll a D6 for each hit caused by the sword. On a 4+, the enemy’s
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="6264-3ba6-a4ff-6518" name="Mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18b7-9a64-67af-0f37" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e3bf-3dd9-7e91-2fc6" name="Jaguar" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6963-da1a-22d6-aab5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c11f-4771-4ef5-fefa" name="Jaguar" hidden="false" targetId="0acd-9c73-bb9b-70a1" type="profile"/>
+                <infoLink id="bf60-12cb-15d0-3cbf" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="e832-1e72-269a-6389" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="00ba-fcd7-1734-9d0f" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d7e4-8f66-77d0-39da" name="Cold One" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff42-02b0-9d90-1bc8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="edce-2780-a136-da21" name="Cold One" hidden="false" targetId="dcb5-ad71-bfa2-e21a" type="profile"/>
+                <infoLink id="5d30-51b3-5a63-c95b" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="a7f0-c2f5-7286-b840" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="e131-6c06-c3a3-933f" name="Stupidity" hidden="false" targetId="755c-61c2-fa25-f4ce" type="rule"/>
+                <infoLink id="3e47-b424-89e5-c732" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+                <infoLink id="fd20-7725-e29a-a580" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="111c-8866-4331-ce2d" name="Culchan" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b7da-8711-0e27-bf64" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6a35-7785-f5e5-bfd2" name="Culchan" hidden="false" targetId="b3a7-2d08-2ebf-636c" type="profile"/>
+                <infoLink id="fff1-7250-2da2-efaf" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="f825-5b46-6985-0e10" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="aa2f-4f35-c100-7b40" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="22.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3c70-a47d-bbc2-e79b" name="Terradon" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="042c-9725-31e9-870d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="de51-2397-6eb2-4622" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="f067-10bd-e0e2-7cc4" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+                <infoLink id="7538-a292-f8d5-b694" name="Terradon" hidden="false" targetId="a45c-86ac-dc3b-7466" type="profile"/>
+                <infoLink id="f6a7-0e19-f8c5-0784" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="45.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="99a5-34fb-d6b4-eda9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -1320,6 +1385,71 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="e768-3ecb-fbc3-cf2a" name="Mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9093-40ab-5213-f48b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ea3a-292a-39ba-5907" name="Jaguar" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3fc3-604f-96f2-39b7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8afb-f37a-7d6c-4d9f" name="Jaguar" hidden="false" targetId="0acd-9c73-bb9b-70a1" type="profile"/>
+                <infoLink id="a7c4-278f-67dc-e242" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="e860-da0b-eabb-ea38" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="fbbd-b352-7841-a81a" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="14.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6e06-88e4-9a4f-4634" name="Cold One" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8cc6-285a-79b8-8eb0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f47f-b41d-f52b-0aff" name="Cold One" hidden="false" targetId="dcb5-ad71-bfa2-e21a" type="profile"/>
+                <infoLink id="2b12-9d4e-3376-ea2e" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="21e1-7b33-00b1-26c4" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="5975-ac3c-5327-dc63" name="Stupidity" hidden="false" targetId="755c-61c2-fa25-f4ce" type="rule"/>
+                <infoLink id="47d2-f768-aeb8-954a" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+                <infoLink id="07fd-bacb-5b61-76e0" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c588-857f-50a7-a4a1" name="Culchan" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a79a-fc84-9347-6007" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a547-5364-7fb2-6d7a" name="Culchan" hidden="false" targetId="b3a7-2d08-2ebf-636c" type="profile"/>
+                <infoLink id="ee03-6ef3-0228-0f11" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="c635-7a9c-27b4-914c" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="8e68-9382-5114-7154" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="16.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="64ab-7881-e541-b2b0" name="Terradon" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8093-7752-e3c7-1139" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3c4e-25a7-92de-868d" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="2d84-ad6f-9960-a5b2" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+                <infoLink id="d09b-65f8-b494-cef7" name="Terradon" hidden="false" targetId="a45c-86ac-dc3b-7466" type="profile"/>
+                <infoLink id="fdbc-3c25-6cbe-4735" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a9cf-a2bb-b297-5c1a" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -1368,7 +1498,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
         </selectionEntry>
         <selectionEntry id="f19a-2a11-41ae-d2ca" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="92e4-2231-8d18-5d23" value="0">
+            <modifier type="set" field="b4ac-17eb-bb4e-ffe7" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de96-7ee5-430a-58d2" type="atLeast"/>
               </conditions>
@@ -1631,7 +1761,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
                   <modifiers>
                     <modifier type="set" field="15f1-0eb6-242e-8f9d" value="0">
                       <conditions>
-                        <condition field="selections" scope="9a52-85c4-6c7e-67dd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f19a-2a11-41ae-d2ca" type="atLeast"/>
+                        <condition field="points" scope="9a52-85c4-6c7e-67dd" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f19a-2a11-41ae-d2ca" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2034,7 +2164,7 @@ movement phase. If she teleports into contact with an enemy unit, she counts as 
           <infoLinks>
             <infoLink id="232e-081f-948d-b9d0" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="fafb-3b01-5fee-cd9e" name="Garland Warfare" hidden="false" targetId="f0b8-fe1c-4359-9db1" type="rule"/>
-            <infoLink id="43a7-4231-a3b8-25e7" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="43a7-4231-a3b8-25e7" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="f05b-50f4-0f45-965c" name="Garland Warfare" hidden="false" targetId="3f0b-bbac-b519-f929" type="rule"/>
           </infoLinks>
           <selectionEntries>

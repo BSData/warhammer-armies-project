@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5941-78ef-698e-a105" name="Empire" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5941-78ef-698e-a105" name="Empire" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="ffb8-c6d9-01f6-a218" name="Land Ship Calamity Chart">
@@ -249,15 +249,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ed8-d82a-8538-f3cd" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="8bed-401d-72df-59cb" name="Ghal Maraz" publicationId="315d-135b-135c-07ce" page="221" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                    <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                    <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Hits from Ghal Maraz wound automatically, Ignores Armour saves and cause Multiple Wounds (D3).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="7ce7-9629-980f-26fc" name="Ghal Maraz" hidden="false" targetId="3306-ba34-d3d0-91a8" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
@@ -686,7 +680,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e637-4405-ff81-bd62" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="82e1-7366-cc0e-c1c2" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal Loremaster" type="selectionEntry"/>
+                <entryLink id="82e1-7366-cc0e-c1c2" name="Lore of Metal Loremaster" hidden="false" collective="false" import="true" targetId="e751-1309-3517-f1a1" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -774,7 +768,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f9d-5ec1-b3f7-5f97" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="621e-1005-c194-626c" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire Loremaster" type="selectionEntry"/>
+                <entryLink id="621e-1005-c194-626c" name="Lore of Fire Loremaster" hidden="false" collective="false" import="true" targetId="dc2d-c4dc-6e36-f056" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4370,18 +4364,6 @@
                 <cost name="pts" typeId="points" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9ffa-f8a7-ebb0-0055" name="Hand Weapon &amp; Pistol" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5a9-18e6-f131-b8da" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d4dd-8341-f0c8-ac29" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
-                <infoLink id="a97e-7490-16c8-7d3d" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="1e82-20f9-4887-466c" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -4409,6 +4391,17 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="675f-27a6-143d-05f2" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58f3-abf4-40db-cd8e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6ac6-38c6-bc95-63a5" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4543,14 +4536,14 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f896-204a-d106-7c91" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="bc40-5916-53f6-ce00" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts 4" type="selectionEntry"/>
-                    <entryLink id="fdcf-d5af-5a09-6f05" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 4" type="selectionEntry"/>
-                    <entryLink id="9f9d-c237-541d-2f03" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 4" type="selectionEntry"/>
-                    <entryLink id="7e89-819b-bb9c-a5c1" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 4" type="selectionEntry"/>
-                    <entryLink id="a2ad-ccfb-099d-9828" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 4" type="selectionEntry"/>
-                    <entryLink id="2788-4966-7e82-1146" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 4" type="selectionEntry"/>
-                    <entryLink id="282b-92e8-1de2-e429" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 4" type="selectionEntry"/>
-                    <entryLink id="f487-9083-ab4c-0428" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 4" type="selectionEntry"/>
+                    <entryLink id="bc40-5916-53f6-ce00" name="Lore of Beasts 4" hidden="false" collective="false" import="true" targetId="3e80-c99a-cef9-4598" type="selectionEntry"/>
+                    <entryLink id="fdcf-d5af-5a09-6f05" name="Lore of Heavens 4" hidden="false" collective="false" import="true" targetId="ae49-5ec1-e00e-5ef3" type="selectionEntry"/>
+                    <entryLink id="9f9d-c237-541d-2f03" name="Lore of Metal 4" hidden="false" collective="false" import="true" targetId="2cef-95ed-47e7-6458" type="selectionEntry"/>
+                    <entryLink id="7e89-819b-bb9c-a5c1" name="Lore of Fire 4" hidden="false" collective="false" import="true" targetId="9813-88f3-58e8-70a2" type="selectionEntry"/>
+                    <entryLink id="a2ad-ccfb-099d-9828" name="Lore of Death 4" hidden="false" collective="false" import="true" targetId="5995-b154-0501-6799" type="selectionEntry"/>
+                    <entryLink id="2788-4966-7e82-1146" name="Lore of Shadow 4" hidden="false" collective="false" import="true" targetId="ee91-ed67-6c90-eca4" type="selectionEntry"/>
+                    <entryLink id="282b-92e8-1de2-e429" name="Lore of Life 4" hidden="false" collective="false" import="true" targetId="fffb-ce50-da53-70f6" type="selectionEntry"/>
+                    <entryLink id="f487-9083-ab4c-0428" name="Lore of Light 4" hidden="false" collective="false" import="true" targetId="c429-5213-13c2-20a9" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4580,14 +4573,14 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5c8-9dd8-f1ad-45c3" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ff94-e737-6263-7135" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts 3" type="selectionEntry"/>
-                    <entryLink id="914f-6a0b-c4b0-c3bb" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 3" type="selectionEntry"/>
-                    <entryLink id="08b4-b537-3e57-400c" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 3" type="selectionEntry"/>
-                    <entryLink id="19cf-541d-cf9a-cb3c" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 3" type="selectionEntry"/>
-                    <entryLink id="18a5-6f74-ea4a-e0da" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 3" type="selectionEntry"/>
-                    <entryLink id="f518-6178-587c-17fc" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 3" type="selectionEntry"/>
-                    <entryLink id="b759-5e18-a771-b65d" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 3" type="selectionEntry"/>
-                    <entryLink id="e9ce-7699-04e3-8b3d" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 3" type="selectionEntry"/>
+                    <entryLink id="ff94-e737-6263-7135" name="Lore of Beasts 3" hidden="false" collective="false" import="true" targetId="30c3-8b70-90e4-8e3a" type="selectionEntry"/>
+                    <entryLink id="914f-6a0b-c4b0-c3bb" name="Lore of Heavens 3" hidden="false" collective="false" import="true" targetId="3885-a3a4-9f27-bdd9" type="selectionEntry"/>
+                    <entryLink id="08b4-b537-3e57-400c" name="Lore of Metal 3" hidden="false" collective="false" import="true" targetId="1f3e-d6ea-0989-718d" type="selectionEntry"/>
+                    <entryLink id="19cf-541d-cf9a-cb3c" name="Lore of Death 3" hidden="false" collective="false" import="true" targetId="f57c-d5cd-43b4-9def" type="selectionEntry"/>
+                    <entryLink id="18a5-6f74-ea4a-e0da" name="Lore of Fire 3" hidden="false" collective="false" import="true" targetId="38e4-62f8-1c43-e66f" type="selectionEntry"/>
+                    <entryLink id="f518-6178-587c-17fc" name="Lore of Shadow 3" hidden="false" collective="false" import="true" targetId="77ca-306d-33ed-137d" type="selectionEntry"/>
+                    <entryLink id="b759-5e18-a771-b65d" name="Lore of Life 3" hidden="false" collective="false" import="true" targetId="e63f-74ec-43e2-29eb" type="selectionEntry"/>
+                    <entryLink id="e9ce-7699-04e3-8b3d" name="Lore of Light 3" hidden="false" collective="false" import="true" targetId="d8df-c255-e040-9a38" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4676,8 +4669,8 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Beasts 3" type="atLeast"/>
-                        <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Beasts 4" type="atLeast"/>
+                        <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-5916-53f6-ce00" type="atLeast"/>
+                        <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff94-e737-6263-7135" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4810,8 +4803,8 @@
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Heavens 4" type="atLeast"/>
-                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Heavens 3" type="atLeast"/>
+                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdcf-d5af-5a09-6f05" type="atLeast"/>
+                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="914f-6a0b-c4b0-c3bb" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -4839,8 +4832,8 @@
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Light 3" type="atLeast"/>
-                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="Lore of Light 4" type="atLeast"/>
+                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f487-9083-ab4c-0428" type="atLeast"/>
+                                <condition field="selections" scope="a98c-727a-7d09-b619" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ce-7699-04e3-8b3d" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -5451,7 +5444,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
         </selectionEntry>
         <selectionEntry id="eb03-b10c-628d-eb4a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="ae58-fd04-31e8-f1c7" value="0">
+            <modifier type="set" field="933b-2ccb-a36c-b14f" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d127-d8f9-0b30-13f4" type="atLeast"/>
               </conditions>
@@ -5498,7 +5491,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                   <modifiers>
                     <modifier type="set" field="7aee-3ed1-079e-924e" value="0">
                       <conditions>
-                        <condition field="selections" scope="0538-76ab-1acd-05f9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb03-b10c-628d-eb4a" type="atLeast"/>
+                        <condition field="points" scope="0538-76ab-1acd-05f9" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb03-b10c-628d-eb4a" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -5597,18 +5590,6 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f6a3-8d3e-6b44-a29a" name="Hand Weapon &amp; Pistol" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c1c-9bbd-fd57-be1c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="994a-9b97-622f-b8fe" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
-                <infoLink id="75f4-7971-569c-50ba" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="0f83-28ce-b814-25ed" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -5636,6 +5617,17 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cb28-ce65-d855-a5cb" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67db-9e26-283c-00fa" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="faf2-7ab9-ff85-652d" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5831,7 +5823,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <infoLink id="9c20-185e-5610-d1d8" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
+                <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5869,14 +5861,14 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2200-682e-96ec-3744" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="fab6-b74f-60d7-85d3" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts 2" type="selectionEntry"/>
-                    <entryLink id="2cee-a3d9-339d-208f" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 2" type="selectionEntry"/>
-                    <entryLink id="8446-62aa-74db-67f6" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 2" type="selectionEntry"/>
-                    <entryLink id="a045-cf39-67dc-8070" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 2" type="selectionEntry"/>
-                    <entryLink id="2879-1994-e49f-f8ca" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 2" type="selectionEntry"/>
-                    <entryLink id="174d-4782-666e-b807" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 2" type="selectionEntry"/>
-                    <entryLink id="2b69-b846-d7e4-e4d9" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 2" type="selectionEntry"/>
-                    <entryLink id="a437-e703-1245-c656" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 2" type="selectionEntry"/>
+                    <entryLink id="fab6-b74f-60d7-85d3" name="Lore of Beasts 2" hidden="false" collective="false" import="true" targetId="8de7-8ea3-35ab-431b" type="selectionEntry"/>
+                    <entryLink id="2cee-a3d9-339d-208f" name="Lore of Heavens 2" hidden="false" collective="false" import="true" targetId="1938-564f-7239-5c49" type="selectionEntry"/>
+                    <entryLink id="8446-62aa-74db-67f6" name="Lore of Life 2" hidden="false" collective="false" import="true" targetId="ec89-8ce8-8f46-7344" type="selectionEntry"/>
+                    <entryLink id="a045-cf39-67dc-8070" name="Lore of Light 2" hidden="false" collective="false" import="true" targetId="0bf2-d37e-ca65-3bd5" type="selectionEntry"/>
+                    <entryLink id="2879-1994-e49f-f8ca" name="Lore of Shadow 2" hidden="false" collective="false" import="true" targetId="1d80-5fca-a870-79a5" type="selectionEntry"/>
+                    <entryLink id="174d-4782-666e-b807" name="Lore of Death 2" hidden="false" collective="false" import="true" targetId="7970-3c13-23f3-0e8e" type="selectionEntry"/>
+                    <entryLink id="2b69-b846-d7e4-e4d9" name="Lore of Fire 2" hidden="false" collective="false" import="true" targetId="c7e8-49d0-8c44-7db0" type="selectionEntry"/>
+                    <entryLink id="a437-e703-1245-c656" name="Lore of Metal 2" hidden="false" collective="false" import="true" targetId="4459-c449-c602-50d3" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5906,14 +5898,14 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2372-5edb-5583-c189" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="2a65-2f29-f60d-e25d" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 1" type="selectionEntry"/>
-                    <entryLink id="84db-e046-c0ba-bdfc" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 1" type="selectionEntry"/>
-                    <entryLink id="0840-1db0-c14d-74d0" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 1" type="selectionEntry"/>
-                    <entryLink id="a1e6-3ede-8265-75c9" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 1" type="selectionEntry"/>
-                    <entryLink id="200b-2f9a-e812-298b" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 1" type="selectionEntry"/>
-                    <entryLink id="49c2-060c-92e7-b949" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 1" type="selectionEntry"/>
-                    <entryLink id="b3c0-beb8-f54a-8881" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 1" type="selectionEntry"/>
-                    <entryLink id="ec4b-d409-7775-82c8" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts 1" type="selectionEntry"/>
+                    <entryLink id="2a65-2f29-f60d-e25d" name="Lore of Life 1" hidden="false" collective="false" import="true" targetId="cdb7-05d6-6319-0838" type="selectionEntry"/>
+                    <entryLink id="84db-e046-c0ba-bdfc" name="Lore of Light 1" hidden="false" collective="false" import="true" targetId="a0da-b525-64d9-f7f2" type="selectionEntry"/>
+                    <entryLink id="0840-1db0-c14d-74d0" name="Lore of Heavens 1" hidden="false" collective="false" import="true" targetId="0f8c-2cde-58ee-a1ea" type="selectionEntry"/>
+                    <entryLink id="a1e6-3ede-8265-75c9" name="Lore of Shadow 1" hidden="false" collective="false" import="true" targetId="f528-9503-ec2f-a10e" type="selectionEntry"/>
+                    <entryLink id="200b-2f9a-e812-298b" name="Lore of Death 1" hidden="false" collective="false" import="true" targetId="bfad-333a-581e-8ae2" type="selectionEntry"/>
+                    <entryLink id="49c2-060c-92e7-b949" name="Lore of Fire 1" hidden="false" collective="false" import="true" targetId="f93e-44e1-cebf-ad47" type="selectionEntry"/>
+                    <entryLink id="b3c0-beb8-f54a-8881" name="Lore of Metal 1" hidden="false" collective="false" import="true" targetId="aa12-b508-c418-27a6" type="selectionEntry"/>
+                    <entryLink id="ec4b-d409-7775-82c8" name="Lore of Beasts 1" hidden="false" collective="false" import="true" targetId="af0f-d911-7548-9f96" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7277,6 +7269,11 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="4ebd-d869-2f5b-e46a" name="Militia" publicationId="315d-135b-135c-07ce" page="189" hidden="false">
+              <description>Models with this rule can use the Support Fire and Counter Charge actions from the State Troops rule.</description>
+            </rule>
+          </rules>
           <selectionEntries>
             <selectionEntry id="8acf-fa09-29db-ef24" name="Ambushers" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -7346,7 +7343,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7490,7 +7487,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="18.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -12019,7 +12016,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">2</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
@@ -12084,7 +12081,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <infoLink id="d8fd-88f2-3459-8eec" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -12120,18 +12117,18 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="182d-f63a-899c-96b0" name="Tracker" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="182d-f63a-899c-96b0" name="Constable" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ca-4eb3-f654-eb12" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e099-bb15-3cab-587a" name="Tracker" publicationId="315d-135b-135c-07ce" page="204" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="e099-bb15-3cab-587a" name="Constable" publicationId="315d-135b-135c-07ce" page="204" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">2</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
@@ -12499,6 +12496,11 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="5b2b-794b-15d0-8c1d" name="Faith in Sigmar" publicationId="315d-135b-135c-07ce" page="194" hidden="false">
+              <description>A unit of 5 or more Sisters of Sigmar follows the rules for Divine Power and Battle Prayers. For every additional 5 models in the unit, they may add +1 to their casting result.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="c6ba-e049-2467-7169" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
             <infoLink id="21be-33d8-5fe5-0d7e" name="Immunity (Fear)" hidden="false" targetId="9fed-6076-6c75-b774" type="rule"/>
@@ -12551,7 +12553,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -17823,12 +17825,12 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
             <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon</characteristic>
             <characteristic name="Range" typeId="1c88-efb0-083f-b945">48&quot;</characteristic>
             <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-            <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3). The Land Ship may still move and fire the cannon, and may even fire it if engaged in combat contrary to the usual rules (but can only nominate a target point in the unit in base contact with the ship’s front). If the weapon is destroyed by a Misfire result, the Land Ship also immediately suffers D3 Wounds with no Armour saves allowed.</characteristic>
+            <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3). The Land Ship may still move and fire the cannon. It can fire grape shot which is resolved at S 4. If the weapon is destroyed by a Misfire result, the Land Ship also immediately suffers D3 Wounds which Ignores Armour Saves.</characteristic>
           </characteristics>
         </profile>
         <profile id="c3b5-0544-1223-9a84" name="01" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false" typeId="ffb8-c6d9-01f6-a218" typeName="Land Ship Calamity Chart">
           <characteristics>
-            <characteristic name="Result" typeId="8ded-8e12-6fec-9416">Abandon Ship!: The Land Ship is destroyed but left on the table as an area of impassable terrain. Any unit in base contact when this happens suffers D6 S 8 hits.</characteristic>
+            <characteristic name="Result" typeId="8ded-8e12-6fec-9416">Abandon Ship!: The Land Ship is destroyed but left on the table as an area of impassable terrain. Any unit in base contact when this happens suffers D6 S 6 hits.</characteristic>
           </characteristics>
         </profile>
         <profile id="ad81-2ef6-228e-7b66" name="02-03" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false" typeId="ffb8-c6d9-01f6-a218" typeName="Land Ship Calamity Chart">
@@ -17846,6 +17848,14 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
             <characteristic name="Result" typeId="8ded-8e12-6fec-9416">Boom!: Everything within D6&quot; of the Land Ship’s hull suffers a S 6 hit and the Land Ship is destroyed and removed from play.</characteristic>
           </characteristics>
         </profile>
+        <profile id="b707-743f-728a-a2f4" name="Grapeshot" publicationId="9e23-79cb-pubN66727" page="108" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+          <characteristics>
+            <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Grapeshot</characteristic>
+            <characteristic name="Range" typeId="1c88-efb0-083f-b945">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="6ca0-d074-628f-e276">4</characteristic>
+            <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Armour Piercing (1). </characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="eeb0-aa41-d542-3c9b" name="The Wonder of the Age" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
@@ -17853,9 +17863,12 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
 
  Slow: The Land Ship may move up to 6&quot; directly forward without penalty or risk, but may not charge.
 
- Full Power: The Land Ship follow the rules for Random Movement (3D6). However, if you roll two or more 1&apos;s when determining the Land Ships Random Movement, something has gone disastrously wrong. Roll immediately on the Land Ship Calamity Chart and apply the result.</description>
+ Full Power: The Land Ship follows the rules for Random Movement (3D6). However, if you roll two or more 1&apos;s when determining the Land Ships Random Movement, something has gone disastrously wrong. Roll immediately on the Land Ship Calamity Chart and apply the result.</description>
         </rule>
-        <rule id="e642-a9ab-f8f5-2fd1" name="Stable Platform" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
+        <rule id="e642-a9ab-f8f5-2fd1" name="Destroying the Land Ship" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
+          <description>When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers the effects of the Abandon Ship! result on the Land Ship Calamity table and on a 6 the Boom! result. On any other roll, the Land Ship is removed as normal.</description>
+        </rule>
+        <rule id="318f-c6f3-a80b-85af" name="Stable Platform" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
           <description>The crew may move and fire with their handguns without suffering the additional -1 To Hit for mounted models.</description>
         </rule>
       </rules>
@@ -17864,7 +17877,6 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
         <infoLink id="e308-c252-22ae-8a7a" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="d1fd-b066-3840-fea9" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
         <infoLink id="608a-2279-6de7-df86" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-        <infoLink id="c6de-8151-1cb8-4021" name="Grapeshot" hidden="false" targetId="78db-91d9-aaca-d5ba" type="profile"/>
         <infoLink id="e3ee-f33c-7e8a-b80e" name="Random Movement (Variable)" hidden="false" targetId="4d40-9a96-4af8-e943" type="rule"/>
         <infoLink id="429a-e28d-30e6-cf78" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
       </infoLinks>
@@ -18230,7 +18242,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d6a-b63d-66b7-d7f5" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="c41d-168a-b18c-a33e" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death Loremaster" type="selectionEntry"/>
+                <entryLink id="c41d-168a-b18c-a33e" name="Lore of Death Loremaster" hidden="false" collective="false" import="true" targetId="b698-5ea6-1041-f8dd" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -19247,8 +19259,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
       </profiles>
       <rules>
         <rule id="fff9-31d2-4b14-d979" name="Chosen of Sigmar" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false">
-          <description>Valten has a Ward save (5+). In addition, once per game, he may harness the very power of Sigmar at the start of any close combat phase. Roll a D3; Valten adds the result to his WS, S, T and
-A characteristics until the end of the phase.</description>
+          <description>Valten has a Ward save (5+). In addition, once per game, he may harness the very power of Sigmar at the start of any close combat phase. Roll a D3; Valten adds the result to his WS, S, T and A characteristics until the end of the phase.</description>
         </rule>
         <rule id="7644-273a-d4a1-672f" name="Iron Resolve" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false">
           <description>If Valten is killed, take a LD test for him at the end of that phase. If he passes, he remains alive on 1 Wound, and the wounds that killed him are discounted. The effects of combat resolution, are worked out after determining whether Valten recovers. This rule does not apply if he is fleeing and is run down by chargers or pursuers, or slain by a Killing Blow.</description>
@@ -19267,15 +19278,9 @@ A characteristics until the end of the phase.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3533-1b52-2d7d-6c11" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8de-dcc6-dbc0-4bf7" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="aaf2-6ed2-6f14-b6f5" name="Ghal Maraz" publicationId="dcfc-4992-9141-dee0" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Hits from Ghal Maraz wound automatically, Ignores Armour saves and cause Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="b6ed-5a86-2bba-0982" name="Ghal Maraz" hidden="false" targetId="3306-ba34-d3d0-91a8" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -19594,14 +19599,14 @@ A characteristics until the end of the phase.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86e5-da68-e79c-09ff" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="1ab1-33da-4c2e-023e" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 1" type="selectionEntry"/>
-                <entryLink id="17c9-4032-9bee-504a" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 1" type="selectionEntry"/>
-                <entryLink id="82b0-905e-9446-c65d" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts 1" type="selectionEntry"/>
-                <entryLink id="74f0-d3e2-68d7-497e" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 1" type="selectionEntry"/>
-                <entryLink id="6cd5-e802-3a3f-7abb" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life 1" type="selectionEntry"/>
-                <entryLink id="9c55-db69-bb2a-54ef" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 1" type="selectionEntry"/>
-                <entryLink id="3d1c-7f29-a42d-4f6b" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 1" type="selectionEntry"/>
-                <entryLink id="f590-316a-9103-4a49" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 1" type="selectionEntry"/>
+                <entryLink id="1ab1-33da-4c2e-023e" name="Lore of Heavens 1" hidden="false" collective="false" import="true" targetId="0f8c-2cde-58ee-a1ea" type="selectionEntry"/>
+                <entryLink id="17c9-4032-9bee-504a" name="Lore of Fire 1" hidden="false" collective="false" import="true" targetId="f93e-44e1-cebf-ad47" type="selectionEntry"/>
+                <entryLink id="82b0-905e-9446-c65d" name="Lore of Beasts 1" hidden="false" collective="false" import="true" targetId="af0f-d911-7548-9f96" type="selectionEntry"/>
+                <entryLink id="74f0-d3e2-68d7-497e" name="Lore of Death 1" hidden="false" collective="false" import="true" targetId="bfad-333a-581e-8ae2" type="selectionEntry"/>
+                <entryLink id="6cd5-e802-3a3f-7abb" name="Lore of Life 1" hidden="false" collective="false" import="true" targetId="cdb7-05d6-6319-0838" type="selectionEntry"/>
+                <entryLink id="9c55-db69-bb2a-54ef" name="Lore of Light 1" hidden="false" collective="false" import="true" targetId="a0da-b525-64d9-f7f2" type="selectionEntry"/>
+                <entryLink id="3d1c-7f29-a42d-4f6b" name="Lore of Metal 1" hidden="false" collective="false" import="true" targetId="aa12-b508-c418-27a6" type="selectionEntry"/>
+                <entryLink id="f590-316a-9103-4a49" name="Lore of Shadow 1" hidden="false" collective="false" import="true" targetId="f528-9503-ec2f-a10e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -19622,7 +19627,7 @@ A characteristics until the end of the phase.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="fd4b-7d0f-aa9a-e053" name="The Burning Head" hidden="false" targetId="The Burning Head (Bound Spell 2" type="profile"/>
+            <infoLink id="fd4b-7d0f-aa9a-e053" name="The Burning Head (Bound Spell 5+)" hidden="false" targetId="387b-ff7a-b34f-caeb" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
@@ -20255,13 +20260,13 @@ If only a single Steam Point is expended, the Steam Gun is treated as a S 2 Brea
       <description>The Griffon gains +1 A.</description>
     </rule>
     <rule id="a6eb-dc1c-db8d-bab2" name="Bloodroar" publicationId="315d-135b-135c-07ce" page="218" hidden="false">
-      <description>Enemy units must roll an additional D6, discarding the lowest result, for LD tests caused by this beast&apos;s Fear or Terror.</description>
+      <description>Enemy units must roll an additional D6, discarding the lowest result, for LD tests caused by this beast&apos;s Terror rule.</description>
     </rule>
     <rule id="3f05-66d5-d1c1-3ce4" name="Crush the Weak" publicationId="315d-135b-135c-07ce" page="230" hidden="false">
       <description>The model has Hatred against enemies with a LD characteristic of 6 or lower.</description>
     </rule>
     <rule id="7913-7420-3223-1aab" name="Monster Hunter" publicationId="315d-135b-135c-07ce" page="235" hidden="false">
-      <description>Models with this special rule re-roll all failed To Hit rolls when shooting at monsters.</description>
+      <description>Models with this rule re-roll all failed To Hit rolls when shooting at monsters.</description>
     </rule>
     <rule id="e9e1-04e8-7e44-5cc6" name="Blinding Light" publicationId="b3a3-a398-4838-11a1" page="13" hidden="false">
       <description>Whenever the Knights declare a charge, roll a D6. A roll of 1 means the Blinding Light cannot be used this charge. On a 2+, there is enough sunlight for the Knights to dazzle their enemies as they charge. The enemy unit being charged are at -1 WS and BS for the duration of the turn.</description>
@@ -20307,8 +20312,7 @@ of a &apos;1&apos; the unit may not move that turn.</description>
       <description>Knights of the Gold Lion are Stubborn in the first round of every combat.</description>
     </rule>
     <rule id="c616-9084-2db2-a361" name="Exemplars of Sigmar" publicationId="b3a3-a398-4838-11a1" page="33" hidden="false">
-      <description>Any friendly units within 6&quot; of a unit of Knights of Sigmar&apos;s Blood may re-roll any failed Fear, Terror or
-Panic tests.</description>
+      <description>Any friendly units within 6&quot; of a unit of Knights of Sigmar&apos;s Blood may re-roll any failed Fear, Terror or Panic tests.</description>
     </rule>
     <rule id="804b-6d3f-24da-5dcc" name="Two-sword Technique" publicationId="b3a3-a398-4838-11a1" page="34" hidden="false">
       <description>Knights Encarmine may re-roll 1&apos;s when rolling to Hit in close combat.</description>
@@ -20960,9 +20964,15 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
         <characteristic name="Result" typeId="f38c-ba7a-9afa-9885">Meteor Strike: The model under the template&apos;s central hole suffers a S 6 hit with Multiple Wounds (D6). All other models hit by the template suffer a S 3 hit.</characteristic>
       </characteristics>
     </profile>
+    <profile id="3306-ba34-d3d0-91a8" name="Ghal Maraz" publicationId="315d-135b-135c-07ce" page="221" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Hits from Ghal Maraz wound automatically, Ignores Armour saves and cause Multiple Wounds (D3).</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="3fe5-c8ad-7c73-fb52" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="17bf-7889-dfc6-b361" name="Magic" targetId="a579-d41f-e1ad-746f" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

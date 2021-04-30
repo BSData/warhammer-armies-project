@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="efb3-d0de-5567-f01a" name="Daemonic Gift">
@@ -40,7 +40,7 @@
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -57,9 +57,10 @@
       </rules>
       <infoLinks>
         <infoLink id="e960-210d-76f4-417b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-        <infoLink id="8624-3b1d-d697-d2fa" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="8624-3b1d-d697-d2fa" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="c375-11a2-cc26-6a8d" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
         <infoLink id="ebba-7dee-50b5-3536" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="f9c3-5493-acef-8db0" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d62c-499e-b006-a802" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -155,7 +156,7 @@
                     <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
                     <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+</characteristic>
                     <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target must pass a T test. If failed, the model is crushed to death and is removed from play, with no saves allowed.</characteristic>
+                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single model (even a character in a unit). The target must pass a T test. If failed, the model is removed from play, with no saves allowed.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -211,7 +212,7 @@
         <entryLink id="bca1-b196-e26b-afcd" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="525.0"/>
+        <cost name="pts" typeId="points" value="520.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd56-ffb5-4aaf-ce54" name="Skarbrand" hidden="false" collective="false" import="true" type="model">
@@ -294,7 +295,7 @@
         <entryLink id="7395-c3d3-1224-506f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="540.0"/>
+        <cost name="pts" typeId="points" value="510.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b93-802a-1953-53d0" name="Kairos Fateweaver" hidden="false" collective="false" import="true" type="model">
@@ -360,11 +361,11 @@
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="504d-f1f6-845f-6b07" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="90e2-f51d-3572-e3b0" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death Kairos (right head)" type="selectionEntry"/>
-                <entryLink id="d431-ee88-12dd-52ba" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire Kairos (right head)" type="selectionEntry"/>
-                <entryLink id="e3c2-d793-074b-fd7a" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos Kairos" type="selectionEntry"/>
-                <entryLink id="a7c1-048b-d48c-70b3" name="Lore of Beasts" hidden="false" collective="false" import="true" targetId="Lore of Beasts Kairos (right head)" type="selectionEntry"/>
-                <entryLink id="df68-3b9a-c8d3-3216" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow Kairos (right head)" type="selectionEntry"/>
+                <entryLink id="90e2-f51d-3572-e3b0" name="Lore of Death 4 Kairos (right head)" hidden="false" collective="false" import="true" targetId="26d0-570f-d4e7-e239" type="selectionEntry"/>
+                <entryLink id="d431-ee88-12dd-52ba" name="Lore of Fire 4 Kairos (right head)" hidden="false" collective="false" import="true" targetId="baee-d164-18c1-24aa" type="selectionEntry"/>
+                <entryLink id="e3c2-d793-074b-fd7a" name="Lore of Tzeentch DoC 4 Loremaster" hidden="false" collective="false" import="true" targetId="0686-aeae-7185-7dd8" type="selectionEntry"/>
+                <entryLink id="a7c1-048b-d48c-70b3" name="Lore of Beasts 4 Kairos (right head)" hidden="false" collective="false" import="true" targetId="cf68-2608-cd81-4f2a" type="selectionEntry"/>
+                <entryLink id="df68-3b9a-c8d3-3216" name="Lore of Shadow 4 Kairos (right head)" hidden="false" collective="false" import="true" targetId="a1db-1ab1-51c2-b062" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="b876-9102-f688-52dc" name="Lore of Magic (left head)" hidden="false" collective="false" import="true">
@@ -373,11 +374,11 @@
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1090-527a-cf90-d025" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="20bd-ac6a-b09b-2bf7" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light Kairos (left head)" type="selectionEntry"/>
-                <entryLink id="3a8d-8d10-ef79-e8ee" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens Kairos (left head)" type="selectionEntry"/>
-                <entryLink id="fe1d-f1b8-8b84-9bcb" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal Kairos (left head)" type="selectionEntry"/>
-                <entryLink id="2b9b-4814-4ba5-450e" name="Lore of Life" hidden="false" collective="false" import="true" targetId="Lore of Life Kairos (left head)" type="selectionEntry"/>
-                <entryLink id="ceb4-53cf-4535-97d8" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos Kairos" type="selectionEntry"/>
+                <entryLink id="20bd-ac6a-b09b-2bf7" name="Lore of Life 4 Kairos (left head)" hidden="false" collective="false" import="true" targetId="dacf-c301-8a56-33f6" type="selectionEntry"/>
+                <entryLink id="3a8d-8d10-ef79-e8ee" name="Lore of Light 4 Kairos (left head)" hidden="false" collective="false" import="true" targetId="1699-51aa-6506-5211" type="selectionEntry"/>
+                <entryLink id="fe1d-f1b8-8b84-9bcb" name="Lore of Metal 4 Kairos (left head)" hidden="false" collective="false" import="true" targetId="0a17-f0d2-222d-683e" type="selectionEntry"/>
+                <entryLink id="2b9b-4814-4ba5-450e" name="Lore of Heavens 4 Kairos (left head)" hidden="false" collective="false" import="true" targetId="2a4e-1b5d-29a7-5e80" type="selectionEntry"/>
+                <entryLink id="ceb4-53cf-4535-97d8" name="Lore of Tzeentch DoC 4 Loremaster" hidden="false" collective="false" import="true" targetId="0686-aeae-7185-7dd8" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -418,7 +419,7 @@
         <entryLink id="f9cb-425d-9ce4-60b9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="475.0"/>
+        <cost name="pts" typeId="points" value="445.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ace1-d134-796e-58f5" name="Reign of Chaos" hidden="false" collective="false" import="true" type="upgrade">
@@ -484,7 +485,7 @@
       </profiles>
       <rules>
         <rule id="75e9-e7d3-4195-bd9e" name="Reign of Chaos" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false">
-          <description>Whenever you roll for the Winds of Magic, total the two highest dice scores (in most games you only roll two dice for the Winds of Magic, so simply total these) and immediately resolve the result.</description>
+          <description>Whenever you roll for the Winds of Magic, total the two scores (in games where you roll 4D6, 6D6 etc, divide the result by 2, 3 etc, rounding up) and immediately resolve the result shown on the table.</description>
         </rule>
       </rules>
       <costs>
@@ -548,7 +549,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ff0-7eec-70e7-1fa8" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="a4c3-848b-8422-09b7" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 1" type="selectionEntry"/>
+                <entryLink id="a4c3-848b-8422-09b7" name="Lore of Nurgle DoC 1" hidden="false" collective="false" import="true" targetId="ed07-10fc-8676-da7b" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -617,7 +618,7 @@
         <entryLink id="3158-3f0e-8b72-da77" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="540.0"/>
+        <cost name="pts" typeId="points" value="510.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bff3-1611-d9a6-8d49" name="Bloodthirster" hidden="false" collective="false" import="true" type="model">
@@ -713,12 +714,42 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="7fad-81b8-854a-984e" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="6a83-9001-1c84-66d1" name="Hellfire" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5125-6ff3-b5ca-5cb6" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="2c74-c06a-3302-97fe" name="Hellfire" publicationId="ee54-3543-b9db-fe40" page="116" hidden="false">
+                  <description>The Bloodthirster gains a S 5 Breath Weapon with Flaming Attacks.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="72e5-1ed9-361e-a4ba" name="Relentless Hunter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a33-8002-dc75-a90f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="20ff-be2f-8d7d-7b32" name="Relentless Hunter" publicationId="ee54-3543-b9db-fe40" page="116" hidden="false">
+                  <description>The Bloodthirster gains Hatred (Characters) and gains 3&quot; to its charge range when charging a unit containing any characters.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="0958-5550-e2cf-790c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="460.0"/>
+        <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f3b8-b77c-6321-c706" name="Lord of Change" hidden="false" collective="false" import="true" type="model">
@@ -811,7 +842,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="718a-eb6e-2b47-c9a1" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="3b49-e7df-6e7f-e75e" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 4" type="selectionEntry"/>
+                    <entryLink id="3b49-e7df-6e7f-e75e" name="Lore of Tzeentch DoC 4" hidden="false" collective="false" import="true" targetId="a61f-b5d2-87d3-79f0" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -841,7 +872,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4754-5323-5e6c-8f46" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="5695-c822-2fa4-ce38" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 3" type="selectionEntry"/>
+                    <entryLink id="5695-c822-2fa4-ce38" name="Lore of Tzeentch DoC 3" hidden="false" collective="false" import="true" targetId="d4ad-534c-d6c9-c3d8" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -871,7 +902,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14d5-c52c-9893-a0e1" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="dd68-fa1d-0e5e-e72e" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 1" type="selectionEntry"/>
+                    <entryLink id="dd68-fa1d-0e5e-e72e" name="Lore of Tzeentch DoC 2" hidden="false" collective="false" import="true" targetId="2e5f-9d3c-e7bf-06db" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -886,7 +917,7 @@
         <entryLink id="8714-6f6f-5ae8-165b" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="460.0"/>
+        <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddac-5140-eb53-3a2e" name="Great Unclean One" hidden="false" collective="false" import="true" type="model">
@@ -966,7 +997,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e56b-b86f-1bea-6a4d" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f5bc-d077-548b-04f2" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 4" type="selectionEntry"/>
+                    <entryLink id="f5bc-d077-548b-04f2" name="Lore of Nurgle DoC 4" hidden="false" collective="false" import="true" targetId="44a5-fe9b-fc11-1c95" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -996,7 +1027,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d80-6697-22b9-a55b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="7f20-7fc1-f57d-4149" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 3" type="selectionEntry"/>
+                    <entryLink id="7f20-7fc1-f57d-4149" name="Lore of Nurgle DoC 3" hidden="false" collective="false" import="true" targetId="0705-8e14-68e3-9db5" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1026,7 +1057,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4b7-fd83-b110-07ef" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ccb7-c1f5-32e8-e4c5" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 2" type="selectionEntry"/>
+                    <entryLink id="ccb7-c1f5-32e8-e4c5" name="Lore of Nurgle DoC 2" hidden="false" collective="false" import="true" targetId="8d6d-00fa-7328-91cd" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1056,7 +1087,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06be-9dda-eff2-58aa" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="b3a2-8ce7-2603-c06f" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 1" type="selectionEntry"/>
+                    <entryLink id="b3a2-8ce7-2603-c06f" name="Lore of Nurgle DoC 1" hidden="false" collective="false" import="true" targetId="ed07-10fc-8676-da7b" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1101,7 +1132,7 @@
         <entryLink id="6587-1014-2e1a-10ce" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="460.0"/>
+        <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ee9-a740-99bc-8795" name="Keeper of Secrets" hidden="false" collective="false" import="true" type="model">
@@ -1162,15 +1193,15 @@
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3e1e-e0c5-2d08-f14e" name="Buckler" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3e1e-e0c5-2d08-f14e" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a65-3ec8-b4c8-60f1" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="270b-9f5f-845b-ab16" name="Buckler" hidden="false" targetId="1700-a7e5-d272-ef20" type="profile"/>
+            <infoLink id="270b-9f5f-845b-ab16" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1203,7 +1234,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="985b-cdc7-d4cf-4d8e" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="9165-9b4c-b23f-6cce" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 4" type="selectionEntry"/>
+                    <entryLink id="9165-9b4c-b23f-6cce" name="Lore of Slaanesh DoC 4" hidden="false" collective="false" import="true" targetId="1648-deaa-2a7d-a8ec" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1233,7 +1264,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2431-68b0-a8ab-507e" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f195-852f-73e3-c15a" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 3" type="selectionEntry"/>
+                    <entryLink id="f195-852f-73e3-c15a" name="Lore of Slaanesh DoC 3" hidden="false" collective="false" import="true" targetId="d283-cf29-8ce3-a88d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1263,7 +1294,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eed4-cb39-84e1-621c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="3ea0-0d50-ef74-3124" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 2" type="selectionEntry"/>
+                    <entryLink id="3ea0-0d50-ef74-3124" name="Lore of Slaanesh DoC 2" hidden="false" collective="false" import="true" targetId="ad91-1337-efef-da4d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1293,7 +1324,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77b2-aeaa-cd90-4357" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="16e5-90b7-e33e-bd67" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 1" type="selectionEntry"/>
+                    <entryLink id="16e5-90b7-e33e-bd67" name="Lore of Slaanesh DoC 1" hidden="false" collective="false" import="true" targetId="e073-34ce-84d2-e716" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1308,7 +1339,7 @@
         <entryLink id="edf0-e609-b67b-a40d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="460.0"/>
+        <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="024b-682d-a62a-a474" name="Gaunt Summoner of Tzeentch" hidden="false" collective="false" import="true" type="model">
@@ -1423,6 +1454,20 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntries>
+                <selectionEntry id="e196-375e-963c-a743" name="Summon Daemons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49c7-58f4-49ec-ef5c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d92-ff98-e758-a94a" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bc45-4726-0866-2ecf" name="Summon Daemons" hidden="false" targetId="9659-19da-77a6-f16c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="b7a0-f98b-d045-7773" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f0c9-544e-c907-0ce1">
                   <constraints>
@@ -1430,7 +1475,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d617-ca12-82d6-bfc0" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f0c9-544e-c907-0ce1" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 4 Gaunt" type="selectionEntry"/>
+                    <entryLink id="f0c9-544e-c907-0ce1" name="Lore of Tzeentch DoC 4" hidden="false" collective="false" import="true" targetId="a61f-b5d2-87d3-79f0" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1453,14 +1498,28 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntries>
+                <selectionEntry id="f3a9-2649-c6a4-2d18" name="Summon Daemons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa67-f6e4-585e-855f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4808-e91e-259a-c693" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8f9d-1edc-087b-5da3" name="Summon Daemons" hidden="false" targetId="9659-19da-77a6-f16c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups>
-                <selectionEntryGroup id="919e-e4f6-7d70-1f04" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="0eb0-5e5a-46cb-70f9">
+                <selectionEntryGroup id="919e-e4f6-7d70-1f04" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="5e35-b23d-9d31-b0ac">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2a3-154b-3515-afa2" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb2a-ee1f-ff9b-d471" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="0eb0-5e5a-46cb-70f9" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 3 Gaunt" type="selectionEntry"/>
+                    <entryLink id="5e35-b23d-9d31-b0ac" name="Lore of Tzeentch DoC 3" hidden="false" collective="false" import="true" targetId="d4ad-534c-d6c9-c3d8" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1475,7 +1534,7 @@
         <entryLink id="fe31-038d-3cc4-19b2" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="245.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d14a-8f31-e0c0-3f0c" name="Infernal Enrapturess" hidden="false" collective="false" import="true" type="model">
@@ -1549,7 +1608,7 @@
         <entryLink id="203d-b4fd-8cbb-7572" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="255.0"/>
+        <cost name="pts" typeId="points" value="195.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5263-2ce6-0ab9-abd4" name="Daemon Prince" hidden="false" collective="false" import="true" type="model">
@@ -1663,7 +1722,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e24-aff8-625f-7821" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="d5e0-0298-0435-3a30" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 4" type="selectionEntry"/>
+                            <entryLink id="d5e0-0298-0435-3a30" name="Lore of Tzeentch DoC 4" hidden="false" collective="false" import="true" targetId="a61f-b5d2-87d3-79f0" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1685,7 +1744,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9a7-8b61-a0ab-cfcd" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="f49b-730a-bea3-f061" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 3" type="selectionEntry"/>
+                            <entryLink id="f49b-730a-bea3-f061" name="Lore of Tzeentch DoC 3" hidden="false" collective="false" import="true" targetId="d4ad-534c-d6c9-c3d8" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1707,7 +1766,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd28-3824-4922-c0d0" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="304b-a836-ade5-2c24" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 2" type="selectionEntry"/>
+                            <entryLink id="304b-a836-ade5-2c24" name="Lore of Tzeentch DoC 2" hidden="false" collective="false" import="true" targetId="2e5f-9d3c-e7bf-06db" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1729,7 +1788,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0949-c2e4-2d54-ae92" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="1336-608f-dd0a-d3c4" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 1" type="selectionEntry"/>
+                            <entryLink id="1336-608f-dd0a-d3c4" name="Lore of Tzeentch DoC 1" hidden="false" collective="false" import="true" targetId="0a83-5ec7-fdc1-096f" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1744,7 +1803,7 @@
                 <entryLink id="a4f5-6545-8ea7-8911" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="285.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e63-91f3-f1fc-a87d" name="Daemon Prince of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
@@ -1845,7 +1904,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1785-a56c-2cb8-9a5e" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="4269-6d55-17f6-e0c5" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 4" type="selectionEntry"/>
+                            <entryLink id="4269-6d55-17f6-e0c5" name="Lore of Slaanesh DoC 4" hidden="false" collective="false" import="true" targetId="1648-deaa-2a7d-a8ec" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1867,7 +1926,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b9f-6b18-919e-9b3c" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="9f69-03c4-030f-f1ba" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 3" type="selectionEntry"/>
+                            <entryLink id="9f69-03c4-030f-f1ba" name="Lore of Slaanesh DoC 3" hidden="false" collective="false" import="true" targetId="d283-cf29-8ce3-a88d" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1889,7 +1948,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bfe-11ce-cb43-d963" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="d14c-0fbb-51c1-77cb" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 2" type="selectionEntry"/>
+                            <entryLink id="d14c-0fbb-51c1-77cb" name="Lore of Slaanesh DoC 2" hidden="false" collective="false" import="true" targetId="ad91-1337-efef-da4d" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1911,7 +1970,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e8c-5454-7264-cb53" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="33ce-0dd9-62e3-536d" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 1" type="selectionEntry"/>
+                            <entryLink id="33ce-0dd9-62e3-536d" name="Lore of Slaanesh DoC 1" hidden="false" collective="false" import="true" targetId="e073-34ce-84d2-e716" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -1926,7 +1985,7 @@
                 <entryLink id="b272-cc45-3da7-39b5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="275.0"/>
+                <cost name="pts" typeId="points" value="245.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8188-6429-e8ff-fec7" name="Daemon Prince of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2027,7 +2086,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d248-d2a0-3954-6043" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="5874-24f8-a7a2-ec85" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 4" type="selectionEntry"/>
+                            <entryLink id="5874-24f8-a7a2-ec85" name="Lore of Nurgle DoC 4" hidden="false" collective="false" import="true" targetId="44a5-fe9b-fc11-1c95" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2049,7 +2108,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e60-0643-c011-bfdc" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="9819-c5f2-8549-33f0" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 3" type="selectionEntry"/>
+                            <entryLink id="9819-c5f2-8549-33f0" name="Lore of Nurgle DoC 3" hidden="false" collective="false" import="true" targetId="0705-8e14-68e3-9db5" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2071,7 +2130,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3257-acc3-073c-90f8" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="ea04-5267-4866-c5b4" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 2" type="selectionEntry"/>
+                            <entryLink id="ea04-5267-4866-c5b4" name="Lore of Nurgle DoC 2" hidden="false" collective="false" import="true" targetId="8d6d-00fa-7328-91cd" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2093,7 +2152,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d3a-3729-29b4-19ae" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="51c4-23fc-3c8a-f972" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 1" type="selectionEntry"/>
+                            <entryLink id="51c4-23fc-3c8a-f972" name="Lore of Nurgle DoC 1" hidden="false" collective="false" import="true" targetId="ed07-10fc-8676-da7b" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2108,7 +2167,7 @@
                 <entryLink id="c532-3055-2501-4d54" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="285.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9728-4cde-9c23-1f81" name="Daemon Prince" hidden="false" collective="false" import="true" type="upgrade">
@@ -2207,10 +2266,10 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a26c-bd09-b6e8-296c" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="55a5-9214-fc3d-e4e7" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 4" type="selectionEntry"/>
-                            <entryLink id="b7d4-b646-0b5f-4820" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 4" type="selectionEntry"/>
-                            <entryLink id="aaa1-295f-dfe5-856a" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 4" type="selectionEntry"/>
-                            <entryLink id="6c77-42f4-76d0-083f" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 4" type="selectionEntry"/>
+                            <entryLink id="55a5-9214-fc3d-e4e7" name="Lore of Shadow 4" hidden="false" collective="false" import="true" targetId="ee91-ed67-6c90-eca4" type="selectionEntry"/>
+                            <entryLink id="b7d4-b646-0b5f-4820" name="Lore of Death 4" hidden="false" collective="false" import="true" targetId="5995-b154-0501-6799" type="selectionEntry"/>
+                            <entryLink id="aaa1-295f-dfe5-856a" name="Lore of Fire 4" hidden="false" collective="false" import="true" targetId="9813-88f3-58e8-70a2" type="selectionEntry"/>
+                            <entryLink id="6c77-42f4-76d0-083f" name="Lore of Metal 4" hidden="false" collective="false" import="true" targetId="2cef-95ed-47e7-6458" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2232,10 +2291,10 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae92-071c-35e5-b70c" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="6797-1922-060f-9ec8" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 3" type="selectionEntry"/>
-                            <entryLink id="27ec-180c-4b01-0ef8" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 3" type="selectionEntry"/>
-                            <entryLink id="8547-2484-b1d4-13a1" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 3" type="selectionEntry"/>
-                            <entryLink id="3cd7-226e-1e2e-5da2" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 3" type="selectionEntry"/>
+                            <entryLink id="6797-1922-060f-9ec8" name="Lore of Shadow 3" hidden="false" collective="false" import="true" targetId="77ca-306d-33ed-137d" type="selectionEntry"/>
+                            <entryLink id="27ec-180c-4b01-0ef8" name="Lore of Death 3" hidden="false" collective="false" import="true" targetId="f57c-d5cd-43b4-9def" type="selectionEntry"/>
+                            <entryLink id="8547-2484-b1d4-13a1" name="Lore of Fire 3" hidden="false" collective="false" import="true" targetId="38e4-62f8-1c43-e66f" type="selectionEntry"/>
+                            <entryLink id="3cd7-226e-1e2e-5da2" name="Lore of Metal 3" hidden="false" collective="false" import="true" targetId="1f3e-d6ea-0989-718d" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2257,10 +2316,10 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00ec-1a70-cfe0-b033" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="960d-0a8f-b70a-4398" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 2" type="selectionEntry"/>
-                            <entryLink id="70f0-4d96-ac6b-edeb" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 2" type="selectionEntry"/>
-                            <entryLink id="72e4-ddf2-9cb7-1b94" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 2" type="selectionEntry"/>
-                            <entryLink id="ffa3-42b3-93a8-dd6f" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 2" type="selectionEntry"/>
+                            <entryLink id="960d-0a8f-b70a-4398" name="Lore of Shadow 2" hidden="false" collective="false" import="true" targetId="1d80-5fca-a870-79a5" type="selectionEntry"/>
+                            <entryLink id="70f0-4d96-ac6b-edeb" name="Lore of Death 2" hidden="false" collective="false" import="true" targetId="7970-3c13-23f3-0e8e" type="selectionEntry"/>
+                            <entryLink id="72e4-ddf2-9cb7-1b94" name="Lore of Fire 2" hidden="false" collective="false" import="true" targetId="c7e8-49d0-8c44-7db0" type="selectionEntry"/>
+                            <entryLink id="ffa3-42b3-93a8-dd6f" name="Lore of Metal 2" hidden="false" collective="false" import="true" targetId="4459-c449-c602-50d3" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2282,10 +2341,10 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="805a-4782-9159-492e" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="862b-1230-0108-1f75" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 1" type="selectionEntry"/>
-                            <entryLink id="c5b8-13b7-5d0c-d661" name="Lore of Death" hidden="false" collective="false" import="true" targetId="Lore of Death 1" type="selectionEntry"/>
-                            <entryLink id="8960-d490-1684-3d95" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 1" type="selectionEntry"/>
-                            <entryLink id="8fcd-efe2-2288-8860" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 1" type="selectionEntry"/>
+                            <entryLink id="862b-1230-0108-1f75" name="Lore of Metal 1" hidden="false" collective="false" import="true" targetId="aa12-b508-c418-27a6" type="selectionEntry"/>
+                            <entryLink id="c5b8-13b7-5d0c-d661" name="Lore of Death 1" hidden="false" collective="false" import="true" targetId="bfad-333a-581e-8ae2" type="selectionEntry"/>
+                            <entryLink id="8960-d490-1684-3d95" name="Lore of Shadow 1" hidden="false" collective="false" import="true" targetId="f528-9503-ec2f-a10e" type="selectionEntry"/>
+                            <entryLink id="8fcd-efe2-2288-8860" name="Lore of Fire 1" hidden="false" collective="false" import="true" targetId="f93e-44e1-cebf-ad47" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2300,7 +2359,7 @@
                 <entryLink id="3f8e-5fa9-79bb-8f24" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="270.0"/>
+                <cost name="pts" typeId="points" value="240.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="279b-2042-d17f-b642" name="Daemon Prince of Khorne" hidden="false" collective="false" import="true" type="upgrade">
@@ -2387,7 +2446,7 @@
                 <entryLink id="43a8-0ccf-e759-8de5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="285.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2544,7 +2603,7 @@
         <entryLink id="678f-4cb8-515a-0e79" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="235.0"/>
+        <cost name="pts" typeId="points" value="215.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ca0-057c-8d9b-3a47" name="Karanak" hidden="false" collective="false" import="true" type="model">
@@ -2607,7 +2666,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="250.0"/>
+        <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="060d-b014-095e-21de" name="The Blue Scribes" hidden="false" collective="false" import="true" type="model">
@@ -2682,7 +2741,7 @@
         <entryLink id="3870-d9bc-c4e4-9ef4" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="100.0"/>
+        <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da64-1c8c-74a0-abcd" name="The Changeling" hidden="false" collective="false" import="true" type="model">
@@ -2754,7 +2813,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79c7-20a6-3860-7858" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="b0d2-31a8-a0a5-2e01" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 1" type="selectionEntry"/>
+                <entryLink id="b0d2-31a8-a0a5-2e01" name="Lore of Tzeentch DoC 1" hidden="false" collective="false" import="true" targetId="0a83-5ec7-fdc1-096f" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2767,7 +2826,7 @@
         <entryLink id="8cd7-3b69-864b-67aa" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="175.0"/>
+        <cost name="pts" typeId="points" value="155.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="84c6-3c4c-01af-cc90" name="Epidemius" hidden="false" collective="false" import="true" type="model">
@@ -2862,7 +2921,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
         <entryLink id="12f1-8157-7656-5683" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="205.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="84aa-93ac-948b-67fc" name="Horticulous Slimux" hidden="false" collective="false" import="true" type="model">
@@ -2965,7 +3024,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
         <entryLink id="fb18-7ba6-b07f-e523" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="320.0"/>
+        <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8643-2f59-9b4a-bac0" name="The Masque of Slaanesh" hidden="false" collective="false" import="true" type="model">
@@ -3034,7 +3093,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
         <entryLink id="c54b-8612-c3c2-06d9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="180.0"/>
+        <cost name="pts" typeId="points" value="160.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c72-31dd-c7ec-3e79" name="Herald" hidden="false" collective="false" import="true" type="model">
@@ -3082,37 +3141,12 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9596-5fa6-c22c-2689" name="Daemonic Gifts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1a25-9e66-7bf8-1cdb" name="Daemonic Gifts &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="decrement" field="d163-0498-c468-eba1" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a25-9e66-7bf8-1cdb" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="17fe-51c4-06e5-c221" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d163-0498-c468-eba1" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="b519-881e-4b8d-01a9" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
-                    <entryLink id="94ce-fd07-86e4-e928" name="Gifts of Tzeentch" hidden="false" collective="false" import="true" targetId="d406-65f6-d51e-0fe2" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1a25-9e66-7bf8-1cdb" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="22ea-ea81-fdce-92fc" value="0">
+                    <modifier type="set" field="f2d6-0a26-2cc1-7873" value="25.0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0493-51a0-a9b7-187e" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="f2d6-0a26-2cc1-7873" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9596-5fa6-c22c-2689" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -3124,6 +3158,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <entryLink id="1dcf-458d-b880-4ac2" name="Talismans" hidden="false" collective="false" import="true" targetId="7076-9cba-be01-b9e1" type="selectionEntryGroup"/>
                     <entryLink id="6c05-3bde-d165-6e29" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
                     <entryLink id="db59-ec70-cd17-41e7" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
+                    <entryLink id="a1fb-16bc-ab81-96c2" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
+                    <entryLink id="9a33-18f8-ad46-39db" name="Gifts of Tzeentch" hidden="false" collective="false" import="true" targetId="d406-65f6-d51e-0fe2" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3159,7 +3195,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f2a-82cb-8f97-7c64" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="580e-2363-b4b5-5955" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 2" type="selectionEntry"/>
+                            <entryLink id="580e-2363-b4b5-5955" name="Lore of Tzeentch DoC 2" hidden="false" collective="false" import="true" targetId="2e5f-9d3c-e7bf-06db" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -3189,7 +3225,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69fc-50d1-6d27-ee8f" type="max"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="422c-5dc4-b1aa-a08c" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 1" type="selectionEntry"/>
+                            <entryLink id="422c-5dc4-b1aa-a08c" name="Lore of Tzeentch DoC 1" hidden="false" collective="false" import="true" targetId="0a83-5ec7-fdc1-096f" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -3272,9 +3308,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                       <selectionEntries>
                         <selectionEntry id="0493-51a0-a9b7-187e" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="5447-9427-158e-b3b7" value="0">
+                            <modifier type="set" field="5447-9427-158e-b3b7" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="2be5-1621-587f-64f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a25-9e66-7bf8-1cdb" type="atLeast"/>
+                                <condition field="points" scope="2be5-1621-587f-64f3" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a25-9e66-7bf8-1cdb" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -3379,7 +3415,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="120.0"/>
+                <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ca21-6c6b-3291-dc49" name="Herald of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
@@ -3438,25 +3474,20 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="156c-7c2e-655c-92b5" type="max"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink id="f92a-372f-cce6-9a3f" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 1" type="selectionEntry"/>
+                        <entryLink id="f92a-372f-cce6-9a3f" name="Lore of Slaanesh DoC 1" hidden="false" collective="false" import="true" targetId="e073-34ce-84d2-e716" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
+                    <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="20ab-63b9-c0ac-e769" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="20ab-63b9-c0ac-e769" name="Daemonic Gifts &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="4486-6da5-7252-9e97" value="0">
+                    <modifier type="set" field="9462-2e44-418e-4196" value="25.0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3bcc-b766-c604-d0b0" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="9462-2e44-418e-4196" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c5c-f909-9d63-db34" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -3467,26 +3498,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <entryLink id="97c0-8cec-61ef-8b9c" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                     <entryLink id="5ff2-e0e3-91f4-ff8f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                     <entryLink id="886b-22eb-f101-ee57" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9c5c-f909-9d63-db34" name="Daemonic Gifts" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="4b0f-a618-e977-ac6b" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ab-63b9-c0ac-e769" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="570f-564a-1fc6-5889" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4b0f-a618-e977-ac6b" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="3580-311f-f890-c715" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
-                    <entryLink id="7cb5-e23e-7b3a-c299" name="Gifts of Slaanesh" hidden="false" collective="false" import="true" targetId="a6c0-ee41-9842-7cc5" type="selectionEntryGroup"/>
+                    <entryLink id="41b0-be15-f4d4-4b76" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
+                    <entryLink id="6fa1-5b1e-a262-589d" name="Gifts of Slaanesh" hidden="false" collective="false" import="true" targetId="a6c0-ee41-9842-7cc5" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3523,9 +3536,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                       <selectionEntries>
                         <selectionEntry id="3bcc-b766-c604-d0b0" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="6c8e-0783-7468-a9a5" value="0">
+                            <modifier type="set" field="6c8e-0783-7468-a9a5" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="ca21-6c6b-3291-dc49" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ab-63b9-c0ac-e769" type="atLeast"/>
+                                <condition field="points" scope="ca21-6c6b-3291-dc49" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ab-63b9-c0ac-e769" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -3668,7 +3681,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="120.0"/>
+                <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2f81-de25-1e79-4837" name="Herald of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
@@ -3705,37 +3718,12 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="0916-97df-5422-81f0" name="Daemonic Gifts" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c459-43a3-8fe4-0354" name="Daemonic Gifts&amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="decrement" field="304e-ae63-4795-df3b" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c459-43a3-8fe4-0354" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2081-e60d-3d8c-a19b" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="304e-ae63-4795-df3b" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="e87e-1edb-ccea-0281" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
-                    <entryLink id="e879-19f8-c8f2-4690" name="Gifts of Nurgle" hidden="false" collective="false" import="true" targetId="2e39-1fa4-40a3-3c18" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c459-43a3-8fe4-0354" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="8208-5253-e7d0-0b09" value="0">
+                    <modifier type="set" field="8fcc-04d2-ac05-bf55" value="25.0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3fe-be77-c186-b697" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="8fcc-04d2-ac05-bf55" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0916-97df-5422-81f0" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -3746,6 +3734,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <entryLink id="ee59-9732-ea18-e7d2" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                     <entryLink id="2087-b8a8-aa81-9659" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                     <entryLink id="5490-99b3-189d-31f3" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
+                    <entryLink id="cb73-0b36-4b46-cbfe" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
+                    <entryLink id="3c80-5c19-654a-e420" name="Gifts of Nurgle" hidden="false" collective="false" import="true" targetId="2e39-1fa4-40a3-3c18" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3773,12 +3763,12 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="228d-78b8-2c78-7f9c" type="max"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink id="af30-36b3-22fa-b25a" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 1" type="selectionEntry"/>
+                        <entryLink id="af30-36b3-22fa-b25a" name="Lore of Nurgle DoC 1" hidden="false" collective="false" import="true" targetId="ed07-10fc-8676-da7b" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
+                    <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3812,9 +3802,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                       <selectionEntries>
                         <selectionEntry id="a3fe-be77-c186-b697" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="113c-97be-db51-3b61" value="0">
+                            <modifier type="set" field="113c-97be-db51-3b61" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="2f81-de25-1e79-4837" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c459-43a3-8fe4-0354" type="atLeast"/>
+                                <condition field="points" scope="2f81-de25-1e79-4837" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c459-43a3-8fe4-0354" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -3919,7 +3909,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="130.0"/>
+                <cost name="pts" typeId="points" value="110.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f339-f2ee-e895-c684" name="Herald of Khorne" hidden="false" collective="false" import="true" type="upgrade">
@@ -3956,14 +3946,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="37db-7c90-6da5-3398" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="37db-7c90-6da5-3398" name="Daemonic Gifts &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="decrement" field="9cc4-f387-50e9-cbe3" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4641-f985-a990-2164" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="set" field="17ff-9ca9-4bcb-84b5" value="0">
+                    <modifier type="set" field="9cc4-f387-50e9-cbe3" value="25.0">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5af-ea07-c99f-a030" type="atLeast"/>
                       </conditions>
@@ -3977,26 +3962,8 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <entryLink id="7666-3cc8-c014-e5ac" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
                     <entryLink id="f4b5-775d-8e0d-40fd" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
                     <entryLink id="7544-dbfc-369f-94ce" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e734-c694-dcfa-6eff" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4641-f985-a990-2164" name="Daemonic Gifts" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="884d-8173-1888-c949" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37db-7c90-6da5-3398" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b7-2875-fae0-f950" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="884d-8173-1888-c949" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d7c0-018d-8f3b-66a0" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
-                    <entryLink id="5c64-ffe9-ef0a-59f1" name="Gifts of Khorne" hidden="false" collective="false" import="true" targetId="1cbd-c04a-acbd-57b9" type="selectionEntryGroup"/>
+                    <entryLink id="8fd3-f626-da5f-49b6" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
+                    <entryLink id="195e-6f4e-cb11-b864" name="Gifts of Khorne" hidden="false" collective="false" import="true" targetId="1cbd-c04a-acbd-57b9" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4104,9 +4071,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                       <selectionEntries>
                         <selectionEntry id="e5af-ea07-c99f-a030" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="2497-dd89-68c1-0e46" value="0">
+                            <modifier type="set" field="2497-dd89-68c1-0e46" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="f339-f2ee-e895-c684" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37db-7c90-6da5-3398" type="atLeast"/>
+                                <condition field="points" scope="f339-f2ee-e895-c684" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37db-7c90-6da5-3398" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -4174,7 +4141,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="130.0"/>
+                <cost name="pts" typeId="points" value="110.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4632,7 +4599,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb48-4bb4-d1c8-6291" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="0a39-4b79-a180-528d" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos 1" type="selectionEntry"/>
+                <entryLink id="0a39-4b79-a180-528d" name="Lore of Tzeentch DoC 1" hidden="false" collective="false" import="true" targetId="0a83-5ec7-fdc1-096f" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4768,7 +4735,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
             <profile id="3488-ea1b-417d-1f1b" name="Flesh Hound" publicationId="ee54-3543-b9db-fe40" page="125" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
@@ -4821,7 +4788,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                 <profile id="d5da-bc34-2a4f-4208" name="Gore Hound" publicationId="ee54-3543-b9db-fe40" page="125" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
@@ -5618,39 +5585,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0258-2af0-dc33-58b1" name="Command Group" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="54c9-0c8c-12e2-9020" name="Blissbringer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fc6-8d30-3af3-bf74" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f018-16fd-511e-102a" name="Blissbringer" publicationId="ee54-3543-b9db-fe40" page="184" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">10</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="8d78-6c50-3a0a-bcee" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6167,7 +6101,7 @@ but it may not fire grapeshot.</characteristic>
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Buckler. This buckler gives Shalaxi Helbane Magic Resistance (1).</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. This shield gives Shalaxi Helbane Magic Resistance (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6198,7 +6132,7 @@ but it may not fire grapeshot.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee49-153d-8e98-5d28" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="9998-93aa-e36c-2ccc" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 2" type="selectionEntry"/>
+                <entryLink id="9998-93aa-e36c-2ccc" name="Lore of Slaanesh DoC 2" hidden="false" collective="false" import="true" targetId="ad91-1337-efef-da4d" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6211,7 +6145,7 @@ but it may not fire grapeshot.</characteristic>
         <entryLink id="04fb-9820-e8f3-d8e2" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="585.0"/>
+        <cost name="pts" typeId="points" value="555.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e119-2e96-3d37-0ad7" name="Syll&apos;esske" hidden="false" collective="false" import="true" type="model">
@@ -6326,12 +6260,12 @@ but it may not fire grapeshot.</characteristic>
         <entryLink id="10b4-9bbd-1913-7365" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="380.0"/>
+        <cost name="pts" typeId="points" value="350.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="75d7-e2ec-cb3b-b8ed" name="Contorted Epitome" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="a099-f24e-13a4-8892" name="Contorted Epitomer" publicationId="ee54-3543-b9db-fe40" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="a099-f24e-13a4-8892" name="Contorted Epitome" publicationId="ee54-3543-b9db-fe40" page="188" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6371,7 +6305,7 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e72-c9b6-8909-70aa" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="aeae-168b-a28e-af0a" name="Alluress" hidden="false" targetId="a3f8-fdc3-10fc-bb28" type="profile"/>
+            <infoLink id="1fea-e58d-9441-3aaf" name="Alluress" hidden="false" targetId="a3f8-fdc3-10fc-bb28" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -6383,7 +6317,7 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c9b-066b-9bf1-62f5" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="5937-a960-ee97-404f" name="Acquiescence (Bound Spell)" hidden="false" targetId="6f55-ca56-d941-b31d" type="profile"/>
+            <infoLink id="5937-a960-ee97-404f" name="Acquiescence (Bound Spell)" hidden="false" targetId="0f39-2dfe-12ce-91b5" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -6650,7 +6584,7 @@ but it may not fire grapeshot.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="pts" typeId="points" value="280.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2247-e89d-a40a-fd35" name="Mazarall the Butcher" hidden="false" collective="false" import="true" type="model">
@@ -6750,7 +6684,7 @@ but it may not fire grapeshot.</characteristic>
         <entryLink id="a3f8-f277-b590-06aa" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="460.0"/>
+        <cost name="pts" typeId="points" value="430.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f898-ddf1-a314-24d7" name="Rotigus" hidden="false" collective="false" import="true" type="model">
@@ -6819,7 +6753,7 @@ but it may not fire grapeshot.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="679c-ea28-0a76-1d9f" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="7d1b-d3e4-0e61-a662" name="Lore of Nurgle" hidden="false" collective="false" import="true" targetId="Lore of Nurgle Daemons of Chaos 3" type="selectionEntry"/>
+                <entryLink id="7d1b-d3e4-0e61-a662" name="Lore of Nurgle DoC 3" hidden="false" collective="false" import="true" targetId="0705-8e14-68e3-9db5" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6857,7 +6791,7 @@ but it may not fire grapeshot.</characteristic>
         <entryLink id="e1b9-0b65-4baf-a03d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="630.0"/>
+        <cost name="pts" typeId="points" value="600.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6868-24fd-95dc-b93e" name="Azazel" hidden="false" collective="false" import="true" type="model">
@@ -6972,7 +6906,7 @@ but it may not fire grapeshot.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="142b-3e6d-5ad5-23b8" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="02b1-2c61-e9de-4262" name="Lore of Slaanesh" hidden="false" collective="false" import="true" targetId="Lore of Slaanesh Daemons of Chaos 2" type="selectionEntry"/>
+                <entryLink id="02b1-2c61-e9de-4262" name="Lore of Slaanesh DoC 2" hidden="false" collective="false" import="true" targetId="ad91-1337-efef-da4d" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6985,7 +6919,7 @@ but it may not fire grapeshot.</characteristic>
         <entryLink id="ce7e-faa7-fbdb-b409" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="455.0"/>
+        <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d10-dc5a-934e-c170" name="Amon &apos;Chakai" hidden="false" collective="false" import="true" type="model">
@@ -7052,7 +6986,7 @@ but it may not fire grapeshot.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da05-3321-122f-01b2" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="e87c-8e04-3693-a23d" name="Lore of Tzeentch" hidden="false" collective="false" import="true" targetId="Lore of Tzeentch Daemons of Chaos Loremaster" type="selectionEntry"/>
+                <entryLink id="e87c-8e04-3693-a23d" name="Lore of Tzeentch DoC 4" hidden="false" collective="false" import="true" targetId="f145-5fb3-93ff-028e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -7109,7 +7043,7 @@ but it may not fire grapeshot.</characteristic>
         <entryLink id="9323-3ce7-a6ea-2182" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="630.0"/>
+        <cost name="pts" typeId="points" value="600.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -7134,6 +7068,106 @@ but it may not fire grapeshot.</characteristic>
       <infoLinks>
         <infoLink id="e1f7-c7df-e11a-a2a9" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f145-5fb3-93ff-028e" name="Lore of Tzeentch DoC Loremaster" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e23b-b315-1de7-0960" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="12da-d639-c179-654f" name="Fires of Change" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56cb-dde0-bfc0-56d5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8c5-d13c-e941-867e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9bfe-e448-70bc-3d5f" name="Fires of Change" hidden="false" targetId="41a1-0a41-1fe7-d02e" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="db51-c4e5-f20d-f326" name="0. Blue Fire of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d0f-c7a7-0c8e-f56c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90e5-49a1-1413-5f82" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8de6-282c-c94c-5962" name="Blue Fire of Tzeentch" hidden="false" targetId="884b-d4e2-a581-531b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da62-69bc-42ca-a377" name="1. Pandemonium" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb93-c4a6-a7eb-0c73" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="964d-ac63-7835-75dc" name="Pandemonium" hidden="false" targetId="f1e8-83cf-3d49-1009" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7097-4bba-dbde-8e69" name="2. Pink Fire of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3433-17ac-4a87-dd37" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b8ef-fed7-c83c-99f2" name="Pink Fire of Tzeentch" hidden="false" targetId="75f5-0942-b785-d105" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4d13-493a-6339-0bb9" name="3. Bolt of Change" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9977-1698-f410-0e6c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2c52-5d6e-a3ce-7254" name="Bolt of Change" hidden="false" targetId="4c51-7bd8-93b6-cac6" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ed3-1d4e-be47-1a19" name="4. Glean Magic" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cd1-53a3-0ab2-7f0a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="36d7-fbda-4f6d-57f7" name="Glean Magic" hidden="false" targetId="6790-32ca-fb54-f081" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4ced-b194-e0e5-c3b9" name="5. Treason of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="067b-478e-93a4-921a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e16e-0e29-2083-1c5e" name="Treason of Tzeentch" hidden="false" targetId="9809-0d7b-f693-60b4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4afa-7b69-d480-de97" name="6. Infernal Gateway" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86af-3232-2d92-7c36" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e007-f15c-07c7-a197" name="Infernal Gateway" hidden="false" targetId="402c-33cd-03a0-0634" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -8238,7 +8272,7 @@ but it may not fire grapeshot.</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="4bee-bf03-87d3-2158" name="Rancid Visitations" hidden="false" targetId="Rancid Visitations (Bound Spell)" type="profile"/>
+            <infoLink id="4bee-bf03-87d3-2158" name="Rancid Visitations (Bound Spell)" hidden="false" targetId="4c78-9e0c-d24a-d6da" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
@@ -8324,7 +8358,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="38e3-04cc-8978-e3a4" name="Daemonic" publicationId="ee54-3543-b9db-fe40" page="112" hidden="false">
-      <description>All models with Daemonic have Fear, Immunity (Poisoned Attacks, Psychology), Magical Attacks (including all weapons) and Ward save (5+). In addition, they are also subject to the following special rule:
+      <description>All models with Daemonic have Fear, Immunity (Poisoned Attacks, Psychology), Magical Attacks (including all weapons) and Ward save (5+) (except mounts). In addition, they are also subject to the following special rule:
 
 Daemonic Instability: When a unit of Daemons loses a combat it must take a special kind of Break test called a Daemonic Instability test, instead of taking a normal Break test. To do this, use the following procedure:
 
@@ -8722,8 +8756,14 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Multiple Shots (D6).</characteristic>
       </characteristics>
     </profile>
+    <profile id="9659-19da-77a6-f16c" name="Summon Daemons" publicationId="ee54-3543-b9db-fe40" page="138" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can target units of Pink Horrors, Screamers or Flamers. The target unit immediately gains D6 Wounds worth of models added to the unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="e971-ebe3-b6c4-196c" name="Magic" targetId="a579-d41f-e1ad-746f" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

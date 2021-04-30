@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aaba-9578-3681-8fdf" name="Cathay" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7557-86fd-25f4-8e4c" name="Stratagem">
@@ -419,7 +419,7 @@ mounted). For each successful Parry she makes, she may make a single attack back
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="169f-bf9b-38e3-8335" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="fb96-84f9-aeb4-ad35" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens Loremaster" type="selectionEntry"/>
+                <entryLink id="fb96-84f9-aeb4-ad35" name="Lore of Heavens Loremaster" hidden="false" collective="false" import="true" targetId="9d7c-c64e-c62f-ba90" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -470,6 +470,17 @@ mounted). For each successful Parry she makes, she may make a single attack back
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f804-7978-279a-2fef" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa21-3dd6-504c-890a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cf18-78db-9dc8-47df" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -868,12 +879,12 @@ mounted). For each successful Parry she makes, she may make a single attack back
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9009-2638-7d19-ad26" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="1df8-8aaf-a2dc-be9f" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 4" type="selectionEntry"/>
-                    <entryLink id="5fe0-8654-32e1-1350" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 4" type="selectionEntry"/>
-                    <entryLink id="6a3c-d71c-ae3b-497f" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 4" type="selectionEntry"/>
-                    <entryLink id="f094-854b-f7f2-f0b8" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 4" type="selectionEntry"/>
-                    <entryLink id="77f6-2b72-9f44-98c6" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 4" type="selectionEntry"/>
-                    <entryLink id="4143-44da-a279-633a" name="Lore of Ying and Yan" hidden="false" collective="false" import="true" targetId="Lore of Ying and Yan 4" type="selectionEntry"/>
+                    <entryLink id="1df8-8aaf-a2dc-be9f" name="Lore of Shadow 4" hidden="false" collective="false" import="true" targetId="ee91-ed67-6c90-eca4" type="selectionEntry"/>
+                    <entryLink id="5fe0-8654-32e1-1350" name="Lore of Fire 4" hidden="false" collective="false" import="true" targetId="9813-88f3-58e8-70a2" type="selectionEntry"/>
+                    <entryLink id="6a3c-d71c-ae3b-497f" name="Lore of Metal 4" hidden="false" collective="false" import="true" targetId="2cef-95ed-47e7-6458" type="selectionEntry"/>
+                    <entryLink id="f094-854b-f7f2-f0b8" name="Lore of Heavens 4" hidden="false" collective="false" import="true" targetId="ae49-5ec1-e00e-5ef3" type="selectionEntry"/>
+                    <entryLink id="77f6-2b72-9f44-98c6" name="Lore of Light 4" hidden="false" collective="false" import="true" targetId="c429-5213-13c2-20a9" type="selectionEntry"/>
+                    <entryLink id="4143-44da-a279-633a" name="Lore of Ying and Yan 4" hidden="false" collective="false" import="true" targetId="430b-4775-4466-fcc7" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -903,12 +914,12 @@ mounted). For each successful Parry she makes, she may make a single attack back
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd79-3f32-55a7-1554" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="c2c3-5202-42cd-d029" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 3" type="selectionEntry"/>
-                    <entryLink id="47b9-32ca-6508-ae36" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 3" type="selectionEntry"/>
-                    <entryLink id="cb8b-dc31-f117-e3c6" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 3" type="selectionEntry"/>
-                    <entryLink id="260a-3b9b-ad4e-4342" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 3" type="selectionEntry"/>
-                    <entryLink id="8303-edcc-b096-a325" name="Lore of Ying and Yan" hidden="false" collective="false" import="true" targetId="Lore of Ying and Yan 3" type="selectionEntry"/>
-                    <entryLink id="ae20-8825-c6c8-4c1e" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 3" type="selectionEntry"/>
+                    <entryLink id="c2c3-5202-42cd-d029" name="Lore of Shadow 3" hidden="false" collective="false" import="true" targetId="77ca-306d-33ed-137d" type="selectionEntry"/>
+                    <entryLink id="47b9-32ca-6508-ae36" name="Lore of Light 3" hidden="false" collective="false" import="true" targetId="d8df-c255-e040-9a38" type="selectionEntry"/>
+                    <entryLink id="cb8b-dc31-f117-e3c6" name="Lore of Fire 3" hidden="false" collective="false" import="true" targetId="38e4-62f8-1c43-e66f" type="selectionEntry"/>
+                    <entryLink id="260a-3b9b-ad4e-4342" name="Lore of Metal 3" hidden="false" collective="false" import="true" targetId="1f3e-d6ea-0989-718d" type="selectionEntry"/>
+                    <entryLink id="8303-edcc-b096-a325" name="Lore of Ying and Yan 3" hidden="false" collective="false" import="true" targetId="dc7f-6dd5-4fdb-5265" type="selectionEntry"/>
+                    <entryLink id="ae20-8825-c6c8-4c1e" name="Lore of Heavens 3" hidden="false" collective="false" import="true" targetId="3885-a3a4-9f27-bdd9" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1508,12 +1519,12 @@ Points, just like the Battle Standard.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a14-8cc9-5deb-cc62" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="c7fe-bcd1-3d7d-8295" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 2" type="selectionEntry"/>
-                    <entryLink id="e5f7-7e3b-f4ee-d9f2" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 2" type="selectionEntry"/>
-                    <entryLink id="90c1-7098-1d6c-911a" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 2" type="selectionEntry"/>
-                    <entryLink id="e738-9ee8-9308-66ae" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 2" type="selectionEntry"/>
-                    <entryLink id="cb51-3b21-ba59-7661" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 2" type="selectionEntry"/>
-                    <entryLink id="a1af-23d2-841f-8222" name="Lore of Ying and Yan" hidden="false" collective="false" import="true" targetId="Lore of Ying and Yan 2" type="selectionEntry"/>
+                    <entryLink id="c7fe-bcd1-3d7d-8295" name="Lore of Shadow 2" hidden="false" collective="false" import="true" targetId="1d80-5fca-a870-79a5" type="selectionEntry"/>
+                    <entryLink id="e5f7-7e3b-f4ee-d9f2" name="Lore of Fire 2" hidden="false" collective="false" import="true" targetId="c7e8-49d0-8c44-7db0" type="selectionEntry"/>
+                    <entryLink id="90c1-7098-1d6c-911a" name="Lore of Metal 2" hidden="false" collective="false" import="true" targetId="4459-c449-c602-50d3" type="selectionEntry"/>
+                    <entryLink id="e738-9ee8-9308-66ae" name="Lore of Heavens 2" hidden="false" collective="false" import="true" targetId="1938-564f-7239-5c49" type="selectionEntry"/>
+                    <entryLink id="cb51-3b21-ba59-7661" name="Lore of Light 2" hidden="false" collective="false" import="true" targetId="0bf2-d37e-ca65-3bd5" type="selectionEntry"/>
+                    <entryLink id="a1af-23d2-841f-8222" name="Lore of Ying and Yan 2" hidden="false" collective="false" import="true" targetId="561d-2319-b084-0997" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1543,12 +1554,12 @@ Points, just like the Battle Standard.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e3c-fb06-a35e-ff72" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="1261-4361-7a84-1427" name="Lore of Shadow" hidden="false" collective="false" import="true" targetId="Lore of Shadow 1" type="selectionEntry"/>
-                    <entryLink id="ea50-4e52-554f-0d1c" name="Lore of Light" hidden="false" collective="false" import="true" targetId="Lore of Light 1" type="selectionEntry"/>
-                    <entryLink id="633c-c4a0-dc12-930f" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 1" type="selectionEntry"/>
-                    <entryLink id="6573-a572-3888-65ab" name="Lore of Metal" hidden="false" collective="false" import="true" targetId="Lore of Metal 1" type="selectionEntry"/>
-                    <entryLink id="d5fc-4753-afb2-c18b" name="Lore of Ying and Yan" hidden="false" collective="false" import="true" targetId="Lore of Ying and Yan 1" type="selectionEntry"/>
-                    <entryLink id="c84b-df72-fd03-1059" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 1" type="selectionEntry"/>
+                    <entryLink id="1261-4361-7a84-1427" name="Lore of Shadow 1" hidden="false" collective="false" import="true" targetId="f528-9503-ec2f-a10e" type="selectionEntry"/>
+                    <entryLink id="ea50-4e52-554f-0d1c" name="Lore of Light 1" hidden="false" collective="false" import="true" targetId="a0da-b525-64d9-f7f2" type="selectionEntry"/>
+                    <entryLink id="633c-c4a0-dc12-930f" name="Lore of Fire 1" hidden="false" collective="false" import="true" targetId="f93e-44e1-cebf-ad47" type="selectionEntry"/>
+                    <entryLink id="6573-a572-3888-65ab" name="Lore of Metal 1" hidden="false" collective="false" import="true" targetId="aa12-b508-c418-27a6" type="selectionEntry"/>
+                    <entryLink id="d5fc-4753-afb2-c18b" name="Lore of Ying and Yan 1" hidden="false" collective="false" import="true" targetId="b41e-9644-966d-859f" type="selectionEntry"/>
+                    <entryLink id="c84b-df72-fd03-1059" name="Lore of Heavens 1" hidden="false" collective="false" import="true" targetId="0f8c-2cde-58ee-a1ea" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1590,7 +1601,7 @@ Points, just like the Battle Standard.</description>
       <selectionEntries>
         <selectionEntry id="afa3-0d99-5a43-e9fa" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="cdf3-9ef6-1083-ac8a" value="0">
+            <modifier type="set" field="b39a-20b0-a4ae-35ad" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af9e-a047-6eac-f3ef" type="atLeast"/>
               </conditions>
@@ -1608,6 +1619,17 @@ Points, just like the Battle Standard.</description>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6521-0a86-65c5-be5d" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2797-7feb-65c7-f1c3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5782-e4c5-7365-2200" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1983,7 +2005,7 @@ Points, just like the Battle Standard.</description>
                   <modifiers>
                     <modifier type="set" field="c6e7-0529-e3a3-b702" value="0">
                       <conditions>
-                        <condition field="selections" scope="8054-4581-1250-9397" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afa3-0d99-5a43-e9fa" type="atLeast"/>
+                        <condition field="points" scope="8054-4581-1250-9397" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afa3-0d99-5a43-e9fa" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2399,6 +2421,13 @@ Points, just like the Battle Standard.</description>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="110c-e00b-4275-65f6" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="72f6-2591-9263-95c6" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a352-4ea2-f6e4-6c81" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72f6-2591-9263-95c6" type="max"/>
               </constraints>
@@ -5984,8 +6013,8 @@ After these hits are resolved, place the Phoenix at the line&apos;s end point. I
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ecd-b74c-2bc5-b7d7" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="022e-1e30-0cef-6342" name="Lore of Fire" hidden="false" collective="false" import="true" targetId="Lore of Fire 1" type="selectionEntry"/>
-                <entryLink id="54d6-8f32-80c9-8f5b" name="Lore of Heavens" hidden="false" collective="false" import="true" targetId="Lore of Heavens 1" type="selectionEntry"/>
+                <entryLink id="022e-1e30-0cef-6342" name="Lore of Fire 1" hidden="false" collective="false" import="true" targetId="f93e-44e1-cebf-ad47" type="selectionEntry"/>
+                <entryLink id="54d6-8f32-80c9-8f5b" name="Lore of Heavens 1" hidden="false" collective="false" import="true" targetId="0f8c-2cde-58ee-a1ea" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6054,6 +6083,402 @@ After these hits are resolved, place the Phoenix at the line&apos;s end point. I
       <infoLinks>
         <infoLink id="00d1-3214-a85b-12d1" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="430b-4775-4466-fcc7" name="Lore of Ying and Yan 4" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38d8-d126-8385-a089" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="d901-afe6-2bc5-a31a" name="Equilibrium" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d045-6036-1f89-2948" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="011c-05a2-5b22-a3f1" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9c39-e2f4-f504-1f39" name="Equilibrium" hidden="false" targetId="3222-38b1-cbe0-dccc" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1ccb-de50-2052-62ef" name="0. Ancestor&apos;s Courage and Warrior Incarnate" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5602-a10b-c964-da9b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22b9-3061-d26a-8dad" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cebb-63bf-03f2-7ada" name="Ancestor&apos;s Courage (Ying)" hidden="false" targetId="3735-d616-1894-8256" type="profile"/>
+            <infoLink id="6c53-0d3c-1761-759b" name="Warrior Incarnate (Yan)" hidden="false" targetId="a4af-133f-46fc-89d4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7f32-7b43-9a42-4851" name="Spells from the Lore of Ying and Yan" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="114e-4ce7-d848-3ebd" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0562-c5de-45f4-df8b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="59cc-49ec-489f-14e9" name="1. Sapping of Will and Strength of the Heavens" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="698b-859e-6079-c404" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="96d9-227d-9ebb-7946" name="Sapping of Will (Ying)" hidden="false" targetId="d7ea-71a8-6d17-4d42" type="profile"/>
+                <infoLink id="e6fc-f11f-437a-c041" name="Strength of the Heavens (Yan)" hidden="false" targetId="244b-c1a1-8e93-9e81" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2056-d218-3c3d-6229" name="3. Blazing Phoenix and Call of the Dragon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d60a-9a4f-bbde-c8e6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4e90-dd30-0f0a-57a4" name="Call of the Dragon (Yan)" hidden="false" targetId="0579-53f8-c877-e1ce" type="profile"/>
+                <infoLink id="6814-3acc-4370-a03a" name="Blazing Phoenix (Ying)" hidden="false" targetId="8191-2625-d2ae-364b" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="051f-3694-e450-ef4a" name="2. Absorbing Chill and Flames of Azure" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59c2-07b9-7a5f-f3cb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cbbc-7ca5-4072-0a0a" name="Absorbing Chill (Ying)" hidden="false" targetId="ce81-0eea-5003-3746" type="profile"/>
+                <infoLink id="5ae5-493d-8703-7223" name="Flames of Azure (Yan)" hidden="false" targetId="12e7-8fe7-1309-1508" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8138-aa90-1007-ff32" name="6. Earth Eruption and Meteor Rain" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aeaa-93fb-97ba-62c2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6bc4-e012-2f23-6fdb" name="Earth Eruption" hidden="false" targetId="fd26-ca2a-6cb2-fae0" type="profile"/>
+                <infoLink id="71fd-ad37-bfbd-9ece" name="Meteor Rain" hidden="false" targetId="80ed-38ff-679d-7188" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c920-f08b-55b3-d666" name="4. Bereavement of Life and Resurgence from Death" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0958-d474-cd3f-652c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0876-005b-7093-05cf" name="Resurgence from Death (Yan)" hidden="false" targetId="2e90-2844-e040-5761" type="profile"/>
+                <infoLink id="7253-e7c3-8437-68f1" name="Bereavement of Life (Ying)" hidden="false" targetId="57c0-6a36-9671-3fcf" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="86f8-95d7-d0a4-b4e9" name="5. Shroud of Darkness and Path of Light" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98b2-9a1a-deac-a55f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ff75-294d-e223-e1da" name="Shroud of Darkness (Ying)" hidden="false" targetId="8ccb-7de8-e257-5e2e" type="profile"/>
+                <infoLink id="59d1-bd56-905d-f6e3" name="Path of Light (Yan)" hidden="false" targetId="974d-3295-43e7-e735" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc7f-6dd5-4fdb-5265" name="Lore of Ying and Yan 3" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9495-73c6-111b-34c1" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="43eb-4309-8f1e-b5d5" name="Equilibrium" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f58-f76d-de41-8b61" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01ac-7dc3-d28b-f59b" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="806d-8752-7901-2372" name="Equilibrium" hidden="false" targetId="3222-38b1-cbe0-dccc" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6f61-7c87-4b05-11f0" name="0. Ancestor&apos;s Courage and Warrior Incarnate" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f12f-f583-e48e-b653" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="150c-ca3b-6f76-8011" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="86c2-42ac-0c48-8c73" name="Ancestor&apos;s Courage (Ying)" hidden="false" targetId="3735-d616-1894-8256" type="profile"/>
+            <infoLink id="06d5-e845-bd32-5fe0" name="Warrior Incarnate (Yan)" hidden="false" targetId="a4af-133f-46fc-89d4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="96ed-ae6d-8781-869b" name="Spells from the Lore of Ying and Yan" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2cc-b74d-0419-0705" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12bc-a5c0-a574-3f55" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6901-dc16-dacf-4fd7" name="1. Sapping of Will and Strength of the Heavens" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbd1-031f-8983-05e1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="277b-ec46-48aa-d2a8" name="Strength of the Heavens (Yan)" hidden="false" targetId="244b-c1a1-8e93-9e81" type="profile"/>
+                <infoLink id="0c93-264b-64e6-706b" name="Sapping of Will (Ying)" hidden="false" targetId="d7ea-71a8-6d17-4d42" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1ad2-2513-0c22-b041" name="3. Blazing Phoenix and Call of the Dragon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e696-83cc-884c-876c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="537d-ec13-25f0-dc9d" name="Blazing Phoenix (Ying)" hidden="false" targetId="8191-2625-d2ae-364b" type="profile"/>
+                <infoLink id="5dff-6e97-1d28-187e" name="Call of the Dragon (Yan)" hidden="false" targetId="0579-53f8-c877-e1ce" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6719-60ba-7a28-e940" name="2. Absorbing Chill and Flames of Azure" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3b2-0874-d3a0-92f3" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9434-d349-69eb-26b2" name="Absorbing Chill (Ying)" hidden="false" targetId="ce81-0eea-5003-3746" type="profile"/>
+                <infoLink id="a38f-780f-b75a-ed07" name="Flames of Azure (Yan)" hidden="false" targetId="12e7-8fe7-1309-1508" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="866b-0c24-418f-94ef" name="4. Bereavement of Life and Resurgence from Death" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="270f-bdcc-aaa2-747c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c7db-ecda-3850-82eb" name="Resurgence from Death (Yan)" hidden="false" targetId="2e90-2844-e040-5761" type="profile"/>
+                <infoLink id="3000-c2c5-bca4-19ee" name="Bereavement of Life (Ying)" hidden="false" targetId="57c0-6a36-9671-3fcf" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c439-1a66-87f3-ed6a" name="5. Shroud of Darkness and Path of Light" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a38-8794-acb2-ba3c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c118-0e5e-d3db-a5cb" name="Shroud of Darkness (Ying)" hidden="false" targetId="8ccb-7de8-e257-5e2e" type="profile"/>
+                <infoLink id="c67d-aacf-71ca-25ca" name="Path of Light (Yan)" hidden="false" targetId="974d-3295-43e7-e735" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="561d-2319-b084-0997" name="Lore of Ying and Yan 2" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abf5-d949-8ae9-297a" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="bf40-ed12-9d71-9bdb" name="Equilibrium" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0dd-1c93-31cb-a9a6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da51-79fe-2cea-21b3" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f661-663f-4726-f375" name="Equilibrium" hidden="false" targetId="3222-38b1-cbe0-dccc" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c050-dc6a-661d-fb80" name="0. Ancestor&apos;s Courage and Warrior Incarnate" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16cd-28ee-f496-c54d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b268-c0ca-a78f-54ab" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9070-4a1e-8da9-3351" name="Ancestor&apos;s Courage (Ying)" hidden="false" targetId="3735-d616-1894-8256" type="profile"/>
+            <infoLink id="8195-a755-70db-6c0b" name="Warrior Incarnate (Yan)" hidden="false" targetId="a4af-133f-46fc-89d4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="baf2-3a47-2ed7-7916" name="Spells from the Lore of Ying and Yan" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af32-c419-8434-a72a" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dfeb-8ac3-f64b-fe08" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4412-751c-c136-5b15" name="1. Sapping of Will and Strength of the Heavens" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8300-eb7f-77d1-4e34" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c2d5-b47f-f3dc-3579" name="Strength of the Heavens (Yan)" hidden="false" targetId="244b-c1a1-8e93-9e81" type="profile"/>
+                <infoLink id="80de-1484-3a43-8d5b" name="Sapping of Will (Ying)" hidden="false" targetId="d7ea-71a8-6d17-4d42" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a993-eaea-93c2-f91d" name="3. Blazing Phoenix and Call of the Dragon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fc2-c1c9-a252-f690" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ae1e-0cc4-1907-d11d" name="Call of the Dragon (Yan)" hidden="false" targetId="0579-53f8-c877-e1ce" type="profile"/>
+                <infoLink id="977d-91dd-ab85-4eca" name="Blazing Phoenix (Ying)" hidden="false" targetId="8191-2625-d2ae-364b" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3f71-faf5-1d61-d663" name="2. Absorbing Chill and Flames of Azure" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea16-4a65-35bb-cd1d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="de01-b63b-f94c-8339" name="Absorbing Chill (Ying)" hidden="false" targetId="ce81-0eea-5003-3746" type="profile"/>
+                <infoLink id="a17a-bf76-7aad-df90" name="Flames of Azure (Yan)" hidden="false" targetId="12e7-8fe7-1309-1508" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8c13-124a-ee61-b910" name="4. Bereavement of Life and Resurgence from Death" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89e2-5d3f-7414-5fbb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ee4f-3c45-3939-acb4" name="Resurgence from Death (Yan)" hidden="false" targetId="2e90-2844-e040-5761" type="profile"/>
+                <infoLink id="8bd3-1d9c-9888-3ea5" name="Bereavement of Life (Ying)" hidden="false" targetId="57c0-6a36-9671-3fcf" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b41e-9644-966d-859f" name="Lore of Ying and Yan 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbf4-8574-5a3e-6b94" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="86a5-1ff7-df93-bd22" name="Equilibrium" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="120c-2010-4029-bdbc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c58-e29d-6651-5288" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ebe2-d0b7-4735-f504" name="Equilibrium" hidden="false" targetId="3222-38b1-cbe0-dccc" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8683-9cdc-9ce0-b978" name="0. Ancestor&apos;s Courage and Warrior Incarnate" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abe8-3d45-7696-7a50" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d3e-392b-6c95-0033" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="16d1-8699-3765-6403" name="Warrior Incarnate (Yan)" hidden="false" targetId="a4af-133f-46fc-89d4" type="profile"/>
+            <infoLink id="b5a4-6fe8-544f-0b79" name="Ancestor&apos;s Courage (Ying)" hidden="false" targetId="3735-d616-1894-8256" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8e8c-7df6-0d06-67ad" name="Spells from the Lore of Ying and Yan" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d55-543e-09e5-ee2a" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec3a-88c0-c111-ce11" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6d83-7183-e2e9-52ef" name="1. Sapping of Will and Strength of the Heavens" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="861d-6e31-f2b6-32ff" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6728-8ca1-ba5a-a690" name="Strength of the Heavens (Yan)" hidden="false" targetId="244b-c1a1-8e93-9e81" type="profile"/>
+                <infoLink id="e19d-5cf3-3ed6-d6a7" name="Sapping of Will (Ying)" hidden="false" targetId="d7ea-71a8-6d17-4d42" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f114-13bf-6223-31a6" name="3. Blazing Phoenix and Call of the Dragon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acd0-90b2-e350-8a67" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2ffb-c440-f085-98e3" name="Blazing Phoenix (Ying)" hidden="false" targetId="8191-2625-d2ae-364b" type="profile"/>
+                <infoLink id="de2e-2214-d538-cf31" name="Call of the Dragon (Yan)" hidden="false" targetId="0579-53f8-c877-e1ce" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="67b2-15b3-62b5-4b27" name="2. Absorbing Chill and Flames of Azure" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4468-b5b3-beeb-9013" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a437-8672-1f5f-3cfa" name="Absorbing Chill (Ying)" hidden="false" targetId="ce81-0eea-5003-3746" type="profile"/>
+                <infoLink id="636f-f0fc-404d-ff80" name="Flames of Azure (Yan)" hidden="false" targetId="12e7-8fe7-1309-1508" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -6655,9 +7080,143 @@ ball lands, and resolve damage as if it were a Stone Thrower. No Bounce roll is 
         <characteristic name="Effect" typeId="67e2-8eae-143b-773b">The Dragon Monks gain Dodge (5+).</characteristic>
       </characteristics>
     </profile>
+    <profile id="3735-d616-1894-8256" name="Ancestor&apos;s Courage (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/11+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next Magic phase, the chosen unit gains Stubborn and Immunity (Psychology).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ce81-0eea-5003-3746" name="Absorbing Chill (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Enemies attacking the target unit suffer -1 to Wound until the start of the caster&apos;s next Magic phase. Boosted version affects all friendly units within range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="57c0-6a36-9671-3fcf" name="Bereavement of Life (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 3D6 hits. Each hit causes a Wound which Ignores Armour Saves on the roll of a natural 6.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8191-2625-d2ae-364b" name="Blazing Phoenix (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all enemy units within range. The target units suffer D6 Flaming S 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0579-53f8-c877-e1ce" name="Call of the Dragon (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/13+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The caster makes a Breath Weapon Attack with S 4 and Flaming Attacks. This may be cast in close combat, following the normal rules for Breath Weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e90-2844-e040-5761" name="Resurgence from Death (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/16+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The targeted unit gains Regeneration (5+) until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d7ea-71a8-6d17-4d42" name="Sapping of Will (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/8+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the targeted unit are subject to Always Strikes Last and suffer -1 to their WS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8ccb-7de8-e257-5e2e" name="Shroud of Darkness (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit will have its line of sight limited to 8&quot; until the start of the caster&apos;s next Magic phase. They cannot declare charges, cast spells or shoot at targets outside this range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="244b-c1a1-8e93-9e81" name="Strength of the Heavens (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/10+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the target unit gain +1 to their S and Magical Attacks. Boosted version affects all friendly units within range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a4af-133f-46fc-89d4" name="Warrior Incarnate (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/11+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next Magic phase, the chosen unit gains Frenzy and Hatred.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="974d-3295-43e7-e735" name="Path of Light (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The targeted unit immediately moves forward their M value plus 2D6&quot; as if it were the Remaining Moves sub-phase, using Strider.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="12e7-8fe7-1309-1508" name="Flames of Azure (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, the target unit gains Flaming Attacks, and all enemy models in base contact suffer a Flaming S 3 hit at the start of the close combat phase, which counts toward combat resolution. Boosted version affects all friendly units within range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="80ed-38ff-679d-7188" name="Meteor Rain (Yan)" publicationId="8abe-59b3-1084-5e51" page="109" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+/18+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place a marker anywhere within range and roll 2D6/3D6. The result is the radius in inches that will be struck by the Meteor Rain. Any unit within that radius takes 2D6 S 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fd26-ca2a-6cb2-fae0" name="Earth Eruption (Ying)" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">14+/17+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place the small/large template anywhere within range – it then scatters D6&quot;/2D6&quot;. Models partially covered take a S 4 hit. Models wholly covered take a S 6 Hit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3222-38b1-cbe0-dccc" name="Equilibrium" publicationId="8abe-59b3-1084-5e51" page="108" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Lore Attribute</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When choosing their spells, the wizard always gains both the Ying and Yan version of each spell. Every other successfully cast spell must be from the other energy type or the wizard suffers a Miscast on the roll of any double.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="483c-7b9f-4206-207a" name="Magic" targetId="a579-d41f-e1ad-746f" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="38f6-57a1-13ac-5765" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

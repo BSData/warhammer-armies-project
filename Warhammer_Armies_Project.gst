@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="25" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="26" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.0" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.0" publicationDate="08.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -8,23 +8,23 @@
     <publication id="9e23-79cb-pubN75312" name="Bretonnia v.1.3" shortName="Bret" publisher="Warhammer - Bretonnia 9th Ed v.1.3" publicationDate="12.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN76150" name="Dark Elves v.1.4" shortName="DE" publisher="Warhammer - Dark Elves 9th Ed 1.4" publicationDate="25.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN77092" name="High Elves v.1.3" shortName="HE" publisher="Warhammer - High Elves 9th Ed v.1.3" publicationDate="29.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.24" shortName="LM" publisher="Warhammer - Lizardmen 9th Ed v.1.23" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.23" shortName="OK" publisher="Warhammer - Ogre Kingdoms 9th Ed v.1.23" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="9e23-79cb-pubN78975" name="Orcs &amp; Goblins v.1.24" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins 9th Ed v.1.24" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="9e23-79cb-pubN77402" name="Lizardmen v.1.3" shortName="LM" publisher="Warhammer - Lizardmen 9th Ed v.1.3" publicationDate="30.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="9e23-79cb-pubN78137" name="Ogre Kingdoms v.1.3" shortName="OK" publisher="Warhammer - Ogre Kingdoms 9th Ed v.1.3" publicationDate="02.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="9e23-79cb-pubN78975" name="Orcs &amp; Goblins v.1.3" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins 9th Ed v.1.3" publicationDate="07.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="9e23-79cb-pubN116235" name="Regiments of Renown v.1.13" shortName="RoR" publisher="Warhammer - Regiments of Renown 9th Ed 1.13" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="aa7b-3583-0834-7bfa" name="Dwarfs v.1.3" shortName="DW" publisher="Warhammer - Dwarfs 9th Ed 1.3" publicationDate="27.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="b3a3-a398-4838-11a1" name="Empire Knightly Orders v.1.12" shortName="Emp" publisher="Warhammer - Empire Knightly Orders 9th Ed v.1.12" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d69c-a7ea-95db-6f56" name="Steam Tanks" shortName="Emp" publisher="Warhammer - Steam Tanks" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315d-135b-135c-07ce" name="Empire v.1.3" shortName="Emp" publisher="Warhammer - Empire 9th Ed v.1.3" publicationDate="28.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="4086-1ccd-f433-39a2" name="Skaven v.1.55" shortName="Skav" publisher="Warhammer - Skaven 9th Ed v.1.55" publicationDate="08.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="4086-1ccd-f433-39a2" name="Skaven v.1.6" shortName="Skav" publisher="Warhammer - Skaven 9th Ed v.1.6" publicationDate="08.06.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos v.1.3" shortName="DoC" publisher="Warhammer - Daemons of Chaos 9th Ed 1.3" publicationDate="24.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.3, Lizardmen v.1.24" shortName="HE, LM" publisher="Warhammer - High Elves 9th Ed v.1.3, Warhammer - Lizardmen 9th Ed v.1.24" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.4, Daemons of Chaos v.1.3, Warriors of Chaos v.1.24" shortName="BM, DoC, WoC" publisher="Warhammer - Beastmen 9th Ed 1.4, Warhammer - Daemons of Chaos 9th Ed 1.3, Warhammer - Warriors of Chaos 9th Ed 1.24" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.23" shortName="TK" publisher="Warhammer - Tomb Kings 9th Ed v.1.23" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="10a5-5781-61f5-86ae" name="Vampire Counts v.1.24" shortName="VC" publisher="Warhammer - Vampire Counts 9th Ed v.1.24" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.24" shortName="WoC" publisher="Warhammer - Warriors of Chaos 9th Ed v.1.24" publicationDate="08.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.4, Warriors of Chaos v.1.24" shortName="BM, WoC" publisher="Warhammer - Beastmen 9th Ed 1.4, Warhammer - Warriors of Chaos 9th Ed 1.24" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="e967-620f-06be-096a" name="Wood Elves v.1.23" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.23" publicationDate="08.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.3, Lizardmen v.1.3" shortName="HE, LM" publisher="Warhammer - High Elves 9th Ed v.1.3, Warhammer - Lizardmen 9th Ed v.1.3" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.4, Daemons of Chaos v.1.3, Warriors of Chaos v.1.3" shortName="BM, DoC, WoC" publisher="Warhammer - Beastmen 9th Ed 1.4, Warhammer - Daemons of Chaos 9th Ed 1.3, Warhammer - Warriors of Chaos 9th Ed 1.3" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.3" shortName="TK" publisher="Warhammer - Tomb Kings 9th Ed v.1.23" publicationDate="11.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="10a5-5781-61f5-86ae" name="Vampire Counts v.1.3" shortName="VC" publisher="Warhammer - Vampire Counts 9th Ed v.1.3" publicationDate="12.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.3" shortName="WoC" publisher="Warhammer - Warriors of Chaos 9th Ed v.1.3" publicationDate="13.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.4, Warriors of Chaos v.1.3" shortName="BM, WoC" publisher="Warhammer - Beastmen 9th Ed 1.4, Warhammer - Warriors of Chaos 9th Ed 1.3" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="e967-620f-06be-096a" name="Wood Elves v.1.3" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.3" publicationDate="14.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.13" shortName="Ama" publisher="Warhammer - Amazons 9th Ed 1.13" publicationDate="06.06.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d221-484d-439d-4310" name="Araby v.1.3" shortName="Arab" publisher="Warhammer - Araby 9th Ed 1.3" publicationDate="27.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="8abe-59b3-1084-5e51" name="Cathay v.1.2" shortName="Cat" publisher="Warhammer - Cathay 9th Ed 1.2" publicationDate="21.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -41,7 +41,7 @@
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e3da-3848-ff08-a482" name="Magic Items v.0.9" shortName="MI" publisher="Warhammer - Magic Items v.0.9" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.11" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.24, Zombie Pirates of the Vampire Coast v.1.0" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.24, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="06.06.2020, 15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.3, Zombie Pirates of the Vampire Coast v.1.11" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.3, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.0" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.11" publicationDate="15.07.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.1" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.1" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters v.1.4" shortName="Emp" publisher="Warhammer - Empire Special Characters 1.4" publicationDate="17.01.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -289,7 +289,7 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ec5-6fa2-e308-c279" type="max"/>
       </constraints>
       <profiles>
-        <profile id="3960-49ef-a904-73cf" name="Allowed Rare Duplicates" publicationId="9e23-79cb-pubN66727" page="127" hidden="false" typeId="8625-abf8-a9a3-a423" typeName="Rare Duplicate Choice Table">
+        <profile id="3960-49ef-a904-73cf" name="Allowed Rare Duplicates" publicationId="9e23-79cb-pubN66727" page="131" hidden="false" typeId="8625-abf8-a9a3-a423" typeName="Rare Duplicate Choice Table">
           <characteristics>
             <characteristic name="0-999 pts" typeId="4d76-ee2f-5e2c-e078">0</characteristic>
             <characteristic name="1000-1999 pts" typeId="780c-b7b0-c2d2-3e3b">0</characteristic>
@@ -299,7 +299,7 @@
             <characteristic name="Each +1000pts" typeId="11c6-43db-a860-183a">+1</characteristic>
           </characteristics>
         </profile>
-        <profile id="6d6a-7bdc-129c-0242" name="Allowed Special Duplicates" publicationId="9e23-79cb-pubN66727" page="127" hidden="false" typeId="3a6c-dc7b-2dc3-7a23" typeName="Special Duplicate Choice Table">
+        <profile id="6d6a-7bdc-129c-0242" name="Allowed Special Duplicates" publicationId="9e23-79cb-pubN66727" page="131" hidden="false" typeId="3a6c-dc7b-2dc3-7a23" typeName="Special Duplicate Choice Table">
           <characteristics>
             <characteristic name="0-999 pts" typeId="0150-b3f1-e702-b3a1">0</characteristic>
             <characteristic name="1000-1999 pts" typeId="ac21-243e-6d07-85db">1</characteristic>
@@ -311,7 +311,7 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="9c6a-1990-ad07-074b" name="Duplicate Choices" publicationId="9e23-79cb-pubN66727" page="127" hidden="false">
+        <rule id="9c6a-1990-ad07-074b" name="Duplicate Choices" publicationId="9e23-79cb-pubN66727" page="131" hidden="false">
           <description>There is a limit on how many duplicates of each troop type you can include in your army. Remember, this limit applies only to duplicate Special or Rare unit choices of the same type, not to the total number of Special and Rare units overall. Note that this limit applies to the basic troop type and isn&apos;t dependent on the size of the unit or optional wargear. If a character has a Monster, Chariot or Shrine mount that is available as a Special or Rare choice, then these will also count towards the limit of duplicate choices.</description>
         </rule>
       </rules>
@@ -324,7 +324,7 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c87b-2f0e-27b0-02b1" type="max"/>
       </constraints>
       <profiles>
-        <profile id="f002-a001-8964-ad0c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="126" hidden="false" typeId="121a-930d-b248-ee3e" typeName="Minimum Units">
+        <profile id="f002-a001-8964-ad0c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="130" hidden="false" typeId="121a-930d-b248-ee3e" typeName="Minimum Units">
           <characteristics>
             <characteristic name="0-500 pts" typeId="5f2a-99ce-f8a3-eac9">1</characteristic>
             <characteristic name="501-1000 pts" typeId="221f-5ad7-8b1c-4337">2</characteristic>
@@ -336,7 +336,7 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="d8a1-3a01-a893-f82c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="126" hidden="false">
+        <rule id="d8a1-3a01-a893-f82c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="130" hidden="false">
           <description>An army just isn&apos;t an army unless it has plenty of warriors in its ranks. An army must contain at least one Core, Special or Rare unit for every 500 points played. So, at 750 points you need two units, at 1250 points you need three units, at 2500 points you need 5 units and so on.</description>
         </rule>
       </rules>
@@ -349,52 +349,52 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22de-1797-7260-b838" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6fb3-b0c8-656e-d475" name="12" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="6fb3-b0c8-656e-d475" name="12" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Damned by Chaos: The Wizard is immediately removed as a casualty, regardless of any protective magic item or rule they might have.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a511-7f28-0f3b-1a91" name="07" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="a511-7f28-0f3b-1a91" name="07" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Detonation: The Wizard and all models in base contact with him suffer a S 10 hit.</characteristic>
           </characteristics>
         </profile>
-        <profile id="bc70-79a8-a31c-c477" name="05" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="bc70-79a8-a31c-c477" name="05" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Magical Feedback: The Wizard and every model on the same side within 12&quot; that can channel/generate power or dispel dice suffer a S 4 hit as a result of the magical backlash. The Wizard cannot attempt to cast further spells this phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="d716-289e-2d74-e0c5" name="09" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="d716-289e-2d74-e0c5" name="09" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Calamitous Detonation: Centre the small round template over the Wizard – every model underneath the template suffers a S 10 hit (including the Wizard – they do not benefit from Look Out Sir! in this case).</characteristic>
           </characteristics>
         </profile>
-        <profile id="f0b3-811a-2c59-1669" name="08" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="f0b3-811a-2c59-1669" name="08" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Amnesia: The caster forgets how to cast the spell and will not be able to cast it again during this battle.</characteristic>
           </characteristics>
         </profile>
-        <profile id="f267-0d21-8489-77a3" name="04" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="f267-0d21-8489-77a3" name="04" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Lost Concentration: The opposing player may immediately cast any one of their own spells of the same casting difficulty rating or less. No casting roll is required – the spell is automatically cast – but it can be dispelled by the player whose turn it is as normal (by using power dice in the same way as dispel dice). They need to beat the basic casting value of the spell to dispel it.</characteristic>
           </characteristics>
         </profile>
-        <profile id="1a08-69de-ebfa-da11" name="11" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="1a08-69de-ebfa-da11" name="11" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Dimensional Cascade: Centre the large round template over the Wizard – every model underneath the template (including the Wizard – they do not benefit from Look Out Sir! in this case) suffers a S 10 hit.</characteristic>
           </characteristics>
         </profile>
-        <profile id="3893-4961-bc56-1cb8" name="10" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="3893-4961-bc56-1cb8" name="10" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Deamonic Poessession: The caster suffers one S 10 hit and loses a Wizard level and their highest levelled spell. If the caster reaches Level 0, he stops counting as a Wizard for all purposes and therefore will not be able to use any arcane magic items he is carrying.</characteristic>
           </characteristics>
         </profile>
-        <profile id="92e1-d44e-2735-96fc" name="06" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="92e1-d44e-2735-96fc" name="06" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Power Drain: The casting player loses D3 dice from the power pool.</characteristic>
           </characteristics>
         </profile>
-        <profile id="8424-e2b3-178b-a62c" name="02-03" publicationId="9e23-79cb-pubN66727" page="39" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
+        <profile id="8424-e2b3-178b-a62c" name="02-03" publicationId="9e23-79cb-pubN66727" page="40" hidden="false" typeId="1766-fa9f-6052-97c8" typeName="Miscast Table">
           <characteristics>
             <characteristic name="Result" typeId="281f-07de-e7b1-1e4a">Loss of Power: The Wizard cannot attempt to cast further spells this phase.</characteristic>
           </characteristics>
@@ -409,17 +409,17 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8ed-fd7d-58d1-f615" type="max"/>
       </constraints>
       <profiles>
-        <profile id="385d-5c05-b088-169b" name="01-02" publicationId="9e23-79cb-pubN66727" page="108" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
+        <profile id="385d-5c05-b088-169b" name="01-02" publicationId="9e23-79cb-pubN66727" page="112" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
           <characteristics>
             <characteristic name="Result" typeId="0256-a2e8-e71c-22cc">Destroyed!: The war machine is destroyed.</characteristic>
           </characteristics>
         </profile>
-        <profile id="1adf-38fa-f9cd-97c8" name="03-04" publicationId="9e23-79cb-pubN66727" page="108" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
+        <profile id="1adf-38fa-f9cd-97c8" name="03-04" publicationId="9e23-79cb-pubN66727" page="112" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
           <characteristics>
             <characteristic name="Result" typeId="0256-a2e8-e71c-22cc">Malfunction: The war machine cannot fire this turn or in the controlling player&apos;s next turn.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c47b-e500-a5b2-5143" name="05-06" publicationId="9e23-79cb-pubN66727" page="108" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
+        <profile id="c47b-e500-a5b2-5143" name="05-06" publicationId="9e23-79cb-pubN66727" page="112" hidden="false" typeId="4537-0079-60d2-4469" typeName="Blackpowder Misfire Chart">
           <characteristics>
             <characteristic name="Result" typeId="0256-a2e8-e71c-22cc">May not Shoot: The war machine can shoot as normal again in the controlling player&apos;s next turn.</characteristic>
           </characteristics>
@@ -434,17 +434,17 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2e5-059d-7b35-1ee2" type="max"/>
       </constraints>
       <profiles>
-        <profile id="f14c-d708-7ec1-d950" name="01" publicationId="9e23-79cb-pubN66727" page="110" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
+        <profile id="f14c-d708-7ec1-d950" name="01" publicationId="9e23-79cb-pubN66727" page="114" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
           <characteristics>
             <characteristic name="Result" typeId="d187-dd40-0edb-b165">Destroyed!: The war machine is destroyed.</characteristic>
           </characteristics>
         </profile>
-        <profile id="b7a8-f42f-997c-7958" name="02-03" publicationId="9e23-79cb-pubN66727" page="110" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
+        <profile id="b7a8-f42f-997c-7958" name="02-03" publicationId="9e23-79cb-pubN66727" page="114" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
           <characteristics>
             <characteristic name="Result" typeId="d187-dd40-0edb-b165">Disabled: The stone thrower suffers a wound, with no armour saves allowed. The stone thrower cannot fire this turn or in the controlling player&apos;s next turn.</characteristic>
           </characteristics>
         </profile>
-        <profile id="cf7e-50c9-f10c-da28" name="04-06" publicationId="9e23-79cb-pubN66727" page="110" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
+        <profile id="cf7e-50c9-f10c-da28" name="04-06" publicationId="9e23-79cb-pubN66727" page="114" hidden="false" typeId="a9be-6f35-44aa-bf7d" typeName="Stone Thrower Misfire Chart">
           <characteristics>
             <characteristic name="Result" typeId="d187-dd40-0edb-b165">May not Shoot: The stone thrower is unharmed and can shoot as normal again in the controlling player&apos;s next turn.</characteristic>
           </characteristics>
@@ -14968,12 +14968,12 @@ instead of attempting to dispel the spell. The spell is cast as normal, but, aft
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="6624-0b7b-c5b8-6397" name="Scouts" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+    <rule id="6624-0b7b-c5b8-6397" name="Scouts" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>Scouts are set up after all other non-Scout units from both armies have been deployed, and do not count toward determining who finished deploying their army first. They can be set up either in their controlling player&apos;s deployment zone as normal, or anywhere on the battlefield more than 12&quot; away from the enemy. If deployed in this second way, Scouts cannot declare a charge in the first turn if their side goes first.
 
 If both players&apos; armies contain Scouts, players should roll off. The players then alternate deploying their scouting units one at a time, starting with the player who won the roll-off.</description>
     </rule>
-    <rule id="9a30-1c5c-12f4-5798" name="Skirmishers" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+    <rule id="9a30-1c5c-12f4-5798" name="Skirmishers" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
       <description>Skirmish Formation
 Skirmishers are deployed in a &apos;loose&apos; formation, where the models are not placed in base contact, but are positioned roughly 1/2&quot; apart. The models in the unit must still face the same direction and the unit will still have a front, two flanks and a rear. All Skirmishers in a unit do not count as blocking each other’s Line of Sight. As long as you can draw a Line of Sight from the front rank to the target, the second and subsequent ranks may fire too. In addition, Skirmishers may be fielded in formations of less than five models wide, as long as they do not have more ranks than files.
 
@@ -15004,7 +15004,7 @@ All shots aimed at a unit of Skirmishers suffer an additional -1 To Hit penalty.
 Characters
 A character model that joins a unit of Skirmishers gains Skirmisher as long as they stay with the unit. Characters may only join Skirmishers with the same Troop Type as them.</description>
     </rule>
-    <rule id="9ff3-dda6-e142-5a77" name="Frenzy" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="9ff3-dda6-e142-5a77" name="Frenzy" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>Frenzied troops gain +1 A and Immunity (Psychology).
 
 Berserk Rage
@@ -15017,31 +15017,31 @@ A unit that includes one or more Frenzied models cannot choose to restrain pursu
 Losing Frenzy
 Frenzy can be lost. Models retain their Frenzy for the entire game unless beaten in combat.</description>
     </rule>
-    <rule id="d56e-8ec7-dbcd-aeee" name="Stubborn" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="d56e-8ec7-dbcd-aeee" name="Stubborn" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>If the majority of the models in a unit are Stubborn, the unit is always Steadfast, whether or not they have a higher Unit Strength than their enemy or are disrupted.</description>
     </rule>
-    <rule id="e025-10f3-f893-4bd7" name="Devastating Charge" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
+    <rule id="e025-10f3-f893-4bd7" name="Devastating Charge" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>The Models have +1 A during a turn in which they charge into combat. Unless otherwise noted, this only applies to rider in case of Cavalry or Monstrous Cavalry.</description>
     </rule>
-    <rule id="ec58-b231-6a2f-a163" name="Flammable" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
+    <rule id="ec58-b231-6a2f-a163" name="Flammable" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
       <description>If a Flammable model is attacked with a Flaming Attack, all failed To Wound rolls made by the attackers may be re-rolled.</description>
     </rule>
-    <rule id="c21b-d368-6f1c-bae3" name="Regeneration (4+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+    <rule id="c21b-d368-6f1c-bae3" name="Regeneration (4+)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>A model with Regeneration is permitted a special regenerate saving throw (indicated by the number in the brackets) after it has failed any armour save or ward save it may have.
 
 If the save is passed, the damaged flesh regrows. However, any Wounds caused against a model with Regeneration still counts towards Combat Resolution, regardless of whether it has been saved or not. This rule is cumulative with other sources of Regeneration, to a maximum of 4+ (unless specified).
 
-Regeneration may not be used against Flaming Attacks, successful Killing Blows (including Heroic Killing Blow) or wounds caused due the unit being Unstable.</description>
+Regeneration may not be used against Flaming Attacks, successful Killing Blows (including Heroic Killing Blow) or wounds caused due the unit being Unstable. If the model is Wounded by an attack that causes Multiple Wounds, first roll to see how many Wounds the attack causes, and then roll for Regeneration for each Wound.</description>
     </rule>
-    <rule id="1c9d-2d99-6222-2853" name="Unbreakable" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
+    <rule id="1c9d-2d99-6222-2853" name="Unbreakable" publicationId="9e23-79cb-pubN66727" page="84" hidden="false">
       <description>Unbrekable Models have Immunity (Psychology) and passes Break tests automatically. Characters that are Unbreakable may only join units that are also Unbreakable, and characters that are not Unbreakable are not permitted to join units that are Unbreakable (even if a character was to become temporarily Unbreakable for some reason).</description>
     </rule>
-    <rule id="b779-6d7f-8298-7c82" name="Unstable" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
+    <rule id="b779-6d7f-8298-7c82" name="Unstable" publicationId="9e23-79cb-pubN66727" page="84" hidden="false">
       <description>Unstable units are Unbreakable, and suffer one extra Wound for every point they have lost of the round of combat by, with no saves of any kind permitted against these wounds. If an Unstable unit would normally be eligible to be Steadfast, they instead suffer 1 less Wound than they would normally do.
 
 If an Unstable unit also contains Unstable characters, the controlling player first allocates wounds to the unit, then divides any remaining wounds (if any) as equally as possible amongst the characters.</description>
     </rule>
-    <rule id="87ae-0aa9-e33f-adc1" name="Hover" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="87ae-0aa9-e33f-adc1" name="Hover" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Hovering units consisting of more than one model have Skirmishers.
 
 Moving Hovers
@@ -15055,39 +15055,41 @@ A unit that is hovering can march as normal, doubling its hovering move to 10&qu
 Flee and Pursue
 Hovers always move on the ground when attempting to flee or pursue.</description>
     </rule>
-    <rule id="9e47-05bc-376a-7463" name="Etheral" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
+    <rule id="9e47-05bc-376a-7463" name="Ethereal" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Ethereal creatures treat all terrain as open terrain for the purposes of movement. They may not finish their movement inside impassable terrain. They are never slowed by any special rule, spell or item that would otherwise reduce their movement or stop them from moving completely.
 
 The Models have both the Magical Attacks and Unstable. Ethereal models can only be wounded by spells, magical attacks and magic weapons or effects. Ethereal creatures block line of sight normally and cannot see through anything that would block the line of sight of normal units. Characters that are not themselves Ethereal are not permitted to join units that are (even if they become temporarily Ethereal for some reason).</description>
     </rule>
-    <rule id="755c-61c2-fa25-f4ce" name="Stupidity" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
-      <description>Provided that they are not engaged in close combat, a unit that contains one or more models with Stupidity must take a LD test at the start of its Movement phase. If the test is passed, the unit will act normally this turn.
+    <rule id="755c-61c2-fa25-f4ce" name="Stupidity" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
+      <description>Provided that they are not engaged in close combat, a unit that contains one or more models with Stupidity must take a LD test at the
+start of its Movement phase. If the test is passed, the unit will act normally this turn.
 
-If the test is failed, it immediately moves directly forwards using the Random Movement (D6). The Stupid unit cannot take any further action that turn. A unit that has failed a Stupidity test can still be forced to move, or perform any other action, by a spell, or other special rule/magic item.
+If the test is failed, it moves directly forwards using Random Movement (D6) in the Compulsory Movement sub-phase. The Stupid unit cannot take any further action that turn, so cannot declare charges or make a shooting attack. However, a unit that has failed a Stupidity test can still be forced to move, or perform any other action, by a spell, or other special rule/magic item.
 
-Until they pass the Stupidity test again, models that have failed their Stupidity test have Immunity (Psychology) and Random Movement (D6). They cannot choose to do a combat reform or choose any other charge reaction except Hold. In addition, Wizards cannot attempt to cast or channel power dice or dispel dice.</description>
+Until they pass the Stupidity test again, models that have failed their Stupidity test have Immunity (Psychology) and Random Movement (D6), except that they can only move directly forwards. They cannot choose to do a combat reform or choose any other charge reaction except Hold. In addition, Wizards cannot attempt to cast or channel power dice or dispel dice.</description>
     </rule>
-    <rule id="2e96-0439-2413-69d5" name="Strider (Swamp)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="2e96-0439-2413-69d5" name="Strider (Swamp)" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="b143-056c-658e-ba26" name="Immunity (Psychology)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="b143-056c-658e-ba26" name="Immunity (Psychology)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="4b60-6477-75a8-f6dd" name="Ward Save (5+)" publicationId="9e23-79cb-pubN66727" page="48" hidden="false">
-      <description>Some models have a special save called a Ward save. The value of a ward save will be shown in brackets. These work in the same way as armour saves, and may be combined with other types of Ward saves as normal. Ward saves are never modified by the S of the attack. No model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
+    <rule id="4b60-6477-75a8-f6dd" name="Ward Save (5+)" publicationId="9e23-79cb-pubN66727" page="49" hidden="false">
+      <description>The value of a ward save will always be shown in a model&apos;s entry in the relevant Warhammer Armies book. These work in the same
+way as armour saves, and may be combined with other Ward saves as normal. The key difference between ward saves and armour saves is that ward saves are never modified by the S of the attack. However, no model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
 
-If a model has both an armour save and a Ward save, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
+Sometimes a model has both an armour save and a Ward save. Where this is the case, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
     </rule>
-    <rule id="f366-0f91-841f-cf80" name="Ambushers" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
+    <rule id="f366-0f91-841f-cf80" name="Ambushers" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A unit with the Ambushers rule can choose to not deploy at the start of the battle. Instead, from Turn 2 onwards, the controlling player rolls a dice at the start of their turn for each unit of their Ambushers that have yet to arrive. On a 1 or 2, the Ambushers have been delayed – roll for them again next turn. On a 3 or more, the unit of Ambushers arrives, and will enter the board during the Remaining Moves sub-phase. If the Ambushers do not turn up for the entire game, they are assumed to have got lost, and are treated as having fled the battle for the purposes of determining the victor. Arriving Ambushers enter the battlefield from any point on any battlefield edge, and move on using the rules for reinforcements. Note that a character may only join a unit deploying with Ambushers if they also have the same rule.
 
 In addition, for every Core unit that deploys as Ambushers in your army, you are required to include at least one other Core Unit that does not deploy using Ambushers.</description>
     </rule>
-    <rule id="a043-3e3c-9f8a-3661" name="Impact Hits (D6+1)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="a043-3e3c-9f8a-3661" name="Impact Hits (D6+1)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15096,13 +15098,13 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="6b43-9dda-f589-0509" name="Natural Armour (4+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="6b43-9dda-f589-0509" name="Natural Armour (4+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
-    <rule id="8977-b58c-704d-705e" name="Sniper" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
+    <rule id="8977-b58c-704d-705e" name="Sniper" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
       <description>A model with Sniper can make a special Sniper shot instead of shooting normally (though it can be used in combination with the Multiple Shots rule as normal). A Sniper shot suffers an additional -1 To Hit penalty, in addition to any other modifiers, but can be aimed with great precision. Unless making a Stand and Shoot charge reaction, a model making a Sniper shot can shoot at a different target from the one chosen by their unit. A hit from a Sniper shot is not distributed in the same manner as other shooting attacks. The Sniper can shoot at any model they can see, including characters within a unit. &quot;Look out Sir!&quot; cannot be used.</description>
     </rule>
-    <rule id="953a-d5a4-ee81-4093" name="Fly" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="953a-d5a4-ee81-4093" name="Fly" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>Flying units consisting of more than one model have Skirmishers.
 
 Moving Flyers
@@ -15117,15 +15119,15 @@ A unit that is flying can march as normal, doubling its flying move to 20&quot;.
 Flee and Pursue
 Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
-    <rule id="777a-7a64-44fa-a78e" name="Champion" publicationId="9e23-79cb-pubN66727" page="95" hidden="false">
+    <rule id="777a-7a64-44fa-a78e" name="Champion" publicationId="9e23-79cb-pubN66727" page="97" hidden="false">
       <description>&quot;Follow Me!&quot;
 A unit that is accompanied by a champion may re-roll failed rolls to march due to nearby enemies, reform and restraining from pursuit.</description>
     </rule>
-    <rule id="6002-29d0-d620-1bd0" name="Standard Bearer" publicationId="9e23-79cb-pubN66727" page="95" hidden="false">
+    <rule id="6002-29d0-d620-1bd0" name="Standard Bearer" publicationId="9e23-79cb-pubN66727" page="97" hidden="false">
       <description>Combat Resolution Bonus
 If a unit includes a standard bearer, it adds +1 to its combat result. </description>
     </rule>
-    <rule id="54c3-1d1b-3ffe-59a5" name="Musician" publicationId="9e23-79cb-pubN66727" page="96" hidden="false">
+    <rule id="54c3-1d1b-3ffe-59a5" name="Musician" publicationId="9e23-79cb-pubN66727" page="98" hidden="false">
       <description>&quot;Stand Fast!&quot;
 The side that has a musician in its front rank of one or more of its units wins any drawn close combat by 1, unless the opposing side has a musician also, in which case they cancel each other out.
 
@@ -15141,30 +15143,31 @@ A unit that is not fleeing and not engaged in combat can make a swift reform dur
 
  A unit that has made a swift reform can still shoot, although it will count as moving, whether or not it moves further after the reform has been completed. This means that it will suffer the -1 modifier for moving and firing, and will not be able to shoot Move or Fire weapons.</description>
     </rule>
-    <rule id="7799-99da-2b8e-2941" name="Slow to Fire" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
+    <rule id="7799-99da-2b8e-2941" name="Slow to Fire" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
       <description>Weapons with Slow to Fire cannot be used to Stand and Shoot.</description>
     </rule>
-    <rule id="7bd0-8602-4375-a731" name="Fear" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
-      <description>Units in base contact with one or more models that have Fear suffer -1 to their Combat Resolution. If the Unit Strength of all Fear-causing models in base contact is double or more, the Combat Resolution penalty is increased to -2.
+    <rule id="7bd0-8602-4375-a731" name="Fear" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+      <description>A unit containing one or more Fear-causing model gains +1 to their Combat Resolution bonus. If the Unit Strength of all Fear-causing models is double or more, the Combat Resolution bonus is increased to +2. Note that the bonus from Fear is otherwise not cumulative for having multiple units with the Fear special rule involved in the same combat.
 
-If the majority of the models in a unit cause Fear, they also gain Immunity (Fear), and thus ignore the Combat Resolution penalty.</description>
+If the majority of the models in a unit cause Fear, they also gain Immunity (Fear), and thus the Combat Resolution bonus is ignored for that unit.</description>
     </rule>
-    <rule id="fdd9-fa75-5594-d363" name="Swiftstride" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
-      <description>When charging, units entirely made of models with Swiftstride and M 7 or higher roll 3D6 and discard the lowest dice roll, rather than rolling 2D6 and choosing the highest dice roll. When fleeing or pursuing, they roll 3D6, rather than 2D6.
+    <rule id="fdd9-fa75-5594-d363" name="Swiftstride" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
+      <description>When charging, units entirely made of models with Swiftstride and M 7 or higher roll 3D6, discard the lowest result, and add the result to their M value. When fleeing or pursuing, they roll 3D6, rather than 2D6.
 
-When charging, units entirely made of models with Swiftstride and M 6 or lower roll 2D6, and add the result to their Movement value. When fleeing or pursuing, they roll 3D6, and discard the lowest result.
+When charging, units entirely made of models with Swiftstride and M 6 or lower roll 2D6, and add the result to their M value. When
+fleeing or pursuing, they roll 3D6, and discard the lowest result.
 
 Swiftstride has no effect on models using a M value lower than 4.
 
 					Swiftstride M6 or lower		Swiftstride M7 or more
 
-Charging			M +2D6						M + 3D6 (choose two highest)
+Charging			M + 2D6						M + 3D6 (discard the lowest)
 
-Failed Charge		2D6							3D6 (choose two highest)
+Failed Charge		2D6							3D6 (discard the lowest)
 
-Fleeing/Pursuing		3D6 (choose two highest)		3D6</description>
+Fleeing/Pursuing		3D6 (discard the lowest)		3D6</description>
     </rule>
-    <rule id="bb3b-3ca8-fcbc-a78b" name="Impact Hits (1)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="bb3b-3ca8-fcbc-a78b" name="Impact Hits (1)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15173,15 +15176,15 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="b806-942b-15af-b309" name="Expendable" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
+    <rule id="b806-942b-15af-b309" name="Expendable" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Models with this rule do not cause Panic to friendly units that are not Expendable themselves. Characters may not join a unit with this rule, unless specified.
 
 For every Core unit with Expendable rule in your army, you are required to include at least one other Core Unit without Expendable. For more information on this, see the Choosing Your Army chapter.</description>
     </rule>
-    <rule id="668c-19e8-b764-8549" name="Stomp" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="668c-19e8-b764-8549" name="Stomp" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
       <description>The model can make a Stomp in addition to its other close combat attacks. A Stomp has Always Strikes Last, and inflicts D6 (or D3 against lone Infantry models and skirmishers) automatic hits, at the model&apos;s S, on one enemy Infantry, War Beasts or Swarm unit in base contact with the model.</description>
     </rule>
-    <rule id="e9e6-66cc-623f-8e94" name="Impact Hits (D6)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="e9e6-66cc-623f-8e94" name="Impact Hits (D6)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15190,7 +15193,7 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="df59-4284-cca7-e4ca" name="Terror" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
+    <rule id="df59-4284-cca7-e4ca" name="Terror" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models that cause Terror also cause Fear. In addition, the following rules apply. Fear-causing models treat Terror-causing monsters as causing Fear, rather than Terror – this is an exception to the rule that makes Fear-causing creatures immune to Fear. Terror-causing models have Immunity (Fear/Terror).
 
 Run for your Lives!
@@ -15198,12 +15201,12 @@ If a Terror-causing creature declares a charge, the target unit must immediately
 
 If a unit wishes to declare a charge against an enemy that causes Terror, it must take a Psychology test to overcome its terror first. If the test is failed, it may not declare the charge against the Terror-causing unit, but may choose to declare a charge against another unit following the rules for Redirecting a Charge. If the Psychology test is passed, the unit may declare the charge as normal.</description>
     </rule>
-    <rule id="03db-d81f-f264-84b8" name="Magical Attacks" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="03db-d81f-f264-84b8" name="Magical Attacks" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>All attacks made by spells and magic items are considered to be magical attacks, as are all attacks that are specifically noted as being magical attacks. Shots fired from magical items are also considered to be magical attacks, unless their description specifically states otherwise. Hits inflicted by rolls on the Miscast table are treated as magical attacks.
 
 Note that spells are not physical attacks unless clearly specified.</description>
     </rule>
-    <rule id="38ba-d48a-be97-f830" name="Vanguard" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
+    <rule id="38ba-d48a-be97-f830" name="Vanguard" publicationId="9e23-79cb-pubN66727" page="84" hidden="false">
       <description>After both sides have deployed all their other forces (including Scouts), but before the roll to see who gets the first turn is made, units with the Vanguard special rule can immediately make a move up to 12&quot; (6&quot; in the case of Infantry or Swarms) move regardless of their M value (they can&apos;t march, and are affected by terrain as normal). This cannot be used to move the Vanguard troops within 12&quot; of the enemy.
 
 If both players&apos; armies contain Vanguard troops, players should roll off. The players then alternate moving their Vanguard units one at a time, starting with the player who won the roll-off.
@@ -15212,7 +15215,7 @@ Units that have made a Vanguard move cannot declare a charge in the first turn i
 
 If a character is deployed as part of a unit with Vanguard, that unit can still make its Vanguard move if the character in question has Vanguard or is a model on foot. Otherwise the character’s presence prevents the unit from using Vanguard.</description>
     </rule>
-    <rule id="8877-a5de-cc9c-9142" name="Fast Cavalry" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
+    <rule id="8877-a5de-cc9c-9142" name="Fast Cavalry" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
       <description>Vanguard
 Fast Cavalry automatically have Vanguard.
 
@@ -15234,19 +15237,19 @@ A character model that joins a unit of Fast Cavalry gains Fast Cavalry as long a
 Armour Saves
 Units containing one or more models with a close combat armour save better than 5+ and/or barding cannot use Fast Cavalry.</description>
     </rule>
-    <rule id="fcc3-a722-a9e4-9c94" name="General" publicationId="9e23-79cb-pubN66727" page="103, 126" hidden="false">
+    <rule id="fcc3-a722-a9e4-9c94" name="General" publicationId="9e23-79cb-pubN66727" page="106, 130" hidden="false">
       <description>Inspiring Presence
-Providing that the General is not fleeing, all friendly units within 12&quot; may use their LD instead of their own (so rally your General first), unless specified (such as having to test on their unmodified LD). War Beasts, Monstrous Beasts and Monsters (not including Monsters that are Mounts, Characters or which have the Mixed Unit special rule) may not use the Inspiring Presence ability.
+Providing that the General is not fleeing, all friendly units within 12&quot; may use their LD instead of their own, unless specified.
 
 If your General has a Unit Strength of 5 or more, then the range of their Inspiring Presence ability is increased from 12&quot; to 18&quot;.
 
-If a unit taking a LD test has a modifier to its LD, this modifier still applies if the unit uses the General’s Leadership.
+If a unit taking a LD test has a modifier to its LD, this modifier still applies if the unit uses the General’s LD.
 
 If a unit is Steadfast, it may use the LD of the General for Break tests if it is higher than their own LD after applying all negative modifiers from combat resolution. Otherwise, they will use their own LD.
 
 Every army must have a General. If your army includes both Lords and Heroes, you must choose a Lord to be the army&apos;s General.</description>
     </rule>
-    <rule id="3f4a-7d94-afef-39ea" name="Battle Standard Bearer" publicationId="9e23-79cb-pubN66727" page="103" hidden="false">
+    <rule id="3f4a-7d94-afef-39ea" name="Battle Standard Bearer" publicationId="9e23-79cb-pubN66727" page="106" hidden="false">
       <description>Unless specified otherwise, the model that carries the battle standard cannot be the General.
 
 The battle standard bearer is automatically killed if they flee from combat.
@@ -15261,25 +15264,25 @@ Friendly models within 12&quot; of the Battle Standard Bearer re-roll failed Pan
 
 If your Battle Standard Bearer has a Unit Strength of 5 or more, then the range of their Hold Your Ground! ability is increased from 12&quot; to 18&quot;.</description>
     </rule>
-    <rule id="00b2-9504-41a2-f664" name="Always Strikes First" publicationId="9e23-79cb-pubN66727" page="70" hidden="false">
+    <rule id="00b2-9504-41a2-f664" name="Always Strikes First" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
       <description>Models with this rule always strike first in close combat, regardless of I. If a model with this rule is fighting an enemy with the same ability, the model with the higher I will strike first.
 
 In addition, if the model&apos;s I is higher than their enemy&apos;s when it is their turn to attack, they can re-roll failed To Hit rolls when striking in close combat.</description>
     </rule>
-    <rule id="3a63-48ed-fe9a-ef02" name="Always Strikes Last" publicationId="9e23-79cb-pubN66727" page="70" hidden="false">
+    <rule id="3a63-48ed-fe9a-ef02" name="Always Strikes Last" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
       <description>A model with this rule always strikes last in close combat, regardless of I. If a model with this rule is fighting an enemy with the same ability, the model with the higher I will strike first. If a model has both this rule and Always Strikes First, the two cancel out and neither applies so use the model&apos;s I.
 
 In addition, if the model&apos;s I is lower than their enemy&apos;s when it is their turn to attack, they must re-roll successful To Hit rolls when striking in close combat.</description>
     </rule>
-    <rule id="bf4e-212e-fe1d-20c6" name="Armour Piercing (1)" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
+    <rule id="bf4e-212e-fe1d-20c6" name="Armour Piercing (1)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>Wounds caused in close combat by this model inflict a negative armour save modifier as indicated by the number in the brackets, in addition to those for S. If a model has a weapon with the Armour Piercing rule, only attacks made or shots fired with the weapon are Armour Piercing. This rule is cumulative with other sources of Armour Piercing.</description>
     </rule>
-    <rule id="3667-691b-abd9-7da6" name="Aquatic" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
+    <rule id="3667-691b-abd9-7da6" name="Aquatic" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>Aquatic models can move within any area of water on the battlefield as if it were open ground. They are still subject to any special effects that specific terrain may have.
 
 The models can march, claim rank bonus and be steadfast even when in water. If every model in a unit is Aquatic, and the majority of the unit is within water terrain, enemies shooting at that unit suffer an additional -1 To Hit penalty.</description>
     </rule>
-    <rule id="51e2-219e-29cc-8aaf" name="Breath Weapons" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
+    <rule id="51e2-219e-29cc-8aaf" name="Breath Weapons" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>A model with a Breath Weapon can use it to make a special attack once per shooting or close combat phase. A model with two or more different Breath Weapons must choose which one they want to use. The form that this special attack takes depends on whether or not the creature is in close combat. In the event that a model has more than one Breath Weapon attack, it is permitted to attempt to use only one in a single turn.
 
 However, after each Breath Weapon has been used the first time, roll a D6 before attempting to use it again in later rounds. On 4+, it may be used as normal. On a 1- 3, the model is literally out of breath, and cannot use its Breath Weapon this round. It may choose to attack normally in close combat instead.
@@ -15294,63 +15297,66 @@ To perform the attack, place the flame template so that it lies entirely within 
 Breath Weapon Close Combat Attack
 If the model with this special rule is in close combat, it can use the Breath Weapon instead of using its normal attacks. A model that makes a breath weapon attack in this way inflicts 2D6 automatic hits (resolved like shooting) on a single enemy unit in base contact – if there is more than one enemy unit in base contact with the model, the controlling player chooses which enemy unit suffers the hits. Note that no single model in the target unit may be Hit more than once from the same breath weapon attack – any excess hits are ignored. As with breath weapon attacks made in the Shooting phase, the Strength and any special effects of the creature&apos;s Breath Weapon will be covered in its rules. Wounds caused by a Breath Weapon in close combat count towards combat resolution.</description>
     </rule>
-    <rule id="3d84-8ad0-b310-e355" name="Fight in Extra Ranks (1)" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
+    <rule id="3d84-8ad0-b310-e355" name="Fight in Extra Ranks (1)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
       <description>If a unit has this rule then supporting attacks can be made by one more rank than normal for each number indicated in the bracket, on a turn in which the unit did not charge. This rule is cumulative with other sources of Fight in Extra Ranks.</description>
     </rule>
-    <rule id="8600-a090-2761-d661" name="Flaming Attacks" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
+    <rule id="8600-a090-2761-d661" name="Flaming Attacks" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
       <description>Models with Flaming Attacks cause Fear in War Beasts, Cavalry, Chariots and Flammable creatures. Any Panic test taken by any of these Troop Types from a Flaming Shooting Attack suffer -1 to their LD when taking the test.
+
 Unless otherwise stated, a model with this special rule has both Flaming shooting and close combat attacks (though any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding).</description>
     </rule>
-    <rule id="2796-b399-4f98-a36f" name="Hidden" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="2796-b399-4f98-a36f" name="Hidden" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Hidden models can choose to deploy &quot;hidden&quot; within another friendly ranked unit, either the unit it belongs to (determined in each army list) or in other separate units (the army book in question will state which units) – make a note of which unit is concealing the hidden model(s).
 
 A hidden model is not placed on the table during deployment, but is revealed later during the game. If the concealing unit is wiped out or flees from the battlefield before the hidden model is revealed, the hidden model counts as a casualty. There is no other way a hidden model can be harmed before they are revealed.
 Hidden models may be revealed at the beginning of any of your Movement phases, or at the start of any Close Combat phase. Declare that the unit contains a hidden model and place the model in the front rank of that unit, displacing models as you normally would if a character had joined the unit.
 A model with this special rule cannot be your army General. Furthermore, other units can never use their Leadership value.</description>
     </rule>
-    <rule id="fa30-0410-43da-e1d7" name="Ice Attacks" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="fa30-0410-43da-e1d7" name="Ice Attacks" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with Ice Attacks cause all enemy models in base contact with them to be subject to Always Strikes Last. Spells or missile attacks that are Ice Attacks cause the enemy to be subject to Always Strikes Last until the start of your next turn if they are successfully cast or Hit. Models with Ice Attacks have Immunity (Ice Attacks).
 
 Unless otherwise stated, a model has Ice Attacks for both shooting and close combat. Any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding, whether they be shooting or close combat attacks.</description>
     </rule>
-    <rule id="eb5d-590f-b65e-1f75" name="Ignores Cover" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="eb5d-590f-b65e-1f75" name="Ignores Cover" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>If a model&apos;s shooting attacks Ignore Cover, they ignore To Hit penalties imposed by soft cover, hard cover and obstacles (other To Hit penalties apply as normal).</description>
     </rule>
-    <rule id="6f9e-e09f-5a40-c4eb" name="Lightning Attacks" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="6f9e-e09f-5a40-c4eb" name="Lightning Attacks" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>Lightning have Ignores Armour saves against all armour types except Natural Armour.
 
 Unless otherwise stated, a model with thisl rule has Lightning Attacks for both shooting and close combat. Any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding, whether they be shooting or close combat attacks.</description>
     </rule>
-    <rule id="1b92-42cb-7fdf-fd31" name="Loremaster (Lore of Metal)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="1b92-42cb-7fdf-fd31" name="Loremaster (Lore of Metal)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="37a5-2f70-159f-adfd" name="Move or Fire" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="37a5-2f70-159f-adfd" name="Move or Fire" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>A weapon with Move or Fire cannot be fired in the Shooting phase if the model moved earlier in the turn, including rallying, reforming and pivoting on the spot (except for Lone Models, who can pivot and fire in the same turn). This even applies if the model in question was forced to move as the result of a spell or other such compulsory action. Mounted models with Move or Fire weapons may still move and fire, but they will suffer an additional -1 To Hit if they do so, unless specified.</description>
     </rule>
-    <rule id="0a0c-35fd-e8ef-5f4e" name="Multiple Shots (2)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
-      <description>The weapon enables its wielder to fire several shots at a time, rather than a single shot. The number of shots the weapon can fire is stated in brackets. Such weapons can either fire once without penalty, or as many times as indicated in the bracket with a -1 To Hit penalty (in addition to any other modifiers To Hit). War Machines with this special rule do not suffer -1 To Hit for firing Multiple Shots.
+    <rule id="0a0c-35fd-e8ef-5f4e" name="Multiple Shots (2)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+      <description>The weapon enables its wielder to fire several shots at a time, rather than a single shot. The number of shots the weapon can fire is stated in brackets. Such weapons can either fire once without penalty, or as many times as indicated in the bracket with a -1 To Hit penalty (in addition to any other modifiers To Hit). War Machines with this rule do not suffer -1 To Hit for firing Multiple Shots.
 
 All models in the unit (excluding characters) must fire either single or Multiple Shots.</description>
     </rule>
-    <rule id="4327-5cb8-c500-63b1" name="Multiple Wounds (D6)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
-      <description>Each unsaved wound inflicted by an attack with Multiple Wounds is multiplied into more than one wound. The number of wounds caused will be stated in brackets.
+    <rule id="4327-5cb8-c500-63b1" name="Multiple Wounds (D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+      <description>Each wound inflicted by an attack with Multiple Wounds (after armour and ward saves, but before Regeneration) is multiplied into more than one wound. The exact number of wounds caused will vary from model to model and weapon to weapon, but will normally be shown in brackets as part of the rule.
 
-Where the number of Multiple Wounds is generated by a dice roll, roll a dice separately for each unsaved wound and use the total of all the dice rolled for the final number of wounds inflicted.</description>
+Where the number of Multiple Wounds is generated by a dice roll, roll a dice separately for each unsaved wound and use the total of all the dice rolled for the final number of wounds inflicted.
+
+Unless otherwise specified, Multiple Wounds only apply to close combat attacks.</description>
     </rule>
-    <rule id="fefd-9cb0-d6fa-e2ef" name="Poisoned Attacks" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="fefd-9cb0-d6fa-e2ef" name="Poisoned Attacks" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>A model with Poisoned Attacks gains a +1 modifier to any To Wound rolls. Armour saves are modified by the Strength of the attack as normal.
 
 Unless otherwise stated, a model has both Poisoned shooting and close combat attacks. Any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding, whether they be shooting or close combat attacks.</description>
     </rule>
-    <rule id="2c6d-374e-56ca-ce87" name="Quick to Fire" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="2c6d-374e-56ca-ce87" name="Quick to Fire" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Quick to Fire weapons do not suffer the usual -1 To Hit penalty for moving and shooting. In addition, Quick to Fire weapons can always be used to Stand and Shoot against a charging enemy, even if that enemy would normally be too close for such a charge reaction to be declared.
 
 Furthermore, Quick to Fire weapons may be used once per turn when declaring a charge (unless they are also Move or Fire), immediately after the enemy unit has declared their charge reaction (but before moving any units). If the enemy unit chose to Stand &amp; Shoot or Fire &amp; Flee, both units will fire at the same time. Quick to Fire weapons can be used this way even if the unit starts its charge outside their weapons&apos; maximum range – the shooting is resolved normally assuming the enemy is just within maximum range of the shooting unit&apos;s shortest-ranged weapon. If the charge fails, for whatever reason, we assume that the chargers closed to within the weapons&apos; maximum range first. Any shots fired in this manner suffer a -1 To Hit penalty.</description>
     </rule>
-    <rule id="183a-6a6f-951c-1663" name="Random Attacks (D6+1)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="183a-6a6f-951c-1663" name="Random Attacks (D6+1)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="0877-cd17-c381-a045" name="Random Movement (3D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="0877-cd17-c381-a045" name="Random Movement (3D6)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>Models with Random Movement do not have a M value, but rather a dice roll. This is the distance they move, charge, pursue, overrun and flee – they cannot march. If a model has Random Movement and Swiftstride, then Swiftstride is not used. Note that certain Random Movement rolls can result in the model having a M value higher than 10 – this is an exception to the usual maximum.
 
 Models with Random Movement cannot declare charges, and are always moved in the Compulsory Moves sub-phase. When the model moves, first pivot it about its centre to face the direction in which you wish it to travel. Then move the model after rolling the specific dice. No other pivots can be made.
@@ -15363,26 +15369,26 @@ If two or more models in a unit have the Random Movement, pivot the unit about i
 
 A Random Move counts as a &quot;normal&quot; move for triggering a Dangerous Terrain test, unless the model is making a charge, pursuit or flee move, in which case it counts as a move of the appropriate type.</description>
     </rule>
-    <rule id="554e-99aa-3930-447f" name="Requires Two Hands" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+    <rule id="554e-99aa-3930-447f" name="Requires Two Hands" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>If a weapon requires two hands to use, it is not possible for a model to use a shield or buckler alongside it in close combat (although a shield can still be used against wounds caused by shooting or magic).</description>
     </rule>
-    <rule id="01e3-7f81-20e3-45fe" name="Strength Bonus (1)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="01e3-7f81-20e3-45fe" name="Strength Bonus (1)" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
       <description>Models with this rule gain a S bonus to all their close combat attacks (including Impact Hits and Stomps) equal to the number in the brackets in the first round of each new close combat they are involved in. Note that any attack made with a weapon that gives Strength Bonus only applies to attacks made with the weapon itself. This rule is cumulative with other sources of Strength Bonus.</description>
     </rule>
-    <rule id="43ca-96e5-8a47-2d39" name="Volley Fire" publicationId="9e23-79cb-pubN66727" page="82" hidden="false">
+    <rule id="43ca-96e5-8a47-2d39" name="Volley Fire" publicationId="9e23-79cb-pubN66727" page="84" hidden="false">
       <description>Weapons with this rule allow the unit to fire with all ranks within range as long as at least one model in the unit can draw Line of Sight to the target. However, if they do so, they suffer -1 To Hit. A unit cannot Volley Fire if it moved earlier in the turn or as a Stand and Shoot reaction. Volley Fire cannot be used if the target is within half the weapon&apos;s maximum range.</description>
     </rule>
-    <rule id="917c-1397-bf0b-5856" name="Ignores Armour Saves" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="917c-1397-bf0b-5856" name="Ignores Armour Saves" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>If a model has this rule, no armour saves may be taken at all, unless otherwise noted.</description>
     </rule>
-    <rule id="5dfb-b5c0-520b-ed68" name="Immunity (Ice Attacks)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="5dfb-b5c0-520b-ed68" name="Immunity (Ice Attacks)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="a711-7cf6-cd2b-1d29" name="Killing Blow" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="a711-7cf6-cd2b-1d29" name="Killing Blow" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>If a model with Killing Blow rolls a 6 to wound in close combat, they automatically slay their opponent – regardless of the number of wounds on the victim&apos;s profile. Armour saves and regeneration saves cannot be taken against a Killing Blow. Ward saves may be taken as normal.
 
 Killing Blow is only effective against Infantry, Cavalry and War beasts. Against Monstrous Infantry, Monstrous Cavalry and Monsters, a successful Killing Blow only inflicts one Wound which Ignores Armour saves. Against other troop types, it has no effect.
@@ -15393,7 +15399,7 @@ For the purposes of combat resolution, successful Killing Blows score the same a
 
 Unless specified, Killing Blow only applies to the model&apos;s normal Close Combat attacks.</description>
     </rule>
-    <rule id="4dc2-df44-cb9c-2c9b" name="Heroic Killing Blow" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="4dc2-df44-cb9c-2c9b" name="Heroic Killing Blow" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>If a model with Killing Blow rolls a 6 to wound in close combat, they automatically slay their opponent – regardless of the number of wounds on the victim&apos;s profile. Armour saves and regeneration saves cannot be taken against a Killing Blow. Ward saves may be taken as normal.
 
 Heroic Killing Blow is effective against all troop types except Swarms.
@@ -15404,24 +15410,26 @@ For the purposes of combat resolution, successful Killing Blows score the same a
 
 Unless specified, Killing Blow only applies to the model&apos;s normal Close Combat attacks.</description>
     </rule>
-    <rule id="e00a-3a09-9b67-e994" name="Mixed Unit" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="e00a-3a09-9b67-e994" name="Mixed Unit" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>A Mixed Unit most often consist of two different Troop Types, with one or more handlers that drive the rest of the unit forward. The handler(s) may be deployed in the rear rank of the unit. Mixed Units cannot be joined by characters, unless specified.
 
 If a Mixed unit is required to take a characteristic test, this is done using the characteristics of the unit itself, not the handlers. The only exception is LD tests, which are taken using the unit’s highest LD value. When the models in a unit with Mixed Unit have different M allowances, the handlers M value is ignored, unless they are the only models remaining. Any rules that the unit might have do not apply to the Handlers unless specified – ignore the handlers completely in those cases.
 
 As long as the unit (but not the handlers) have a unit strength of 5 or more, any missile hits are resolved against the unit itself. At less than unit strength 5, the controlling player decides who is hit, but must allocate one hit on each model before they can add a second hit on a model; they must allocate two hits on each model before they can allocate a third, and so on. Hits from templates are resolved against the handlers as normal. In close combat, the handlers can only be attacked by models who are in base contact with them.</description>
     </rule>
-    <rule id="20d3-7f3f-51f9-e10d" name="Multiple Wounds (D3)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
-      <description>Each unsaved wound inflicted by an attack with Multiple Wounds is multiplied into more than one wound. The number of wounds caused will be stated in brackets.
+    <rule id="20d3-7f3f-51f9-e10d" name="Multiple Wounds (D3)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+      <description>Each wound inflicted by an attack with Multiple Wounds (after armour and ward saves, but before Regeneration) is multiplied into more than one wound. The exact number of wounds caused will vary from model to model and weapon to weapon, but will normally be shown in brackets as part of the rule.
 
-Where the number of Multiple Wounds is generated by a dice roll, roll a dice separately for each unsaved wound and use the total of all the dice rolled for the final number of wounds inflicted.</description>
+Where the number of Multiple Wounds is generated by a dice roll, roll a dice separately for each unsaved wound and use the total of all the dice rolled for the final number of wounds inflicted.
+
+Unless otherwise specified, Multiple Wounds only apply to close combat attacks.</description>
     </rule>
-    <rule id="7ed4-9d31-09c3-6bf9" name="Magic Resistance (1)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="7ed4-9d31-09c3-6bf9" name="Magic Resistance (1)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>A model with Magic Resistance gains a bonus to dispel enemy spells directly targeting it (not including templates that are placed on top of it) as well as its Ward saves against damage caused by spells. This bonus is based on the number shown in brackets after the Magic Resistance special rule.
 
 If a character with Magic Resistance joins a unit, all models in the unit benefit from the Magic Resistance as long as they are part of the unit. If a model has two sets of Magic Resistance, use the better one.</description>
     </rule>
-    <rule id="f30d-0b61-2836-689e" name="Impact Hits (D3)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="f30d-0b61-2836-689e" name="Impact Hits (D3)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15430,16 +15438,16 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="306d-711a-1300-587f" name="Natural Armour (5+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="306d-711a-1300-587f" name="Natural Armour (5+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
-    <rule id="32e8-b4ad-3e59-a3c7" name="Natural Armour (3+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="32e8-b4ad-3e59-a3c7" name="Natural Armour (3+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
-    <rule id="33f1-4ddd-d26b-281a" name="Random Attacks (D6+2)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="33f1-4ddd-d26b-281a" name="Random Attacks (D6+2)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="d078-4dd8-8ffb-876a" name="Impact Hits (D6+2)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="d078-4dd8-8ffb-876a" name="Impact Hits (D6+2)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15448,7 +15456,7 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="16ae-a437-29a7-e714" name="Impact Hits (D3+1)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="16ae-a437-29a7-e714" name="Impact Hits (D3+1)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15457,50 +15465,50 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="0e09-3526-25d5-2646" name="Magic Resistance (2)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="0e09-3526-25d5-2646" name="Magic Resistance (2)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>A model with Magic Resistance gains a bonus to dispel enemy spells directly targeting it (not including templates that are placed on top of it) as well as its Ward saves against damage caused by spells. This bonus is based on the number shown in brackets after the Magic Resistance special rule.
 
 If a character with Magic Resistance joins a unit, all models in the unit benefit from the Magic Resistance as long as they are part of the unit. If a model has two sets of Magic Resistance, use the better one.</description>
     </rule>
-    <rule id="738b-aca4-740c-e425" name="Animated Construct" publicationId="9e23-79cb-pubN66727" page="71" hidden="false">
+    <rule id="738b-aca4-740c-e425" name="Animated Construct" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
       <description>Animated Constructs have Immunity (Poisoned Attacks) and Unbreakable. However, they may not march.</description>
     </rule>
-    <rule id="9b99-4e37-be08-231a" name="Magic Resistance (3)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="9b99-4e37-be08-231a" name="Magic Resistance (3)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>A model with Magic Resistance gains a bonus to dispel enemy spells directly targeting it (not including templates that are placed on top of it) as well as its Ward saves against damage caused by spells. This bonus is based on the number shown in brackets after the Magic Resistance special rule.
 
 If a character with Magic Resistance joins a unit, all models in the unit benefit from the Magic Resistance as long as they are part of the unit. If a model has two sets of Magic Resistance, use the better one.</description>
     </rule>
-    <rule id="e56f-d7d4-8987-dbdb" name="Parry (6+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="e56f-d7d4-8987-dbdb" name="Parry (6+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with this rule gain a Ward save in close combat as indicated in the brackets. It cannot be used against attacks made against the model&apos;s flank or rear, nor can it be used against attacks that Hit automatically, attacks that are made at +3 S over the model&apos;s own S value, nor can it be used by mounted models, unless specified.</description>
     </rule>
-    <rule id="c270-3956-9b64-b587" name="Strider" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="c270-3956-9b64-b587" name="Strider" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="fa69-07b8-fdc1-3ac9" name="Natural Armour (6+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="fa69-07b8-fdc1-3ac9" name="Natural Armour (6+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
-    <rule id="8d09-c701-2658-67e8" name="Strider (Forest)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="8d09-c701-2658-67e8" name="Strider (Forest)" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="d896-d52f-cc64-ab43" name="Scythes" publicationId="9e23-79cb-pubN66727" page="87" hidden="false">
+    <rule id="d896-d52f-cc64-ab43" name="Scythes" publicationId="9e23-79cb-pubN66727" page="89" hidden="false">
       <description>Impact Hits (+1).</description>
     </rule>
-    <rule id="b15c-9f50-7081-ba29" name="Natural Armour (2+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="b15c-9f50-7081-ba29" name="Natural Armour (2+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
-    <rule id="f6d7-9fbc-abc1-5cfc" name="Hatred" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="f6d7-9fbc-abc1-5cfc" name="Hatred" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="725b-14b3-0f42-bfc2" name="Hatred (Undead)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="725b-14b3-0f42-bfc2" name="Hatred (Undead)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="b6f8-9d4f-4c93-cb8b" name="Hatred (Slaanesh)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="b6f8-9d4f-4c93-cb8b" name="Hatred (Slaanesh)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose. (This rule affects Slaanesh deamons or models with the Mark of Slaanesh.)</description>
     </rule>
-    <rule id="a0a3-ddd4-b1ed-1054" name="Hatred (High Elves)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="a0a3-ddd4-b1ed-1054" name="Hatred (High Elves)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="4918-5aef-8930-27ec" name="Random Movement (2D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="4918-5aef-8930-27ec" name="Random Movement (2D6)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>Models with Random Movement do not have a M value, but rather a dice roll. This is the distance they move, charge, pursue, overrun and flee – they cannot march. If a model has Random Movement and Swiftstride, then Swiftstride is not used. Note that certain Random Movement rolls can result in the model having a M value higher than 10 – this is an exception to the usual maximum.
 
 Models with Random Movement cannot declare charges, and are always moved in the Compulsory Moves sub-phase. When the model moves, first pivot it about its centre to face the direction in which you wish it to travel. Then move the model after rolling the specific dice. No other pivots can be made.
@@ -15513,102 +15521,103 @@ If two or more models in a unit have the Random Movement, pivot the unit about i
 
 A Random Move counts as a &quot;normal&quot; move for triggering a Dangerous Terrain test, unless the model is making a charge, pursuit or flee move, in which case it counts as a move of the appropriate type.</description>
     </rule>
-    <rule id="49c7-526e-cb3e-d7b7" name="Immunity (Flaming Attacks)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="49c7-526e-cb3e-d7b7" name="Immunity (Flaming Attacks)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="9fed-6076-6c75-b774" name="Immunity (Fear)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="9fed-6076-6c75-b774" name="Immunity (Fear)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="e14b-e42f-3ee3-3636" name="Immunity (Terror)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="e14b-e42f-3ee3-3636" name="Immunity (Terror)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="1529-50c8-5c6e-150f" name="Loremaster (Lore of Fire)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="1529-50c8-5c6e-150f" name="Loremaster (Lore of Fire)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="75e4-06e8-d7aa-8514" name="Loremaster (Lore of Death)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="75e4-06e8-d7aa-8514" name="Loremaster (Lore of Death)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="39c8-00c3-4ec1-bfb8" name="Hatred (Monsters)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="39c8-00c3-4ec1-bfb8" name="Hatred (Monsters)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="52f5-10f0-a975-cf04" name="Hatred (Vampire Counts)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="52f5-10f0-a975-cf04" name="Hatred (Vampire Counts)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="cc87-4c6a-b7f7-6566" name="Hatred (Beastmen)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="cc87-4c6a-b7f7-6566" name="Hatred (Beastmen)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="3b4c-3540-f274-9ab2" name="Hatred (Forces of Destruction)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="3b4c-3540-f274-9ab2" name="Hatred (Forces of Destruction)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="5fa6-4904-d582-5e3b" name="Hatred (Daemons of Chaos)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="5fa6-4904-d582-5e3b" name="Hatred (Daemons of Chaos)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="2d90-9bab-f145-55ce" name="Hatred (Warriors of Chaos)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="2d90-9bab-f145-55ce" name="Hatred (Warriors of Chaos)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="0b20-ae38-065f-96ce" name="Hatred (Orcs &amp; Goblins)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="0b20-ae38-065f-96ce" name="Hatred (Orcs &amp; Goblins)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="d45b-0036-b5ef-951b" name="Ward Save (4+)" publicationId="9e23-79cb-pubN66727" page="48" hidden="false">
-      <description>Some models have a special save called a Ward save. The value of a ward save will be shown in brackets. These work in the same way as armour saves, and may be combined with other types of Ward saves as normal. Ward saves are never modified by the S of the attack. No model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
+    <rule id="d45b-0036-b5ef-951b" name="Ward Save (4+)" publicationId="9e23-79cb-pubN66727" page="49" hidden="false">
+      <description>The value of a ward save will always be shown in a model&apos;s entry in the relevant Warhammer Armies book. These work in the same
+way as armour saves, and may be combined with other Ward saves as normal. The key difference between ward saves and armour saves is that ward saves are never modified by the S of the attack. However, no model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
 
-If a model has both an armour save and a Ward save, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
+Sometimes a model has both an armour save and a Ward save. Where this is the case, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
     </rule>
-    <rule id="48d5-6bee-c3f6-cec8" name="Strider (River)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="48d5-6bee-c3f6-cec8" name="Strider (River)" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="8d5b-32ea-4349-ff13" name="Hatred (Dark Elves)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="8d5b-32ea-4349-ff13" name="Hatred (Dark Elves)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="34e1-3b0e-e471-fafa" name="Hatred (Skaven)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="34e1-3b0e-e471-fafa" name="Hatred (Skaven)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="c09e-da06-27f2-fc7e" name="Immunity (Poisoned Attacks)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="c09e-da06-27f2-fc7e" name="Immunity (Poisoned Attacks)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="4003-e9b4-9295-bef4" name="Loremaster (Lore of Heavens)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="4003-e9b4-9295-bef4" name="Loremaster (Lore of Heavens)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="76e1-4919-c7d3-29df" name="Magic Resistance (4)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="76e1-4919-c7d3-29df" name="Magic Resistance (4)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>A model with Magic Resistance gains a bonus to dispel enemy spells directly targeting it (not including templates that are placed on top of it) as well as its Ward saves against damage caused by spells. This bonus is based on the number shown in brackets after the Magic Resistance special rule.
 
 If a character with Magic Resistance joins a unit, all models in the unit benefit from the Magic Resistance as long as they are part of the unit. If a model has two sets of Magic Resistance, use the better one.</description>
     </rule>
-    <rule id="be9b-43a8-959d-9cd1" name="Loremaster (Lore of the Great Maw)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="be9b-43a8-959d-9cd1" name="Loremaster (Lore of the Great Maw)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="f099-a712-8bb3-8162" name="Strider (Obstacle)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="f099-a712-8bb3-8162" name="Strider (Obstacle)" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="686b-8e1b-4d01-05ba" name="Strider (Marsh)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="686b-8e1b-4d01-05ba" name="Strider (Marsh)" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="5ffc-408d-a5fb-19c4" name="Loremaster (Lore of the Little Waagh!)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="5ffc-408d-a5fb-19c4" name="Loremaster (Lore of the Little Waagh!)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="da8d-d10d-b525-a19a" name="Hatred (Dwarfs)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="da8d-d10d-b525-a19a" name="Hatred (Dwarfs)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="1308-62b9-5692-6880" name="Hatred (Empire)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="1308-62b9-5692-6880" name="Hatred (Empire)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="f78e-8057-0e20-d89f" name="Impact Hits (2D6)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="f78e-8057-0e20-d89f" name="Impact Hits (2D6)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15617,7 +15626,7 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="ece5-1f38-ee28-593e" name="Random Movement (4D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="ece5-1f38-ee28-593e" name="Random Movement (4D6)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>Models with Random Movement do not have a M value, but rather a dice roll. This is the distance they move, charge, pursue, overrun and flee – they cannot march. If a model has Random Movement and Swiftstride, then Swiftstride is not used. Note that certain Random Movement rolls can result in the model having a M value higher than 10 – this is an exception to the usual maximum.
 
 Models with Random Movement cannot declare charges, and are always moved in the Compulsory Moves sub-phase. When the model moves, first pivot it about its centre to face the direction in which you wish it to travel. Then move the model after rolling the specific dice. No other pivots can be made.
@@ -15630,10 +15639,10 @@ If two or more models in a unit have the Random Movement, pivot the unit about i
 
 A Random Move counts as a &quot;normal&quot; move for triggering a Dangerous Terrain test, unless the model is making a charge, pursuit or flee move, in which case it counts as a move of the appropriate type.</description>
     </rule>
-    <rule id="5e3f-9736-a9c0-4a1c" name="Dodge (4+)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
+    <rule id="5e3f-9736-a9c0-4a1c" name="Dodge (4+)" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Models with this rule gain a Ward save (*) against attacks in their front arc (including templates, Stomps and Impact Hits). This cannot be used against Magical Attacks that Hit automatically (such as spells or certain special rules), or that have Always Strikes First, nor can it be used if the model is subject to Always Strikes Last. Finally, Dodge cannot be used by mounted models, unless specified.</description>
     </rule>
-    <rule id="4d40-9a96-4af8-e943" name="Random Movement (Variable)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="4d40-9a96-4af8-e943" name="Random Movement (Variable)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>Models with Random Movement do not have a M value, but rather a dice roll. This is the distance they move, charge, pursue, overrun and flee – they cannot march. If a model has Random Movement and Swiftstride, then Swiftstride is not used. Note that certain Random Movement rolls can result in the model having a M value higher than 10 – this is an exception to the usual maximum.
 
 Models with Random Movement cannot declare charges, and are always moved in the Compulsory Moves sub-phase. When the model moves, first pivot it about its centre to face the direction in which you wish it to travel. Then move the model after rolling the specific dice. No other pivots can be made.
@@ -15646,7 +15655,7 @@ If two or more models in a unit have the Random Movement, pivot the unit about i
 
 A Random Move counts as a &quot;normal&quot; move for triggering a Dangerous Terrain test, unless the model is making a charge, pursuit or flee move, in which case it counts as a move of the appropriate type.</description>
     </rule>
-    <rule id="5c52-2ebf-0b14-991c" name="Impact Hits (D6+3)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="5c52-2ebf-0b14-991c" name="Impact Hits (D6+3)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
 
 Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
@@ -15655,151 +15664,156 @@ Impact Hits roll to wound using the S of the model making the Impact Hits. Any a
 
 Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
     </rule>
-    <rule id="3c13-1f49-b25b-95f8" name="Immunity (Lightning Attacks)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="3c13-1f49-b25b-95f8" name="Immunity (Lightning Attacks)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="065b-1f43-47e5-70cb" name="Random Attacks (2D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="065b-1f43-47e5-70cb" name="Random Attacks (2D6)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="7323-b2a0-af7b-3ec6" name="Ward Save (3+)" publicationId="9e23-79cb-pubN66727" page="48" hidden="false">
-      <description>Some models have a special save called a Ward save. The value of a ward save will be shown in brackets. These work in the same way as armour saves, and may be combined with other types of Ward saves as normal. Ward saves are never modified by the S of the attack. No model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
+    <rule id="7323-b2a0-af7b-3ec6" name="Ward Save (3+)" publicationId="9e23-79cb-pubN66727" page="49" hidden="false">
+      <description>The value of a ward save will always be shown in a model&apos;s entry in the relevant Warhammer Armies book. These work in the same
+way as armour saves, and may be combined with other Ward saves as normal. The key difference between ward saves and armour saves is that ward saves are never modified by the S of the attack. However, no model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
 
-If a model has both an armour save and a Ward save, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
+Sometimes a model has both an armour save and a Ward save. Where this is the case, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
     </rule>
-    <rule id="5b16-622a-da0d-d50b" name="Random Attacks (D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="5b16-622a-da0d-d50b" name="Random Attacks (D6)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="67cf-c767-bc85-2897" name="Loremaster (Lore of Nehekhara)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="67cf-c767-bc85-2897" name="Loremaster (Lore of Nehekhara)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="3b46-c6e4-f0af-cef8" name="Loremaster (Lore of Necromancy)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="3b46-c6e4-f0af-cef8" name="Loremaster (Lore of Necromancy)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="a001-2c00-3971-2a29" name="Hatred (Bretonnia)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="a001-2c00-3971-2a29" name="Hatred (Bretonnia)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="6f3b-cd4f-062d-7f26" name="Regeneration (6+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+    <rule id="6f3b-cd4f-062d-7f26" name="Regeneration (6+)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>A model with Regeneration is permitted a special regenerate saving throw (indicated by the number in the brackets) after it has failed any armour save or ward save it may have.
 
 If the save is passed, the damaged flesh regrows. However, any Wounds caused against a model with Regeneration still counts towards Combat Resolution, regardless of whether it has been saved or not. This rule is cumulative with other sources of Regeneration, to a maximum of 4+ (unless specified).
 
-Regeneration may not be used against Flaming Attacks, successful Killing Blows (including Heroic Killing Blow) or wounds caused due the unit being Unstable.</description>
+Regeneration may not be used against Flaming Attacks, successful Killing Blows (including Heroic Killing Blow) or wounds caused due the unit being Unstable. If the model is Wounded by an attack that causes Multiple Wounds, first roll to see how many Wounds the attack causes, and then roll for Regeneration for each Wound.</description>
     </rule>
-    <rule id="5fed-df2e-b6d6-cc93" name="Regeneration (5+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+    <rule id="5fed-df2e-b6d6-cc93" name="Regeneration (5+)" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>A model with Regeneration is permitted a special regenerate saving throw (indicated by the number in the brackets) after it has failed any armour save or ward save it may have.
 
 If the save is passed, the damaged flesh regrows. However, any Wounds caused against a model with Regeneration still counts towards Combat Resolution, regardless of whether it has been saved or not. This rule is cumulative with other sources of Regeneration, to a maximum of 4+ (unless specified).
 
-Regeneration may not be used against Flaming Attacks, successful Killing Blows (including Heroic Killing Blow) or wounds caused due the unit being Unstable.</description>
+Regeneration may not be used against Flaming Attacks, successful Killing Blows (including Heroic Killing Blow) or wounds caused due the unit being Unstable. If the model is Wounded by an attack that causes Multiple Wounds, first roll to see how many Wounds the attack causes, and then roll for Regeneration for each Wound.</description>
     </rule>
-    <rule id="5c26-a043-8535-5f4f" name="Ward Save (6+)" publicationId="9e23-79cb-pubN66727" page="48" hidden="false">
-      <description>Some models have a special save called a Ward save. The value of a ward save will be shown in brackets. These work in the same way as armour saves, and may be combined with other types of Ward saves as normal. Ward saves are never modified by the S of the attack. No model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
+    <rule id="5c26-a043-8535-5f4f" name="Ward Save (6+)" publicationId="9e23-79cb-pubN66727" page="49" hidden="false">
+      <description>The value of a ward save will always be shown in a model&apos;s entry in the relevant Warhammer Armies book. These work in the same
+way as armour saves, and may be combined with other Ward saves as normal. The key difference between ward saves and armour saves is that ward saves are never modified by the S of the attack. However, no model may have a Ward save better than 4+ by combining multiple Ward saves; single Ward saves with a better value than 4+ are always specified as such.
 
-If a model has both an armour save and a Ward save, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
+Sometimes a model has both an armour save and a Ward save. Where this is the case, the model takes its armour save as normal. If the armour save is failed (or modified to the point at which the model cannot pass it) then the model takes its Ward save.</description>
     </rule>
-    <rule id="fb5f-f956-90e7-af6f" name="Loremaster (Lore of Tzeentch)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="fb5f-f956-90e7-af6f" name="Loremaster (Lore of Tzeentch)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="18a0-eeb5-f165-5fc9" name="Random Attacks (D3)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="18a0-eeb5-f165-5fc9" name="Random Attacks (D3)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="4384-4bf5-ea6e-c49d" name="Loremaster (Lore of Athel Loren)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="4384-4bf5-ea6e-c49d" name="Loremaster (Lore of Athel Loren)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="fea1-6159-56b4-bc97" name="Immunity (Multiple Wounds)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="fea1-6159-56b4-bc97" name="Immunity (Multiple Wounds)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="6112-6e8d-a942-fcba" name="Hatred (Lizardmen)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="6112-6e8d-a942-fcba" name="Hatred (Lizardmen)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="cfff-6563-d1c6-820c" name="Dodge (5+)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
+    <rule id="cfff-6563-d1c6-820c" name="Dodge (5+)" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Models with this rule gain a Ward save (*) against attacks in their front arc (including templates, Stomps and Impact Hits). This cannot be used against Magical Attacks that Hit automatically (such as spells or certain special rules), or that have Always Strikes First, nor can it be used if the model is subject to Always Strikes Last. Finally, Dodge cannot be used by mounted models, unless specified.</description>
     </rule>
-    <rule id="bf3d-abaf-45ca-3477" name="Dodge (6+)" publicationId="9e23-79cb-pubN66727" page="72" hidden="false">
+    <rule id="bf3d-abaf-45ca-3477" name="Dodge (6+)" publicationId="9e23-79cb-pubN66727" page="73" hidden="false">
       <description>Models with this rule gain a Ward save (*) against attacks in their front arc (including templates, Stomps and Impact Hits). This cannot be used against Magical Attacks that Hit automatically (such as spells or certain special rules), or that have Always Strikes First, nor can it be used if the model is subject to Always Strikes Last. Finally, Dodge cannot be used by mounted models, unless specified.</description>
     </rule>
-    <rule id="e20a-3f4d-cc8c-06bc" name="Random Attacks (D3+1)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="e20a-3f4d-cc8c-06bc" name="Random Attacks (D3+1)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="1fc5-0d4e-f568-b4c3" name="Immunity (Panic)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+    <rule id="1fc5-0d4e-f568-b4c3" name="Immunity (Panic)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
       <description>Models with the Immunity rule ignore the effects of the rule(s) in the brackets. Note that the model only ignores the effects of the rule itself unless the attack is also listed as being non-physical. The physical attack still causes damage as normal.
 
 Immunity can also include Panic, Fear and Terror. If the majority of the models in a unit have Immunity (Panic, Fear or Terror), the unit ignores the effects of Panic, Fear or Terror and any such tests it would otherwise had to take.
 
 Models that are Immune to all three above effects have Immunity (Psychology). This also includes automatically passing any Psychology tests they might need to take (such as many spell effects or special rules that would otherwise force a unit to take a Psychology test). However, they may never choose Flee! as a charge reaction (though they may still use Feigned Flight or Fire &amp; Flee).</description>
     </rule>
-    <rule id="2875-64e6-bb63-ac04" name="Strider (Hill)" publicationId="9e23-79cb-pubN66727" page="81" hidden="false">
+    <rule id="2875-64e6-bb63-ac04" name="Strider (Hill)" publicationId="9e23-79cb-pubN66727" page="83" hidden="false">
       <description>Models with Strider will normally have a subset of Strider that is mentioned in the brackets. The rule only applies in terrain of the specified type. Models with Strider treat that piece of terrain as open ground for the purposes of Movement, meaning they ignore any M penalties or Dangerous Terrain tests otherwise caused by it. Note that they still follow the rules for that terrain type in terms of combat.</description>
     </rule>
-    <rule id="0eca-e6a2-66a1-2b53" name="Random Attacks (3D6)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="0eca-e6a2-66a1-2b53" name="Random Attacks (3D6)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with Random Attacks do not have a normal number for their A characteristic, but rather a dice roll. Each time a model with this rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with this rule, always roll separately for each model.</description>
     </rule>
-    <rule id="4393-049f-b19b-6457" name="Loremaster (Lore of Ice)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="4393-049f-b19b-6457" name="Loremaster (Lore of Ice)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="bff4-3615-a342-c3c4" name="Hatred (Norse)" publicationId="9e23-79cb-pubN66727" page="74" hidden="false">
+    <rule id="bff4-3615-a342-c3c4" name="Hatred (Norse)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
-    <rule id="f210-1e7c-a315-2849" name="Parry (5+)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
+    <rule id="f210-1e7c-a315-2849" name="Parry (5+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
       <description>Models with this rule gain a Ward save in close combat as indicated in the brackets. It cannot be used against attacks made against the model&apos;s flank or rear, nor can it be used against attacks that Hit automatically, attacks that are made at +3 S over the model&apos;s own S value, nor can it be used by mounted models, unless specified.</description>
     </rule>
-    <rule id="3c4c-827c-fe44-7b5c" name="Multiple Shots (3)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+    <rule id="3c4c-827c-fe44-7b5c" name="Multiple Shots (3)" publicationId="9e23-79cb-pubN66727" page="78" hidden="false">
       <description>The weapon enables its wielder to fire several shots at a time, rather than a single shot. The number of shots the weapon can fire is stated in brackets. Such weapons can either fire once without penalty, or as many times as indicated in the bracket with a -1 To Hit penalty (in addition to any other modifiers To Hit). War Machines with this rule do not suffer -1 To Hit for firing Multiple Shots.
 
 All models in the unit (excluding characters) must fire either single or Multiple Shots.</description>
     </rule>
-    <rule id="3efd-81b2-458e-604e" name="Loremaster (Hedge Magic)" publicationId="9e23-79cb-pubN66727" page="76" hidden="false">
+    <rule id="3efd-81b2-458e-604e" name="Loremaster (Hedge Magic)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
-    <rule id="9a24-f1a2-aac3-de3b" name="Breath Weapon (Monster of Kadon)" publicationId="9e23-79cb-pubN66727" page="115" hidden="false">
+    <rule id="9a24-f1a2-aac3-de3b" name="Breath Weapon (Monster of Kadon)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false">
       <description>S 4, Flaming Attacks.</description>
+    </rule>
+    <rule id="1234-eaf6-f3f7-4a67" name="Natural Armour (1+)" publicationId="9e23-79cb-pubN66727" page="79" hidden="false">
+      <description>The hide of some creatures forms a kind of natural armour that grants the model an armour save. The resulting armour save will be stated in brackets. Natural Armour can be combined with other armour as normal.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="3ecc-5d9c-7d29-ee2f" name="Javelins" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="3ecc-5d9c-7d29-ee2f" name="Javelins" publicationId="9e23-79cb-pubN66727" page="94" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Quick to Fire. Volley Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4a5d-0b6d-f6ac-fd7d" name="Two/Additional Hand Weapons" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="4a5d-0b6d-f6ac-fd7d" name="Two/Additional Hand Weapons" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Parry (6+). Requires Two Hands. +1 A.</characteristic>
       </characteristics>
     </profile>
-    <profile id="be39-37ac-ac20-5053" name="Spear (Infantry)" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="be39-37ac-ac20-5053" name="Spear (On Foot)" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Fight in Extra Ranks (1). Strength Bonus (1), +1 I (Both, only if the unit got charged to its front by WB, Ca, MI, MB, MC, Ch and Mo).</characteristic>
       </characteristics>
     </profile>
-    <profile id="193e-bc43-b252-8eff" name="Great Weapon" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="193e-bc43-b252-8eff" name="Great Weapon" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+1</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Requires Two Hands. Strength Bonus (1). -2 I.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b2d2-2eb6-2bd2-ddbb" name="Spear (Mounted)" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="b2d2-2eb6-2bd2-ddbb" name="Spear (Mounted)" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Strength Bonus (1), +1 I (Both, only in the turn the unit charges and only against the charged unit).</characteristic>
       </characteristics>
     </profile>
-    <profile id="8bf1-244f-c642-d43f" name="Shield" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="8bf1-244f-c642-d43f" name="Shield" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">6+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">6+**</characteristic>
@@ -15813,140 +15827,140 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Requires Two Hands.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d083-b2f1-d1c5-e4f7" name="Sling" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="d083-b2f1-d1c5-e4f7" name="Sling" publicationId="9e23-79cb-pubN66727" page="94" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Multiple Shots (2) (Only applies in turns the model has not moved. Cannot be used to Stand and Shoot.).</characteristic>
       </characteristics>
     </profile>
-    <profile id="9dcd-3be8-08b0-96ab" name="Bow" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="9dcd-3be8-08b0-96ab" name="Bow" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2) (Only applies in turns the model has not moved. Cannot be used as a charge reaction.). Volley Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="493b-1f46-43ce-a18f" name="Throwing Axes" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="493b-1f46-43ce-a18f" name="Throwing Axes" publicationId="9e23-79cb-pubN66727" page="94" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+1</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4129-1acd-3564-d3ea" name="Light Armour" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="4129-1acd-3564-d3ea" name="Light Armour" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">6+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">6+</characteristic>
         <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
       </characteristics>
     </profile>
-    <profile id="f6da-d707-0cd6-b1dd" name="Hand Weapon" publicationId="9e23-79cb-pubN66727" page="89" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="f6da-d707-0cd6-b1dd" name="Hand Weapon" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac"/>
       </characteristics>
     </profile>
-    <profile id="2c1e-e11e-fadf-b4cf" name="Pike" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="2c1e-e11e-fadf-b4cf" name="Pike" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Fight in Extra Ranks (3). Requires Two Hands. Strength Bonus (1), +3 I (Both, only if the unit got charged to its front by WB, Ca, MI, MB, MC, Ch and Mo).</characteristic>
       </characteristics>
     </profile>
-    <profile id="e56e-fedf-c550-5d81" name="Lance (Mounted)" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="e56e-fedf-c550-5d81" name="Lance (Mounted)" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Strength Bonus (2), +2 I (Both, only in the turn the unit charges and only against the charged unit).</characteristic>
       </characteristics>
     </profile>
-    <profile id="487e-16a4-8ab8-2c85" name="Shortbow" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="487e-16a4-8ab8-2c85" name="Shortbow" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2) (Only applies in turns the model has not moved. Cannot be used as a charge reaction.). Volley Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="cde7-c47d-3818-1e9d" name="Longbow" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="cde7-c47d-3818-1e9d" name="Longbow" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">30&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2) (Only applies in turns the model has not moved. Cannot be used as a charge reaction.). Volley Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="844f-f2d8-d2d9-61d4" name="Crossbow" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="844f-f2d8-d2d9-61d4" name="Crossbow" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">30&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Move or Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f106-ee33-4ec8-292a" name="Blowpipe" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="f106-ee33-4ec8-292a" name="Blowpipe" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">1</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2). Quick to Fire. Poisoned Attacks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="bd57-9e45-342f-ee49" name="Handgun" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="bd57-9e45-342f-ee49" name="Handgun" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Move or Fire. Armour Piercing (1).</characteristic>
       </characteristics>
     </profile>
-    <profile id="aa4f-83e3-8259-924a" name="Pistol" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="aa4f-83e3-8259-924a" name="Pistol" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Armour Piercing (1). +1 A*. Requires Two Hands*. (*If combined with a hand weapon)</characteristic>
       </characteristics>
     </profile>
-    <profile id="fdcd-6526-0b8e-b291" name="Throwing Weapons" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="fdcd-6526-0b8e-b291" name="Throwing Weapons" publicationId="9e23-79cb-pubN66727" page="94" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">8&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2). Quick to Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6d9a-c9f8-e013-e77f" name="Medium Armour" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="6d9a-c9f8-e013-e77f" name="Medium Armour" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">5+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">5+</characteristic>
         <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
       </characteristics>
     </profile>
-    <profile id="8e15-bc32-b40c-bad3" name="Heavy Armour" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="8e15-bc32-b40c-bad3" name="Heavy Armour" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">4+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">4+</characteristic>
         <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
       </characteristics>
     </profile>
-    <profile id="9594-9ece-7acf-49be" name="Full Plate Armour" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="9594-9ece-7acf-49be" name="Full Plate Armour" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">3+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">3+</characteristic>
         <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
       </characteristics>
     </profile>
-    <profile id="1700-a7e5-d272-ef20" name="Buckler" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="1700-a7e5-d272-ef20" name="Buckler" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">6+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca"/>
         <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4">Parry (5+) (Only if used with a Hand Weapon).</characteristic>
       </characteristics>
     </profile>
-    <profile id="7228-95d3-3384-f234" name="Barding" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+    <profile id="7228-95d3-3384-f234" name="Barding" publicationId="9e23-79cb-pubN66727" page="95" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
         <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">6+</characteristic>
         <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">6+</characteristic>
         <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4">-1 M (Applies to model&apos;s M characteristics. When charging, pursuing or fleeing, deduct an additional -1 from the result of the distance rolled.)</characteristic>
       </characteristics>
     </profile>
-    <profile id="7e43-605b-bfde-13c3" name="Great Cannon" publicationId="9e23-79cb-pubN66727" page="107" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+    <profile id="7e43-605b-bfde-13c3" name="Great Cannon" publicationId="9e23-79cb-pubN66727" page="110" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Great Cannon</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945">60&quot;</characteristic>
@@ -15954,7 +15968,7 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6).</characteristic>
       </characteristics>
     </profile>
-    <profile id="2d26-2a21-00a2-685d" name="Bolt Thrower" publicationId="9e23-79cb-pubN66727" page="106" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+    <profile id="2d26-2a21-00a2-685d" name="Bolt Thrower" publicationId="9e23-79cb-pubN66727" page="109" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Bolt Thrower</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945">48&quot;</characteristic>
@@ -15962,7 +15976,7 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3). Armour Piercing (1).</characteristic>
       </characteristics>
     </profile>
-    <profile id="4f25-d6c7-f4da-a808" name="Cannon" publicationId="9e23-79cb-pubN66727" page="107" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+    <profile id="4f25-d6c7-f4da-a808" name="Cannon" publicationId="9e23-79cb-pubN66727" page="110" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945">48&quot;</characteristic>
@@ -15970,7 +15984,7 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6/D3).</characteristic>
       </characteristics>
     </profile>
-    <profile id="78db-91d9-aaca-d5ba" name="Grapeshot" publicationId="9e23-79cb-pubN66727" page="108" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+    <profile id="78db-91d9-aaca-d5ba" name="Grapeshot" publicationId="9e23-79cb-pubN66727" page="112" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Grapeshot</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945">12&quot;</characteristic>
@@ -15978,7 +15992,7 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Armour Piercing (1). </characteristic>
       </characteristics>
     </profile>
-    <profile id="8651-78f3-14e9-f66b" name="Stone Thrower" publicationId="9e23-79cb-pubN66727" page="109" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+    <profile id="8651-78f3-14e9-f66b" name="Stone Thrower" publicationId="9e23-79cb-pubN66727" page="113" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Stone Thrower</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-60&quot;</characteristic>
@@ -15986,7 +16000,7 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6).</characteristic>
       </characteristics>
     </profile>
-    <profile id="d259-6f2a-d6a9-0eec" name="Fire Thrower" publicationId="9e23-79cb-pubN66727" page="110" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+    <profile id="d259-6f2a-d6a9-0eec" name="Fire Thrower" publicationId="9e23-79cb-pubN66727" page="114" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Fire Thrower</characteristic>
         <characteristic name="Range" typeId="1c88-efb0-083f-b945"/>
@@ -15994,14 +16008,14 @@ All models in the unit (excluding characters) must fire either single or Multipl
         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Flaming Attacks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="7259-6759-3c5f-ce3c" name="Brace of Pistols" publicationId="9e23-79cb-pubN66727" page="91" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="7259-6759-3c5f-ce3c" name="Brace of Pistols" publicationId="9e23-79cb-pubN66727" page="93" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Armour Piercing (1). Multiple Shots (2). +1 A. Requires Two Hands.</characteristic>
       </characteristics>
     </profile>
-    <profile id="7f6a-b8b2-8978-4f35" name="Flail" publicationId="9e23-79cb-pubN66727" page="90" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+    <profile id="7f6a-b8b2-8978-4f35" name="Flail" publicationId="9e23-79cb-pubN66727" page="92" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
@@ -16103,7 +16117,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/9+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/10+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers a -1 to their WS, BS and LD until the start of the caster&apos;s next Magic phase. Shooting attacks that do not use BS must roll 4+ on a D6 before firing, or the shot(s) is lost. This is an Ice Attack.</characteristic>
       </characteristics>
@@ -16189,7 +16203,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). Both caster and target roll a D6 and add their respective unmodified LD values. For every point the caster wins by, the target suffers a Wound which Ignores Armour saves.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0aa7-6fa8-e84e-677a" name="Monster of Kadon" publicationId="9e23-79cb-pubN66727" page="142" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+    <profile id="0aa7-6fa8-e84e-677a" name="Monster of Kadon" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -16479,7 +16493,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D3 S 4 hits for each complete rank in the target unit.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D3 S 4 hits for each rank (including incomplete ranks) in the target unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="ecf9-c3f1-b183-c310" name="Pit of Shades" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -16544,7 +16558,7 @@ order. First the musician and then the standard bearer is resurrected, displacin
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on the Wizard or a friendly Infantry character. The target immediately makes a move using Fly as if it were the Remaining Moves sub-phase. In addition, the target will count as being Ethereal for the purpose of resolving missile attacks against it until the start of the caster&apos;s next Magic phase.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on Infantry character (including the Wizard) within range. The target immediately makes a move using Fly as if it were the Remaining Moves sub-phase. In addition, the target will count as being Ethereal for the purpose of resolving missile attacks against it until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="c42b-21dc-06e9-25a2" name="Steed of Shadows (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -16553,7 +16567,7 @@ order. First the musician and then the standard bearer is resurrected, displacin
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on the Wizard. The target immediately makes a move using Fly as if it were the Remaining Moves sub-phase. In addition, the target will count as being Ethereal for the purpose of resolving missile attacks against it until the start of the caster&apos;s next Magic phase.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on Infantry character (including the Wizard) within range. The target immediately makes a move using Fly as if it were the Remaining Moves sub-phase. In addition, the target will count as being Ethereal for the purpose of resolving missile attacks against it until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="5a5d-30a8-b377-cad8" name="The Amber Spear" publicationId="9e23-79cb-pubN66727" page="143" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -16641,7 +16655,7 @@ order. First the musician and then the standard bearer is resurrected, displacin
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"> Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/8+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/9+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 3D6 S 2 hits.</characteristic>
       </characteristics>
@@ -17033,8 +17047,8 @@ suffer a Wound on a 5+, and so on, to a maximum of 2+. No armour saves are allow
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/16+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit re-rolls failed To Wound rolls in Close Combat until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit gains Always Strikes First and may re-rolls failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
       </characteristics>
     </profile>
     <profile id="f8fe-06ac-9d38-eb14" name="Hellish Vigour (Bound Spell)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -17042,8 +17056,8 @@ suffer a Wound on a 5+, and so on, to a maximum of 2+. No armour saves are allow
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit re-rolls failed To Wound rolls in Close Combat until the start of the caster&apos;s next Magic phase.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit gains Always Strikes First and may re-rolls failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="6e49-e2c5-e1f2-6d5c" name="Invocation of Nehek" publicationId="4ff3-b09f-ec27-d6ec" page="237, 27" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -17104,9 +17118,9 @@ attribute may still apply.</characteristic>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/12+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The target unit re-rolls failed To Hit rolls in close combat until the start of the caster&apos;s next Magic phase. In addition, if the target unit is unengaged, it can immediately make a normal move as if it were the Remaining Moves sub-phase. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/10+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">That targets a friendly unengaged Undead unit within range. The target unit can immediately make a normal move (but not march or reform) as if it were the Remaining Moves sub-phase (including any Characters in the unit) Boosted version targets all friendly Undead units within range.</characteristic>
       </characteristics>
     </profile>
     <profile id="33ac-cce9-8a53-c1ef" name="Vanhel&apos;s Danse Macabre (Bound Spell)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -17114,8 +17128,8 @@ attribute may still apply.</characteristic>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The target unit re-rolls failed To Hit rolls in close combat until the start of the caster&apos;s next Magic phase. In addition, if the target unit is unengaged, it can immediately make a normal move as if it were the Remaining Moves sub-phase.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">That targets a friendly unengaged Undead unit within range. The target unit can immediately make a normal move (but not march or reform) as if it were the Remaining Moves sub-phase (including any Characters in the unit) Boosted version targets all friendly Undead units within range.</characteristic>
       </characteristics>
     </profile>
     <profile id="13fc-3f78-b3b1-c52b" name="Wind of Death" publicationId="4ff3-b09f-ec27-d6ec" page="237, 27" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

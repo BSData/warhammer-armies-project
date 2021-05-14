@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
@@ -346,7 +346,7 @@
                   <characteristics>
                     <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
                     <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/18+/24+</characteristic>
+                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+/18+/24+</characteristic>
                     <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/18&quot;/24&quot;</characteristic>
                     <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all enemy units within range. Each target suffers 2D6 S 4 hits. If a target has Daemonic, Undead or Vampiric, it suffers 3D6 hits instead. If this spell is lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately remember it again and, if applicable, the Wizard that swapped or stole it will immediately forget it.</characteristic>
                   </characteristics>
@@ -501,7 +501,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="2b42-7a57-0ce4-a265" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
+        <infoLink id="2b42-7a57-0ce4-a265" name="Natural Armour (1+)" hidden="false" targetId="1234-eaf6-f3f7-4a67" type="rule"/>
         <infoLink id="cc90-caac-e478-dbb3" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
         <infoLink id="ccfc-8478-294a-3fa3" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
       </infoLinks>
@@ -647,7 +647,7 @@
           <description>In close combat Tehenhauin can make an extra D6 Attacks at I 1. These extra Attacks are always resolved at WS 2 and S 2 and have Poisoned Attacks.</description>
         </rule>
         <rule id="b088-322b-436d-ebda" name="Prophet of Sotek" publicationId="9e23-79cb-pubN77402" page="180" hidden="false">
-          <description>If your army includes Tehenhauin, you may upgrade any units of Skink Cohorts, Skink Skirmishers, Terradon Riders or Ripperdactyl Riders in your army so that the Skinks (not their mounts or any Kroxigor) have Hatred (Skaven) and Immunity (Poisoned Attacks) for +1 point per model.</description>
+          <description>If your army includes Tehenhauin, you may upgrade any units of Skink Cohorts, Skink Skirmishers, Horned One Riders, Terradon Riders or Ripperdactyl Riders in your army so that the Skinks have +1 WS, as well as Devastating Charge, Hatred (Skaven) and Immunity (Poisoned Attacks) for 2 points per model. They may not take any Sacred Spawning.</description>
         </rule>
         <rule id="c14a-bf79-d511-526e" name="Master of Snakes" publicationId="9e23-79cb-pubN77402" page="180" hidden="false">
           <description>Tehenhauin can join Jungle Swarm units, even though characters are not normally permitted to join Swarms. Whilst Tehenhauin leads a Jungle Swarm, he gains Unbreakable and the unit&apos;s Unstable rule is ignored. If Tehenhauin is killed or leaves the unit, this rule immediately ceases to apply.</description>
@@ -1421,7 +1421,7 @@
       </profiles>
       <rules>
         <rule id="852f-cbe4-f245-3b4d" name="Jungle Spirit" publicationId="9e23-79cb-pubN77402" page="178" hidden="false">
-          <description>Nakai may never join any unit. Nakai appears using Ambushers , with the following exception; he will always appear from a wood, swamp or water terrain feature rather than the table edge if able to.</description>
+          <description>Nakai may never join any unit. Nakai always appears using Ambushers, with the following exception; he will always appear from a wood, swamp or water terrain feature rather than the table edge if able to.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1975,7 +1975,7 @@
         </selectionEntry>
         <selectionEntry id="27f0-8d19-e7e0-5d4a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="1937-854b-b11b-263d" value="0">
+            <modifier type="set" field="1937-854b-b11b-263d" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5605-d0ad-52c6-8eaa" type="atLeast"/>
               </conditions>
@@ -2156,7 +2156,7 @@
                   <modifiers>
                     <modifier type="set" field="bc96-0877-d6b0-92f1" value="0">
                       <conditions>
-                        <condition field="selections" scope="1c2c-4070-247b-cb9a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27f0-8d19-e7e0-5d4a" type="atLeast"/>
+                        <condition field="points" scope="1c2c-4070-247b-cb9a" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27f0-8d19-e7e0-5d4a" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2226,7 +2226,7 @@
         </selectionEntry>
         <selectionEntry id="7ae9-1a65-a254-3e91" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="ffef-e53b-7de1-bd24" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c820-2f6d-68c6-4566" type="atLeast"/>
               </conditions>
@@ -2454,18 +2454,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3e2-e912-eee6-bf22" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c4c6-9b00-af91-874a" name="Hand Weapon &amp; Javelins (Poisoned Attacks)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6904-e43d-fc3d-8cf4" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d4d4-14bf-fdf2-ae4f" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                <infoLink id="bb57-22c0-21ad-7383" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="9605-b077-667f-35a5" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ece0-a4ab-20b6-0db4" type="max"/>
@@ -2524,30 +2512,6 @@
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3ecc-f149-a339-90f9" name="Hand Weapon &amp; Short Bow (Poisoned Attacks)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="599f-77e1-c6b2-bf3b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="ec87-cab0-20e8-0f05" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                <infoLink id="3f69-8349-1e6e-6244" name="Short Bow (Poisoned Attacks)" hidden="false" targetId="bf1c-5d92-9e7f-8fd8" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f407-fd8e-3b35-f99d" name="Hand Weapon &amp; Blowpipe" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c72b-c575-9e8f-cd04" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5e5e-d64b-3da0-4bf8" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                <infoLink id="42dd-390a-661c-7320" name="Blowpipe" hidden="false" targetId="f106-ee33-4ec8-292a" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="3947-b733-2f1a-6684" name="Character Options" hidden="false" collective="false" import="true">
@@ -2557,7 +2521,7 @@
           <selectionEntries>
             <selectionEntry id="ABS SC" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="8ed4-c00b-67ac-e89f" value="0.0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -2579,9 +2543,9 @@
               <selectionEntries>
                 <selectionEntry id="c820-2f6d-68c6-4566" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="4c1f-c60e-133d-61a3" value="0.0">
                       <conditions>
-                        <condition field="selections" scope="0069-a83a-227c-88d4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae9-1a65-a254-3e91" type="atLeast"/>
+                        <condition field="points" scope="0069-a83a-227c-88d4" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ae9-1a65-a254-3e91" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2604,6 +2568,46 @@
           <entryLinks>
             <entryLink id="8199-4fad-77aa-d549" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="756f-8079-7f8e-55f4" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e79d-9c1d-facd-b36f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="12be-5080-107e-aedf" name="Javelins (Poisoned Attacks)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="228f-2019-59ab-b495" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f9bd-3f76-146c-e3a2" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9b2c-1ce2-013e-3ce5" name="Short Bow (Poisoned Attacks)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2785-3674-5736-652a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e35d-9e00-c7ef-7603" name="Shortbow (Poisoned Attacks)" hidden="false" targetId="bf1c-5d92-9e7f-8fd8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fb02-035d-ae50-9cf7" name="Blowpipe" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08d8-9894-6e6b-1741" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6fcd-3dac-8961-0f56" name="Blowpipe" hidden="false" targetId="f106-ee33-4ec8-292a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3134,25 +3138,6 @@ Casualties are always taken from the rearmost rank of the appropriate model type
               <entryLinks>
                 <entryLink id="963a-1766-b0e3-5826" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="df32-b6bc-6ee4-7e30" name="Hatred (Skaven) &amp; Immunity (Poisoned Attacks)" hidden="true" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="1995-362a-16c2-3566" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="e228-460d-033b-7ab7" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1995-362a-16c2-3566" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b036-49ac-20f8-4873" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
-                <infoLink id="ca1f-0fe1-43e9-c811" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
@@ -5062,6 +5047,15 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
           </characteristics>
         </profile>
+        <profile id="ca3f-1b1f-8885-c2b8" name="Guardian of the Sacred Places" publicationId="9e23-79cb-pubN77402" page="168" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+          <characteristics>
+            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
+            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If cast, the Lizardmen player may reposition D3 pieces of forest terrain by D6&quot;, rolling the distance for each piece at a time.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="43fa-b69f-fd4c-ed27" name="Magical Storm" publicationId="9e23-79cb-pubN77402" page="168" hidden="false">
@@ -5079,30 +5073,8 @@ Casualties are always taken from the rearmost rank of the appropriate model type
       <categoryLinks>
         <categoryLink id="1af8-2f6a-a561-f307" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="42fb-0024-ff27-46dc" name="Guardian of the Sacred Places" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8a78-b0de-a980-e5ef" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2642-c21a-e395-544a" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="94d1-0148-754b-a5b5" name="Guardian of the Sacred Places" publicationId="9e23-79cb-pubN77402" page="168" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If cast, the Lizardmen player may reposition D3 pieces of forest terrain by D6&quot;, rolling the distance for each piece at a time.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="220.0"/>
+        <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb62-3167-5761-8aa7" name="Dread Saurian" hidden="false" collective="false" import="true" type="model">
@@ -5112,9 +5084,9 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">7</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">8</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">10</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">6</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
@@ -5186,7 +5158,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
               </constraints>
               <rules>
                 <rule id="ea08-570e-66ea-3d85" name="Quetzl&apos;s Flawless Heartstone" publicationId="9e23-79cb-pubN77402" page="167" hidden="false">
-                  <description>The Dread Saurian gains Unbreakable and reduces its M rate to 5, but increases its T to 7.</description>
+                  <description>The Dread Saurian gains Unbreakable and reduces its M rate to 5, but increases its T to 8.</description>
                 </rule>
               </rules>
               <costs>
@@ -5203,14 +5175,14 @@ Casualties are always taken from the rearmost rank of the appropriate model type
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="40.0"/>
+                <cost name="pts" typeId="points" value="60.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="365.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a6c3-528c-e22a-ab43" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
@@ -5277,6 +5249,14 @@ Casualties are always taken from the rearmost rank of the appropriate model type
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
               </characteristics>
             </profile>
+            <profile id="3f6f-abb5-447f-301a" name="Shoot Barbs" publicationId="9e23-79cb-pubN77402" page="158" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+              <characteristics>
+                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon (Grapeshot)</characteristic>
+                <characteristic name="Range" typeId="1c88-efb0-083f-b945">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">4</characteristic>
+                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Quick to Fire. All Razordons in the pack must shoot at the same target. A Razordon can Shoot Barbs if it moves, but not if it marches or charges. If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as the Razordon eats them!</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <rules>
             <rule id="255a-96d7-5f52-77e1" name="Instinctive Defence" publicationId="9e23-79cb-pubN77402" page="158" hidden="false">
@@ -5287,27 +5267,6 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <infoLink id="ee83-02c0-35d8-33c0" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="e994-47a3-4962-0613" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="ef53-aa9c-6df7-3d29" name="Shoot Barbs" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd65-498c-2c8d-8a06" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="832d-269b-cae2-f827" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c7b5-4316-0e27-3c50" name="Shoot Barbs" publicationId="9e23-79cb-pubN77402" page="158" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-                  <characteristics>
-                    <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon (Grapeshot)</characteristic>
-                    <characteristic name="Range" typeId="1c88-efb0-083f-b945">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="6ca0-d074-628f-e276">4</characteristic>
-                    <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Quick to Fire. All Razordons in the pack must shoot at the same target. A Razordon can Shoot Barbs if it moves, but not if it marches. If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as the Razordon eats them!</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="60.0"/>
           </costs>
@@ -5386,32 +5345,19 @@ Casualties are always taken from the rearmost rank of the appropriate model type
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
               </characteristics>
             </profile>
+            <profile id="fbee-d799-7823-1b30" name="Spout Flames" publicationId="9e23-79cb-pubN77402" page="157" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+              <characteristics>
+                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Fire Thrower</characteristic>
+                <characteristic name="Range" typeId="1c88-efb0-083f-b945"/>
+                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">4</characteristic>
+                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Flaming Attacks. Slow to Fire. All Salamanders in the pack must shoot towards the same target. A Salamander can Spout Flames if it moves, but not if it marches. If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as the Salamander eats them!</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <infoLinks>
             <infoLink id="98bb-9a98-3d0d-089f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="88b4-72eb-0a2a-2257" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="d2e1-9f45-d360-0036" name="Spout Flames" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="684e-7ac0-7d71-3334" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6df-6230-1f30-206a" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="60c5-1ea2-2cd8-14c3" name="Spout Flames" publicationId="9e23-79cb-pubN77402" page="157" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-                  <characteristics>
-                    <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Fire Thrower</characteristic>
-                    <characteristic name="Range" typeId="1c88-efb0-083f-b945"/>
-                    <characteristic name="Strength" typeId="6ca0-d074-628f-e276">4</characteristic>
-                    <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Flaming Attacks. Slow to Fire. All Salamanders in the pack must shoot towards the same target. A Salamander can Spout Flames if it moves, but not if it marches. If the artillery dice result is a misfire, no shots are fired and D3 Skink Handlers are removed as the Salamander eats them!</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="80.0"/>
           </costs>
@@ -5971,6 +5917,807 @@ Casualties are always taken from the rearmost rank of the appropriate model type
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="110.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2eb-797d-70fa-7076" name="Skink Cohort (Tehenhauin)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="1301-5ff3-5215-afb0" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e228-460d-033b-7ab7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1301-5ff3-5215-afb0" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="04ed-5979-018f-dd79" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="69a2-7971-37f4-873e" name="Skink" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a94-73ea-0c46-7d2a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="dfb3-aa2a-5905-ec27" name="Skink" publicationId="9e23-79cb-pubN77402" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="7e7a-79ed-d169-ac54" name="Spawn-kin" publicationId="9e23-79cb-pubN77402" page="144" hidden="false">
+              <description>Skink Cohorts may include a number of Kroxigor as upgrades to form a mixed unit. When a mixed unit deploys or reforms, these Kroxigor must be placed in the unit&apos;s second rank, displacing Skink models as necessary to the back rank. When deploying or reforming a mixed unit, the width of the unit&apos;s front rank cannot be less than that of its second rank. If no more Kroxigor can fit in the unit&apos;s second rank, place the remaining Kroxigor in subsequent ranks. If the unit&apos;s front rank is ever reduced so that its width is less than the width of the second rank, a Kroxigor must immediately move to the front rank (displacing rank and file models if necessary).
+
+Whenever you are required to work out the mixed unit&apos;s frontage or ranks (and therefore supporting attacks and rank bonus) count as if the footprint of the entire mixed unit was filled with Skinks.
+
+Unless otherwise stated, close combat attacks can only target Kroxigors within a mixed unit if an enemy model is either in base contact with a Kroxigor, or if an enemy model is in base contact with a Skink who is in turn in base contact with a Kroxigor. Stomps are always resolved against the Skinks (if all the Skinks are slain, any excess hits are lost). Missile and Impact Hits against a Skink Cohort that contains one or more Kroxigor are randomised by rolling a D6; on a 1-4, the hit is resolved against a Skink, on a 5-6 it is resolved against a Kroxigor. However, if a mixed unit of five or more models is hit by a bolt thrower, the shot always hits the closest non-character model to the bolt thrower. If this hit results in a casualty, resolve a hit against the next model in the bolt&apos;s path each time a casualty is caused.
+
+Casualties are always taken from the rearmost rank of the appropriate model type. Skink models that are in base contact with a friendly Kroxigor model have Fear.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="7633-1328-cca0-765f" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
+            <infoLink id="8952-41fb-0cb0-cc8f" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="abaf-cd2f-37c4-c5b5" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
+            <infoLink id="dfb9-ac62-8ad9-2372" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
+            <infoLink id="7ae3-4ef2-80ca-48f8" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b3d6-c4f0-aab7-bb24" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3cd8-9415-4d8f-3484">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a3a-9e74-eff4-22fb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8600-76db-c70c-19a8" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3cd8-9415-4d8f-3484" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aabc-e5c6-d832-eeb7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6791-b584-8b25-91fe" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="ac00-5a2c-c56c-d56e" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8fe6-d272-094e-b59c" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5aa7-87ce-91ac-e847" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bef9-2633-1b65-94d3" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+                    <infoLink id="9e63-7fd6-6b5c-3dbe" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="96d2-c40d-e163-8d29" name="Hand Weapon &amp; Shield &amp; Javelins (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3cf5-de0d-9670-ba6e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ba34-e970-7d8d-b070" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="2bde-3023-2ad5-de57" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                    <infoLink id="dc70-cccd-ef18-86ae" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6615-9f77-1188-7e2f" name="Hand Weapon &amp; Short Bows (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="48d0-dd0e-0f3b-1b46" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2d87-d6eb-e2f5-ccf6" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="4385-2ade-aa66-9228" name="Shortbow (Poisoned Attacks)" hidden="false" targetId="bf1c-5d92-9e7f-8fd8" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1654-f7a0-495b-b523" name="Kroxigor" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="increment" field="402e-e249-7383-910f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="69a2-7971-37f4-873e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="402e-e249-7383-910f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="381e-30c5-525f-4426" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
+            <infoLink id="8c62-505f-9b85-801c" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="67d9-37b4-ab0a-d61f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="b6e5-ede3-2ba6-0458" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+            <infoLink id="ae59-4d2e-dd0d-1ddb" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="aabd-04ce-aa91-8947" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+            <infoLink id="4c98-96d6-0cd2-02bd" name="Kroxigor" hidden="false" targetId="41f6-46f5-d63f-f6f9" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="3f1f-f093-dbdc-e0dc" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec6a-6693-a84f-f37c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a15-b3fe-dfab-c0eb" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="067c-2966-8f9d-da01" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="43.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6e21-bddd-9807-02f5" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="a7bb-9261-cae6-00f7" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f562-2f6d-9fd6-75ff" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a447-6e42-375b-97a0" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ae0b-4937-3dcd-d746" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61f6-dfc2-03d3-7fc4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5b09-391d-7662-e456" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4887-34d2-a308-3bdf" name="Skink Brave" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b6b-6fde-0aa6-5716" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a192-02a8-81f1-2c85" name="Skink Brave" publicationId="9e23-79cb-pubN77402" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d1d5-a8e9-b13a-9635" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca2a-18aa-d015-b87f" name="Skink Skirmishers (Tehenhauin)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="2726-921c-8580-1fc8" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e228-460d-033b-7ab7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2726-921c-8580-1fc8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="65c2-1133-0e6f-ca7a" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d870-2dca-fa53-92a8" name="Skink Skirmisher" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21e-336c-3810-e50b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="df77-ff34-c6fb-f913" name="Skink Skirmisher" publicationId="9e23-79cb-pubN77402" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="51a4-4853-c17b-4369" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="73c4-bd48-a562-df93" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+            <infoLink id="ad85-a0fc-dec6-3686" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
+            <infoLink id="6e6a-5625-67ec-71d8" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
+            <infoLink id="97e7-5875-03d0-7f28" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
+            <infoLink id="be0c-ed8f-7f6b-0d86" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="cd72-808f-4d63-6fd3" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1a7a-50db-2e8a-786e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fcf-8ed5-126c-4eb9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c584-9878-a265-4c8c" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0391-c6bb-a662-35e3" name="Hand Weapon, Javelins (Poisoned Attacks) &amp; Shields" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28e1-3c88-8ec9-b18a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ddc5-f350-5ffc-bccf" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="07a5-3c05-42a6-3f47" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
+                    <infoLink id="2d6d-be4d-803e-09a2" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ad15-e81a-1f02-2b1b" name="Hand Weapon &amp; Shortbows (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99b1-ec73-311f-f3d1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fac4-ab0e-c225-f373" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="4ac6-7069-7f91-fa19" name="Shortbow (Poisoned Attacks)" hidden="false" targetId="bf1c-5d92-9e7f-8fd8" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1a7a-50db-2e8a-786e" name="Hand Weapon &amp; Blowpipe" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb16-a57e-64c9-6b5c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c85d-b180-febb-51d0" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="383b-ce4e-6434-000b" name="Blowpipe" hidden="false" targetId="f106-ee33-4ec8-292a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="9.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="651e-5e99-d0ac-ae62" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="4dbc-b870-bfd0-88cb" name="Patrol Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="762d-cf32-1368-a449" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2add-1d9b-850c-9b50" name="Patrol Leader" publicationId="9e23-79cb-pubN77402" page="144" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3836-45d1-2a1f-9cd4" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1491-8343-913f-3b6c" name="Horned One Riders (Tehenhauin)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="fd2a-a030-28c0-249f" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e228-460d-033b-7ab7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd2a-a030-28c0-249f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="de92-f58d-3c57-d6cb" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="38b2-741f-d025-6a29" name="Great Crested Skink" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="653f-0b51-054b-98ed" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="dfca-fa7d-49d9-3171" name="Great Crested Skink" publicationId="9e23-79cb-pubN77402" page="149" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3e49-5962-03d8-d35f" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+            <infoLink id="3661-60ba-7de7-1b46" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="cfb5-8283-1719-aab2" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
+            <infoLink id="c708-5c56-222e-87dc" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
+            <infoLink id="238d-b208-a5b4-0b6e" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="ad4e-8ada-6fec-e3c3" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0a9-3758-0e02-997d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b11-b2ff-dbdd-3697" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c803-ad84-aadd-ef0b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b81d-4528-e156-9199" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18ab-ff5f-b27a-fae3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c16f-b1de-4bad-0220" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="67cf-8a3a-36fb-02fc" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="64b3-44a7-9b1a-c8d7" name="Horned One" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="96f6-ec66-d14d-ef1e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3eb-78ea-5c40-305e" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1f93-1bb9-8650-d6ae" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="4b3b-985f-3f34-1b1f" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="279a-fa88-cad4-f96b" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="03a6-5848-3945-09c8" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+                <infoLink id="bfd2-2154-028a-e3ea" name="Horned One" hidden="false" targetId="785f-7dff-4b4a-f3e4" type="profile"/>
+                <infoLink id="a628-a752-2af5-d8a6" name="Bestial Roar" hidden="false" targetId="6ed3-fad6-3922-83ad" type="rule"/>
+                <infoLink id="c191-a156-d39b-b2d7" name="Mount of Itzl" hidden="false" targetId="4271-27fb-eda6-5a5f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c0de-c6e6-8d56-c783" name="Javelins (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4624-ea4f-709f-7837" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="47a6-7831-297e-ac06" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="21.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="feac-0800-60be-e33a" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="d0c0-e03a-435c-d274" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d30c-7663-327a-c31d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8c23-17a4-b980-e40b" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="a0ce-f0cb-e1d7-c4f0" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a98-93f0-7bbc-2553" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6d1d-2d70-5ec6-3b41" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="47d0-b95b-6289-8218" name="Magic Standards" hidden="false" collective="false" import="true" targetId="4392-6388-0d15-2410" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="df3c-6c1d-8d0f-d5fe" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9100-edbd-e1af-27ee" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6317-1bf5-4b28-f00b" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4fc1-75ea-489d-e37a" name="Great Crested Brave" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5cf-a19a-89ae-7f6e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1735-408f-435b-0fd1" name="Great Crested Brave" publicationId="9e23-79cb-pubN77402" page="149" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="b86b-7415-416c-c3f8" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd7e-ff7a-9bcb-cdb4" name="Terradon Riders" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="ecd6-381c-35c0-c2ac" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e228-460d-033b-7ab7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd6-381c-35c0-c2ac" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6213-4719-e6da-863a" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5015-e353-4d1b-bcb1" name="Terradon Rider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="324a-741a-2beb-1574" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="fb10-baa4-ab5c-ee15" name="Terradon Rider" publicationId="9e23-79cb-pubN77402" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="fd9e-05bc-e9e5-c9c4" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="899c-f4ea-01d9-1064" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
+            <infoLink id="ae39-99eb-913e-3cf5" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
+            <infoLink id="0497-9fc1-2ec1-63d9" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="31ff-b6f6-20d4-82f7" name="Terradon" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfc9-613d-03b6-dcf6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1494-c78e-51ce-5466" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0523-8712-5459-648f" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="881d-0dcb-78fb-a512" name="Drop Rocks" hidden="false" targetId="413f-0a05-3515-9db2" type="rule"/>
+                <infoLink id="0d14-074c-cce7-85c9" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="a78f-6b8e-bf6a-d08d" name="Terradon" hidden="false" targetId="6c0d-aab8-87bf-6289" type="profile"/>
+                <infoLink id="f7de-408a-dba5-9318" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+                <infoLink id="1143-8f39-92e2-3995" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="55b3-6fc4-125d-4487" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="254f-0407-ec2d-20d5" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80ec-ec9a-8c36-f2eb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2df9-4066-c31e-44bf" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3ca9-6aac-6349-55ce" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d639-3243-d8b4-a824">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e275-fcb7-024c-9a9e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a817-781b-74f0-cad9" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d639-3243-d8b4-a824" name="Javelins (Poisoned Attacks)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ce3-9a86-c42d-9886" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9199-9f49-1ba9-e3f6" name="Javelins (Poisoned Attacks)" hidden="false" targetId="53d7-46cd-5203-e99c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1d9a-7d20-a1be-315f" name="Fireleech Bolas" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="428c-9276-87d4-0b0f" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="8ef4-9bc0-619d-3821" name="Fireleech Bolas" publicationId="9e23-79cb-pubN77402" page="153" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
+                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Quick to Fire.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2eb2-0d29-142d-87f6" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="1555-b7f4-ce1b-e879" name="Sky Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="520a-0153-3617-e019" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="95f9-2e82-b8c8-9341" name="Sky Leader" publicationId="9e23-79cb-pubN77402" page="153" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="dfeb-8ce2-ea2b-9ad6" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16af-5402-312b-5658" name="Ripperdactyl Riders (Tehenhauin)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="6ce6-ef7f-2bbb-e2cc" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e228-460d-033b-7ab7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ce6-ef7f-2bbb-e2cc" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="edd9-5929-997a-7968" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="eb28-eeb1-4f8d-6dbe" name="Ripperdactyl Rider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d07-5724-803f-39e9" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3427-8f26-203e-5265" name="Ripperdactyl Rider" publicationId="9e23-79cb-pubN77402" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="dfd0-ff63-38fa-8438" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="1e32-ff89-04e7-4ed9" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
+            <infoLink id="1d26-059d-583c-dd00" name="Hatred (Skaven)" hidden="false" targetId="34e1-3b0e-e471-fafa" type="rule"/>
+            <infoLink id="d75c-20f4-f0ac-c7c1" name="Immunity (Poisoned Attacks)" hidden="false" targetId="c09e-da06-27f2-fc7e" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="ea68-0bfd-1533-41f8" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cc9-f6b6-3d02-18c9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0288-8c68-0852-2d32" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ea89-e406-34fb-e606" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fabd-9665-64b5-487a" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc03-f5f0-9232-5f9f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc6f-b316-6bae-9b33" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1358-c5e0-4fc0-d1b5" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b816-3324-e25a-0fc4" name="Ripperdactly" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fc3-e3b4-a327-5f2d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71cf-d35c-40cc-a1ae" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2537-7d76-3daf-a20f" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="e2b6-9280-c781-b062" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+                <infoLink id="61c1-b727-d2ab-c817" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="18af-ae44-d290-1e67" name="Ripperdactyl" hidden="false" targetId="3a42-7a84-0a8b-4320" type="profile"/>
+                <infoLink id="f28a-ce1b-ff63-8183" name="Killing Blow" hidden="false" targetId="a711-7cf6-cd2b-1d29" type="rule"/>
+                <infoLink id="d079-c2b5-7e50-8b96" name="Armour Piercing (1)" hidden="false" targetId="bf4e-212e-fe1d-20c6" type="rule"/>
+                <infoLink id="d06d-3ce5-f150-f39d" name="Toad Rage" hidden="false" targetId="a152-f768-1c0d-4531" type="rule"/>
+                <infoLink id="e036-747d-b557-4876" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="39.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ba60-15c6-2fd0-e39a" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="aabc-e3be-0c18-97ff" name="Ripperdactyl Brave" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea3e-b312-bea2-79cd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0b1a-c6b8-5313-fb2b" name="Ripperdactyl Brave" publicationId="9e23-79cb-pubN77402" page="155" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">2</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ae65-628c-627c-745d" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

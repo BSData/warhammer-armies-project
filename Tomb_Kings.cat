@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7c10-2fc1-fb87-88ca" name="Entombed Beneath the Sands Mishap Table">
@@ -559,7 +559,7 @@
           <profiles>
             <profile id="3bbe-4b0b-b149-58ee" name="Liche Staff" publicationId="feeb-1927-4a99-f849" page="111" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Khatep can declare that he is using the Liche Staff immediately after rolling the dice to cast a spell, even if the result indicates irresistible force. If Khatep uses the Liche Staff, he re-rolls all the casting dice used in the attempt. Khatep can use the Liche Staff once per turn.</characteristic>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Khatep can declare that he is using the Liche Staff immediately after rolling the dice to cast a spell, even if the result indicates a miscast. If Khatep uses the Liche Staff, he re-rolls all the casting dice used in the attempt. Khatep can use the Liche Staff once per turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1523,7 +1523,65 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="125.0"/>
+                <cost name="pts" typeId="points" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="692b-fcaa-bf30-9e39" name="Casket of Souls" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="22b9-8fab-1e4f-52c5" name="Unleashed Souls" hidden="false" targetId="fabc-a2db-ce0b-ab22" type="rule"/>
+                <infoLink id="5558-3739-519c-7bfd" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
+                <infoLink id="ab63-1c28-ca4a-e5cd" name="Covenant of Power" hidden="false" targetId="a407-360a-7314-7edd" type="rule"/>
+                <infoLink id="3f4d-fa16-924c-1bd5" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+                <infoLink id="064b-e183-5c33-d984" name="Light of Death" hidden="false" targetId="06e6-535e-9223-5789" type="profile"/>
+                <infoLink id="fa7d-1e6a-b43e-67ad" name="Casket of Souls" hidden="false" targetId="75dc-fa58-a65f-2061" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="047e-18b9-46ef-b3e8" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="942d-6e93-ac70-ba8b" name="Casket Guard" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71d0-b487-d0bb-a1c8" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcc8-b20e-bae5-82bd" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="daba-aa83-fa50-e6ff" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+                    <infoLink id="7b60-319a-7b32-fe2b" name="Tomb Blades" hidden="false" targetId="2ea1-09a7-1792-14ed" type="rule"/>
+                    <infoLink id="e031-26fc-9509-39f7" name="Casket Guard" hidden="false" targetId="297d-fd21-2d33-aa55" type="profile"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="8692-0cf6-31a2-87c8" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4c1-e2b0-5a28-a805" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2017-b10c-f613-047d" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="446b-dac5-4583-eba2" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="dabb-1a74-91fd-bd13" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b706-9c85-ae3a-9093" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="448e-558d-635a-59d9" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="f327-2fd3-982f-dd7a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="130.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2292,20 +2350,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="879b-f05a-b8f1-cb1d" name="Skeletal Steed" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bdcf-9b0d-6021-6457" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="c207-a876-0b91-c1cd" name="Skeletal Steed" hidden="false" targetId="1caa-e15b-99b2-67e9" type="profile"/>
-            <infoLink id="c1bf-5897-caa6-587f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="1c3d-a9bd-6293-3faa" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-            <infoLink id="5572-a113-ce7a-6a06" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7f66-2108-bfcd-0290" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="6b8f-7b16-ee71-3e46">
@@ -2380,6 +2424,160 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="25da-832b-a233-ae40" name="Mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2dfd-e313-f507-7c78" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2727-1494-a0b6-c10e" name="Skeletal Steed" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f918-7264-8307-db36" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="75f4-045b-a908-65e1" name="Skeletal Steed" hidden="false" targetId="1caa-e15b-99b2-67e9" type="profile"/>
+                <infoLink id="df78-9a9b-9b03-fd41" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="9b0d-c1f1-f602-75f2" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="8e74-b865-100c-469c" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="12.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dcd8-c2a0-66a5-2e06" name="Tomb Barque of Usirian" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24bd-fc18-7eb0-1ea2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="78e7-9e80-39df-18a9" name="Tomb Barque" hidden="false" targetId="b8d7-8a59-98e2-4f5c" type="profile"/>
+                <infoLink id="c2f6-c5ba-ccf0-3cd4" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+                <infoLink id="1cb2-75f6-caaa-15da" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="a6a6-86d0-bee0-e663" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+                <infoLink id="0e66-8998-ba58-ee98" name="Arrows of Asaph" hidden="false" targetId="d00e-1ed4-0408-e5e8" type="rule"/>
+                <infoLink id="0e9c-977b-d8fb-c77f" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
+                <infoLink id="d51b-8f8a-1f17-85f1" name="Hieroglyphs of Protection" hidden="false" targetId="0d7d-5e03-84ad-99c8" type="rule"/>
+                <infoLink id="2a31-e18e-3550-aac5" name="Khepra Beetles" hidden="false" targetId="1687-c865-18eb-627e" type="rule"/>
+                <infoLink id="15e7-dab8-3d01-847f" name="Wards of the Gods" hidden="false" targetId="bba4-2f52-8f31-a3ed" type="rule"/>
+                <infoLink id="5f04-21af-a4f9-903c" name="Ward of Sokth" hidden="false" targetId="15d8-1e99-d6da-322a" type="profile"/>
+                <infoLink id="c99b-d97c-084e-4e84" name="Ward of Tahoth" hidden="false" targetId="a218-4308-dbb0-529e" type="profile"/>
+                <infoLink id="4312-c39e-7399-8cbf" name="Ward of Qu&apos;aph" hidden="false" targetId="507b-5d79-3dba-d9c8" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="e521-ca91-2f72-3006" name="Skeleton Crew" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c351-0c37-66ca-69dd" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cca-c870-b447-ed97" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="112a-58dc-1fa8-3568" name="Skeletal Crew" hidden="false" targetId="Skeletal Crew Tomb Barque" type="profile"/>
+                    <infoLink id="f0ff-7464-2b83-53bf" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="1b75-b944-d8fe-cf54" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8121-9bfd-9218-f217" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89e0-0de2-98b2-0b9c" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="379b-2cb6-4851-eaa1" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="6bd9-226f-4f6e-2d49" name="Bow" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6062-aae4-2ab4-a0e9" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e63-f13a-0db7-56d2" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="6162-2a56-f105-1ff1" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b675-5953-69dd-0b70" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="baad-7826-f3f7-40f6" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4fcb-16ae-6e81-0426" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="aa53-beb9-3a5c-f8a1" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7a41-b8cf-ed99-6a89" name="Casket of Souls" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="1e38-6de3-36ef-b31d" name="Unleashed Souls" hidden="false" targetId="fabc-a2db-ce0b-ab22" type="rule"/>
+                <infoLink id="c222-a9ad-e029-0296" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
+                <infoLink id="e468-9aa7-eff8-5326" name="Covenant of Power" hidden="false" targetId="a407-360a-7314-7edd" type="rule"/>
+                <infoLink id="3a0d-13ca-8f25-ec1a" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+                <infoLink id="d8a3-5b18-6271-3b22" name="Light of Death" hidden="false" targetId="06e6-535e-9223-5789" type="profile"/>
+                <infoLink id="1f4d-9bbb-9e24-6b77" name="Casket of Souls" hidden="false" targetId="75dc-fa58-a65f-2061" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="2427-dc40-d270-c2ba" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="abc4-6e95-b4e4-98db" name="Casket Guard" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82fe-1128-62eb-9e93" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="badc-1c00-70cb-ec1b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e84c-e351-bf2b-0b1e" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+                    <infoLink id="7105-0fe2-7bca-5ad8" name="Tomb Blades" hidden="false" targetId="2ea1-09a7-1792-14ed" type="rule"/>
+                    <infoLink id="c964-be41-d87d-fe9b" name="Casket Guard" hidden="false" targetId="297d-fd21-2d33-aa55" type="profile"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="a7bd-44e5-2272-25a6" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cda0-28ff-baf5-41c4" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a2e-f648-870c-8043" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="9f44-e18c-4455-11c8" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f0d3-acc2-9bfb-f826" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fef-97c6-1862-d975" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74c2-ff5f-63d9-dbfd" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="514e-f63a-864f-a2ce" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="130.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6596-a12f-03f0-14ee" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -2443,7 +2641,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         </selectionEntry>
         <selectionEntry id="635f-16e2-3f4a-3a89" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="9eec-8f73-ee02-682e" value="0">
+            <modifier type="set" field="38b9-2b30-f09f-2954" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="99fe-f994-9854-eae5" type="atLeast"/>
               </conditions>
@@ -2646,9 +2844,9 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               <selectionEntries>
                 <selectionEntry id="99fe-f994-9854-eae5" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="c792-6475-f3e5-b289" value="0">
+                    <modifier type="set" field="c792-6475-f3e5-b289" value="0.0">
                       <conditions>
-                        <condition field="selections" scope="b789-c32e-a561-07ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="635f-16e2-3f4a-3a89" type="atLeast"/>
+                        <condition field="points" scope="b789-c32e-a561-07ad" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="635f-16e2-3f4a-3a89" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2781,6 +2979,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="0e1f-1dcb-4452-736a" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d697-885d-05d2-f067" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7b7-650b-fd9d-8c4a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8892-2b72-55d6-497b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="1ec0-18e1-0535-815f" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f03-1e48-ed90-d004">
@@ -2789,28 +2999,26 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2503-dbe7-fe9b-775d" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="7f03-1e48-ed90-d004" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="7f03-1e48-ed90-d004" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8193-fb22-621c-c94f" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="7785-02d1-8f9c-6a76" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="ffeb-7148-8be5-7d96" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3c17-3e36-dfd9-4fa5" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="3c17-3e36-dfd9-4fa5" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2464-3a0d-4776-9cf3" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="d9cc-04da-23f7-baa8" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-                    <infoLink id="c45a-7157-0d0a-6b44" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3575,6 +3783,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="f0ae-94d0-ef3e-174b" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="576b-71d5-779a-dd3c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ffe-ddca-365b-869e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3499-b1e4-c54a-6844" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="8515-742e-aff1-776c" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="24e7-d96b-86e2-a969">
@@ -3583,28 +3803,26 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd40-d92f-c512-4aa1" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="24e7-d96b-86e2-a969" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="24e7-d96b-86e2-a969" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7fe6-1a9a-a710-4f22" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="8238-4853-6ec4-8944" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="7751-9ef6-2ffe-ea0c" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1305-300f-9ccf-fdd0" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="1305-300f-9ccf-fdd0" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1a3-3c3c-2cb9-7f40" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="340c-7a55-fadf-4b9d" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-                    <infoLink id="2a51-035d-a184-6e9e" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4773,6 +4991,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
             <infoLink id="9df2-c573-f1c7-cb48" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="b656-28f3-de2e-2d43" name="Entombed Beneath the Sands" hidden="false" targetId="eb9b-8590-beba-94b0" type="rule"/>
             <infoLink id="07a2-714f-aa46-75bc" name="Sepulchral Stalker" hidden="false" targetId="0c47-f6ed-e0da-6ace" type="profile"/>
+            <infoLink id="890d-dce3-2480-eda9" name="Transmogrifying Gaze" hidden="false" targetId="fdf3-171c-093f-964a" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="2065-e6ec-895b-bb5b" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
@@ -4782,18 +5001,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               </constraints>
               <infoLinks>
                 <infoLink id="7b9a-2cae-2ba5-d028" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="229e-f58a-54c3-2637" name="Transmogrifying Gaze" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe2f-f65e-12d2-048f" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcc7-55e8-961a-0916" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="af35-210f-bdc3-6ed9" name="Transmogrifying Gaze" hidden="false" targetId="fdf3-171c-093f-964a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4842,6 +5049,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
             <infoLink id="d64f-45a8-776a-0fbd" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="8fcb-86ac-b86b-eac1" name="Entombed Beneath the Sands" hidden="false" targetId="eb9b-8590-beba-94b0" type="rule"/>
             <infoLink id="bf23-9a23-a487-56c2" name="Sepulchral Stalker" hidden="false" targetId="0c47-f6ed-e0da-6ace" type="profile"/>
+            <infoLink id="9ea1-25ef-e507-230f" name="Transmogrifying Gaze" hidden="false" targetId="fdf3-171c-093f-964a" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="a464-42df-f0c1-e7a0" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
@@ -4851,18 +5059,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               </constraints>
               <infoLinks>
                 <infoLink id="5708-81f0-e9bd-927c" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f13-4b08-dbc7-162f" name="Transmogrifying Gaze" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0047-40b9-9595-44b8" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90ff-0195-85ef-545f" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="461c-e5ae-e8c9-0cfa" name="Transmogrifying Gaze" hidden="false" targetId="fdf3-171c-093f-964a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6592,7 +6788,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <categoryLink id="9189-5cb6-4c90-426b" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="320.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5046-b818-a277-b649" name="Khemric Titan (Sehenesmet)" hidden="true" collective="false" import="true" type="model">
@@ -6627,48 +6823,17 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <categoryLink id="2402-21e6-9a67-c7b5" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="320.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0443-7cab-04de-4968" name="Casket of Souls" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="8654-f8ac-1e78-33aa" name="Casket of Souls" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215"/>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">10</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b7b1-d8da-ee2b-43ee" name="Light of Death" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-          <characteristics>
-            <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-            <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
-            <characteristic name="Range" typeId="2954-76ea-decb-30ff">48&quot;</characteristic>
-            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target of Light of Death must take a LD test on 3D6, adding the results together. If the test is passed, nothing happens. Otherwise, for each point the unit failed the test by, it suffers an automatic Wound which Ignores Armour saves, distributed as for shooting attacks.
-
-Once the LD test has been resolved, roll a D6: on a 3 or more, choose another unengaged enemy unit within 6&quot; of the initial target, the unit must also suffer the effects of the Light of Death spell. Keep rolling for further victims (each within 6&quot; of the last target struck), until the roll is failed or there are no more viable targets. A unit can only be the target of Light of Death once per Magic phase.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="500c-264c-bbeb-1cf6" name="Covenant of Power" publicationId="feeb-1927-4a99-f849" page="81" hidden="false">
-          <description>If you have a Caskets of Souls on the table at the start of your Magic phase, you add D3 power dice to your pool. For each additional Casket, you may add an additional power dice.</description>
-        </rule>
-        <rule id="0ff9-7315-12c5-af1d" name="Unleashed Souls" publicationId="feeb-1927-4a99-f849" page="81" hidden="false">
-          <description>If a Casket of Souls is destroyed, roll a D6 for every unit (friend or foe!) within 12&quot; of the Casket before it is removed from play. On a roll of 4+, that unit immediately suffers D6 S 6 hits, distributed as for shooting. These are magical attacks, and no armour saves can be taken against them. After resolving the effects of Unleashed Souls, remove the Casket of Souls as normal.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink id="477d-eea6-459a-2f6b" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+        <infoLink id="477d-eea6-459a-2f6b" name="Unleashed Souls" hidden="false" targetId="fabc-a2db-ce0b-ab22" type="rule"/>
         <infoLink id="660d-5d98-52b4-d36a" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
+        <infoLink id="b051-fc64-e90e-d3b0" name="Covenant of Power" hidden="false" targetId="a407-360a-7314-7edd" type="rule"/>
+        <infoLink id="3ad1-545f-367a-fdc0" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
+        <infoLink id="583a-36ec-f925-2978" name="Light of Death" hidden="false" targetId="06e6-535e-9223-5789" type="profile"/>
+        <infoLink id="912c-489f-d6d4-41cc" name="Casket of Souls" hidden="false" targetId="75dc-fa58-a65f-2061" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0c0f-c6a8-e3c5-3233" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -6679,25 +6844,10 @@ Once the LD test has been resolved, roll a D6: on a 3 or more, choose another un
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b523-fa86-1334-8081" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73cc-83c4-b20a-1e59" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="b31a-c28d-21f7-2a6c" name="Casket Guard" publicationId="feeb-1927-4a99-f849" page="81" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459"/>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="63fc-d6a6-8ed9-fce5" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
             <infoLink id="ffca-4d91-e5b5-ff32" name="Tomb Blades" hidden="false" targetId="2ea1-09a7-1792-14ed" type="rule"/>
+            <infoLink id="f649-9e9f-cba1-6377" name="Casket Guard" hidden="false" targetId="297d-fd21-2d33-aa55" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="de8f-aff8-001c-a196" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -6735,7 +6885,7 @@ Once the LD test has been resolved, roll a D6: on a 3 or more, choose another un
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f45e-474f-10de-e76e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5d89-4a32-66f1-1020" name="Keeper of the Casket" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+            <profile id="6573-c6a7-91ef-edcc" name="Keeper of the Casket" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -6893,7 +7043,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="83fb-f007-dbe1-52ca" name="Lore of Nehekhara Khatep" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="83fb-f007-dbe1-52ca" name="Lore of Nehekhara Loremaster" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1aa1-6667-d0d5-ef4d" type="max"/>
       </constraints>
@@ -7764,7 +7914,7 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="60.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c8cb-2ba9-3784-512f" name="Blade of Antarhak" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8038,6 +8188,12 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
     <rule id="bc65-c852-eb09-3d08" name="The Stone Host of Quatar" publicationId="feeb-1927-4a99-f849" page="117" hidden="false">
       <description>If Sehenesmet is the army&apos;s General all units of Monstrous Infantry, Monstrous Cavalry, Monstrous Beasts or Monsters counts as Core/Special units rather than Special/Rare units. However, all other Core/Special units will counts as Special/Rare units instead.</description>
     </rule>
+    <rule id="a407-360a-7314-7edd" name="Covenant of Power" publicationId="feeb-1927-4a99-f849" page="81" hidden="false">
+      <description>If you have a Caskets of Souls on the table at the start of your Magic phase, you add D3 power dice to your pool. For each additional Casket, you may add an additional power dice.</description>
+    </rule>
+    <rule id="fabc-a2db-ce0b-ab22" name="Unleashed Souls" publicationId="feeb-1927-4a99-f849" page="81" hidden="false">
+      <description>If a Casket of Souls is destroyed, roll a D6 for every unit (friend or foe!) within 12&quot; of the Casket before it is removed from play. On a roll of 4+, that unit immediately suffers D6 S 6 hits, distributed as for shooting. These are magical attacks, and no armour saves can be taken against them. After resolving the effects of Unleashed Souls, remove the Casket of Souls as normal.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="a4bf-3eba-8e4e-1e50" name="Bow of the Desert" publicationId="feeb-1927-4a99-f849" page="102" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -8148,7 +8304,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Ignores Armour saves. Killing Blow. Magical Attacks. Multiple Shots (3). When rolling To Wound, substitute the target&apos;s T with its I value. This attack does not suffer any To Hit penalties. It has no effect on Animated Constructs, except other Sepulchral Stalkers.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Ignores Armour saves. Killing Blow. Magical Attacks. Multiple Shots (3). When rolling To Wound, substitute the target&apos;s T with its I value. This attack does not suffer any To Hit penalties.</characteristic>
       </characteristics>
     </profile>
     <profile id="ecb5-70aa-4f30-7b21" name="Great Bow" publicationId="feeb-1927-4a99-f849" page="96" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -8580,7 +8736,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">8</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">7</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">10</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
@@ -8731,8 +8887,8 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/18+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the target unit gain +1 A (including mounts) and may fire an additional shot using Multiple Shots (except war machines) until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the target unit gain +1 A (including mounts) and Multiple Shots (2) (excluding war machines) until the start of the caster&apos;s next Magic phase, a. If they already have Multiple Shots, they may instead fire an additional shot. Boosted version targets all friendly Undead units within range.</characteristic>
       </characteristics>
     </profile>
     <profile id="319d-65f5-343b-1888" name="The Restless Dead" publicationId="feeb-1927-4a99-f849" page="122" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8749,7 +8905,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/18+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit gains a Ward save (5+) until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
       </characteristics>
     </profile>
@@ -8767,8 +8923,47 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/14+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit&apos;s close combat Attacks gain Killing Blow until the start of your next Magic phase. If the target unit&apos;s Attacks already have Killing Blow or Heroic Killing Blow, these will take effect on any To Wound rolls of a 5 or 6 whilst this spell is in play. Boosted version targets all friendly Undead units within range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="297d-fd21-2d33-aa55" name="Casket Guard" publicationId="feeb-1927-4a99-f849" page="81" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459"/>
+      </characteristics>
+    </profile>
+    <profile id="75dc-fa58-a65f-2061" name="Casket of Souls" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">10</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="06e6-535e-9223-5789" name="Light of Death" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">48&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target of Light of Death must take a LD test on 3D6, adding the results together. If the test is passed, nothing happens. Otherwise, for each point the unit failed the test by, it suffers an automatic Wound which Ignores Armour saves, distributed as for shooting attacks.
+
+Once the LD test has been resolved, roll a D6: on a 3 or more, choose another unengaged enemy unit within 6&quot; of the initial target, the unit must also suffer the effects of the Light of Death spell. Keep rolling for further victims (each within 6&quot; of the last target struck), until the roll is failed or there are no more viable targets. A unit can only be the target of Light of Death once per Magic phase.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

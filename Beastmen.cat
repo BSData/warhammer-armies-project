@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
@@ -2458,25 +2458,10 @@
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
           </characteristics>
         </profile>
-        <profile id="6568-e3ba-503e-6d53" name="01" publicationId="9e23-79cb-pubN71963" page="108" hidden="false" typeId="b636-1e1d-3724-f493" typeName="Curse of the Famine-fiend Table">
-          <characteristics>
-            <characteristic name="Result" typeId="1d62-d222-7456-977b">No effect: Nothing happens.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="cc62-918e-3f4e-4648" name="02-05" publicationId="9e23-79cb-pubN71963" page="108" hidden="false" typeId="b636-1e1d-3724-f493" typeName="Curse of the Famine-fiend Table">
-          <characteristics>
-            <characteristic name="Result" typeId="1d62-d222-7456-977b">Crippling weakness: The unit suffers D3 wounds which Ignores Armour saves.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0248-009e-e333-6a75" name="06" publicationId="9e23-79cb-pubN71963" page="108" hidden="false" typeId="b636-1e1d-3724-f493" typeName="Curse of the Famine-fiend Table">
-          <characteristics>
-            <characteristic name="Result" typeId="1d62-d222-7456-977b">Starvation, body and soul: The unit suffers D6 wounds which Ignores Armour saves.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="f902-eac1-a3d2-9846" name="Curse of the Famine-fiend" publicationId="9e23-79cb-pubN71963" page="108" hidden="false">
-          <description>Immediately after deployment, each enemy unit within 36&quot; of Slugtongue must roll once on the table below.</description>
+          <description>At the start of each of your turns, all enemy units within 18&quot; of Slugtongue must pass D3 T tests or suffer a Wound which Ignores Armour Saves for every failed T test.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2776,7 +2761,7 @@
         </selectionEntry>
         <selectionEntry id="6955-d81c-4437-4d39" name="Gifts of Chaos &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="cc2c-a517-48ca-23c9" value="25.0">
+            <modifier type="set" field="44e4-b378-7956-e7da" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7573-a28a-60cc-9631" type="atLeast"/>
               </conditions>
@@ -4067,7 +4052,7 @@
         </selectionEntry>
         <selectionEntry id="cc75-435c-4e33-8737" name="Gifts of Chaos &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="points" value="25.0">
+            <modifier type="set" field="3e7d-bbac-a424-6181" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53d7-721c-7dd2-04ef" type="atLeast"/>
               </conditions>
@@ -8543,22 +8528,25 @@ modifier.</characteristic>
       <description>At the beginning of each round of close combat, each engaged unit with Primal Fury must take a LD test. If the test is passed, that unit gains Hatred until the end of the close combat phase. In addition, if the successful roll was a double, they also gain Frenzy until the end of the close combat phase.</description>
     </rule>
     <rule id="d421-7cfe-2f83-d6dd" name="Mark of Khorne" publicationId="9e23-79cb-pubN71963" page="64" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 The unit is subject to Frenzy.</description>
     </rule>
     <rule id="2d41-4e7a-af27-6ad1" name="Mark of Slaanesh" publicationId="9e23-79cb-pubN71963" page="64" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
 
 The unit gains Immunity (Psychology) and Stubborn.</description>
     </rule>
     <rule id="62af-86be-bb67-9a3a" name="Mark of Tzeentch" publicationId="9e23-79cb-pubN71963" page="64" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
 
 Models with the Mark of Tzeentch have Magic Resistance (1) and Ward save (6+).</description>
     </rule>
     <rule id="e111-31f2-8123-8025" name="Mark of Nurgle" publicationId="9e23-79cb-pubN71963" page="64" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
 
 Models with this Mark add +1 to their T but suffer -2 to their I (to a minimum of 1).</description>
     </rule>

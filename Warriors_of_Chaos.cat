@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="49dc-2fd8-b942-dbc2" name="Chaos Mutations and Powers">
@@ -1003,18 +1003,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="23e5-fd97-449f-3606" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3be-c844-942c-8b1e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce3e-08d3-6ffd-3a9b" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="ef4e-ae09-4a2e-bde7" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a34c-a06e-ffa5-5fb9" name="Mount" hidden="false" collective="false" import="true">
@@ -1247,7 +1235,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="125.0"/>
+                        <cost name="pts" typeId="points" value="135.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="3ef8-9532-7275-475e" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -1443,13 +1431,54 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="3df4-6756-b555-a349" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="1140-a724-e8e1-f37e">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50c8-eb9b-46f5-83e8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0588-1877-0fce-dc9c" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="6c13-1634-560a-4543" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91c8-16fe-cdea-9d75" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="6ea7-dbfd-96fb-7e09" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="6.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="1140-a724-e8e1-f37e" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd4e-78c4-50f4-1b6b" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="007d-0be9-0453-5b74" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="e8ec-2bd5-6ec2-481a" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a46-b093-0151-4701" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="becf-ec75-7b1c-b997" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="e838-7724-7fdf-aa60" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                 <entryLink id="8c50-adf9-b0f2-b131" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="205.0"/>
+                <cost name="pts" typeId="points" value="195.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="71a2-f2d6-448e-fe97" name="Chaos Lord of Tzeentch" hidden="false" collective="false" import="true" type="model">
@@ -1484,18 +1513,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="23d5-5924-e745-b6e2" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
                     <entryLink id="e9c0-fe69-3b49-be46" name="Chaos Mutations and Powers of Tzeentch" hidden="false" collective="false" import="true" targetId="47f7-837a-67cb-628d" type="selectionEntryGroup"/>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c0e8-ab4b-4bb1-9860" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f20-3006-9806-6736" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e916-1d3f-2043-0612" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="08b6-746c-809b-a1cc" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -1732,7 +1749,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="135.0"/>
+                        <cost name="pts" typeId="points" value="145.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="b171-a6e5-3655-d3ed" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -1928,13 +1945,54 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="68f0-1155-2eed-8175" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d7b-5ff2-da35-0714">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80f3-4e7e-a65a-daee" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2ce-c015-5027-37e8" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="dadf-ccbb-25da-3dc0" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4745-ab6d-0666-c9de" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d425-29ae-a729-e406" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="6.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="3d7b-5ff2-da35-0714" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ba5-1bd8-2269-741e" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3ecb-e07f-381e-93dd" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="597a-4af1-7aa6-a688" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="759b-7327-5756-0d40" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="9da2-d601-6509-1806" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="1fed-f963-0f5e-64d7" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                 <entryLink id="d507-2bf8-8e4a-8926" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="205.0"/>
+                <cost name="pts" typeId="points" value="195.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="40d0-17ad-996e-c71a" name="Chaos Lord of Slaanesh" hidden="false" collective="false" import="true" type="model">
@@ -1969,18 +2027,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="4391-550e-d1a2-07a6" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
                     <entryLink id="1470-4da0-b344-e11d" name="Chaos Mutations and Powers of Slaanesh" hidden="false" collective="false" import="true" targetId="a69a-9248-4270-ebf3" type="selectionEntryGroup"/>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6e62-b2e8-ed69-2e09" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a4c-dd6e-0af1-03c3" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba60-20c9-9d2a-80b5" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="6d43-9270-37da-86c3" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2217,7 +2263,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="140.0"/>
+                        <cost name="pts" typeId="points" value="150.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="ac55-91f9-67de-1d27" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -2413,13 +2459,54 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="0925-dc48-134b-7c65" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="129b-ff68-e75b-bcc8">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03be-9f77-2ee5-b2e1" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d44b-cbf6-5bc8-6257" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="5bc7-f67c-d3a8-fc7c" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a03-2eb7-0d96-fd79" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="968f-3342-658f-71ab" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="6.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="129b-ff68-e75b-bcc8" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92b1-fd3a-159c-9eda" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="df9e-5999-4418-ae44" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="74b1-54b8-bb0e-820e" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfca-4875-6bb7-478e" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0306-1b2e-8b7f-1023" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="f805-abeb-6032-5836" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                 <entryLink id="2ea7-adf4-c9a0-e0cc" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="205.0"/>
+                <cost name="pts" typeId="points" value="195.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9efb-d88f-90d0-9e32" name="Chaos Lord" hidden="false" collective="false" import="true" type="model">
@@ -2452,18 +2539,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="9ef2-a89f-c5bb-3b9e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
                     <entryLink id="481e-97ed-8866-4b50" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bc19-f789-b54f-7089" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a91-0570-0bf8-0abc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea81-cd4c-3a7d-5a67" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="efe2-5c9a-6d09-8a3c" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2698,7 +2773,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="120.0"/>
+                        <cost name="pts" typeId="points" value="130.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="69c9-49e0-4aad-5d35" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -2877,13 +2952,54 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="a5db-1841-cf8a-4c49" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce45-93cb-9b2c-fc90">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e5c-35b2-04ee-20bd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="accf-69d5-732f-aef1" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="41fd-2405-549c-1694" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="138a-c6a5-94b3-cc1f" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="f390-efd0-28d4-d11c" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="6.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="ce45-93cb-9b2c-fc90" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6edc-c3e8-f21b-4094" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="47ad-5213-b4db-59e0" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="9729-a702-f4df-d04e" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dfd8-e647-7713-26b7" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="32c1-f12e-2642-c997" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="b98f-91b2-f519-68e9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                 <entryLink id="0a6c-bebc-b6c5-311f" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="190.0"/>
+                <cost name="pts" typeId="points" value="180.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="072d-5904-375e-165e" name="Chaos Lord of Nurgle" hidden="false" collective="false" import="true" type="model">
@@ -2918,18 +3034,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="d956-3004-c05d-6555" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
                     <entryLink id="6d1a-b020-18c4-c316" name="Chaos Mutations and Powers of Nurgle" hidden="false" collective="false" import="true" targetId="9452-971c-d7c1-9d2b" type="selectionEntryGroup"/>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="589a-23a9-d844-1f75" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e323-aeb6-bad3-76c6" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5711-4c6b-3e98-5d42" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="2166-e067-2b73-7db3" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3166,7 +3270,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="145.0"/>
+                        <cost name="pts" typeId="points" value="155.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="9fb0-3fd4-90c5-a8e7" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -3358,13 +3462,54 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="3a0f-5874-d643-647c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="5825-d2fd-f1c8-c6cd">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8098-5ea9-7a39-93ce" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ca2-c81e-d66b-8ee4" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="a76a-5a82-8c0c-8d80" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1473-eb4a-7ecc-f6c1" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="935f-ac5c-a197-0e37" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="6.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5825-d2fd-f1c8-c6cd" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed7b-50cb-9733-94c5" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="8b29-07d1-85b6-417e" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4f97-531e-b4d5-d39b" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e185-9465-2e3e-16e3" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="bb00-a1b1-ec90-966a" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="d99e-0692-9167-7e5f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                 <entryLink id="bdaf-7f37-36c3-1d25" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="210.0"/>
+                <cost name="pts" typeId="points" value="200.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3562,7 +3707,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <entryLink id="3a49-9806-456a-23a9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="265.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="aecb-92a5-7fc9-825d" name="Daemon Prince of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
@@ -3741,7 +3886,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <entryLink id="93b0-c7b8-77ba-2e56" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="255.0"/>
+                <cost name="pts" typeId="points" value="245.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="511a-701d-0873-986d" name="Daemon Prince of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
@@ -3920,7 +4065,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <entryLink id="8e50-bf63-d270-9972" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="265.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f825-1903-cfc8-f00a" name="Daemon Prince" hidden="false" collective="false" import="true" type="upgrade">
@@ -4109,7 +4254,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <entryLink id="3289-22e3-fee2-4937" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="250.0"/>
+                <cost name="pts" typeId="points" value="240.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3228-78cb-a8e4-38c1" name="Daemon Prince of Khorne" hidden="false" collective="false" import="true" type="upgrade">
@@ -4193,7 +4338,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <entryLink id="8217-2ad1-8353-3037" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="265.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7320,17 +7465,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2e0f-7942-ccd0-532a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2e0f-7942-ccd0-532a" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="7023-db6d-b546-5a66" value="0">
+                    <modifier type="set" field="6875-754f-2df2-5a91" value="25.0">
                       <conditions>
                         <condition field="selections" scope="0ccc-8f8b-4315-fd6f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9481-fd10-316a-9a65" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="6875-754f-2df2-5a91" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1412-7177-3676-924b" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -7339,41 +7479,11 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink id="f066-e9c6-71a5-f9fd" name="Talismans" hidden="false" collective="false" import="true" targetId="fdb9-019b-8cba-b9d8" type="selectionEntryGroup"/>
-                    <entryLink id="4018-6434-142d-4a6b" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
+                    <entryLink id="4018-6434-142d-4a6b" name="Chaos Mutations and Powers of Khorne" hidden="false" collective="false" import="true" targetId="7852-2b4b-eaab-af3c" type="selectionEntryGroup"/>
                     <entryLink id="b08a-142e-a394-b2da" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="5b35-bdf4-b4bd-b87a" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f355-5831-d9b3-0358" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6374-355b-e0df-b5be" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8cbb-fa68-9912-fd23" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="5041-97ae-d3c6-8638" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1412-7177-3676-924b" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="67ae-7eb3-852e-855f" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e0f-7942-ccd0-532a" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b988-df1e-aada-f82f" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="67ae-7eb3-852e-855f" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="4694-936a-3d13-6a20" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="e612-a3ff-61cc-8cf1" name="Chaos Mutations and Powers of Khorne" hidden="false" collective="false" import="true" targetId="7852-2b4b-eaab-af3c" type="selectionEntryGroup"/>
+                    <entryLink id="a647-44ba-c72e-af77" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="03f4-2e3b-168b-4bf7" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -7611,7 +7721,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="125.0"/>
+                        <cost name="pts" typeId="points" value="135.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="e560-2195-1998-2d61" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -7827,7 +7937,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                           <modifiers>
                             <modifier type="set" field="d6f8-bc6f-c555-f7c8" value="0">
                               <conditions>
-                                <condition field="selections" scope="0ccc-8f8b-4315-fd6f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e0f-7942-ccd0-532a" type="atLeast"/>
+                                <condition field="points" scope="0ccc-8f8b-4315-fd6f" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e0f-7942-ccd0-532a" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -7851,12 +7961,53 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="5888-19ac-8fa9-eabf" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="aeeb-6a50-3b75-2ff8" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="01b1-1b2d-6168-e86d">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="776a-3fb5-0ba8-1c68" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8f9-e55c-7dbf-5b96" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="fac5-d383-c8ec-55e6" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3afe-3cdb-804b-ca3a" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="029f-babe-f470-e3b0" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="4.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="01b1-1b2d-6168-e86d" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e7ac-90ef-98e3-213b" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="2367-9665-1631-1ffa" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="9915-ce93-b546-0394" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c92-7ddd-822b-0585" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="2fbe-812a-1a6d-a51f" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="2.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="4189-1cb9-98b3-0575" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="125.0"/>
+                <cost name="pts" typeId="points" value="120.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0226-69de-0af4-a4da" name="Exalted Hero of Tzeentch" hidden="false" collective="false" import="true" type="model">
@@ -7878,17 +8029,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3ef4-b65b-c6e2-950a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3ef4-b65b-c6e2-950a" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="e5e1-cef5-41f2-a9f3" value="0">
+                    <modifier type="set" field="e5e1-cef5-41f2-a9f3" value="0.0">
                       <conditions>
                         <condition field="selections" scope="0226-69de-0af4-a4da" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-e40e-8bae-fd0c" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="5476-ed1f-83b7-6194" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5a9-aa23-3bc3-a382" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -7900,38 +8046,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="6379-650d-8137-23bf" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="af05-7839-0db5-db90" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="48dc-e672-385d-228d" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7b6a-0879-d82b-291e" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d33-79b6-d2ce-1fa5" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11f3-b914-c980-0876" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="b6af-2e8a-72e3-baaf" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c5a9-aa23-3bc3-a382" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="0a42-362f-63b7-b6e1" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ef4-b65b-c6e2-950a" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59c3-b2da-e5be-4bbb" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0a42-362f-63b7-b6e1" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="a01e-4b60-1b01-912d" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="17bf-58d4-b984-4da1" name="Chaos Mutations and Powers of Tzeentch" hidden="false" collective="false" import="true" targetId="47f7-837a-67cb-628d" type="selectionEntryGroup"/>
+                    <entryLink id="329e-bd48-052e-d052" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="3d08-ff46-0851-16b0" name="Chaos Mutations and Powers of Tzeentch" hidden="false" collective="false" import="true" targetId="47f7-837a-67cb-628d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8169,7 +8285,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="135.0"/>
+                        <cost name="pts" typeId="points" value="145.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="895f-e3cb-f864-a5f6" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -8409,12 +8525,53 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="f83a-d987-719a-bf24" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="b8e3-4456-6106-fd62" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="8ed7-1831-73a4-1936">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03d2-9d54-ff6b-4b09" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa22-2265-2b31-0778" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="dd70-4a2f-81f1-cef1" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b93-c3c8-f8e6-65d0" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5885-3bcd-890d-0592" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="4.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="8ed7-1831-73a4-1936" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="345e-ad3e-9cb6-725c" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="23e2-df92-6b43-f611" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="cfed-83d9-0ae3-11d6" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7f1-8e11-84cb-c7fb" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="e4c7-036b-9509-8561" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="2.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="fbb7-3520-9dc5-45c6" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="125.0"/>
+                <cost name="pts" typeId="points" value="120.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b498-f834-a820-f7ce" name="Exalted Hero of Slaanesh" hidden="false" collective="false" import="true" type="model">
@@ -8436,17 +8593,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a62f-b114-8a8d-51ea" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a62f-b114-8a8d-51ea" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="f336-9e8f-b517-8b5f" value="0">
+                    <modifier type="set" field="fe21-9410-2a09-7af7" value="25.0">
                       <conditions>
                         <condition field="selections" scope="b498-f834-a820-f7ce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8da6-d728-75bf-5b18" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="fe21-9410-2a09-7af7" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="639e-16e0-8015-8c29" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -8458,38 +8610,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="0e9e-9163-3b5a-856a" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="b484-1a01-daf6-0eb1" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="4c87-18a1-bca5-5287" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="14ab-66fd-13a4-6fe7" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd12-15a0-3a78-5d02" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd3c-65a2-6e4b-bfec" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3005-181d-7b11-91a5" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="639e-16e0-8015-8c29" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="4aab-31a3-df6c-00c0" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a62f-b114-8a8d-51ea" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1cb-fdd3-61ca-2296" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4aab-31a3-df6c-00c0" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="30fc-64c5-0a4c-85cf" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="ecf4-c200-4eb2-581e" name="Chaos Mutations and Powers of Slaanesh" hidden="false" collective="false" import="true" targetId="a69a-9248-4270-ebf3" type="selectionEntryGroup"/>
+                    <entryLink id="1495-d070-3813-b7fd" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="7540-728e-30bf-291d" name="Chaos Mutations and Powers of Slaanesh" hidden="false" collective="false" import="true" targetId="a69a-9248-4270-ebf3" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8727,7 +8849,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="140.0"/>
+                        <cost name="pts" typeId="points" value="150.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="9c77-6818-71b0-6874" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -8967,12 +9089,53 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="2596-7d0d-bd26-7e80" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="5912-8037-feeb-2b9a" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="b568-0cad-3116-ba02">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2498-400d-4761-982d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e380-40c2-28d4-6f34" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="9b3a-c139-8099-b93e" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8c9-4a78-382b-df62" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3891-57f0-8f23-4821" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="4.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b568-0cad-3116-ba02" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e00-9782-b340-a07c" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5054-8011-379c-1c4a" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f4de-aebf-807d-8d75" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27d0-62ff-7bd0-a4e9" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="6309-8211-ef28-8c2c" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="2.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="8c1c-a664-5bb7-3c37" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="125.0"/>
+                <cost name="pts" typeId="points" value="120.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fcad-2e94-e264-72f0" name="Exalted Hero" hidden="false" collective="false" import="true" type="model">
@@ -8993,17 +9156,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="291f-b916-fdc8-8471" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="291f-b916-fdc8-8471" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="9d19-320f-77f7-2d27" value="0">
+                    <modifier type="set" field="3bdd-9285-c9cf-60fa" value="25.0">
                       <conditions>
                         <condition field="selections" scope="fcad-2e94-e264-72f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-4330-b2e4-cc78" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="3bdd-9285-c9cf-60fa" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba3-6ce6-93ac-dcf4" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -9015,37 +9173,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="9169-3bce-e550-d19b" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="1d5d-3c89-665a-64e4" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="2e14-0a98-bdc6-72d2" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bdea-e6c6-6549-9dd7" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ee0-ffec-e637-92f2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbfc-ef65-f9ba-c38b" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="0c01-e2af-446d-1a4a" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="cba3-6ce6-93ac-dcf4" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="7c4a-e595-235e-2be9" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="291f-b916-fdc8-8471" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cdb-0227-21b0-becd" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7c4a-e595-235e-2be9" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d85c-622b-1ce1-42c6" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="3a60-ec67-e245-288f" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -9281,7 +9409,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="120.0"/>
+                        <cost name="pts" typeId="points" value="130.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="1f2b-1341-890a-c707" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -9449,7 +9577,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   <selectionEntries>
                     <selectionEntry id="ABS EH" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="2d7e-f9a3-c9d5-e9ba" value="0">
+                        <modifier type="set" field="2d7e-f9a3-c9d5-e9ba" value="0.0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -9478,9 +9606,9 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                       <selectionEntries>
                         <selectionEntry id="c0f7-4330-b2e4-cc78" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="78e5-3591-2dd3-9bbc" value="0">
+                            <modifier type="set" field="78e5-3591-2dd3-9bbc" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="fcad-2e94-e264-72f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="291f-b916-fdc8-8471" type="atLeast"/>
+                                <condition field="points" scope="fcad-2e94-e264-72f0" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="291f-b916-fdc8-8471" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -9504,12 +9632,53 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="ed8b-d28a-9d9f-cb88" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="2f6f-41fe-7e78-6225" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="646e-4e7b-91d8-5014">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9487-bb95-25d2-b36a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ecd6-ef40-4386-0867" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="6ba7-6ab6-28d7-a613" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="130e-dcba-1f97-eee9" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="1dd4-27a4-aaa8-7054" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="4.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="646e-4e7b-91d8-5014" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3c6-9b72-7e8b-c958" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="2dff-c121-18cd-d26b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="a2fd-da0a-7ceb-bc32" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9d0-c457-7bfe-b6fe" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="6a20-6636-4cfe-9a24" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="2.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="95c6-ccda-c876-e56b" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="110.0"/>
+                <cost name="pts" typeId="points" value="105.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1ab1-819f-66cf-13fb" name="Exalted Hero of Nurgle" hidden="false" collective="false" import="true" type="model">
@@ -9531,17 +9700,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="205d-15db-54e6-e17f" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="205d-15db-54e6-e17f" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="8006-56d2-47fe-f6c1" value="0">
+                    <modifier type="set" field="593b-3a78-d9d2-2274" value="25.0">
                       <conditions>
                         <condition field="selections" scope="1ab1-819f-66cf-13fb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8056-1c03-8e13-af28" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="593b-3a78-d9d2-2274" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad76-f88a-b767-4d41" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -9553,38 +9717,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="8cb3-85f3-ea40-96a9" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="9752-4c29-5076-6df1" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="08fb-a212-b772-1d6b" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6abe-11ad-89f8-392e" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb30-5ac0-3d54-81e8" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9cee-abeb-df00-2adc" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="8acc-9382-0b7a-1d99" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ad76-f88a-b767-4d41" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="236c-7e0b-6448-9a90" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="205d-15db-54e6-e17f" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0875-eb16-8017-0c6a" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="236c-7e0b-6448-9a90" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="7391-fd40-3f61-c493" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="e811-f02b-2916-8753" name="Chaos Mutations and Powers of Nurgle" hidden="false" collective="false" import="true" targetId="9452-971c-d7c1-9d2b" type="selectionEntryGroup"/>
+                    <entryLink id="5f3e-bd5a-6f1d-9b33" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="8cf8-2e84-8d4c-1d69" name="Chaos Mutations and Powers of Nurgle" hidden="false" collective="false" import="true" targetId="9452-971c-d7c1-9d2b" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -9822,7 +9956,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="145.0"/>
+                        <cost name="pts" typeId="points" value="155.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="6911-5ebd-fb3d-fe3b" name="Manticore" hidden="false" collective="false" import="true" type="model">
@@ -10032,9 +10166,9 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                       <selectionEntries>
                         <selectionEntry id="8056-1c03-8e13-af28" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="3472-2c71-774d-71f4" value="0">
+                            <modifier type="set" field="3472-2c71-774d-71f4" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="1ab1-819f-66cf-13fb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="205d-15db-54e6-e17f" type="atLeast"/>
+                                <condition field="points" scope="1ab1-819f-66cf-13fb" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="205d-15db-54e6-e17f" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -10058,12 +10192,53 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="d433-b9c9-8592-7e99" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="4134-26f2-f16a-723c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="0c87-7724-2c34-c9cf">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8cb4-ee28-f23b-7994" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3cf0-eb85-a974-fb85" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="8bed-aa92-7d66-9842" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b476-8d05-e049-d4cb" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="81d7-7528-a3c8-88e7" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="4.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0c87-7724-2c34-c9cf" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f71-2d4d-aa8e-857d" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="03c6-6d7d-6a58-aa1b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="55ea-9531-c2cf-31ea" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de0c-87bf-2d1d-307a" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="f802-29db-2a4a-606f" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="2.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="0977-11b9-e45d-c9d7" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="130.0"/>
+                <cost name="pts" typeId="points" value="125.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10298,17 +10473,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e054-f248-d124-b383" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e054-f248-d124-b383" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="d65c-f11d-0684-3667" value="0">
+                    <modifier type="set" field="207e-c3a9-e356-e6f5" value="25.0">
                       <conditions>
                         <condition field="selections" scope="3e18-a71f-6bab-2ebf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="381a-44f8-7a39-7e84" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="207e-c3a9-e356-e6f5" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7a4-2a46-36d4-746c" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -10320,6 +10490,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="528e-c309-b37b-1db8" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="f3c7-dc01-547b-d0b7" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="ce83-86ef-4022-a83f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
+                    <entryLink id="4533-9b56-1157-4507" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -10333,25 +10504,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   <infoLinks>
                     <infoLink id="65dd-88cd-8250-19b8" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f7a4-2a46-36d4-746c" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="3302-a242-944e-c048" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e054-f248-d124-b383" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6851-cde4-5cc2-048f" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3302-a242-944e-c048" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="0a05-0fb2-1c39-8367" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -10570,7 +10722,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                           <modifiers>
                             <modifier type="set" field="2df1-e9eb-6e61-2903" value="0">
                               <conditions>
-                                <condition field="selections" scope="3e18-a71f-6bab-2ebf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e054-f248-d124-b383" type="atLeast"/>
+                                <condition field="points" scope="3e18-a71f-6bab-2ebf" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e054-f248-d124-b383" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -10622,17 +10774,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2737-5bbf-ed59-cb2e" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2737-5bbf-ed59-cb2e" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="d979-7e45-372d-7555" value="0">
+                    <modifier type="set" field="50e7-29f0-ff56-a516" value="25.0">
                       <conditions>
                         <condition field="selections" scope="0ce5-78dd-ddd4-7f41" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f627-9c06-5e15-2256" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="50e7-29f0-ff56-a516" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d7a-6dae-cd87-fdc5" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -10644,6 +10791,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="8724-edb9-9853-bd03" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="9319-2c91-55f1-8d24" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="129b-07aa-4701-4368" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
+                    <entryLink id="916a-8a57-4ea8-5d34" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="4358-03cf-0180-5fa1" name="Chaos Mutations and Powers of Khorne" hidden="false" collective="false" import="true" targetId="7852-2b4b-eaab-af3c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -10657,26 +10806,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   <infoLinks>
                     <infoLink id="befe-a101-6c21-d49d" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7d7a-6dae-cd87-fdc5" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="e96a-5959-ccdb-bc6c" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2737-5bbf-ed59-cb2e" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df2d-8ded-971d-fd3e" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e96a-5959-ccdb-bc6c" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="71a7-c483-1423-0537" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="12dd-1207-4282-6d08" name="Chaos Mutations and Powers of Khorne" hidden="false" collective="false" import="true" targetId="7852-2b4b-eaab-af3c" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -10896,7 +11025,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                           <modifiers>
                             <modifier type="set" field="ddf3-f919-d463-e0b4" value="0">
                               <conditions>
-                                <condition field="selections" scope="0ce5-78dd-ddd4-7f41" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2737-5bbf-ed59-cb2e" type="atLeast"/>
+                                <condition field="points" scope="0ce5-78dd-ddd4-7f41" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2737-5bbf-ed59-cb2e" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -10948,17 +11077,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8db8-afd6-f137-f25c" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8db8-afd6-f137-f25c" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="2120-82f0-8dd7-4b41" value="0">
+                    <modifier type="set" field="6683-8985-0e19-71fe" value="25.0">
                       <conditions>
                         <condition field="selections" scope="f174-7e00-0ac0-4a11" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3821-4c47-beee-7d55" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="6683-8985-0e19-71fe" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e3a-01de-498b-7668" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -10970,6 +11094,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="f392-ce8a-46b9-2298" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="6a44-839a-adc4-87d9" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="15fe-2863-30bc-2728" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
+                    <entryLink id="4706-cac7-598e-7521" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="8e98-4ba3-97c0-9248" name="Chaos Mutations and Powers of Nurgle" hidden="false" collective="false" import="true" targetId="9452-971c-d7c1-9d2b" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -10983,26 +11109,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   <infoLinks>
                     <infoLink id="811a-cd5f-6f2d-ec14" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6e3a-01de-498b-7668" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="f0f3-74a0-f8a5-e53a" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8db8-afd6-f137-f25c" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af41-1129-45e1-c383" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f0f3-74a0-f8a5-e53a" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="401a-5046-c683-0da8" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="08da-3673-8531-f7e7" name="Chaos Mutations and Powers of Nurgle" hidden="false" collective="false" import="true" targetId="9452-971c-d7c1-9d2b" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -11222,7 +11328,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                           <modifiers>
                             <modifier type="set" field="040f-8e84-744a-9ac0" value="0">
                               <conditions>
-                                <condition field="selections" scope="f174-7e00-0ac0-4a11" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8db8-afd6-f137-f25c" type="atLeast"/>
+                                <condition field="points" scope="f174-7e00-0ac0-4a11" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8db8-afd6-f137-f25c" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -11274,17 +11380,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d684-1458-6977-72fc" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="d684-1458-6977-72fc" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="b6cd-411a-13f0-63e0" value="0">
+                    <modifier type="set" field="0055-8d7d-aa6b-33c4" value="25.0">
                       <conditions>
                         <condition field="selections" scope="52f0-db2f-f014-ee2a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d55e-5a88-2beb-151d" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="0055-8d7d-aa6b-33c4" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c52e-bd14-d6c6-d834" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -11296,6 +11397,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="ab37-b08b-bcaf-197f" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="5627-d8b2-f3bf-2836" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="0b5e-0e06-0050-5850" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
+                    <entryLink id="d020-66e4-c47b-0a33" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="cceb-b4ab-7ab2-0577" name="Chaos Mutations and Powers of Slaanesh" hidden="false" collective="false" import="true" targetId="a69a-9248-4270-ebf3" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -11309,26 +11412,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   <infoLinks>
                     <infoLink id="aafa-2519-2e10-fbf5" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c52e-bd14-d6c6-d834" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="2d05-fcb3-1cc5-cb4b" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-1458-6977-72fc" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a627-5a91-c0b9-df46" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2d05-fcb3-1cc5-cb4b" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="8775-b0e3-f387-0457" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="bb5e-332e-eac5-4b7d" name="Chaos Mutations and Powers of Slaanesh" hidden="false" collective="false" import="true" targetId="a69a-9248-4270-ebf3" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -11548,7 +11631,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                           <modifiers>
                             <modifier type="set" field="4cfa-2be5-0a64-50ba" value="0">
                               <conditions>
-                                <condition field="selections" scope="52f0-db2f-f014-ee2a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-1458-6977-72fc" type="atLeast"/>
+                                <condition field="points" scope="52f0-db2f-f014-ee2a" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-1458-6977-72fc" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -11600,17 +11683,12 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="55f0-688b-3493-4fac" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="55f0-688b-3493-4fac" name="Chaos Mutations, Powers &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="f373-964c-9d72-8c61" value="0">
+                    <modifier type="set" field="d82a-d183-d0d3-7afa" value="25.0">
                       <conditions>
                         <condition field="selections" scope="42e3-fbcd-978a-072a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50eb-828c-4347-1701" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="d82a-d183-d0d3-7afa" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5fe-91d2-78fc-40be" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -11622,6 +11700,8 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                     <entryLink id="a14b-0908-8802-3e27" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3ad5-5ae2-4d46-6e6b" type="selectionEntryGroup"/>
                     <entryLink id="a643-7f29-1fe2-b49a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="ebe4-f41c-c534-8066" type="selectionEntryGroup"/>
                     <entryLink id="c701-11b1-c7fd-3ec2" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d14e-6757-808a-26a0" type="selectionEntryGroup"/>
+                    <entryLink id="a8b5-4153-ddcd-2d6d" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
+                    <entryLink id="0540-4515-c7c4-f5d4" name="Chaos Mutations and Powers of Tzeentch" hidden="false" collective="false" import="true" targetId="47f7-837a-67cb-628d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -11635,26 +11715,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                   <infoLinks>
                     <infoLink id="945c-eadb-567a-8e1a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c5fe-91d2-78fc-40be" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="9520-b50a-3d9b-29b8" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55f0-688b-3493-4fac" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6adf-b51c-7aa0-43e9" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9520-b50a-3d9b-29b8" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="e810-de08-306d-fe97" name="Chaos Mutations and Powers" hidden="false" collective="false" import="true" targetId="5da7-0b88-aeb9-8d0f" type="selectionEntryGroup"/>
-                    <entryLink id="6f82-7087-5d09-1e79" name="Chaos Mutations and Powers of Tzeentch" hidden="false" collective="false" import="true" targetId="47f7-837a-67cb-628d" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -11874,7 +11934,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                           <modifiers>
                             <modifier type="set" field="2fe3-d430-fdc1-f6e5" value="0">
                               <conditions>
-                                <condition field="selections" scope="42e3-fbcd-978a-072a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55f0-688b-3493-4fac" type="atLeast"/>
+                                <condition field="points" scope="42e3-fbcd-978a-072a" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55f0-688b-3493-4fac" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -12983,17 +13043,6 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="53a5-9a00-dc0f-2494" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be00-cada-e70a-c696" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="17bf-cb11-e61f-9064" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="c383-4157-9fb1-5a74" name="Mark of Chaos" hidden="false" collective="false" import="true">
@@ -13757,17 +13806,6 @@ Forsaken of Nurgle have Fear.</description>
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a2b6-d660-dc3a-143a" name="Flail" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd58-0010-eabd-fc70" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3d4e-446a-0f11-d89c" name="Flail" hidden="false" targetId="7f6a-b8b2-8978-4f35" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="cb5e-a9f4-8bcc-a381" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afe7-e26c-e97c-ab55" type="max"/>
@@ -14124,7 +14162,7 @@ Forsaken of Nurgle have Fear.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="125.0"/>
+        <cost name="pts" typeId="points" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="af2b-15f6-33d2-cf58" name="Chaos Knights" hidden="false" collective="false" import="true" type="unit">
@@ -14710,17 +14748,6 @@ Forsaken of Nurgle have Fear.</description>
               </constraints>
               <infoLinks>
                 <infoLink id="9943-4d4b-0e5e-e91c" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e13e-ab46-4b31-ad42" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eec4-3ba6-2bc6-67e5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="69c1-55f6-7ec8-a461" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -16599,17 +16626,6 @@ The unit&apos;s models gain Poisoned Attacks.</description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5f92-bfa1-0ff0-d580" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e03c-7199-bdfe-d800" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1022-36ba-2c5a-54d0" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="97fe-8793-d220-b052" name="Wrath-flails" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac58-4307-ef34-6f20" type="max"/>
@@ -16903,15 +16919,30 @@ The unit&apos;s models gain Poisoned Attacks.</description>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
               </characteristics>
             </profile>
+            <profile id="a03d-a037-5c5c-ba97" name="Fatemaster" publicationId="1a01-044f-047b-618f" page="185" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af"/>
+              </characteristics>
+            </profile>
           </profiles>
           <rules>
             <rule id="6aca-b288-3c8d-6e87" name="Master of Fate" publicationId="1a01-044f-047b-618f" page="185" hidden="false">
               <description>Fatemasters, and any friendly units within 8&quot; of them, may re-roll 1&apos;s when taking armour saves.</description>
             </rule>
+            <rule id="bd7e-8ee7-1e51-853a" name="Coven of Tzeentch" publicationId="1a01-044f-047b-618f" page="185" hidden="false">
+              <description>A unit of Fatemasters is considered to be a Level 2 Wizard that knows the spells Blue Fire of Tzeentch and Pink Fire of Tzeentch from the Lore of Tzeentch. This doesn’t prevent other friendly Wizards from knowing the same spells. Each time the unit casts a spell (or is targeted by a rule that affects a Wizard), you must nominate one Fatemaster or Doomsayer as the caster for the purposes of line of sight, range, etc. In the event of a Fatemasters unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.</description>
+            </rule>
           </rules>
           <infoLinks>
             <infoLink id="ab35-6ca2-e908-2dfe" name="Will of Chaos" hidden="false" targetId="d658-f5e9-8cbf-0cbb" type="rule"/>
             <infoLink id="2116-a30d-fd8b-3872" name="Mark of Tzeentch" hidden="false" targetId="Mark of Tzeentch" type="rule"/>
+            <infoLink id="aab9-7ac5-b68a-49fb" name="Blue Fire of Tzeentch" hidden="false" targetId="884b-d4e2-a581-531b" type="profile"/>
+            <infoLink id="2a70-4d1f-9ab7-dff1" name="Boon of Magic" hidden="false" targetId="6882-88e4-9cfc-032b" type="profile"/>
+            <infoLink id="4f82-0b92-6848-5071" name="Pink Fire of Tzeentch" hidden="false" targetId="75f5-0942-b785-d105" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="1b47-95b5-80a9-f90d" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -16962,36 +16993,6 @@ The unit&apos;s models gain Poisoned Attacks.</description>
               </constraints>
               <infoLinks>
                 <infoLink id="d262-366f-3cbb-6c4e" name="Fireglaive" hidden="false" targetId="701f-91fa-b77d-e366" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f2bb-5095-b3c6-d608" name="Coven of Tzeentch" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2482-ec57-975b-a98e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36df-8761-33a0-7b3d" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="3d9a-53a0-6441-ee26" name="Fatemaster" publicationId="1a01-044f-047b-618f" page="185" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-                  <characteristics>
-                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
-                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
-                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
-                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">1</characteristic>
-                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="a6b4-1db4-65cb-a2a7" name="Coven of Tzeentch" publicationId="1a01-044f-047b-618f" page="185" hidden="false">
-                  <description>A unit of Fatemasters is considered to be a Level 2 Wizard that knows the spells Blue Fire of Tzeentch and Pink Fire of Tzeentch from the Lore of Tzeentch. This doesn’t prevent other friendly Wizards from knowing the same spells. Each time the unit casts a spell (or is targeted by a rule that affects a Wizard), you must nominate one Fatemaster or Doomsayer as the caster for the purposes of line of sight, range, etc. In the event of a Fatemasters unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="3a8f-d71b-cf11-107e" name="Blue Fire of Tzeentch" hidden="false" targetId="884b-d4e2-a581-531b" type="profile"/>
-                <infoLink id="2c01-60f7-bb09-d73a" name="Pink Fire of Tzeentch" hidden="false" targetId="75f5-0942-b785-d105" type="profile"/>
-                <infoLink id="0329-a966-9ecc-161a" name="Boon of Magic" hidden="false" targetId="6882-88e4-9cfc-032b" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -17908,7 +17909,7 @@ A Beast of Nurgle has Poisoned Attacks.</description>
         </profile>
         <profile id="4583-d6d4-f75a-6526" name="03" publicationId="1a01-044f-047b-618f" page="206" hidden="false" typeId="d4e5-d78c-f68e-764a" typeName="Man-sized Things Chart">
           <characteristics>
-            <characteristic name="Result" typeId="1278-d721-5ae6-ecfb">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things Chart until you get another result. The Giant grabs the model and the player rolls a D6 to see what happens next.</characteristic>
+            <characteristic name="Result" typeId="1278-d721-5ae6-ecfb">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). The Giant grabs the model and the player rolls a D6 to see what happens next.</characteristic>
           </characteristics>
         </profile>
         <profile id="572e-579a-9e4d-cdbd" name="02" publicationId="1a01-044f-047b-618f" page="206" hidden="false" typeId="d4e5-d78c-f68e-764a" typeName="Man-sized Things Chart">
@@ -17968,7 +17969,7 @@ A Giant that falls over automatically suffers 1 wound. If the Giant is in combat
 Once on the ground a Giant may get up in his following Movement phase, but may not move that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain. If the Giant gets the opportunity to pursue his foes whilst he&apos;s on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up.</description>
         </rule>
         <rule id="d2f9-4eb6-8953-6c80" name="Giant Special Attacks" publicationId="1a01-044f-047b-618f" page="205" hidden="false">
-          <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the respective tables. Which table you use depends on the size of the Giant&apos;s victim. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with Large Target.</description>
+          <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the respective tables. Which table you use depends on the size of the Giant&apos;s victim. If no suitable target is in base contact, roll again on the chart until you get another result. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -18464,7 +18465,7 @@ Unlike other random movement, an Unbound Slaughterbrute can move into base conta
         </profile>
         <profile id="fff4-3e3d-2fa2-6d0b" name="03-04" publicationId="1a01-044f-047b-618f" page="208" hidden="false" typeId="d4e5-d78c-f68e-764a" typeName="Man-sized Things Chart">
           <characteristics>
-            <characteristic name="Result" typeId="1278-d721-5ae6-ecfb">Stomp: The Mammoth makes three Stomp attacks this turn.</characteristic>
+            <characteristic name="Result" typeId="1278-d721-5ae6-ecfb">Stomp: The Mammoth inflicts 3D6 Hits with its Stomp Attack this turn.</characteristic>
           </characteristics>
         </profile>
         <profile id="f034-b62a-c4ee-9806" name="05" publicationId="1a01-044f-047b-618f" page="208" hidden="false" typeId="d4e5-d78c-f68e-764a" typeName="Man-sized Things Chart">
@@ -18474,7 +18475,7 @@ Unlike other random movement, an Unbound Slaughterbrute can move into base conta
         </profile>
         <profile id="b091-ca9f-704f-1a32" name="06" publicationId="1a01-044f-047b-618f" page="208" hidden="false" typeId="d4e5-d78c-f68e-764a" typeName="Man-sized Things Chart">
           <characteristics>
-            <characteristic name="Result" typeId="1278-d721-5ae6-ecfb">Pick up and...: The Mammoth uses its agile trunk to grab a helpless enemy Character from the target unit (Mammoth player&apos;s choice). If no character is present in base contact, roll again on the Man-sized Things Chart until you get another result. Roll a D6 to see what unfortunate fate befalls the victim.</characteristic>
+            <characteristic name="Result" typeId="1278-d721-5ae6-ecfb">Pick up and...: The Mammoth uses its agile trunk to grab a helpless enemy Character from the target unit (Mammoth player&apos;s choice). Roll a D6 to see what unfortunate fate befalls the victim.</characteristic>
           </characteristics>
         </profile>
         <profile id="8082-e5ad-ae50-fce1" name="01-02" publicationId="1a01-044f-047b-618f" page="206" hidden="false" typeId="f623-df2a-8978-a571" typeName="Pick Up and... Chart">
@@ -18500,7 +18501,7 @@ Unlike other random movement, an Unbound Slaughterbrute can move into base conta
       </profiles>
       <rules>
         <rule id="896b-0fc0-e8d3-b492" name="Mammoth Attacks" publicationId="1a01-044f-047b-618f" page="208" hidden="false">
-          <description>When the Ice Mammoth attacks, roll on the appropriate table to determine its action. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with Large Target.</description>
+          <description>When the Ice Mammoth attacks, roll on the appropriate table to determine its action. If no suitable target is in base contact, roll again on the chart until you get another result. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -19493,7 +19494,7 @@ deployed within 3&quot; of Sayl, but may otherwise move like an independent unit
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Daemon-axe given Hrothgar +D3 to his S and +D3 A, to a maximum of 10 (roll separately for these values at the start of each round). However, every To Hit roll of a 1 made by this character in close combat is resolved against himself; the character can never re-roll a To Hit roll of a 1.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Daemon-axe gives Hrothgar +D3 to his S and +D3 A, to a maximum of 10 (roll separately for these values at the start of each round). However, every To Hit roll of a 1 made by this character in close combat is resolved against himself; the character can never re-roll a To Hit roll of a 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19709,9 +19710,9 @@ deployed within 3&quot; of Sayl, but may otherwise move like an independent unit
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2"/>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459"/>
               </characteristics>
@@ -23354,7 +23355,7 @@ failed charge rolls.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e80b-895e-78f2-a566" name="Burning Body" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -23370,7 +23371,7 @@ failed charge rolls.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0f9d-6e1f-cd2a-89c1" name="Diabolic Splendour" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -23398,7 +23399,7 @@ failed charge rolls.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="572e-54f3-0bed-b8e5" name="Acid Ichor" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -23526,7 +23527,7 @@ failed charge rolls.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1109-20c1-2441-24bf" name="Tentacle" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -23553,12 +23554,12 @@ failed charge rolls.</characteristic>
           <profiles>
             <profile id="0624-b5c9-2391-4cfc" name="Chaos Familiar" publicationId="1a01-044f-047b-618f" page="242" hidden="false" typeId="49dc-2fd8-b942-dbc2" typeName="Chaos Mutations and Powers">
               <characteristics>
-                <characteristic name="Special Rules" typeId="7ab4-c2c7-7e2c-9cb0">Wizard only. The character adds +1 to all of his channelling attempts and knows one extra spell than normal for his level.</characteristic>
+                <characteristic name="Special Rules" typeId="7ab4-c2c7-7e2c-9cb0">Wizard only. The character knows one extra spell than normal for his level.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -23883,51 +23884,51 @@ Note that the Chaos Champion itself must cause the last unsaved Wound on a model
       <description>Units with this rule always re-roll failed Panic tests.</description>
     </rule>
     <rule id="a6d9-b8e9-21b2-96ff" name="Daemonic" publicationId="1a01-044f-047b-618f" page="162" hidden="false">
-      <description>Models with this rule have Fear and Magical Attacks. In addition, models that are not mounts also have Immunity (Poisoned Attacks), Ward save (5+) and Unstable.</description>
+      <description>Models with this rule have Fear and Magical Attacks. In addition, models that are not mounts also have Immunity (Poisoned Attacks), Ward save (5+) (except mounts) and Unstable.</description>
     </rule>
     <rule id="Mark of Khorne" name="Mark of Khorne" publicationId="1a01-044f-047b-618f" page="163" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 Models with the Mark of Khorne have Frenzy.</description>
     </rule>
     <rule id="Mark of Slaanesh" name="Mark of Slaanesh" publicationId="1a01-044f-047b-618f" page="163" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 Models with the Mark of Slaanesh have Immunity (Psychology) and Stubborn.</description>
     </rule>
     <rule id="Mark of Tzeentch" name="Mark of Tzeentch" publicationId="1a01-044f-047b-618f" page="163" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 Models with the Mark of Tzeentch have Magic Resistance (1) and Ward save (6+).</description>
     </rule>
     <rule id="Mark of Nurgle" name="Mark of Nurgle" publicationId="1a01-044f-047b-618f" page="163" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
-Models with the Mark of Nurgle add +1 to their T and suffer -2 to their I.</description>
+Models with the Mark of Nurgle add +1 to their T and suffer -2 to their I (to a minimum of 1).</description>
     </rule>
     <rule id="2ad0-3e18-aba8-5e68" name="Daemon of Slaanesh" publicationId="1a01-044f-047b-618f" page="171" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Daemon of Slaanesh has Hatred (Daemons of Khorne) and Armour Piercing (1).
 
 For the purpose of Marks of Chaos, treat &quot;Daemon of&quot; the same as &quot;Mark of&quot; at all times.</description>
     </rule>
     <rule id="a356-05c9-d963-c1bb" name="Daemon of Khorne" publicationId="1a01-044f-047b-618f" page="171" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Daemon of Khorne has Hatred (Daemons of Slaanesh) and Magic Resistance (1). They get Strength Bonus (1) in turns they make a successful charge (except mounts).
 
 For the purpose of Marks of Chaos, treat &quot;Daemon of&quot; the same as &quot;Mark of&quot; at all times.</description>
     </rule>
     <rule id="0b9b-1baf-5bcd-1ec3" name="Daemon of Nurgle" publicationId="1a01-044f-047b-618f" page="171" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Daemon of Nurgle has Hatred (Daemons of Tzeentch), and enemy models in base contact suffer -1 to their WS.
 
 For the purpose of Marks of Chaos, treat &quot;Daemon of&quot; the same as &quot;Mark of&quot; at all times.</description>
     </rule>
     <rule id="fe9a-f478-5bcc-57a8" name="Daemon of Tzeentch" publicationId="1a01-044f-047b-618f" page="171" hidden="false">
-      <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Daemon of Tzeentch has Hatred (Daemons of Nurgle) and Ward save (6+). Wizards with the Daemon of Tzeentch upgrade can also re-roll channelling results of 1.
 
@@ -23969,7 +23970,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
       <description>Chaos Marauders and Marauder Horsemen have the option to be upgraded to Elite Marauders. You may upgrade one unit to Elite Marauders for each unit of Marauders of the same type and unit size (or larger) in your army.</description>
     </rule>
     <rule id="e1e2-dab8-a2fa-35b6" name="Nurgle&apos;s Favoured Son" publicationId="f46b-8c4e-ed82-05f7" page="21" hidden="false">
-      <description>Friendly models with the Mark of Khorne within 12&quot; of Vorgaroth may roll 3D6 for their Break tests and discard the lowest result. However, if the Break test is still failed, the unit is automatically removed as a casualty.</description>
+      <description>If Tamurkhan is taken as part of an army, he must always be its General.</description>
     </rule>
     <rule id="47bb-2464-b7a2-8889" name="Feast of the Maggot Lord" publicationId="f46b-8c4e-ed82-05f7" page="21" hidden="false">
       <description>If Tamurkhan is slain in close combat, a special possession attack is made against the model that delivered the final wound to Tamurkhan. If Tamurkhan&apos;s death occurs as a result of shooting or other means, the attack will be made against the nearest eligible model (friend or enemy) within 6&quot;. If multiple models fall into this category, Tamurkhan&apos;s player chooses which to attack.
@@ -24063,7 +24064,7 @@ that do not roll To Hit.</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 5+)</characteristic>
       </characteristics>
     </profile>
     <profile id="0b1e-3b66-a4c5-f3cf" name="Gorebeast" publicationId="1a01-044f-047b-618f" page="178" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

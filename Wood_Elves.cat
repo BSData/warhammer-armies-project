@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
@@ -40,7 +40,7 @@
       </constraints>
       <rules>
         <rule id="ff03-e0dd-5a60-92a4" name="Ambush from the Worldroots" publicationId="e967-620f-06be-096a" page="106" hidden="false">
-          <description>A Wood Elf army can always place an additional forest no more than 12&quot; in diameter on the battlefield. This is done during deployment, before any units are deployed, and must be placed wholly in your half of the battlefield. This forest is not mysterious terrain – declare its type when you place it. If you cannot fit the forest on your half of the table, move other terrain features by the shortest distance necessary so that the forest can be placed. If you still cannot place the forest, or if the scenario means that the Wood Elf army does not have a table half in which to deploy, this additional forest is not used in this battle.</description>
+          <description>A Wood Elf army can always place an additional forest no more than 12&quot; in diameter on the battlefield. This is done during deployment, before any units are deployed, and must be placed wholly in your half of the battlefield. Declare which type of forest it is when you place it. If you cannot fit the forest on your half of the table, move other terrain features by the shortest distance necessary so that the forest can be placed. If you still cannot place the forest, or if the scenario means that the Wood Elf army does not have a table half in which to deploy, this additional forest is not used in this battle.</description>
         </rule>
       </rules>
       <costs>
@@ -123,7 +123,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. Armour Piercing (1). Multiple Wounds (D3). The Spear of Kurnous can be used to make shooting attacks using the same rules as a bolt thrower. This attack can be made if Orion moves (but not if he marches).</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. The Spear of Kurnous gives Orion Strength Bonus (1). Armour Piercing (1). Multiple Wounds (D3). The Spear of Kurnous can be used to make shooting attacks using the same rules as a bolt thrower. This attack can be made if Orion moves (but not if he marches).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -139,7 +139,7 @@
           <profiles>
             <profile id="77fe-cec8-a9f4-e91e" name="Cloak of Isha" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Cloak of Isha grants Orion Ward save (5+) and Magic Resistance (5+). At the start of each of your turns, roll a D6. On a score of 6, Orion regains a Wound lost earlier in the battle.</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Cloak of Isha grants Orion Ward save (6+) and Magic Resistance (2). At the start of each of your turns, roll a D6. On a score of 6, Orion regains a Wound lost earlier in the battle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -233,13 +233,13 @@
       </profiles>
       <rules>
         <rule id="f774-5230-2d30-10a8" name="Screech" publicationId="e967-620f-06be-096a" page="145" hidden="false">
-          <description>Ariel&apos;s Attack automatically Hits all enemy models in base contact. It Ignores Armour.</description>
+          <description>Ariel may use Screech when it would normally be her time to attack in close combat. This is a special attack that automatically Hits all enemy models in base contact with Ignores Armour.</description>
         </rule>
         <rule id="e951-8907-c0f4-a0e9" name="Earthbind" publicationId="e967-620f-06be-096a" page="145" hidden="false">
           <description>Any units declaring a charge on Ariel count as moving through Dangerous Terrain for the duration of the turn. In addition, if Ariel flees from combat, any enemies attempting to pursue her roll an extra D6 when determining their pursuit distance and discard the highest result.</description>
         </rule>
         <rule id="b36b-67ea-e556-7ba4" name="Aura of the Fey Queen" publicationId="e967-620f-06be-096a" page="145" hidden="false">
-          <description>Ariel has a Ward save (4+). In addition, all friendly units within 6&quot; of Ariel have Immunity (Panic).</description>
+          <description>Ariel has Magic Resistance (3). In addition, all friendly units within 6&quot; of Ariel have Immunity (Panic).</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1361,13 +1361,13 @@
         <profile id="cd04-bfb7-4594-3bcc" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Character)</characteristic>
           </characteristics>
@@ -1479,6 +1479,37 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="a966-4e7d-d583-a799" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b581-e4ac-a2d4-41ac" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="14e9-58c4-1dc8-7503" name="Treeman Ancient" publicationId="e967-620f-06be-096a" page="134" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                  <characteristics>
+                    <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
+                    <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
+                    <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
+                    <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                    <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="63dc-333a-23ca-f972" name="Lore of Magic" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c621-83c5-bcd7-63ca" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea8b-38d9-4c66-d259" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="04b2-5e1e-93d8-8bbb" name="Lore of Athel Loren 3" hidden="false" collective="false" import="true" targetId="f125-03a5-c126-8126" type="selectionEntry"/>
+                    <entryLink id="35d5-5582-6f17-ba7e" name="Lore of Life 3" hidden="false" collective="false" import="true" targetId="e63f-74ec-43e2-29eb" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1486,7 +1517,7 @@
         <entryLink id="9ecf-1619-6a98-6174" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="270.0"/>
+        <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f5ba-3655-faf6-356d" name="Drycha" hidden="false" collective="false" import="true" type="model">
@@ -2373,7 +2404,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         </selectionEntry>
         <selectionEntry id="db4b-d50e-4cb1-8a68" name="Spites of Athel Loren &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="723e-73ea-4aea-5ec9" value="0">
+            <modifier type="set" field="b540-1223-b932-5f73" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="270b-b5b4-33b9-a76c" type="atLeast"/>
               </conditions>
@@ -2761,7 +2792,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                   <modifiers>
                     <modifier type="set" field="b187-8a45-b62d-b9a5" value="0">
                       <conditions>
-                        <condition field="selections" scope="1300-1804-f235-cbc7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db4b-d50e-4cb1-8a68" type="atLeast"/>
+                        <condition field="points" scope="1300-1804-f235-cbc7" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db4b-d50e-4cb1-8a68" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -3350,7 +3381,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <entryLink id="a8c9-54fe-f655-84bf" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="90.0"/>
+        <cost name="pts" typeId="points" value="95.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ce7d-1004-1aa0-1a23" name="Glade Guards" hidden="false" collective="false" import="true" type="unit">
@@ -3781,46 +3812,30 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="adfa-afea-586a-007f" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e236-93ec-e900-e872">
+            <selectionEntry id="7837-9a2e-8f56-7f10" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce29-792e-e77a-ab6b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="250a-2bb4-d6c2-2ed8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2db3-16cf-5e6e-9168" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="e236-93ec-e900-e872" name="Saearath" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd53-1c64-dee9-f099" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="f441-e981-6526-883b" name="Saearath" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
-                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">+1 A. Fight in Extra Ranks (1) (Only if the unit didn&apos;t charge). Strength Bonus (1), +1 I (Both, only if the unit got charged to its front by WB, Ca, MI, MB, MC, Ch and Mo). Requires Two Hands.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b543-51c4-4b2a-648f" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5aac-6711-5aa4-3de1" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="d541-8d81-5d44-7a88" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-                    <infoLink id="8f90-5eab-8c7b-4b7b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="4a0e-2b52-4f57-f8a0" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ecd8-34e5-5c62-e4fc" name="Saearath" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9601-84c0-a790-5511" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0cf-98aa-14a0-5362" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5811-8cae-6dde-a593" name="Saearath" hidden="false" targetId="f20e-e107-8fe4-6834" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="11.0"/>
           </costs>
@@ -3947,7 +3962,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4400,20 +4415,40 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="2b30-6259-ff8d-97e5" name="The Shadows Coil" hidden="false" targetId="f369-0e1b-2d36-664d" type="profile"/>
             <infoLink id="1990-8617-fe96-6500" name="Whirling Death" hidden="false" targetId="2c85-7f7b-5e9a-6aee" type="profile"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="86f4-bf68-74f9-c9fb" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="74c8-9b70-eac5-dc25" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed41-82bd-4af6-e159">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d253-3660-0759-1fe1" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e95-6d8a-6245-f0ac" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b43a-a034-f984-ce09" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33b6-1407-01a6-95e4" type="min"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="88ab-62c3-33b6-33a1" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="ed41-82bd-4af6-e159" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b82-b451-5287-9c69" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="986b-f1bd-9911-6500" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6178-2b2f-dcc3-95b4" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2182-48b6-51bc-f0c3" name="Saearath" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f94-f2d1-5da5-972e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0838-c1d6-ad5b-d85e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ff4c-f79c-e7e0-61ed" name="Saearath" hidden="false" targetId="f20e-e107-8fe4-6834" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
@@ -4758,7 +4793,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="e73d-d93e-7a6d-51bf" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="48.0"/>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4836,7 +4871,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="63dd-e8c3-90c5-8712" name="Form of the Wolf" hidden="false" targetId="5861-da88-9f8d-ccd8" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="14.0"/>
+            <cost name="pts" typeId="points" value="16.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4944,6 +4979,17 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="10b5-2773-7868-394f" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e35-ad00-1b05-c861" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="eab9-9106-3389-851b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5120,7 +5166,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5219,7 +5265,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="cc35-373a-7027-5f3a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5747,7 +5793,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="46.0"/>
+            <cost name="pts" typeId="points" value="48.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5884,7 +5930,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="210.0"/>
+        <cost name="pts" typeId="points" value="215.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2494-2d05-e880-0eaf" name="Forest Dragon" hidden="false" collective="false" import="true" type="model">
@@ -5905,7 +5951,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <categoryLink id="40d2-852b-0929-c336" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="320.0"/>
+        <cost name="pts" typeId="points" value="325.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="faae-60b6-a44b-20b0" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
@@ -6146,18 +6192,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ec6b-8483-238c-d6b7" name="Spites of Athel Loren" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be0e-ac95-1344-d7b0" type="max"/>
-            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c62f-1a70-8615-0da3" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c4ba-e1c0-af19-0207" name="Spites of Athel Loren (Forest Spirits)" hidden="false" collective="false" import="true" targetId="Spites of Athel Loren (Forest Spirits)" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="f352-8a24-ff59-b710" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82b8-4eed-7a40-be5f" type="max"/>
@@ -6170,12 +6204,28 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d20e-898e-e4a8-349d" name="Spites of Athel Loren &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f11-7c5a-a43e-9183" type="max"/>
+            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3bef-a315-2670-03e9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="822c-70a4-1cba-4dfb" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="60fb-5e1c-afce-aef0" type="selectionEntryGroup"/>
+            <entryLink id="98ea-064f-2378-e979" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e8f7-f0f9-753e-27ea" type="selectionEntryGroup"/>
+            <entryLink id="660e-d7ad-5dcb-6bfd" name="Talismans" hidden="false" collective="false" import="true" targetId="553a-df9e-2a80-dff3" type="selectionEntryGroup"/>
+            <entryLink id="95a3-d832-8108-b883" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="2db3-76e7-6e67-3886" type="selectionEntryGroup"/>
+            <entryLink id="65ab-e1eb-a458-0f60" name="Spites of Athel Loren (Forest Spirits)" hidden="false" collective="false" import="true" targetId="Spites of Athel Loren (Forest Spirits)" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="a55e-a97a-7aab-42ef" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="115.0"/>
+        <cost name="pts" typeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9267-d197-0f06-0343" name="Sceolan" hidden="false" collective="false" import="true" type="model">
@@ -7953,13 +8003,13 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="455a-b0e3-ceea-f0a6" name="Elven Grace" publicationId="e967-620f-06be-096a" page="106" hidden="false">
-      <description>Models with this special rule have Dodge (6+) in close combat. However, this cannot be used against enemies attacking with a higher I value than the defending model.</description>
+      <description>Models with this rule have Dodge (6+) in close combat. However, this cannot be used against enemies that attack before the model with Elven Grace.</description>
     </rule>
     <rule id="cc70-29e9-de9a-4802" name="Blessings of the Ancients" publicationId="e967-620f-06be-096a" page="106" hidden="false">
       <description>Any model that has this rule, and is within 6&quot; of a forest, adds +1 to all attempts to cast and dispel spells.</description>
     </rule>
     <rule id="d033-aa65-9f72-75d8" name="Forest Spirit" publicationId="e967-620f-06be-096a" page="106" hidden="false">
-      <description>A model with this rule has Fear, Strider (Forest), Magical Attacks, Immunity (Psychology) and Ward save (6+). In addition, units of Forest Spirits may only be joined by characters that are also Forest Spirits.</description>
+      <description>A model with this rule has Fear, Forest Strider, Magical Attacks, Immunity (Psychology). In addition, they have a Ward save (5+) which becomes a Ward save (6+) against Magical Attacks. However, units of Forest Spirits may only be joined by characters that are also Forest Spirits.</description>
     </rule>
     <rule id="1022-f68d-8b72-1dc0" name="Asrai Archery" publicationId="e967-620f-06be-096a" page="106" hidden="false">
       <description>Models with this rule do not suffer the normal -1 To Hit penalty for moving and shooting.</description>
@@ -8059,7 +8109,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (D6+1).</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (D6+1). Quick to Fire.</characteristic>
       </characteristics>
     </profile>
     <profile id="5114-24cc-3c58-89ec" name="Elven Steed" publicationId="e967-620f-06be-096a" page="137" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -8297,7 +8347,7 @@ At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for 
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Whenever a spell from the Lore of Athel Loren is cast on a friendly unit, that unit immediately recovers one Wound worth of models.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Whenever a spell from the Lore of Athel Loren is cast on a friendly unit, that unit immediately recovers 1 Wound (rounding up to 2) worth of models, as described for the Regrowth spell in the Lore of Life.</characteristic>
       </characteristics>
     </profile>
     <profile id="c595-b3d1-9289-0c00" name="Tree Singing" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8315,27 +8365,27 @@ If there is at least one unit (friendly or enemy) within the forest, then the fo
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/22+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next Magic phase, the unit gains +1 A (does not affect steeds or ridden monsters). If the unit is not engaged in combat, it immediately moves forward towards the closest enemy unit using Random Movement (2D6). Boosted version, affects all friendly units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/14+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next Magic phase, the unit gains +1 A (does not affect steeds or ridden monsters). If the unit is not engaged in combat, it immediately moves forward towards the closest enemy unit using Random Movement (2D6).</characteristic>
       </characteristics>
     </profile>
     <profile id="f934-0922-fc28-afb3" name="The Twilight Host" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/12+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the caster&apos;s next Magic phase, the unit causes Fear. If the unit would already cause fear, it instead causes Terror. In addition, the unit will counts as having twice the Unit Strength it really has for the purpose of determining Steadfast and Outnumber. Boosted version, affects all friendly units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/9+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the caster&apos;s next Magic phase, the unit causes Fear. If the unit would already cause fear, it instead causes Terror. In addition, the unit will counts as having twice the Unit Strength it really has for the purpose of determining Steadfast and Outnumber.</characteristic>
       </characteristics>
     </profile>
     <profile id="a6f5-02ff-f9e9-da5e" name="The Hidden Path" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/14+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit gains Ethereal until the start of the caster&apos;s next Magic phase. If the unit becomes engaged in close combat, the spell instantly ends. Boosted version, affects all friendly units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/10+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit gains Ethereal until the start of the caster&apos;s next Magic phase. If the unit becomes engaged in close combat, the spell instantly ends.</characteristic>
       </characteristics>
     </profile>
     <profile id="b925-4e51-5f84-905c" name="Madrigal of Greening" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8344,25 +8394,32 @@ If there is at least one unit (friendly or enemy) within the forest, then the fo
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place a mysterious forest no more than 12&quot; in diameter within the spell’s maximum range. Any models under this forest are placed within them (in exactly the same formation and facing).</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place a forest no more than 12&quot; in diameter within the spell’s maximum range. Any models under this forest are placed within them (in exactly the same formation and facing).</characteristic>
       </characteristics>
     </profile>
     <profile id="25ed-bc3f-d6c6-84ff" name="Fury of the Forest" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/12+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If successfully cast, the spell causes D6 S 4 hits. If the target is within 6&quot; of a wood, then this is increased to 2D6 S 4 hits. Boosted version affects all enemies within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/8+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">16&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If successfully cast, the spell causes D6 S 4 hits. If the target is within 6&quot; of a wood, then this is increased to 2D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="6fb1-e432-3b13-dda8" name="Ariel&apos;s Blessing" publicationId="e967-620f-06be-096a" page="163" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/20+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit gains Regeneration (4+) until the start of the player&apos;s next Magic phase. Boosted version, affects all friendly units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The unit gains Regeneration (4+) until the start of the player&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f20e-e107-8fe4-6834" name="Saearath" publicationId="e967-620f-06be-096a" page="115" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">A Saearath can either be used as a normal spear or a spear-stave. A spear-stave follows the normal rules for spears, but Requires Two Hands and adds +1 A. You may choose which fighting style you want to use at the start of each round of close combat.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

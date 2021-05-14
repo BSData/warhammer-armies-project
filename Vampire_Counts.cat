@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="21e6-6317-460c-b75f" name="Vampiric Power">
@@ -1234,7 +1234,7 @@
       </profiles>
       <rules>
         <rule id="8042-2293-e5bc-b697" name="Grand Master of the Blood Knights" publicationId="10a5-5781-61f5-86ae" page="226" hidden="false">
-          <description>If Walach is included in your army, you may take units of Blood Knights as Special Units rather than Rare Units.</description>
+          <description>If Walach is included in your, army units of Blood Knights are taken as Special Units instead of Rare Units.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1329,7 +1329,7 @@ The last two effects last until the start of the next Vampire Counts&apos; turn.
           <profiles>
             <profile id="dab0-da93-0acd-de61" name="Blood Dragon Standard" publicationId="10a5-5781-61f5-86ae" page="227" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">This is the army&apos;s Battle Standard. All Blood Dragon Vampires and Blood Knights within 12&quot; gain Hatred.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">This is the army&apos;s Battle Standard, though Walach may still be the Army General. All Blood Dragon Vampires and Blood Knights within 12&quot; gain Hatred.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4510,17 +4510,12 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <infoLink id="b25a-ba33-8eaf-6bf1" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="bff7-2336-ce57-e23c" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="bff7-2336-ce57-e23c" name="Magic Items &amp; Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="ef05-b69c-9d06-ebec" value="0">
+                    <modifier type="set" field="2c3f-c55d-b7bb-cf0b" value="25.0">
                       <conditions>
                         <condition field="selections" scope="fd3a-b2c7-4edc-e11d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dff9-f711-8473-e529" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="2c3f-c55d-b7bb-cf0b" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c277-77e8-93e4-43c3" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -4533,25 +4528,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <entryLink id="1694-f199-3521-b56b" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="65a4-2cd8-a0c9-8a92" type="selectionEntryGroup"/>
                     <entryLink id="6d3b-c018-e20c-a249" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="60d4-ceaa-5198-1353" type="selectionEntryGroup"/>
                     <entryLink id="81b1-8b2f-0d9c-cc06" name="Talismans" hidden="false" collective="false" import="true" targetId="4215-2a8d-e599-7c88" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c277-77e8-93e4-43c3" name="Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="c8b7-162f-cafb-595c" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bff7-2336-ce57-e23c" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84ef-b2cf-84be-fdc4" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c8b7-162f-cafb-595c" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="417a-6d47-cec6-fc43" name="Vampiric Powers (Von Carstein)" hidden="false" collective="false" import="true" targetId="0b90-f7d8-e073-7f34" type="selectionEntryGroup"/>
+                    <entryLink id="9701-2f8c-4e58-57e7" name="Vampiric Powers (Von Carstein)" hidden="false" collective="false" import="true" targetId="0b90-f7d8-e073-7f34" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4794,6 +4771,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS SV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS LV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS NV" type="atLeast"/>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d58a-0d03-7682-f328" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -4812,7 +4790,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                           <modifiers>
                             <modifier type="set" field="cc48-7383-b6c5-7b5f" value="0">
                               <conditions>
-                                <condition field="selections" scope="fd3a-b2c7-4edc-e11d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bff7-2336-ce57-e23c" type="atLeast"/>
+                                <condition field="points" scope="fd3a-b2c7-4edc-e11d" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bff7-2336-ce57-e23c" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -4868,17 +4846,12 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <infoLink id="cf87-9770-ca8d-b885" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="afc0-8ff9-d603-8222" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="afc0-8ff9-d603-8222" name="Magic Items &amp; Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="f290-871d-db00-0b47" value="0">
+                    <modifier type="set" field="c882-ae0f-b5bf-d050" value="25.0">
                       <conditions>
                         <condition field="selections" scope="3536-95f3-7d16-a9a9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1791-3028-53ff-8d7a" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="c882-ae0f-b5bf-d050" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ffe1-88d7-2e3d-fb53" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -4891,6 +4864,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <entryLink id="6c6c-33ad-8fc1-5fdf" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="60d4-ceaa-5198-1353" type="selectionEntryGroup"/>
                     <entryLink id="2b3a-cc43-036d-9182" name="Talismans" hidden="false" collective="false" import="true" targetId="4215-2a8d-e599-7c88" type="selectionEntryGroup"/>
                     <entryLink id="31f0-d1ca-6dd8-bef5" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (Wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="d292-b662-eb9f-b13c" name="Vampiric Powers (Necrarch)" hidden="false" collective="false" import="true" targetId="035c-7f5e-a334-628d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4904,25 +4878,6 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                   <infoLinks>
                     <infoLink id="a82b-0378-355d-130c" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ffe1-88d7-2e3d-fb53" name="Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="b67e-90a1-d177-5f76" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc0-8ff9-d603-8222" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c5c-c87e-d27b-7d7b" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b67e-90a1-d177-5f76" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d39f-9e5c-4e51-2209" name="Vampiric Powers (Necrarch)" hidden="false" collective="false" import="true" targetId="035c-7f5e-a334-628d" type="selectionEntryGroup"/>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -5114,6 +5069,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS LV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS VCV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS SV" type="atLeast"/>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d58a-0d03-7682-f328" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -5132,7 +5088,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                           <modifiers>
                             <modifier type="set" field="0599-1278-f2cd-bba8" value="0">
                               <conditions>
-                                <condition field="selections" scope="3536-95f3-7d16-a9a9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc0-8ff9-d603-8222" type="atLeast"/>
+                                <condition field="points" scope="3536-95f3-7d16-a9a9" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc0-8ff9-d603-8222" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -5188,17 +5144,12 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <infoLink id="7ea2-8d0a-7417-a6ae" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="4627-3b2e-8686-a7f2" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4627-3b2e-8686-a7f2" name="Magic Items &amp; Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="02b2-540b-8304-1b12" value="0">
+                    <modifier type="set" field="85f5-e343-8cc3-5146" value="25.0">
                       <conditions>
                         <condition field="selections" scope="5320-f67f-bfb1-d615" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e056-6e39-b886-4277" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="85f5-e343-8cc3-5146" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91e6-9247-8525-f9a5" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -5211,25 +5162,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <entryLink id="6482-7b46-5c85-8891" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="65a4-2cd8-a0c9-8a92" type="selectionEntryGroup"/>
                     <entryLink id="fd2d-92c2-4991-5204" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="60d4-ceaa-5198-1353" type="selectionEntryGroup"/>
                     <entryLink id="2400-e528-f1e0-2f1e" name="Talismans" hidden="false" collective="false" import="true" targetId="4215-2a8d-e599-7c88" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="91e6-9247-8525-f9a5" name="Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="8a82-0ae3-362c-27ad" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4627-3b2e-8686-a7f2" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f98-403c-c5c8-7802" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8a82-0ae3-362c-27ad" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="3d85-abd4-40b6-c7d4" name="Vampiric Powers (Lahmia)" hidden="false" collective="false" import="true" targetId="a517-d26b-0fad-9a9d" type="selectionEntryGroup"/>
+                    <entryLink id="5607-725f-db2e-cbf4" name="Vampiric Powers (Lahmia)" hidden="false" collective="false" import="true" targetId="a517-d26b-0fad-9a9d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5416,7 +5349,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                   <selectionEntries>
                     <selectionEntry id="ABS LV" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="c2b1-dbf1-dbd5-7c1d" value="0">
+                        <modifier type="set" field="c2b1-dbf1-dbd5-7c1d" value="0.0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -5425,6 +5358,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS VCV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS WK" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS BDV" type="atLeast"/>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d58a-0d03-7682-f328" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -5443,7 +5377,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                           <modifiers>
                             <modifier type="set" field="4825-e17c-8f4c-501a" value="0">
                               <conditions>
-                                <condition field="selections" scope="5320-f67f-bfb1-d615" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4627-3b2e-8686-a7f2" type="atLeast"/>
+                                <condition field="points" scope="5320-f67f-bfb1-d615" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4627-3b2e-8686-a7f2" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -5500,17 +5434,12 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <infoLink id="edb8-321a-7587-174d" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="5ec6-bf10-38bc-da39" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5ec6-bf10-38bc-da39" name="Magic Items &amp; Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="ba7c-4ec9-bc69-7180" value="0">
+                    <modifier type="set" field="4beb-1bcf-2084-6ada" value="25.0">
                       <conditions>
                         <condition field="selections" scope="be53-f3b1-90ee-0387" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b58d-818e-ffd3-8d09" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="4beb-1bcf-2084-6ada" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9330-0e21-8086-e22e" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -5523,25 +5452,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <entryLink id="a0c7-fd44-380f-0617" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="65a4-2cd8-a0c9-8a92" type="selectionEntryGroup"/>
                     <entryLink id="2f92-de02-342f-85c1" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="60d4-ceaa-5198-1353" type="selectionEntryGroup"/>
                     <entryLink id="132a-c185-1eec-8431" name="Talismans" hidden="false" collective="false" import="true" targetId="4215-2a8d-e599-7c88" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9330-0e21-8086-e22e" name="Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="e351-3367-5684-06ac" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec6-bf10-38bc-da39" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="390b-3ad5-ee48-b69d" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e351-3367-5684-06ac" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="e6c9-63da-4c8d-4358" name="Vampiric Powers (Blood Dragon)" hidden="false" collective="false" import="true" targetId="458f-4f26-5867-1fcc" type="selectionEntryGroup"/>
+                    <entryLink id="a086-86a7-6728-0678" name="Vampiric Powers (Blood Dragon)" hidden="false" collective="false" import="true" targetId="458f-4f26-5867-1fcc" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5763,7 +5674,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                   <selectionEntries>
                     <selectionEntry id="ABS BDV" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="true">
+                        <modifier type="set" field="7740-154b-1d33-f4b1" value="0.0">
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
@@ -5772,6 +5683,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS LV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS VCV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS WK" type="atLeast"/>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d58a-0d03-7682-f328" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -5788,9 +5700,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                       <selectionEntries>
                         <selectionEntry id="b58d-818e-ffd3-8d09" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="hidden" value="true">
+                            <modifier type="set" field="7fe7-0949-ed59-68a2" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="be53-f3b1-90ee-0387" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec6-bf10-38bc-da39" type="atLeast"/>
+                                <condition field="points" scope="be53-f3b1-90ee-0387" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ec6-bf10-38bc-da39" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -5848,17 +5760,12 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <infoLink id="4f9a-c3ca-e0d4-bca8" name="Characters and Units" hidden="false" targetId="6b8d-1936-904c-2fba" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="766a-094b-8728-8e28" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="766a-094b-8728-8e28" name="Magic Items &amp; Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="bf65-924e-893b-c6a4" value="0">
+                    <modifier type="set" field="22da-20c4-99bb-78e8" value="25.0">
                       <conditions>
                         <condition field="selections" scope="bdeb-e76c-be08-81cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4a-9b3a-0da4-e8d9" type="atLeast"/>
                       </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="22da-20c4-99bb-78e8" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fad-7da1-a10f-0546" repeats="1" roundUp="false"/>
-                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -5869,25 +5776,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <entryLink id="d22c-3d32-859b-cd04" name="Arcane Items" hidden="false" collective="false" import="true" targetId="f95f-cacf-d784-2d8a" type="selectionEntryGroup"/>
                     <entryLink id="6345-8960-0adf-fb81" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="60d4-ceaa-5198-1353" type="selectionEntryGroup"/>
                     <entryLink id="36d9-c7af-2e82-cd40" name="Talismans" hidden="false" collective="false" import="true" targetId="4215-2a8d-e599-7c88" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3fad-7da1-a10f-0546" name="Vampiric Powers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="decrement" field="d8aa-944e-fd53-bb42" value="1.0">
-                      <repeats>
-                        <repeat field="points" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="766a-094b-8728-8e28" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06d5-ede4-d567-d85f" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d8aa-944e-fd53-bb42" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="b2f3-fcb2-8baf-9f66" name="Vampiric Powers (Strigoi)" hidden="false" collective="false" import="true" targetId="32e5-30e7-6b82-27b8" type="selectionEntryGroup"/>
+                    <entryLink id="3d01-b464-6e51-7462" name="Vampiric Powers (Strigoi)" hidden="false" collective="false" import="true" targetId="32e5-30e7-6b82-27b8" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5942,6 +5831,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS LV" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS WK" type="atLeast"/>
                                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS NV" type="atLeast"/>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d58a-0d03-7682-f328" type="atLeast"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -5958,9 +5848,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                       <selectionEntries>
                         <selectionEntry id="0c4a-9b3a-0da4-e8d9" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
-                            <modifier type="set" field="3c1d-9129-2013-cd40" value="0">
+                            <modifier type="set" field="3c1d-9129-2013-cd40" value="0.0">
                               <conditions>
-                                <condition field="selections" scope="bdeb-e76c-be08-81cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="766a-094b-8728-8e28" type="atLeast"/>
+                                <condition field="points" scope="bdeb-e76c-be08-81cf" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="766a-094b-8728-8e28" type="atLeast"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -6255,7 +6145,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       <selectionEntries>
         <selectionEntry id="d9cf-426a-7e9f-1841" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="7355-824b-c465-8872" value="0">
+            <modifier type="set" field="11fd-996b-af40-3fc4" value="25.0">
               <conditions>
                 <condition field="selections" scope="2419-cf0c-5617-ea9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22a0-d012-6a25-3c3e" type="atLeast"/>
               </conditions>
@@ -6480,15 +6370,16 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           <selectionEntries>
             <selectionEntry id="ABS WK" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="f5bd-7fa5-3bb3-9ed2" value="0">
+                <modifier type="set" field="f5bd-7fa5-3bb3-9ed2" value="0.0">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS VCV" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS SV" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS NV" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS LV" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d58a-0d03-7682-f328" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS BDV" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS LV" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6505,9 +6396,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
               <selectionEntries>
                 <selectionEntry id="22a0-d012-6a25-3c3e" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="8ab1-b472-6dc8-f8d2" value="0">
+                    <modifier type="set" field="8ab1-b472-6dc8-f8d2" value="0.0">
                       <conditions>
-                        <condition field="selections" scope="2419-cf0c-5617-ea9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9cf-426a-7e9f-1841" type="atLeast"/>
+                        <condition field="points" scope="2419-cf0c-5617-ea9f" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9cf-426a-7e9f-1841" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -6541,8 +6432,9 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
         <infoLink id="dc99-e8e9-bd94-2982" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="3495-d278-abda-af31" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
         <infoLink id="eaf6-9479-00f4-599a" name="Chill Grasp" hidden="false" targetId="1cec-8e53-53b2-2e4c" type="rule"/>
-        <infoLink id="8df1-d750-efda-f1da" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
+        <infoLink id="8df1-d750-efda-f1da" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
         <infoLink id="db12-7e91-0e33-ee89" name="Cairn Wraith" hidden="false" targetId="Cairn Wraith Infantry" type="profile"/>
+        <infoLink id="11e5-950b-9dfa-7e34" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8606-847b-eea7-8bc4" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -6611,6 +6503,20 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <infoLink id="a7ae-514b-38f9-eba6" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
             <infoLink id="0d7e-fbd6-3b37-1423" name="Skeleton Warrior" hidden="false" targetId="131f-4ada-503f-5ef9" type="profile"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="b00a-04f6-09d5-1153" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="343a-bc83-3121-c78b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ca7-d185-c461-2215" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d7d8-2856-fbee-c796" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="c647-e8c5-f0fc-6583" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="06e1-ed3b-f572-5d1f">
               <constraints>
@@ -6618,37 +6524,34 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6511-64bb-ff63-65f6" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="06e1-ed3b-f572-5d1f" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="06e1-ed3b-f572-5d1f" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74c1-09c0-add4-0186" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="2bd1-0439-e6d7-d3ca" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="f5e4-9087-1b26-729c" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9d78-c0d9-e1bd-73a7" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="9d78-c0d9-e1bd-73a7" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d368-f61c-cdc0-6c10" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="7de8-a8a5-2d99-0177" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-                    <infoLink id="7062-e026-6cb6-aa1e" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="0.5"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="01ab-42d3-fe8f-a10f" name="Polearm/Halberd &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="01ab-42d3-fe8f-a10f" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67b5-521e-b15f-3fe6" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="f503-a3f4-c20d-6fc5" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
-                    <infoLink id="f652-8175-4297-aa02" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
@@ -6936,7 +6839,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
           </profiles>
           <rules>
             <rule id="9c9e-5164-fd48-5d78" name="The Newly Dead" publicationId="10a5-5781-61f5-86ae" page="178" hidden="false">
-              <description>Zombie units can be increased beyond their starting size by spells and effects that add models to an existing unit. In addition, when Zombie units are successfully targeted by the Invocation of Nehek spell from the Lore of the Vampires, they regain an extra D6 Wounds.</description>
+              <description>Zombie units can be increased beyond their starting size by spells and effects that add models to an existing unit. In addition, when Zombie units are successfully targeted by the Invocation of Nehek spell from the Lore of the Vampires, they regain an extra D6 Wounds. However, they also suffer one more casualty than normal as a result of Unstable.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -7093,7 +6996,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
@@ -7155,7 +7058,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <infoLink id="5143-2afb-1fa8-2306" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="054a-50f2-253d-2922" name="Hand Weapon &amp; Crossbow" hidden="false" collective="true" import="true" type="upgrade">
@@ -7167,7 +7070,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <infoLink id="aeaa-438b-fa07-32c7" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -7212,7 +7115,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
@@ -7351,7 +7254,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <infoLink id="7059-2435-61ba-6360" name="Undead" hidden="false" targetId="c34e-cef6-4d1c-ae41" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="16.0"/>
+            <cost name="pts" typeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8445,9 +8348,15 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87eb-0c77-c7e2-0cb2" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29a8-0c5d-48b5-eeaa" type="max"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="99d7-2a50-a547-3b24" name="Asp Bow" hidden="false" targetId="21e0-cd10-e19a-0714" type="profile"/>
-                  </infoLinks>
+                  <profiles>
+                    <profile id="c2e4-977c-6dd7-9ea3" name="Asp Bow" publicationId="10a5-5781-61f5-86ae" page="191" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Multiple Wounds (2). Poisoned Attacks. Sniper.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
@@ -8485,7 +8394,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 3+)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 5+)</characteristic>
           </characteristics>
         </profile>
         <profile id="b3c5-cc63-9409-93a9" name="02" publicationId="10a5-5781-61f5-86ae" page="202" hidden="false" typeId="b659-54a2-034b-b2ce" typeName="Evocation of Death Chart">
@@ -8711,6 +8620,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
             <infoLink id="0282-621c-b1be-e8ed" name="Chill Grasp" hidden="false" targetId="1cec-8e53-53b2-2e4c" type="rule"/>
             <infoLink id="23b2-bf03-1194-3080" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
             <infoLink id="ae79-9831-3ae7-9e86" name="Cairn Wraith" hidden="false" targetId="Cairn Wraith Infantry" type="profile"/>
+            <infoLink id="745d-a125-ca8d-ce37" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="244b-8d32-0bbb-e53d" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -8739,7 +8649,7 @@ armour save, that magic weapon&apos;s abilities are nullified; it is treated as 
       <profiles>
         <profile id="a86e-f234-8948-ba31" name="Tomb Banshee" publicationId="10a5-5781-61f5-86ae" page="199" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
@@ -10553,10 +10463,14 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                 <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The bearer has Devastating Charge and Frenzy, and all close combat attacks made by the bearer are Flaming Attacks. In addition, the bearer of Skabscrath gains Ghostly Howl.</characteristic>
               </characteristics>
             </profile>
+            <profile id="59d4-f505-da7f-02d1" name="Ghostly Howl" publicationId="10a5-5781-61f5-86ae" page="199" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">8&quot;</characteristic>
+                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">To resolve a Ghostly Howl, roll 2D6+2. For each point by which the result exceeds the target unit&apos;s LD, the target unit suffers 1 Wound with no armour saves allowed. Wounds from a Ghostly Howl are magical attacks and are distributed as if from shooting.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="459d-3483-32bd-eb83" name="Ghostly Howl" hidden="false" targetId="f00d-c935-1c87-3983" type="profile"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -10775,7 +10689,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
             <infoLink id="1bad-ba90-922f-9315" name="Supernatural Horror" hidden="false" targetId="398f-5ca7-8a3e-3615" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9ece-b130-2383-6fb0" name="Walking Death" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -10785,7 +10699,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
           <profiles>
             <profile id="f2d9-ae09-4ce6-ce88" name="Walking Death" publicationId="10a5-5781-61f5-86ae" page="239" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
               <characteristics>
-                <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">Any unit in base contact with the model must re-roll successful LD tests. This has no effect on models with Immunity (Psychology).</characteristic>
+                <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">Any unit in base contact with the model must re-roll successful LD tests.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10853,7 +10767,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
             <profile id="c17d-9b1f-b08d-2adb" name="Call Winds" publicationId="10a5-5781-61f5-86ae" page="239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
                 <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
                 <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects all enemy units within range of the Vampire. Until the start of the caster&apos;s next Magic phase, all missile attacks fired from within or at a target within this distance suffer -1 To Hit.</characteristic>
@@ -10920,7 +10834,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
             <infoLink id="c2d9-a766-74b7-5486" name="Supernatural Horror" hidden="false" targetId="398f-5ca7-8a3e-3615" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a17d-4291-76c9-722b" name="Unholy Cynosure" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -11104,7 +11018,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
           <profiles>
             <profile id="2c73-b19a-053b-1c0a" name="Master Strike" publicationId="10a5-5781-61f5-86ae" page="240" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
               <characteristics>
-                <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">The Vampire has the Killing Blow special rule.</characteristic>
+                <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">The Vampire has Killing Blow.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11179,7 +11093,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
             <infoLink id="6464-fdef-a0f3-4c0a" name="Supernatural Horror" hidden="false" targetId="398f-5ca7-8a3e-3615" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="25e5-7792-48c0-4a88" name="Red Fury" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -11404,7 +11318,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="c34e-cef6-4d1c-ae41" name="Undead" publicationId="10a5-5781-61f5-86ae" page="166" hidden="false">
-      <description>All Undead units have Fear, Immunity (Poisoned Attacks) and Unstable. In addition, Undead units cannot make march moves unless they are within 12&quot; of the army General or within 6&quot; of a Wizard with the Lore of Necromancy, in which case they can march as usual. Lastly, when an Undead unit is charged, it can only elect to hold.</description>
+      <description>All units with Undead have Animated Construct, Fear, and Unstable. However, they may make march moves if they are within 12&quot; of the army&apos;s General.</description>
     </rule>
     <rule id="6b8d-1936-904c-2fba" name="Characters and Units" publicationId="10a5-5781-61f5-86ae" page="166" hidden="false">
       <description>Characters who are not Undead may join Undead units despite not being Unstable themselves. Mounted Characters ignore the Undead rule of the mount. If an Undead unit would get destroyed as a result of Unstable, any remaning character(s) will need to take a Break test as normal the same phase, using the LD modifier that they lost the combat by.</description>
@@ -11413,7 +11327,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
       <description>In addition to the normal rules for the army battle standard, units of Undead within 12&quot; of their battle standard suffer D3 Wounds less than they normally would due to Unstable, or following the death of the army&apos;s General.</description>
     </rule>
     <rule id="f189-b1bd-2258-4c02" name="The Generals of Undeath" publicationId="10a5-5781-61f5-86ae" page="166" hidden="false">
-      <description>Your army&apos;s General must be a Wizard. If they are able to choose a spell lore, they must use the Lore of Necromancy.
+      <description>If your army contains any Undead units, you must include at least one Wizard that uses the Lore of Necromancy. 
 
 Slain General
 At the end of the phase in which the General is removed as a casualty, and at the start of every friendly turn thereafter, all friendly Undead units on the battlefield must take a LD test. If the test is failed, the unit immediately suffers a number of Wounds equal to the amount by which it failed the LD test, with no saves of any kind allowed. These Wounds are distributed as if from a shooting attack.
@@ -11442,7 +11356,9 @@ If, at the start of any of your turns following the death of the General, there 
       <description>A Wraith can substitute all of its Attacks in close combat for a single Chill Grasp Attack. The Wraith makes a single Attack; if this Attack hits, then it will automatically wound and Ignore Armour saves.</description>
     </rule>
     <rule id="084b-f0d8-2d3e-d611" name="Ghostly Howl" publicationId="10a5-5781-61f5-86ae" page="199" hidden="false">
-      <description>A Ghostly Howl is a special attack that can be used against a single enemy unit in the Shooting phase, even if the Tomb Banshee has marched, charged or is engaged in close combat. This attack needs line of sight to its target. If the Tomb Banshee is engaged in combat, her Ghostly Howl can only target an enemy unit in base contact.</description>
+      <description>A Ghostly Howl is a special missile attack that can be used against a single enemy unit in the Shooting phase, even if the Tomb Banshee has marched, charged or is engaged in close combat. This attack needs line of sight to its target. If the Tomb Banshee is engaged in combat, her Ghostly Howl can only target an enemy unit in base contact.
+
+To resolve a Ghostly Howl, roll 2D6+2. For each point by which the result exceeds the target unit&apos;s LD, the target unit suffers 1 Wound which Ignores Armour Saves. Ghostly Howl is a non-physical Magical Attack and Wounds suffered from it are distributed as if from shooting. </description>
     </rule>
     <rule id="fe80-29be-6795-934d" name="The Reliquary" publicationId="10a5-5781-61f5-86ae" page="203" hidden="false">
       <description>At the start of each of your turns, roll 2D6 and add the current turn number. This is range of the reliquary&apos;s dark aura this turn in inches. All enemy units within range of the dark aura immediately take D6 hits, with a S equal to the current turn number, distributed as from shooting. Also, place a marker next to all friendly Undead units that were within range of the dark aura at the start of the turn. These units improve their Regeneration saves by one point until the start of their next turn, to a maximum of 4+. If they have no Regeneration save, they are treated as having Regeneration (6+) instead. Finally, if the 2D6 result was a double, then the fell energies prove too powerful; in addition to the usual effects, the Mortis Engine takes 1 Wound with no saves of any kind allowed. When the Mortis Engine suffers its last unsaved Wound, every unit within 12 plus the turn number in inches, friend or foe, must take 2D6 hits with a S equal to the current turn number. These hits are distributed as shooting.</description>
@@ -11451,12 +11367,12 @@ If, at the start of any of your turns following the death of the General, there 
       <description>All Wizards (friend or foe) within 12&quot; of one or more models with a Blasphemous Tome gain +2 to their casting result when casting spells from the Lore of Necromancy. If any Wizard miscasts within 12&quot; of one or more models with a Blasphemous Tome upgrade, they must roll twice on the Miscast table. The miscasting player&apos;s opponent chooses which result applies.</description>
     </rule>
     <rule id="65af-deb9-9d8b-bedf" name="Battle of Wills" publicationId="10a5-5781-61f5-86ae" page="204" hidden="false">
-      <description>Immediately before the first model in an enemy unit rolls To Hit against the Coven Throne or a character upon it (either in close combat or shooting), the opponent must roll a D6 and add it to his unit&apos;s LD (attacks that do not roll To Hit are exempt from this effect). Next, roll a D6 and add it to the Coven Throne&apos;s LD. To find the result of the Battle of Wills, subtract the enemy&apos;s total from the Coven Throne&apos;s total, and apply the result to the Battle of Wills Table. Battle of Wills has no effect against models with Immunity (Psychology).</description>
+      <description>Immediately before the first model in an enemy unit rolls To Hit against the Coven Throne or a character upon it (either in close combat or shooting), the opponent must roll a D6 and add it to his unit&apos;s LD (attacks that do not roll To Hit are exempt from this effect). Next, roll a D6 and add it to the Coven Throne&apos;s LD. To find the result of the Battle of Wills, subtract the enemy&apos;s total from the Coven Throne&apos;s total, and apply the result to the Battle of Wills Table.</description>
     </rule>
     <rule id="515e-c009-6cec-66aa" name="Death Shriek" publicationId="10a5-5781-61f5-86ae" page="207" hidden="false">
-      <description>A Death Shriek is a special attack that can be used against a single unit in the Shooting phase, even if the Terrorgheist has marched, charged, or is engaged in close combat. This attack has a range of 8&quot; and needs line of sight to its target. If the Terrorgheist is engaged in combat, its Death Shriek may target a unit in base contact.
+      <description>A Death Shriek is a special missile attack that can be used against a single unit in the Shooting phase, even if the Terrorgheist has marched, charged, or is engaged in close combat. This attack has a range of 8&quot; and needs line of sight to its target. If the Terrorgheist is engaged in combat, its Death Shriek may target a unit in base contact.
 
-To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheist has left. For each point by which the result exceeds the target unit&apos;s LD, the target unit suffers 1 Wound with no armour saves allowed. A Death Shriek is a Magical Sttack and Wounds suffered from it are distributed as from shooting.</description>
+To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheist has left. For each point by which the result exceeds the target unit&apos;s LD, the target unit suffers 1 Wound with no armour saves allowed. A Death Shriek is a Magical Attack and Wounds suffered from it are distributed as from shooting.</description>
     </rule>
     <rule id="b987-9e34-773a-4b1a" name="Rancid Maw" publicationId="10a5-5781-61f5-86ae" page="207" hidden="false">
       <description>Attacks made by a Terrorgheist with this upgrade have Poisoned Attacks. Note that this does not include the Terrorgheist&apos;s Stomp rule.</description>
@@ -11483,7 +11399,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
       <description>If Vlad and Isabella von Carstein are in the same unit, they are inspired to fight all the harder, and gain +1 Combat Resolution. Furthermore, Vlad becomes subject to Frenzy and Hatred should Isabella be slain, and vice versa.</description>
     </rule>
     <rule id="c41f-c24c-5271-1bb9" name="Vigour Mortis" publicationId="10a5-5781-61f5-86ae" page="187" hidden="false">
-      <description>All friendly Skeleton Warrior and Zombie units within 6&quot; of one or more Corpse Carts gain +1 A. In addition, Zombie units within 6&quot; by a Corpse Cart gain Regeneration (6+).</description>
+      <description>All friendly Skeleton and Zombies units within 6&quot; of the Corpse Cart may re-roll all failed rolls To Wound in close combat and gain Regeneration (6+).</description>
     </rule>
     <rule id="89e1-c53e-0a31-6135" name="Wight Blades" publicationId="10a5-5781-61f5-86ae" page="174" hidden="false">
       <description>Models with this rule have Killing Blow and Magical Attacks.</description>
@@ -11499,13 +11415,6 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects all friendly Skeleton Warrior and Zombie units within range. They gain +1 A and Regeneration (6+) until the start of your next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f00d-c935-1c87-3983" name="Ghostly Howl" publicationId="10a5-5781-61f5-86ae" page="199" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">8&quot;</characteristic>
-        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">To resolve a Ghostly Howl, roll 2D6+2. For each point by which the result exceeds the target unit&apos;s LD, the target unit suffers 1 Wound with no armour saves allowed. Wounds from a Ghostly Howl are magical attacks and are distributed as if from shooting.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="e679-8675-a6b7-0bf1" name="Scrying Pool" publicationId="10a5-5781-61f5-86ae" page="187" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
@@ -11517,7 +11426,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="a492-3959-2a73-f4ed" name="Flying Horror" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
       <characteristics>
-        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">Thе Vampire can Fly.</characteristic>
+        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">Model on foot only. Thе model gains Fly.</characteristic>
       </characteristics>
     </profile>
     <profile id="7330-bede-2c21-f332" name="Red Fury" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
@@ -11527,7 +11436,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="d716-077b-5be4-4e1f" name="Honour or Death" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
       <characteristics>
-        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the start of a challenge, the enemy character selected to take on the Vampire must take a LD test before any blows are struck. If failed, the enemy model will fight with WS 1 for the remainder of the turn. Models with Immunity (Psychology) are immune to this power.</characteristic>
+        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the start of a challenge, the enemy character selected to take on the Vampire must take a LD test before any blows are struck. If failed, the enemy model will fight with WS 1 for the remainder of the turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="d5db-3dc6-69aa-15d2" name="Unbending Willpower" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
@@ -11537,7 +11446,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="fef7-e8fb-fd76-f176" name="Transfix" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
       <characteristics>
-        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the beginning of the Close Combat phase select one model in base contact with the Vampire. If the test is failed, the victim cannot attack in that Close Combat phase and all attacks directed against the victim will hit automatically. Models with Immunity (Psychology) are immune to this power.</characteristic>
+        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the beginning of the Close Combat phase select one model in base contact with the Vampire. If the test is failed, the victim cannot attack in that Close Combat phase and all attacks directed against the victim will hit automatically.</characteristic>
       </characteristics>
     </profile>
     <profile id="e3ab-379e-ec42-f276" name="Curse of the Revenant" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
@@ -11552,7 +11461,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="4ec2-5561-80c6-6a61" name="Fear Incarnate" publicationId="10a5-5781-61f5-86ae" page="238" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
       <characteristics>
-        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">Enemy units in base contact with the Vampire must take a LD test at the start of each round of close combat. If failed, the unit will only Hit on 6&apos;s this round. Models with Immunity (Psychology) are immune to this power.</characteristic>
+        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">Enemy units in base contact with the Vampire must take a LD test at the start of each round of close combat. If failed, the unit will only Hit on 6&apos;s this round.</characteristic>
       </characteristics>
     </profile>
     <profile id="bfc8-1328-ed58-9e2b" name="Aura of Dark Majesty" publicationId="10a5-5781-61f5-86ae" page="239" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
@@ -11643,7 +11552,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="134a-0b9c-3f0c-32ee" name="Seduction" publicationId="10a5-5781-61f5-86ae" page="241" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
       <characteristics>
-        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the beginning of the Close Combat round, after challenges have been issued and/or accepted, select a model in base contact with the Vampire. The selected model must take a LD test with a -1 modifier. If the test is failed, the victim is controlled by the Vampire player in that Close Combat phase. The model will direct its attacks against his own side. The model cannot be attacked by either side in that Close Combat phase but, after combat resolution has been worked out, it reverts immediately to the original player&apos;s control and can therefore use his LD for any Break tests and can be broken and pursued as normal. If the model has no friendly models in base contact, counts as being Transfixed instead. If the Vampire was in a challenge with a model that it takes control of, the challenge ends and both models may attack other targets as normal. Models with Immunity (Psychology) are immune to this power.</characteristic>
+        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the beginning of the Close Combat round, after challenges have been issued and/or accepted, select a model in base contact with the Vampire. The selected model must take a LD test with a -1 modifier. If the test is failed, the victim is controlled by the Vampire player in that Close Combat phase. The model will direct its attacks against his own side. The model cannot be attacked by either side in that Close Combat phase but, after combat resolution has been worked out, it reverts immediately to the original player&apos;s control and can therefore use his LD for any Break tests and can be broken and pursued as normal. If the model has no friendly models in base contact, counts as being Transfixed instead. If the Vampire was in a challenge with a model that it takes control of, the challenge ends and both models may attack other targets as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="2263-013f-d10c-1126" name="Coven Throne" publicationId="10a5-5781-61f5-86ae" page="204" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -11814,7 +11723,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="de3c-7c24-eb9e-563d" name="Beguile" publicationId="10a5-5781-61f5-86ae" page="241" hidden="false" typeId="21e6-6317-460c-b75f" typeName="Vampiric Power">
       <characteristics>
-        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the beginning of the Close Combat round, after challenges have been issued and/or accepted, select a model in base contact with the Vampire. That model must take a LD test with a -3 modifier; if the test is failed, the model must re-roll successful To Hit rolls that phase. Models with Immunity (Psychology) are immune to this power.</characteristic>
+        <characteristic name="Special Rules" typeId="e351-0ddf-3e1a-0f9f">At the beginning of the Close Combat round, after challenges have been issued and/or accepted, select a model in base contact with the Vampire. That model must take a LD test with a -3 modifier; if the test is failed, the model must re-roll successful To Hit rolls that phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="6a08-d162-b042-d3e3" name="Skeletal Steed" publicationId="10a5-5781-61f5-86ae" page="210" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -11829,13 +11738,6 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">3</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="21e0-cd10-e19a-0714" name="Asp Bow" publicationId="10a5-5781-61f5-86ae" page="191" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4285-3917-6bf9-348b">30&quot;</characteristic>
-        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">4</characteristic>
-        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Multiple Wounds (2). Poisoned Attacks. Sniper.</characteristic>
       </characteristics>
     </profile>
     <profile id="Cairn Wraith Character" name="Cairn Wraith" publicationId="10a5-5781-61f5-86ae" page="197" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -11854,7 +11756,7 @@ To resolve a Death Shriek, roll 2D6 and add the number of Wounds the Terrorgheis
     </profile>
     <profile id="Cairn Wraith Infantry" name="Cairn Wraith" publicationId="10a5-5781-61f5-86ae" page="197" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>

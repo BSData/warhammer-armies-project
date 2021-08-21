@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="285d-8655-ed69-a327" name="Maleficent Gaze Table">
@@ -271,7 +271,7 @@
               <infoLinks>
                 <infoLink id="b635-1907-5651-68cc" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="0324-bf1d-4502-608e" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="69d4-5d6d-b2ab-8423" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                <infoLink id="69d4-5d6d-b2ab-8423" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="1004-d5e9-cdc0-9d9e" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -374,7 +374,7 @@
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f90a-27f3-1a0a-5f26" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="16dd-ed4f-b6f7-b9fc" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                    <infoLink id="16dd-ed4f-b6f7-b9fc" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5.0"/>
@@ -761,6 +761,20 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb64-d646-ffbf-cc94" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4eea-2ee0-f501-97e2" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="92b3-4720-a0ea-05c8" name="Prayer Beads" page="" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="bf1e-1c78-a1ac-55dd" name="Prayer Beads" publicationId="84d9-dc45-4bf8-ae57" page="67" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Once use only. When attempting to cast a spell, a Guru may choose to use a Prayer Bead to add +1 to the total casting value. A Guru can buy as many of these as he wishes as long as he has points available, and several Prayer Beads may be used for a single spell. In addition, Prayer Beads does not stop the Guru from taking another Arcane Item.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="aea1-b3b0-5b35-54e2" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="69dd-f0d4-208e-0889" type="selectionEntryGroup"/>
             <entryLink id="2b58-057b-e935-f777" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="38c4-7d3f-043a-b8a2" type="selectionEntryGroup"/>
@@ -1344,6 +1358,73 @@
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="fcda-8079-22bb-7721" name="Royal Chariot" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e5a-85f8-acea-5715" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e1a-d25e-a0a1-674e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0e2a-aa96-73f4-4b76" name="Royal Chariot" hidden="false" targetId="0a79-db79-5e3d-6792" type="profile"/>
+            <infoLink id="64fe-e296-81d6-6d07" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+            <infoLink id="65da-4275-f79c-7862" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="8fc0-70b3-79a8-58d5" name="Noble Caste" hidden="false" targetId="4d2e-4fe4-99e4-6e3f" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="df02-a520-9acf-c6e2" name="Charioteer" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a97e-ecdc-d079-fb24" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43ed-3f2d-f403-f69f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="13f7-7bc6-7ee0-3009" name="Charioteer" hidden="false" targetId="f929-959f-60a4-07b0" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="dee6-c860-047a-4aa6" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f457-bd22-615a-ceda" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b741-afb3-34ad-0d12" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="327c-f425-6e45-511e" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="10aa-8b68-99c7-1cdf" name="Bow" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f672-d8e0-8e47-1dbe" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1a3-368b-e251-265b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9408-a879-f537-668a" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fe2a-4896-2a6e-fbf6" name="Warhorse" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20c4-0191-a02e-6f6a" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83e9-bf1d-e24c-c25d" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8495-b95d-eb75-e7df" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="60.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="30b5-b9f4-95f8-1716" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
@@ -1765,6 +1846,20 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8de-dd46-e941-09a3" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6a84-db3a-7afd-b4d7" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="ddcc-a281-a408-9307" name="Prayer Beads" page="" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ab87-4ed7-032f-1993" name="Prayer Beads" publicationId="84d9-dc45-4bf8-ae57" page="67" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Once use only. When attempting to cast a spell, a Guru may choose to use a Prayer Bead to add +1 to the total casting value. A Guru can buy as many of these as he wishes as long as he has points available, and several Prayer Beads may be used for a single spell. In addition, Prayer Beads does not stop the Guru from taking another Arcane Item.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="16b5-d0dc-c771-559d" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="69dd-f0d4-208e-0889" type="selectionEntryGroup"/>
             <entryLink id="6f68-c5e9-42d9-5896" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="38c4-7d3f-043a-b8a2" type="selectionEntryGroup"/>
@@ -1934,7 +2029,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
               <infoLinks>
                 <infoLink id="8677-db09-77ee-8ffc" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="8a8f-e9f6-985d-ab30" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="fd7d-d09a-4446-6cb6" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                <infoLink id="fd7d-d09a-4446-6cb6" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="d945-95c5-adbe-c183" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -2037,7 +2132,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="098a-5cd4-4da6-4b23" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="9940-663e-92ea-126a" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                    <infoLink id="9940-663e-92ea-126a" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5.0"/>
@@ -2982,7 +3077,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="73c5-f50d-c961-268c" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="73c5-f50d-c961-268c" name="Spear (On Foot) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eab3-d16d-7f78-857f" type="max"/>
                   </constraints>
@@ -3110,7 +3205,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8977-2f2b-114a-7cd8" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="352f-890f-9d0f-913c" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                <infoLink id="352f-890f-9d0f-913c" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
                 <infoLink id="add8-bd59-8592-3d6b" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="7cd8-9e45-9da8-2c4f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
               </infoLinks>
@@ -3292,7 +3387,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="264e-3376-f52e-7226" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7207-8efe-5622-5081" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                <infoLink id="7207-8efe-5622-5081" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
                 <infoLink id="588a-eb77-7915-8710" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="96d6-9a82-5dea-09ce" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
               </infoLinks>
@@ -3717,7 +3812,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fbe-818e-4db7-12d2" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="35ce-aa9a-2405-4df3" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="35ce-aa9a-2405-4df3" name="Spear (On Foot) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7df-1fb4-df5b-fc5f" type="max"/>
                   </constraints>
@@ -4027,7 +4122,7 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d39c-2f6e-4bf9-ad38" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="66d9-9ce0-76cc-ce6b" name="Warhorse" hidden="false" targetId="8f75-286e-1c13-bcd9" type="profile"/>
+                <infoLink id="66d9-9ce0-76cc-ce6b" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -5533,14 +5628,10 @@ If their Beastmaster is killed, any unengaged animals will immediately flee the 
       </costs>
     </selectionEntry>
     <selectionEntry id="9609-944f-6646-a98c" name="Basilisk" hidden="false" collective="false" import="true" type="unit">
-      <rules>
-        <rule id="8749-8aff-b36b-6b73" name="Cold Blooded" publicationId="84d9-dc45-4bf8-ae57" page="58" hidden="false">
-          <description>The Basilisk rolls 3D6 for all LD tests, discarding the highest dice.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink id="7ed4-03f5-6122-6dba" name="Lowborn Caste" hidden="false" targetId="5b4c-9990-2f3d-db5c" type="rule"/>
+        <infoLink id="7ed4-03f5-6122-6dba" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
         <infoLink id="57ac-4304-8dcc-3679" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
+        <infoLink id="b5fb-6af4-dd90-366e" name="Lowborn Caste" hidden="false" targetId="5b4c-9990-2f3d-db5c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b7c5-40e3-50ee-7cc6" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5657,7 +5748,7 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
         <categoryLink id="d189-24ee-6f45-ff73" name="New CategoryLink" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="bf18-3b98-4adf-ed5d" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Kingdoms of Ind Hero)" type="selectionEntryGroup"/>
+        <entryLink id="bf18-3b98-4adf-ed5d" name="Regiments of Renown (KoI Hero)" hidden="false" collective="false" import="true" targetId="44b3-dd7e-3b1f-e3c0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5668,7 +5759,7 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
         <categoryLink id="ca14-556b-d538-219a" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8c3d-0338-f960-6fcc" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Kingdoms of Ind Special)" type="selectionEntryGroup"/>
+        <entryLink id="8c3d-0338-f960-6fcc" name="Regiments of Renown (KoI Special)" hidden="false" collective="false" import="true" targetId="a081-116a-fa8d-61ce" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5679,7 +5770,7 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
         <categoryLink id="2887-940c-573b-65ba" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1742-97ad-e066-4176" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Kingdoms of Ind Rare)" type="selectionEntryGroup"/>
+        <entryLink id="1742-97ad-e066-4176" name="Regiments of Renown (KoI Rare)" hidden="false" collective="false" import="true" targetId="82ed-878d-28a9-d6ad" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5688,10 +5779,6 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="282b-a5dc-1520-dd67" name="Prayer Beads" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d55b-8f6c-096d-caed" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fb5-819f-db21-88dc" type="max"/>
-      </constraints>
       <profiles>
         <profile id="bd90-f235-e52b-231c" name="Prayer Beads" publicationId="84d9-dc45-4bf8-ae57" page="67" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
           <characteristics>
@@ -6494,20 +6581,6 @@ Devas cannot use the General’s Inspiring Presence or the Battle Standard’s H
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Requires Two Hands. +1 A*. Parry (6+)*. A Pata can either be used to give the wielder +1 A, or as a shield in close combat. Choose which way you want to use it at the start of each close combat phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="8f75-286e-1c13-bcd9" name="Warhorse" publicationId="84d9-dc45-4bf8-ae57" page="41" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
-      </characteristics>
-    </profile>
     <profile id="0a79-db79-5e3d-6792" name="Royal Chariot" publicationId="84d9-dc45-4bf8-ae57" page="132" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215"/>
@@ -6651,7 +6724,4 @@ Devas cannot use the General’s Inspiring Presence or the Battle Standard’s H
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="0320-a8c7-92ee-6e45" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

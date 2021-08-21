@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
@@ -2494,7 +2494,7 @@
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="14ec-76ca-3afe-ffb8" name="Spear (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="14ec-76ca-3afe-ffb8" name="Spear (On Foot)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="0cea-1725-5694-827b" value="0">
                   <conditions>
@@ -2851,6 +2851,22 @@
                 <cost name="pts" typeId="points" value="270.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="c658-22be-8935-1002" name="Coatl" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="c5c7-7b89-b695-dd61" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="0b13-bfc5-ea27-72ae" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                <infoLink id="b4da-94e7-af3e-ab35" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                <infoLink id="90e3-dcbc-c6df-1cd7" name="Guardian of the Sacred Places" hidden="false" targetId="4c02-4dca-c5ad-f8ae" type="profile"/>
+                <infoLink id="4317-a428-5c9d-5940" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
+                <infoLink id="7fd6-180d-7e03-9400" name="Magic Resistance (4)" hidden="false" targetId="76e1-4919-c7d3-29df" type="rule"/>
+                <infoLink id="cb7b-7d33-964a-46b4" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                <infoLink id="4119-3c9a-cf31-0006" name="Magical Storm" hidden="false" targetId="757b-aca6-1b3e-8b7a" type="rule"/>
+                <infoLink id="b41f-84a3-42cc-b92e" name="Coatl" hidden="false" targetId="05ce-f91d-e1a3-5bc2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="200.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e8df-b873-9b7e-ee76" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ffc-588d-e8a6-48a8">
@@ -3011,7 +3027,7 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ce48-aa59-5e5b-245a" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="ce48-aa59-5e5b-245a" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30bd-39d7-f4de-3c1a" type="max"/>
                   </constraints>
@@ -3162,7 +3178,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e80c-3c77-fbfa-2dae" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="e80c-3c77-fbfa-2dae" name="Spear (On Foot) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bab2-b9e8-b21d-9d29" type="max"/>
                   </constraints>
@@ -5190,7 +5206,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
         <categoryLink id="6dd7-0b55-4966-fe1e" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1404-a776-fe9d-cc63" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Lizardmen Special)" type="selectionEntryGroup"/>
+        <entryLink id="1404-a776-fe9d-cc63" name="Regiments of Renown (LM Special)" hidden="false" collective="false" import="true" targetId="1f68-7eea-137f-0a05" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5201,7 +5217,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
         <categoryLink id="c260-713f-609a-fa80" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0985-5fa4-2dbf-b206" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Lizardmen Rare)" type="selectionEntryGroup"/>
+        <entryLink id="0985-5fa4-2dbf-b206" name="Regiments of Renown (LM Rare)" hidden="false" collective="false" import="true" targetId="8fc2-630e-d8b2-84f0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5212,7 +5228,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
         <categoryLink id="c2ac-b68f-3afc-e9ce" name="New CategoryLink" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0e32-2b49-80e9-6c33" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Lizardmen Hero)" type="selectionEntryGroup"/>
+        <entryLink id="0e32-2b49-80e9-6c33" name="Regiments of Renown (LM Hero)" hidden="false" collective="false" import="true" targetId="d3fd-2606-0a55-4a49" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5991,7 +6007,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8fe6-d272-094e-b59c" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="8fe6-d272-094e-b59c" name="Spear (On Foot) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5aa7-87ce-91ac-e847" type="max"/>
                   </constraints>
@@ -6440,7 +6456,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd7e-ff7a-9bcb-cdb4" name="Terradon Riders" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="dd7e-ff7a-9bcb-cdb4" name="Terradon Riders (Tehenhauin)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="ecd6-381c-35c0-c2ac" value="-1.0">
           <conditions>
@@ -6974,7 +6990,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b70b-fd54-985f-d06d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="94d1-5c96-c3e6-0ce4" name="Blade of Revered Tzunki" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="94d1-5c96-c3e6-0ce4" name="Blade of Revered Tzunki" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
@@ -6992,7 +7008,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6668-9b5f-1c3e-ea77" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e6ab-dd4c-e801-3eb2" name="Stegadon War-spear" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="e6ab-dd4c-e801-3eb2" name="Stegadon War-spear" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7010,11 +7026,11 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0409-07f7-7406-2cab" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6926-e884-d652-443d" name="The Lash of Itzaotyl" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="6926-e884-d652-443d" name="The Lash of Itzaotyl" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Lash of Itzaotyl gives the wielder Always Strikes First. In addition, any Monster successfully hit by the lash must pass a LD test. If failed, it cannot Attack this close combat phase. This has no effect on Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Lash of Itzaotyl gives the wielder Always Strikes First. In addition, any Monster successfully hit by the lash must pass a LD test. If failed, it cannot Attack this close combat phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7028,16 +7044,16 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8941-bb4e-ba48-3d77" type="max"/>
           </constraints>
           <profiles>
-            <profile id="23e2-db9e-af3e-f308" name="Scimitar of the Sun Resplendent" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="23e2-db9e-af3e-f308" name="Scimitar of the Sun Resplendent" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Scimitar of the Sun Resplendent gives the wielder +2 A.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Scimitar of the Sun Resplendent gives the wielder +2 A and Hatred.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7eeb-567a-aeb6-5d60" name="Staff of the Lost Sun" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7046,7 +7062,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0137-aa1b-4de5-f90f" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6e5a-5d60-e4dd-a58f" name="Staff of the Lost Sun" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="6e5a-5d60-e4dd-a58f" name="Staff of the Lost Sun" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">5</characteristic>
@@ -7064,11 +7080,11 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="574f-2641-714d-c17d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="150d-c834-4cb0-cb71" name="Sword of the Hornet" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="150d-c834-4cb0-cb71" name="Sword of the Hornet" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Sword of the Hornet gives the wielder Always Strikes First.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Sword of the Hornet allows the wielder to reroll 1&apos;s To Hit, and enemies must re-roll 6&apos;s To Hit against them.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7082,7 +7098,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca0f-639e-8bf3-3001" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6777-c7c5-51bf-1c32" name="Dagger of Sotek" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="6777-c7c5-51bf-1c32" name="Dagger of Sotek" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7100,7 +7116,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b94-1611-ded9-24cd" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e7c2-ef23-2818-398e" name="Burning Blade of Chotec" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="e7c2-ef23-2818-398e" name="Burning Blade of Chotec" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7216,7 +7232,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5303-5d3d-9780-89a8" name="Totem of Prophecy" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7227,12 +7243,12 @@ Casualties are always taken from the rearmost rank of the appropriate model type
           <profiles>
             <profile id="94d5-1a88-8bc8-a7e2" name="Totem of Prophecy" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Totem of Prophecy gains Fear.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All enemy units with Line of Sight to the Totem of Prophecy suffer a -1 penalty to their LD. This standard has no effect on models with Immunity (Psychology).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7269,7 +7285,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e61-764e-9a96-9f41" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0ac3-3e32-8cce-7722" name="Hide of the Cold Ones" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="0ac3-3e32-8cce-7722" name="Hide of the Cold Ones" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7287,7 +7303,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c503-9440-95b6-5020" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d747-383b-dd9f-75f2" name="The Maiming Shield" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="d747-383b-dd9f-75f2" name="The Maiming Shield" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7296,7 +7312,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9bc0-eec7-af0f-a8db" name="Shield of the Mirrored Pool" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7305,7 +7321,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad54-f214-fd14-f6a7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4e5c-7f51-045f-971c" name="Shield of the Mirrored Pool" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="4e5c-7f51-045f-971c" name="Shield of the Mirrored Pool" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7396,7 +7412,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08fa-5e61-2541-8b9e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="bf82-18f8-c5e3-f110" name="War Drum of Xahutec" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="bf82-18f8-c5e3-f110" name="War Drum of Xahutec" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The bearer of the War Drum of Xahutec and any unit they are with do not need to pass a LD test in order to march, regardless of the proximity of enemy units. In addition, any friendly unit attempting to Rally within 12&quot; gains +1 LD.</characteristic>
               </characteristics>
@@ -7412,17 +7428,17 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4053-c09c-32e1-bbfb" type="max"/>
           </constraints>
           <profiles>
-            <profile id="bde0-c0c6-2e8f-32ee" name="Blood Statuette" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="bde0-c0c6-2e8f-32ee" name="Blood Statuette" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. Bound Spell, Power Level 5.</characteristic>
               </characteristics>
             </profile>
-            <profile id="ba99-1fb4-3312-da8d" name="Blood Statuette" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+            <profile id="ba99-1fb4-3312-da8d" name="Blood Statuette" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">36&quot;</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
                 <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets one enemy model, even in a unit. The target model must pass a T test or suffer a Wound which Ignores Armour Saves. If the model takes a Wound from this spell, it must immediately take another T test, losing another Wound if it fails again. This continues until either the model passes a T test or is slain.</characteristic>
               </characteristics>
             </profile>
@@ -7437,9 +7453,9 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d62-bde2-5483-1a4b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1fe6-9844-aed5-ef25" name="Charm of the Jaguar Warrior" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="1fe6-9844-aed5-ef25" name="Charm of the Jaguar Warrior" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model on foot only. The Charm of the Jaguar Warrior gives the bearer M 9 and Scouts.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model on foot only. The Charm of the Jaguar Warrior gives the bearer M 8 and Scouts.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7453,7 +7469,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c28-df4d-002b-d0a1" type="max"/>
           </constraints>
           <profiles>
-            <profile id="caeb-a05c-9a0d-3918" name="Cloak of Feathers" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="caeb-a05c-9a0d-3918" name="Cloak of Feathers" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Skink Chief or Skink Priest on foot only. The wearer of the Cloak of Feathers gains Fly.</characteristic>
               </characteristics>
@@ -7469,7 +7485,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b395-8f9a-c8b3-ce1c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2d7f-a67d-c5fc-9933" name="Carnosaur Pendant" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="2d7f-a67d-c5fc-9933" name="Carnosaur Pendant" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Saurus Oldblood, Scarveteran or Skink Chief only. The bearer of the Carnosaur Pendant gains Blood Frenzy.</characteristic>
               </characteristics>
@@ -7485,7 +7501,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e48-aaba-d22b-5be3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e277-17c4-ed8c-dc3c" name="Curse-Charm of Tepok" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="e277-17c4-ed8c-dc3c" name="Curse-Charm of Tepok" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. When the enemy rolls on the Miscast table, the bearer of the Curse-Charm of Tepok may force him to re-roll the result.</characteristic>
               </characteristics>
@@ -7501,14 +7517,14 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab17-9676-aa5a-7a36" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4acf-e1e4-96f2-7411" name="Bane Head" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="4acf-e1e4-96f2-7411" name="Bane Head" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The bearer of the Bane Head gains Multiple Wounds (2) against one enemy model, nominated at the start of the battle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2083-a45b-b435-6641" name="Dragonfly of Quicksilver" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7517,7 +7533,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4610-b2a0-352e-c75c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="fd10-9406-db2c-ead4" name="Dragonfly of Quicksilver" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="fd10-9406-db2c-ead4" name="Dragonfly of Quicksilver" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">If both players have models with Scouts, the Lizardmen player adds +1 to his dice roll when rolling to see who deploys their Scouts first.</characteristic>
               </characteristics>
@@ -7533,7 +7549,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e078-75f6-d9d1-446b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1ffa-c3a1-546b-bd2b" name="Venom of the Firefly Frog" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="1ffa-c3a1-546b-bd2b" name="Venom of the Firefly Frog" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Venom of the Firefly Frog gives the bearer Poisoned Attacks. If the bearer already has Poisoned Attacks, they may re-roll failed rolls To Wound.</characteristic>
               </characteristics>
@@ -7549,14 +7565,14 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0d9-ccbe-6166-14e0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="097a-9a4e-b45e-889b" name="Gleaming Pendant of Chotec" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="097a-9a4e-b45e-889b" name="Gleaming Pendant of Chotec" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Gleaming Pendant of Chotec may be used at the start of any close combat phase. For the remainder of the phase, all enemy units in base contact with the wearer or the unit they are with gain Always Strikes Last.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7616,9 +7632,9 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c41e-1448-0f89-771a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="728b-3c02-9246-5557" name="Cupped Hands of the Old Ones" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="728b-3c02-9246-5557" name="Cupped Hands of the Old Ones" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Slann Mage-Priest only. One use only. If the bearer of the Cupped Hands of the Old Ones miscasts, roll a D6. On a roll of 1 the bearer suffers the results of the miscast as normal. On 2+ the miscast is ignored and if there is an enemy Wizard within line of sight he will suffer its effects, ignoring result 5-6.</characteristic>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Slann Mage-Priest only. One use only. If the bearer of the Cupped Hands of the Old Ones miscasts, roll a D6. On a roll of 1 the bearer suffers the results of the miscast as normal. On 2+ the miscast is ignored and if there is an enemy Wizard within line of sight he will suffer its effects, ignoring results of 5-6 on the Miscast table.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7632,7 +7648,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2eb-dafd-3693-a657" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d078-6f42-dfe7-cf0c" name="Rod of the Storm" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="d078-6f42-dfe7-cf0c" name="Rod of the Storm" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Bound Spell, Power Level 5. The Rod of the Storm contains Uranon&apos;s Thunderbolt spell from the Lore of Heavens.</characteristic>
               </characteristics>
@@ -7642,7 +7658,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <infoLink id="e227-374e-60d7-7156" name="Urannon&apos;s Thunderbolt (Bound Spell)" hidden="false" targetId="4768-022d-5e1d-bbc0" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bb2c-aa0b-138d-0a66" name="Diadem of Power" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7651,7 +7667,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="941f-a665-0483-e952" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4559-ff64-2ddd-467b" name="Diadem of Power" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="4559-ff64-2ddd-467b" name="Diadem of Power" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Diadem of Power allows the model to save up to two of his own unused Power dice at the end of his Magic phase and add them to his side&apos;s Dispel dice pool in the next enemy Magic phase.</characteristic>
               </characteristics>
@@ -7667,14 +7683,14 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d660-9226-ee6d-593a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7d7a-2af8-d049-fe74" name="Plaque of Tepok" publicationId="e3da-3848-ff08-a482" page="31" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="7d7a-2af8-d049-fe74" name="Plaque of Tepok" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Slann Mage-Priest only. The model bearing the Plaque of Tepok can choose an additional spell.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7895,7 +7911,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="871c-c8e5-094b-d9f2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ada9-e7bf-dab7-d030" name="The Divine Plaque of Protection" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="ada9-e7bf-dab7-d030" name="The Divine Plaque of Protection" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Slann Mage-Priest only. The Divine Plaque of Protection gives the wearer and any unit they are with Ward Save (5+) against missile attacks.</characteristic>
               </characteristics>
@@ -7911,7 +7927,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a40-22ec-b7a5-2594" type="max"/>
           </constraints>
           <profiles>
-            <profile id="832b-edc2-e3a8-3bb6" name="Aura of Quetzl" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="832b-edc2-e3a8-3bb6" name="Aura of Quetzl" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Aura of Quetzl gives the wearer Ward Save (5+) against attacks with S 5 or more.</characteristic>
               </characteristics>
@@ -7927,7 +7943,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="040c-2580-c726-3b59" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1d88-50ed-9417-3892" name="Glyph Necklace" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="1d88-50ed-9417-3892" name="Glyph Necklace" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">All close combat attacks directed against the bearer of the Glyph Necklace suffer -1 To Hit.</characteristic>
               </characteristics>
@@ -7943,7 +7959,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="161b-cbaf-04d9-8a3b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="080f-7855-242c-bdfc" name="Amulet of Itzl" publicationId="e3da-3848-ff08-a482" page="30" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="080f-7855-242c-bdfc" name="Amulet of Itzl" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. The model wearing the Amulet of Itzl amulet gains a Ward Save (2+) against the first unsaved Wound suffered.</characteristic>
               </characteristics>
@@ -7960,9 +7976,6 @@ Casualties are always taken from the rearmost rank of the appropriate model type
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="eb46-96d2-9469-4905" name="Cold-Blooded" publicationId="9e23-79cb-pubN77402" page="132" hidden="false">
-      <description>Whenever the model takes a LD test, it rolls an additional dice and discards the highest result.</description>
-    </rule>
     <rule id="096e-8f90-c156-f63d" name="Predatory Fighter" publicationId="9e23-79cb-pubN77402" page="132" hidden="false">
       <description>Whenever the model rolls a 6 To Hit in close combat, it immediately makes another Attack; roll To Hit and To Wound as normal. Attacks generated by Predatory Fighter do not generate further Attacks. This applies to all fighting models in the unit, including models making supporting attacks. In addition, a unit that contains one or more Predatory Fighters can never test to restrain pursuit.</description>
     </rule>
@@ -8021,6 +8034,9 @@ When fighting in close combat against a unit with a blot toad marker, the Ripper
     </rule>
     <rule id="4271-27fb-eda6-5a5f" name="Mount of Itzl" publicationId="9e23-79cb-pubN77402" page="149" hidden="false">
       <description>A character must have the Blessed Spawning of Itzl in order to ride a Horned One.</description>
+    </rule>
+    <rule id="757b-aca6-1b3e-8b7a" name="Magical Storm" publicationId="9e23-79cb-pubN77402" page="168" hidden="false">
+      <description>All missile fire directed at a Coatl suffers a -1 penalty to hit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8097,20 +8113,6 @@ When fighting in close combat against a unit with a blot toad marker, the Ripper
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">3</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="785f-7dff-4b4a-f3e4" name="Horned One" publicationId="9e23-79cb-pubN77402" page="149" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">3</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
@@ -8324,8 +8326,28 @@ either To Hit, To Wound, Armour saves or Ward saves during the game.</characteri
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
       </characteristics>
     </profile>
+    <profile id="05ce-f91d-e1a3-5bc2" name="Coatl" publicationId="9e23-79cb-pubN77402" page="168" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c02-4dca-c5ad-f8ae" name="Guardian of the Sacred Places" publicationId="9e23-79cb-pubN77402" page="168" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If cast, the Lizardmen player may reposition D3 pieces of forest terrain by D6&quot;, rolling the distance for each piece at a time.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="7a2f-3d16-2de3-f7b4" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

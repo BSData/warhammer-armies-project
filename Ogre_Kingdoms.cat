@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
@@ -870,9 +870,9 @@ and Multiple Wounds (D3).</characteristic>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ba30-47dd-07b1-8c5f" name="Butcher&apos;s Cauldron" hidden="true" collective="false" import="true" type="model">
+        <selectionEntry id="ba30-47dd-07b1-8c5f" name="Butcher&apos;s Cauldron" hidden="false" collective="false" import="true" type="model">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="e693-1d6e-ae70-3d9c" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -884,12 +884,12 @@ and Multiple Wounds (D3).</characteristic>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e693-1d6e-ae70-3d9c" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e693-1d6e-ae70-3d9c" type="max"/>
           </constraints>
           <profiles>
             <profile id="f7cc-ac38-0b54-ab11" name="Hunger of the Great Maw" publicationId="9e23-79cb-pubN78137" page="61" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5</characteristic>
                 <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
@@ -5113,33 +5113,6 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
           </characteristics>
         </profile>
-        <profile id="6ef1-270a-b039-08c0" name="01" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="349c-e1b9-fd37-6441" typeName="Pick Up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="58e6-7a86-ce94-14fb">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8cf1-030c-9bde-5699" name="01" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="37be-f2b6-689d-9ca7" typeName="Big Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="8f1f-704e-a54d-7dcd">Yell and Bawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="cb8a-3dfc-3503-0105" name="01" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="ab85-5a99-3c74-96e8" typeName="Man-sized Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="1abb-44df-d913-05a9">Yell and Bawl: Neither the Giant nor models in contact with him actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points. This result has no effect against Animated Constructs.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0504-35e8-8ae2-56f9" name="02" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="ab85-5a99-3c74-96e8" typeName="Man-sized Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="1abb-44df-d913-05a9">Jump Up and Down: The Giant jumps up and down vigorously on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks. 
-
-Giants enjoy jumping up and down on their enemies so much that a Giant that does so in one combat round will automatically do so in the following round if it is able to, assuming that it did not fall over in the previous round. A Giant that starts to Jump Up and Down will therefore continue to do so on the same target until it falls over, the target is destroyed, or the combat ends.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7d16-2a51-7206-de0c" name="03" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="ab85-5a99-3c74-96e8" typeName="Man-sized Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="1abb-44df-d913-05a9">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). The Giant grabs the model and the player rolls a D6 on the Pick Up and... table.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="7dee-3029-0379-f50d" name="04-06" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="ab85-5a99-3c74-96e8" typeName="Man-sized Things Chart">
           <characteristics>
             <characteristic name="Result" typeId="1abb-44df-d913-05a9">Flail with Chain: The Slavegiant inflicts D6 S 6 hits on the target unit, allocated as shooting hits.</characteristic>
@@ -5150,66 +5123,25 @@ Giants enjoy jumping up and down on their enemies so much that a Giant that does
             <characteristic name="Result" typeId="8f1f-704e-a54d-7dcd">Throttle with Chain: The target must take a T test. If this is failed, it sustains 2D6 wounds with no Armour Save allowed.</characteristic>
           </characteristics>
         </profile>
-        <profile id="4cf7-c425-6e0a-1079" name="05-06" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="37be-f2b6-689d-9ca7" typeName="Big Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="8f1f-704e-a54d-7dcd">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="73a7-890d-5dec-b8fe" name="02" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="349c-e1b9-fd37-6441" typeName="Pick Up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="58e6-7a86-ce94-14fb">Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 S 6 Hits which Ignores Armour saves, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9a67-d6cd-0d9f-6564" name="03" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="349c-e1b9-fd37-6441" typeName="Pick Up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="58e6-7a86-ce94-14fb">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits (save as normal). Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ab44-846d-e342-f91f" name="05" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="349c-e1b9-fd37-6441" typeName="Pick Up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="58e6-7a86-ce94-14fb">Eat: The model is removed as a casualty.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="14cb-1496-8c67-5f2f" name="04" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="349c-e1b9-fd37-6441" typeName="Pick Up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="58e6-7a86-ce94-14fb">Squash: The model is removed as a casualty.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="363d-5cdd-feb3-4458" name="06" publicationId="9e23-79cb-pubN78137" page="100" hidden="false" typeId="349c-e1b9-fd37-6441" typeName="Pick Up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="58e6-7a86-ce94-14fb">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="e5b9-e2e5-bb08-cf61" name="Giant Special Attacks" publicationId="9e23-79cb-pubN78137" page="99" hidden="false">
-          <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the tables. Which table you use depends on the size of the Giant&apos;s victim. If no suitable target is in base contact, roll again on the chart until you get another result. Use the Small Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines.</description>
-        </rule>
-        <rule id="739a-4cf8-961b-ebc0" name="Fall Over" publicationId="9e23-79cb-pubN78137" page="99" hidden="false">
-          <description>A Giant must test to see whether it falls over if any of the following apply:
-
- If it is beaten in close combat. Test once results are established but before taking a Break test.
-
- If it is fleeing at the start of the Movement phase.
-
- When it crosses an obstacle. Test when the obstacle is reached.
-
- If the Giant decides to Jump Up and Down on an enemy. Test immediately beforehand.
-
-To see if a Giant falls over roll a D6. On a roll of 1, the Giant falls over. A slain Giant falls over automatically.
-
-To determine in which direction the Giant falls, roll a scatter dice. Any unit within 4&quot; of the direction the Giant falls suffers 2D6 S 6 Hits that have Multiple Wounds (D3), distributed as hits from shooting, though no single model may suffer more than 1 Hit – any excess Hits are ignored. If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result.
-
-A Giant that falls over automatically suffers 1 wound. If the Giant is in combat then this wound counts towards combat resolution.
-
-Once on the ground a Giant may get up in his following Movement phase, but may not move that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain. If the Giant gets the opportunity to pursue his foes whilst he&apos;s on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink id="24e7-a37d-a6f4-ef61" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="24e7-a37d-a6f4-ef61" name="01 (Big Things)" hidden="false" targetId="8c21-37de-1b89-a1aa" type="profile"/>
         <infoLink id="7c5c-0032-1c2f-db86" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="db68-feab-d9f7-615e" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="27a2-a6de-20ce-024d" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="d1ec-caa0-6a14-5785" name="Giant Special Attacks" hidden="false" targetId="fba8-fc55-f60b-edd8" type="rule"/>
+        <infoLink id="5867-0687-76d5-df72" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="4148-5e2b-28f0-f9c6" name="Fall Over" hidden="false" targetId="4a8b-1056-0bcd-e293" type="rule"/>
+        <infoLink id="ea0f-3728-22d2-2791" name="01 (Man-sized Things)" hidden="false" targetId="b8b8-f1ce-c6c8-0b05" type="profile"/>
+        <infoLink id="7764-c0af-1048-93d2" name="02 (Man-sized Things)" hidden="false" targetId="b2e1-ecf2-bf44-91d5" type="profile"/>
+        <infoLink id="4a9f-1e29-222c-ae74" name="05-06 (Big Things)" hidden="false" targetId="8a42-5b93-bd50-784e" type="profile"/>
+        <infoLink id="3cee-8682-b920-5410" name="03 (Man-sized Things)" hidden="false" targetId="473d-503e-6b10-8a6a" type="profile"/>
+        <infoLink id="6b3f-0334-a1ff-18a6" name="01 (Pick Up and...)" hidden="false" targetId="b0eb-eada-2e6d-dc42" type="profile"/>
+        <infoLink id="2f09-64a4-59a3-1cf1" name="02 (Pick Up and...)" hidden="false" targetId="8845-1216-ef80-8109" type="profile"/>
+        <infoLink id="1a2e-0676-27e2-156d" name="03 (Pick Up and...)" hidden="false" targetId="f05e-b4ef-d493-96f3" type="profile"/>
+        <infoLink id="a815-fdc7-7dca-5198" name="04 (Pick Up and...)" hidden="false" targetId="af1a-be06-2fc6-a34f" type="profile"/>
+        <infoLink id="6195-e99e-50f4-8003" name="05 (Pick Up and...)" hidden="false" targetId="e9ae-c46b-2062-acad" type="profile"/>
+        <infoLink id="8d24-82f0-5042-224e" name="06 (Pick Up and...)" hidden="false" targetId="985e-ec4a-2847-118b" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="83f9-0b0b-0a7c-ccb7" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5915,7 +5847,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
         <categoryLink id="2461-f899-5644-ff0b" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cc78-4122-c9b5-394e" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Ogre Kingdoms Special)" type="selectionEntryGroup"/>
+        <entryLink id="cc78-4122-c9b5-394e" name="Regiments of Renown (OK Special)" hidden="false" collective="false" import="true" targetId="5dd3-e54b-84c2-afa6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5926,7 +5858,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
         <categoryLink id="1174-2f9b-1c77-5838" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e037-155b-6e5b-b578" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Ogre Kingdoms Rare)" type="selectionEntryGroup"/>
+        <entryLink id="e037-155b-6e5b-b578" name="Regiments of Renown (OK Rare)" hidden="false" collective="false" import="true" targetId="1fd1-5518-877d-df0f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5937,7 +5869,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
         <categoryLink id="d529-77ce-cff8-7a4a" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ebe6-09f4-c75c-1dd8" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Ogre Kingdoms Core)" type="selectionEntryGroup"/>
+        <entryLink id="ebe6-09f4-c75c-1dd8" name="Regiments of Renown (OK Core)" hidden="false" collective="false" import="true" targetId="c3d6-9113-240c-b7c6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5948,7 +5880,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
         <categoryLink id="bc95-33ff-75ed-fd40" name="New CategoryLink" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fa14-89e4-141b-aa63" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Ogre Kingdoms Hero)" type="selectionEntryGroup"/>
+        <entryLink id="fa14-89e4-141b-aa63" name="Regiments of Renown (OK Hero)" hidden="false" collective="false" import="true" targetId="e349-0c0c-2cdd-a865" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -6668,7 +6600,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ed4-0cab-1615-ada6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="224b-de53-99e4-4ab1" name="The Tenderiser" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="224b-de53-99e4-4ab1" name="The Tenderiser" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -6686,7 +6618,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9637-61c0-cc3c-75b3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e138-24e5-8126-2bda" name="Skullplucker" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="e138-24e5-8126-2bda" name="Skullplucker" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -6769,7 +6701,7 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b87-d00a-b86f-a651" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b7db-e56c-e79f-717e" name="Bullgut" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="b7db-e56c-e79f-717e" name="Bullgut" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -6829,7 +6761,7 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ff3-b285-5bd6-3f50" type="max"/>
           </constraints>
           <profiles>
-            <profile id="98a8-3ddb-a230-d91d" name="Halfling Cookbook" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="98a8-3ddb-a230-d91d" name="Halfling Cookbook" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">A model with the Halfling Cookbook may re-roll one dice (except 1&apos;s) per casting roll when using the Lore of the Great Maw.</characteristic>
               </characteristics>
@@ -6845,12 +6777,12 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70b5-1b1c-344f-a5cd" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2625-9d07-acac-131e" name="Bangstick" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="2625-9d07-acac-131e" name="Bangstick" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Bound Spell, Power Level 5.</characteristic>
               </characteristics>
             </profile>
-            <profile id="c55e-5816-4dc9-831a" name="Bang" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+            <profile id="c55e-5816-4dc9-831a" name="Bang" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -6862,6 +6794,23 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1e7e-2ac3-5765-50eb" name="The Hungry Maw" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b496-eb1d-9445-557e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="994c-e4c5-09c7-c77e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="abd0-cd7b-d29f-f623" name="The Hungry Maw" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Hungry Maw can be used after successfully dispelling an enemy spell. When used,
+the enemy spell can no longer be used for the remainder of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6926,7 +6875,7 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e98-2a9f-df19-e9da" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f16a-19d4-67bd-53b7" name="Brahmir Statue" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="f16a-19d4-67bd-53b7" name="Brahmir Statue" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Any Psychology tests caused by the bearer of the Brahmir Statue on any unit from Warhammer: Beastmen or Warhammer: Warriors of Chaos are taken with a -3 LD penalty.</characteristic>
               </characteristics>
@@ -6942,7 +6891,7 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b88d-5d38-11f6-a795" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a19e-eaac-c730-313b" name="Jade Lion" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="a19e-eaac-c730-313b" name="Jade Lion" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The bearer of the Jade Lion and any unit they are with may re-roll any failed Psychology tests. If the unit flees for any reason, this benefit is lost for the remainder of the game.</characteristic>
               </characteristics>
@@ -6958,9 +6907,26 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5247-4d65-f7d7-5288" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f7c0-c593-43ad-dd3c" name="Fistful of Laurels" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="f7c0-c593-43ad-dd3c" name="Fistful of Laurels" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The model with the Fistful of Laurels and any unit they are with roll 3D6 and discard the highest result for their first failed Break test in the game.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The model with the Fistful of Laurels and any unit they are with may re-roll their first
+failed Break test in the game using 3D6 and discard the highest result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4c25-de3f-89b1-f51a" name="Rock Eye" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a63c-38b9-cd62-0d00" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35b7-8c69-00a3-a882" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a591-c421-d049-6cc8" name="Rock Eye" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the beginning of each Ogre turn, pick one unit in the line of sight of the bearer of the Rock Eye. The opposing player must announce the presence of all Magic Items, Hidden models and the like that unit might have.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7016,7 +6982,7 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd12-3b79-3a2b-c9f3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="001e-401c-1aa4-aaa3" name="Cannibal Totem" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="001e-401c-1aa4-aaa3" name="Cannibal Totem" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">If the unit carrying the Cannibal Totem is in base contact with an enemy Troop Type with the same or higher Unit Strength as them, all models in the unit re-roll failed To Hit and To Wound rolls in the first round of that combat. However, they may not Overrun and must Pursue the enemy if possible.</characteristic>
               </characteristics>
@@ -7032,14 +6998,14 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a644-edf1-032b-aa7b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="df0f-1069-d5e2-ec29" name="Bull Standard" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="df0f-1069-d5e2-ec29" name="Bull Standard" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">A unit carrying the Bull Standard re-roll failed To Wound rolls for their Impact Hits.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8e9f-690d-abf6-0123" name="Ragbanner" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7048,9 +7014,9 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d3f-d409-6165-44c0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8308-b7db-b949-6893" name="Ragbanner" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="8308-b7db-b949-6893" name="Ragbanner" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Ragbanner gains Immunity (Panic).</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Ragbanner rolls 3D6 when taking Panic tests and discards the highest result.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7074,14 +7040,14 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="461e-5424-f734-a4ca" type="max"/>
           </constraints>
           <profiles>
-            <profile id="22e0-22d1-bc23-4a60" name="Cathayan Jet" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="22e0-22d1-bc23-4a60" name="Cathayan Jet" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The bearer of the Cathayan Jet gains Magic Resistance (3). This has no effect on spells from the Lore of Ying and Yan.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="225a-4bff-6b2d-c6e6" name="Spangleshard" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7090,9 +7056,9 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f693-ca73-6bf8-e4c4" type="max"/>
           </constraints>
           <profiles>
-            <profile id="33d0-c98d-98d6-100b" name="Spangleshard" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="33d0-c98d-98d6-100b" name="Spangleshard" publicationId="e3da-3848-ff08-a482" page="35" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">For each Wound the bearer of the Spangleshard suffers, roll a D6. If this roll is higher than the result of the To Wound roll, that wound is discounted.</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">For each Wound the bearer of the Spangleshard suffers, roll a D6. If this roll is higher than the result of the To Wound roll, that wound is ignored.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7107,9 +7073,6 @@ Wizard loses a Wizard level and a randomly selected spell each time they are hit
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="d041-af68-1592-6f88" name="Ogre Charge" publicationId="9e23-79cb-pubN78137" page="56" hidden="false">
-      <description>Each monstrous infantry model on foot with Ogre Charge that successfully charges an enemy has Impact Hits (1). Models with Ogre Charge that are part of a unit with ranks add their current Rank Bonus to the S of the Impact Hits they inflict.</description>
-    </rule>
     <rule id="3e38-e9e9-331a-66ed" name="Bellower" publicationId="9e23-79cb-pubN78137" page="56" hidden="false">
       <description>For the purposes of the rules, an Ogre Bellower follows the rules for musicians.</description>
     </rule>
@@ -7563,7 +7526,4 @@ Once the final position of the template is determined, all models under the temp
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="2928-53b7-b06c-401f" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
@@ -89,7 +89,7 @@
         <infoLink id="7244-d608-a679-422b" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
         <infoLink id="e080-3491-15c3-fc37" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
         <infoLink id="a26b-a782-cd23-06cc" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
-        <infoLink id="c343-59a9-f389-63f7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="c343-59a9-f389-63f7" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="ff49-726a-caf8-6066" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -121,9 +121,16 @@
           <profiles>
             <profile id="f5b4-6bc3-28a0-d220" name="Spear of Kurnous" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. The Spear of Kurnous gives Orion Strength Bonus (1) as well as Armour Piercing (1) and Multiple Wounds (D3).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c9e9-6764-0b0a-ab08" name="Spear of Kurnous (Ranged)" publicationId="e967-620f-06be-096a" page="144" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. The Spear of Kurnous gives Orion Strength Bonus (1). Armour Piercing (1). Multiple Wounds (D3). The Spear of Kurnous can be used to make shooting attacks using the same rules as a bolt thrower. This attack can be made if Orion moves (but not if he marches).</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Armour Piercing (1). Multiple Wounds (D3). The Spear of Kurnous can be used to make shooting attacks using the same rules as a bolt thrower. This attack can be made if Orion moves (but not if he marches).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -208,7 +215,7 @@
         <entryLink id="015a-b14e-7db1-65e8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="385.0"/>
+        <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f55-9808-5d7d-7469" name="Ariel" hidden="false" collective="false" import="true" type="model">
@@ -247,7 +254,7 @@
         <infoLink id="2d9d-13e8-f4b7-0e18" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="0c49-acc2-5586-f373" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
         <infoLink id="ae67-c0ee-1d7d-f21c" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
-        <infoLink id="b490-9f7f-ed71-0ad6" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="b490-9f7f-ed71-0ad6" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="fa69-1a47-c94f-5e55" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
         <infoLink id="9648-9382-16b8-8c67" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
         <infoLink id="ad86-dcad-432f-4953" name="Loremaster (Lore of Athel Loren)" hidden="false" targetId="4384-4bf5-ea6e-c49d" type="rule"/>
@@ -532,7 +539,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="127e-b36a-f121-0301" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="127e-b36a-f121-0301" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="db9a-cb40-c277-a664" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="9a18-7d67-2d7f-ff1f" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
       </infoLinks>
@@ -606,7 +613,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2849-eb60-b223-2ec0" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="2849-eb60-b223-2ec0" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="007b-247e-ac8d-5e3b" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -719,7 +726,7 @@
       <infoLinks>
         <infoLink id="0a33-b2fb-f056-8923" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
         <infoLink id="bdda-7a16-61ad-ba54" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="a1b6-0972-065d-e178" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="a1b6-0972-065d-e178" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6e69-7f79-cc6a-de2c" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -850,7 +857,7 @@
                   </constraints>
                   <infoLinks>
                     <infoLink id="dcc8-31c3-035a-dbf1" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
-                    <infoLink id="665b-870c-6ea6-97ac" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+                    <infoLink id="665b-870c-6ea6-97ac" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
                     <infoLink id="f1f4-236f-e1a6-c244" name="Charioteer" hidden="false" targetId="164f-4028-3434-d081" type="profile"/>
                   </infoLinks>
                   <selectionEntries>
@@ -1141,7 +1148,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="febd-7d7c-0392-3304" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="5ee4-b283-abb6-5f18" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="5ee4-b283-abb6-5f18" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="4c54-154a-ed70-a7b8" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1635,7 +1642,7 @@
           <infoLinks>
             <infoLink id="9c4c-3234-ba24-96c5" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
             <infoLink id="15ba-a747-bfa9-b0e4" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-            <infoLink id="609a-5e93-53a1-26c6" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="609a-5e93-53a1-26c6" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="2ca7-356b-57d1-f29c" name="Sisters of Twilight" hidden="false" targetId="1e00-a146-8714-588f" type="rule"/>
             <infoLink id="4464-fc25-ed35-be9c" name="Conjoined Destiny" hidden="false" targetId="8019-e15c-4a5c-c6d8" type="rule"/>
           </infoLinks>
@@ -1699,7 +1706,7 @@
           <infoLinks>
             <infoLink id="44dd-f5a7-fca0-a2df" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
             <infoLink id="d908-5dec-7474-d916" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-            <infoLink id="c1fd-2842-439a-cdf7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="c1fd-2842-439a-cdf7" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="c5fd-5389-0e70-376b" name="Sisters of Twilight" hidden="false" targetId="1e00-a146-8714-588f" type="rule"/>
             <infoLink id="bb6f-c8b1-8c37-eca9" name="Conjoined Destiny" hidden="false" targetId="8019-e15c-4a5c-c6d8" type="rule"/>
           </infoLinks>
@@ -1885,7 +1892,7 @@
       <infoLinks>
         <infoLink id="0c8f-f48e-9706-a3c4" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
         <infoLink id="7421-3f30-0c58-f911" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="deb7-63ea-0a69-331b" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="deb7-63ea-0a69-331b" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a017-2b06-8f0d-171a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -1965,7 +1972,7 @@
     </selectionEntry>
     <selectionEntry id="9d99-2e19-9699-7abd" name="Lothlann the Brave" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="8f47-95ba-8db8-0d57" value="0">
+        <modifier type="set" field="8f47-95ba-8db8-0d57" value="0.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6bbc-55dc-1614-2845" type="atLeast"/>
           </conditions>
@@ -1992,8 +1999,8 @@
       </profiles>
       <infoLinks>
         <infoLink id="7739-3535-53f0-5d4c" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
-        <infoLink id="ed35-c683-44b6-b9ad" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="4f79-9fc2-5bf2-1e33" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="4f79-9fc2-5bf2-1e33" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+        <infoLink id="7a8f-8dfa-6b75-6e78" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="99fb-b56d-45f8-676a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2080,7 +2087,7 @@
       <infoLinks>
         <infoLink id="85b1-f323-6c21-2260" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
         <infoLink id="3c84-fd0d-b92d-6adc" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="d9d5-ec8d-c86a-5cce" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="d9d5-ec8d-c86a-5cce" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="5d94-4db6-cc2d-b485" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -2157,7 +2164,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       </rules>
       <infoLinks>
         <infoLink id="1f55-9176-8f44-8ab6" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="d2f5-95d7-9da8-1eb1" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="d2f5-95d7-9da8-1eb1" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd74-8eb7-3228-925c" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2239,7 +2246,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="d73b-9bd9-df00-2ba7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="d73b-9bd9-df00-2ba7" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="6e8f-704e-7717-9091" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="4779-f25c-fba4-a213" name="Animal Form" hidden="false" targetId="fca4-0d36-e304-5bca" type="rule"/>
             <infoLink id="bebd-1d07-c173-cd6b" name="Form of the Bear" hidden="false" targetId="f838-ee10-df65-4b8e" type="profile"/>
@@ -2385,7 +2392,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       <infoLinks>
         <infoLink id="0cdf-6ba6-4f82-ab0f" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
         <infoLink id="e72d-4461-e378-61cc" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="cc95-4dd2-a690-764e" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="cc95-4dd2-a690-764e" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bd55-71ec-33da-4fdb" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -2504,7 +2511,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
                   </constraints>
                   <infoLinks>
                     <infoLink id="99f1-bc31-040d-4bf7" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
-                    <infoLink id="d377-1d81-62d9-74c4" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+                    <infoLink id="d377-1d81-62d9-74c4" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
                     <infoLink id="6623-6848-18d8-93f3" name="Charioteer" hidden="false" targetId="164f-4028-3434-d081" type="profile"/>
                   </infoLinks>
                   <selectionEntries>
@@ -2843,7 +2850,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       </profiles>
       <infoLinks>
         <infoLink id="9511-e50f-d9b8-e7ed" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="5207-ff5b-11fd-e6c7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="5207-ff5b-11fd-e6c7" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="ec07-ba01-099e-fb90" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -3076,7 +3083,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       </profiles>
       <infoLinks>
         <infoLink id="3ade-482f-6831-e0ad" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="2a95-7c57-117b-4709" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="2a95-7c57-117b-4709" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="9054-a885-80e7-a0aa" name="Blessings of the Ancients" hidden="false" targetId="cc70-29e9-de9a-4802" type="rule"/>
         <infoLink id="e124-df8a-09c6-bcba" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
         <infoLink id="155c-f317-b85e-4498" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
@@ -3177,7 +3184,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       <infoLinks>
         <infoLink id="12f2-0143-8f8c-de43" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
         <infoLink id="4668-6777-dba2-fae9" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="1c8a-ebab-3bdf-81ee" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="1c8a-ebab-3bdf-81ee" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="5c6d-4feb-ce68-453d" name="Sniper" hidden="false" targetId="8977-b58c-704d-705e" type="rule"/>
         <infoLink id="08f4-ea6e-0fed-87da" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="0443-6cc8-c043-9336" name="Lethal Shot" hidden="false" targetId="cd7f-3ad6-61f2-86d3" type="rule"/>
@@ -3186,6 +3193,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <infoLink id="ac87-7740-3975-6842" name="04" hidden="false" targetId="bd77-537f-e99d-8342" type="profile"/>
         <infoLink id="9963-2e81-8138-55b3" name="05" hidden="false" targetId="fd06-4754-729a-652d" type="profile"/>
         <infoLink id="750e-43d9-5218-90fc" name="06" hidden="false" targetId="481e-e0e8-4302-0039" type="profile"/>
+        <infoLink id="e3af-1cab-bc9e-cffb" name="Forest Stalkers" hidden="false" targetId="1bda-66b4-3f03-18bb" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a8cf-b40c-e490-07ee" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -3410,7 +3418,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="8211-aa6f-9044-29f2" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="8211-aa6f-9044-29f2" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="b351-4d6c-3332-4bc6" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
             <infoLink id="20ce-3098-a7a2-c6f8" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
           </infoLinks>
@@ -3605,11 +3613,11 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </profiles>
           <rules>
             <rule id="ae7e-ffd1-6ef3-2b91" name="Deepwood Scout" publicationId="e967-620f-06be-096a" page="178" hidden="false">
-              <description>You may not have more models of Deepwood Scouts than you have models of Glade Guard.</description>
+              <description>You may not have more units of Deepwood Scouts than you have units of Glade Guard.</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="f629-db06-0cbc-7fb7" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="f629-db06-0cbc-7fb7" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="a727-dcaf-2a79-5d94" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
             <infoLink id="40a2-1cbf-28c4-3025" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="5d3d-b4c3-632c-f642" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
@@ -3795,7 +3803,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="cf88-aa5d-b57d-5acd" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="cf88-aa5d-b57d-5acd" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="d75d-88e5-81b0-c028" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
             <infoLink id="00fd-6137-21ff-9916" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
           </infoLinks>
@@ -4030,7 +4038,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </profiles>
           <infoLinks>
             <infoLink id="b240-37ca-be16-0c72" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-            <infoLink id="280b-a463-c251-e941" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="280b-a463-c251-e941" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="86c7-ba22-aa0c-1e4a" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
             <infoLink id="0c77-6406-eac8-f744" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
           </infoLinks>
@@ -4042,8 +4050,8 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </constraints>
               <infoLinks>
                 <infoLink id="cdda-52c6-7d01-02c4" name="Elven Steed" hidden="false" targetId="5114-24cc-3c58-89ec" type="profile"/>
-                <infoLink id="d91d-d55f-3ad2-79f5" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="83a6-12b0-7bf1-db47" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                <infoLink id="b240-3672-f778-8304" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4270,7 +4278,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="bd41-5892-34d3-3a25" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="bd41-5892-34d3-3a25" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="c0c7-8f97-b7f0-578c" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
             <infoLink id="57af-e7c1-1cdb-79a2" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
           </infoLinks>
@@ -4404,7 +4412,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="8415-31d0-c2c7-f94f" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="8415-31d0-c2c7-f94f" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="05fe-e287-d91f-d919" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
             <infoLink id="f7c3-178b-efe2-db2a" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="888c-8bd0-7b6d-e935" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
@@ -4537,11 +4545,12 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </constraints>
           <infoLinks>
             <infoLink id="896b-d010-0718-1208" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
-            <infoLink id="8346-270a-a1fe-6a17" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="8346-270a-a1fe-6a17" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="0a53-e4cc-f4fa-fcee" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
             <infoLink id="041a-a278-2147-9522" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="c237-dd94-1288-5f7c" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
             <infoLink id="6d69-a120-62ae-d88b" name="Wild Rider" hidden="false" targetId="1a07-7d7a-acf3-1159" type="profile"/>
+            <infoLink id="4654-904c-ce62-5b98" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="15fb-1c48-d98a-28ff" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -4702,7 +4711,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </constraints>
           <infoLinks>
             <infoLink id="484e-1630-c475-576d" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
-            <infoLink id="2163-8f2a-a394-63bb" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="2163-8f2a-a394-63bb" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="a652-80c1-0837-014f" name="Charioteer" hidden="false" targetId="164f-4028-3434-d081" type="profile"/>
           </infoLinks>
           <selectionEntries>
@@ -4861,7 +4870,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </profiles>
           <infoLinks>
             <infoLink id="51df-299f-1677-a759" name="Animal Form" hidden="false" targetId="fca4-0d36-e304-5bca" type="rule"/>
-            <infoLink id="a93c-6d43-2245-b6f4" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="a93c-6d43-2245-b6f4" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="5254-24ac-7504-61c1" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="e99b-1d13-6f6b-5ae4" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="7420-f252-b720-b0e6" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
@@ -4939,7 +4948,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </profiles>
           <infoLinks>
             <infoLink id="3197-7013-3e31-e179" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-            <infoLink id="e016-148d-498e-7748" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="e016-148d-498e-7748" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="473e-1aa1-2b2a-abf6" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -5331,13 +5340,8 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="eb71-284d-b7c3-71f3" name="Forest Stalkers" publicationId="e967-620f-06be-096a" page="120" hidden="false">
-              <description>While inside a wood, models with this rule are at an additional -1 to be Hit with missile attacks. In addition, they may deploy within 12&quot; of an enemy unit if they do so within a wood.</description>
-            </rule>
-          </rules>
           <infoLinks>
-            <infoLink id="84a5-5b42-5ca1-8073" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="84a5-5b42-5ca1-8073" name="Forest Stalkers" hidden="false" targetId="1bda-66b4-3f03-18bb" type="rule"/>
             <infoLink id="af70-aa17-5802-69f5" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="b101-3438-268a-1768" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
             <infoLink id="c627-7fb6-6080-064a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
@@ -5348,6 +5352,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
             <infoLink id="17e9-d0e8-91b1-689b" name="05" hidden="false" targetId="fd06-4754-729a-652d" type="profile"/>
             <infoLink id="5edd-3925-31cc-4cc8" name="06" hidden="false" targetId="481e-e0e8-4302-0039" type="profile"/>
             <infoLink id="00ea-aa3e-1e45-f212" name="01-02" hidden="false" targetId="bb5e-e099-0dce-d91a" type="profile"/>
+            <infoLink id="8339-038b-b365-cba8" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="5c59-8db4-68b5-abd4" name="Asrai Longbow" hidden="false" collective="true" import="true" type="upgrade">
@@ -5959,7 +5964,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <categoryLink id="77b9-c24f-bc26-a5f8" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="61f0-1bba-7b0c-5f4b" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Wood Elves Hero)" type="selectionEntryGroup"/>
+        <entryLink id="61f0-1bba-7b0c-5f4b" name="Regiments of Renown (WE Hero)" hidden="false" collective="false" import="true" targetId="dbc3-a0a2-ed74-d61a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5970,7 +5975,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <categoryLink id="7dae-66a0-e92a-1242" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6a94-6a93-524a-fcc9" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Wood Elves Special)" type="selectionEntryGroup"/>
+        <entryLink id="6a94-6a93-524a-fcc9" name="Regiments of Renown (WE Special)" hidden="false" collective="false" import="true" targetId="2cc2-08dc-5593-8450" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -5981,7 +5986,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <categoryLink id="0a5e-9af4-2314-9303" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="673c-ecaa-51b2-6d60" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Wood Elves Rare)" type="selectionEntryGroup"/>
+        <entryLink id="673c-ecaa-51b2-6d60" name="Regiments of Renown (WE Rare)" hidden="false" collective="false" import="true" targetId="9a79-9043-acdc-9638" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -6008,11 +6013,12 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
           </constraints>
           <infoLinks>
             <infoLink id="9516-070a-6a15-a7f3" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
-            <infoLink id="acd5-f7cc-8a9a-411d" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+            <infoLink id="acd5-f7cc-8a9a-411d" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
             <infoLink id="7083-4202-f677-21a5" name="Devastating Charge" hidden="false" targetId="e025-10f3-f893-4bd7" type="rule"/>
             <infoLink id="2d1d-2488-d35e-b24e" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="0ded-672d-9819-6e5f" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
             <infoLink id="0594-289c-88e9-8af1" name="Wild Rider" hidden="false" targetId="1a07-7d7a-acf3-1159" type="profile"/>
+            <infoLink id="4133-b30f-8f1a-84b6" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="306c-64d4-11bf-60be" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -6174,7 +6180,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
       <infoLinks>
         <infoLink id="1020-be44-f652-b981" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
         <infoLink id="2611-8f45-3ea0-1290" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
-        <infoLink id="fa10-d5d3-f32b-7a9d" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="fa10-d5d3-f32b-7a9d" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8d9d-7ca2-7c8c-8d84" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -6257,7 +6263,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         <infoLink id="4519-d24d-78b7-1162" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="4fbe-1a03-d0b6-468a" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="858e-3674-3384-13b8" name="Asrai Archery" hidden="false" targetId="1022-f68d-8b72-1dc0" type="rule"/>
-        <infoLink id="05ed-ba0b-eb5e-57b8" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="05ed-ba0b-eb5e-57b8" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2ea2-ae80-8cee-d143" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
@@ -6344,7 +6350,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="73ed-0648-8d36-39fa" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="73ed-0648-8d36-39fa" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="c8e3-6351-fe36-0915" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
         <infoLink id="2dd6-c19d-53e4-c7bb" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
         <infoLink id="f24d-cb7f-09d8-438d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
@@ -6415,7 +6421,7 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a7a4-bd59-2297-aa78" name="Elven Grace" hidden="false" targetId="455a-b0e3-ceea-f0a6" type="rule"/>
+        <infoLink id="a7a4-bd59-2297-aa78" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
         <infoLink id="2b89-7d5a-47c1-8f59" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
         <infoLink id="9671-80cc-cd8b-1b71" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
         <infoLink id="59ff-f216-0acf-35a8" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
@@ -7278,30 +7284,30 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9087-2761-da54-5ed7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cbc7-f0b4-e77f-4c58" name="Amaranthine Brooch" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="cbc7-f0b4-e77f-4c58" name="Amaranthine Brooch" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Amaranthine Brooch gives the wearer Ward Save (4+) against non-Magical Attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7e47-346b-1c49-386a" name="Glamourweave" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7e47-346b-1c49-386a" name="Waystalker&apos;s Cloak" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80b5-958f-47b0-3044" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f470-8ae4-ef3c-3af8" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2edb-8ff1-4fb5-5db8" name="Glamourweave" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="2edb-8ff1-4fb5-5db8" name="Waystalker&apos;s Cloak" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Glamourweave gives the bearer the Ward Save (4+) special rule against missile attacks. In addition, any model attempting to strike the bearer in close combat must first pass a LD test or require 6&apos;s To Hit the bearer during that Combat phase.</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Waystalker&apos;s Cloak gives the wearer Forest Stalker.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4e9f-79cd-38e8-ab23" name="Stone of the Crystal Mere" hidden="false" collective="false" import="true" type="upgrade">
@@ -7310,7 +7316,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6915-51a8-b2f4-2787" type="max"/>
           </constraints>
           <profiles>
-            <profile id="292e-eb18-874a-7161" name="Stone of the Crystal Mere" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="292e-eb18-874a-7161" name="Stone of the Crystal Mere" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Stone of the Crystal Mere gives the bearer Ward Save (3+). However, if this Ward Save is ever failed, then the Ward Save is lost for the rest of the game.</characteristic>
               </characteristics>
@@ -7326,7 +7332,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c1b-f435-7b48-b541" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ec7c-f431-f0d9-a423" name="Amber Pendant" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="ec7c-f431-f0d9-a423" name="Amber Pendant" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Amber Pendant causes all enemy units in base contact with the wearer to be subject to Always Strikes Last.</characteristic>
               </characteristics>
@@ -7342,7 +7348,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bfc-b2e9-607c-0a38" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f487-fbbe-f8eb-634f" name="The Fimbulwinter Shard" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="f487-fbbe-f8eb-634f" name="The Fimbulwinter Shard" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Fimbulwinter Shard causes enemies attacking the bearer in close combat to suffer -1 To Hit. However, all models with Forest Spirit suffer from Stupidity while the bearer is within 6&quot;.</characteristic>
               </characteristics>
@@ -7358,7 +7364,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd92-b2c0-5009-78ac" type="max"/>
           </constraints>
           <profiles>
-            <profile id="193e-50aa-3d71-3fc8" name="Stone of Rebirth" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="193e-50aa-3d71-3fc8" name="Stone of Rebirth" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">One use only. If the bearer of the Stone of Rebirth is killed, roll a D6. On a 2+, the model is brought back to life with one Wound remaining. This has no effect if the wearer was killed as a result of being pursued down.</characteristic>
               </characteristics>
@@ -7374,7 +7380,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb75-1a91-88c0-cd81" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c2ec-f3e7-d0ea-ddd9" name="Merciw&apos;s Locus" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="c2ec-f3e7-d0ea-ddd9" name="Merciw&apos;s Locus" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">Merciw&apos;s Locus causes the bearer and any model attacking them to lose all S bonuses from any weapon they might carry.</characteristic>
               </characteristics>
@@ -7382,6 +7388,22 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9afd-e158-4bcc-d230" name="Glamourweave" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="19c7-1675-c715-104d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4317-dfb9-8869-4c9b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4b7d-5205-f944-d7cc" name="Glamourweave" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Glamourweave gives the bearer Ward Save (4+) against missile attacks. In addition, any model attempting to strike the bearer in close combat must first pass a LD test or require 6&apos;s To Hit the bearer during that Combat phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7436,7 +7458,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4148-7701-0a88-eb62" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0836-20d0-e9b6-324d" name="The Dawnspear" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="0836-20d0-e9b6-324d" name="The Dawnspear" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7454,7 +7476,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b0b-05f0-be84-b7cf" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9f93-9ea6-b6f9-e2c4" name="The Callach&apos;s Claw" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="9f93-9ea6-b6f9-e2c4" name="The Callach&apos;s Claw" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7472,7 +7494,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="083a-47aa-a23b-9ff3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6190-17e8-d018-9b65" name="The Hunter&apos;s Talon" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="6190-17e8-d018-9b65" name="The Hunter&apos;s Talon" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7490,7 +7512,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8547-d543-105a-ad71" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f195-441f-50d5-9cec" name="Blades of Loec" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="f195-441f-50d5-9cec" name="Blades of Loec" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7508,7 +7530,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58ae-9afe-e5ab-11c6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="6c36-b88e-4ebc-2fb3" name="The Spear of Twilight" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="6c36-b88e-4ebc-2fb3" name="The Spear of Twilight" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7526,11 +7548,11 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f23-ba19-0e8c-b3cb" type="max"/>
           </constraints>
           <profiles>
-            <profile id="d530-1965-f296-b39f" name="The Sword of a Thousand Winters" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="d530-1965-f296-b39f" name="The Sword of a Thousand Winters" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Characters and Monsters must take a T test for each unsaved wound suffered by the Sword of a Thousand Winters. For every test failed, they suffer -1 S, I and A for the remainder of the game.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Sword of a Thousand Winters gives the bearer Ice Attacks. In addition, Characters and Monsters must take a T test for each unsaved wound suffered by the Sword of a Thousand Winters. For every test failed, they suffer -1 S, I and A for the remainder of the game.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7544,7 +7566,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce77-b409-92c1-65d3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4470-37a8-1279-cde7" name="Rageth&apos;s Wildfire Blades" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="4470-37a8-1279-cde7" name="Rageth&apos;s Wildfire Blades" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7605,7 +7627,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f49-18c4-869b-148e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="e115-967e-7209-2481" name="Gaemrath, The Banner of Midwinter" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="e115-967e-7209-2481" name="Gaemrath, The Banner of Midwinter" publicationId="e3da-3848-ff08-a482" page="60" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">One use only. Gaemrath, the Banner of Midwinter may be used at the start of any of your Movement phases. Until the start of your next Movement phase, the unit carrying the banner may not move and gains Unbreakable.</characteristic>
               </characteristics>
@@ -7621,7 +7643,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c676-a42b-fc4b-5ed9" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7006-e4eb-b702-9aad" name="Faoghir, the Banner of Dwindling" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="7006-e4eb-b702-9aad" name="Faoghir, the Banner of Dwindling" publicationId="e3da-3848-ff08-a482" page="60" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Enemies that flee from the unit carrying Faoghir, the Banner of Dwindling as a result of failing a Break Test roll one dice less than normal to determine their flee distance.</characteristic>
               </characteristics>
@@ -7637,7 +7659,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7596-8e9f-075a-a425" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5a88-9871-1d60-e909" name="Saemrath, the Banner of Zenith" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="5a88-9871-1d60-e909" name="Saemrath, the Banner of Zenith" publicationId="e3da-3848-ff08-a482" page="60" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Enemy units within 12&quot; of the unit carrying Saemrath, the Banner of the Zenith may not March.</characteristic>
               </characteristics>
@@ -7653,7 +7675,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67b8-0e6b-fef7-3313" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b228-c99f-d04e-7014" name="Aech, the Banner of Springtide" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="b228-c99f-d04e-7014" name="Aech, the Banner of Springtide" publicationId="e3da-3848-ff08-a482" page="60" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
                 <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying Aech, the Banner of Springtide gains Quick to Fire.</characteristic>
               </characteristics>
@@ -7697,7 +7719,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5849-2432-80ad-1152" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9b19-b0c1-bd8b-d1ac" name="Armour of the Fey" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="9b19-b0c1-bd8b-d1ac" name="Armour of the Fey" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7706,7 +7728,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dbb7-3a6e-dfed-a8bb" name="The Oaken Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -7715,7 +7737,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5579-8d0a-58ef-651d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c98d-e4d1-6a59-c069" name="The Oaken Armour" publicationId="e3da-3848-ff08-a482" page="53" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="c98d-e4d1-6a59-c069" name="The Oaken Armour" publicationId="e3da-3848-ff08-a482" page="57" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7733,16 +7755,16 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="235c-fdb6-db65-d342" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ef81-58b0-b8db-7f2c" name="Railarian&apos;s Mantle" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="ef81-58b0-b8db-7f2c" name="Railarian&apos;s Mantle" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Light armour. Railarian&apos;s Mantle gives the wearer Ward Save (4+) if they are within 6&quot; of a forest.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Light armour. Railarian&apos;s Mantle gives the wearer Ward Save (5+) if they are within 6&quot; of a forest.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="aefc-496d-963d-3b66" name="Briarsheath" hidden="false" collective="false" import="true" type="upgrade">
@@ -7751,7 +7773,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bb9-951c-568d-eb69" type="max"/>
           </constraints>
           <profiles>
-            <profile id="df0d-d8a0-f91b-1db6" name="Briarsheath" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="df0d-d8a0-f91b-1db6" name="Briarsheath" publicationId="e3da-3848-ff08-a482" page="58" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7818,9 +7840,9 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6a7-7e65-17e0-b817" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0a73-ef11-d94d-ebb4" name="The Horn of the Asrai" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="0a73-ef11-d94d-ebb4" name="The Horn of the Asrai" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Horn of the Asrai can be used at the beginning of any enemy Movement phase. When used, all enemies able to charge the bearer of this item must take a Psychology test. If they fail, they must declare a charge against the bearer this turn.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Horn of the Asrai can be used at the beginning of any enemy Movement phase. When used, all enemies able to charge against the bearer of this item must take a Psychology test. If they fail, they must declare a charge the bearer this turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7834,7 +7856,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ddf2-2226-779d-9553" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f8df-62c8-83b5-9dd2" name="Wraithstone" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="f8df-62c8-83b5-9dd2" name="Wraithstone" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All enemy units within 6&quot; of the bearer of the Wraithstone suffer a -1 penalty to their LD. This has no effect on models with Immunity (Psychology).</characteristic>
               </characteristics>
@@ -7850,7 +7872,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f98-2367-4755-5074" type="max"/>
           </constraints>
           <profiles>
-            <profile id="676b-ab44-9ea0-29d6" name="Elynett&apos;s Brooch" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="676b-ab44-9ea0-29d6" name="Elynett&apos;s Brooch" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Elynett&apos;s Brooch allows the wearer and any unit they are with to re-roll failed Psychology tests.</characteristic>
               </characteristics>
@@ -7866,7 +7888,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d2c-14f7-0efb-fdd7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0d11-d5c8-bdaf-8c12" name="Gwytherc&apos;s Horn" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="0d11-d5c8-bdaf-8c12" name="Gwytherc&apos;s Horn" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All units within 12&quot; of the bearer of Gwytherc&apos;s Horn gain +1 to their LD when attempting to Rally.</characteristic>
               </characteristics>
@@ -7882,7 +7904,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5234-db48-56ab-02d6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ca6f-a15d-28a9-40ea" name="Dragontooth Arrows" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="c3a4-9eb1-eef6-d5ec" typeName="Enchanted Arrows">
+            <profile id="ca6f-a15d-28a9-40ea" name="Dragontooth Arrows" publicationId="e3da-3848-ff08-a482" page="60" hidden="false" typeId="c3a4-9eb1-eef6-d5ec" typeName="Enchanted Arrows">
               <characteristics>
                 <characteristic name="Special Rules" typeId="27f1-8a6e-ef6f-514b">Any model wounded by Dragontooth Arrows gains Stupidity for the remainder of the game.</characteristic>
               </characteristics>
@@ -7890,6 +7912,22 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5388-8850-acc4-d11a" name="Arrows of Potency" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d492-4222-e92e-be86" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ef1-f083-9b3e-0eaa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6fcb-abc6-03e1-7f8e" name="Arrows of Potency" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Enchanted Arrows. Any shots made with the Arrows of Potency have Multiple Wounds (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7924,7 +7962,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5812-35ba-a14a-634a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c96e-b4c7-ca27-def6" name="Ranu&apos;s Heartstone" publicationId="e3da-3848-ff08-a482" page="54" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="c96e-b4c7-ca27-def6" name="Ranu&apos;s Heartstone" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Once per Magic phase, the bearer of Ranu&apos;s Heartstone may re-roll one of the dice when casting or dispelling a spell. This can be used to prevent a miscast or to cause Ultimate Power.</characteristic>
               </characteristics>
@@ -7940,7 +7978,7 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb8a-e147-7a16-46df" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c76b-4afe-91b2-e23d" name="Divination Orb" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="c76b-4afe-91b2-e23d" name="Divination Orb" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">If an opponent uses more than three power dice when casting any spell, the bearer of the Divination Orb may add an extra free Dispel dice into the attempt to dispel that spell.</characteristic>
               </characteristics>
@@ -7956,9 +7994,25 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e656-c887-bba3-fa91" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ea8b-4363-9de2-f8d4" name="The Deepwood Sphere" publicationId="e3da-3848-ff08-a482" page="55" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="ea8b-4363-9de2-f8d4" name="The Deepwood Sphere" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Any enemy unit that enters a forest within 18&quot; of the bearer of the Deepwood Sphere suffers D6 S 4 Hits. They continue to suffer D6 S 4 Hits at the start of any of their Movement phases for as long as they remain in the forest.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4266-7320-2bff-0cf2" name="Elf Charm" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b55-c822-d2a3-edd5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f35-b768-529d-a06b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6187-12a5-debe-869a" name="Elf Charm" publicationId="e3da-3848-ff08-a482" page="59" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">When casting spells from the Lore of Life, the wizard carrying the Elf Charm may add D3 to his casting value once per Magic phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8002,9 +8056,6 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="455a-b0e3-ceea-f0a6" name="Elven Grace" publicationId="e967-620f-06be-096a" page="106" hidden="false">
-      <description>Models with this rule have Dodge (6+) in close combat. However, this cannot be used against enemies that attack before the model with Elven Grace.</description>
-    </rule>
     <rule id="cc70-29e9-de9a-4802" name="Blessings of the Ancients" publicationId="e967-620f-06be-096a" page="106" hidden="false">
       <description>Any model that has this rule, and is within 6&quot; of a forest, adds +1 to all attempts to cast and dispel spells.</description>
     </rule>
@@ -8024,7 +8075,8 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
       <description>A Waywatcher unit which is within a wood is automatically assumed to set traps around its positions. Any enemy charging the unit through the woods will activate the traps as soon as the enemy unit touches the wood. If the chargers are already inside the wood when the charge is declared the traps are activated as soon as the charge is declared. Roll a dice on the Waywatcher Trap Table to determine the type and effect of the trap.</description>
     </rule>
     <rule id="fca4-0d36-e304-5bca" name="Animal Form" publicationId="e967-620f-06be-096a" page="124" hidden="false">
-      <description>At the start of each of your turns, models with this special rule choose one of the following Animal Forms, the effect of which lasts until the end of that turn or until a new Form is chosen. All Alters in the same unit must choose the same Form. Alters cannot choose the same Form in two consecutive rounds of combat.</description>
+      <description>At the start of each of your turns, models with this special rule choose one of the following Animal Forms, the effect of which lasts until
+the start of your next turn. All Alters in the same unit must choose the same Form. Alters cannot choose the same Form in two consecutive rounds of combat.</description>
     </rule>
     <rule id="743f-f76f-6efe-aab4" name="Tree Aspects" publicationId="e967-620f-06be-096a" page="127" hidden="false">
       <description>At the start of each round of close combat in which they are fighting, models with this rule choose one of the Tree Aspects, the effect of which lasts until the end of that turn or until a new aspect is chosen. This is done before Impact Hits are resolved. All Dryads in the same unit must choose the same aspect. Dryads cannot choose the same Tree Aspects in two consecutive rounds of combat.</description>
@@ -8065,6 +8117,9 @@ To resolve a Tree Whack, nominate an enemy model in base contact. That model mus
       <description>This rule cannot be used if there are no forests on the battlefield when it is time to deploy your army. When you deploy, you may choose D3 units wholly composed of Forest Spirits – these are not deployed at the start of the game, but are ‘slumbering’ somewhere on the battlefield.
 
 At the start of the Remaining Moves sub-phase of your first turn, roll a D6 for each slumbering unit. On a roll of 1-2, nothing happens – roll again next turn. On a roll of 3-6, the unit awakens. Place it on the battlefield so that all models in the unit are wholly within a forest, and at least 1&quot; away from other units and impassable terrain. Treat units that cannot be placed as having rolled a 1-2. Any units that have not yet awoken by the time the game ends award victory points as if they had been destroyed.</description>
+    </rule>
+    <rule id="1bda-66b4-3f03-18bb" name="Forest Stalkers" publicationId="e967-620f-06be-096a" page="120" hidden="false">
+      <description>While inside a wood, models with this rule are at an additional -1 to be Hit with missile attacks. In addition, they may deploy within 12&quot; of an enemy unit if they do so within a wood.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8423,7 +8478,4 @@ If there is at least one unit (friendly or enemy) within the forest, then the fo
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="2038-a605-4df3-a912" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

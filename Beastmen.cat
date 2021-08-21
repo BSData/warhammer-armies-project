@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
@@ -4468,7 +4468,7 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="aecf-5d18-c47a-2a06" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="aecf-5d18-c47a-2a06" name="Spear (On Foot) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ef0-36d5-2cf3-1b6d" type="max"/>
                   </constraints>
@@ -5867,7 +5867,7 @@
               </constraints>
               <rules>
                 <rule id="4b75-17f1-11ab-8d27" name="Spawn of Khorne" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Spawn of Khorne has +1 S.</description>
                 </rule>
@@ -5882,7 +5882,7 @@ A Spawn of Khorne has +1 S.</description>
               </constraints>
               <rules>
                 <rule id="1f4f-16a2-3049-e197" name="Spawn of Tzeentch" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Spawn of Tzeentch has a S 3 Breath Weapon that has Flaming Attacks.</description>
                 </rule>
@@ -5897,7 +5897,7 @@ A Spawn of Tzeentch has a S 3 Breath Weapon that has Flaming Attacks.</descripti
               </constraints>
               <rules>
                 <rule id="43da-94e7-9b44-2075" name="Spawn of Slaanesh" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Spawn of Slaanesh gain +2 to its I.</description>
                 </rule>
@@ -5912,7 +5912,7 @@ A Spawn of Slaanesh gain +2 to its I.</description>
               </constraints>
               <rules>
                 <rule id="7d72-11c9-6d37-df98" name="Spawn of Nurgle" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>Your General and Battle Standard Bearer must have the same Mark (if one is chosen). Models with different Marks treat each other as Suspicious Allies. However, models with the Mark of Khorne and Slaanesh, or Tzeentch and Nurgle, treat each other as Desperate Allies, respectively.
+                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
 
 A Spawn of Nurgle has Poisoned Attacks.</description>
                 </rule>
@@ -6465,99 +6465,28 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
           </characteristics>
         </profile>
-        <profile id="29f9-832c-6ca8-3240" name="05-06 (Big Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="b371-36b5-6fb3-6e61" typeName="Big Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="8c24-e62d-0bb1-2ed9">&apos;Eadbutt: The Giant head-butts a single enemy model from the target unit, automatically inflicting D3 wounds which Ignores Armour Saves. If the victim is wounded but not slain, then it is dazed and loses all of its following attacks. If the target has not yet attacked in that combat round, it loses those attacks; if it has already attacked, then it loses the next round&apos;s attacks.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1fc2-47f7-744a-8497" name="02-04 (Big Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="b371-36b5-6fb3-6e61" typeName="Big Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="8c24-e62d-0bb1-2ed9">Thump with Club: The Giant brings down its club on a single model from the target unit that is in base contact. The target may attempt to avoid the blow by passing an I test (use the lowest if the model has several different values). If the test is failed, the model takes 2D3 wounds which Ignores Armour Saves. If a double is rolled the Giant&apos;s club embeds itself in the ground and the Giant cannot attack at all in the following round of the same combat whilst it recovers its weapon.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3952-b00f-148c-3430" name="01 (Big Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="b371-36b5-6fb3-6e61" typeName="Big Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="8c24-e62d-0bb1-2ed9">Yell and Brawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points or more (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="15dd-9e63-818b-00c8" name="01 (Small Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="0a7a-6ef6-4033-b016" typeName="Small Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="5e3d-e499-c2d7-9f65">Yell and Brawl: Neither the Giant nor models in contact with it actually fight if they have not already done so this round. The Giant&apos;s side automatically wins the combat by 2 points or more (if both sides have a Giant that Yells and Bawls, the combat is a draw). This result has no effect against Animated Constructs.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="534d-db31-595a-fe76" name="02 (Small Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="0a7a-6ef6-4033-b016" typeName="Small Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="5e3d-e499-c2d7-9f65">Jump Up and Down: The Giant jumps up and down vigorously on top of the enemy. Before it starts, the Giant must test to determine if it falls over. If it falls over, work out where it falls and calculate damage as already described. Any wounds caused by the fall (on either side) count towards the combat result. If the Giant remains on its none-too-nimble feet, it will inflict two Stomp attacks.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a93a-2000-699d-094b" name="04-06 (Small Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="0a7a-6ef6-4033-b016" typeName="Small Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="5e3d-e499-c2d7-9f65">Swing with club: The Giant fights using Random Attacks (2D6) this round.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3ebd-53cc-6195-1e37" name="03 (Small Things)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="0a7a-6ef6-4033-b016" typeName="Small Things Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="5e3d-e499-c2d7-9f65">Pick Up and...: The Giant stoops down and grabs a single Character in base contact from the target unit (Giant player&apos;s choice). The Giant grabs the model and the player rolls a D6 on the Pick Up and... table.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0408-9921-11f9-1228" name="01 (Pick Up and...)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="7127-154a-974b-7a43" typeName="Pick up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="9b2b-7611-81cf-6182">Stuff into Bag: The model is effectively removed as a casualty and can do nothing whilst in the bag, but if the Giant should be slain, any enemy trapped in its bag are freed at the end of the battle, and no longer counts as casualties.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f789-fde4-15f8-3c1b" name="02 (Pick Up and...)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="7127-154a-974b-7a43" typeName="Pick up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="9b2b-7611-81cf-6182">Throw Back into Combat: The victim is hurled into its own unit like a living missile. The victim suffers D3 S 6 Hits which Ignore Armour saves, and D6 S 3 hits are inflicted on the unit (save as normal).</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b43b-a2f5-8f57-32ff" name="03 (Pick Up and...)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="7127-154a-974b-7a43" typeName="Pick up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="9b2b-7611-81cf-6182">Hurl: The victim is hurled into an enemy unit within 12&quot; of the Giant – randomly determine which. The victim is removed as a casualty, and the unit takes D6 S 3 hits. Unsaved Wounds from these hits count towards the Giant&apos;s combat result. If no enemy units are in range, treat this as a Throw Back into Combat result instead.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="26c9-6e7d-1027-dd59" name="05 (Pick Up and...)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="7127-154a-974b-7a43" typeName="Pick up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="9b2b-7611-81cf-6182">Eat: The model is removed as a casualty.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0dce-a4d1-7706-49b8" name="06 (Pick Up and...)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="7127-154a-974b-7a43" typeName="Pick up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="9b2b-7611-81cf-6182">Pick Another: Treat the attack as if the Giant had rolled the Stuff into Bag result, above, and then choose another victim. Roll again on this table to see what the Giant does with it.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6013-3237-0441-0e9a" name="04 (Pick Up and...)" publicationId="9e23-79cb-pubN71963" page="96" hidden="false" typeId="7127-154a-974b-7a43" typeName="Pick up and... Chart">
-          <characteristics>
-            <characteristic name="Result" typeId="9b2b-7611-81cf-6182">Squash: The model is removed as a casualty.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="11c7-d243-bd53-f71e" name="Fall Over" publicationId="9e23-79cb-pubN71963" page="95" hidden="false">
-          <description>A Giant must test to see whether it falls over if any of the following apply:
-
- If it is beaten in close combat. Test once results are established but before taking a Break test.
- If it is fleeing at the start of the Movement phase.
- When it crosses an obstacle. Test when the obstacle is reached.
- If the Giant decides to Jump Up and Down on an enemy. Test immediately beforehand.
-
-To see if a Giant falls over roll a D6. On a roll of 1, the Giant falls over. A slain Giant falls over automatically.
-
-To determine in which direction the Giant falls, roll a scatter dice. Any unit within 4&quot; of the direction the Giant falls suffers 2D6 S 6 Hits with Multiple Wounds (D3), distributed as hits from shooting, though no single model may suffer more than 1 Hit – any excess Hits are ignored. If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result.
-
-A Giant that falls over automatically suffers 1 wound. If the Giant is in combat then this wound counts towards combat resolution.
-
-Once on the ground a Giant may get up in his following Movement phase, but may not move that turn. Whilst on the ground a Giant may not attack, but he can still defend himself after a fashion so the enemy must still roll to score hits on him. If forced to flee whilst on the ground the Giant is slain — the enemy swarm over him and cut him to pieces. If the Giant gets the opportunity to pursue his foes whilst he&apos;s on the ground he stands up instead. A Giant may attack in close combat as usual on the turn he stands up.</description>
-        </rule>
-        <rule id="b31d-813f-298a-10a8" name="Giant Special Attacks" publicationId="9e23-79cb-pubN71963" page="95" hidden="false">
-          <description>To determine what happens in each Close Combat phase, pick a unit in base contact with the Giant and roll a D6 on one of the tables. Which table you use depends on the size of the Giant&apos;s victim. If no suitable target is in base contact, roll again on the chart until you get another result. Use the Man-sized Things Chart when fighting Infantry, Cavalry, War Beasts or Swarms. Use the Big Things Chart when fighting Monsters, Monstrous Beasts, Monstrous Infantry, Monstrous Cavalry, Chariots, War Machines, and Shrines with</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink id="6641-e61e-aa53-0fef" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="6641-e61e-aa53-0fef" name="Giant Special Attacks" hidden="false" targetId="fba8-fc55-f60b-edd8" type="rule"/>
         <infoLink id="5c25-9c89-daca-fb96" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="7c37-74b8-018e-32f0" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
         <infoLink id="528a-b310-ea17-15ff" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="648c-647e-ace9-2203" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="9e0a-f1e6-d9ac-8769" name="01 (Big Things)" hidden="false" targetId="8c21-37de-1b89-a1aa" type="profile"/>
+        <infoLink id="46fd-da42-516d-ae64" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+        <infoLink id="c273-b436-8532-3bd4" name="Fall Over" hidden="false" targetId="4a8b-1056-0bcd-e293" type="rule"/>
+        <infoLink id="04e5-a12a-7789-80df" name="02-04 (Big Things)" hidden="false" targetId="4fc5-e450-33ef-b6d9" type="profile"/>
+        <infoLink id="1013-3656-8b8e-b18e" name="05-06 (Big Things)" hidden="false" targetId="8a42-5b93-bd50-784e" type="profile"/>
+        <infoLink id="8802-87ba-cbfb-eba2" name="01 (Man-sized Things)" hidden="false" targetId="b8b8-f1ce-c6c8-0b05" type="profile"/>
+        <infoLink id="dad5-f090-f5b8-9196" name="02 (Man-sized Things)" hidden="false" targetId="b2e1-ecf2-bf44-91d5" type="profile"/>
+        <infoLink id="e1d1-5f06-cf76-0bb4" name="03 (Man-sized Things)" hidden="false" targetId="473d-503e-6b10-8a6a" type="profile"/>
+        <infoLink id="d96a-103c-1794-050a" name="04-06 (Man-sized Things)" hidden="false" targetId="de13-cc1b-5d8f-27dd" type="profile"/>
+        <infoLink id="aec2-4e12-a2c8-8b37" name="01 (Pick Up and...)" hidden="false" targetId="b0eb-eada-2e6d-dc42" type="profile"/>
+        <infoLink id="e713-149b-df50-58f2" name="02 (Pick Up and...)" hidden="false" targetId="8845-1216-ef80-8109" type="profile"/>
+        <infoLink id="0618-626d-7893-cf0e" name="03 (Pick Up and...)" hidden="false" targetId="f05e-b4ef-d493-96f3" type="profile"/>
+        <infoLink id="e8cb-699c-0526-3c2f" name="04 (Pick Up and...)" hidden="false" targetId="af1a-be06-2fc6-a34f" type="profile"/>
+        <infoLink id="b37a-6f43-684f-bb2c" name="05 (Pick Up and...)" hidden="false" targetId="e9ae-c46b-2062-acad" type="profile"/>
+        <infoLink id="b1c9-397b-3fdb-3146" name="06 (Pick Up and...)" hidden="false" targetId="985e-ec4a-2847-118b" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e790-54a5-0d24-ba34" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -7804,7 +7733,7 @@ modifier.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7933,12 +7862,12 @@ modifier.</characteristic>
           <profiles>
             <profile id="e983-ce61-638a-21d5" name="Cacophonous Dirge" publicationId="e3da-3848-ff08-a482" page="8" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Enemy musicians fighting in the same combat as the bearer have no effect.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Enemy musicians within 8&quot; of the bearer of the Cacophonous Dirge have no effect.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="596c-8736-46c6-80c8" name="Bloodhunt Horn" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8031,7 +7960,7 @@ modifier.</characteristic>
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Light armour. All shooting attacks directed at the bearer or the unit he is with suffer -1 To Hit. Spells that target the bearer or the unit he is with suffer -2 to cast.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Light armour. All shooting attacks directed at the bearer or the unit he is with suffer -1 To Hit. Enemy spells that target the bearer or the unit he is with suffer -2 to cast.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8054,7 +7983,7 @@ modifier.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1a42-275b-9837-9b1a" name="Pelt of the Dark Young" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8132,7 +8061,7 @@ modifier.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ec6e-a1e1-ccf3-237e" name="Totem of Rust" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8159,7 +8088,7 @@ modifier.</characteristic>
           <profiles>
             <profile id="f42c-a296-1373-b080" name="Vitriolic Totem" publicationId="e3da-3848-ff08-a482" page="8" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All models in a unit bearing the Vitriolic Totem gain Poisoned Attacks.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Vitriolic Totem gains Poisoned Attacks.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8223,7 +8152,7 @@ modifier.</characteristic>
           <profiles>
             <profile id="9eab-2a49-8899-37b7" name="Preyseeker" publicationId="e3da-3848-ff08-a482" page="8" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Preyseeker automatically enters the battlefield when using  Ambushers, and may March the turn is does so.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Preyseeker automatically enters the battlefield when using Ambushers (no roll is needed), and may March the turn it does so. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8341,7 +8270,7 @@ modifier.</characteristic>
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Attacks with the Axe of Men have Killing Blow. In addition, if the bearer kills an enemy character in a challenge, he and any unit he is with gains Stubborn and Terror for as long as he remains with the unit.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Axe of Men gives the wielder Killing Blow. In addition, if the bearer kills an enemy character in a challenge, he and any unit he is with gains Stubborn and Terror for as long as he remains with the unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8472,7 +8401,7 @@ modifier.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8858,7 +8787,7 @@ Models with this Mark add +1 to their T but suffer -2 to their I (to a minimum o
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on a friendly Character, including the Wizard itself. The model gains +D6 S and +D6 A (both to a maximum of 10) until the start of the caster&apos;s next magic phase. Additionally, if one or more 6s are rolled, the model also suffers a S 5 Hit with no saves of any kind possible.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on a friendly Character, including the Wizard itself. The character (but not any mount) gains +D6 S and +D6 A (both to a maximum of 10) until the start of the caster&apos;s next magic phase. Additionally, if one or more 6s are rolled, the model also suffers a S 5 Hit with no saves of any kind possible.</characteristic>
       </characteristics>
     </profile>
     <profile id="8b3c-7199-8884-276a" name="Primal Onslaught" publicationId="9e23-79cb-pubN71963" page="111" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

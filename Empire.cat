@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5941-78ef-698e-a105" name="Empire" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5941-78ef-698e-a105" name="Empire" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="ffb8-c6d9-01f6-a218" name="Land Ship Calamity Chart">
@@ -30,6 +30,11 @@
     <profileType id="b1f4-c1bc-f17f-31d0" name="Storm Chart">
       <characteristicTypes>
         <characteristicType id="f38c-ba7a-9afa-9885" name="Result"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="8056-0487-e321-37dc" name="Skull Charm Chart">
+      <characteristicTypes>
+        <characteristicType id="9480-d650-0182-cf97" name="Result"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -6607,7 +6612,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a923-c66e-5c77-d40e" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="c9e2-a555-9199-9930" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="c9e2-a555-9199-9930" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f624-f21f-2647-d16d" type="max"/>
                   </constraints>
@@ -6629,7 +6634,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="fb5e-27a1-1a3f-e2e0" name="Spear (Infantry) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="fb5e-27a1-1a3f-e2e0" name="Spear (On Foot) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="603c-57ea-d93b-2422" type="max"/>
                   </constraints>
@@ -11824,17 +11829,11 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="b3aa-4456-7117-7699" name="Ancestral Grudge" publicationId="315d-135b-135c-07ce" page="203" hidden="false">
-              <description>Dwarfs have Hatred (Orcs &amp; Goblins, Skaven, Hobgoblins).</description>
-            </rule>
-            <rule id="dfef-4258-527f-2cf2" name="Resolute" publicationId="315d-135b-135c-07ce" page="203" hidden="false">
-              <description>Models with this rule roll 3D6 for any Break tests taken in the first round of combat, and discard the highest dice.</description>
-            </rule>
-            <rule id="0928-fb61-9cc3-7ba7" name="Relentless" publicationId="315d-135b-135c-07ce" page="203" hidden="false">
-              <description>Units entirely composed of models with this rule do not need to pass a LD test in order to march, regardless of the proximity of enemy units.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="3592-10cc-5cca-c0f7" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+            <infoLink id="55d2-a390-030b-bdbe" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+            <infoLink id="1541-0ed2-73a7-6fce" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="2c21-b7be-b16d-8108" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -11922,7 +11921,7 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cd74-79db-b348-be71" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="cd74-79db-b348-be71" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a196-41c6-96ce-cc95" type="max"/>
                   </constraints>
@@ -12025,11 +12024,9 @@ No more than one Wound can be re-allocated to Ludwig Schwarzhelm in this way in 
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="65af-c45c-d998-ae7f" name="Short &amp; Nimble" publicationId="315d-135b-135c-07ce" page="204" hidden="false">
-              <description>Enemies attacking models with this rule suffer -1 To Hit in close combat.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="6417-41ae-7a23-5f5a" name="Short and Nimble" hidden="false" targetId="03d6-87a5-ffd8-93ba" type="rule"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="88dd-f9dd-9d88-a304" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -17868,7 +17865,10 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
         <rule id="e642-a9ab-f8f5-2fd1" name="Destroying the Land Ship" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
           <description>When the Land Ship loses its last wound roll a D6. On a roll of a 1, it suffers the effects of the Abandon Ship! result on the Land Ship Calamity table and on a 6 the Boom! result. On any other roll, the Land Ship is removed as normal.</description>
         </rule>
-        <rule id="318f-c6f3-a80b-85af" name="Stable Platform" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
+        <rule id="318f-c6f3-a80b-85af" name="Grind Attack" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
+          <description>In any turn in which the Land Ship does not charge, it inflicts D6 Impact Hits at the start of each round of close combat.</description>
+        </rule>
+        <rule id="1987-3ba4-70c5-0479" name="Stable Platform" publicationId="d69c-a7ea-95db-6f56" page="14" hidden="false">
           <description>The crew may move and fire with their handguns without suffering the additional -1 To Hit for mounted models.</description>
         </rule>
       </rules>
@@ -17932,7 +17932,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
         <categoryLink id="bc7d-4db7-9a24-f547" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="680e-1065-d4ef-e9cf" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Empire Core)" type="selectionEntryGroup"/>
+        <entryLink id="680e-1065-d4ef-e9cf" name="Regiments of Renown (Em Core)" hidden="false" collective="false" import="true" targetId="1db3-82f4-1350-619e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -17943,7 +17943,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
         <categoryLink id="c7e0-5fad-1846-3a86" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6cea-ef68-4b1c-0b5f" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Empire Special)" type="selectionEntryGroup"/>
+        <entryLink id="6cea-ef68-4b1c-0b5f" name="Regiments of Renown (Em Special)" hidden="false" collective="false" import="true" targetId="f76c-da16-94ff-34f7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -17954,7 +17954,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
         <categoryLink id="c16c-59fc-bcf4-c983" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e5d3-8fa2-e0a6-0e64" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Empire Rare)" type="selectionEntryGroup"/>
+        <entryLink id="e5d3-8fa2-e0a6-0e64" name="Regiments of Renown (Em Rare)" hidden="false" collective="false" import="true" targetId="88f9-cc84-6f5a-019d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -17965,7 +17965,7 @@ If a Misfire is rolled, roll immediately on the Black Powder Misfire chart befor
         <categoryLink id="2aa7-1e05-21eb-54a6" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="baf5-cd15-b704-2c20" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Empire Hero)" type="selectionEntryGroup"/>
+        <entryLink id="baf5-cd15-b704-2c20" name="Regiments of Renown (Em Hero)" hidden="false" collective="false" import="true" targetId="8621-590f-14dd-4b9b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -19471,7 +19471,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             </profile>
             <profile id="8c60-8722-6d44-3e2b" name="Banishment" publicationId="9e23-79cb-pubN66727" page="181" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
                 <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
@@ -19529,7 +19529,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0eac-382b-6ead-db99" type="max"/>
       </constraints>
       <profiles>
-        <profile id="199c-b9d9-2873-b335" name="Armour of Tarnus" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+        <profile id="199c-b9d9-2873-b335" name="Armour of Tarnus" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
           <characteristics>
             <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
             <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -19620,7 +19620,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0f1-9aef-8259-5b40" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ed20-999a-c3d6-3555" name="Doomfire Ring" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="ed20-999a-c3d6-3555" name="Doomfire Ring" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Bound Spell, Power Level 5. The Doomfire Ring contains the Burning Head spell from the Lore of Fire.</characteristic>
               </characteristics>
@@ -19639,14 +19639,14 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54ee-b8dc-f6ab-a3c0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f740-ff25-e780-0b1d" name="Icon of Magnus" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="f740-ff25-e780-0b1d" name="Icon of Magnus" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The Icon of Magnus gives the bearer and any unit they are with Immunity (Terror).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e1f9-0b5e-58de-2ed4" name="The Silver Horn" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -19655,12 +19655,12 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe91-c098-4d35-dade" type="max"/>
           </constraints>
           <profiles>
-            <profile id="daed-0c70-e563-c636" name="The Silver Horn" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+            <profile id="daed-0c70-e563-c636" name="The Silver Horn" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Bound Spell, Power Level 3.</characteristic>
               </characteristics>
             </profile>
-            <profile id="13ec-cbd0-e13d-f76f" name="The Silver Horn" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+            <profile id="13ec-cbd0-e13d-f76f" name="The Silver Horn" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
               <characteristics>
                 <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -19672,6 +19672,101 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2eca-48f6-5284-6dd8" name="Ring of St. Horst" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3730-ff6e-f3ff-9c44" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7186-08d3-bbd5-1564" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fc99-c981-e65a-f694" name="Ring of St. Horst" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The model carrying the Ring of St. Horst and any unit they join may re-roll any failed LD test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d6ce-04b1-e0eb-94d0" name="Helsturm&apos;s Staff" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e911-9b38-0742-383d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5187-8aa3-78b6-82d1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bb4f-56ac-c3d4-2c6a" name="Helsturm&apos;s Staff" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Arch Lector only. The model carrying Helsturm’s Staff and any unit they join roll 3D6 for all their LD tests and discards the highest result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="45fc-5a25-ffd5-b548" name="Skull Charm" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12d2-e7be-92b4-6314" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f70-c142-2eda-aa20" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5413-2e39-dbc8-5434" name="Skull Charm" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">At the start of the game, roll a D6 and consult the chart below to determine which effect the Skull Charm has on the wearer.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="bce8-a9fc-8ad3-963b" name="1-2" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="8056-0487-e321-37dc" typeName="Skull Charm Chart">
+              <characteristics>
+                <characteristic name="Result" typeId="9480-d650-0182-cf97">+1 WS.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="722b-f3fe-a927-dbae" name="3-4" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="8056-0487-e321-37dc" typeName="Skull Charm Chart">
+              <characteristics>
+                <characteristic name="Result" typeId="9480-d650-0182-cf97">+1 LD.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ff7b-0ff8-aba8-7457" name="5-6" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="8056-0487-e321-37dc" typeName="Skull Charm Chart">
+              <characteristics>
+                <characteristic name="Result" typeId="9480-d650-0182-cf97">+1 WS &amp; LD.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7c6b-573a-841d-d122" name="Boots of Bovva" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c177-92f5-99f3-ad99" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="227e-18ce-86cb-d7b2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="68ef-9275-d11a-7d47" name="Boots of Bovva" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model on foot only. The model wearing the Boots of Boova gains Stomp, but it only inflicts D3 hits rather than D6.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fce5-549a-3ef4-00e3" name="Dazh&apos;s Flint" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4247-0b26-cb68-c2ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c60b-53c4-f3e8-3ade" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d81c-9aa9-5258-b393" name="Dazh&apos;s Flint" publicationId="e3da-3848-ff08-a482" page="24" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The model bearing Dazh&apos;s Flint gains Flaming Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -19720,17 +19815,17 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2daa-5052-f0c8-20f6" name="Shield of the Gorgon" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2daa-5052-f0c8-20f6" name="Shield of the Medusa" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0004-7551-9eb6-5802" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7a3-75a2-991c-3807" type="max"/>
           </constraints>
           <profiles>
-            <profile id="bc40-9b22-20b5-1434" name="Shield of the Gorgon" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="bc40-9b22-20b5-1434" name="Shield of the Medusa" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. The Shield of the Gorgon causes one enemy model of your choosing to suffer a -1 penalty to their A characteristics.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. The Shield of the Medusa causes one enemy model of your choosing to suffer a -1 penalty to their A characteristics.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19819,14 +19914,14 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff39-6e34-7e81-f339" type="max"/>
           </constraints>
           <profiles>
-            <profile id="decb-e7b7-34d8-2860" name="Banner of Sigismund" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="decb-e7b7-34d8-2860" name="Banner of Sigismund" publicationId="e3da-3848-ff08-a482" page="25" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of Sigismund gains Stubborn.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of Sigismund gains Stubborn. If the unit is already Stubborn, they instead become Unbreakable.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0df7-1c29-5017-e05c" name="Steel Standard" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -19835,14 +19930,30 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cebf-bc54-f6eb-f3f5" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0dc6-5bd9-66d0-3353" name="Steel Standard" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+            <profile id="0dc6-5bd9-66d0-3353" name="Steel Standard" publicationId="e3da-3848-ff08-a482" page="25" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Knightly Orders only. The unit carrying the Steel Standard adds D3&quot; to its charge distance. If the charge is failed, the unit will move forward its normal failed charge distance.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Knightly Orders only. The unit carrying the Steel Standard ignores the M Penalties from barding.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b2ac-4aeb-f8e4-33eb" name="Black Skull of the Caliph" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7b8-a117-07d6-f315" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc00-4efd-906c-9c6f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="934c-a8c1-33d4-c2b4" name="Black Skull of the Caliph" publicationId="e3da-3848-ff08-a482" page="25" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Black Skull of the Caliph gains Immunity (Fear), and may re-roll failed Terror tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -19937,12 +20048,12 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+2</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Sword of Power gives Armour Piercing (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="46cc-6725-b3df-d3be" name="Hammer of Judgement" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -19951,7 +20062,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df9f-47bc-b8f2-ab84" type="max"/>
           </constraints>
           <profiles>
-            <profile id="1490-a5e0-de83-139c" name="Hammer of Judgement" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="1490-a5e0-de83-139c" name="Hammer of Judgement" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -19973,12 +20084,12 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Sword of Righteous Steel makes the wielder always Hit any opponent on roll of a 2+.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Sword of Righteous Steel makes the wielder always Hit any opponent on roll of a 2+. In addition, any successful Parry saves must be rerolled.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2d00-11b6-604a-2d8e" name="Cold Iron Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -19987,11 +20098,11 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8022-d684-9390-cd69" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2c45-2bcd-28d4-f89f" name="Cold Iron Blade" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="2c45-2bcd-28d4-f89f" name="Cold Iron Blade" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Cold Iron Blade wounds models with Ethereal automatically Wounds.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Cold Iron Blade wounds models with Ethereal automatically.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20005,16 +20116,88 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9fe1-0229-b410-1b3c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5ba6-cf51-c741-aadc" name="Wyrmslayer Sword" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+            <profile id="5ba6-cf51-c741-aadc" name="Wyrmslayer Sword" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Wyrmslayer Sword makes the wielder Woundon a 4+ or better, and ignores Natural Armour.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Wyrmslayer Sword makes the wielder Wound on a 4+ or better, and ignores Natural Armour.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="50c8-6c94-2d3c-0f19" name="Blessed Sword" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae3a-de0b-0314-7d87" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="267d-ba00-eca8-24e0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a894-22c4-d747-e241" name="Blessed Sword" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All failed To Hit rolls made with the Blessed Sword may be re-rolled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="80e3-a9ae-094e-9394" name="Daemonslayer Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="01db-88a2-6666-763f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23ad-ad29-12a4-3c78" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8bd7-2937-569f-a9e3" name="Daemonslayer Blade" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Against models with Daemonic, all attacks made with the Daemonslayer Blade gain +1 To Wound with Multiple Wounds (D3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d669-e2b2-6253-1365" name="Spear of the Hierophant" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="686f-ec71-edb1-04e0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d147-484d-79e8-cb99" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a501-e023-85c7-1f70" name="Spear of the Hierophant" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"></characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Spear. Against models with Daemonic, all attacks made with the Spear of the Hierophant gain +1 S and any successful Ward Saves must be re-rolled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="febd-02e7-fcfe-a1e7" name="The Griffon Claw" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a13a-2b8e-4b29-b009" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c6f-f392-7ddb-b667" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="10f5-4ff1-c4d1-b40e" name="The Griffon Claw" publicationId="e3da-3848-ff08-a482" page="21" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Griffon Claw gives the model +1 To Hit in close combat as well as Armour Piercing (1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -20065,7 +20248,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b15f-fecf-8587-5767" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cba0-8a77-18b9-f861" name="Jade Amulet" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="cba0-8a77-18b9-f861" name="Jade Amulet" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Jade Amulet allows the wearer to ignore the first wounding hit they suffer.</characteristic>
               </characteristics>
@@ -20081,7 +20264,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="392a-51e1-44f5-b40d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="aaf1-cea0-cc10-455f" name="The Crimson Amulet" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="aaf1-cea0-cc10-455f" name="The Crimson Amulet" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
                 <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Crimson Amulet gives the wearer Ward Save (6+). In addition, they automatically pass any Characteristic tests they have to take.</characteristic>
               </characteristics>
@@ -20097,14 +20280,30 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc2a-1cfd-d579-f5e1" type="max"/>
           </constraints>
           <profiles>
-            <profile id="96f2-4345-d050-1af7" name="Sigil of Sigmar" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+            <profile id="96f2-4345-d050-1af7" name="Sigil of Sigmar" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Sigil of Sigmar gives the bearer Magic Resistance (1).</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Sigil of Sigmar gives the bearer a Ward save (4+) against all enemy spells.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3cf7-487f-4958-8018" name="Amulet of Thrice-Blessed Copper" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab53-d40c-5267-0895" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb16-de4d-d3ac-210e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ff9a-514a-07cb-5739" name="Amulet of Thrice-Blessed Copper" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">All enemy attacks targeting the model wearing the Amulet of Thrice-Blessed Copper suffer -1 To Wound. In addition, the bearer gains Immunity (Poisoned Attacks).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -20131,14 +20330,14 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36ac-4909-8e8e-c964" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ebe3-96c6-2d59-81f2" name="Grey Wand" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="ebe3-96c6-2d59-81f2" name="Grey Wand" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Grey Wand gives the wielder a +1 bonus to the result of their spell casting attempts.</characteristic>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Grey Wand gives the wielder a +D3 bonus to the result of their spell casting attempts.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2b2f-7882-ba46-90c8" name="Seal of Destruction" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -20147,9 +20346,9 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a8e-ae0c-2348-2284" type="max"/>
           </constraints>
           <profiles>
-            <profile id="53e8-fdd1-78ce-2d7d" name="Seal of Destruction" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="53e8-fdd1-78ce-2d7d" name="Seal of Destruction" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. After the bearer of the Seal of Destruction manages to dispel an enemy spell, they may choose to use the use the Seal. If they do so, the spell cannot be used by that Wizard for the rest of the game.</characteristic>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. After the bearer of the Seal of Destruction manages to successfully dispel an enemy spell, they may choose to use the Seal. If they do so, roll a D6. On a 4+, the spell cannot be used by that Wizard for the rest of the game.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20163,7 +20362,7 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0eb5-2f97-e9db-34e2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f3d6-a117-26f2-feb0" name="Crystal Ball" publicationId="e3da-3848-ff08-a482" page="22" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+            <profile id="f3d6-a117-26f2-feb0" name="Crystal Ball" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Crystal Ball allows the wearer to pick one enemy unit anywhere on table at the start of each of your turns. Your opponent must reveal all Magic Items, Hidden models and the like that unit might have.</characteristic>
               </characteristics>
@@ -20171,6 +20370,22 @@ will lose it completely! From then onwards he gains Frenzy for the remainder of 
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5e28-be81-31eb-eeff" name="Chalice of Fate" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12ae-e8ca-6a55-4e0a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6067-069f-9ea5-d43a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a26e-fd07-bf55-814d" name="Chalice of Fate" publicationId="e3da-3848-ff08-a482" page="23" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Chalice of Fate allows the Wizard to re-roll failed Channelling rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="55.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -20193,12 +20408,6 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
     </rule>
     <rule id="d409-4212-2849-023f" name="Hold the Line!" publicationId="315d-135b-135c-07ce" page="174" hidden="false">
       <description>If a model with this rule is in a unit of State Troops, the unit rolls 3D6 for any Break tests and uses the two lowest scores.</description>
-    </rule>
-    <rule id="44e1-ad81-2f8b-49db" name="Divine Power" publicationId="315d-135b-135c-07ce" page="179" hidden="false">
-      <description>The model can channel power and dispel dice in the same manner as a Level 1 Wizard.</description>
-    </rule>
-    <rule id="2fc8-8eef-c508-0f80" name="Battle Prayers" publicationId="315d-135b-135c-07ce" page="179" hidden="false">
-      <description>The model knows three Battle Prayers. Battle Prayers are innate bound spells (power level 3). Battle Prayers target the model and its unit.</description>
     </rule>
     <rule id="7be5-1e5e-a127-8426" name="Righteous Fury" publicationId="315d-135b-135c-07ce" page="179" hidden="false">
       <description>A Warrior Priest, and any unit he is currently in, has Hatred.</description>
@@ -20342,9 +20551,6 @@ If you expend a single Steam Point, the Steam Cannon can fire with a maximum ran
 
 If the first artillery dice roll is a misfire, the Steam Cannon does not fire and the Steam Tank immediately loses D3 Wounds with no armour saves allowed. The Steam Cannon cannot fire grapeshot.</description>
     </rule>
-    <rule id="a2e7-0a0d-9844-7927" name="Accusation" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
-      <description>After deployment, but before the first turn begins, select a single model in your opponent&apos;s army to accuse of heresy. This is the Witch Hunter&apos;s primary quarry. The Witch Hunter&apos;s may re-roll all failed To Hit against his primary quarry. Every hit he inflicts on that models also has Killing Blow, even if they were from a shooting attack. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had Sniper.</description>
-    </rule>
     <rule id="482b-fa6d-2435-131b" name="Grim Resolve" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
       <description>Witch Hunters, and any unit they are in, have Immunity (Fear).</description>
     </rule>
@@ -20384,33 +20590,6 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Move or Fire. Slow to Fire.</characteristic>
       </characteristics>
     </profile>
-    <profile id="adec-808a-e49a-d7c9" name="Hammer of Sigmar" publicationId="315d-135b-135c-07ce" page="179" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-      <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Warrior Priest and his unit reroll all failed To Wound rolls in close combat until the start of the next friendly Magic phase.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="742a-aa0e-34c7-ae36" name="Shield of Faith" publicationId="315d-135b-135c-07ce" page="179" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-      <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Warrior Priest and his unit gain a Ward save (5+) against all Wounds inflicted in close combat until the start of the next friendly Magic phase.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="dd1f-6720-2d30-c6e8" name="Soulfire" publicationId="315d-135b-135c-07ce" page="179" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-      <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Warrior Priest and his unit gain Magical and Flaming Attacks until the start of the next friendly Magic phase. In addition, when cast, all enemy models in base contact with the Warrior Priest suffer a S 4 hit. Models with Daemonic, Undead or Vampiric in base contact suffer a S 5 hit instead, which Ignores Armour Saves.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="1558-49d6-bfb8-eb95" name="Steam Cannon" publicationId="315d-135b-135c-07ce" page="213" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
       <characteristics>
         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Cannon</characteristic>
@@ -20447,20 +20626,6 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Requires Two Hands. Strength Bonus (2). Flaming Attacks.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1c38-2830-10db-579c" name="Warhorse" publicationId="315d-135b-135c-07ce" page="216" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
       </characteristics>
     </profile>
     <profile id="768c-8291-b483-f024" name="Imperial Pegasus" publicationId="315d-135b-135c-07ce" page="217" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -20972,7 +21137,4 @@ In addition, friendly units within 6&quot; of Flagellants suffer -1 to their LD,
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="3fe5-c8ad-7c73-fb52" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

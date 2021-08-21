@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9a34-2536-da13-b61a" name="Halflings" revision="12" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9a34-2536-da13-b61a" name="Halflings" revision="13" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5384-2616-b740-bea5" name="Before Battle Meal Table">
@@ -1716,7 +1716,7 @@ Any magic item can be drawn out of the &apos;Swag&apos; Bag, but special items t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49ce-f436-35ca-9b6a" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="83c1-51f1-7b7a-aca7" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="83c1-51f1-7b7a-aca7" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc22-43ad-0aed-0f21" type="max"/>
                   </constraints>
@@ -1889,7 +1889,7 @@ Any magic item can be drawn out of the &apos;Swag&apos; Bag, but special items t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8af7-4257-faf3-2e8f" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="02d4-0781-22ff-587b" name="Spear (Infantry)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="02d4-0781-22ff-587b" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b80-e1a7-dc05-f068" type="max"/>
                   </constraints>
@@ -4314,7 +4314,7 @@ The Chuck Wagon is pulled by a Aurochs. It may attack enemies to its front like 
         <categoryLink id="a4e2-76ad-a916-f1a6" name="New CategoryLink" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a8d4-41ce-1fb5-b9f5" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Halflings Hero)" type="selectionEntryGroup"/>
+        <entryLink id="a8d4-41ce-1fb5-b9f5" name="Regiments of Renown (Ha Hero)" hidden="false" collective="false" import="true" targetId="bb11-131a-826c-72ae" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4325,7 +4325,7 @@ The Chuck Wagon is pulled by a Aurochs. It may attack enemies to its front like 
         <categoryLink id="5a42-9b60-c8e4-2fa1" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9384-f01d-24af-1c09" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Halflings Special)" type="selectionEntryGroup"/>
+        <entryLink id="9384-f01d-24af-1c09" name="Regiments of Renown (Ha Special)" hidden="false" collective="false" import="true" targetId="6929-b8e7-e0ad-1d92" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4336,7 +4336,7 @@ The Chuck Wagon is pulled by a Aurochs. It may attack enemies to its front like 
         <categoryLink id="4c5c-ddfd-4062-d618" name="Rare" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2807-82f3-5142-9340" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Halflings Rare)" type="selectionEntryGroup"/>
+        <entryLink id="2807-82f3-5142-9340" name="Regiments of Renown (Ha Rare)" hidden="false" collective="false" import="true" targetId="1b65-5047-311a-f315" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4619,9 +4619,6 @@ The Chuck Wagon is pulled by a Aurochs. It may attack enemies to its front like 
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="03d6-87a5-ffd8-93ba" name="Short and Nimble" publicationId="0545-ea23-873c-f668" page="40" hidden="false">
-      <description>Enemies attacking models with this rule suffer -1 To Hit in close combat. This only applies to Infantry units.</description>
-    </rule>
     <rule id="9f27-f265-4c0e-73eb" name="Insatiable Appetite" publicationId="0545-ea23-873c-f668" page="40" hidden="false">
       <description>At the start of the game, after all models in both armies have been deployed, the Halfling player must roll a D6 for each of his units and consult the Before Battle Meal table. The effects of the meal last for the duration of the game. Chariots, war machines and characters outside units never roll for Insatiable Appetite. Likewise, mounts are never affected either.</description>
     </rule>
@@ -4759,7 +4756,4 @@ The Chuck Wagon is pulled by a Aurochs. It may attack enemies to its front like 
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="20d1-8824-fc75-c207" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

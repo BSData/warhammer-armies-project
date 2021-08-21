@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="6aa2-7707-349b-6651" name="Armour Rune">
@@ -367,6 +367,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
             <infoLink id="7c04-56a2-d874-cb2b" name="Rune of Oath and Honour" hidden="false" targetId="e4f2-da0b-5be2-af74" type="profile"/>
             <infoLink id="1600-8f27-b9fa-23a3" name="Rune of Wrath and Ruin" hidden="false" targetId="71b8-c2ff-e35a-4ea3" type="profile"/>
             <infoLink id="b9b6-afbd-5085-559c" name="Strike the Runes" hidden="false" targetId="01a2-3b93-87d9-b91e" type="rule"/>
+            <infoLink id="f5b3-263f-fb1f-ecaf" name="Rune of Stone and Steel" hidden="false" targetId="6b4d-ca97-1223-ca26" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="6023-907e-f5df-0859" name="Kraggi" hidden="false" collective="false" import="true" type="model">
@@ -421,8 +422,22 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="809e-4ea1-eb32-7d4e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3b53-8388-e302-49a5" name="Anvil Guards" hidden="false" targetId="d5ac-7845-cb67-f1f1" type="profile"/>
+                <infoLink id="3b53-8388-e302-49a5" name="Anvil Guard" hidden="false" targetId="d5ac-7845-cb67-f1f1" type="profile"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="6bc1-a9d0-177a-818d" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1cd-e69b-e8ce-5d4b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d1f7-f035-e703-256c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7e0f-4b09-83df-eb24" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="086c-aedf-5212-4e23" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="57df-adeb-02f4-85d4">
                   <constraints>
@@ -1666,8 +1681,9 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
             <infoLink id="fc9b-9177-9254-ec62" name="Anvil of Doom" hidden="false" targetId="6859-c610-8917-4444" type="profile"/>
             <infoLink id="c35d-f910-7a0a-4dc1" name="Rune of Oath and Honour" hidden="false" targetId="e4f2-da0b-5be2-af74" type="profile"/>
             <infoLink id="7273-9fa9-41f4-4288" name="Rune of Hearth and Hold" hidden="false" targetId="c578-94dc-987e-f225" type="profile"/>
-            <infoLink id="5fd4-4953-390d-34fd" name="Rune of Wrath and Ruin" hidden="false" targetId="71b8-c2ff-e35a-4ea3" type="profile"/>
+            <infoLink id="5fd4-4953-390d-34fd" name="Rune of Stone and Steel" hidden="false" targetId="6b4d-ca97-1223-ca26" type="profile"/>
             <infoLink id="c7d4-8c10-6527-6d83" name="Strike the Runes" hidden="false" targetId="01a2-3b93-87d9-b91e" type="rule"/>
+            <infoLink id="0776-7f34-4be4-4e2b" name="Rune of Wrath and Ruin" hidden="false" targetId="71b8-c2ff-e35a-4ea3" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="0050-d460-07f2-0833" name="Anvil Guard" hidden="false" collective="false" import="true" type="model">
@@ -1676,8 +1692,22 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ae5-8f25-4a6f-e087" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="1484-6a2c-3ad2-689e" name="Anvil Guards" hidden="false" targetId="d5ac-7845-cb67-f1f1" type="profile"/>
+                <infoLink id="1484-6a2c-3ad2-689e" name="Anvil Guard" hidden="false" targetId="d5ac-7845-cb67-f1f1" type="profile"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="4b42-ed6d-c461-3cb2" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fac-168a-bad1-be04" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6dc-a170-6156-2adb" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0ec7-8b68-125e-3d0f" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="7c60-987b-56a7-2c6e" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8403-f06c-8f68-6f5c">
                   <constraints>
@@ -4975,7 +5005,7 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
@@ -6426,7 +6456,7 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         <categoryLink id="555c-8347-db7c-53f1" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0dfd-bb04-e9a5-f39a" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dwarfs Special)" type="selectionEntryGroup"/>
+        <entryLink id="0dfd-bb04-e9a5-f39a" name="Regiments of Renown (Dw Special)" hidden="false" collective="false" import="true" targetId="4cb7-2f74-457a-c677" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -6437,7 +6467,7 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         <categoryLink id="1a48-6818-2eb3-e127" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cb59-7c1e-dc46-7859" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dwarfs Rare)" type="selectionEntryGroup"/>
+        <entryLink id="cb59-7c1e-dc46-7859" name="Regiments of Renown (Dw Rare)" hidden="false" collective="false" import="true" targetId="3184-f0ed-6d78-3829" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -6448,7 +6478,7 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         <categoryLink id="5186-3681-0d2f-fd22" name="New CategoryLink" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9174-0962-d9d8-c804" name="Regiments of Renown" hidden="false" collective="false" import="true" targetId="Regiments of Renown (Dwarfs Hero)" type="selectionEntryGroup"/>
+        <entryLink id="9174-0962-d9d8-c804" name="Regiments of Renown (Dw Hero)" hidden="false" collective="false" import="true" targetId="e92c-0283-56c8-4128" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -8903,15 +8933,6 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="73fd-d115-269d-bd0a" name="Ancestral Grudge" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>Dwarfs always have Hatred (Orcs &amp; Goblins, Skaven, Hobgoblins).</description>
-    </rule>
-    <rule id="db34-00cf-d5b6-9a4d" name="Relentless" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>Units entirely composed of models with this rule do not need to pass a LD test in order to march, regardless of the proximity of enemy units.</description>
-    </rule>
-    <rule id="7da8-9e3b-77c9-cc8a" name="Resolute" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>When taking Break tests, models with this rule count as having lost the combat with 1 point fewer than they actually have.</description>
-    </rule>
     <rule id="59e6-d52c-a438-cc94" name="Oathstone" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
       <description>A unit that contains one or more models with an Oath Stone can never choose to flee as a charge reaction, cannot be disrupted and, if any of its models are armed with hand weapon and shield, they can make Parry saves against attacks made to their flanks and rear. In addition, the presence of the stone with the unit confers Magic Resistance (1) as its runes act to absorb wild magic. Furthermore, a character with an Oath Stone must always accept a challenge (if your unit contains more than one character with an Oath Stone, you can choose which of them accepts the challenge). However, if a model on an Oathstone fails a Break Test, he is removed as a casualty as he fights to the very last.</description>
     </rule>
@@ -9367,7 +9388,4 @@ A second Rune of Spell breaking maintains the previous effect and, after the spe
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="1b68-4e48-8b52-ba25" name="Regiments of Renown" targetId="b68c-fa06-aafb-abce" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

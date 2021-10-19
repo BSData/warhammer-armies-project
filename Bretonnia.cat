@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -5000,55 +5000,43 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
             <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e13d-c921-aca8-0bb0" name="Command Group" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="43b7-29c5-e71d-8b75" name="Grail Reliquae" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="a7bb-812d-3eeb-a42a" value="0.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="fe07-d1ef-7135-908a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a34b-1bf0-3752-f695" type="atLeast"/>
-                        <condition field="selections" scope="fe07-d1ef-7135-908a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4910-eca3-eabb-4d71" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7bb-812d-3eeb-a42a" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f1a4-299f-d18f-d8ab" name="Grail Reliquae" publicationId="9e23-79cb-pubN75312" page="147" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="a2e3-597d-b0c0-9c07" name="Grail Reliquae" publicationId="9e23-79cb-pubN75312" page="147" hidden="false">
-                  <description>6 Pilgrims may be upgraded to a Grail Reliquae.
+        <selectionEntry id="2623-a278-8402-a6ee" name="Grail Reliquae" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2f5-24d6-e591-5a1b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fe50-3916-60a0-12be" name="Grail Reliquae" publicationId="9e23-79cb-pubN75312" page="147" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="bb90-f8a4-e215-048a" name="Grail Reliquae" publicationId="9e23-79cb-pubN75312" page="147" hidden="false">
+              <description>6 Pilgrims may be upgraded to a Grail Reliquae.
 
 This holy shrine must always be placed in the centre of the front rank. The Grail Reliquae counts as both a Standard Bearer and a Musician in all aspects. Only once all the Battle Pilgrims in the unit are removed does the Reliquae itself start taking wounds.
 
 In addition, the presence of the Grail Reliquae means that the entire unit will be affected by the Blessing of the Lady.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="30.0"/>
-              </costs>
-            </selectionEntry>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e13d-c921-aca8-0bb0" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
             <selectionEntry id="ed7a-6eaf-6315-4334" name="Battle Pilgrim" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9d3-1225-7217-ad49" type="max"/>
@@ -5077,13 +5065,6 @@ In addition, the presence of the Grail Reliquae means that the entire unit will 
               </costs>
             </selectionEntry>
             <selectionEntry id="4910-eca3-eabb-4d71" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="2041-eab9-06de-74ee" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="fe07-d1ef-7135-908a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43b7-29c5-e71d-8b75" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2041-eab9-06de-74ee" type="max"/>
               </constraints>
@@ -5095,13 +5076,6 @@ In addition, the presence of the Grail Reliquae means that the entire unit will 
               </costs>
             </selectionEntry>
             <selectionEntry id="a34b-1bf0-3752-f695" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="a6c1-005b-7d4a-e721" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="fe07-d1ef-7135-908a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43b7-29c5-e71d-8b75" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6c1-005b-7d4a-e721" type="max"/>
               </constraints>

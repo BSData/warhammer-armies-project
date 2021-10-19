@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7c10-2fc1-fb87-88ca" name="Entombed Beneath the Sands Mishap Table">
@@ -1617,9 +1617,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         </profile>
       </profiles>
       <rules>
-        <rule id="c3a9-0fa6-2bda-fde3" name="Golden Form" publicationId="feeb-1927-4a99-f849" page="118" hidden="false">
-          <description>Tutankhanut has a 2+ armour save.</description>
-        </rule>
         <rule id="660e-87bc-5f9f-926d" name="Scythan Warriors" publicationId="feeb-1927-4a99-f849" page="118" hidden="false">
           <description>If your army contains Tutankhanut you may include units of Scythan Warriors. These follow the unit entry and equipment of Skeleton Horse Archers, but do not have Arrows of Asaph and Undead. They instead have Immunity (Fear). Scythan Warriors always treat Tutankhanut as the army&apos;s General for all purposes.</description>
         </rule>
@@ -1732,6 +1729,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           </constraints>
           <infoLinks>
             <infoLink id="ca9d-fb14-7340-488f" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b3ce-a383-05b6-2e9d" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="000c-49ba-d42b-80da" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bdd0-be7b-9285-89cd" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3e4e-e309-8496-8132" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -8698,7 +8707,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>

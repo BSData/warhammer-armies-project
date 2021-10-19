@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.0" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.0" publicationDate="08.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -349,25 +349,24 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c499-0467-232f-7466" name="Minimum Units" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c499-0467-232f-7466" name="FAQ about BS and the WAP files" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c87b-2f0e-27b0-02b1" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="f002-a001-8964-ad0c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="130" hidden="false" typeId="121a-930d-b248-ee3e" typeName="Minimum Units">
-          <characteristics>
-            <characteristic name="0-500 pts" typeId="5f2a-99ce-f8a3-eac9">1</characteristic>
-            <characteristic name="501-1000 pts" typeId="221f-5ad7-8b1c-4337">2</characteristic>
-            <characteristic name="1001-1500 pts" typeId="b079-6a7a-787c-584d">3</characteristic>
-            <characteristic name="1501-2000 pts" typeId="c5dd-526f-37a8-3c15">4</characteristic>
-            <characteristic name="2001-2500 pts" typeId="415d-0476-97ff-9680">5</characteristic>
-            <characteristic name="Each +500" typeId="5e64-d73e-fa3a-3c61">+1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
-        <rule id="d8a1-3a01-a893-f82c" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="130" hidden="false">
-          <description>An army just isn&apos;t an army unless it has plenty of warriors in its ranks. An army must contain at least one Core, Special or Rare unit for every 500 points played. So, at 750 points you need two units, at 1250 points you need three units, at 2500 points you need 5 units and so on.</description>
+        <rule id="d8a1-3a01-a893-f82c" name="FAQ about BS and the WAP files" page="" hidden="false">
+          <description>Q: I can&apos;t find the data anymore in the list of downloadable data.
+A: Try again in a few hours the data will be back.
+
+Q: Why is is magic item X among the options of character Y, even though Y can&apos;t pick the item?
+A: Where it is sensible, this has been taken care of. Yet there are still cases in which a character has items displayed that they can not pick according to the rules. This is mostly the case for the generic magic items and factions that can&apos;t equip the mundane version of the item. 
+For example, Ogres have generic magic shields listed among their options but can&apos;t equip a shield. 
+Other example, Wood Elfs have magical plate armor listed but can&apos;t equip mundane plate armor.
+This can&apos;t be changed efficiently. You just have to know your army and be aware of what you can equip and what you can&apos;t.
+
+Q: Something is wrong with the allowances of my allied list.
+A: Do not put multiple forces into one roster. If you do, BS will calculate the allowances for the whole roster instead of calculating it for each army separately.
+If you want to make a list using the allied rules, make separate rosters for each army.</description>
         </rule>
       </rules>
       <costs>
@@ -505,6 +504,31 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7fcc-68a5-3a08-941c" name="Minimum Units" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f169-3a49-b864-af03" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2099-fb98-e433-bc47" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="130" hidden="false" typeId="121a-930d-b248-ee3e" typeName="Minimum Units">
+          <characteristics>
+            <characteristic name="0-500 pts" typeId="5f2a-99ce-f8a3-eac9">1</characteristic>
+            <characteristic name="501-1000 pts" typeId="221f-5ad7-8b1c-4337">2</characteristic>
+            <characteristic name="1001-1500 pts" typeId="b079-6a7a-787c-584d">3</characteristic>
+            <characteristic name="1501-2000 pts" typeId="c5dd-526f-37a8-3c15">4</characteristic>
+            <characteristic name="2001-2500 pts" typeId="415d-0476-97ff-9680">5</characteristic>
+            <characteristic name="Each +500" typeId="5e64-d73e-fa3a-3c61">+1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="241f-72a2-9188-b2b7" name="Minimum Unit Requirement" publicationId="9e23-79cb-pubN66727" page="130" hidden="false">
+          <description>An army just isn&apos;t an army unless it has plenty of warriors in its ranks. An army must contain at least one Core, Special or Rare unit for every 500 points played. So, at 750 points you need two units, at 1250 points you need three units, at 2500 points you need 5 units and so on.</description>
+        </rule>
+      </rules>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>

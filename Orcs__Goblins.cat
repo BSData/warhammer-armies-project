@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="24" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="bf00-3101-4063-678b" name="Animosity Table">
@@ -7406,7 +7406,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="6.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9648,18 +9648,6 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
             <infoLink id="fc56-a208-195a-095b" name="Big &apos;Uns" hidden="false" targetId="eabb-76e1-a7a7-6f2c" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="5e7e-d8ae-2930-739e" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0be8-48bf-2486-f812" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92da-533e-2c67-a4d1" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="ec52-37c5-dac3-0819" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="840a-b81a-168e-7333" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e48-5dc2-76af-f6c0" type="max"/>
@@ -9716,6 +9704,36 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="10a8-eeda-8560-4de1" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="60a8-481b-0dba-2eda">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e43-641d-3778-a67a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ef7-0660-f6e7-6628" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="60a8-481b-0dba-2eda" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a42-3688-5381-8004" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="19c2-713b-b68b-7634" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cbf3-2c68-1460-34ae" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cfa-9ccc-576e-8c8c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d8d3-2e10-16c8-3494" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10159,18 +10177,6 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
             <infoLink id="09fc-18bc-20c1-6afc" name="Orc Boar Boy Big &apos;Un" hidden="false" targetId="7aa7-7553-ba7f-c6b9" type="profile"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="5647-1346-f121-74f7" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9916-4455-b927-808d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="928a-af96-05d4-b9d2" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3385-f729-8b4b-6166" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="1131-7581-e4eb-c81a" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0463-4b8b-3b66-6c02" type="max"/>
@@ -10227,6 +10233,36 @@ they are ready to be pushed out towards the enemy. If a concealing unit flees or
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5489-6043-5e43-f10d" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc03-ad0d-2bf2-01a0">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bd5-946f-ab06-6367" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d95-060a-b799-a2de" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="bc03-ad0d-2bf2-01a0" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aea1-6d28-3fa0-898b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="42d1-5027-7e67-58cb" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="584d-3e5c-28ab-6d74" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="976e-c5e3-a940-f826" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9380-bb8c-b77f-94f2" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>

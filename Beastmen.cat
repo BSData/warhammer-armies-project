@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
@@ -5437,6 +5437,22 @@
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f66d-3eb6-fe23-ca5d" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="6309-6cfe-4fe1-7268" name="Centigor" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="96ac-ebc9-b641-fbca" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
             <infoLink id="ab12-7074-2ab4-e9f4" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
@@ -5447,7 +5463,6 @@
             <infoLink id="e080-b534-88e3-bc26" name="01-02" hidden="false" targetId="26c8-8fd3-7a0a-e24c" type="profile"/>
             <infoLink id="1ad7-e143-6cc8-d50b" name="03-04" hidden="false" targetId="1823-42ce-82a9-75a2" type="profile"/>
             <infoLink id="b56e-61e9-2712-9a61" name="05-06" hidden="false" targetId="dc96-3f8c-befe-1533" type="profile"/>
-            <infoLink id="94f7-8580-5fc0-2650" name="Centigor" hidden="false" targetId="67e0-4399-90da-a88e" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="c440-41b1-cb7c-216c" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -5554,9 +5569,24 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d5e-6f88-32b8-bf69" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="76c9-d104-553b-6ca1" name="Gorehoof" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="2214-47b4-701d-be83" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="520a-ffbf-2404-a30b" name="Gorehoof" hidden="false" targetId="8751-6831-fb77-bf29" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -6648,6 +6678,22 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42e8-1a76-4e01-0a29" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="fdda-1bbe-f105-06ae" name="Centigor" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="25b2-2c85-dffb-f5d1" name="Primal Fury" hidden="false" targetId="80ca-7f30-49ff-4274" type="rule"/>
             <infoLink id="daa4-a99d-7462-8787" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
@@ -6656,7 +6702,6 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
             <infoLink id="4363-e7c7-3d1b-2189" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
             <infoLink id="36e4-940a-3e0a-6a69" name="05-06" hidden="false" targetId="dc96-3f8c-befe-1533" type="profile"/>
             <infoLink id="1c99-4143-5cc5-0718" name="03-04" hidden="false" targetId="1823-42ce-82a9-75a2" type="profile"/>
-            <infoLink id="df51-d953-c5ca-72fb" name="Centigor" hidden="false" targetId="67e0-4399-90da-a88e" type="profile"/>
             <infoLink id="e7c5-c42d-cb89-8d13" name="01-02" hidden="false" targetId="26c8-8fd3-7a0a-e24c" type="profile"/>
             <infoLink id="4dbe-9ec5-ed0b-7548" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
           </infoLinks>
@@ -6766,9 +6811,24 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="995b-445c-d276-6526" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="13b1-ab44-99d3-63d9" name="Gorehoof" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="3180-bd3b-be61-38e2" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="6c2b-bf9a-c1a7-3d63" name="Gorehoof" hidden="false" targetId="8751-6831-fb77-bf29" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -7499,7 +7559,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
           <characteristics>
             <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
             <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-            <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. Trollhide Armour gives the wearer Regeneration (4+). This armour may be taken by any character in the Beastman army, including Wizards.</characteristic>
+            <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. This armour may be taken by any character in the Beastman army, including Wizards.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8733,34 +8793,6 @@ Models with this Mark add +1 to their T but suffer -2 to their I (to a minimum o
     <profile id="dc96-3f8c-befe-1533" name="05-06" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="5908-7da9-266c-ec18" typeName="Drunken Table">
       <characteristics>
         <characteristic name="Result" typeId="9a3e-0c62-59af-6fc4">Drunken Bravado: The unit is subject to Stubborn.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="67e0-4399-90da-a88e" name="Centigor" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8751-6831-fb77-bf29" name="Gorehoof" publicationId="9e23-79cb-pubN71963" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
       </characteristics>
     </profile>
     <profile id="c879-157e-0564-9b7f" name="Minotaur" publicationId="9e23-79cb-pubN71963" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

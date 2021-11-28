@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7c10-2fc1-fb87-88ca" name="Entombed Beneath the Sands Mishap Table">
@@ -1150,6 +1150,20 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <infoLink id="64bb-fd55-a64c-521e" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
                 <infoLink id="2d8e-b4f2-b665-370a" name="Thundercrush Attacks" hidden="false" targetId="6a09-0143-4870-0bf8" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="f012-8338-4367-010f" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9654-b624-0091-f3d7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="839f-5f6a-7156-b0be" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b797-8666-b99d-deaf" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="e1d6-169d-42a6-2c72" name="Upgrades" hidden="false" collective="false" import="true">
                   <selectionEntries>
@@ -6254,6 +6268,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="8087-e0dc-9feb-6234" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ecab-0681-5406-1ee2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="669d-eb42-5cd6-e6a5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7530-a463-1d41-268b" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="556e-788b-910b-3d11" name="Upgrades" hidden="false" collective="false" import="true">
@@ -6331,6 +6357,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aa52-023d-59a6-efc9" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e84-1238-3a19-e532" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d5a-1315-423b-83ae" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6d4d-06fc-316d-cf36" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6753,9 +6791,8 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
       <infoLinks>
         <infoLink id="e214-da53-e264-b9a2" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="4790-cffb-4615-5ce2" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-        <infoLink id="ff39-12c4-ce67-a268" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="ff39-12c4-ce67-a268" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
         <infoLink id="de12-04da-8b06-6fec" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
-        <infoLink id="71e3-993e-5a6c-410a" name="Spirit Conduit" hidden="false" targetId="3809-8489-1162-5946" type="rule"/>
         <infoLink id="9d9d-32dd-25fe-5d4d" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
         <infoLink id="1562-a24b-ce9d-51f0" name="Khemric Titan" hidden="false" targetId="739b-0a63-0ba8-f189" type="profile"/>
         <infoLink id="7259-9a8c-b1db-c394" name="Curse of the Fallen" hidden="false" targetId="85c5-0eb7-75b6-d255" type="rule"/>
@@ -6769,6 +6806,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <infoLink id="9d87-9930-0488-8a79" name="04" hidden="false" targetId="4c07-f3d9-1919-a297" type="profile"/>
         <infoLink id="75d3-00b7-35e9-4fbb" name="05" hidden="false" targetId="c2dd-90cf-aa0e-efa3" type="profile"/>
         <infoLink id="8460-9d6c-22dc-01a7" name="06" hidden="false" targetId="d4cd-62e8-e370-6919" type="profile"/>
+        <infoLink id="1dfb-3786-0c34-d5cb" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9189-5cb6-4c90-426b" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -6790,7 +6828,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <infoLink id="c4b3-e3bc-2eea-50ff" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="e9b1-cd9b-aeb4-4c4f" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="0dc2-0df9-b8a1-5a9a" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
-        <infoLink id="5ce3-8ed8-ba83-2654" name="Spirit Conduit" hidden="false" targetId="3809-8489-1162-5946" type="rule"/>
         <infoLink id="1a04-4968-cc55-6650" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
         <infoLink id="08db-f477-69fe-6a22" name="Khemric Titan" hidden="false" targetId="739b-0a63-0ba8-f189" type="profile"/>
         <infoLink id="e250-afe6-6c8c-fc41" name="Curse of the Fallen" hidden="false" targetId="85c5-0eb7-75b6-d255" type="rule"/>
@@ -6804,6 +6841,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <infoLink id="e248-dfd7-3431-c3d6" name="04" hidden="false" targetId="4c07-f3d9-1919-a297" type="profile"/>
         <infoLink id="a451-99ac-1b3f-d3d4" name="01-02" hidden="false" targetId="5ecf-db1f-b152-9c93" type="profile"/>
         <infoLink id="e5ac-b2d0-e9f0-edcf" name="06" hidden="false" targetId="d4cd-62e8-e370-6919" type="profile"/>
+        <infoLink id="cab5-906a-99b5-fd2f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2402-21e6-9a67-c7b5" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>

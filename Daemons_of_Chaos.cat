@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="efb3-d0de-5567-f01a" name="Daemonic Gift">
@@ -6856,13 +6856,9 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d99b-5f79-0a28-ca9d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9534-7511-0353-3676" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="3aec-17bf-5c53-996d" name="Temptator" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the beginning of a combat, one enemy character in base contact with the Daemon must take a Psychology test. If the test is failed, the character will direct his attacks against friendly models or units chosen by the Daemon&apos;s controlling player. These wounds count towards the Daemon&apos;s combat resolution. If there are no suitable targets in base contact with the character, he or she does not attack at all this turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="15f7-45de-38d8-31b8" name="Temptator" hidden="false" targetId="b157-b894-240c-b4ec" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6872,13 +6868,9 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7905-663e-c8b3-d034" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bab-7ab7-4e19-40f8" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="182e-3225-09af-9c82" name="Soporific Musk" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Models in base contact with one or more models with this Gift suffer a -1 penalty to both WS and I. This has no effect on Daemons of Slaanesh.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="4fd2-d4af-b4d5-64b4" name="Soporific Musk" hidden="false" targetId="a842-a6e0-f69a-47ce" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6927,7 +6919,7 @@ but it may not fire grapeshot.</characteristic>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d73a-758f-3beb-a045" type="max"/>
       </constraints>
       <profiles>
-        <profile id="a191-7b28-045b-c07a" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+        <profile id="a191-7b28-045b-c07a" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -6943,10 +6935,10 @@ but it may not fire grapeshot.</characteristic>
         </profile>
       </profiles>
       <rules>
-        <rule id="054f-fe41-8223-8738" name="Daemonic Aura" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+        <rule id="054f-fe41-8223-8738" name="Daemonic Aura" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false">
           <description>Amon &apos;Chakai&apos;s Ward Save is increased to a 3+ against non-Magical Attacks.</description>
         </rule>
-        <rule id="d966-235e-d4fe-4221" name="Dark Halo" publicationId="acbb-53f3-d3f4-1f4e" page="The Hand of Destiny" hidden="false">
+        <rule id="d966-235e-d4fe-4221" name="The Hand of Destiny" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false">
           <description>One enemy model, chosen by the Daemon player, is doomed to perish by Amon &apos;Chakai. All close combat and shooting attacks against this model will automatically hit. This lasts until the end of the battle, even if Amon &apos;Chakai is killed.</description>
         </rule>
       </rules>
@@ -6969,7 +6961,7 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94a6-bc2f-d3f5-6eeb" type="min"/>
           </constraints>
           <profiles>
-            <profile id="357b-e10e-e498-375d" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+            <profile id="357b-e10e-e498-375d" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
               <characteristics>
                 <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                 <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
@@ -6980,13 +6972,21 @@ but it may not fire grapeshot.</characteristic>
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="8a73-9f18-b6ad-e124" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="e87c-8e04-3693-a23d">
+            <selectionEntryGroup id="8a73-9f18-b6ad-e124" name="Lore of Magic" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="644b-eb4a-fe77-3ba2" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da05-3321-122f-01b2" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="e87c-8e04-3693-a23d" name="Lore of Tzeentch DoC 4" hidden="false" collective="false" import="true" targetId="f145-5fb3-93ff-028e" type="selectionEntry"/>
+                <entryLink id="e87c-8e04-3693-a23d" name="Lore of Light 4 Loremaster" hidden="false" collective="false" import="true" targetId="4a2d-e392-f3f4-9be9" type="selectionEntry"/>
+                <entryLink id="078f-4a19-028e-5d4c" name="Lore of Life 4 Loremaster" hidden="false" collective="false" import="true" targetId="1f3b-0c24-4a5a-1e9f" type="selectionEntry"/>
+                <entryLink id="adf9-f2b5-f7e7-1e3c" name="Lore of Death 4 Loremaster" hidden="false" collective="false" import="true" targetId="b698-5ea6-1041-f8dd" type="selectionEntry"/>
+                <entryLink id="fdb3-0b06-1222-3bad" name="Lore of Shadow 4 Loremaster" hidden="false" collective="false" import="true" targetId="1206-220b-8a47-e4b3" type="selectionEntry"/>
+                <entryLink id="6a80-4207-6174-b97b" name="Lore of Beasts 4 Loremaster" hidden="false" collective="false" import="true" targetId="bc87-b774-5bda-d3a3" type="selectionEntry"/>
+                <entryLink id="a2a5-a152-2c05-2b75" name="Lore of Heavens 4 Loremaster" hidden="false" collective="false" import="true" targetId="9d7c-c64e-c62f-ba90" type="selectionEntry"/>
+                <entryLink id="3e8b-290a-7afc-22ad" name="Lore of Tzeentch DoC Loremaster" hidden="false" collective="false" import="true" targetId="f145-5fb3-93ff-028e" type="selectionEntry"/>
+                <entryLink id="6414-e8e2-c3ee-7e8a" name="Lore of Metal 4 Loremaster" hidden="false" collective="false" import="true" targetId="e751-1309-3517-f1a1" type="selectionEntry"/>
+                <entryLink id="3444-812f-10ad-8d72" name="Lore of Fire 4 Loremaster" hidden="false" collective="false" import="true" targetId="dc2d-c4dc-6e36-f056" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -7011,13 +7011,9 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acea-873f-e734-1d03" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9be3-e84b-54e9-d38a" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="5ef9-b2d0-5f58-0dc7" name="All-seeing Eye" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the start of each of your Magic Phases, you may pick one enemy unit within 24&quot; of the Daemon. That unit must reveal all Magic Items and Hidden units in it.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="23fe-b7b0-1e8d-ac6f" name="All-seeing Eye" hidden="false" targetId="7564-418d-886f-2de3" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -7027,13 +7023,9 @@ but it may not fire grapeshot.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16c8-5921-1a58-5877" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ae3-a60a-e45e-17cb" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="54a2-4cfe-37af-39e2" name="Master of Sorcery" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon gains Loremaster. In addition, it can use any of the lores of Magic from the Warhammer rulebook instead of its normal Lore.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="95d0-9dbd-afdf-aade" name="Master of Sorcery" hidden="false" targetId="7f13-e370-3059-329f" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -7044,6 +7036,197 @@ but it may not fire grapeshot.</characteristic>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="600.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a655-30a9-eb6c-31d0" name="Dexcessa" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9347-e258-ccfb-b5c3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="44d6-1dd7-cef1-e256" name="Dexcessa" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">9</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1a38-c493-a813-72a4" name="Joyous Battle Fury" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+          <description>Dexcessa receives +1 A for each round of close combat after the first, for as a long as they remain in close combat (to a maximum of 10 A total).</description>
+        </rule>
+        <rule id="cf5c-7461-67da-2c96" name="Fleeting Dance of Death" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+          <description>At the end of each round of close combat, Dexcessa can choose to disengage from the combat (before any Break tests are taken). If they do so, they may make a Random Move of 3D6&quot;, discarding the highest result. Dexcessa will stop within 1&quot; of any units or impassable terrain, and may turn to face any direction of her choosing at the end of the move.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="0ca9-021b-8be7-59c4" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="3dbe-7d10-785b-16ab" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="fc60-c419-ceb8-7425" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="4cb8-f3bf-77cb-3e7c" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="87f3-30af-f7db-0d3f" name="Mesmerising Lepidoptera" hidden="false" targetId="3f0e-94b9-6e43-1ed9" type="rule"/>
+        <infoLink id="bde5-9f4a-8db9-bf03" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="5762-1bd0-587d-412a" name="Daemon of Slaanesh" hidden="false" targetId="4f49-9bdd-696d-bc2d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e30e-3160-26a6-68c3" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c755-9f64-c8ee-d352" name="Sceptre of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bad1-ad0f-bc18-8890" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a30-d5a8-2d8e-e15d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="224f-ed8d-61a5-e112" name="Sceptre of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All friendly Daemons of Slaanesh units within 12&quot; of Dexcessa may re-roll Daemonic Instability tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6fdc-35f3-a35e-51e1" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="385.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6614-b1c5-9dce-29bc" name="Synessa" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1edb-6508-b325-c9b3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="09b9-d5e0-3923-fd2a" name="Synessa" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
+            <characteristic name="I" typeId="7cca-e51f-edc2-7322">7</characteristic>
+            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="27e9-69f5-d152-213c" name="The Voice of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false">
+          <description>All friendly models within Line of Sight of Synessa may use their LD. In addition, any spells that
+Synessa casts can be targeted at all enemies within Line of Sight, regardless of range.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6db0-7356-131b-352a" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+        <infoLink id="d82c-3547-a538-a626" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="9b14-cda1-0cea-dad2" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+        <infoLink id="8003-50ab-4094-e74f" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="2f2c-f3a6-2155-5e6f" name="Mesmerising Lepidoptera" hidden="false" targetId="3f0e-94b9-6e43-1ed9" type="rule"/>
+        <infoLink id="6ad2-c59c-4a04-6d37" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="6b93-8f88-3cd8-6cce" name="Daemon of Slaanesh" hidden="false" targetId="4f49-9bdd-696d-bc2d" type="rule"/>
+        <infoLink id="4c14-2590-89a1-afec" name="Loremaster (Lore of Slaanesh)" hidden="false" targetId="d75e-a845-77aa-679b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="97a0-c434-fa34-ce9a" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="de36-1f04-627e-db01" name="Staff of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc57-5af3-cd3d-4490" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d30-f434-cfb3-358e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f155-5fb5-50a7-873b" name="Staff of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of Slaanesh contains a Bound Spell, Power Level 4. This is a direct damage spell with a range of 18&quot;. The target unit takes 2D6 Wounds, with Armour Saves allowed.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a68a-5968-ab20-6f66" name="Staff of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit takes 2D6 Wounds. Saves are taken as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6cee-519e-2772-7b3d" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4507-7d51-8d59-4956" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0818-f413-21a8-a595" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e110-9af7-feb8-6705" name="Synessa" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+              <characteristics>
+                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="4fef-aab5-a6b0-bb04" name="Whispers of Doubt" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e26-be8e-f972-3385" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3be3-6e4b-6b0d-6e23" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="d10f-68dd-2a88-481b" name="Whispers of Doubt" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                  <characteristics>
+                    <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a"/>
+                    <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+                    <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+                    <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single model. The target must take a LD test usind 3D6; if failed, all close combat attacks targeting that character gain +1 To Hit until the start of your next Magic phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="743f-ec3b-dafb-f14c" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc42-849e-b7e6-cc12">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a0c-6200-63b4-2a98" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29ee-5d74-f414-e81e" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="fc42-849e-b7e6-cc12" name="Lore of Slaanesh DoC 4 Loremaster" hidden="false" collective="false" import="true" targetId="6d4b-d3cc-bdbe-1bfc" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="28cf-803d-3cdc-eeec" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="495.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -8058,13 +8241,9 @@ but it may not fire grapeshot.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b66e-cb34-c0af-3948" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="6d06-b200-e57e-941c" name="Soporific Musk" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Models in base contact with one or more models with this Gift suffer a -1 penalty to both WS and I. This has no effect on Daemons of Slaanesh.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="de1a-3c30-0c9e-0492" name="Soporific Musk" hidden="false" targetId="a842-a6e0-f69a-47ce" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
@@ -8088,13 +8267,9 @@ but it may not fire grapeshot.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da7c-bc85-0a51-9c3d" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="d0d1-5c43-caa5-d57f" name="Temptator" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the beginning of a combat, one enemy character in base contact with the Daemon must take a Psychology test. If the test is failed, the character will direct his attacks against friendly models or units chosen by the Daemon&apos;s controlling player. These wounds count towards the Daemon&apos;s combat resolution. If there are no suitable targets in base contact with the character, he or she does not attack at all this turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="cbfe-ef59-d808-a303" name="Temptator" hidden="false" targetId="b157-b894-240c-b4ec" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
@@ -8137,13 +8312,9 @@ but it may not fire grapeshot.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="285f-c10e-58c3-c643" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="9261-99d0-e5e4-5476" name="All-seeing Eye" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the start of each of your Magic Phases, you may pick one enemy unit within 24&quot; of the Daemon. That unit must reveal all Magic Items and Hidden units in it.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="958d-86bd-f5d7-6164" name="All-seeing Eye" hidden="false" targetId="7564-418d-886f-2de3" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
@@ -8200,13 +8371,9 @@ but it may not fire grapeshot.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f075-0003-06ab-ee41" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="3036-61e1-01df-4cd2" name="Master of Sorcery" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon gains Loremaster. In addition, it can use any of the lores of Magic from the Warhammer rulebook instead of its normal Lore.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="40f7-2779-593d-387f" name="Master of Sorcery" hidden="false" targetId="7f13-e370-3059-329f" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
@@ -8441,6 +8608,9 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
     </rule>
     <rule id="eef4-b046-1853-ecce" name="Sensual barrage" publicationId="ee54-3543-b9db-fe40" page="174" hidden="false">
       <description>All enemy models within 6&quot; of the Keeper of Secrets suffer a -1 penalty to their WS and I. This has no effect on Daemons of Slaanesh.</description>
+    </rule>
+    <rule id="3f0e-94b9-6e43-1ed9" name="Mesmerising Lepidoptera" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+      <description>All enemy attacks targeting this model suffer a -1 penalty To Hit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8763,6 +8933,26 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can target units of Pink Horrors, Screamers or Flamers. The target unit immediately gains D6 Wounds worth of models added to the unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7564-418d-886f-2de3" name="All-seeing Eye" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the start of each of your Magic Phases, you may pick one enemy unit within 24&quot; of the Daemon. That unit must reveal all Magic Items and Hidden units in it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7f13-e370-3059-329f" name="Master of Sorcery" publicationId="ee54-3543-b9db-fe40" page="203" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon gains Loremaster. In addition, it can use any of the lores of Magic from the Warhammer rulebook instead of its normal Lore.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b157-b894-240c-b4ec" name="Temptator" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">At the beginning of a combat, one enemy character in base contact with the Daemon must take a Psychology test. If the test is failed, the character will direct his attacks against friendly models or units chosen by the Daemon&apos;s controlling player. These wounds count towards the Daemon&apos;s combat resolution. If there are no suitable targets in base contact with the character, he or she does not attack at all this turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a842-a6e0-f69a-47ce" name="Soporific Musk" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Models in base contact with one or more models with this Gift suffer a -1 penalty to both WS and I. This has no effect on Daemons of Slaanesh.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="30" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.0" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.0" publicationDate="08.04.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -43,13 +43,13 @@
     <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.2" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.2" publicationDate="23.05.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.3, Zombie Pirates of the Vampire Coast v.1.2" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.3, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.2" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa, Zombie Pirates of the Vampire Coast v.1.2" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.2" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.1" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.1" publicationDate="09.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.2" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.2" publicationDate="21.11.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters v.1.4" shortName="Em" publisher="Warhammer - Empire Special Characters 1.4" publicationDate="17.01.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.1" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.0" publicationDate="18.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters v.1.1" shortName="Br" publisher="Warhammer - Bretonnia Special Characters 1.1" publicationDate="10.12.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fef7-683c-50d7-d1bb" name="Dwarfs Special Characters v.1.0" shortName="Dw" publisher="Warhammer - Dwarfs Special Characters 1.0" publicationDate="27.11.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="1354-aa33-a41b-202a" name="High Elves Special Characters v.1.1" shortName="HE" publisher="Warhammer - High Elves Special Characters 1.2" publicationDate="25.01.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters v.1.1" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.1" publicationDate="10.12.2020" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters v.1.2" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.2" publicationDate="21.11.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="47b1-3485-34cf-bc48" name="Skaven Special Characters v.1.1" shortName="Sk" publisher="Warhammer - Skaven Special Characters 1.0" publicationDate="25.01.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="f4eb-8c89-b57e-d2df" name="Wood Elves Special Characters v.1.1" shortName="WE" publisher="Warhammer - Wood Elves Special Characters 1.1" publicationDate="06.02.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fe07-d23f-5110-8489" name="Lizardmen Special Characters v.1.1" shortName="LM" publisher="Warhammer - Lizardmen Special Characters 1.1" publicationDate="06.02.2021" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -358,8 +358,8 @@
           <description>Q: I can&apos;t find the data anymore in the list of downloadable data.
 A: Try again in a few hours the data will be back.
 
-Q: Why is is magic item X among the options of character Y, even though Y can&apos;t pick the item?
-A: Where it is sensible, this has been taken care of. Yet there are still cases in which a character has items displayed that they can not pick according to the rules. This is mostly the case for the generic magic items and factions that can&apos;t equip the mundane version of the item. 
+Q: Why is is magic item X among the options of character Y, even though Y can&apos;t equip the item according to the rules?
+A: Where it is sensible, this has been taken care of. Yet there are still cases in which a character has items displayed that they can not equip according to the rules. This is mostly the case for the generic magic items and factions that can&apos;t equip the mundane version of the item. 
 For example, Ogres have generic magic shields listed among their options but can&apos;t equip a shield. 
 Other example, Wood Elfs have magical plate armor listed but can&apos;t equip mundane plate armor.
 This can&apos;t be changed efficiently. You just have to know your army and be aware of what you can equip and what you can&apos;t.
@@ -18359,6 +18359,112 @@ moves/fights normally this turn. On a roll of 1 the unit fails the test. To dete
         <cost name="pts" typeId="points" value="90.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6d4b-d3cc-bdbe-1bfc" name="Lore of Slaanesh DoC 4 Loremaster" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00e1-a27f-349d-b119" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c3e9-c59d-d817-fae7" name="Born of Damnation" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f38-29f7-c72d-4de2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c407-8a3d-920c-3889" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1195-f22e-1eb6-61fd" name="Born of Damnation" hidden="false" targetId="477e-cbd8-907d-4c5b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6f03-e716-d57f-fb34" name="0. Lash of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e9d-ea1e-665a-a0d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff17-ed9e-6474-c652" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="83a7-0ac4-6cdc-5b3d" name="Lash of Slaanesh" hidden="false" targetId="b7ea-f68a-3a08-e2d4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6309-3b49-768c-8197" name="1. Acquiescence" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07d9-b05e-89ad-9e4c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73f5-0bb2-decc-616b" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4781-3d6c-d351-dfa4" name="Acquiescence" hidden="false" targetId="a42c-8d8d-62bf-e130" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4ea8-7dc9-030f-60e4" name="2. Pavane of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fed-5565-3a94-a18a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18e2-5cc9-fd24-c33f" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2980-69c2-cec3-7466" name="Pavane of Slaanesh" hidden="false" targetId="5338-8b26-f6be-4c74" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3a6c-1053-b0a4-c4e5" name="3. Hysterical Frenzy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2295-56c2-92b3-631d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6f1-cd75-80b0-64a7" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2854-c211-4d64-64a3" name="Hysterical Frenzy" hidden="false" targetId="798a-1c4a-ebdf-a01d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a050-46f0-28d5-16f9" name="4. Slicing Shards" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e33c-3a01-4740-1519" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bda-b751-2a2a-f8fa" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3884-58bd-c4e9-e445" name="Slicing Shards" hidden="false" targetId="582b-da6b-ae94-c53e" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="182c-051f-6415-e92f" name="5. Phantasmagoria" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c815-b597-ffd6-6df7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ab6-7cbc-2e02-bc7a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="bd5b-ea7d-139e-77ba" name="Phantasmagoria" hidden="false" targetId="57b2-6f4a-b820-f178" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c00f-8fe4-89ae-f7ac" name="6. Cacophonic Choir" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba1d-1188-ac0c-6411" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8621-b5fd-e6d3-42b9" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="708e-f3d4-8cb9-69a2" name="Cacophonic Choir" hidden="false" targetId="ce69-9487-76f2-b466" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="6cd2-3f4b-da2d-1ee9" name="Arcane Items" hidden="false" collective="false" import="true">
@@ -22335,6 +22441,9 @@ Elven Grace.</description>
     </rule>
     <rule id="a2e7-0a0d-9844-7927" name="Accusation" publicationId="315d-135b-135c-07ce" page="183" hidden="false">
       <description>After deployment, but before the first turn begins, select a single model in your opponent&apos;s army to accuse of heresy. This is the Witch Hunter&apos;s primary quarry. The Witch Hunter&apos;s may re-roll all failed To Hit against his primary quarry. Every hit he inflicts on that models also has Killing Blow, even if they were from a shooting attack. Finally, a Witch Hunter may also choose to shoot at the primary quarry as if he had Sniper.</description>
+    </rule>
+    <rule id="d75e-a845-77aa-679b" name="Loremaster (Lore of Slaanesh)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+      <description>A Wizard with Loremaster knows all the available spells from their chosen lore (limited by their Wizard level as normal). The lore in question is given in brackets.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="443d-406a-91b3-9788" name="Kislev" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="443d-406a-91b3-9788" name="Kislev" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="653e-2e64-2ba1-dc1b" name="Drunken Stupor Table">
@@ -14,772 +14,6 @@
     </profileType>
   </profileTypes>
   <selectionEntries>
-    <selectionEntry id="321e-52cf-8764-3802" name="Boris Ursus" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="0529-9a7a-ce61-f608" value="1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ba9-5e92-077b-76bc" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="51a4-c188-8da2-8fde" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0529-9a7a-ce61-f608" type="min"/>
-      </constraints>
-      <profiles>
-        <profile id="6536-fabe-9c8c-71c2" name="Boris Ursus" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Cavalry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="2e69-fb3c-a527-47e2" name="Mark of the Bear God" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false">
-          <description>If Boris Bokha is the General of your army then any units of Kossars present in the army may be designated Mark of the Bear God at a cost of +1 point per model. Models with the Mark of the Bear God gain Devastating Charge.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="befc-f9ed-bb91-d11a" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="b275-c692-009a-aa33" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
-        <infoLink id="5aa5-bd07-c53b-bf9b" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="bd4a-dacd-b7e0-5e7a" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="98a1-421e-7667-9dfb" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="acbb-bdee-9297-ae92" name="Armour of Ursun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db7e-d248-162d-de88" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a5d-00ec-8807-4d4f" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c9d0-440f-a79f-50d6" name="Armour of Ursun" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
-              <characteristics>
-                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
-                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. For each hit caused by their enemies in close combat, the wearer may make an additional attack back after his enemies&apos; attacks have been resolved (and assuming he&apos;s still alive!). He may make these bonus attacks even if he has already attacked that phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="63a3-3133-1e6e-ea18" name="Shard Blade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3131-b5cf-c4fc-8f13" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1dae-a80d-1320-2e1a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6fc6-5224-20b8-0d9e" name="Shard Blade" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+2</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Any models who suffer a wound (after saving throws, etc) must take an immediate T test. If this test is failed, they suffer an additional D3 wounds, with no Armour or Ward saves possible.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8d6d-92ca-52e1-5bca" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b50-72b5-361d-b2b7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="829f-6443-1cac-ef20" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="8ce8-fdb4-4b67-7066" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="68c0-56a3-49d9-d64c" name="Urskin" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1074-1279-79d1-d6de" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="3053-a204-d1aa-754e" name="Urskin" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="d5ea-c2a5-83eb-68dc" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="c8f9-f485-a6c1-b8a9" name="Fury of Ursun" hidden="false" targetId="a0eb-02ba-012b-ceb2" type="rule"/>
-            <infoLink id="aeb3-2688-01cd-a9e7" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-            <infoLink id="4dc0-3185-9868-62d3" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-            <infoLink id="8bf7-fb18-206c-4028" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="5423-f4cf-3829-eaa7" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="350.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6133-4d31-20bc-b294" name="Tzarina Katarin" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4b30-3e59-21f2-18bd" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="4ec8-93bd-7414-4a35" name="Tzarina Katarin" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="83ac-a6ec-3f9d-2528" name="Beloved of Kislev" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false">
-          <description>Any Kislevite unit joined by the Tzarina becomes Stubborn, and all Kislevite units within 12&quot; of the Tzarina may re-roll failed Psychology tests.</description>
-        </rule>
-        <rule id="e6e9-ef98-da0e-4b74" name="Protectors of the Khan-queen" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false">
-          <description>If the Tzarina joins a unit of Gryphon Legion, the unit will roll 3D6 for all their Break tests, and discard the highest result.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="b671-c311-6a7e-5e77" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="5b69-f683-3b04-43a1" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-        <infoLink id="1fa4-0948-a30c-bd8f" name="Loremaster (Lore of Ice)" hidden="false" targetId="4393-049f-b19b-6457" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="19f6-f869-01c2-7030" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="689d-273f-6367-a44e" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8841-58c9-059c-e056" name="Fearfrost" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a362-0024-ab28-0e22" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59b7-cd72-5285-20be" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="0efb-9681-5281-8fa9" name="Fearfrost" hidden="false" targetId="0d46-3028-1cf8-8ebd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0bf2-bb7c-1d4c-27d4" name="The Crystal Cloak" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da48-ccaa-4e1b-e0ac" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec97-9cd5-b860-9fa0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1cd5-e65a-6af2-a683" name="The Crystal Cloak" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Crystal Cloak grants the Tzarina Ward save (4+). In addition, all attacks directed against the Tzarina in close combat suffer a -1 to both the To Hit and To Wound dice.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="863e-f286-0653-2d26" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5acc-030f-2179-42bf" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca3c-44fa-4a9c-36ef" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="12fb-60ee-5591-fe5d" name="Tzarina Katarin" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-              <characteristics>
-                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d5e2-35e7-901a-e328" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="9165-e420-8077-1bfd">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93c4-c1b9-cfff-7494" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd5c-f3d1-8291-ddd2" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="9165-e420-8077-1bfd" name="Lore of Ice Katarin" hidden="false" collective="false" import="true" targetId="8c46-5711-b36f-deac" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1d50-95df-d04a-e934" name="Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="c59a-b1b9-c1f0-cabb">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01b8-a8c2-07cf-1d75" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44f2-4dc6-94ad-ce1a" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c59a-b1b9-c1f0-cabb" name="Warhorse" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a968-aa77-59c2-b72b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b1b8-53ac-6799-8ace" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                <infoLink id="f719-10e2-8bac-49a8" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="4330-657f-61ab-9da9" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6e5a-ead1-e309-c502" name="War-sled" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1147-590f-d8ec-681f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f90a-8fcc-f941-e1d3" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                <infoLink id="e53c-2bc8-e0b7-8dff" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="0d38-d47c-4a8a-049f" name="Bear" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b889-405a-388f-eb74" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8c8-9453-0215-21f9" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="644b-7cd5-d03d-c26e" name="Bear" hidden="false" targetId="05f8-36d0-ab51-d90b" type="profile"/>
-                    <infoLink id="1188-3fd5-1820-02a9" name="Fury of Ursun" hidden="false" targetId="a0eb-02ba-012b-ceb2" type="rule"/>
-                    <infoLink id="8c7f-615b-69f4-c8f5" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="120.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="bceb-3cf5-65b4-c7e0" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="400.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2338-7063-6dec-d9fd" name="Tzar Saltan" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dd53-2c82-1a36-0889" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="7a9e-f1f6-e246-f03f" name="Saltan" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="3759-e965-38d3-11c9" name="Bitter Hatred" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false">
-          <description>Saltan is subject to Hatred. When fighting models from Warriors of Chaos, Daemons of Chaos or Beastmen, Tzar Saltan may re-roll all failed rolls to hit, not just the first turn. He must always issue a challenge to any characters in the unit. If challenged by a Chaos character, he must accept. When fighting against Chaos characters in a challenge, Saltan gets a +1 bonus to his S.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="f299-06fe-8c40-74df" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="790c-4dbb-4105-055d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="baa1-3e3a-3cab-d4b2" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="d1ec-4120-d95e-0b05" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="02ec-eb2d-fc2b-6af2" name="Armour of Praag" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cafe-9bea-123e-c775" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82bc-b5f0-2e36-fbfa" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="fbb1-d56f-cc39-f76c" name="Armour of Praag" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
-              <characteristics>
-                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
-                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. The Armour of Praag gives Saltan +1 to his T.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ebb4-104f-ca5b-bbcb" name="The Black Blade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb44-cae4-5c90-1bcd" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adfe-cb0f-19d2-a3a2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="22e1-4977-c75b-87a8" name="The Black Blade" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Black Blade emits black clouds around its wielder, giving enemies -1 to hit him in close combat.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="08bd-81fd-f7f6-94df" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e944-fde1-d460-b878" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d152-39c9-367a-bcd0" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="1a8f-c0d2-f3ef-928c" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="89a6-02d5-504b-f9d7" name="Warhorse" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d7d-a365-ae27-8876" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="c558-97f5-98f5-ca1d" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="273d-9ec1-e05c-c6bc" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-            <infoLink id="ca72-445c-e6e6-e415" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="18.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="621b-6932-7573-cca3" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="195.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d022-1ccd-7e22-e3ff" name="Baba Yaga" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0466-66dd-a8bb-3b03" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="59e0-b9c6-ba55-9889" name="Baba Yaga" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2840-ddc6-387f-2a0b" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="985b-5832-8066-e465" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-        <infoLink id="35a0-b825-078e-c868" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-        <infoLink id="7dee-0ba4-d7c2-163e" name="Hag" hidden="false" targetId="ac8e-a551-2e5e-47c8" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="6280-d9d4-b2f8-da6c" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="a8ec-6fdc-6907-7db9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5d4a-c8e0-9c4e-d436" name="Staff of the Forest" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e599-277c-496e-b487" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5ac-7171-ab81-c2c9" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5524-ab37-7449-c1ca" name="Staff of the Forest" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of the Forest allows Baba Yaga to re-roll her casting attempts for any spell.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c703-6bf6-8a77-cad2" name="Amulet of the Raven" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c061-f2e8-05c9-752c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b16e-ed12-4103-cf89" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e304-8ce5-38d8-4e4a" name="Amulet of the Raven" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Amulet of the Raven gives Baba Yaga Ward save (5+). In addition, enemy models in base contact with her at the start of combat must first pass a LD test. If failed, they may not attack this phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bf7a-28a7-4b5f-987a" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84b4-c027-568e-fcd9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3fad-c6f3-2ac6-881d" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="c0ca-ab0a-17db-c204" name="Baba Yaga" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-              <characteristics>
-                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
-                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
-                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2ee5-29ab-40d4-10a7" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="5590-99f8-673a-9cb2">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="780b-9c2c-4006-b86e" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8861-72b0-a158-ef6e" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="5590-99f8-673a-9cb2" name="Lore of the Hags 4" hidden="false" collective="false" import="true" targetId="6970-e90a-be73-4d6b" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="253b-d99e-5249-3803" name="Hut" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9609-df09-5650-00e8" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="df59-e5d1-a6c0-116d" name="Hut" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="77d8-4669-3b06-b141" name="Flammable" hidden="false" targetId="ec58-b231-6a2f-a163" type="rule"/>
-            <infoLink id="abba-53bc-7503-f951" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
-            <infoLink id="14b8-d3e4-df29-1ddc" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="90f7-f487-5fdb-47ec" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-            <infoLink id="d6a6-90c4-4f32-c34e" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="07b8-954c-3c05-eea8" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="200.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="280.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bc42-7a0d-85c8-9489" name="Miska the Slaughterer" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6806-371c-53ff-b3c1" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="aba0-9e19-802d-9c09" name="Miska" publicationId="1607-bfe9-82af-d3dc" page="76" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="5668-b304-6b50-a7ce" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="4147-dcae-d137-cbfb" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-        <infoLink id="7ea9-8781-f11a-19a5" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="ad2b-5011-493f-332d" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="8baa-db03-761f-e5c2" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="7cbc-1582-31b7-c241" name="Fearfrost" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="726e-961a-f6e4-4c18" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3c7-295f-d7c8-3676" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="aa19-2c97-ff67-1773" name="Fearfrost" hidden="false" targetId="0d46-3028-1cf8-8ebd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7c17-fc4f-2ffa-b3d1" name="Cloak of the Great Bear" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aeef-9c22-8a93-050c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="85a9-a9d8-0e71-1a9e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="fca6-0013-e6b2-261a" name="Cloak of the Great Bear" publicationId="1607-bfe9-82af-d3dc" page="76" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
-              <characteristics>
-                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
-                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. For each successful unsaved Wound caused by her in Close Combat, she may make an extra attack immediately. These additional attacks do not generate further attacks.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ff32-b0b4-7925-1028" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b92-d12d-9a0e-e31f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07af-ff11-bc57-5ec7" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="9d8a-2f45-23b6-88d6" name="Miska" publicationId="1607-bfe9-82af-d3dc" page="76" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
-              <characteristics>
-                <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
-                <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
-                <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
-                <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
-                <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="93ec-d0c8-a1f2-761b" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="6dab-c813-f71d-bc85">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a182-ffa2-fe7a-4e8d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f246-ca3c-c32d-56ec" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="6dab-c813-f71d-bc85" name="Lore of Ice 3" hidden="false" collective="false" import="true" targetId="22a1-0fc6-bb55-5b73" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="514b-053d-c2dd-4572" name="War-sled" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88f8-cccf-acd5-dcd1" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="37f3-05fc-c3ea-90bf" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="6dd7-c821-ba4b-c722" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="9eab-21fa-ffcf-f7dc" name="Bear" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df84-7566-7352-5370" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1299-58db-317a-8a3f" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b6b9-4e27-d1cf-c606" name="Bear" hidden="false" targetId="05f8-36d0-ab51-d90b" type="profile"/>
-                <infoLink id="21fc-0d65-4848-f017" name="Fury of Ursun" hidden="false" targetId="a0eb-02ba-012b-ceb2" type="rule"/>
-                <infoLink id="3065-8994-18f8-2d61" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="120.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="7655-4c0e-3cc4-3684" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="350.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="462a-7389-a90c-43a2" name="Igor the Terrible" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4789-0e2c-ef02-b49f" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="aedc-1e83-8ac4-5860" name="Igor" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="6759-fb5a-9a93-1fd3" name="Tyrant" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false">
-          <description>Igor has Fight or Die, but affects all friendly units within 12&quot; rather than the normal 6&quot;.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="df3a-8c76-1245-546e" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="849e-d976-469d-8e14" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="1c26-1976-dcf7-8f0b" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="0a0b-960c-d5d7-a22e" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1b96-088a-fa68-1092" name="Bloodedge" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6053-30c8-07e7-5561" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7863-c271-46d0-5610" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c307-1d73-f81b-817a" name="Bloodedge" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All enemy models within 6&quot; of Igor take a Wound on a 6 which Ignores Armour saves at the start of the Magic phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1b55-91cc-55a1-b036" name="Dagger of Black Ice" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0808-d71c-c4e6-8d22" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="809a-8db2-4eb9-0f3b" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b3fb-b371-5415-e024" name="Dagger of Black Ice" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">When Igor suffers his last Wound in Close Combat, roll a D6. On the roll of a 4+, the Wound is instead scored against the model that struck the blow.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e730-7583-b8ef-3599" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c192-1b05-b55d-d880" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="381e-d229-29e7-68ac" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="bc2c-f2dd-d53a-d7c8" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="808a-84fc-65ee-c1b6" name="Warhorse" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e03a-aa0d-f033-903c" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4187-9413-7f18-c945" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="2d5d-645a-b2be-479a" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-            <infoLink id="1a94-5815-d1ba-f947" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="18.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="78b5-d7a5-1e6a-e543" name="Armour of Hoarfrost" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ade-e438-12e8-8d1f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="258e-3566-c079-d17e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5ff0-5539-24e3-a781" name="Armour of Hoarfrost" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
-              <characteristics>
-                <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
-                <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. This armour gives the wearer Magic Resistance (1) and Ward save (6+).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="b14e-21ce-7eeb-d951" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="fa66-ffcd-bc12-9528" name="Boyar" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="7b7f-ba5a-bb1d-6824" name="Boyar" publicationId="1607-bfe9-82af-d3dc" page="47" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -1423,293 +657,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="100.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c7b6-4fce-4f8d-6f62" name="Tordimir Lubovasyn" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="260e-3c77-99f1-3d1a" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="a912-a556-89d5-fbae" name="Tordimir" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="2312-f75c-1195-3a43" name="Captain of the Gryphon Legion" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false">
-          <description>Units of Gryphon Legion must be taken as Core instead of Special if Tordimir is included in your army. In addition, any Gryphon Legion unit that Tordimir joins is Stubborn.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="d3b9-fdf5-472f-791e" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="8b65-62ff-32de-84a1" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
-        <infoLink id="6ef5-d303-89a2-acbc" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-        <infoLink id="8c9a-66b7-9488-dafb" name="Glorious Charge" hidden="false" targetId="a6cf-6dc0-c104-1914" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="6c3e-1fe5-6d9b-3006" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4502-d66c-465b-ebc0" name="The Gryphon Lance" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b2-f2ed-919e-1998" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8207-5404-c31a-f025" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5a3f-405c-5b85-c297" name="The Gryphon Lance" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Lance. The wielder gains Heroic Killing Blow and Armour Piercing (1) when he charges.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="495c-5318-a760-7c53" name="Gryphon Wing" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="068f-9176-fffc-1eaf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7079-4f95-b664-b70d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="adf7-8185-20ba-01f7" name="Gryphon Wing" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Gryphon Wing gives Tordimir Ward save (5+). In addition, any unit led by him automatically passes any LD test to disengage from combat with Glorious Charge.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7403-74bb-9327-aecc" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0dd-3428-5b13-113a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a987-61ef-cca5-e43a" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="924c-fdfd-017b-0931" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6f1a-69bf-2be3-1bdc" name="Seraphima" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="682b-e785-878c-c691" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="8ebc-14f9-de33-721b" name="Seraphima" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="dfee-bc6d-aba0-c0e1" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="a0a5-7776-229a-6157" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0cf9-367a-e30e-9120" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2001-8eec-26be-6778" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fcb4-bdf0-da26-fbad" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="427a-827e-43d9-d641" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="722f-2416-0926-9f10" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="195.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a070-a5b4-87cb-fc9c" name="Stepan Rasin" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2d96-a082-de4d-cabd" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="0871-09ad-e40b-e91f" name="Stepan Rasin" publicationId="1607-bfe9-82af-d3dc" page="79" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="1745-5126-ae7f-fd55" name="Lucky" publicationId="1607-bfe9-82af-d3dc" page="79" hidden="false">
-          <description>Stepan Rasin allowed to re-roll any dice roll he makes. He may make up to three re-rolls during the battle.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="090c-f543-ed3e-428b" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="fa81-4640-daa3-2053" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-        <infoLink id="753d-c369-c69b-19e2" name="Strider" hidden="false" targetId="c270-3956-9b64-b587" type="rule"/>
-        <infoLink id="380e-dd2d-c1cd-1667" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="c221-4313-f64c-f152" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6d03-70db-cc56-cec5" name="Warhorse" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56d1-d13c-99dd-8024" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a485-5f21-72a0-d8de" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="711d-50e1-b366-519c" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-            <infoLink id="f994-babb-8f93-4b4b" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-            <infoLink id="2a90-91fc-b946-f47b" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8bfd-2c4b-83cc-ea4d" name="The Silver Shard" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f99-945c-c7f8-8c15" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca36-28bf-06dd-4674" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4544-cf7a-66eb-1c62" name="The Silver Shard" publicationId="1607-bfe9-82af-d3dc" page="79" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Bow. Any shot that hits is multiplied into D6 hits.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e25b-a605-fa78-5ae8" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="788f-372c-f3ed-8a2b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cdf-9a6c-055b-1273" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="02c2-2740-5c0b-b910" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="82f3-06ea-8ecf-51ba" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="100.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d78a-0cce-6beb-2e84" name="Ilja of Murova" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="57e1-b90f-c7e9-f2f0" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="89e4-0771-1337-497d" name="Ilja of Murova" publicationId="1607-bfe9-82af-d3dc" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="710c-9089-c793-9a9a" name="Strength of the Great Bear" publicationId="1607-bfe9-82af-d3dc" page="80" hidden="false">
-          <description>Ilja may forfeit his normal attacks in favour of doing a single massive blow with his axe. If this attack hits and wounds, it causes D3+1 wounds which Ignores Armour saves.</description>
-        </rule>
-        <rule id="5963-bfe0-b1b0-6c79" name="Hugely Resilient" publicationId="1607-bfe9-82af-d3dc" page="80" hidden="false">
-          <description>Whenever Ilja is reduced to zero wounds roll a D6. On a 1-3 he is killed as normal, but on a 4-6 the fact that Ilja should be dead does not register in his battle craved mind and he completely ignores the injury. Return Ilja to 1 wound. This rule has no effect against attacks that kills him outright.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="5193-6966-c98f-1ff6" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
-        <infoLink id="32b4-dc6c-e832-298a" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
-        <infoLink id="a712-bbb0-28a7-2de5" name="Trappers" hidden="false" targetId="c59d-6ca7-46e9-b4af" type="rule"/>
-        <infoLink id="3fc9-e30a-91a5-4cc4" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
-        <infoLink id="3f99-f1d1-c9f2-ad51" name="Heart Strike" hidden="false" targetId="98b0-cb37-439e-f3ab" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="5086-3d75-418c-8080" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="2d7a-f324-67c8-a35a" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd2c-790b-e53f-0478" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28f0-b108-6f19-c157" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="7fad-b16b-6d14-d49e" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4a2a-09a8-a065-40ae" name="Longbow" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b74a-897e-eb60-d069" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95dc-fdfb-2796-5e11" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="b073-5bbc-915f-dbde" name="Longbow" hidden="false" targetId="cde7-c47d-3818-1e9d" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="afdf-4aa1-7a63-eb53" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="199c-e370-ccd7-999d" name="Hetman" hidden="false" collective="false" import="true" type="model">
@@ -2570,17 +1517,14 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1ba9-5e92-077b-76bc" name="Mark of the Bear God" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="1ba9-5e92-077b-76bc" name="Mark of the Bear God" hidden="true" collective="true" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="e703-322b-9b25-1436" value="1.0">
+                <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="321e-52cf-8764-3802" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="224c-b3df-56ae-f89d" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e703-322b-9b25-1436" type="max"/>
-              </constraints>
               <rules>
                 <rule id="1057-8669-97ce-c985" name="Mark of the Bear God" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false">
                   <description>Models with the Mark of the Bear God gain Devastating Charge.</description>
@@ -3429,15 +2373,12 @@
     </selectionEntry>
     <selectionEntry id="ea6f-6deb-0f86-79db" name="Gryphon Legion" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="7d7c-aa52-78d1-ce68" value="0.0">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7b6-4fce-4f8d-6f62" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36b8-2fda-ef3d-3844" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7d7c-aa52-78d1-ce68" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="33d5-5194-2211-54d1" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
@@ -3446,27 +2387,12 @@
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5841-bd15-00ad-3ea0" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="3a3c-ea49-3443-2b1d" name="Gryphon Legionnaire" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="89c2-7945-cc8c-4de5" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
             <infoLink id="039e-2d1e-6100-070e" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
             <infoLink id="d05e-806c-a1dd-e376" name="Glorious Charge" hidden="false" targetId="a6cf-6dc0-c104-1914" type="rule"/>
             <infoLink id="1042-945e-0bbe-9e81" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+            <infoLink id="6d7b-3735-2cd5-e722" name="Gryphon Legionnaire" hidden="false" targetId="289d-da9a-a533-3b38" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="056f-4388-3799-49a1" name="Warhorse" hidden="false" collective="true" import="true" type="model">
@@ -3568,24 +2494,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf52-9e0c-9965-3317" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="c0b8-ec69-fe8f-55e7" name="Rotamaster" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="cb2f-5271-47f9-3299" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="4eaa-4a2e-d6b8-55a7" name="Rotamaster" hidden="false" targetId="6156-678b-d78e-4b71" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -4757,9 +3668,6 @@
 If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If firing is completed without a misfire, and the target is within range, roll To Hit with all shots as normal, using the BS of the crew.</description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink id="3975-ef93-54d5-759f" name="Great Cannon" hidden="false" targetId="7e43-605b-bfde-13c3" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="a78c-23ee-eaa5-b761" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
@@ -4922,17 +3830,14 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c950-eecd-d453-7dd6" name="Gryphon Legion (Tordimir Lubovasyn)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c950-eecd-d453-7dd6" name="Gryphon Legion (Tordimir Lubovasyn)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="eba4-11ee-f1c2-537f" value="-1.0">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7b6-4fce-4f8d-6f62" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36b8-2fda-ef3d-3844" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="eba4-11ee-f1c2-537f" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ca4f-1d73-990c-bcb8" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -4941,27 +3846,12 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8535-9214-bb25-b83c" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="3382-825c-1321-4245" name="Gryphon Legionnaire" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="df59-57dc-0ed5-7851" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
             <infoLink id="5a5d-dd1a-6c47-bee3" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
             <infoLink id="9fd8-ff54-4eb0-8d65" name="Glorious Charge" hidden="false" targetId="a6cf-6dc0-c104-1914" type="rule"/>
             <infoLink id="a75f-9aee-e6fc-923d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+            <infoLink id="4f88-c024-ffcb-c296" name="Gryphon Legionnaire" hidden="false" targetId="289d-da9a-a533-3b38" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="071f-1c5e-896f-6523" name="Warhorse" hidden="false" collective="true" import="true" type="model">
@@ -5063,27 +3953,1069 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eec0-0e22-6430-00d5" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="5663-9318-73ba-5d85" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="12da-54cb-c487-94aa" name="Rotamaster" hidden="false" targetId="6156-678b-d78e-4b71" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61b6-f4ea-863e-18b1" name="Special Characters" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="4eb4-b47f-49e7-d44f" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
+        <categoryLink id="1eb9-3578-955e-4b2b" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2161-61f4-1113-139e" name="Character" hidden="false" collective="false" import="true" defaultSelectionEntryId="d903-7c91-1c0c-57a1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7088-bf79-65ed-614a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1f9-7c0e-9744-a0fb" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b1cf-56b0-d9a7-fcec" name="Tzarina Katarin" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fcfd-7136-6330-3cb1" type="max"/>
+              </constraints>
               <profiles>
-                <profile id="4783-d8af-3d3d-627d" name="Rotamaster" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="d2e3-dc7d-6f47-b1ac" name="Tzarina Katarin" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="d02a-c88a-b280-6bf7" name="Beloved of Kislev" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false">
+                  <description>Any Kislevite unit joined by the Tzarina becomes Stubborn, and all Kislevite units within 12&quot; of the Tzarina may re-roll failed Psychology tests.</description>
+                </rule>
+                <rule id="00a4-b0f5-be5f-e326" name="Protectors of the Khan-queen" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false">
+                  <description>If the Tzarina joins a unit of Gryphon Legion, the unit will roll 3D6 for all their Break tests, and discard the highest result.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="51fb-9938-c362-1b4e" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="977e-f1b2-cef0-f2d4" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+                <infoLink id="bbf7-7170-8016-7b31" name="Loremaster (Lore of Ice)" hidden="false" targetId="4393-049f-b19b-6457" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="76ff-6d6e-711e-1d54" name="Fearfrost" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36df-27c5-1e80-38c2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fddd-fe29-b4f8-08a7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="816c-0750-cfa7-7e17" name="Fearfrost" hidden="false" targetId="0d46-3028-1cf8-8ebd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1378-85d2-d6b2-b793" name="The Crystal Cloak" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f3c-b5e4-c288-1041" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="96d3-e4eb-bc8e-1f3b" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="4fd2-58b2-55fa-e194" name="The Crystal Cloak" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+                      <characteristics>
+                        <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Crystal Cloak grants the Tzarina Ward save (4+). In addition, all attacks directed against the Tzarina in close combat suffer a -1 to both the To Hit and To Wound dice.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fd73-9c1b-96a3-d7fe" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e213-a628-9fb7-73b4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed41-3dd3-779f-3698" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="5ec8-ec6f-dfac-ad62" name="Tzarina Katarin" publicationId="1607-bfe9-82af-d3dc" page="73" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                      <characteristics>
+                        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+                        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+                        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="aeb5-a871-c705-4221" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="82f1-0c32-5f36-7561">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="165d-3f0c-2391-7d8f" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b50-f2d7-2f1e-e8fc" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="82f1-0c32-5f36-7561" name="Lore of Ice 4 Loremaster" hidden="false" collective="false" import="true" targetId="8c46-5711-b36f-deac" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="f880-6cdf-ef2c-4019" name="Mount" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0015-05c2-a828-4038" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="836c-3413-4893-e91e" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="71b4-1d1e-b583-05d4" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce5f-a48c-13ff-f555" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="440f-4c34-3f20-502e" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                        <infoLink id="94b0-5cfa-69d7-bc75" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                        <infoLink id="d6cf-0972-597e-03ab" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="9674-a41c-af62-27a9" name="War-sled" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d587-8f85-7607-55b7" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="8154-bd35-487c-e25d" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                        <infoLink id="3832-951a-418b-72e3" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="6848-204c-a3cd-bbc1" name="Bear" hidden="false" collective="false" import="true" type="model">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a684-abfb-3523-b32b" type="max"/>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2023-9a36-55cb-450a" type="min"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="c11b-423e-4fd6-cff3" name="Bear" hidden="false" targetId="05f8-36d0-ab51-d90b" type="profile"/>
+                            <infoLink id="e322-0fc1-7d04-61d9" name="Fury of Ursun" hidden="false" targetId="a0eb-02ba-012b-ceb2" type="rule"/>
+                            <infoLink id="63ee-2b68-1996-8cd1" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <costs>
+                        <cost name="pts" typeId="points" value="120.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="f1f1-fe81-b874-1152" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="400.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d903-7c91-1c0c-57a1" name="Tzar Saltan" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c75f-1f51-c40d-340b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3df1-6298-c375-6e61" name="Saltan" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="b27c-b11c-578d-1ee3" name="Bitter Hatred" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false">
+                  <description>Saltan is subject to Hatred. When fighting models from Warriors of Chaos, Daemons of Chaos or Beastmen, Tzar Saltan may re-roll all failed rolls to hit, not just the first turn. He must always issue a challenge to any characters in the unit. If challenged by a Chaos character, he must accept. When fighting against Chaos characters in a challenge, Saltan gets a +1 bonus to his S.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="5b8f-d4fc-3794-0db6" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="22e8-8f1d-5799-de3d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="bd1e-0e76-563e-623d" name="Armour of Praag" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="766a-bebe-4b09-5714" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f215-dd53-416b-1cd7" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="df65-d728-5f89-9995" name="Armour of Praag" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+                      <characteristics>
+                        <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                        <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. The Armour of Praag gives Saltan +1 to his T.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="25c0-fb43-9fd6-3737" name="The Black Blade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c7a-47a9-735d-94e2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d807-f986-0021-c740" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="cf50-4958-6812-440d" name="The Black Blade" publicationId="1607-bfe9-82af-d3dc" page="74" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+1</characteristic>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Black Blade emits black clouds around its wielder, giving enemies -1 to hit him in close combat.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6ca4-f10e-d00d-f101" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e91-48d1-330f-9cc1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a05-56d3-e21d-433e" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e887-ba76-8053-12cc" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="27d7-f289-5155-f5d8" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8378-e448-7239-0392" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="395d-7502-9795-5151" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="28fe-6555-d8f5-2c3d" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                    <infoLink id="7411-cac6-f950-5833" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="18.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="21fa-95c8-2ea3-f316" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="195.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8f3e-8ea0-3fa0-83ff" name="Miska the Slaughterer" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="28ef-5622-9f16-594d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7d7f-ef44-17fa-08ef" name="Miska" publicationId="1607-bfe9-82af-d3dc" page="76" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="5663-9318-73ba-5d85" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="f0d8-8732-64b1-e017" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="8d61-f23b-5706-9cc7" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+                <infoLink id="2ecc-2fbf-ce0d-88fe" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="353d-79e4-3b36-5474" name="Fearfrost" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dfb-3e96-3390-a08d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9c9-ea56-c212-7cdb" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2f0c-8cdb-541f-c169" name="Fearfrost" hidden="false" targetId="0d46-3028-1cf8-8ebd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9ebc-15dd-9258-0bb2" name="Cloak of the Great Bear" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a957-1dd7-073b-e532" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83a4-3450-f221-aeee" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="c903-db97-e02e-7107" name="Cloak of the Great Bear" publicationId="1607-bfe9-82af-d3dc" page="76" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+                      <characteristics>
+                        <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                        <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Medium armour. For each successful unsaved Wound caused by her in Close Combat, she may make an extra attack immediately. These additional attacks do not generate further attacks.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6774-9f77-2990-2109" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b26e-7434-b67c-8c6d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5160-b459-d2d4-7852" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="d55a-49e4-5b58-289e" name="Miska" publicationId="1607-bfe9-82af-d3dc" page="76" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                      <characteristics>
+                        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">3</characteristic>
+                        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">3</characteristic>
+                        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-5</characteristic>
+                        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">5</characteristic>
+                        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="a364-692b-1a5a-e91e" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="d040-b269-ce37-8451">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e8a-8d09-c5e8-3fe9" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09e9-5b67-2cf9-9280" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="d040-b269-ce37-8451" name="Lore of Ice 3" hidden="false" collective="false" import="true" targetId="22a1-0fc6-bb55-5b73" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b838-40e4-4810-8653" name="War-sled" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca7e-d2fe-e8ee-a1f6" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="15b6-75e6-9ddd-bec6" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="9427-0600-b84e-8eeb" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="cc0c-d97e-8691-1caf" name="Bear" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8630-7118-b0ed-1f93" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ab8-48b9-44df-db46" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="929a-9de7-8336-3b95" name="Bear" hidden="false" targetId="05f8-36d0-ab51-d90b" type="profile"/>
+                        <infoLink id="b0b7-d077-fb0b-1f29" name="Fury of Ursun" hidden="false" targetId="a0eb-02ba-012b-ceb2" type="rule"/>
+                        <infoLink id="80ec-9f42-74b7-9d0f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="120.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="713b-1ce1-4bb7-67ba" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="350.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="224c-b3df-56ae-f89d" name="Boris Ursus" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="0f80-5f47-516e-ca3e" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ba9-5e92-077b-76bc" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7498-c4d7-87f2-b337" type="max"/>
+                <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0f80-5f47-516e-ca3e" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="0ae1-cedd-3a52-171d" name="Boris Ursus" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Cavalry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="bb74-6547-4e88-c857" name="Mark of the Bear God" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false">
+                  <description>If Boris Bokha is the General of your army then any units of Kossars present in the army may be designated Mark of the Bear God at a cost of +1 point per model. Models with the Mark of the Bear God gain Devastating Charge.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="01e8-3447-550c-67bf" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="a50f-af43-65c9-2b3d" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+                <infoLink id="b48c-36c1-475a-4b1b" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="97b7-7684-a8c0-22d1" name="Armour of Ursun" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c5a-fdff-1661-965b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8880-c8fe-1814-750a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="167b-563f-6711-35c2" name="Armour of Ursun" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+                      <characteristics>
+                        <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                        <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. For each hit caused by their enemies in close combat, the wearer may make an additional attack back after his enemies&apos; attacks have been resolved (and assuming he&apos;s still alive!). He may make these bonus attacks even if he has already attacked that phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="89ec-b1e3-fc95-8b56" name="Shard Blade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44a4-b7de-94ac-a29d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f36-811f-f9e6-b3a8" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="1688-de0f-bce3-fd04" name="Shard Blade" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7">+2</characteristic>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Any models who suffer a wound (after saving throws, etc) must take an immediate T test. If this test is failed, they suffer an additional D3 wounds, with no Armour or Ward saves possible.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="31a5-a48f-5f4a-ab42" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ccf4-51b1-e5ab-17a8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d191-8328-c97a-f489" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="85d2-8125-d9d6-456e" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7644-124d-5971-923f" name="Urskin" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba12-2fb7-9006-6013" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="81d5-aa10-b881-35d5" name="Urskin" publicationId="1607-bfe9-82af-d3dc" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                      <characteristics>
+                        <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+                        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                        <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+                        <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                        <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="21a6-2201-3876-f748" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="1e43-c829-0c68-2bd4" name="Fury of Ursun" hidden="false" targetId="a0eb-02ba-012b-ceb2" type="rule"/>
+                    <infoLink id="8606-8bb4-5c61-68d9" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                    <infoLink id="616c-c4ef-f02a-f68f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                    <infoLink id="e7e9-0aaa-500e-5bab" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="85a9-f8a0-80f5-94a6" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="350.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5457-2c4c-78be-278a" name="Igor the Terrible" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="06e8-935b-ccab-7468" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b6d4-3a3e-d397-10fd" name="Igor" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="e46e-ac71-5d9b-849a" name="Tyrant" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false">
+                  <description>Igor has Fight or Die, but affects all friendly units within 12&quot; rather than the normal 6&quot;.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="a423-5318-f08b-a9ee" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="a393-e0ed-9a0a-0819" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="5101-ce2f-12cd-87df" name="Bloodedge" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7554-aa1c-be39-843a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1267-889e-a149-e177" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="b15b-6dd6-c499-cbd8" name="Bloodedge" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All enemy models within 6&quot; of Igor take a Wound on a 6 which Ignores Armour saves at the start of the Magic phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9730-2dd3-de40-6f72" name="Dagger of Black Ice" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed30-3063-e5f7-4883" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88ac-a000-ac7a-a56e" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="5fc0-51e7-cc20-7acd" name="Dagger of Black Ice" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+                      <characteristics>
+                        <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">When Igor suffers his last Wound in Close Combat, roll a D6. On the roll of a 4+, the Wound is instead scored against the model that struck the blow.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bd5d-7366-4d1a-9ca9" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a75a-8bce-4267-812b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e21e-d302-aab0-7a9d" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4ec9-953b-5cb7-c525" name="Pistol" hidden="false" targetId="aa4f-83e3-8259-924a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8ece-2cc6-77cb-5a23" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b0c-8541-182e-8c1e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="40cd-98b3-339f-6476" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="fd03-90d8-edd7-549b" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                    <infoLink id="09a0-4d52-356f-58aa" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="18.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1aaa-d5b4-826a-4e43" name="Armour of Hoarfrost" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c8d-7b5d-75c9-397b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="039f-1e63-5837-0821" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="4a00-99a4-ead5-3a8a" name="Armour of Hoarfrost" publicationId="1607-bfe9-82af-d3dc" page="77" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+                      <characteristics>
+                        <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
+                        <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. This armour gives the wearer Magic Resistance (1) and Ward save (6+).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="2d26-ef67-2a94-a5d1" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="275.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a40e-8175-f335-4f5d" name="Baba Yaga" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="01d6-b82b-647d-899f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fb69-bb08-7936-efc6" name="Baba Yaga" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="89a7-b606-f63f-66c3" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="2085-00cd-2e5d-be7f" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+                <infoLink id="6f15-f2ab-a851-1c4d" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="d8ea-4f98-7d89-c01d" name="Hag" hidden="false" targetId="ac8e-a551-2e5e-47c8" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="8ceb-9479-12d7-f09e" name="Staff of the Forest" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="056d-8c1b-517d-1fe0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc38-515d-cec2-9aa0" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="1107-11ac-5041-b791" name="Staff of the Forest" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+                      <characteristics>
+                        <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of the Forest allows Baba Yaga to re-roll her casting attempts for any spell.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f1be-d1b3-c98e-8ac1" name="Amulet of the Raven" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4504-448e-7f16-aca0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e4a-5331-35a4-3337" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="33e4-fae9-8814-6990" name="Amulet of the Raven" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+                      <characteristics>
+                        <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Amulet of the Raven gives Baba Yaga Ward save (5+). In addition, enemy models in base contact with her at the start of combat must first pass a LD test. If failed, they may not attack this phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="653e-6fd4-368f-08b2" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6033-7065-97f3-eeae" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8995-251e-18db-8ff6" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="1236-6a93-9a95-bf2e" name="Baba Yaga" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                      <characteristics>
+                        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
+                        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
+                        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="07a1-d709-6933-54e7" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="de38-25d1-28af-70dd">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a4c-7f81-a130-bc75" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a7e-7577-1d22-4ac6" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="de38-25d1-28af-70dd" name="Lore of the Hags 4" hidden="false" collective="false" import="true" targetId="6970-e90a-be73-4d6b" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fca4-55ef-2a19-9286" name="Hut" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63be-14d3-84f2-5c9a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3b23-e6e1-1997-898b" name="Hut" publicationId="1607-bfe9-82af-d3dc" page="75" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                      <characteristics>
+                        <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
+                        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                        <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+                        <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                        <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
+                        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                        <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+                        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="2745-0267-cc08-d084" name="Flammable" hidden="false" targetId="ec58-b231-6a2f-a163" type="rule"/>
+                    <infoLink id="1349-1cd1-6399-5038" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+                    <infoLink id="3178-fbc0-3a93-c400" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
+                    <infoLink id="7ae8-5d1f-9aba-ad18" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                    <infoLink id="8b11-6d47-30e1-dc41" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="2362-b54b-bf91-4e8c" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="200.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="280.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3975-b1d5-bb91-842b" name="Special Characters" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="006d-88e0-c0b2-7c76" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c128-7705-edce-5859" name="Character" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d74-aabb-c294-a955">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d4d-439e-3d92-a5d5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66bd-01f1-8ba4-dcd0" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4d74-aabb-c294-a955" name="Stepan Rasin" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="84de-dd0a-8ef1-2fd1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b677-32ff-ebeb-bf49" name="Stepan Rasin" publicationId="1607-bfe9-82af-d3dc" page="79" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="4419-2ba9-44da-5246" name="Lucky" publicationId="1607-bfe9-82af-d3dc" page="79" hidden="false">
+                  <description>Stepan Rasin allowed to re-roll any dice roll he makes. He may make up to three re-rolls during the battle.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="4e7c-7396-6921-e621" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="aa4f-5dd7-c3a7-2597" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+                <infoLink id="c140-d59c-140a-9198" name="Strider" hidden="false" targetId="c270-3956-9b64-b587" type="rule"/>
+                <infoLink id="28f8-c400-6504-eda9" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="a21b-4460-2985-d8e0" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d741-cf89-2b8a-2fb9" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf74-00fb-2135-de32" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b2e5-4494-4dca-ec85" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="7b27-0009-927d-c533" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                    <infoLink id="a07d-f0ac-0f6d-3aca" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0285-8b4b-ba26-c8a1" name="The Silver Shard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82df-6cdd-76ea-75d9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="777b-422e-d580-fd54" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="27ed-ba33-1239-fbd1" name="The Silver Shard" publicationId="1607-bfe9-82af-d3dc" page="79" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Bow. Any shot that hits is multiplied into D6 hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d9ba-c9a8-85e3-48b1" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ae2-225b-065e-7acd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cb1-9c2f-8312-3af2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8b3c-f4ad-2f7d-0609" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="e3d2-bb51-004b-92d9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="36b8-2fda-ef3d-3844" name="Tordimir Lubovasyn" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9ae8-eba7-1df6-89b9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4543-4397-61b5-55cd" name="Tordimir" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="5447-b345-403d-47db" name="Captain of the Gryphon Legion" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false">
+                  <description>Units of Gryphon Legion must be taken as Core instead of Special if Tordimir is included in your army. In addition, any Gryphon Legion unit that Tordimir joins is Stubborn.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="6def-58f9-d334-75fe" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="4339-89db-2910-0aab" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+                <infoLink id="4c40-fb65-7b92-3916" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+                <infoLink id="fcea-8923-4259-9734" name="Glorious Charge" hidden="false" targetId="a6cf-6dc0-c104-1914" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="86b0-735b-9b58-8cd9" name="The Gryphon Lance" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ce1-bef4-25a8-8e85" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c7e-14d0-ba75-0d55" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="f1c8-e959-7d0c-f172" name="The Gryphon Lance" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Lance. The wielder gains Heroic Killing Blow and Armour Piercing (1) when he charges.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="16cb-dcdb-8b01-f864" name="Gryphon Wing" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b07-a978-e17e-280d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b57-09be-5cad-aab1" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="1528-c0c6-3ed6-aaab" name="Gryphon Wing" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+                      <characteristics>
+                        <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Gryphon Wing gives Tordimir Ward save (5+). In addition, any unit led by him automatically passes any LD test to disengage from combat with Glorious Charge.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8079-ea3c-20b9-c8d9" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f14c-09db-3305-5e26" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0efc-86f6-cf18-20a9" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3ebb-9c29-9eb2-14d0" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9aa2-7ccb-2412-13e5" name="Seraphima" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="985c-f490-516e-209c" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="ddd4-f0d2-b522-5140" name="Seraphima" publicationId="1607-bfe9-82af-d3dc" page="78" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                      <characteristics>
+                        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                        <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="f7af-ca0b-ba5b-2ab1" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="e12d-4db1-b20f-d950" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2efe-30d8-006c-11ed" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bca-e961-858c-6ea7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14f8-d1c4-679e-8705" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e595-c99c-eed3-9959" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="6bef-4684-72ce-7a3f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="195.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8128-ea3d-96b3-b8c9" name="Ilja of Murova" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1d23-72ba-9050-e601" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9802-0132-bdbf-c6b8" name="Ilja of Murova" publicationId="1607-bfe9-82af-d3dc" page="80" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="163f-303a-174a-7f4e" name="Strength of the Great Bear" publicationId="1607-bfe9-82af-d3dc" page="80" hidden="false">
+                  <description>Ilja may forfeit his normal attacks in favour of doing a single massive blow with his axe. If this attack hits and wounds, it causes D3+1 wounds which Ignores Armour saves.</description>
+                </rule>
+                <rule id="cd2a-bbbc-a34a-7cc7" name="Hugely Resilient" publicationId="1607-bfe9-82af-d3dc" page="80" hidden="false">
+                  <description>Whenever Ilja is reduced to zero wounds roll a D6. On a 1-3 he is killed as normal, but on a 4-6 the fact that Ilja should be dead does not register in his battle craved mind and he completely ignores the injury. Return Ilja to 1 wound. This rule has no effect against attacks that kills him outright.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="1f9c-b0fb-188d-8135" name="Kin of the Bear God" hidden="false" targetId="e7ea-084a-a224-02f2" type="rule"/>
+                <infoLink id="8a51-ca70-11ac-7d26" name="Hates Chaos" hidden="false" targetId="210c-334f-bda5-3b20" type="rule"/>
+                <infoLink id="7a8c-e798-3965-b5bc" name="Trappers" hidden="false" targetId="c59d-6ca7-46e9-b4af" type="rule"/>
+                <infoLink id="7b2e-7e1f-1874-65e0" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
+                <infoLink id="930d-c279-7c33-4b8f" name="Heart Strike" hidden="false" targetId="98b0-cb37-439e-f3ab" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="c493-f7fa-b0dc-0437" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95e2-f443-cdc3-7630" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b41-52d6-6224-8f69" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="861d-de16-801e-ba6a" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0155-7737-410b-1aec" name="Longbow" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2094-4811-9201-19a5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0de-fc21-5194-d3d6" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7f5c-2f6e-bed7-520a" name="Longbow" hidden="false" targetId="cde7-c47d-3818-1e9d" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="f216-c022-66a1-3310" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="125.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6504,6 +6436,34 @@ If a Misfire is rolled, roll immediately on the Blackpowder Misfire table. If fi
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+/15+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. The first turn this spell is active, the target unit suffer -1 to their WS, BS and I, the second they suffer –1 to their S and T, the third -2 to their M and LD. On the fourth turn, they may not attack or move voluntarily for the rest of the game. Each effect is permanent even after the spell has been dispelled, and any further times the spell is cast it starts off where it was when dispelled.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="289d-da9a-a533-3b38" name="Gryphon Legionnaire" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6156-678b-d78e-4b71" name="Rotamaster" publicationId="1607-bfe9-82af-d3dc" page="55" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a10d-a6ff-f7f3-c8c5" name="Albion" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s " library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a10d-a6ff-f7f3-c8c5" name="Albion" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s " library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="49a3-0479-ec33-486e" name="Big Things Chart (Bonegrinder Giant)">
@@ -870,6 +870,20 @@
               <infoLinks>
                 <infoLink id="7160-cd45-5dc3-3590" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="52ef-1f1e-bc40-3f23" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6602-ae2c-e6b5-7ad3" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fbdd-9d59-5c40-1d2b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="bcb6-6094-e294-c9cf" name="Magic Standards" hidden="false" collective="false" import="true" targetId="f505-6aaa-9dc8-8dc6" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -1619,7 +1633,7 @@
                     <infoLink id="8c61-77a2-f783-456f" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.5"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4906-bab3-4799-c63c" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
@@ -1707,7 +1721,6 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c22c-97bd-1d6a-e9cb" type="max"/>
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d29d-aa26-cfe0-f0ef" type="max"/>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a11e-dbb8-1aa0-5a93" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="0488-b80c-bd8b-a29c" name="Magic Standards" hidden="false" collective="false" import="true" targetId="f505-6aaa-9dc8-8dc6" type="selectionEntryGroup"/>
@@ -2756,6 +2769,20 @@
               <infoLinks>
                 <infoLink id="c52f-1261-210e-b227" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="167d-f8a5-7929-9f21" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80f3-9cbc-ca80-026c" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="601b-a67f-35fd-7caa" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9caf-a1e1-12a6-7de9" name="Magic Standards" hidden="false" collective="false" import="true" targetId="f505-6aaa-9dc8-8dc6" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2890,7 +2917,7 @@
                     <infoLink id="670e-cedd-d0c0-b139" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="911a-4a6e-cb6e-d007" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -3314,7 +3341,7 @@
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">1</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">1</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">10</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">8</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">10</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
@@ -3329,7 +3356,7 @@
           </rules>
           <infoLinks>
             <infoLink id="bdc4-2477-06ed-a321" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
-            <infoLink id="00d4-55df-fdf2-f289" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
+            <infoLink id="00d4-55df-fdf2-f289" name="Fly (6)" hidden="false" targetId="b830-fe6e-b461-0377" type="rule"/>
             <infoLink id="4915-583c-0861-7fa8" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="81c2-57b0-a1c8-0dfb" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
             <infoLink id="1af5-c8c6-adc0-c2b0" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
@@ -3513,17 +3540,6 @@
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="38ba-33c5-2462-f9ea" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d933-0b98-b951-7177" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="952f-4b7f-6baa-4f78" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="8e80-c0d3-369e-b501" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="878e-bad1-5f87-f6d8" type="max"/>
@@ -3537,23 +3553,12 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2197-45ef-c875-5a67" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa82-618a-44b3-9fe6">
+            <selectionEntryGroup id="2197-45ef-c875-5a67" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1a74-0c9a-69e0-4f6c">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="337f-0611-15a5-2b08" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f7f-8f00-5118-e84d" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="fa82-618a-44b3-9fe6" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33d8-5ad0-3452-a0fa" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="0e35-8ec3-7bed-1dee" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="abf0-fdf3-ca95-e901" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dfa3-ea05-fd04-a2e3" type="max"/>
@@ -3562,18 +3567,19 @@
                     <infoLink id="9b3e-09d0-eea1-dab3" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1a74-0c9a-69e0-4f6c" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="1a74-0c9a-69e0-4f6c" name="Spear (Mounted) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9336-a107-13c7-9290" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="2d6e-154b-0e0b-4bd9" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+                    <infoLink id="afe8-53e6-6d03-6f23" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="83c9-9f3f-79ab-5657" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
@@ -3584,7 +3590,7 @@
                     <infoLink id="7c81-121d-167d-384b" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9083-b2fb-1f90-dcd8" name="Hand Weapon &amp; Bow" hidden="false" collective="true" import="true" type="upgrade">
@@ -3596,7 +3602,7 @@
                     <infoLink id="3cb2-59ff-d47e-c2cb" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3632,7 +3638,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="17.0"/>
+            <cost name="pts" typeId="points" value="21.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3646,6 +3652,20 @@
               <infoLinks>
                 <infoLink id="51bb-640a-db21-53bd" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="5f48-1893-aa38-89c3" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f228-76e1-9147-859c" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4a94-08ab-c03a-d9cd" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f80a-faa2-f039-f0ac" name="Magic Standards" hidden="false" collective="false" import="true" targetId="f505-6aaa-9dc8-8dc6" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -3658,7 +3678,7 @@
                 <infoLink id="4034-b374-b5e6-5f39" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="88f0-c2d1-bbf6-2be6" name="Centaur Chief" hidden="false" collective="false" import="true" type="upgrade">
@@ -3739,7 +3759,7 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="c832-1674-ba69-c77a" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b12d-53f4-d885-02e3">
+            <selectionEntryGroup id="c832-1674-ba69-c77a" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0aaf-9f74-d331-9667">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5488-77d3-58c0-394e" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f698-9516-e48f-6143" type="min"/>
@@ -3753,7 +3773,7 @@
                     <infoLink id="496e-02ec-f656-9388" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="aa0c-5c88-91df-efcc" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
@@ -3764,7 +3784,7 @@
                     <infoLink id="d105-25d7-ed8b-6827" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="6.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9816-61d7-02fe-f431" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -3775,18 +3795,7 @@
                     <infoLink id="995c-7330-e241-4ccf" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="6.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b12d-53f4-d885-02e3" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b92-9e8e-c438-3d44" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="51b2-7bac-3454-1c7a" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6d9d-de28-06d1-b8cb" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -3798,14 +3807,14 @@
                     <infoLink id="c3bc-3358-898f-7824" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="31.0"/>
+            <cost name="pts" typeId="points" value="34.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3819,6 +3828,20 @@
               <infoLinks>
                 <infoLink id="ec94-d23a-3d96-9a7c" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="0486-c377-521d-4591" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8ff-3d57-3890-f428" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dc3d-d814-439d-e1c1" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4f37-6cc2-813a-4ac8" name="Magic Standards" hidden="false" collective="false" import="true" targetId="f505-6aaa-9dc8-8dc6" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -4220,7 +4243,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="200.0"/>
+        <cost name="pts" typeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74cd-9e00-c5f2-13eb" name="Fenhulk" hidden="false" collective="false" import="true" type="model">
@@ -4468,7 +4491,7 @@
 
 To see if a Giant falls over roll a D6. On a roll of 1, the Giant falls over. A slain Giant falls over automatically.
 
-To determine in which direction the Giant falls, roll a scatter dice. Any unit within 8&quot; of the direction the Giant falls suffers 3D6 S 8 Hits that have Multiple Wounds (D6), though no single model may suffer more than 1 Hit – any excess Hits are ignored. If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result.
+To determine in which direction the Giant falls, roll a scatter dice. Place the large template in base contact with the Giant in the direction of the scatter dice, measured from the centre of the Giant&apos;s base. A model hit by the falling Giant suffers 3D6 S 8 Hits that have Multiple Wounds (D6), though no single model may suffer more than 1 Hit – any excess Hits are ignored. If the unit is in combat and the Giant has fallen over whilst attempting to Jump Up and Down, wounds inflicted by a falling Giant count towards the combat result.
 
 A Giant that falls over automatically suffers 1 wound. If the Giant is in combat then this wound counts towards combat resolution.
 
@@ -4522,7 +4545,6 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
     <selectionEntry id="47cc-4b80-0452-9039" name="War Hounds" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="103c-9260-8fc2-2bbe" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
-        <infoLink id="23f3-7abc-4197-bffa" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5794-64ab-b157-c241" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -6252,7 +6274,7 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
     </profile>
     <profile id="b068-d413-9ef9-2264" name="Chariot" publicationId="9e23-79cb-pubN67565" page="70" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>

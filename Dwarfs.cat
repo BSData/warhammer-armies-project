@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="6aa2-7707-349b-6651" name="Armour Rune">
@@ -1557,6 +1557,17 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                     <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="8f71-84f1-55a0-4030" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d745-5f99-7e38-c956" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bccd-9878-b7ba-9e91" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1575,6 +1586,20 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="af1a-8fd4-7ce3-422d" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="cd92-2fef-7626-dbf5" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27a5-c0c8-bfb2-a02f" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0b83-cd1f-ed3e-2fd5" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f948-fa4b-2c1e-0a6d" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -1853,17 +1878,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="8097-65ee-bd80-3161" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="d67f-1768-5c8f-5f75" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88ca-7bc3-0698-9846" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="8b5c-a2e5-676d-a12b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="f5be-336d-ff36-2775" name="Crossbow" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a32c-e86c-6098-262a" type="max"/>
@@ -1939,6 +1953,35 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="9b51-e0dd-0522-748c" name="Buckler or Shield" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15d7-b1cf-7298-9de1" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="553c-e9ac-234a-c845" name="Buckler" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6440-201f-1550-9581" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b1f4-0cab-61d3-cb23" name="Buckler" hidden="false" targetId="1700-a7e5-d272-ef20" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7adf-2938-e421-54bd" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f891-d561-6dca-926d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ba65-b310-d8ce-7c85" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="13.0"/>
@@ -1955,6 +1998,20 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="451e-df81-a38a-fc1d" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="75f6-9f48-9082-c641" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e5f-4c1b-d60e-633a" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5e0a-6643-b2b7-8d2a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c7c3-94f8-37aa-7e35" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2020,17 +2077,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="e21f-5093-9822-a2ea" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="78e7-b5fe-5442-8491" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6b3-a082-e863-64ad" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c1ff-d39e-fcf1-566d" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="1711-7f6b-0630-e6ef" name="Dwarf Handgun" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e36-8f5c-7ddf-e9eb" type="max"/>
@@ -2088,6 +2134,35 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="ddf8-d2f9-1c48-04bf" name="Buckler or Shield" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4bf-3fb3-74e1-61f2" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f0b9-6039-f117-4428" name="Buckler" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d379-9644-35cb-953e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3075-9c42-e06a-88f8" name="Buckler" hidden="false" targetId="1700-a7e5-d272-ef20" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6d83-dc69-d95a-71d6" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a153-84b0-ced2-f845" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="cf3f-affa-ac4f-4b4f" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="13.0"/>
@@ -2104,6 +2179,20 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="a740-328f-6a9a-db9f" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="6031-a15a-0d92-c825" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf44-bf9a-d9f9-a91f" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1e15-5389-023e-2361" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="e847-bb28-e0c6-d345" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2577,6 +2666,17 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="b1e6-6ff0-9eac-462a" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c04f-fa8e-84cc-150f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="46c6-c84d-8717-e4f0" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2595,6 +2695,20 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="39d6-934e-beec-28ea" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="3512-a227-ff42-2172" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8cd-608c-76cf-e20d" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6a28-4a65-f3c7-65f6" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="e17b-b140-b6aa-02f0" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2687,8 +2801,8 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="63df-492d-419b-c57d" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="9382-ea76-79c0-6634" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="5a60-e111-43e4-7e48" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="a387-1354-4712-efdb" name="Slayer" hidden="false" targetId="19cd-44d6-b04b-d4a5" type="rule"/>
-            <infoLink id="6417-31d5-cf81-41bc" name="Troll Slayers" hidden="false" targetId="0a3b-c47a-c729-2f9c" type="profile"/>
+            <infoLink id="a387-1354-4712-efdb" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
+            <infoLink id="6417-31d5-cf81-41bc" name="Troll Slayer" hidden="false" targetId="0a3b-c47a-c729-2f9c" type="profile"/>
             <infoLink id="28d4-b683-2771-c186" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="97c2-1e55-36a4-234f" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
           </infoLinks>
@@ -2812,7 +2926,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c2b-a613-3d13-958a" name="Slayers (Ungrim Ironfist as General)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7c2b-a613-3d13-958a" name="Slayers (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2846,7 +2960,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="3a9e-8a39-8858-9fb6" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="e7fa-b332-3397-dc3d" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="179a-ba7f-e5af-9f1c" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="9e48-c342-f967-6e02" name="Slayer" hidden="false" targetId="19cd-44d6-b04b-d4a5" type="rule"/>
+            <infoLink id="9e48-c342-f967-6e02" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
             <infoLink id="0c98-c826-e221-a216" name="Troll Slayers" hidden="false" targetId="0a3b-c47a-c729-2f9c" type="profile"/>
             <infoLink id="fe9e-5ac6-1c69-dfad" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="de54-3df3-d527-a784" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
@@ -2971,7 +3085,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa51-abcf-79bc-2b70" name="Brotherhood of Grimnir (Ungrim Ironfist as General)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="aa51-abcf-79bc-2b70" name="Brotherhood of Grimnir (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="05b4-81b5-96c9-a166" value="0">
           <conditionGroups>
@@ -3005,7 +3119,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="45a1-7d36-14fb-616f" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="c44f-7eea-2e4d-4452" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="aa2f-b097-177f-4c82" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="a4e8-f2f6-96cc-0b4c" name="Slayer" hidden="false" targetId="19cd-44d6-b04b-d4a5" type="rule"/>
+            <infoLink id="a4e8-f2f6-96cc-0b4c" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
             <infoLink id="d8e3-5065-53b7-79e9" name="Troll Slayer" hidden="false" targetId="Troll Slayer (Brotherhood)" type="profile"/>
             <infoLink id="2273-5c12-ac5b-a5cd" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="4e61-aa04-9d89-ad02" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
@@ -3188,7 +3302,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <infoLink id="ba0d-a719-bab1-6e9d" name="Dwarf-crafted" hidden="false" targetId="e3a8-c128-05b0-742e" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5fbb-a521-e1de-4ff9" name="Throwing Axes" hidden="false" collective="true" import="true" type="upgrade">
@@ -3211,18 +3325,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d36f-5768-2a10-eb08" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="868c-e02d-6904-ecbe" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="148b-927b-ecee-3293" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a60e-bdd4-775b-77f0" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1bf8-a94b-e116-6974" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -3268,6 +3370,36 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="71c8-e6dd-a6fe-ad68" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="c64b-4f65-cbf7-a49e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce3a-51cf-dcc0-7546" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43d3-0193-8ba7-3645" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2585-ba01-5854-2332" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7491-5ed8-23e9-906b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8204-a6d4-ed35-a7ee" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c64b-4f65-cbf7-a49e" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d430-4f50-012b-0c9a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6119-fb28-86cf-c7a2" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="8.0"/>
@@ -3284,6 +3416,20 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="5e1b-ea29-8035-837b" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="acfa-a0e6-b37a-eaec" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f1b-dceb-c555-b92b" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1542-bcdb-55db-4ef3" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4054-d053-96c7-1dbc" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -3384,7 +3530,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <infoLink id="62d5-a317-9d9e-fe21" name="Crossbow" hidden="false" targetId="844f-f2d8-d2d9-61d4" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="39cd-4fc8-fac1-4fa0" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -3469,6 +3615,20 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="9dbe-64dc-d190-d04c" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="8de3-cf64-72ce-ecef" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b6b-195f-d033-641a" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f38b-1fe5-8746-f95f" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c652-c0af-a9f1-d62b" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -4178,8 +4338,8 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             </profile>
           </profiles>
           <rules>
-            <rule id="8d75-94a8-5a66-f0d1" name="Whirlwind of Death" publicationId="aa7b-3583-0834-7bfa" page="161" hidden="false">
-              <description>Doomseekers do not attack normally. Instead, at the start of each round of close combat, a Doomseeker inflicts D6 automatic hits on all units in base contact. In addition, any close combat attacks directed against a Doomseeker suffer -1 To Hit.</description>
+            <rule id="8d75-94a8-5a66-f0d1" name="Whirlwind of Death" publicationId="aa7b-3583-0834-7bfa" page="163" hidden="false">
+              <description>Doomseekers do not attack normally. Instead, at the start of each round of close combat, a Doomseeker inflicts D6 automatic hits on all enemy units in base contact. In addition, any close combat attacks directed against a Doomseeker suffer -1 To Hit.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -4187,7 +4347,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="e10d-1e84-da27-7325" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="7822-4d24-d910-ec1a" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
             <infoLink id="141b-bcb0-1c1a-ccfe" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-            <infoLink id="98ad-9e7d-baa9-e28c" name="Slayer" hidden="false" targetId="19cd-44d6-b04b-d4a5" type="rule"/>
+            <infoLink id="98ad-9e7d-baa9-e28c" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="71fb-6013-b4d6-de5c" name="Doomseeker Axes" hidden="false" collective="true" import="true" type="upgrade">
@@ -4248,13 +4408,11 @@ Note that a shot from a war machine with an engineering rune is a magical attack
       </profiles>
       <rules>
         <rule id="8e95-94d2-c269-88d4" name="Organ Fire" publicationId="aa7b-3583-0834-7bfa" page="168" hidden="false">
-          <description>To fire the Organ Gun, select a target according to the normal rules for shooting, then roll two artillery dice to find out how many shots are fired.
+          <description>To fire the Organ Gun, select a target according to the normal rules for shooting, then roll the Artillery dice and 2D6 to find out how many shots are fired. 
 
-If one of the dice rolls a misfire, the firing mechanism is not working properly or it suffers a minor jam. All shots fired from the Organ Gun this turn suffer a -1 To Hit.
+If the Artillery dice rolls a misfire, no shots are fired and a critical fault has occurred; roll a D6 and consult the Black Powder War Machine Misfire chart.
 
-If both dice roll a misfire, no shots are fired and a critical fault has occurred; roll a D6 and consult the Black Powder War Machine Misfire chart.
-
-The number of shots fired by the Organ Gun is equal to the total of both artillery dice. When determining the number of shots, roll that number of dice To Hit the target using the crew&apos;s Ballistic Skill and applying all appropriate modifiers. However, the Organ Gun never suffers a To Hit penalty for firing multiple shots.</description>
+The number of shots fired by the Organ Gun is equal to the total of both the Artillery dice and the 2D6 rolled. When determining the number of shots, roll that number of dice To Hit the target using the crew&apos;s BS and applying all appropriate modifiers.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4493,12 +4651,13 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         <infoLink id="5b77-b8fe-4e68-cd84" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
         <infoLink id="72af-5c6f-2523-b2f4" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
         <infoLink id="5223-618e-3c4b-0eb5" name="Lumbering" hidden="false" targetId="cbda-1d98-cc0a-1039" type="rule"/>
+        <infoLink id="d31c-53cd-4c50-da30" name="Large Target (5)" hidden="false" targetId="1b3d-4a57-6f3e-25d7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="55e3-9d48-2fbb-df80" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="225.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1efb-1bda-2859-a7da" name="Thunderbarge" hidden="false" collective="false" import="true" type="model">
@@ -4531,12 +4690,13 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
         <infoLink id="98c3-d508-d435-8234" name="Bombing Run" hidden="false" targetId="18a3-71ac-c7ea-dcd8" type="profile"/>
         <infoLink id="206c-5f72-ff8a-cca3" name="Bombing Run" hidden="false" targetId="2bd3-01fb-eccb-bcca" type="rule"/>
         <infoLink id="3837-6de1-aefc-202b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-        <infoLink id="80fc-a4f7-133a-00f2" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
-        <infoLink id="d9a8-4af0-0b20-03e7" name="Hover" hidden="false" targetId="87ae-0aa9-e33f-adc1" type="rule"/>
+        <infoLink id="80fc-a4f7-133a-00f2" name="Large Target (5)" hidden="false" targetId="1b3d-4a57-6f3e-25d7" type="rule"/>
+        <infoLink id="d9a8-4af0-0b20-03e7" name="Fly (6)" hidden="false" targetId="b830-fe6e-b461-0377" type="rule"/>
         <infoLink id="41ee-33ca-1a6d-12de" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
         <infoLink id="90cf-c043-86ba-6211" name="Cannon" hidden="false" targetId="4f25-d6c7-f4da-a808" type="profile"/>
         <infoLink id="8e8a-66ab-1833-572f" name="02-03" hidden="false" targetId="c9d3-268a-6e9f-04af" type="profile"/>
         <infoLink id="ac89-25e5-7fa8-2e6c" name="04-06" hidden="false" targetId="caaa-79d1-035f-b637" type="profile"/>
+        <infoLink id="bfa6-cb67-3188-b521" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e528-e8b0-ff0f-e67a" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -4621,7 +4781,7 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
             <infoLink id="acf9-0167-fb4b-b809" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="c213-64a8-ab92-c426" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
             <infoLink id="8079-ed06-6cec-1020" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="3f9d-1f41-5e64-7527" name="Slayer" hidden="false" targetId="19cd-44d6-b04b-d4a5" type="rule"/>
+            <infoLink id="3f9d-1f41-5e64-7527" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
             <infoLink id="2b92-f5d2-8f2d-1933" name="Troll Slayer" hidden="false" targetId="Troll Slayer (Brotherhood)" type="profile"/>
             <infoLink id="e27d-7613-351b-4c98" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
             <infoLink id="555b-4f75-0679-937f" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
@@ -4810,7 +4970,7 @@ The number of shots fired by the Organ Gun is equal to the total of both artille
       </profiles>
       <infoLinks>
         <infoLink id="6384-23be-4922-45de" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-        <infoLink id="63c9-0be4-e9de-3778" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="63c9-0be4-e9de-3778" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
         <infoLink id="bd7a-e8e4-3fb3-4903" name="Bombing Run" hidden="false" targetId="2bd3-01fb-eccb-bcca" type="rule"/>
         <infoLink id="3a87-a328-eb19-c388" name="Bombing Run" hidden="false" targetId="18a3-71ac-c7ea-dcd8" type="profile"/>
         <infoLink id="8787-422a-d7ed-b1ea" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
@@ -4911,7 +5071,7 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="7cb4-1d20-e08c-a047" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="7cb4-1d20-e08c-a047" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
         <infoLink id="01b2-c742-0280-00c9" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="453c-9bdc-b8f2-96f7" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
         <infoLink id="d065-07ac-3f6e-b58d" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
@@ -4965,7 +5125,7 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
                   <characteristics>
                     <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
                     <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">2</characteristic>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Slow to Fire. The steam gun shoots using the teardrop-shaped template. Place the template with its broad end over a target and its narrow end touching the muzzle of the steam gun. Any models touched are hit.</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Slow to Fire. The steam gun shoots using the teardrop-shaped template. Place the template with its broad end over a target and its narrow end touching the muzzle of the steam gun. Any models touched are hit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4994,10 +5154,10 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="90.0"/>
+        <cost name="pts" typeId="points" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="080d-8533-cf2f-70aa" name="Miners (Brok Stonefist as General)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="080d-8533-cf2f-70aa" name="Miners (Brok as General)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -5077,6 +5237,17 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="2ca4-7cc9-0568-3b2d" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc51-4000-8eac-0976" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="42d3-316d-dc22-6922" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5095,6 +5266,20 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
               <infoLinks>
                 <infoLink id="ccd8-206d-58c5-25bf" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="0f36-b52f-3c2b-dcc0" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9211-478d-04d6-14e3" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="415a-b765-b428-bdcc" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8bb2-ac43-acfb-f732" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -5216,7 +5401,7 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
                       <characteristics>
                         <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                         <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Thorek’s Rune Armour is inscribed with the Master Rune of Gromril.</characteristic>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. Thorek’s Rune Armour is inscribed with the Master Rune of Gromril.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6315,9 +6500,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
                   <description>The White Dwarf is Unbreakable. If his chosen unit breaks and flees, for any reason, he will always stand his ground. If the unit was engaged in combat, he will stand firm and continue to fight while his unit flees, denying the foe the chance to pursue. Grombrindal can even join a unit that is not Unbreakable, this is an exception to the normal Unbreakable rules.</description>
                 </rule>
                 <rule id="9648-3228-83a2-057a" name="Disguised" publicationId="aa7b-3583-0834-7bfa" page="191" hidden="false">
-                  <description>If you wish, the White Dwarf may start the game hidden in the ranks of any Dwarf unit except a war machine and its crew. If disguised, the White Dwarf is not placed on the table during deployment, but is assumed to move along with the unit within which he is hidden. At the start of the game, make a note of which unit he is concealed in. If the unit is wiped out or flees then the White Dwarf will be revealed, and will stand his ground even though the rest of the unit may be fleeing or slain.
-
-The White Dwarf may reveal his true self at the start of any Close Combat phase. At this point he is immediately placed in the front rank of his chosen unit, displacing one of the normal rank-and-file models. If there are no such models in the front rank, then he must be placed in the second rank. Once revealed, the White Dwarf operates as any other character model. However, the White Dwarf may never be the army&apos;s General.</description>
+                  <description>The White Dwarf has Hidden. However, if the unit he is Hidden in is wiped out or flees then the White Dwarf will be revealed, and will stand his ground even though the rest of the unit may be fleeing or slain. Place the model in the middle of the front rank of the unit, then move/remove the rest of the unit as normal. The White Dwarf will then operative as a lone character as normal. The White Dwarf may never be the army&apos;s General, but units he joins may still use his LD once he is no longer Hidden.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -6749,7 +6932,6 @@ The White Dwarf may reveal his true self at the start of any Close Combat phase.
                 <infoLink id="33a5-0687-f7b7-82d5" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
                 <infoLink id="83c2-6d72-faeb-9f73" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
                 <infoLink id="4bff-8901-a9f1-3d8b" name="Entrenchment" hidden="false" targetId="88eb-899c-6317-34ea" type="rule"/>
-                <infoLink id="9184-5045-e666-6544" name="Artillery Master" hidden="false" targetId="3f1d-5a74-f98c-bf18" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="71ac-fbca-d8e5-4be4" name="Grudge-Raker" hidden="false" collective="false" import="true" type="upgrade">
@@ -8249,7 +8431,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="eaf7-258a-5d42-10c1" name="Silver Horn of Vengeance" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8667,7 +8849,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bcb2-04bc-8c1f-6303" name="Valiant Rune" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8893,16 +9075,13 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
 4 Power Dice when attempting to cast each spell. The Anvil can pivot on the spot before casting, and the range of the bound spells is measured from the Anvil itself.</description>
     </rule>
     <rule id="3f1d-5a74-f98c-bf18" name="Artillery Master" publicationId="aa7b-3583-0834-7bfa" page="143" hidden="false">
-      <description>One war machine that is within 3&quot; of a Master Engineer can use his BS and reroll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this rule at the start of each Shooting phase, before any such weapons within 3&quot; of the Master Engineer are fired.</description>
+      <description>One war machine that is within 3&quot; of a Master Engineer can use his BS or reroll one artillery dice or scatter dice during each Shooting phase. This cannot be the artillery dice that determines the distance a cannonball bounces. You must nominate which weapon, if any, will be using this rule at the start of each Shooting phase, before any such weapons within 3&quot; of the Master Engineer are fired.</description>
     </rule>
     <rule id="88eb-899c-6317-34ea" name="Entrenchment" publicationId="aa7b-3583-0834-7bfa" page="143" hidden="false">
       <description>Up to one unit with the troop type war machine can be entrenched for each Master Engineer in the army. An entrenched war machine is treated as being in hard cover when shot at and any charging models suffer a -1 To Hit modifier in close combat. An entrenched war machine can be pivoted to fire, but if it moves in any other way, the entrenchment is lost. If the war machine is destroyed, the entrenchment is considered destroyed as well. A war machine can only be entrenched once.</description>
     </rule>
     <rule id="0330-d489-f016-299a" name="&quot;Stand Back Sir!&quot;" publicationId="aa7b-3583-0834-7bfa" page="143" hidden="false">
       <description>If the model is within 3&quot; of a war machine, it is allowed to take a &quot;Look Out Sir!&quot; roll just as if it was within 3&quot; of a unit of five or more models of the same troop type as himself. If the roll is successful, the hit is resolved instead against the nearest friendly war machine.</description>
-    </rule>
-    <rule id="19cd-44d6-b04b-d4a5" name="Slayer" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false">
-      <description>Slayers always Wound on a To Wound roll of 4+, unless they would need a lower result. Use the Slayer&apos;s S to determine the armour save modifier for any successful Wounds.</description>
     </rule>
     <rule id="106b-08dd-8397-3a53" name="Dragon Slayer" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false">
       <description>A Dragon Slayer has Slayer. In addition, when attacking Monsters, the Slayer&apos;s attacks cause Multiple Wounds (D3).</description>
@@ -8928,7 +9107,7 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
       <description>Enemy attacks against the Brewmaster&apos;s front suffer -1 To Wound.</description>
     </rule>
     <rule id="cbda-1d98-cc0a-1039" name="Lumbering" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
-      <description>Rune Guardians are not allowed to march and automatically fail any I test they are forced to make.</description>
+      <description>Models with this rule automatically fail any I test they are forced to make.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8954,7 +9133,7 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf unit anywhere on the battlefield. The target unit may immediately make an additional move as if were the Remaining Moves sub-phase.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf Infantry unit anywhere on the battlefield. The target unit may immediately make an additional move as if were the Remaining Moves sub-phase. Note that no unit may be moved more than once per turn by this spell.</characteristic>
       </characteristics>
     </profile>
     <profile id="71b8-c2ff-e35a-4ea3" name="Rune of Wrath and Ruin" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="24" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="25" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -122,7 +122,7 @@
                 <infoLink id="0056-5562-d34b-cb92" name="Royal Pegasus" hidden="false" targetId="42e6-e1b4-18d0-176f" type="profile"/>
                 <infoLink id="04d3-db98-0e78-a46c" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="9740-1788-15c6-cde3" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="e8c2-4fcf-6a92-cc02" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="e8c2-4fcf-6a92-cc02" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="e54f-8a98-6fea-df44" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -163,7 +163,7 @@
               </profiles>
               <infoLinks>
                 <infoLink id="79d8-4a56-8938-66e1" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                <infoLink id="4c27-3fe2-d51b-c102" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="4c27-3fe2-d51b-c102" name="Fly (8)" hidden="false" targetId="0a9a-bfcb-1a9d-5609" type="rule"/>
                 <infoLink id="0f42-c068-1ac1-1483" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
                 <infoLink id="15d2-9bdd-4e87-807d" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
               </infoLinks>
@@ -509,7 +509,7 @@
                 <infoLink id="3ebc-6107-ae6b-ba1c" name="Royal Pegasus" hidden="false" targetId="42e6-e1b4-18d0-176f" type="profile"/>
                 <infoLink id="e816-141d-85f7-0db6" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="6773-2f70-e9e4-ad81" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="4679-b31d-b034-b6e7" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="4679-b31d-b034-b6e7" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="3263-8385-c73c-06af" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -619,7 +619,7 @@
                 <infoLink id="9a85-3ded-07b1-4478" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
+                <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -746,7 +746,7 @@
                 <infoLink id="7175-9b93-8fb7-ea22" name="Royal Pegasus" hidden="false" targetId="42e6-e1b4-18d0-176f" type="profile"/>
                 <infoLink id="38a5-4dc8-0286-8ecf" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="7f31-1b5d-4de4-12dd" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                <infoLink id="5b23-c0c0-2a4e-f191" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="5b23-c0c0-2a4e-f191" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="c1d2-73b0-d947-4025" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -1282,6 +1282,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c3d2-b64a-ddb4-9b37" name="Faceless" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="3ea1-3976-4b8d-511a" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2102-3dc7-314e-a124" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3ea1-3976-4b8d-511a" type="max"/>
+      </constraints>
       <profiles>
         <profile id="6e9f-b04a-9faf-dbb0" name="Faceless" publicationId="9e23-79cb-pubN75312" page="150" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -1410,13 +1420,13 @@
             <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When cast, the unit the Priestess is with (but not herself) gets +1 to its T until the start of her next Magic Phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2ce5-c52d-5221-68ac" name="Martyrdom" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+        <profile id="2ce5-c52d-5221-68ac" name="Compassionate Mind" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
           <characteristics>
             <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
             <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
-            <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Priestess creates a connection between her and one friendly character of your choice within 12&quot;. All wounds caused on the chosen character are ignored, and the Priestess suffers a S 3 hit with no saves allowed for each wound suffered instead. Remains in Play.</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When cast, the unit she is within gains Immunity (Psychology) and Stubborn until the start of her next Magic Phase.</characteristic>
           </characteristics>
         </profile>
         <profile id="f54b-04ad-0ce8-504c" name="Purify" publicationId="9e23-79cb-pubN75312" page="125" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -1431,10 +1441,7 @@
       </profiles>
       <rules>
         <rule id="dd57-09fa-c646-8480" name="Healing Hands" publicationId="9e23-79cb-pubN75312" page="125" hidden="false">
-          <description>The unit the Priestess is with (but not herself) gains Regeneration (6+).</description>
-        </rule>
-        <rule id="d12b-4147-e371-eac5" name="Pacifist" publicationId="9e23-79cb-pubN75312" page="125" hidden="false">
-          <description>A Priestess may be placed in the second rank of any Infantry unit she joins, rather than the first.</description>
+          <description>A Priestess may only join units with Peasant&apos;s Duty (except Grail Pilgrims). She may be placed in the second rank of any Infantry unit she joins, rather than the first. In addition, any unit the Priestess is with (but not herself) gains Regeneration (6+).</description>
         </rule>
         <rule id="d28c-6be3-fdec-1739" name="Blessings of Shallya" publicationId="9e23-79cb-pubN75312" page="125" hidden="false">
           <description>Priestesses of Shallya know three Prayers. Prayers are innate bound spells (power level 3). All Prayers are augment spells. In addition, the Priestess may channel Power and Dispel dice just like a Level 1 Wizard.</description>
@@ -1598,20 +1605,16 @@ So reckless are the Knights Errant that whenever they charge, they are Immune to
                 <infoLink id="35ee-70c7-6b0b-286a" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="4b39-e789-1515-74bc" name="Errantry Banner" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3b17-cb7b-b0ca-8a77" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40ad-9333-74b5-6c4e" type="max"/>
-                    <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="bf5a-d99a-fb5a-1ada" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1512-3eee-acd4-8160" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="beff-24a6-66f2-5284" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="4cb8-b790-82f7-3411" name="Errantry Banner" publicationId="9e23-79cb-pubN75312" page="127" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
-                      <characteristics>
-                        <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">All Knights Errant in the unit get a +1 S bonus on any turn they charge. However, a unit with this banner suffers -2 to its LD for any Impetuous tests.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <entryLinks>
+                    <entryLink id="ba91-65ce-1f95-33f4" name="Magic Standards" hidden="false" collective="false" import="true" targetId="e80a-27cb-41ba-a274" type="selectionEntryGroup"/>
+                  </entryLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1780,7 +1783,7 @@ So reckless are the Knights Errant that whenever they charge, they are Immune to
                 <selectionEntry id="eb8b-fa2d-2ce8-2a15" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7364-c2b9-9abf-f42f" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="23aa-c7bf-f8aa-61a2" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="23aa-c7bf-f8aa-61a2" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="b0d0-5fc6-9c9d-3e42" name="Magic Standards" hidden="false" collective="false" import="true" targetId="e80a-27cb-41ba-a274" type="selectionEntryGroup"/>
@@ -2446,7 +2449,7 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
                     <infoLink id="166c-1bb4-5df3-1ca7" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5b4b-ac04-db63-dab2" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -2482,7 +2485,7 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
                 <selectionEntry id="0dce-cb32-2f50-02f4" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa42-ab51-269f-5e4d" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fa03-1072-e2a1-6920" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fa03-1072-e2a1-6920" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="c623-a1c6-9258-c0ae" name="Magic Standards" hidden="false" collective="false" import="true" targetId="e80a-27cb-41ba-a274" type="selectionEntryGroup"/>
@@ -2608,7 +2611,7 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
               <infoLinks>
                 <infoLink id="722b-9db7-f268-7eb7" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="aec7-64bd-e920-e422" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                <infoLink id="d67c-ce18-72ea-818e" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="d67c-ce18-72ea-818e" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="9641-593f-54d5-0b11" name="Barding" hidden="false" collective="true" import="true" type="upgrade">
@@ -3500,22 +3503,17 @@ In addition, the presence of the Grail Reliquae means that the entire unit will 
       <modifiers>
         <modifier type="set" field="da66-c164-d681-d2ca" value="1.0">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3005-7543-5eb3-727a" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="69f5-4318-9cf9-c46b" value="1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3005-7543-5eb3-727a" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3005-7543-5eb3-727a" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3005-7543-5eb3-727a" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3005-7543-5eb3-727a" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="69f5-4318-9cf9-c46b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="69f5-4318-9cf9-c46b" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da66-c164-d681-d2ca" type="min"/>
       </constraints>
       <categoryLinks>
@@ -3851,7 +3849,7 @@ In addition, the presence of the Grail Reliquae means that the entire unit will 
               <infoLinks>
                 <infoLink id="5cd9-b4f6-4dc7-d30a" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="54f2-db16-7ba8-fdb8" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                <infoLink id="3554-65fc-343b-b92a" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                <infoLink id="3554-65fc-343b-b92a" name="Fly (8)" hidden="false" targetId="0a9a-bfcb-1a9d-5609" type="rule"/>
                 <infoLink id="bf45-b7a5-084d-2826" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
               <selectionEntries>
@@ -4467,6 +4465,18 @@ As long Spirits of the Fay remain partially within one of these terrain features
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="21f5-2a13-8789-0ace" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d25-c8b7-5583-c894" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2120-ece8-57c8-8aed" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5d69-230d-dc54-8650" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="6633-b79a-fa59-f96e" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d34-f76f-d254-19a5">
@@ -4494,7 +4504,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
                     <infoLink id="1576-9748-ba6a-6ed2" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1d34-f76f-d254-19a5" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -4503,36 +4513,6 @@ As long Spirits of the Fay remain partially within one of these terrain features
                   </constraints>
                   <infoLinks>
                     <infoLink id="a162-b4e2-684d-6c75" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="61d2-fbb2-ec28-6c00" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d7a-ade4-2526-5e51">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1526-d69b-d85c-2ffd" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14f4-50f3-aca2-3186" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="55d7-e354-80bd-5e55" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a0a-3a54-5f72-3f65" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f4e4-ea9d-74ab-cc09" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9d7a-ade4-2526-5e51" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a835-0ee4-48ca-3a01" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3ba8-5cd8-576f-d29a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5318,7 +5298,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
               </profiles>
               <rules>
                 <rule id="ec36-f2e1-58e0-22f5" name="The Lady&apos;s Champion" publicationId="9e23-79cb-pubN75312" page="160" hidden="false">
-                  <description>Louen has Regeneration (4+). However, if he loses the Blessing, he will immediately lose a Wound with no saves allowed.</description>
+                  <description>Louen gains a Ward Save (4+) from the Blessing of the Lady. However, if he loses the Blessing, he will immediately lose a Wound with no saves allowed.</description>
                 </rule>
                 <rule id="e318-7a91-ce58-caea" name="Louen Leoncoeur" publicationId="9e23-79cb-pubN75312" page="185" hidden="false">
                   <description>If Louen is in your army, he must be the army&apos;s General.</description>
@@ -5481,7 +5461,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                         <infoLink id="5b87-771f-ec47-89d9" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                         <infoLink id="01b1-849f-0225-f916" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="11ad-b54e-7695-9bf5" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-                        <infoLink id="dc17-cdb9-ec5f-337c" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                        <infoLink id="dc17-cdb9-ec5f-337c" name="Fly (8)" hidden="false" targetId="0a9a-bfcb-1a9d-5609" type="rule"/>
                       </infoLinks>
                       <selectionEntries>
                         <selectionEntry id="5db8-dec8-b525-e0d0" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -5508,7 +5488,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                         <infoLink id="9b87-295b-7965-1565" name="Royal Pegasus" hidden="false" targetId="42e6-e1b4-18d0-176f" type="profile"/>
                         <infoLink id="3e6a-04da-8e4e-e18f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                         <infoLink id="c941-da30-bde7-1b30" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                        <infoLink id="0b88-f7fc-94b8-9049" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                        <infoLink id="0b88-f7fc-94b8-9049" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
                       </infoLinks>
                       <selectionEntries>
                         <selectionEntry id="10af-9271-a979-a22d" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -5562,7 +5542,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <entryLink id="4f64-a6e2-c7db-a3e5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="400.0"/>
+                <cost name="pts" typeId="points" value="385.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5625,7 +5605,10 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                     </profile>
                   </profiles>
                   <rules>
-                    <rule id="d743-69b0-90c2-2922" name="Valourous Ballads" publicationId="9e23-79cb-pubN75312" page="170" hidden="false">
+                    <rule id="d743-69b0-90c2-2922" name="Tristan&apos;s Lance" publicationId="9e23-79cb-pubN75312" page="188" hidden="false">
+                      <description>Tristan may use a lance even though he has the Questing Vow.</description>
+                    </rule>
+                    <rule id="244e-70f0-44c8-c96c" name="Valourous Ballads" publicationId="9e23-79cb-pubN75312" page="170" hidden="false">
                       <description>At the start of each turn, you may declare which song Tristan is singing. The effects of that song last until the start of your next turn – you may then have Tristan continue singing the same song, or choose another. Tristan can only sing one song at once, and will cease singing immediately if he flees or is slain.</description>
                     </rule>
                   </rules>
@@ -7240,7 +7223,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <infoLink id="10e8-8bb6-6e30-4ca7" name="Royal Pegasus" hidden="false" targetId="42e6-e1b4-18d0-176f" type="profile"/>
                     <infoLink id="c3cd-4501-620d-61fd" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                     <infoLink id="2708-a638-e051-9c95" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
-                    <infoLink id="f32d-b38b-5433-f47f" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+                    <infoLink id="f32d-b38b-5433-f47f" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="6dd0-1c29-be63-f2bc" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
@@ -7266,6 +7249,182 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="180.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="14c7-d82a-947b-3ff2" name="Men-at-Arms (Medium Armour)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc46-5b8f-94d1-1cc7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2310-f2e5-8532-5a48" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6ecc-2f29-414a-be02" name="Man-at-Arms" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d44-2bbd-644d-7a3c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b903-24df-c70d-db8e" name="Man-at-Arms" publicationId="9e23-79cb-pubN75312" page="140" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="806f-36c9-61ce-a48a" name="The Peasant&apos;s Duty" hidden="false" targetId="22b7-cc0d-1805-d244" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="7a31-6a31-34d2-32f2" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90cc-6449-cbb8-5d17" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b996-8664-50b3-ee5b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c52-44ba-d85d-bb58" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87da-3855-ad00-aac9" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="557e-bdb0-60f3-4a76" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="41c0-4439-e324-a0b7" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="269f-a3f4-9ac1-8a60" name="Primary Weapon" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb0b-07b9-ed03-e5e9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c69c-cddf-9ec3-0781" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9b6e-176e-e1fe-0a35" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40ce-f793-c3c8-6744" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6bc5-5395-1cce-69cf" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="197f-1683-ea9e-4666" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05c2-d8ab-cade-9992" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9ff9-6c56-8a17-5899" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b8a6-13d8-c6b4-a8e1" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f36-9ca0-104c-90f8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="19b2-4e3d-11eb-1430" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="138c-8a2e-7a11-5dfc" name="Truffle Hounds" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c9c-9867-b672-06d5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3d80-b633-85dc-02d8" name="Truffle Hound" hidden="false" targetId="bc30-2c0d-8f55-3868" type="profile"/>
+            <infoLink id="bcef-3878-e93d-6f5a" name="Truffle Madness" hidden="false" targetId="8a21-a21a-7111-59bd" type="rule"/>
+            <infoLink id="6a56-1968-e2f2-648e" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a1b1-b56d-0ade-49a6" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="ccd1-f9bc-5e02-da6a" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="caa5-d775-d8a2-44eb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="702a-109c-d926-10c7" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="45be-4422-c6de-f36f" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2b3-2341-b887-66bd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="190e-cf8a-b565-365d" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f7af-d5ac-e715-466a" name="Yeoman Warden" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0af2-1051-8c16-6740" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="de8c-ef9e-79ff-093a" name="Yeoman Warden" publicationId="9e23-79cb-pubN75312" page="140" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="27d8-588f-6c3b-4c25" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8659,16 +8818,16 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22d4-422f-b024-b24b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f72f-439b-8375-36bb" name="Gilded Cuirass" publicationId="e3da-3848-ff08-a482" page="10" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+            <profile id="f72f-439b-8375-36bb" name="Gilded Cuirass" publicationId="e3da-3848-ff08-a482" page="11" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Grail Vow only. Heavy armour. The wearer of the Gilded Cuirass gains Regeneration (4+).</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Grail Vow only. Heavy armour. The wearer of the Gilded Cuirass gains Regeneration (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4e1b-dc0b-cfff-ef63" name="Gromril Great Helm" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8831,6 +8990,22 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f2a3-6f8f-5d67-b6cd" name="Errantry Banner" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c2b-a34a-0fba-a7f9" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0cfd-f083-46da-3755" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7e8f-f4cf-557d-c7ac" name="Errantry Banner" publicationId="9e23-79cb-pubN75312" page="127" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Knights Errant only. All Knights Errant in the unit get a +1 S bonus on any turn they charge. However, a unit with this banner suffers -2 to its LD for any Impetuous tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9103,13 +9278,11 @@ Hit suffered during the game.</characteristic>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="ad7f-7d06-8101-283e" name="The Lance Formation" publicationId="9e23-79cb-pubN75312" page="120" hidden="false">
-      <description>Any Cavalry unit with this special rule may deploy in the Lance formation and/or reform into it during the game. A unit in Lance formation follow the rules for Monstrous Ranks that apply to Monstrous Cavalry. In effect, if by any means a unit of Bretonnian Knights is formed into a unit three models wide, it is treated as being in Lance formation. Note that if a unit is ever wider than three models, it no longer counts as being in Lance Formation. In addition to this, the unit may form a unit up to 5 ranks deep. 
+      <description>Any Cavalry unit with this rule may deploy in the Lance formation and/or reform into it during the game. A unit in Lance formation follow the rules for Ranks and Supporting Attacks that apply to Monstrous Cavalry. In effect, if by any means a unit of Bretonnian Knights is formed into a unit three models wide, it is treated as being in Lance formation. Note that if a unit is ever wider than three models, it no longer counts as being in Lance Formation. In addition to this, the unit may form a unit up to 5 ranks deep.
 
 A Damsel or Prophetess may be placed in the centre of the second rank of the Lance formation rather than the front rank, as the Knights form up protectively around her. Note that she remains fully in play even if she is not in the front rank (so the unit may use her LD, she may cast magic, etc.). If a second Damsel or Prophetess joins the unit, she may be placed in the centre of the third rank. If the rank in front of the Damsel or Prophetess ever falls below three models, she will move forward to take up the empty space. However, a Damsel or Prophetess that is not in the front rank obviously has no line of sight.
 
-On the turn that a unit in Lance Formation charges, the models with this rule have Devastating Charge. In addition, all Knight models on the flanks of the second and third rank of the unit follow the rules for Supporting Attacks that apply to Monstrous Cavalry, and counts as being in the front rank for the for the purpose of resolving Impact Hits.
-
-When removing casualties from the Lance formation, rank and file models are always removed from the centre of the back rank before removing those on the flanks. After casualties have been removed, the models in an incomplete back rank are not automatically moved to the centre of that back rank, but can stay on the edges, so that they can still fight if the Lance charges.</description>
+On a turn that a unit in Lance Formation makes a successful charge, all models with this rule make Supporting Attacks with an extra rank. In addition, they add their current Rank Bonus to the S of the Impact Hits they inflict. Finally, if the unit wins that round of combat, it also counts as having double their actual Unit Strength for the purpose of determining if the enemy unit is Steadfast or not.</description>
     </rule>
     <rule id="22b7-cc0d-1805-d244" name="The Peasant&apos;s Duty" publicationId="9e23-79cb-pubN75312" page="121" hidden="false">
       <description>Models with the Peasant&apos;s Duty treat all friendly models with the Knight&apos;s Vow, the Questing Vow or the Grail Vow within 6&quot; as having Inspiring Presence. Unit standards in units with the Peasant’s Duty do not confer any additional victory points if captured.</description>
@@ -9253,7 +9426,7 @@ on the battlefield at the start of your magic phase, add 1 dice to your power po
     </profile>
     <profile id="229a-bb05-be1e-bb43" name="Sacrosanctum" publicationId="9e23-79cb-pubN75312" page="156" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
@@ -9397,8 +9570,8 @@ on the battlefield at the start of your magic phase, add 1 dice to your power po
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/14+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single model (even a character in a unit). If the spell is successfully cast, the enemy must take an I test in order to avoid being turned into a frog. If it fails, they are transformed and cannot do anything except croak and hop around for the rest of the game. Remove the model as casualty with no saves allowed except Magic Resistance.</characteristic>
       </characteristics>
     </profile>

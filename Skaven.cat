@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="31" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="32" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d5d-95c5-9736-ddda" name="Ringing the Bell Table">
@@ -155,7 +155,8 @@
         </selectionEntry>
         <selectionEntry id="51b3-e39a-31ff-7b44" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3968-0ce1-9d7c-bc16" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3968-0ce1-9d7c-bc16" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59a2-c493-9277-cd19" type="max"/>
           </constraints>
           <profiles>
             <profile id="ba39-7b5e-85a7-e3b7" name="Grey Seer" publicationId="4086-1ccd-f433-39a2" page="147" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -1020,7 +1021,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups>
-                    <selectionEntryGroup id="8c9a-8d5b-ce73-07e0" name="Lore of Magic" hidden="false" collective="false" import="true">
+                    <selectionEntryGroup id="8c9a-8d5b-ce73-07e0" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="407c-1069-d38f-7808">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32fc-3944-a789-0505" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7804-335d-d938-73a2" type="max"/>
@@ -1332,7 +1333,8 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         </selectionEntry>
         <selectionEntry id="c5ae-3281-3f06-74c0" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f22-672f-504b-49bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f22-672f-504b-49bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0161-a51e-b950-14d2" type="max"/>
           </constraints>
           <profiles>
             <profile id="0dc0-2674-29ae-0e10" name="Plague Lord" publicationId="4086-1ccd-f433-39a2" page="163" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -1927,6 +1929,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         <selectionEntry id="eebf-bf18-a8cd-643b" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="610d-3031-aef0-0086" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9702-f379-3c09-d214" type="min"/>
           </constraints>
           <profiles>
             <profile id="3d2f-a39d-1285-9eb7" name="Warlock Master" publicationId="4086-1ccd-f433-39a2" page="189" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
@@ -5492,7 +5495,7 @@ T test or suffer a Wound. On the To Hit roll of a 1, the Globadier hits himself 
                     <profile id="f3ed-4fc1-cd5b-6e37" name="Windlaunchers" publicationId="4086-1ccd-f433-39a2" page="186" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
                       <characteristics>
                         <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Stone Thrower</characteristic>
-                        <characteristic name="Range" typeId="1c88-efb0-083f-b945">6-24&quot;</characteristic>
+                        <characteristic name="Range" typeId="1c88-efb0-083f-b945">8-36&quot;</characteristic>
                         <characteristic name="Strength" typeId="6ca0-d074-628f-e276"/>
                         <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Ignores Armour saves. Magical Attacks.</characteristic>
                       </characteristics>
@@ -5969,7 +5972,8 @@ If you roll a misfire result something has gone awry. No more shots are fired th
         </selectionEntry>
         <selectionEntry id="f93b-8845-4c75-165b" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ce-d913-0a53-a309" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ce-d913-0a53-a309" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="203a-7b7b-2f02-488e" type="max"/>
           </constraints>
           <profiles>
             <profile id="e82f-23dd-bf8f-800d" name="Eshin Sorcerer Lord" publicationId="4086-1ccd-f433-39a2" page="175" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">

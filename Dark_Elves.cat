@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
@@ -2665,9 +2665,9 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
         <categoryLink id="3a59-bf9e-6270-2307" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7637-851b-8007-06cf" name="City Guard (First Ranks)" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="7637-851b-8007-06cf" name="City Guard" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d85-bb29-a31b-d1ee" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d85-bb29-a31b-d1ee" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="8824-e8d4-e43d-3831" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
@@ -2689,18 +2689,6 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0dd3-2d01-f023-42ff" name="Repeater Crossbow" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e4b2-30ef-9fc9-12dc" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41c4-3294-083e-afc4" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7310-8165-92bf-7fcf" name="Repeater Crossbow" hidden="false" targetId="92df-4d61-e793-1d63" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="53da-87a0-2ed5-0f91" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72a9-d8f0-64f7-5c62" type="max"/>
@@ -2713,58 +2701,41 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="9.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e773-87fc-6260-1a67" name="City Guard (Other Ranks)" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c78d-98da-128c-26dc" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6f2d-89b6-0354-9e42" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
-            <infoLink id="6fec-a9e3-bf25-2087" name="Murderous Prowess" hidden="false" targetId="1451-9754-507c-44a8" type="rule"/>
-            <infoLink id="e02b-eba6-21e8-6451" name="Mixed Formation" hidden="false" targetId="b3ad-14ab-b631-e50d" type="rule"/>
-            <infoLink id="735b-692d-d32c-365b" name="City Guard" hidden="false" targetId="5f01-04b5-c4a7-b54e" type="profile"/>
-            <infoLink id="1390-c809-6abc-91bf" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="5768-4d2a-cd46-5e78" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5343-eadb-4274-466f" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c5-553c-8704-d27c">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="630f-a20a-3fd3-b136" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c782-4c1f-a2ad-b9c4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f247-da9c-a624-c13b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cc7-fd29-a8b2-8ec4" type="min"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="5466-acd0-7588-ced4" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a753-6729-831c-4502" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e52-a49b-ebcc-ffc5" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ff1-8543-412b-6d0a" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="745d-d1f7-25af-17cc" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="202e-327a-d668-d6aa" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ffb-eefd-272f-7f4f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f0ec-e22a-e78a-6cb1" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="437e-8375-7eef-41e5" name="Hand Weapon &amp; Repeater Crossbow" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cf8-6b52-f268-23b8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d62c-ef9a-9fb6-5b1d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c1cd-9bd1-67ed-fdae" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="9b7d-9b80-ab61-1612" name="Repeater Crossbow" hidden="false" targetId="92df-4d61-e793-1d63" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a8c5-553c-8704-d27c" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b21c-5e9c-2646-e975" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79ad-dd12-113f-3095" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f743-66c4-2bc2-62b9" name="Spear (On Foot)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="9.0"/>
           </costs>
@@ -8368,8 +8339,7 @@ following Close Combat phase.</characteristic>
       <description>A Black Dragon has a S 3 Breath Weapon. All models in a unit that has suffered one or more casualties from the attack suffers a -1 penalty to their WD and BS until the end of the following turn.</description>
     </rule>
     <rule id="b3ad-14ab-b631-e50d" name="Mixed Formation" publicationId="9e23-79cb-pubN76150" page="122" hidden="false">
-      <description>All City Guard armed with Repeater Crossbows must be placed in the first ranks of the unit, with the City Guard armed with spears being placed in the following ranks. Models armed with Repeater Crossbows and shields cannot make Parry saves. Casualties are removed from the back as normal. Half the models in the unit (rounding down) must replace their
-spears with repeater crossbows.</description>
+      <description>All City Guard armed with Repeater Crossbows must be placed in the first ranks of the unit, with the City Guard armed with spears being placed in the following ranks. Models armed with Repeater Crossbows and shields cannot make Parry saves. Casualties are removed from the back as normal. Half the models in the unit (rounding down) must replace their spears with repeater crossbows.</description>
     </rule>
     <rule id="fb7f-921b-b1e1-a5e7" name="Khainite" publicationId="9e23-79cb-pubN76150" page="114" hidden="false">
       <description>Characters who are Khainites (except models deploying using Hidden) may only join units which are also Khainites, and characters who are not Khainites may not join Khainite units.</description>

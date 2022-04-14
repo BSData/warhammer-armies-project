@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
@@ -2665,9 +2665,9 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
         <categoryLink id="3a59-bf9e-6270-2307" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7637-851b-8007-06cf" name="City Guard" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="7637-851b-8007-06cf" name="City Guard (Crossbow)" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d85-bb29-a31b-d1ee" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d85-bb29-a31b-d1ee" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="8824-e8d4-e43d-3831" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
@@ -2700,42 +2700,84 @@ For each unsaved Wound caused by Disciple in close combat, he gains +1 to cast i
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5343-eadb-4274-466f" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c5-553c-8704-d27c">
+            <selectionEntry id="60f2-0b51-9629-afa6" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f247-da9c-a624-c13b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cc7-fd29-a8b2-8ec4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27f1-9378-c208-2956" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9584-953a-e418-789f" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="437e-8375-7eef-41e5" name="Hand Weapon &amp; Repeater Crossbow" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cf8-6b52-f268-23b8" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d62c-ef9a-9fb6-5b1d" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="c1cd-9bd1-67ed-fdae" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="9b7d-9b80-ab61-1612" name="Repeater Crossbow" hidden="false" targetId="92df-4d61-e793-1d63" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a8c5-553c-8704-d27c" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b21c-5e9c-2646-e975" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79ad-dd12-113f-3095" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f743-66c4-2bc2-62b9" name="Spear (On Foot)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="6e19-e708-fbed-d162" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="974c-0b42-7d21-3ea7" name="Repeater Crossbow" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df76-73ac-1511-2853" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9280-6f80-1e64-c9f4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="70a6-1b30-c186-9ab2" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                <infoLink id="79ad-5836-db06-5fa1" name="Repeater Crossbow" hidden="false" targetId="92df-4d61-e793-1d63" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="12.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e324-f815-da80-c91a" name="City Guard (Spear)" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1744-6147-f693-c431" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b2ad-0e2f-9e8c-ac24" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
+            <infoLink id="ea06-77a2-de7a-8c5b" name="Murderous Prowess" hidden="false" targetId="1451-9754-507c-44a8" type="rule"/>
+            <infoLink id="aee0-4809-ebed-726e" name="Mixed Formation" hidden="false" targetId="b3ad-14ab-b631-e50d" type="rule"/>
+            <infoLink id="49b6-a252-29fb-527b" name="City Guard" hidden="false" targetId="5f01-04b5-c4a7-b54e" type="profile"/>
+            <infoLink id="49ce-7d96-59f5-25ea" name="Hatred (High Elves)" hidden="false" targetId="a0a3-ddd4-b1ed-1054" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="9287-2cb5-3633-1adb" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c35-4bc5-d1dc-8ee9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68db-dea0-4597-d7e5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4ef7-f67d-ca2b-bd04" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d454-a685-58ce-32b7" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4de-fadb-0295-e76a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0400-813e-45ff-7812" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7adf-5beb-7f93-18a2" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04eb-f3d9-1cee-58c1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd9d-61d2-70e4-a587" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4568-2317-d213-0036" name="Spear (On Foot)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="9.0"/>
           </costs>
@@ -8339,7 +8381,7 @@ following Close Combat phase.</characteristic>
       <description>A Black Dragon has a S 3 Breath Weapon. All models in a unit that has suffered one or more casualties from the attack suffers a -1 penalty to their WD and BS until the end of the following turn.</description>
     </rule>
     <rule id="b3ad-14ab-b631-e50d" name="Mixed Formation" publicationId="9e23-79cb-pubN76150" page="122" hidden="false">
-      <description>All City Guard armed with Repeater Crossbows must be placed in the first ranks of the unit, with the City Guard armed with spears being placed in the following ranks. Models armed with Repeater Crossbows and shields cannot make Parry saves. Casualties are removed from the back as normal. Half the models in the unit (rounding down) must replace their spears with repeater crossbows.</description>
+      <description>All City Guard armed with Repeater Crossbows must be placed in the first ranks of the unit, with the City Guard armed with spears being placed in the following ranks. Models armed with Repeater Crossbows and shields cannot make Parry saves. Casualties are removed from the back as normal. Half the models in the unit (rounding down) must replace their spears with repeater crossbows. If shields are taken, they must be taken for the whole unit.</description>
     </rule>
     <rule id="fb7f-921b-b1e1-a5e7" name="Khainite" publicationId="9e23-79cb-pubN76150" page="114" hidden="false">
       <description>Characters who are Khainites (except models deploying using Hidden) may only join units which are also Khainites, and characters who are not Khainites may not join Khainite units.</description>
@@ -8566,7 +8608,7 @@ If a Monster is Hit by this weapon but survives, it must turn and move towards t
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Ignores Armour saves. Killing Blow. Multiple Shots (6). When rolling To Wound, substitute the target&apos;s T with its I value. This attack does not sufer any To Hit penalties.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Ignores Armour saves. Killing Blow. Magical Attacks. Multiple Shots (6). When rolling To Wound, substitute the target&apos;s T with its I value. This attack does not sufer any To Hit penalties.</characteristic>
       </characteristics>
     </profile>
     <profile id="daf4-33dc-1f18-cdc9" name="Black Guard" publicationId="9e23-79cb-pubN76150" page="127" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

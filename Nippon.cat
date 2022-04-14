@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="59f8-f38c-0bdd-cc1d" name="Poison">
@@ -154,7 +154,7 @@
                 <infoLink id="ad06-6700-37e8-2878" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="8.0"/>
+                <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6125-85c7-2e16-18a5" name="Two/Additional Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -2014,12 +2014,12 @@
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="de60-e941-d5be-a3c8" name="Gashira" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="de60-e941-d5be-a3c8" name="Yari Gashira" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9fd9-9085-ebab-35c3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1945-6d5f-6c41-de2e" name="Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="1945-6d5f-6c41-de2e" name="Yari Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -2183,12 +2183,27 @@
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6fa8-e494-75d8-bd8c" name="Gashira" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6fa8-e494-75d8-bd8c" name="Yumi Gashira" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4233-befc-635e-d32e" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="d2a6-fb2c-3e9a-89f5" name="Yumi Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink id="d41b-c728-9dd0-c421" name="Gashira" hidden="false" targetId="2b53-36f8-1595-5f96" type="profile"/>
                 <infoLink id="4d60-62d3-1721-e8e3" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
               </infoLinks>
               <costs>
@@ -2330,9 +2345,24 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27af-e4e3-92d9-9301" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="ac1a-7acb-b178-74e6" name="Tepo Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
                 <infoLink id="cd0e-3f3e-dc69-ec60" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="dc8a-afe3-ff6e-8b36" name="Gashira" hidden="false" targetId="2b53-36f8-1595-5f96" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -3759,24 +3789,6 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="aa98-b009-dee8-2eb6" name="Clan Mon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4bf3-9519-479c-04de">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="763c-6a10-0d68-3635" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="4bf3-9519-479c-04de" name="Mon of the Dawate Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c6d-fd3f-10d7-028a" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="940e-a262-4514-b04e" name="Mon of the Dawate Clan" hidden="false" targetId="cd97-20cf-39d9-47ca" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="55.0"/>
@@ -4793,13 +4805,13 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
                 <infoLink id="1afb-9e8d-b1ce-8e9c" name="Death Before Dishonour" hidden="false" targetId="30a5-e241-6328-3c55" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="cbe5-57b6-7de4-3a4d" name="Guard-Breaker" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cbe5-57b6-7de4-3a4d" name="Guard Breaker" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a3f-6de3-9164-2415" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8d5-7e57-9b4c-14e5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3063-9aa6-bfab-7ad6" name="Guard-Breaker" publicationId="5ff9-69dd-8810-183f" page="89" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                    <profile id="3063-9aa6-bfab-7ad6" name="Guard Breaker" publicationId="5ff9-69dd-8810-183f" page="89" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                         <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -5028,7 +5040,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
                       <characteristics>
                         <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                         <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. Saddle-cutter gives the wielder Killing Blow (5+) against Cavalry or Monstrous Cavalry.</characteristic>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Great weapon. Saddle-cutter gives the wielder Killing Blow against Cavalry or Monstrous Cavalry which applies on the roll of a 5+ rather than 6+.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6163,7 +6175,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
@@ -6288,7 +6300,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
         </profile>
         <profile id="3c93-1f52-7b7f-8105" name="Strategy and Discipline" publicationId="5ff9-69dd-8810-183f" page="80" hidden="false" typeId="8ff6-f8ea-f049-0e9f" typeName="Vigour Rhythm">
           <characteristics>
-            <characteristic name="Effect" typeId="bd4f-92c2-d2fb-fbba">The units may roll 3D6 for LD tests to Reform, Restrain from Pursuit and March and discard the highest result.</characteristic>
+            <characteristic name="Effect" typeId="bd4f-92c2-d2fb-fbba">The units may roll 3D6 for LD tests to Reform, Restrain from Pursuit and March, discarding the highest result.</characteristic>
           </characteristics>
         </profile>
         <profile id="51ef-ddda-9490-cf72" name="Bravery and Courage" publicationId="5ff9-69dd-8810-183f" page="80" hidden="false" typeId="8ff6-f8ea-f049-0e9f" typeName="Vigour Rhythm">
@@ -6998,24 +7010,6 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0e0a-fbf4-09fa-c97e" name="Clan Mon" hidden="false" collective="false" import="true" defaultSelectionEntryId="07d4-da41-35e6-9af6">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a8b5-94ea-8a30-bcc4" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="07d4-da41-35e6-9af6" name="Mon of the Takai Clan" page="" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f983-a7f7-059d-f6c5" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="1cd0-0967-95a4-44bb" name="Mon of the Takai Clan" hidden="false" targetId="fd59-f894-bc0c-0be6" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
             <selectionEntryGroup id="feea-4955-9f02-0c08" name="Armour" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e693-c183-16c0-fe20" type="max"/>
@@ -8119,7 +8113,7 @@ You may not have multiple different Clan Mons in the same army.</description>
 You may not have multiple different Clan Mons in the same army.</description>
     </rule>
     <rule id="cd97-20cf-39d9-47ca" name="Mon of the Dawate Clan" publicationId="5ff9-69dd-8810-183f" page="100" hidden="false">
-      <description>Models with great weapons only. Models with this Mon does not suffer any penalties to their I if armed with great weapons.
+      <description>Infantry with great weapons only. Models with this Mon does not suffer any penalties to their I if armed with great weapons.
 
 You may not have multiple different Clan Mons in the same army.</description>
     </rule>
@@ -8215,7 +8209,7 @@ You may not have multiple different Clan Mons in the same army.</description>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/10+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/11+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits. Enemies that suffer a casualty suffer -1 to their WS and BS until the start of the caster’s next magic phase.</characteristic>
       </characteristics>
@@ -8233,7 +8227,7 @@ You may not have multiple different Clan Mons in the same army.</description>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/10+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/14+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. Whilst the spell is in effect, the affected unit will be Stubborn. Boosted version also gives Natural Armour (5+).</characteristic>
       </characteristics>
@@ -8242,7 +8236,7 @@ You may not have multiple different Clan Mons in the same army.</description>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/16+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/18+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/12&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next Magic phase, the target unit gains Always Strikes First, and the enemy must re-roll successful armour save roll of 6&apos;s. Boosted version affects all friendly units within range.</characteristic>
       </characteristics>
@@ -8251,9 +8245,9 @@ You may not have multiple different Clan Mons in the same army.</description>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/15+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/18+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects the D3/D6 closest enemy units of the caster as long as they are within range of the caster. Each unit suffer D6 S 4 hits. These are Flaming Attacks.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets the D3/D6 closest enemy units of the caster as long as they are within range of the caster. Each unit suffer D6 S 4 hits. These are Flaming Attacks.</characteristic>
       </characteristics>
     </profile>
     <profile id="f90b-0276-9641-f0e7" name="Borne on the Wind" publicationId="5ff9-69dd-8810-183f" page="99" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8262,7 +8256,7 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The affected unit may immediately make a Fly move up to 10&quot;. They may not use this to charge an enemy or if they are engaged in close combat.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit may immediately make a move using Fly (10) as if it were the Remaining Moves sub-phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="c9d6-fe19-5031-6521" name="Void of Emptiness" publicationId="5ff9-69dd-8810-183f" page="99" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8271,16 +8265,16 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/14+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next turn, the affected unit may not move at all in its next Movement phase and gains Immunity (Psychology). This spell has no effect on units that already have Immunity (Psychology).</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next turn, the affected unit may not move at all in its next Movement phase and gains Immunity (Psychology).</characteristic>
       </characteristics>
     </profile>
     <profile id="72b0-caca-078f-426f" name="Call of the War God" publicationId="5ff9-69dd-8810-183f" page="99" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">15+/21+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">16+/24+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/18&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects all friendly units with the Way of the Warrior rule within range of the caster. Until the start of the caster’s next turn, the affected units gain Devastating Charge and may re-roll all failed rolls To Wound.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all friendly units with Way of the Warrior within range of the caster. Until the start of the caster’s next turn, the target units gain Devastating Charge and may re-roll all failed rolls To Wound in close combat.</characteristic>
       </characteristics>
     </profile>
     <profile id="e3aa-2d01-2a16-c426" name="Onna Bushi" publicationId="5ff9-69dd-8810-183f" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -8364,20 +8358,6 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2b53-36f8-1595-5f96" name="Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-      <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
       </characteristics>
     </profile>

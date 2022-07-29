@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1a86-ad23-323a-d30c" name="Quirk of Character">
@@ -15,11 +15,6 @@
     <profileType id="a3ea-b771-681d-aade" name="Scientific Item">
       <characteristicTypes>
         <characteristicType id="1a57-1bef-d448-4349" name="Special Rules"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="d377-d2f1-c593-fde0" name="Orc Animosity Chart">
-      <characteristicTypes>
-        <characteristicType id="ce06-3a2c-e979-f8f1" name="Result"/>
       </characteristicTypes>
     </profileType>
     <profileType id="0ca1-e30d-d277-c08e" name="Land Ship Calamity Chart">
@@ -6950,30 +6945,14 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Orc)</characteristic>
               </characteristics>
             </profile>
-            <profile id="4cc9-6b7a-9662-696b" name="01" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false" typeId="d377-d2f1-c593-fde0" typeName="Orc Animosity Chart">
-              <characteristics>
-                <characteristic name="Result" typeId="ce06-3a2c-e979-f8f1">Squabble: The unit can do nothing this turn.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="625e-12a3-9ee0-1f87" name="06" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false" typeId="d377-d2f1-c593-fde0" typeName="Orc Animosity Chart">
-              <characteristics>
-                <characteristic name="Result" typeId="ce06-3a2c-e979-f8f1">We&apos;ll Show &apos;Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full (non-march) move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must declare a charge in the Charge subphase against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="75c7-be38-2ee1-b99e" name="02-05" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false" typeId="d377-d2f1-c593-fde0" typeName="Orc Animosity Chart">
-              <characteristics>
-                <characteristic name="Result" typeId="ce06-3a2c-e979-f8f1">Plan&apos;s a good &apos;un: The unit may act normally this turn.</characteristic>
-              </characteristics>
-            </profile>
           </profiles>
-          <rules>
-            <rule id="a4fc-1295-2274-9ea0" name="Orc Animosity" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false">
-              <description>Units with this rule must roll a D6 and consult the Orc Animosity chart at the start of the turn, unless they are already in combat, fleeing, or have less than 5 models.</description>
-            </rule>
-          </rules>
           <infoLinks>
             <infoLink id="c057-f0b6-ede4-b933" name="Strength Bonus (1)" hidden="false" targetId="01e3-7f81-20e3-45fe" type="rule"/>
-            <infoLink id="c8b7-94e5-7d2a-a705" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
+            <infoLink id="c8b7-94e5-7d2a-a705" name="01 (Animosity Chart)" hidden="false" targetId="c769-45c9-27cd-e14e" type="profile"/>
+            <infoLink id="917d-1b35-ffa1-7008" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
+            <infoLink id="168c-156f-00a7-03eb" name="Orc Animosity" hidden="false" targetId="390b-8c96-7c3a-9598" type="rule"/>
+            <infoLink id="0e54-4916-ef86-99e7" name="02-05 (Animosity Chart)" hidden="false" targetId="df9f-2d15-5f0d-624a" type="profile"/>
+            <infoLink id="6406-2a88-f938-cc93" name="06 (Animosity Chart)" hidden="false" targetId="2624-b6e6-e171-5b72" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="c4a7-1bf0-3362-8f25" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">

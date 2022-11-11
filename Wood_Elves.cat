@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="33" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ed67-4ca1-2eb7-8b8a" name="Wood Elves" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="c3a4-9eb1-eef6-d5ec" name="Enchanted Arrows">
@@ -161,7 +161,6 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="550b-b258-27a4-e8a9" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="de37-a205-4f9b-66c4" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
                 <infoLink id="ea4c-9120-4c3c-3ea9" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="a995-c789-c31f-ce2a" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                 <infoLink id="53bc-9ad1-a1e4-8184" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
@@ -169,6 +168,7 @@
                 <infoLink id="708d-32d3-606d-4b5e" name="Soporific Breath" hidden="false" targetId="cd88-3a4e-624f-f662" type="rule"/>
                 <infoLink id="b1b2-d398-a4ad-8140" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
                 <infoLink id="097e-1006-963d-c193" name="Forest Dragon" hidden="false" targetId="5e17-02cd-610b-33c4" type="profile"/>
+                <infoLink id="260c-439f-7e57-2006" name="Fly (7)" hidden="false" targetId="36ba-3349-99bd-1979" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="325.0"/>
@@ -4017,7 +4017,7 @@
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
@@ -4175,7 +4175,7 @@
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">6</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
@@ -4434,7 +4434,7 @@
     </selectionEntry>
     <selectionEntry id="2494-2d05-e880-0eaf" name="Forest Dragon" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="572c-87a0-8615-6e97" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
+        <infoLink id="572c-87a0-8615-6e97" name="Fly (7)" hidden="false" targetId="36ba-3349-99bd-1979" type="rule"/>
         <infoLink id="d34c-3d25-e881-43f4" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="0307-617c-e63a-e3c8" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="ce23-e2cc-1da7-8c81" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
@@ -5589,7 +5589,6 @@ Enraged, the Colony of Flitterfuries gains Multiple Shots (3D6). If Drycha is Em
               <infoLinks>
                 <infoLink id="430a-3e27-b08a-c9a2" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
                 <infoLink id="048c-c056-acc2-800a" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
-                <infoLink id="0bfa-9a2e-3536-0f47" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
                 <infoLink id="f2fd-7237-64eb-78a3" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
                 <infoLink id="36aa-5577-533f-8c05" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
                 <infoLink id="aa23-68a4-46b5-3ff0" name="Woven Mist" hidden="false" targetId="efdf-5ff4-ee10-a035" type="profile"/>
@@ -5798,7 +5797,6 @@ In close combat, the birds give Skaw an additional 3 A that are resolved at WS 4
               <infoLinks>
                 <infoLink id="2c9c-6f35-4c0d-5261" name="Elven Grace" hidden="false" targetId="8c96-c7fe-2a85-f2f9" type="rule"/>
                 <infoLink id="3c60-1013-dd97-b011" name="Shadow Dances of Loec" hidden="false" targetId="aaf8-e0d9-c1f1-71ea" type="rule"/>
-                <infoLink id="bf6c-63f0-9a1d-bad4" name="Forest Spirit" hidden="false" targetId="d033-aa65-9f72-75d8" type="rule"/>
                 <infoLink id="e5c8-2384-b10d-9f1f" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
                 <infoLink id="8966-740f-908c-41c2" name="Ward Save (6+)" hidden="false" targetId="5c26-a043-8535-5f4f" type="rule"/>
                 <infoLink id="7e2d-edb1-163f-3e63" name="Woven Mist" hidden="false" targetId="efdf-5ff4-ee10-a035" type="profile"/>
@@ -6463,7 +6461,7 @@ Gruarth becomes subject to Hatred.</description>
               <modifiers>
                 <modifier type="set" field="7eb7-8d66-7178-631b" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5655-32f6-9024-4d9c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b08-7812-8b6b-05fa" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7645,7 +7643,7 @@ Gruarth becomes subject to Hatred.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="33" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
@@ -5264,18 +5264,14 @@ and Multiple Wounds (D3).</characteristic>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="529c-258f-7db0-ad11" name="Mawseeker" page="" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="aa0c-0868-b846-6d6e" name="Mawseeker" page="" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe7b-4747-a435-4847" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed75-f7b1-b1ee-7ddf" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2bb-e027-397e-1c05" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39da-7e67-6541-2f43" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="524b-4e4f-d421-2115" name="Mawseeker" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="5094-a2ae-3070-0519">When a character with the Mawseeker name has +1 T on his profile. He also suffers from Stupidity.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <infoLinks>
+                    <infoLink id="cfcd-ad13-1cdc-6883" name="Mawseeker" hidden="false" targetId="098b-436b-2a21-0579" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -5504,6 +5500,18 @@ and Multiple Wounds (D3).</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b40d-59ab-75cd-fb96" name="Longstrider" page="" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06a0-077f-5501-ceb8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46a0-24ff-1f4d-82fd" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="dc96-a5d6-527f-97b2" name="Longstrider" hidden="false" targetId="b0fc-e279-b984-a6e0" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -6527,22 +6535,6 @@ and Multiple Wounds (D3).</characteristic>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5f9c-055b-2e0f-18b2" name="Longstrider" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ecc-58ce-3ee2-3ddd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5afb-c3a8-8e37-85b9" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="630b-67dd-2ecd-7d00" name="Longstrider" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
-              <characteristics>
-                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Longstrider big name gains +1 to its M value.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="412e-4578-23e0-e17a" name="Brawlerguts" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b522-11f9-ca71-04d1" type="max"/>
@@ -6559,20 +6551,28 @@ and Multiple Wounds (D3).</characteristic>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e0d8-dfda-4e2f-9290" name="Mawseeker" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a42c-871f-c92d-8ea2" name="Mawseeker" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a0da-896b-2e71-8e2c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8aa-5212-4b79-3dfc" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7c4-272e-d051-9faa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb35-6921-7096-3e9a" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="617b-5a01-799a-8fb3" name="Mawseeker" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
-              <characteristics>
-                <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Mawseeker name has +1 T on his profile. It also suffers from Stupidity.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="4d51-c028-2290-5455" name="Mawseeker" hidden="false" targetId="098b-436b-2a21-0579" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0a10-415d-e98d-c394" name="Longstrider" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7356-49e3-87fb-cb27" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf28-2180-ba40-7dc8" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f3dd-7c05-c9b9-cb88" name="Longstrider" hidden="false" targetId="b0fc-e279-b984-a6e0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7557,6 +7557,16 @@ Once the final position of the template is determined, all models under the temp
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Roll a D6 immediately after resolving the effects of a successfully cast spell from the Lore of the Great Maw. On a roll of 2-6, the Wizard that cast the spell recovers one lost Wound (up to his starting number of Wounds), and adds +1 to the total rolled on the dice the next time he attempts to cast or dispel a spell. On a roll of 1 the Wizard that cast the spell suffers a S 6 hit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="098b-436b-2a21-0579" name="Mawseeker" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
+      <characteristics>
+        <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Mawseeker name has +1 T on his profile. It also suffers from Stupidity.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b0fc-e279-b984-a6e0" name="Longstrider" publicationId="9e23-79cb-pubN78137" page="115" hidden="false" typeId="dcfb-308c-d238-54ac" typeName="Big Name">
+      <characteristics>
+        <characteristic name="Effect" typeId="5094-a2ae-3070-0519">A character with the Longstrider big name gains +1 to its M value.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

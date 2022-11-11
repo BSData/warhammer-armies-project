@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="34" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="35" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.1" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.1" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -37,12 +37,12 @@
     <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="1607-bfe9-82af-d3dc" name="Kislev" shortName="Ki" publisher="Warhammer - Kislev 9th ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5ff9-69dd-8810-183f" name="Nippon v.1.1" shortName="Ni" publisher="Warhammer - Nippon 9th Ed v.1.1" publicationDate="07.03.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="5884-1659-bf10-0d5a" name="Norse" shortName="No" publisher="Warhammer - Norse 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa v.1.1" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.1 (beta)" publicationDate="29.07.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="5884-1659-bf10-0d5a" name="Norsca v.1.1" shortName="No" publisher="Warhammer - Norsca 9th Ed v.1.1" publicationDate="10.11.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa v.1.1" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.1" publicationDate="25.08.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e3da-3848-ff08-a482" name="Magic Items v.1.2" shortName="MI" publisher="Warhammer - Magic Items v.1.2" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.3" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.4, Zombie Pirates of the Vampire Coast v.1.3" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.4, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.3" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa v.1.1, Zombie Pirates of the Vampire Coast v.1.2" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.1 (beta), Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.2" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa v.1.1, Zombie Pirates of the Vampire Coast v.1.2" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.1, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.2" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.3" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters v.1.5" shortName="Em" publisher="Warhammer - Empire Special Characters 1.5" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.1" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.1" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -361,7 +361,7 @@
       <rules>
         <rule id="d8a1-3a01-a893-f82c" name="FAQ about BS and the WAP files" page="" hidden="false">
           <description>Q: I can&apos;t find the data anymore in the list of downloadable data.
-A: Try again in a few hours the data will be back.
+A: Read the following: https://github.com/BSData/wh40k/issues/1706 Then do this: https://github.com/BSData/gallery#usage
 
 Q: I am on mobile and can not select Marks of Chaos/Vampire Bloodlines/Greenskin types/Special characters/RoR.
 A: Click the circle to select the variant.
@@ -22105,7 +22105,7 @@ If both players&apos; armies contain Scouts, players should roll off. The player
     </rule>
     <rule id="9a30-1c5c-12f4-5798" name="Skirmishers" publicationId="9e23-79cb-pubN66727" page="80" hidden="false">
       <description>Skirmish Formation
-Skirmishers are deployed in a &apos;loose&apos; formation, where the models are not placed in base contact, but are positioned roughly 1/2&quot; apart. The models in the unit must still face the same direction and the unit will still have a front, two flanks and a rear. All Skirmishers in a unit do not count as blocking each other’s Line of Sight. As long as you can draw a Line of Sight from the front rank to the target, the second and subsequent ranks may fire too. In addition, Skirmishers may be fielded in formations of less than five models wide, as long as they do not have more ranks than files.
+Skirmishers are deployed in a &apos;loose&apos; formation, where the models are not placed in base contact, but are positioned roughly 1/2&quot; apart. The models in the unit must still face the same direction and the unit will still have a front, two flanks and a rear. All Skirmishers in a unit do not count as blocking each other’s Line of Sight. As long as you can draw a Line of Sight from the front rank to the target, the second and subsequent ranks may fire too.
 
 When moving Skirmishers, you should measure from the location of each model before it moves and place it anywhere within its M Allowance (or double its M Allowance if it is marching), except when there is a unit or impassable terrain in the way, the distance moved must include the distance required to move around these obstacles.
 

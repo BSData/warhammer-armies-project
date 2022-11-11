@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="34" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="35" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d5d-95c5-9736-ddda" name="Ringing the Bell Table">
@@ -2068,7 +2068,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         <entryLink id="1818-54bb-594d-50bf" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="190.0"/>
+        <cost name="pts" typeId="points" value="160.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de6c-b1e1-a68a-60ad" name="Chieftain" hidden="false" collective="false" import="true" type="model">
@@ -4308,7 +4308,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="8.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4926,7 +4926,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="8.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4974,8 +4974,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                   <characteristics>
                     <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
                     <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Magical Attacks. Ignores Armour saves. Models hit by a Poisoned Wind Globe must pass a
-T test or suffer a Wound. On the To Hit roll of a 1, the Globadier hits himself (including when firing into close combat). However, Globadiers get a +2 bonus to any such T tests they need to make. Poisoned Wind Globes have no effect on Animated Constructs.</characteristic>
+                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Magical Attacks. Ignores Armour saves. Models hit by a Poisoned Wind Globe must pass a T test or suffer a Wound. On the To Hit roll of a 1, the Globadier hits himself (including when firing into close combat).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6537,7 +6536,7 @@ If you roll a misfire result something has gone awry. No more shots are fired th
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="8.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6571,14 +6570,14 @@ If you roll a misfire result something has gone awry. No more shots are fired th
             <profile id="f076-e5b1-a03e-17e1" name="Warpstone Mutant" publicationId="47b1-3485-34cf-bc48" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
                 <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">2</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
@@ -7814,12 +7813,41 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="30c0-6908-6b5d-2e30" name="Warp-Blades" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3e1-a833-7e31-331a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="8211-adee-1a61-8772" name="Warp-Blades" publicationId="4086-1ccd-f433-39a2" page="189" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Polearm. Warp-Blades give the bearer +1 to cast the Warp Lightning spell from the Lore of Ruin.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="621c-0a62-56b4-e2c9" name="Warplock Pistol" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9630-ddb6-2702-fee9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3dcb-fb66-b0ee-f380" name="Warplock Pistol" hidden="false" targetId="0976-5ad1-1c64-7ceb" type="profile"/>
+                    <infoLink id="4264-aa8d-fa1b-3bec" name="Unstable Ammunition" hidden="false" targetId="1c5e-300c-39c9-1c62" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="b4ec-80d9-3d0b-350f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="245.0"/>
+                <cost name="pts" typeId="points" value="260.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9fb6-8bdf-b955-080f" name="Queek Headtaker" hidden="false" collective="false" import="true" type="model">
@@ -11983,7 +12011,7 @@ The Warp-grinder fights in close combat using its crew&apos;s I, but not their A
       <description>The Doom-flayer has an armour save of 3+ against all models attacking from the front. The Doom-flayer has only a 5+ armour save against attacks from the flank or rear.</description>
     </rule>
     <rule id="e2ce-31d7-3d8f-e7f9" name="Poisoned Wind" publicationId="4086-1ccd-f433-39a2" page="198" hidden="false">
-      <description>Models hit by a Poisoned Wind Mortar must pass a T test or suffer a Wound. Note that Poisoned Wind Mortar crew wear Gas Masks. Poisoned Wind Mortars have no effect on Animated Constructs. In case a Misfire is rolled, roll a D6 and consult the Poisoned Wind Mortar Misfire chart.</description>
+      <description>Models hit by a Poisoned Wind Mortar must pass a T test or suffer a Wound. Note that Poisoned Wind Mortar crew wear Gas Masks. In case a Misfire is rolled, roll a D6 and consult the Poisoned Wind Mortar Misfire chart.</description>
     </rule>
     <rule id="af35-64b6-882e-797c" name="Hot Warplead" publicationId="4086-1ccd-f433-39a2" page="196" hidden="false">
       <description>The Ratling Gun crew does not suffer any penalty due to Multiple Shots.
@@ -12047,9 +12075,7 @@ Roll an Artillery Dice to determine number of shots fired. After the first Artil
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flail. At the beginning of any Close Combat phase all models in base contact (friend or foe, including the
-Censer Bearer itself) with one or more models bearing a plague censer must pass a T test or suffer a
-single wound with Ignores Armour Saves and Magical Attacks. All Clan Pestilens models gain a +1 modifier for these tests.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flail. At the beginning of any Close Combat phase all models in base contact (friend or foe, including the Censer Bearer itself) with one or more models bearing a plague censer must pass a T test or suffer a single wound with Ignores Armour Saves and Magical Attacks. All Clan Pestilens models gain a +1 modifier for these tests.</characteristic>
       </characteristics>
     </profile>
     <profile id="Plague Furnace Mishap Chart" name="01-02 (Plague Furnace Mishap)" publicationId="4086-1ccd-f433-39a2" page="167" hidden="false" typeId="6dcb-cce3-7e75-3f89" typeName="Plague Furnace Mishap Chart">

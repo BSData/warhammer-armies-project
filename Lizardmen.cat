@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="26" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
@@ -885,103 +885,278 @@
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2b80-e50e-c71c-56a9" name="Stegadon" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5296-d876-fc77-e82c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a040-5c38-af4a-82c9" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                <infoLink id="464f-f321-29e6-9d67" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
-                <infoLink id="51a0-785e-499a-28c0" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
-                <infoLink id="21aa-70e1-e157-83c1" name="Stegadon" hidden="false" targetId="f22d-02a8-6af2-b330" type="profile"/>
-                <infoLink id="1ecf-82d7-c158-0e69" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
-                <infoLink id="24b7-4e5c-ea0c-b6bd" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
-                <infoLink id="6907-7008-a86b-5303" name="Impact Hits (D6+1)" hidden="false" targetId="a043-3e3c-9f8a-3661" type="rule"/>
-                <infoLink id="9184-ad13-3e78-d34a" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
-                <infoLink id="8f49-6fa1-d514-3034" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="7203-3d3d-892a-38c7" name="Giant Bow" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ad1-99d2-5ae9-aa13" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="713b-f680-1a25-9198" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="a54c-8982-dfc6-9ebc" name="Giant Bow" hidden="false" targetId="83e7-140b-347b-03de" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f40e-2088-60d9-e4f8" name="Skink Crew" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80e6-3017-2ccd-eb73" type="min"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7eee-cc48-d3b7-b15a" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="534c-e6f2-7c85-9660" name="Skink Crew" hidden="false" targetId="79e1-5d37-4f69-4550" type="profile"/>
-                  </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="220f-ca96-3b1e-e4b2" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a4f-c66a-8c32-f5fe" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7035-7776-f550-4329" type="min"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="c49c-bce3-dc05-eab3" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8104-89ee-2fbd-70e5" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cdc-fac5-1601-ef84" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6731-17fb-78ad-3c9b" type="min"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="c2e8-5d17-9bfa-022a" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry id="802a-6486-04dd-93a5" name="Stegadon" hidden="false" collective="false" import="true" type="model">
               <selectionEntryGroups>
-                <selectionEntryGroup id="47b3-664f-7977-1d29" name="Upgrades" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="9557-7f35-289d-d3f3" name="Variant" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3467-3ef2-fc3b-223f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3157-d36a-650f-2785" type="max"/>
+                  </constraints>
                   <selectionEntries>
-                    <selectionEntry id="b654-ea85-e040-faeb" name="Unstoppable Stampede" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="6d3e-2266-c650-4112" name="Stegadon" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44da-c705-afa2-82f0" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="771f-06c4-2fc0-9dea" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="6f3f-dcbc-8ce8-a402" name="Unstoppable Stampede" hidden="false" targetId="771f-e12a-44a8-c413" type="rule"/>
+                        <infoLink id="374d-ad8a-3f1e-fccc" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                        <infoLink id="0c67-b61f-2161-1932" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                        <infoLink id="9b03-c197-39f0-2579" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                        <infoLink id="e42d-fb3c-1caf-cf97" name="Stegadon" hidden="false" targetId="f22d-02a8-6af2-b330" type="profile"/>
+                        <infoLink id="d85c-a202-6408-b513" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                        <infoLink id="7fea-c990-c331-d677" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
+                        <infoLink id="de2b-60bf-dfff-0a8d" name="Impact Hits (D6+1)" hidden="false" targetId="a043-3e3c-9f8a-3661" type="rule"/>
+                        <infoLink id="04ca-246d-ac2f-ea8d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+                        <infoLink id="f0dc-ff3a-651d-7a2a" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
                       </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="05b2-92d1-27a1-75a2" name="Giant Bow" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="820d-4c92-4e06-c47f" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8de6-9f98-1415-e624" type="min"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="596f-57c9-5348-1dac" name="Giant Bow" hidden="false" targetId="83e7-140b-347b-03de" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="cb80-a6ce-73c7-c94e" name="Skink Crew" hidden="false" collective="false" import="true" type="model">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6cf-a2f8-e7b3-4e99" type="min"/>
+                            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b423-ab72-fa5a-bce8" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="8443-22bf-4d8c-2254" name="Skink Crew" hidden="false" targetId="79e1-5d37-4f69-4550" type="profile"/>
+                          </infoLinks>
+                          <selectionEntries>
+                            <selectionEntry id="219e-72d9-c1fb-39b1" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6cb-7b7b-84f3-c1d7" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f4c-ad83-b3d8-6c09" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="3aef-dc02-2524-d8d0" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="147f-871c-f534-cc6b" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f225-4bde-0b58-5e3c" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5346-91ea-d78c-edc9" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="d507-415a-8b77-a3e0" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="d642-a3f2-5f7c-03de" name="Upgrades" hidden="false" collective="false" import="true">
+                          <selectionEntries>
+                            <selectionEntry id="a5a0-d9d2-77db-dff9" name="Unstoppable Stampede" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8373-e688-7376-f7fd" type="max"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="7c66-1d16-e6e0-bcb5" name="Unstoppable Stampede" hidden="false" targetId="771f-e12a-44a8-c413" type="rule"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="10.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="dd2d-0b21-286f-7f07" name="Sharpened Horns" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="819a-4ad5-15ef-9946" type="max"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="858b-528d-7006-877e" name="Sharpened Horns" hidden="false" targetId="4726-6a22-8031-2fbd" type="rule"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="20.0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                       <costs>
-                        <cost name="pts" typeId="points" value="10.0"/>
+                        <cost name="pts" typeId="points" value="215.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="0b00-2554-d739-4ce0" name="Sharpened Horns" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="5429-4f5d-2b4d-1099" name="Ancient Stegadon" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ed8-3ec5-1655-3495" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc27-d5fa-a0dd-82db" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="6bb1-a9f0-d64f-d1e3" name="Sharpened Horns" hidden="false" targetId="4726-6a22-8031-2fbd" type="rule"/>
+                        <infoLink id="e647-232e-e0e4-0a12" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                        <infoLink id="78e5-4b66-ef20-81b0" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                        <infoLink id="9760-071e-53b0-10d2" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                        <infoLink id="fa13-515a-f071-d62a" name="Ancient Stegadon" hidden="false" targetId="bc67-15a3-0172-e398" type="profile"/>
+                        <infoLink id="fa19-4517-4ca8-ee65" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                        <infoLink id="7736-2817-b3b6-f503" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
+                        <infoLink id="0474-5ba9-5940-8dd5" name="Impact Hits (D6+1)" hidden="false" targetId="a043-3e3c-9f8a-3661" type="rule"/>
+                        <infoLink id="ed32-a093-ca7a-9901" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+                        <infoLink id="5f5f-40ff-f2d1-fc95" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
                       </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="23c7-f3ef-def1-c17b" name="Skink Crew" hidden="false" collective="false" import="true" type="model">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a39-b7e6-c596-f6b1" type="min"/>
+                            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df6c-2837-16ba-009a" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="ce15-87fb-e102-cc35" name="Skink Crew" hidden="false" targetId="79e1-5d37-4f69-4550" type="profile"/>
+                          </infoLinks>
+                          <selectionEntries>
+                            <selectionEntry id="ae1b-a1a8-8ff4-b23c" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6bc4-c835-3c99-95c6" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4090-81c4-bb52-20c1" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="06f1-5153-85a0-9ece" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="0d09-7fe9-332b-5117" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfe2-dbef-9b3c-a3c0" type="max"/>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb8e-f93d-f4c1-2bcf" type="min"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="d495-4436-77de-0356" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="774e-1028-8e38-fd21" name="Upgrades" hidden="false" collective="false" import="true">
+                          <selectionEntries>
+                            <selectionEntry id="f153-eb8c-8815-49cd" name="Unstoppable Stampede" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="439b-d59c-e8f7-d216" type="max"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="1001-3694-981d-8d73" name="Unstoppable Stampede" hidden="false" targetId="771f-e12a-44a8-c413" type="rule"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="10.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="5e8c-a0f4-d56d-0d48" name="Sharpened Horns" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4af-b46e-92c9-ec25" type="max"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="2e53-ed2d-6276-a9e4" name="Sharpened Horns" hidden="false" targetId="4726-6a22-8031-2fbd" type="rule"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="20.0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup id="dd38-9219-459e-197b" name="Primary Equipment" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d8e-386b-ccd8-2cce">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71c8-4ca6-57d9-07f1" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2901-9b4f-3f41-55c9" type="max"/>
+                          </constraints>
+                          <selectionEntries>
+                            <selectionEntry id="0fc8-46d2-e092-c8f9" name="Engine of the Gods" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9511-304d-a685-5638" type="max"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="6c4f-3d6c-8ef1-3895" name="Arcane Configuration" hidden="false" targetId="d4e1-c490-8284-b26d" type="rule"/>
+                                <infoLink id="f81d-4653-99c1-9e8f" name="Portent of Warding" hidden="false" targetId="74d6-cba6-cc00-f1ac" type="rule"/>
+                              </infoLinks>
+                              <selectionEntries>
+                                <selectionEntry id="2d85-c920-69b9-f88b" name="Burning Alignment" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1146-bed8-3f3b-8d7a" type="max"/>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b617-57c1-9ec3-2c66" type="min"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="8b9e-1fbc-30cd-e46c" name="Burning Alignment" hidden="false" targetId="c795-37c8-4ba2-ffa7" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                              </selectionEntries>
+                              <costs>
+                                <cost name="pts" typeId="points" value="50.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="1d8e-386b-ccd8-2cce" name="Giant Bow" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4fb0-fceb-5617-e45e" type="max"/>
+                              </constraints>
+                              <infoLinks>
+                                <infoLink id="1a94-ac45-93c4-def7" name="Giant Bow" hidden="false" targetId="83e7-140b-347b-03de" type="profile"/>
+                              </infoLinks>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                            <selectionEntry id="aba2-3247-91dd-3108" name="Giant Blowpipes" hidden="false" collective="false" import="true" type="upgrade">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2645-04ad-3ed2-28fa" type="max"/>
+                              </constraints>
+                              <selectionEntries>
+                                <selectionEntry id="a1b7-62ca-e064-8c65" name="Giant Blowpipe" hidden="false" collective="true" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1aff-51ff-eb31-9fe6" type="max"/>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c35-1029-a5ef-248e" type="min"/>
+                                  </constraints>
+                                  <profiles>
+                                    <profile id="b453-a859-8105-78dc" name="Giant Blowpipe" publicationId="9e23-79cb-pubN77402" page="163" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                                      <characteristics>
+                                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
+                                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">2</characteristic>
+                                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Multiple Shots (2D6). Poisoned Attacks. Instead of firing another missile weapon in the Shooting phase, up to two Skink Crew may each fire a single giant blowpipe.</characteristic>
+                                      </characteristics>
+                                    </profile>
+                                  </profiles>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                              </selectionEntries>
+                              <costs>
+                                <cost name="pts" typeId="points" value="0.0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                       <costs>
-                        <cost name="pts" typeId="points" value="20.0"/>
+                        <cost name="pts" typeId="points" value="220.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="215.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1518,7 +1693,7 @@
                 <entryLink id="cf3d-6655-e8a1-ca3c" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1651,7 +1826,7 @@
                 <entryLink id="963a-1766-b0e3-5826" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a2a4-9f9c-5488-f9c0" name="Prophet of Sotek" hidden="true" collective="true" import="true" type="upgrade">
@@ -1779,7 +1954,7 @@
                 <entryLink id="8e6d-03c7-c301-f799" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="33c9-bdb7-78ed-dbc8" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -1889,7 +2064,7 @@
                 <entryLink id="51bf-b79a-f6cf-a451" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5324-af25-5123-cb87" name="Prophet of Sotek" hidden="true" collective="true" import="true" type="upgrade">
@@ -2072,7 +2247,7 @@
                 <entryLink id="9c72-a8e1-3681-82ac" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7bbe-ace3-8d1e-e3ac" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
@@ -2227,7 +2402,7 @@
                 <entryLink id="35ac-1214-e970-595c" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2370,7 +2545,7 @@
                 <entryLink id="d486-f4cd-0a08-9a0a" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2464,7 +2639,7 @@
                 <entryLink id="1568-583e-c9d6-d99d" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5eb0-fdec-9a5e-39e4" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -2533,7 +2708,7 @@
                 <entryLink id="0a0d-fceb-064d-f497" name="Blessed Spawnings (Units 1 Blessing)" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f759-9e03-9bf6-caa7" name="Blowpipe" hidden="false" collective="true" import="true" type="upgrade">
@@ -2617,7 +2792,7 @@
                 <entryLink id="1a46-4a25-601b-5c00" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a00f-566a-1a7e-f778" name="Terradon" hidden="false" collective="true" import="true" type="model">
@@ -2761,7 +2936,7 @@
                 <entryLink id="58a4-81e3-506c-0201" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3978-f6a4-1a88-c4e8" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -3781,7 +3956,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="4146-2d93-ac28-04df" name="Blessed Spawnings" hidden="false" collective="false" import="true" targetId="Blessed Spawnings" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="df54-ca38-32dd-6646" name="Horned One" hidden="false" collective="true" import="true" type="model">
@@ -5670,7 +5845,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="d7a3-14df-e99d-64d3" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="530d-7218-54f1-0db3" name="Blowpipe" hidden="false" collective="true" import="true" type="upgrade">
@@ -5789,7 +5964,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="a0b3-f795-5774-52b3" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5932,7 +6107,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="a6f3-7e2b-f650-285c" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6053,7 +6228,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="a55d-0ab4-aa06-5d23" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="74be-0c20-5dc6-4f29" name="Horned One" hidden="false" collective="true" import="true" type="model">
@@ -6199,7 +6374,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="c5eb-9d2d-4619-5433" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6c20-a800-8bd8-401f" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -6271,7 +6446,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="aa34-f96f-ba8f-dee9" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2f38-e036-1176-86c9" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -6404,7 +6579,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="df4a-383e-374d-d6db" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6541,7 +6716,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="03fb-650a-f8b2-4dbc" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d719-72a7-64cb-97a7" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
@@ -6661,7 +6836,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="362a-6d36-e277-0144" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8a75-cf8e-e4f1-0bf9" name="Terradon" hidden="false" collective="true" import="true" type="model">
@@ -6810,7 +6985,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="83af-255f-8697-60af" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="41f2-5205-5d8f-2d48" name="Prophet of Sotek" hidden="true" collective="true" import="true" type="upgrade">
@@ -6914,7 +7089,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2308-2b08-dd03-7f2a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2308-2b08-dd03-7f2a" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="7df7-4294-9021-24ad" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
@@ -6938,7 +7113,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="bb8a-b0ee-1384-e060" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="58ce-147c-e519-0d0c" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -7048,7 +7223,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="19f1-308b-85a2-f650" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true" targetId="59cf-94e4-d520-853b" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="12bc-4d76-08ae-4913" name="Prophet of Sotek" hidden="true" collective="true" import="true" type="upgrade">
@@ -7203,6 +7378,450 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7739-4475-8ba9-eac8" name="Blessed Spawning of Chotec" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76f9-d882-df11-1984" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="024b-8cc5-4cfb-d963" name="Blessed Spawning of Chotec" hidden="false" targetId="0763-791a-17ce-0296" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7da0-5721-11a5-e468" name="Blessed Spawning of Huanchi" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ab4-4a4f-86a7-b182" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="6448-f2f1-f23e-ddf9" name="Blessed Spawning of Huanchi" hidden="false" targetId="b35b-2c5b-0352-a97e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b32-bf4d-1823-d6c6" name="Blessed Spawning of Itzl" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="880c-0719-fbb4-5d83" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="73a1-a549-c4b9-e1b0" name="Blessed Spawning of Itzl" hidden="false" targetId="a4d9-6148-8784-f958" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9858-564b-e946-f2a6" name="Blessed Spawning of Quetzl" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de66-a377-5892-3bca" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="e5a2-5596-6019-72d4" name="Blessed Spawning of Quetzl" hidden="false" targetId="a1ba-7314-fdae-2346" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="98df-8d6f-e680-7a5b" name="Blessed Spawning of Sotek" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61f4-67ed-a274-48c9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="40fa-bc59-6fa0-2858" name="Blessed Spawning of Sotek" hidden="false" targetId="ab7a-0c29-8fb9-5745" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47a5-242e-5cf6-d752" name="Blessed Spawning of Tepok" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c098-3dea-9619-5b81" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c4e2-7c9c-b22c-dfe9" name="Blessed Spawning of Tepok" hidden="false" targetId="7905-b11b-6774-21f8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd5d-e5cb-149e-43cf" name="Blessed Spawning of Tlazcotl" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7cf5-c408-0549-a4eb" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5a0a-8742-946a-df99" name="Blessed Spawning of Tlazcotl" hidden="false" targetId="8fdc-898d-f2e1-6477" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a5a-1a20-a8d8-ee7f" name="Blessed Spawning of Tzunki" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4859-d0bc-2b1a-a10e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cbb-f346-221b-a726" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f6-b9cb-529e-6500" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e935-0361-8202-6bde" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="points" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="253f-10ac-a2f5-646f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="679f-cefe-db7f-1f75" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a3-2f18-fc2e-e572" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ce-e24f-67ef-e3f2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75da-32c6-d504-e90f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35bc-9233-99e5-0dcd" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d47-75de-92c6-f029" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="949b-8762-3ae6-0893" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9e11-3b20-43b0-bf03" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5779-ec33-2417-d87f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e495-be38-23e9-2227" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2f18-bda5-82bd-3068" name="Blessed Spawning of Tzunki" hidden="false" targetId="5f01-41cc-e023-f156" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="727a-b7f7-003c-258e" name="Blessed Mark of the Old Ones" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6aea-2077-ead4-ce58" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b24-5d3a-9c49-7407" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4130-5ebf-85fb-e38a" name="Blessed Mark of the Old Ones" hidden="false" targetId="65ad-3d14-63b1-c40e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f645-1868-d015-102f" name="Blessed Spawning of Chotec" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="52b8-e7a0-a366-01a9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="028d-3412-e387-a6cc" name="Blessed Spawning of Chotec" hidden="false" targetId="0763-791a-17ce-0296" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11d0-bb3c-ae7f-1258" name="Blessed Spawning of Huanchi" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f1a-7716-b7d7-4012" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0130-9ef4-9bb4-e5d8" name="Blessed Spawning of Huanchi" hidden="false" targetId="b35b-2c5b-0352-a97e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d07e-34f2-ab4f-d987" name="Blessed Spawning of Itzl" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20b9-0e30-d2f2-00a1" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2055-8235-f31f-8ced" name="Blessed Spawning of Itzl" hidden="false" targetId="a4d9-6148-8784-f958" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c50c-7b17-febc-e8f6" name="Blessed Spawning of Quetzl" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="049f-9e16-0f58-4bee" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d978-a7fc-5307-8cb2" name="Blessed Spawning of Quetzl" hidden="false" targetId="a1ba-7314-fdae-2346" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="627f-eb93-ad71-c35e" name="Blessed Spawning of Sotek" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55c9-7f7c-535b-56f1" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ae01-05b6-c5ca-ac46" name="Blessed Spawning of Sotek" hidden="false" targetId="ab7a-0c29-8fb9-5745" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="83ea-d678-dbde-3440" name="Blessed Spawning of Tzunki" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="def6-93d2-0120-ac2d" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8b78-f07c-3549-137a" name="Blessed Spawning of Tzunki" hidden="false" targetId="5f01-41cc-e023-f156" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b137-83d0-7ae9-e933" name="Blessed Spawning of Tepok" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ba2-7436-47e7-6888" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="6cae-39f7-c5fb-a1fe" name="Blessed Spawning of Tepok" hidden="false" targetId="7905-b11b-6774-21f8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f5fc-bb04-9624-d599" name="Blessed Spawning of Tlazcotl" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c010-16b7-b108-6c8f" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0f32-0bd6-834e-669d" name="Blessed Spawning of Tlazcotl" hidden="false" targetId="8fdc-898d-f2e1-6477" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -7582,22 +8201,6 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9246-22af-e1f2-8376" name="Plaque of Dominion" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="308c-b117-41fd-bef4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a409-8e0c-3863-9609" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="badc-b180-c360-baec" name="Plaque of Dominion" publicationId="e3da-3848-ff08-a482" page="32" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">At the start of each of their turns, all enemy Wizards within 18&quot; and with Line of Sight to the Plaque of Dominion must take a Stupidity test.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="52ef-40e9-b337-26f1" name="Sun Standard of Chotec" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8100,203 +8703,32 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afa5-8721-4534-614e" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="3d4c-11f1-2d2b-3514" name="Blessed Spawning of Sotek" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20f8-0d41-f4b6-0424" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="7512-edb0-d60f-099c" name="Blessed Spawning of Sotek" hidden="false" targetId="ab7a-0c29-8fb9-5745" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4772-9d3e-9daa-9e60" name="Blessed Spawning of Itzl" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d07d-cc8d-1e4e-0efb" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="f28b-74fe-2361-7fb6" name="Blessed Spawning of Itzl" hidden="false" targetId="a4d9-6148-8784-f958" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0013-e660-35a7-a923" name="Blessed Spawning of Quetzl" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8054-d441-75ee-2dab" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6d19-6af2-546d-11ef" name="Blessed Spawning of Quetzl" hidden="false" targetId="a1ba-7314-fdae-2346" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="83ba-6844-fb42-06ac" name="Blessed Spawning of Tlazcotl" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63e4-cf91-f21f-2020" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="f4bc-dc0b-694c-3333" name="Blessed Spawning of Tlazcotl" hidden="false" targetId="8fdc-898d-f2e1-6477" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3b6e-780c-b229-0c38" name="Blessed Spawning of Chotec" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e17-2bce-a8c2-4180" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e55c-ddbf-4ca7-dc10" name="Blessed Spawning of Chotec" hidden="false" targetId="0763-791a-17ce-0296" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4731-9d05-917c-755b" name="Blessed Spawning of Tepok" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fdf-32f7-9b82-01d5" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="9828-3783-f6ae-71d7" name="Blessed Spawning of Tepok" hidden="false" targetId="7905-b11b-6774-21f8" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0704-8f75-243a-e2e5" name="Blessed Spawning of Huanchi" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca2e-00e2-94aa-ecf0" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6469-04a4-2ae1-dd28" name="Blessed Spawning of Huanchi" hidden="false" targetId="b35b-2c5b-0352-a97e" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a0c8-33f5-1da1-f57c" name="Blessed Spawning of Tzunki" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba5d-7cb4-1070-5695" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6cb4-808f-6513-73af" name="Blessed Spawning of Tzunki" hidden="false" targetId="5f01-41cc-e023-f156" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8ba3-a260-f44e-ff02" name="Blessed Mark of the Old Ones" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a3bb-e8a8-32c8-1f05" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd01-defd-d17b-1e29" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="7cb1-b176-e48d-b317" name="Blessed Mark of the Old Ones" hidden="false" targetId="65ad-3d14-63b1-c40e" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink id="911a-c6d6-e505-0d47" name="Blessed Mark of the Old Ones" hidden="false" collective="false" import="true" targetId="727a-b7f7-003c-258e" type="selectionEntry"/>
+        <entryLink id="0f2e-be98-95ad-b91e" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" targetId="f645-1868-d015-102f" type="selectionEntry"/>
+        <entryLink id="91f3-1580-947b-58b3" name="Blessed Spawning of Huanchi" hidden="false" collective="false" import="true" targetId="11d0-bb3c-ae7f-1258" type="selectionEntry"/>
+        <entryLink id="0ae3-bc6f-6409-16ab" name="Blessed Spawning of Itzl" hidden="false" collective="false" import="true" targetId="d07e-34f2-ab4f-d987" type="selectionEntry"/>
+        <entryLink id="28a2-8cfc-00a9-f84c" name="Blessed Spawning of Quetzl" hidden="false" collective="false" import="true" targetId="c50c-7b17-febc-e8f6" type="selectionEntry"/>
+        <entryLink id="1598-b660-60f1-3bfa" name="Blessed Spawning of Sotek" hidden="false" collective="false" import="true" targetId="627f-eb93-ad71-c35e" type="selectionEntry"/>
+        <entryLink id="77f1-bd53-54fc-b06f" name="Blessed Spawning of Tepok" hidden="false" collective="false" import="true" targetId="b137-83d0-7ae9-e933" type="selectionEntry"/>
+        <entryLink id="f3b6-1d6e-f44d-b475" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" targetId="f5fc-bb04-9624-d599" type="selectionEntry"/>
+        <entryLink id="89b4-e6cc-deed-515e" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" targetId="83ea-d678-dbde-3440" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="Blessed Spawnings" name="Blessed Spawnings (Units 1 Blessing)" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4893-310d-3e02-d5c5" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="36bd-79e9-2582-e40e" name="Blessed Spawning of Sotek" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25a6-9167-b95e-2cf8" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="158f-34e6-b7a1-62f4" name="Blessed Spawning of Sotek" hidden="false" targetId="ab7a-0c29-8fb9-5745" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="83cf-1ff7-2c40-3a9d" name="Blessed Spawning of Itzl" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68d7-e8d8-bfeb-6367" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="375f-5534-9d72-45d3" name="Blessed Spawning of Itzl" hidden="false" targetId="a4d9-6148-8784-f958" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2d1d-aae2-f5a2-cf06" name="Blessed Spawning of Quetzl" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa9f-a992-0d8d-f96c" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="d780-aed9-9cd8-913d" name="Blessed Spawning of Quetzl" hidden="false" targetId="a1ba-7314-fdae-2346" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7f23-ea18-a09a-8206" name="Blessed Spawning of Tlazcotl" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1e4-2785-68f8-4bbf" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="a702-4947-49c4-2efa" name="Blessed Spawning of Tlazcotl" hidden="false" targetId="8fdc-898d-f2e1-6477" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8272-ac2c-951f-3e26" name="Blessed Spawning of Chotec" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6859-cb22-d45d-075e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="7a5f-ebe0-493e-0cbf" name="Blessed Spawning of Chotec" hidden="false" targetId="0763-791a-17ce-0296" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="78f3-09a7-d914-3911" name="Blessed Spawning of Tepok" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="168f-b388-e0ee-19b5" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="9782-cd93-2224-522d" name="Blessed Spawning of Tepok" hidden="false" targetId="7905-b11b-6774-21f8" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2ee0-0e7d-50d7-1d77" name="Blessed Spawning of Huanchi" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb26-91ee-953f-5719" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="98a9-d7d6-aa50-d9b3" name="Blessed Spawning of Huanchi" hidden="false" targetId="b35b-2c5b-0352-a97e" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a758-b67d-6a38-8307" name="Blessed Spawning of Tzunki" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8090-d026-75fc-7064" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="765e-867f-d78f-d052" name="Blessed Spawning of Tzunki" hidden="false" targetId="5f01-41cc-e023-f156" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b66f-d6ca-da29-4132" name="Blessed Spawning of Huanchi" hidden="false" collective="false" import="true" targetId="7da0-5721-11a5-e468" type="selectionEntry"/>
+        <entryLink id="2d5e-dd50-3033-4495" name="Blessed Spawning of Itzl" hidden="false" collective="false" import="true" targetId="2b32-bf4d-1823-d6c6" type="selectionEntry"/>
+        <entryLink id="5ca3-4936-a490-be85" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" targetId="2a5a-1a20-a8d8-ee7f" type="selectionEntry"/>
+        <entryLink id="969b-d418-7951-5c7f" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" targetId="bd5d-e5cb-149e-43cf" type="selectionEntry"/>
+        <entryLink id="3f0a-e931-a399-93fe" name="Blessed Spawning of Tepok" hidden="false" collective="false" import="true" targetId="47a5-242e-5cf6-d752" type="selectionEntry"/>
+        <entryLink id="bbde-10e2-e437-d972" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" targetId="7739-4475-8ba9-eac8" type="selectionEntry"/>
+        <entryLink id="2386-bcb4-8477-c434" name="Blessed Spawning of Sotek" hidden="false" collective="false" import="true" targetId="98df-8d6f-e680-7a5b" type="selectionEntry"/>
+        <entryLink id="cef4-7327-3ae1-65e1" name="Blessed Spawning of Quetzl" hidden="false" collective="false" import="true" targetId="9858-564b-e946-f2a6" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8aeb-fb19-9b6f-0566" name="Talismans" hidden="false" collective="false" import="true">
       <constraints>
@@ -8376,203 +8808,32 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25c6-a169-987f-b1a5" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="3780-b8b6-574f-0331" name="Blessed Spawning of Sotek" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd14-aad4-a2f8-fe09" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="48c3-c3fb-2d68-54fd" name="Blessed Spawning of Sotek" hidden="false" targetId="ab7a-0c29-8fb9-5745" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b20d-8441-f40d-7d5a" name="Blessed Spawning of Itzl" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1426-211b-e37c-2096" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e339-c79d-0783-cb10" name="Blessed Spawning of Itzl" hidden="false" targetId="a4d9-6148-8784-f958" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4977-7319-4467-d647" name="Blessed Spawning of Quetzl" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2ab-21f6-7630-c09f" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4995-b4c8-b43c-fa8d" name="Blessed Spawning of Quetzl" hidden="false" targetId="a1ba-7314-fdae-2346" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f39b-3af3-aa31-542d" name="Blessed Spawning of Tlazcotl" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7c6-99a0-9015-c56f" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="0411-a6fb-61e9-1a6a" name="Blessed Spawning of Tlazcotl" hidden="false" targetId="8fdc-898d-f2e1-6477" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2150-2999-e819-e352" name="Blessed Spawning of Chotec" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="319a-e3fa-cd9b-dff2" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="487e-7b76-0a8e-6838" name="Blessed Spawning of Chotec" hidden="false" targetId="0763-791a-17ce-0296" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="264e-c1ca-fbaf-31e5" name="Blessed Spawning of Tepok" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6267-a64c-833d-5dca" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="81a9-e0a9-f7f1-38a4" name="Blessed Spawning of Tepok" hidden="false" targetId="7905-b11b-6774-21f8" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e12c-a02a-a698-53ad" name="Blessed Spawning of Huanchi" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eefc-2151-7a61-facd" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="3679-c532-7c4a-00ec" name="Blessed Spawning of Huanchi" hidden="false" targetId="b35b-2c5b-0352-a97e" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c16c-fb87-4265-f9fa" name="Blessed Spawning of Tzunki" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d47a-2f8c-e12c-5485" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="1bd7-b13e-436b-1dcd" name="Blessed Spawning of Tzunki" hidden="false" targetId="5f01-41cc-e023-f156" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="95a2-ddf1-04cb-4a5f" name="Blessed Mark of the Old Ones" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7104-3db6-9855-0d53" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5de2-e3d6-fafa-7938" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="76fc-b110-cb39-69cd" name="Blessed Mark of the Old Ones" hidden="false" targetId="65ad-3d14-63b1-c40e" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0f23-6c50-a8c3-3a7b" name="Blessed Mark of the Old Ones" hidden="false" collective="false" import="true" targetId="727a-b7f7-003c-258e" type="selectionEntry"/>
+        <entryLink id="f4a3-5ed1-8f7e-b9fe" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" targetId="f645-1868-d015-102f" type="selectionEntry"/>
+        <entryLink id="f3f5-9f88-bdbe-e425" name="Blessed Spawning of Huanchi" hidden="false" collective="false" import="true" targetId="11d0-bb3c-ae7f-1258" type="selectionEntry"/>
+        <entryLink id="2861-bc75-9de7-08f6" name="Blessed Spawning of Itzl" hidden="false" collective="false" import="true" targetId="d07e-34f2-ab4f-d987" type="selectionEntry"/>
+        <entryLink id="9866-b7a5-445d-c7eb" name="Blessed Spawning of Quetzl" hidden="false" collective="false" import="true" targetId="c50c-7b17-febc-e8f6" type="selectionEntry"/>
+        <entryLink id="2f28-2846-0ee7-40fd" name="Blessed Spawning of Sotek" hidden="false" collective="false" import="true" targetId="627f-eb93-ad71-c35e" type="selectionEntry"/>
+        <entryLink id="fbe7-1368-bd5c-fd68" name="Blessed Spawning of Tepok" hidden="false" collective="false" import="true" targetId="b137-83d0-7ae9-e933" type="selectionEntry"/>
+        <entryLink id="1e35-4c24-73a1-4721" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" targetId="f5fc-bb04-9624-d599" type="selectionEntry"/>
+        <entryLink id="2f52-51c7-35d2-b843" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" targetId="83ea-d678-dbde-3440" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="59cf-94e4-d520-853b" name="Blessed Spawnings (Units 2 Blessings)" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4c2-90c3-4d55-5bad" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="7fa9-4fea-2900-9c08" name="Blessed Spawning of Sotek" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eaa4-56c0-6baa-c71f" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e9cb-b1c1-72e9-7375" name="Blessed Spawning of Sotek" hidden="false" targetId="ab7a-0c29-8fb9-5745" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2d68-7468-c141-b837" name="Blessed Spawning of Itzl" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eed8-66da-add2-4a62" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4466-6dfe-b25d-319a" name="Blessed Spawning of Itzl" hidden="false" targetId="a4d9-6148-8784-f958" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bca2-6c1f-e2cf-683b" name="Blessed Spawning of Quetzl" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a44-35da-bea4-9cd4" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e848-482c-1bb4-9c00" name="Blessed Spawning of Quetzl" hidden="false" targetId="a1ba-7314-fdae-2346" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1323-eb4d-9d49-f5c4" name="Blessed Spawning of Tlazcotl" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3dc-8aab-9ff1-1a26" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6ceb-276c-fcec-2368" name="Blessed Spawning of Tlazcotl" hidden="false" targetId="8fdc-898d-f2e1-6477" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5ac7-c024-ad3e-99b0" name="Blessed Spawning of Chotec" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c09-60a8-6ed0-ca0d" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="aa5b-c7d0-cbbd-821e" name="Blessed Spawning of Chotec" hidden="false" targetId="0763-791a-17ce-0296" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6f1d-6169-9758-a80e" name="Blessed Spawning of Tepok" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2845-e029-53b3-d4fe" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="c48c-68fd-57e0-bba4" name="Blessed Spawning of Tepok" hidden="false" targetId="7905-b11b-6774-21f8" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2cd0-ce52-b8f8-3f4e" name="Blessed Spawning of Huanchi" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4e3-51a5-4852-0588" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e32c-3b97-b6c1-67f3" name="Blessed Spawning of Huanchi" hidden="false" targetId="b35b-2c5b-0352-a97e" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e580-018f-8125-b94f" name="Blessed Spawning of Tzunki" page="" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="362f-c392-8469-21f0" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="bef2-7ff5-68a3-11c9" name="Blessed Spawning of Tzunki" hidden="false" targetId="5f01-41cc-e023-f156" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink id="91ff-d0ac-8099-3518" name="Blessed Spawning of Huanchi" hidden="false" collective="false" import="true" targetId="7da0-5721-11a5-e468" type="selectionEntry"/>
+        <entryLink id="4b25-0380-462d-74a3" name="Blessed Spawning of Itzl" hidden="false" collective="false" import="true" targetId="2b32-bf4d-1823-d6c6" type="selectionEntry"/>
+        <entryLink id="8600-e901-c559-ff26" name="Blessed Spawning of Quetzl" hidden="false" collective="false" import="true" targetId="9858-564b-e946-f2a6" type="selectionEntry"/>
+        <entryLink id="9001-d940-dba2-1124" name="Blessed Spawning of Sotek" hidden="false" collective="false" import="true" targetId="98df-8d6f-e680-7a5b" type="selectionEntry"/>
+        <entryLink id="0810-cc5d-6ad2-d365" name="Blessed Spawning of Tepok" hidden="false" collective="false" import="true" targetId="47a5-242e-5cf6-d752" type="selectionEntry"/>
+        <entryLink id="3f3a-475c-9fed-977f" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" targetId="bd5d-e5cb-149e-43cf" type="selectionEntry"/>
+        <entryLink id="a168-344e-8f55-3b45" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" targetId="2a5a-1a20-a8d8-ee7f" type="selectionEntry"/>
+        <entryLink id="ab5e-86f0-31a7-6d15" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" targetId="7739-4475-8ba9-eac8" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

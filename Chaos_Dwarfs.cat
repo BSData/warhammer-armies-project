@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="24" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="25" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="e151-a589-4fd4-2c1e" name="Animosity Chart">
@@ -85,6 +85,7 @@
             <entryLink id="b7ac-7265-2a55-4b98" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="0a68-0ce5-2f38-211f" type="selectionEntryGroup"/>
             <entryLink id="9e15-48d0-f98c-de11" name="Magic Armour" hidden="false" collective="false" import="true" targetId="c4f4-02ae-84b3-9658" type="selectionEntryGroup"/>
             <entryLink id="8e59-3623-29e5-2d4e" name="Talismans" hidden="false" collective="false" import="true" targetId="213e-2acc-1db3-ac76" type="selectionEntryGroup"/>
+            <entryLink id="ebf2-d416-82b1-4255" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -233,6 +234,7 @@
                 <infoLink id="082e-9140-a6b1-a967" name="Contempt" hidden="false" targetId="c72b-b137-706f-ad14" type="rule"/>
                 <infoLink id="1f3e-ae39-96de-eb70" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
                 <infoLink id="b2a9-4b32-2ad6-1b3a" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+                <infoLink id="4f27-ec8a-ebdd-d125" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -313,7 +315,7 @@
                 <rule id="ac31-00f1-0d37-d26a" name="Blood of Hashut" publicationId="faf5-2026-3cea-6e96" page="53" hidden="false">
                   <description>One use only. The Blood of Hashut can be used in close combat instead of attacking normally that turn. It targets a single model in base contact. The attack works on a 2+. If a 1 is rolled, the Blood of Hashut is wasted.
 
-If the attack is successful, then D6 automatic hits are inflicted on the target. The To Wound score of these hits is always equal to the unmodified armour save of the target. Attacks from the Blood of Hashut have Ignores Armour Saves, Flaming Attacks and Magical Attacks.</description>
+If the attack is successful, then D6 automatic hits are inflicted on the target. The To Wound score of these hits is always equal to the unmodified close combat armour save of the target (excluding Natural Armour). Attacks from the Blood of Hashut have Ignores Armour Saves, Flaming Attacks and Magical Attacks.</description>
                 </rule>
               </rules>
               <costs>
@@ -972,6 +974,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             <entryLink id="f095-0976-2aed-f5c6" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="0a68-0ce5-2f38-211f" type="selectionEntryGroup"/>
             <entryLink id="8a7d-905c-e55d-50a9" name="Magic Armour" hidden="false" collective="false" import="true" targetId="c4f4-02ae-84b3-9658" type="selectionEntryGroup"/>
             <entryLink id="e202-8aad-50b2-28f0" name="Talismans" hidden="false" collective="false" import="true" targetId="213e-2acc-1db3-ac76" type="selectionEntryGroup"/>
+            <entryLink id="bc6e-3500-8d9d-1760" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1035,7 +1038,6 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
           <infoLinks>
             <infoLink id="6dd1-a633-5816-e6c6" name="Ward Save (4+)" hidden="false" targetId="d45b-0036-b5ef-951b" type="rule"/>
             <infoLink id="e489-83d0-8a29-4f96" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="253e-2333-d34e-b194" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="231b-2144-59c8-5793" name="Altar Guard" hidden="false" collective="false" import="true" type="model">
@@ -1617,19 +1619,6 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             <infoLink id="fa2a-947d-dfd7-c66a" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="80d7-f745-c486-d8ac" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="720b-24a0-def2-434d" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0246-34c0-63fb-0c93" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="174e-8718-da24-ff58" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="a0ce-7122-ffea-15e1" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="cfd0-fa2d-543f-24d2">
               <constraints>
@@ -1637,15 +1626,16 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="904a-9eab-1ec6-32b1" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="cfd0-fa2d-543f-24d2" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="cfd0-fa2d-543f-24d2" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f74-0185-64b8-6c95" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="39a9-31c0-172b-2cee" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="f994-7d20-3cec-dbb3" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9ad5-5f9d-18a5-503d" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -1675,7 +1665,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <infoLink id="a6c1-775d-8a71-087e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b5aa-7825-f91d-7f4c" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -1693,7 +1683,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="8.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1880,7 +1870,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Stone Thrower</characteristic>
                     <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
                     <characteristic name="Strength" typeId="6ca0-d074-628f-e276">3(6)</characteristic>
-                    <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Armour Piercing (1). Move or Fire. Multiple Wounds (D3). Slow to Fire.</characteristic>
+                    <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Armour Piercing (1). Move or Fire. Multiple Wounds (D3). Slow to Fire. If the result is a Misfire, consult the Blackpowder Misfire chart.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2101,22 +2091,14 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
     </selectionEntry>
     <selectionEntry id="96c5-4531-d337-8b39" name="Infernal Guard" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="f969-ce0b-0e6b-f63d" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3ed-d678-a7b1-bf09" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6e8-fdc0-4909-5aa6" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c5-4531-d337-8b39" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f969-ce0b-0e6b-f63d" type="max"/>
-      </constraints>
       <categoryLinks>
-        <categoryLink id="42b2-8a28-c2c1-fe69" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+        <categoryLink id="692e-dfd7-a728-e013" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="25eb-0889-ef32-8aa9" name="Infernal Guard" hidden="false" collective="false" import="true" type="model">
@@ -2172,17 +2154,6 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="4.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a0df-7a40-30c6-7f6c" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1e3-de99-706a-5792" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="4000-33fb-da77-bbce" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3056,7 +3027,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
@@ -3081,27 +3052,21 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7e7c-ded1-33cd-9924" name="Granite Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="9c1d-539f-db4b-3a74" name="Blackshard Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a888-a30b-9190-f6a5" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="797d-6a74-8614-5896" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0895-55b1-4508-dd55" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e0a-9678-a13c-230e" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="e36f-e539-3cdf-bb5d" name="Granite Armour" publicationId="faf5-2026-3cea-6e96" page="60" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
-                  <characteristics>
-                    <characteristic name="Combat" typeId="168d-1cc2-66f3-e766"/>
-                    <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca"/>
-                    <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4">Full plate armour. Granite Armour gives the wearer +1 Armour save, for a total of a 2+ save.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="0ae5-9e10-edf8-7efa" name="Blackshard Armour" hidden="false" targetId="69bf-bb66-c944-b0c4" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="16.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3158,7 +3123,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
@@ -3265,7 +3230,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
           </constraints>
           <rules>
             <rule id="76ae-0f55-e061-807f" name=" Petrified Sorcerer" publicationId="faf5-2026-3cea-6e96" page="61" hidden="false">
-              <description>The Petrified Sorcerer should be mounted on a 40x40mm base and has Unit Strength 4. It may not leave its unit for the duration of the game, and is always placed in the second rank of the unit, as centrally as possible. While there are rank and file models left in the unit (except the Command Group), always remove one in preference to the Petrified Sorcerer taking a wound. Only when the rest of the unit has been killed does the Petrified Sorcerer start taking wounds, even in close combat. A unit carrying a Petrified Sorcerer gains +1 to their Combat Resolution Bonus, Fear and Magic Resistance (2).</description>
+              <description>The Petrified Sorcerer should be mounted on a 40x40mm base, has Unit Strength 4 and may make two supporting attacks. It may not leave its unit for the duration of the game, and is always placed in the second rank of the unit, as centrally as possible. While there are rank and file models left in the unit (except the Command Group), always remove one in preference to the Petrified Sorcerer taking a wound. Only when the rest of the unit has been killed does the Petrified Sorcerer start taking wounds, even in close combat. A unit carrying a Petrified Sorcerer gains +1 to their Combat Resolution Bonus, Fear and Magic Resistance (2).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -3507,6 +3472,19 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             <infoLink id="67e3-a1dd-fe9a-febd" name="Bull Centaur" hidden="false" targetId="243a-dd5d-7fe9-479d" type="profile"/>
             <infoLink id="a737-b8a8-2294-2e45" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="0594-85f2-671e-822d" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4771-8297-6ff5-be2c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="71f0-dbb7-1158-a74a" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="f0e5-5267-b3f6-8bd1" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e759-5fb2-327f-76a4">
               <constraints>
@@ -3514,13 +3492,12 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="befd-a423-c64e-0f63" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e759-5fb2-327f-76a4" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="e759-5fb2-327f-76a4" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2548-f6bf-5aa6-3b85" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="b77f-9cfc-e8da-ca13" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="0c40-e070-cd78-8e2b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3534,7 +3511,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <infoLink id="3aa7-7a8d-edfe-dc39" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="4.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e594-14a4-e770-45e2" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
@@ -3545,7 +3522,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <infoLink id="83ce-51d9-ae5f-acda" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3582,7 +3559,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="18.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4286,7 +4263,7 @@ In each round of close combat after the first, the Iron Daemon may make a Stomp 
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="6647-986e-b9e0-48dd" name="Impact Hits (D6+2)" hidden="false" targetId="d078-4dd8-8ffb-876a" type="rule"/>
+        <infoLink id="6647-986e-b9e0-48dd" name="Impact Hits (D6+1)" hidden="false" targetId="a043-3e3c-9f8a-3661" type="rule"/>
         <infoLink id="224f-c56f-3359-ca0a" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="1662-db8e-af66-54d0" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
       </infoLinks>
@@ -4374,7 +4351,7 @@ In each round of close combat after the first, the Iron Daemon may make a Stomp 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dbd1-da2d-586d-db97" name="Magma Cannon" hidden="false" collective="false" import="true" type="unit">
@@ -4772,7 +4749,7 @@ The Black Powder Misfire chart is used when the weapon misfires, but all rolls o
       </profiles>
       <rules>
         <rule id="0ab8-6294-9333-a801" name="Caged Fury" publicationId="faf5-2026-3cea-6e96" page="78" hidden="false">
-          <description>At the beginning of your turn, if the Hellcannon is not in combat, take a LD test. If the test is failed, pivot the Hellcannon to face the closest enemy unit. It is then subject to Random Movement (3D6) until the beginning of the next turn, except that it can only move forward. If the Hellcannon would get destroyed as a result of it being Unstable, treat this as rolling a 1 on the Hellcannon misfire table.</description>
+          <description>At the beginning of your turn, if the Hellcannon is not in combat, take a LD test. If the test is failed, the Hellcannon is then subject to Random Movement (3D6) until the beginning of the next turn, and must move towards the nearest enemy unit. If the Hellcannon would get destroyed as a result of it being Unstable, treat this as rolling a 1 on the misfire table.</description>
         </rule>
         <rule id="90e6-457f-192e-05b5" name="Spew Ichor" publicationId="faf5-2026-3cea-6e96" page="78" hidden="false">
           <description>The Hellcannon has a S 5 Breath Weapon. Any unit that suffers one or more casualties from Spew Ichor must take a Panic test with a -1 penalty to their LD.</description>
@@ -4907,6 +4884,7 @@ The crew of the Juggernaut do not suffer penalties for moving and shooting. The 
         <infoLink id="cb9b-949b-e1ae-a462" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
         <infoLink id="59ca-03f8-2a01-abab" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="03f4-365b-9dd6-7950" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+        <infoLink id="75df-0985-31b6-c6f4" name="Large Target (10)" hidden="false" targetId="43e0-4e6d-8776-0252" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ce63-3356-0af5-47ed" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5025,6 +5003,20 @@ The crew of the Juggernaut do not suffer penalties for moving and shooting. The 
       <categoryLinks>
         <categoryLink id="870d-5a0d-08f1-4dc8" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="adc5-bd45-b735-2936" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5be9-1ced-9298-cdac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c05-547d-6623-940e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b169-b0ac-ff72-adf4" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="15e6-0603-7c69-9df9" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
@@ -5126,7 +5118,7 @@ The crew of the Juggernaut do not suffer penalties for moving and shooting. The 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="230.0"/>
+        <cost name="pts" typeId="points" value="225.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6b9a-60eb-e373-1c9b" name="Siege Giant" hidden="false" collective="false" import="true" type="model">
@@ -5434,16 +5426,16 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
               <profiles>
                 <profile id="44b8-23c1-8ace-df61" name="Shar&apos;tor the Executioner" publicationId="faf5-2026-3cea-6e96" page="93" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Cavalry (Special Character)</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="afcd-683d-6b2d-f33c" name="Prayers of Malice" publicationId="faf5-2026-3cea-6e96" page="93" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -5518,7 +5510,7 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="320.0"/>
+                <cost name="pts" typeId="points" value="255.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7bc7-50c8-bcdc-c089" name="Drazhoath the Ashen" hidden="false" collective="false" import="true" type="model">
@@ -5921,9 +5913,10 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
                   </constraints>
                   <infoLinks>
                     <infoLink id="a5a4-df97-9fac-d0ed" name="Palanquin" hidden="false" targetId="dd72-253a-c3f6-f685" type="profile"/>
-                    <infoLink id="b87a-5e55-99ce-40c7" name="Contempt" hidden="false" targetId="c72b-b137-706f-ad14" type="rule"/>
+                    <infoLink id="b87a-5e55-99ce-40c7" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                     <infoLink id="a65f-3cd2-71f4-1c25" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
                     <infoLink id="51e6-09ea-90cd-a0d0" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+                    <infoLink id="e03d-0aa4-1058-7812" name="Contempt" hidden="false" targetId="c72b-b137-706f-ad14" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="35.0"/>
@@ -6233,7 +6226,7 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
                       <characteristics>
                         <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                         <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Granite Armour. This armour gives Rykarth +1 to his armour save, for a total save of 1+.</characteristic>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy Armour. This armour gives Rykarth +3 to his armour save, for a total save of 1+.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6494,9 +6487,6 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee52-e5a3-acf4-79a7" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="9902-d51c-9c40-9fe7" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -6554,17 +6544,6 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="4.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d663-2be3-42e2-34be" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0634-efa4-a83e-dd08" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="c12d-6836-3990-642b" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -6633,7 +6612,7 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b3d1-86b7-2fb6-ae50" name="Infernal Ironsworn" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b3d1-86b7-2fb6-ae50" name="Infernal Ironsworn (Drazhoath as General)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -6645,33 +6624,18 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e29a-759c-34ed-a497" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="b81d-e1cc-f88c-6166" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+        <categoryLink id="97be-9b59-3c09-31e3" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b18a-6e63-20b4-132c" name="Infernal Ironsworn" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63f8-aa3a-979c-4f0f" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="bc30-8766-0fbc-8f6e" name="Infernal Ironsworn" publicationId="faf5-2026-3cea-6e96" page="59" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="e5ef-4d4f-b6bb-f1fa" name="Contempt" hidden="false" targetId="c72b-b137-706f-ad14" type="rule"/>
             <infoLink id="5f66-abaa-23e8-63b1" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="98f6-b34f-68d1-2f4a" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+            <infoLink id="351d-0477-0d63-5ddf" name="Infernal Ironsworn" hidden="false" targetId="ee34-21f0-4546-330a" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="08ce-12be-5ca1-5d50" name="Blackshard Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -6686,32 +6650,26 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fc31-90ee-74f7-06e1" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="c8aa-0845-59da-5cc1" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9be-a2a4-4adf-e6a8" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61ba-4658-70e4-48b7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbd6-dc08-fb81-0d71" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07d2-8c6f-2ab4-edc5" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="87c3-155e-6672-1b8c" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                <infoLink id="7e95-d75f-f03f-86a4" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c8aa-0845-59da-5cc1" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="afb1-826f-2996-5f9d" name="Ensorcelled Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbd6-dc08-fb81-0d71" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07d2-8c6f-2ab4-edc5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c98c-f8fc-f6ab-80b7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37a3-f283-3320-6275" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="ecee-abe2-a53a-83f8" name="Ensorcelled Hand Weapon" publicationId="faf5-2026-3cea-6e96" page="59" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
-                    <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+1</characteristic>
-                    <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Magical Attacks. Ensorcelled hand weapons follow the rules for hand weapons in all respects.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="10d3-3139-d46b-4659" name="Ensorcelled Hand Weapon" hidden="false" targetId="9ec6-da9f-a66d-9959" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -6765,24 +6723,135 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b6f-d6c1-4ac1-c0ac" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="80b8-0b19-ed3e-00ab" name="Ironsworn Deathmask" publicationId="faf5-2026-3cea-6e96" page="59" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="a7e5-b32e-7e20-c3ac" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="9663-88e3-c7a6-a337" name="Ironsworn Deathmask" hidden="false" targetId="8275-3861-8ecf-531a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e73-e2fc-9155-6e81" name="Infernal Ironsworn" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b3d1-86b7-2fb6-ae50" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c83d-700c-645e-ac31" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5700-8a2e-8e69-e742" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4ad8-bb7c-92f7-274c" name="Infernal Ironsworn" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6695-70cd-14e2-cefd" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9437-8206-d94f-3dc7" name="Contempt" hidden="false" targetId="c72b-b137-706f-ad14" type="rule"/>
+            <infoLink id="b916-335d-4d62-6aff" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+            <infoLink id="d202-4cae-93dc-9c1b" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+            <infoLink id="1ddf-f0a0-331e-4730" name="Infernal Ironsworn" hidden="false" targetId="ee34-21f0-4546-330a" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="06f4-c8f7-f332-9f2b" name="Blackshard Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61d6-f7d9-a446-9938" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74ce-6fd0-3d20-7ab0" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1a84-6d59-9f8b-da83" name="Blackshard Armour" hidden="false" targetId="69bf-bb66-c944-b0c4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="01d9-d6da-335a-2c33" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca5b-b164-e0e2-1de2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c0b-b3cb-06e8-4a62" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8171-4488-2f1e-7c67" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f73d-f431-2cd4-44a2" name="Ensorcelled Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="64c6-4bb6-3c84-3a9d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0725-addd-bdd8-7316" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fd47-1c8e-65ab-975e" name="Ensorcelled Hand Weapon" hidden="false" targetId="9ec6-da9f-a66d-9959" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="16.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="40f7-16a2-c7f4-6b8e" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="4f32-08ab-eb42-4de0" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43d1-244b-1e46-6c0a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8190-f4ec-7ca6-b4d0" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="826d-efed-c073-4fcb" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cdf-2801-0a43-0c85" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2bae-79e9-e887-7020" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7f27-21b4-e03d-fea1" name="Magic Standards" hidden="false" collective="false" import="true" targetId="39ed-c864-089d-5902" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="db09-f653-2b22-065d" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a314-3abe-fae1-89ad" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2cdb-5b91-db48-20b6" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3ece-431b-5fc3-938c" name="Ironsworn Deathmask" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee2d-875a-1036-ffe9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2eaf-532e-07a0-25d1" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
+                <infoLink id="6280-f079-4106-bff2" name="Ironsworn Deathmask" hidden="false" targetId="8275-3861-8ecf-531a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -7290,7 +7359,7 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. This armour gives the wearer +1 to his armour save and Magic Resistance (2).</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. This armour gives the wearer +2 to their armour save and Magic Resistance (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7404,7 +7473,7 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="43c1-8317-7306-2746" name="Animosity" publicationId="faf5-2026-3cea-6e96" page="52" hidden="false">
-      <description>Units with this rule must roll a D6 and consult the Animosity Chart at the start of the turn, unless they are already in combat, fleeing, has less than Unit Strength 5, or a non-fleeing unit with Contempt is within 6&quot; of them.</description>
+      <description>Units with this rule must roll a D6 and consult the animosity chart in the Charge sub-phase after all other charges have been declared, unless they have declared a charge, are already in combat, fleeing, or have less than 5 models.</description>
     </rule>
     <rule id="c72b-b137-706f-ad14" name="Contempt" publicationId="faf5-2026-3cea-6e96" page="52" hidden="false">
       <description>Units with this rule treat units without it as Expendable.</description>
@@ -7466,9 +7535,9 @@ A Deamonsmith that is within 3&quot; of a war machine is allowed to take a &quot
   <sharedProfiles>
     <profile id="69bf-bb66-c944-b0c4" name="Blackshard Armour" publicationId="faf5-2026-3cea-6e96" page="53" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
       <characteristics>
-        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766"/>
-        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca"/>
-        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4">Full plate armour. Blackshard armour confers Ward save (5+) against non-physical Flaming Attacks.</characteristic>
+        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">3+</characteristic>
+        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">3+</characteristic>
+        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4">Immunity (Flaming Attacks)</characteristic>
       </characteristics>
     </profile>
     <profile id="9a13-9d7e-b022-55eb" name="Naptha Bombs" publicationId="faf5-2026-3cea-6e96" page="53" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -7589,8 +7658,7 @@ A Deamonsmith that is within 3&quot; of a war machine is allowed to take a &quot
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit suffers -1 To Hit in close combat and -2 To Hit with missile attacks until the start of the caster&apos;s next Magic phase. In addition, the target unit may only use its basic move and may not charge, march or Fly. The unit also treats all terrain (except impassable terrain) as dangerous terrain while the spell&apos;s effect lasts. Wizards cannot cast magic spells (except their own unit) while
-under the effect of this spell. Any unit under the effect of the spell is treated as being Flammable.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit suffers -1 To Hit in close combat and -2 To Hit with missile attacks until the start of the caster&apos;s next Magic phase. In addition, the target unit may not march or Fly. The unit also treats all terrain (except impassable terrain) as dangerous terrain while the spell&apos;s effect lasts.</characteristic>
       </characteristics>
     </profile>
     <profile id="9762-4930-b108-b976" name="Breath of Hatred" publicationId="faf5-2026-3cea-6e96" page="97" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -7642,9 +7710,9 @@ under the effect of this spell. Any unit under the effect of the spell is treate
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">13+/16+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">13+/17+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Extend a straight line within the caster&apos;s front arc and directly away from their base. Each model in the way must take an I test or suffer a S 6 hit with Flaming Attacks Multiple Wounds (D3). Any unit suffering casualties from this spell must immediately take a Panic test.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Extend a straight line within the caster&apos;s front arc and directly away from their base. Each model in the way (determined using the line template) must take an I test or suffer a S 6 hit with Flaming Attacks and Multiple Wounds (D3). Any unit suffering casualties from this spell must immediately take a Panic test.</characteristic>
       </characteristics>
     </profile>
     <profile id="7b5f-9d8a-0bd9-da38" name="Darkforged Weapon" publicationId="faf5-2026-3cea-6e96" page="53" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
@@ -7743,6 +7811,41 @@ under the effect of this spell. Any unit under the effect of the spell is treate
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9ec6-da9f-a66d-9959" name="Ensorcelled Hand Weapon" publicationId="faf5-2026-3cea-6e96" page="59" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+1</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Magical Attacks. Ensorcelled hand weapons follow the rules for hand weapons in all respects.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee34-21f0-4546-330a" name="Infernal Ironsworn" publicationId="faf5-2026-3cea-6e96" page="59" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8275-3861-8ecf-531a" name="Ironsworn Deathmask" publicationId="faf5-2026-3cea-6e96" page="59" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>

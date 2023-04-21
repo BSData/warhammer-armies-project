@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="84ba-6417-bc80-b286" name="High Elves" revision="24" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="d410-463a-8132-795f" name="Attuned to Magic table">
@@ -131,7 +131,7 @@
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
@@ -714,6 +714,7 @@
             <entryLink id="f7d1-f7c9-1c22-505f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="12f5-c48f-1a21-852f" type="selectionEntryGroup"/>
             <entryLink id="3e15-3d9f-7181-f316" name="Talismans" hidden="false" collective="false" import="true" targetId="e3e7-a3bf-6af1-8cf1" type="selectionEntryGroup"/>
             <entryLink id="2c7b-f62e-f818-3248" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="6ca0-9997-fba2-4734" type="selectionEntryGroup"/>
+            <entryLink id="101d-cb77-018e-e3fd" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="1007-728a-27a4-a388" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1028,6 +1029,17 @@
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="6ee9-f051-d262-93fb" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0547-9fee-6c45-62d8" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="52ca-83b1-d853-f965" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="3.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ef2a-bba0-4455-78c7" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6dfc-8e3c-3c6d-b25c">
@@ -1045,18 +1057,6 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6056-bf36-c19d-9bfb" name="Hand Weapon &amp; Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80f9-6b8b-b3e2-a102" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="fa63-c8f6-ffa6-e93e" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                <infoLink id="06c9-ca0c-3b04-926d" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dedd-b810-fb85-3200" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
@@ -1107,7 +1107,7 @@
                 <infoLink id="468b-76e8-6a19-dda7" name="Lance (Mounted)" hidden="false" targetId="e56e-fedf-c550-5d81" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="8.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1840,6 +1840,7 @@
             <entryLink id="5c42-1fba-fe6a-5dac" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="12f5-c48f-1a21-852f" type="selectionEntryGroup"/>
             <entryLink id="59df-967d-4f8f-9884" name="Talismans" hidden="false" collective="false" import="true" targetId="e3e7-a3bf-6af1-8cf1" type="selectionEntryGroup"/>
             <entryLink id="08ed-d1ec-fef1-0062" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="6ca0-9997-fba2-4734" type="selectionEntryGroup"/>
+            <entryLink id="d692-27b2-81e1-6b4d" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="1007-728a-27a4-a388" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2418,6 +2419,7 @@
             <entryLink id="3e90-eb60-3777-6488" name="Talismans" hidden="false" collective="false" import="true" targetId="e3e7-a3bf-6af1-8cf1" type="selectionEntryGroup"/>
             <entryLink id="268e-ef5c-f7b9-0c6d" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="6ca0-9997-fba2-4734" type="selectionEntryGroup"/>
             <entryLink id="f889-4bb2-1559-666a" name="Magic Armour" hidden="false" collective="false" import="true" targetId="c10b-0589-e92c-c8f7" type="selectionEntryGroup"/>
+            <entryLink id="bfd6-1750-920d-fd72" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="1007-728a-27a4-a388" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2581,6 +2583,7 @@
             <entryLink id="1c16-f5de-f810-a04d" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="12f5-c48f-1a21-852f" type="selectionEntryGroup"/>
             <entryLink id="1d0a-a2da-5990-863e" name="Talismans" hidden="false" collective="false" import="true" targetId="e3e7-a3bf-6af1-8cf1" type="selectionEntryGroup"/>
             <entryLink id="16d7-35f2-92f5-0d44" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="6ca0-9997-fba2-4734" type="selectionEntryGroup"/>
+            <entryLink id="fab2-3763-b849-a7e6" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="1007-728a-27a4-a388" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3461,18 +3464,6 @@
             <infoLink id="5916-d686-3915-7576" name="Valour of Ages" hidden="false" targetId="2342-7a24-9b21-0185" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="f1ff-623b-ec24-4dd3" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6105-db8c-2532-8de3" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac39-fdb7-6c66-1011" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="4c20-7595-6714-7054" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="f01d-59f9-6595-fd99" name="Elven Steed" hidden="false" collective="true" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9d7-d90e-6ff0-134d" type="max"/>
@@ -3526,8 +3517,40 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="77a5-b54b-9741-d37c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="36c7-ca10-7b25-097d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c98-6240-95f6-44c0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1930-ddbd-18ad-a1bb" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="997a-7e56-759d-ce7b" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8dba-0325-0c30-a7d1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="591a-664e-d006-8546" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="36c7-ca10-7b25-097d" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="feeb-72ce-1756-f307" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1ef8-8676-ce03-9eb2" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="22.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3790,7 +3813,7 @@
                 <infoLink id="a046-92c9-9e3a-bbbe" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="be95-b8e3-9e08-114e" name="Harbinger" hidden="false" collective="false" import="true" type="upgrade">
@@ -4338,7 +4361,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="28.0"/>
+            <cost name="pts" typeId="points" value="26.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4762,12 +4785,12 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="7.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="46.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fdbc-683e-4d5b-2c30" name="Phoenix Guard" hidden="false" collective="false" import="true" type="unit">
@@ -4789,7 +4812,7 @@
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
@@ -4828,7 +4851,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="16.0"/>
+            <cost name="pts" typeId="points" value="18.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4885,7 +4908,7 @@
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
@@ -5125,7 +5148,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8147,38 +8170,6 @@ of Finubar are Stubborn.</characteristic>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f9b6-715d-2bbc-96de" name="Sigil of Asuryan" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df10-97fc-d5ae-2e60" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebfc-aa22-57f2-ec63" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c68e-22b4-6f4c-d561" name="Sigil of Asuryan" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy cast a spell, the bearer may immediately counter its effects by reading the Sigil of Asuryan to release the spell written upon it instead of attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be combined with any other dispel dice. In addition, the spell is destroyed and the enemy must discard the spell for the rest of the game.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dc33-4c00-6244-55c9" name="The Vortex Shard" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d337-4ac6-2c8d-a794" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b22-ee9e-08ab-0561" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4a14-32a8-9278-bf2b" name="The Vortex Shard" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The bearer may use the Vortex Shard at the start of any enemy Magic phase. Your opponent must remove D6 power dice from their power pool.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="734d-b8b6-1dc2-2d80" name="The Seerstaff of Saphery" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b67-7a4b-3497-68a8" type="max"/>
@@ -8225,22 +8216,6 @@ of Finubar are Stubborn.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dad7-f8fd-6307-d5c3" name="Staff of Solidity" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="07fe-ae63-12c1-97fd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="126a-e9c2-bab0-e6e6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7b4d-b012-c6e8-7e89" name="Staff of Solidity" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Staff of Solidity makes the Wizard immune to the effects of their first Miscast.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="17e3-8006-3874-9fee" name="Jewel of the Dusk" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8582,12 +8557,12 @@ of Finubar are Stubborn.</characteristic>
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. The bearer of the Shield of the Merwyrm gains Parry (4+) instead of the normal 6+.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Shield. The bearer of the Shield of the Merwyrm gains Parry (5+) instead of the normal 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="105a-5b6d-c2e3-d7fc" name="Shadow Armour" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -9157,6 +9132,66 @@ of Finubar are Stubborn.</characteristic>
         <entryLink id="1fc2-f04e-5464-6b3b" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="1007-728a-27a4-a388" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c61-c4ef-bc7e-3df3" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="e3e2-a566-86c9-226d" name="Sigil of Asuryan" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e6c4-9e00-408d-38de" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c38e-4905-5d60-b7d2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="af58-e211-5399-c846" name="Sigil of Asuryan" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy cast a spell, the bearer may immediately counter its effects by attempting to dispel the spell by using dispel dice. This gives them 6 free dice to attempt to dispel the spell, which cannot be
+combined with any other dispel dice. In addition, the spell is destroyed and the enemy caster loses access to the spell for the rest of the game (note
+that this has no effect on Innate Bound spells).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="83ec-552d-9588-3ff0" name="The Vortex Shard" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7823-f834-6619-0244" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cec-b8a1-2e74-9f31" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3975-818c-fdd3-aed2" name="The Vortex Shard" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The bearer may use the Vortex Shard at the start of any enemy Magic phase. Your opponent must remove D6 power dice from their power pool.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3410-d176-0105-045e" name="Staff of Solidity" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a4d-2251-b5f6-3755" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ad6-5e8e-4e66-1899" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d52b-594d-afa3-b013" name="Staff of Solidity" publicationId="e3da-3848-ff08-a482" page="29" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Staff of Solidity makes the Wizard immune to the effects of their first Miscast.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6f79-6caa-1cd1-3248" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="034f-e2f8-67bb-30b0" name="Lileath&apos;s Blessing" publicationId="9e23-79cb-pubN77092" page="138" hidden="false">
@@ -9169,7 +9204,7 @@ of Finubar are Stubborn.</characteristic>
       <description>As soon as a model with this rule is reduced to 1 Wound he gets a Ward save (3+) for the rest of the battle. This has no effect on attacks that would outright kill him before he is reduced to 1 Wound, like a spell or attack with Multiple Wounds. If he were to suffer multiple Wounds in a single phase, roll one save at a time (if he has any) for each Wound suffered until his Ward save takes effect.</description>
     </rule>
     <rule id="3e63-ad1a-583c-50b0" name="Swordmaster" publicationId="9e23-79cb-pubN77092" page="159" hidden="false">
-      <description>Models with this rule ignore Initiative penalties from great weapons and gain Dodge (6+) against missile attacks (except templates).</description>
+      <description>Models with this rule ignore Initiative penalties from great weapons and gain Dodge (6+) against non-magical missile attacks (except templates).</description>
     </rule>
     <rule id="bb58-1b96-8bbd-4333" name="Attuned to Magic" publicationId="9e23-79cb-pubN77092" page="177" hidden="false">
       <description>When rolling to determine the strength of the Winds of Magic in the controlling player&apos;s Magic phase, compare the highest D6 rolled with the Attuned to Magic Table to determine what effects the Phoenix will have (the effect rolled will last until the start of the controlling player&apos;s next Magic phase):</description>
@@ -9555,7 +9590,7 @@ passed, the Sea Helm&apos;s unit can immediately make a reform.</description>
     </profile>
     <profile id="b3e7-3c1b-18dd-1170" name="Lion Leaping" publicationId="9e23-79cb-pubN77092" page="161" hidden="false" typeId="e211-9993-d83e-6305" typeName="Lion Special Rules">
       <characteristics>
-        <characteristic name="Effect" typeId="7e7f-2adc-4b13-fbb5">Can be used in a turn when the White Lions are charging. The enemy unit is subject to Always Strikes Last for the duration of the close combat phase.</characteristic>
+        <characteristic name="Effect" typeId="7e7f-2adc-4b13-fbb5">Can be used in a turn when the White Lions are charging. Enemy models in base contact are subject to Always Strikes Last for the duration of the close combat phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="747c-b416-7c65-c41b" name="Lion Rampant" publicationId="9e23-79cb-pubN77092" page="161" hidden="false" typeId="e211-9993-d83e-6305" typeName="Lion Special Rules">

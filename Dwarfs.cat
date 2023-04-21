@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="25" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="26" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="6aa2-7707-349b-6651" name="Armour Rune">
@@ -37,7 +37,7 @@
         <characteristicType id="a586-177e-1b4d-a3b6" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="179f-a660-aee3-9d7b" name="Grudgebreaker Mishap Chart">
+    <profileType id="179f-a660-aee3-9d7b" name="Grudgebreaker Incident Table">
       <characteristicTypes>
         <characteristicType id="c322-f782-0f6e-1a5a" name="Result"/>
       </characteristicTypes>
@@ -65,6 +65,11 @@
     <profileType id="71e2-97ec-3eb4-8073" name="Rules of the Runes Table">
       <characteristicTypes>
         <characteristicType id="643b-311a-a4d0-f584" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="1f08-094e-f67a-a3fa" name="Underground Mishap Table">
+      <characteristicTypes>
+        <characteristicType id="05b8-374f-46db-11d2" name="Result"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -196,11 +201,12 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0647-129d-3d8f-9bb3" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="9df3-928c-ae72-ef80" name="Shieldbearers" hidden="false" targetId="a0d2-719d-c2ef-627e" type="rule"/>
+                <infoLink id="9df3-928c-ae72-ef80" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                 <infoLink id="9de1-95de-3274-593e" name="Shieldbearers" hidden="false" targetId="eff3-ab83-5a33-ea7b" type="profile"/>
                 <infoLink id="0f94-b208-bdce-7c85" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
                 <infoLink id="7643-a2c1-afaf-2147" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
                 <infoLink id="2e44-207f-0c20-fd3a" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+                <infoLink id="17c2-297d-9a89-ad37" name="Shieldbearers" hidden="false" targetId="a0d2-719d-c2ef-627e" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -214,17 +220,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6af5-4cd1-8df6-d9e4" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3125-ace8-64d1-6a41" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c71-0076-8b73-4ec1" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="eb69-6581-8f72-f065" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="4720-f6a2-cb87-bef9" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6535-1b3c-a25c-34fd" type="max"/>
@@ -597,7 +592,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
         <categoryLink id="edee-49e9-187a-a99d" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9737-6446-7212-c7f2" name="Magic &amp; Runic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9737-6446-7212-c7f2" name="Magic Items, Runic Items &amp; Slayer Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0493-2385-4208-d426" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6447-2e95-4680-df50" type="max"/>
@@ -606,18 +601,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <entryLink id="87b1-7fdb-7533-6b59" name="Magic Weapons &amp; Weapon Runes" hidden="false" collective="false" import="true" targetId="2ba9-c430-47e9-a80c" type="selectionEntryGroup"/>
             <entryLink id="255b-d922-2a25-fc8d" name="Talismanic Runes" hidden="false" collective="false" import="true" targetId="0432-7683-d16b-544c" type="selectionEntryGroup"/>
             <entryLink id="1826-b298-9de5-67c6" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="bd56-a67d-aed7-93b7" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fafb-4665-c440-a47e" name="Slayer Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0fb-f39e-11ba-98cd" type="max"/>
-            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e78e-3466-0072-f984" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8233-29b3-9c33-8315" name="Slayer Skills" hidden="false" collective="false" import="true" targetId="dee5-1fbe-cd79-6245" type="selectionEntryGroup"/>
+            <entryLink id="3541-785c-15e0-ed98" name="Slayer Skills" hidden="false" collective="false" import="true" targetId="dee5-1fbe-cd79-6245" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -667,6 +651,9 @@ Note that a shot from a war machine with an engineering rune is a magical attack
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="88aa-3b7a-4c67-989f" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="140.0"/>
       </costs>
@@ -770,17 +757,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="152f-e6a7-06cb-4bf5" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b77a-e93e-8ad6-359c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5b19-a66d-8563-605c" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1383,27 +1359,16 @@ Note that a shot from a war machine with an engineering rune is a magical attack
         <categoryLink id="9268-53ae-efc8-5bc9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b929-3c21-fd34-6285" name="Magic &amp; Runic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b929-3c21-fd34-6285" name="Magic Items, Runic Items &amp; Slayer Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="026e-78ee-b1ec-d400" type="max"/>
-            <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b322-1474-1c4f-b712" type="max"/>
+            <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b322-1474-1c4f-b712" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="ff17-0e72-46f9-fb29" name="Magic Weapons &amp; Weapon Runes" hidden="false" collective="false" import="true" targetId="2ba9-c430-47e9-a80c" type="selectionEntryGroup"/>
             <entryLink id="93aa-86b5-6e07-635e" name="Talismanic Runes" hidden="false" collective="false" import="true" targetId="0432-7683-d16b-544c" type="selectionEntryGroup"/>
             <entryLink id="7402-7d9c-2ae6-7953" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="bd56-a67d-aed7-93b7" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="32bd-f608-f2e9-dbe3" name="Slayer Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2ff-7d99-76fa-28b9" type="max"/>
-            <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dbce-1f54-9b18-adc6" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9609-d49b-3adf-2276" name="Slayer Skills" hidden="false" collective="false" import="true" targetId="dee5-1fbe-cd79-6245" type="selectionEntryGroup"/>
+            <entryLink id="71b1-4715-2bdc-eee9" name="Slayer Skills" hidden="false" collective="false" import="true" targetId="dee5-1fbe-cd79-6245" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1453,6 +1418,9 @@ Note that a shot from a war machine with an engineering rune is a magical attack
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ce0d-87f9-38de-7a29" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="70.0"/>
       </costs>
@@ -1487,19 +1455,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="941c-7093-6bcd-f7b1" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="f8d3-4e5d-d0f3-5b5f" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="4e1f-21f9-d365-6486" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d893-e357-03d3-6734" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b787-818e-dd53-17f8" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="cba5-ca2d-4b9c-4c1c" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="76a9-7185-dc35-806d">
               <constraints>
@@ -1507,15 +1462,16 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01b2-14b9-7ae1-d357" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="76a9-7185-dc35-806d" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="76a9-7185-dc35-806d" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aee4-2a1b-a4a5-6c13" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="c35c-3f33-a79a-73c0" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="d1fd-3f4e-68ba-049b" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1e19-53ec-2574-608f" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -1531,23 +1487,12 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="1235-bd17-6144-193c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="8f84-71de-cacf-e714">
+            <selectionEntryGroup id="1235-bd17-6144-193c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d69-09b7-1cb9-ec9f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe24-0fd2-a51d-afb6" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f41c-c619-298a-5b32" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="8f84-71de-cacf-e714" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ed2-5f89-bafc-8deb" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="61f2-52a1-6db3-8dd8" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="8d69-09b7-1cb9-ec9f" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc09-0357-251d-228f" type="max"/>
@@ -1556,7 +1501,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                     <infoLink id="26c2-277a-397a-25b8" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8f71-84f1-55a0-4030" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -1697,15 +1642,16 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <infoLink id="5f9a-f888-30cd-0e6b" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="a2d6-ff6d-d7fd-f13d" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="03c8-8e50-02da-8028" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1bd-e086-8205-02ae" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77d2-efef-81d5-749f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea06-020f-ae95-a921" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="98e6-2c9b-a023-acbb" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                <infoLink id="5c15-a680-fed9-d0d2" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1716,15 +1662,16 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0068-d83f-94ed-1089" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="eb09-2cc1-d9f4-5af6" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="eb09-2cc1-d9f4-5af6" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d249-fb73-7247-a3f9" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="ad3d-a447-4841-c006" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="6be1-ec15-d1e2-dac9" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d85d-9458-2a7c-6929" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -1740,39 +1687,9 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="ce94-9530-7259-8172" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="d952-e042-c50b-9ebf">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09d0-f2ea-e728-a57d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fde-5171-63b6-7aec" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="b539-06e0-1c15-9879" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="412e-ca01-bd9c-26d3" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="887d-25d0-6474-e2e4" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d952-e042-c50b-9ebf" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbdf-e04f-11ac-d86e" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="9f00-3ee0-4866-8e30" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2322,41 +2239,21 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="456e-9a66-eb93-16aa" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="c704-3a4e-bdf0-647f">
+            <selectionEntry id="d58d-137a-afab-3d88" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c6c-7c46-fbec-11ff" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39ac-a7a7-0859-8412" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3e7-8da4-b0d1-8eac" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="482a-1b35-a5d4-e1c5" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="c704-3a4e-bdf0-647f" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd1e-d9f4-667e-8c94" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f783-e52f-0d86-6406" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6b19-792d-04c8-c911" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bd2-5f7e-1d88-e0c6" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f9cf-1b63-00c0-3f1e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="32c0-83c6-285b-e8b1" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="16.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2374,7 +2271,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <selectionEntry id="3dcc-cc99-b466-866d" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="162f-6a53-7d14-d702" type="max"/>
-                    <constraint field="points" scope="parent" value="75.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bda3-24ee-f73f-844b" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bda3-24ee-f73f-844b" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="d609-db5e-1142-1e52" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
@@ -2460,7 +2357,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
           </profiles>
           <rules>
             <rule id="4613-5b89-3794-efe4" name="Shieldwall" publicationId="aa7b-3583-0834-7bfa" page="157" hidden="false">
-              <description>In the first turn of combat in which their unit is charged, all models with this special rule receive a +1 bonus to any Parry save they are eligible to take.</description>
+              <description>Models with this rule may re-roll failed Parry saves.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -2494,13 +2391,13 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fca2-6c4f-6c05-1e1f" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="fca2-6c4f-6c05-1e1f" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8da-ad7f-e754-7e8a" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6177-5c02-90a8-9888" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="ad31-3623-5e24-e761" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="ad31-3623-5e24-e761" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2508,7 +2405,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="16.0"/>
+            <cost name="pts" typeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2608,11 +2505,14 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa9-7e87-f270-cf95" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="e88e-7a24-671f-6ae9" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+            <infoLink id="e88e-7a24-671f-6ae9" name="Underground Advance" hidden="false" targetId="75c9-6db1-0ce0-09c8" type="rule"/>
             <infoLink id="3985-6d8f-394f-bf44" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="2338-078d-c29e-c555" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
-            <infoLink id="ed90-cf8c-a179-0f24" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
-            <infoLink id="a88e-3b00-3af4-2ee5" name="Miner" hidden="false" targetId="4c4c-68c5-855c-767c" type="profile"/>
+            <infoLink id="a88e-3b00-3af4-2ee5" name="01-02 (Underground Mishap Table)" hidden="false" targetId="6b3a-aeaa-1086-23ae" type="profile"/>
+            <infoLink id="3f39-c1b5-b2fa-7281" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+            <infoLink id="2c64-6e4c-f576-67cd" name="Miner" hidden="false" targetId="4c4c-68c5-855c-767c" type="profile"/>
+            <infoLink id="eec9-4a0f-2362-8431" name="03-05 (Underground Mishap Table)" hidden="false" targetId="6dd3-4fe6-8684-0459" type="profile"/>
+            <infoLink id="e5c0-2978-cfc3-7ece" name="06 (Underground Mishap Table)" hidden="false" targetId="a9c9-a6fb-4d03-cd54" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="42e2-2b94-16c8-718c" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -2638,50 +2538,19 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="3993-45d0-04b0-26ae" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="26ea-45f3-eca1-ae09">
+            <selectionEntry id="099e-5984-ae51-8244" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23da-da5b-b6a6-5420" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="907a-1315-a0fa-9fc0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f925-9cab-7f7c-1ed6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b02b-689e-44a1-1202" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="0e2d-1550-cad6-dfcd" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f0b-646a-97cb-40b2" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="4321-8995-f58f-cfda" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="26ea-45f3-eca1-ae09" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25b6-dc0a-bcf6-acce" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="b852-2a20-4389-6452" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b1e6-6ff0-9eac-462a" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c04f-fa8e-84cc-150f" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="46c6-c84d-8717-e4f0" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="7449-0a30-c096-b843" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="9.0"/>
           </costs>
@@ -2780,14 +2649,9 @@ Note that a shot from a war machine with an engineering rune is a magical attack
     <selectionEntry id="9fa1-ad93-8854-17cb" name="Slayers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa51-abcf-79bc-2b70" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2841,12 +2705,57 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <infoLink id="55b0-eec9-2330-ee21" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f1a8-a3aa-0382-b8a5" name="Giant Slayer" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe1e-26fd-bf47-58e2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c406-4f4f-fc7c-7be6" name="Giant Slayer" hidden="false" targetId="6dac-8ef5-d57c-4c5a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2b34-549e-f9aa-6512" name="Brotherhood of Grimnir" page="" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bf6-9bf7-6889-3f39" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e731-ceb3-7a5d-9927" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="9fa1-ad93-8854-17cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e7e-4c0d-3f04-43b2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5292-548d-c11a-8b35" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="874d-afee-1fac-6ae9" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7bc4-c0be-7eef-af66" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2889,38 +2798,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="43b8-e679-7b1a-83c3" name="Giant Slayer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2de3-b013-aa21-c771" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="bef5-30e1-fbab-28b0" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="b487-3b64-cedc-b91b" name="Giant Slayer" hidden="false" targetId="6dac-8ef5-d57c-4c5a" type="profile"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="1770-cff8-9887-69dc" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="710d-22eb-13ae-f324" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6e22-82d2-d981-4c26" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="fd78-2a42-a128-34cc" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2936,14 +2813,9 @@ Note that a shot from a war machine with an engineering rune is a magical attack
           </conditions>
         </modifier>
         <modifier type="set" field="7637-4a25-d3e7-782a" value="0.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-ad93-8854-17cb" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="974e-7c8a-61c5-6977" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-ad93-8854-17cb" type="atLeast"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -3000,12 +2872,46 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <infoLink id="9e9c-209f-09c5-7646" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4bf6-9bf7-6889-3f39" name="Brotherhood of Grimnir" page="" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e731-ceb3-7a5d-9927" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b34-549e-f9aa-6512" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="7c2b-a613-3d13-958a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eedd-0cdf-3e03-265a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a62-df79-6f3c-1a8b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3f86-8b84-47f7-6b8e" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e2b6-66ec-cca9-c53e" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3044,213 +2950,6 @@ Note that a shot from a war machine with an engineering rune is a magical attack
               <infoLinks>
                 <infoLink id="70ac-4bf2-24d1-1c47" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6cb4-d8d5-0346-cf0a" name="Giant Slayer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ddf-385a-f7b5-df80" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="bf39-a90f-4573-a749" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="1b17-380e-0499-96ca" name="Giant Slayer" hidden="false" targetId="6dac-8ef5-d57c-4c5a" type="profile"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="fcab-fe17-e6d1-c271" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="710d-22eb-13ae-f324" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d463-0de4-45c2-5a83" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="2317-84c9-16e1-9f68" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="aa51-abcf-79bc-2b70" name="Brotherhood of Grimnir (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="05b4-81b5-96c9-a166" value="0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="974e-7c8a-61c5-6977" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-ad93-8854-17cb" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05b4-81b5-96c9-a166" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="05af-0db4-f93e-4199" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="247f-7f7a-8c10-5353" name="Troll Slayer" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf4-8a2f-0106-0ba5" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="79ad-6602-4265-ab3b" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
-            <infoLink id="45a1-7d36-14fb-616f" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
-            <infoLink id="c44f-7eea-2e4d-4452" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
-            <infoLink id="aa2f-b097-177f-4c82" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="a4e8-f2f6-96cc-0b4c" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
-            <infoLink id="d8e3-5065-53b7-79e9" name="Troll Slayer" hidden="false" targetId="Troll Slayer (Brotherhood)" type="profile"/>
-            <infoLink id="2273-5c12-ac5b-a5cd" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
-            <infoLink id="4e61-aa04-9d89-ad02" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="db7c-6215-f196-dbd3" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef2f-c37e-c33c-f611" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff01-f6ae-c3c0-bb0a" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f729-cb3c-be11-46a8" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1259-e997-c67c-38af" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3090-c95f-2c73-b9c5" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de40-cd2f-bddf-e331" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="157c-7ba6-5045-a5d0" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f7f1-6571-42f4-753d" name="Wards of Grimnir" page="" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f8d-4927-a6fb-7b20" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a87-ac6e-0d29-9911" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="a5e0-d93c-4ea5-0ddb" name="Wards of Grimnir" publicationId="aa7b-3583-0834-7bfa" page="163" hidden="false" typeId="5d59-caa8-545e-82b1" typeName="Slayer Skill">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="b55b-cf04-8b09-60ec">Model has Magic Resistance (1) and Ward save (6+) against missile attacks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8f9d-b0c8-7799-b377" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6f9-7f7b-5453-4b60" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="29af-fddf-2388-82c8" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="14.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7b7f-1b5d-a06f-59a5" name="Command Group" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="b3ce-1b54-26f4-fa1e" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59ca-03fa-2ee4-55c7" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="da8d-ea56-7b90-b28a" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="589b-2a58-3d7f-5874" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4239-3c1e-c0b1-439b" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0a69-80bf-f0e3-b4d1" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="bede-e457-f99c-e86b" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ef6e-fc5f-9b6b-e9be" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe1f-9ae7-3a82-10f5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b326-f5c2-4339-43af" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="be4c-f6b3-d5bd-840c" name="Giant Slayer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0117-e9fa-6bc0-092b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6095-f0d6-7873-64a5" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="e9c1-b57f-1d45-eb34" name="Giant Slayer" hidden="false" targetId="Giant Slayer (Brotherhood)" type="profile"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="a2ba-9fca-a29e-ad0a" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="710d-22eb-13ae-f324" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c48c-dcd9-6f78-380b" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="1085-e8fd-a974-a79b" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -3819,7 +3518,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -3900,7 +3599,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -3980,7 +3679,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4184,13 +3883,13 @@ Note that a shot from a war machine with an engineering rune is a magical attack
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f86c-cb0c-b565-4c6e" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="f86c-cb0c-b565-4c6e" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aed4-c6be-fd78-527e" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3073-32f4-46db-4225" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="e5c2-98e4-41b5-72da" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="e5c2-98e4-41b5-72da" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4198,7 +3897,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="17.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4422,7 +4121,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4516,7 +4215,7 @@ The number of shots fired by the Organ Gun is equal to the total of both the Art
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4619,14 +4318,101 @@ The number of shots fired by the Organ Gun is equal to the total of both the Art
           </profiles>
           <infoLinks>
             <infoLink id="3bf8-5ef9-6ae8-fb05" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="3733-df00-c76f-7a80" name="Natural Armour (3+)" hidden="false" targetId="32e8-b4ad-3e59-a3c7" type="rule"/>
             <infoLink id="e0ca-0447-8152-5b15" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="8c55-83ea-485c-f103" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="2fb2-f7e8-ac47-7751" name="Lumbering" hidden="false" targetId="cbda-1d98-cc0a-1039" type="rule"/>
             <infoLink id="d98c-387b-1be4-7bee" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2638-8cdf-8dc5-22e4" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ae4-daed-457c-75a6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d735-82ae-5bfc-5df8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6e78-c2f4-81a6-ce0f" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a2de-2f6d-5de4-b187" name="Upgrades" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21d5-cbe9-ee49-214f" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="97fc-46c1-35d3-c07a" name="Rune of Cleaving" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47ad-b4f6-85e7-fbaf" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9b3d-d0d9-6e4a-49c0" name="Rune of Cleaving" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
+                      <description>The Rune Guardian gains Armour Piercing (1) and Magical Attacks.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4eed-03bd-14b6-2780" name="Rune of Fury" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1c4-34bd-e0a9-c514" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6033-0042-9ba5-2174" name="Rune of Fury" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
+                      <description>The Rune Guardian gains +1 A and Magical Attacks.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d206-c0cc-fa56-206d" name="Rune of Striking" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cc4-92c1-b2e4-f5fb" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="977a-b363-413d-32d5" name="Rune of Striking" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
+                      <description>The Rune Guardian gains +1 WS and Magical Attacks.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ab71-d404-7555-d1b6" name="Rune of Stone" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25dc-a765-b6e6-7502" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="8d3a-c128-dbc4-123e" name="Rune of Stone" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
+                      <description>The Rune Guardian gains +1 to its armour save.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0558-5d41-3334-cb98" name="Rune of Warding" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbaf-5616-17d0-a868" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="aafa-2f1a-2cc6-89d8" name="Rune of Warding" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
+                      <description>The Rune Guardian gains a Ward save (6+).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="55.0"/>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4650,22 +4436,22 @@ The number of shots fired by the Organ Gun is equal to the total of both the Art
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 1+)</characteristic>
           </characteristics>
         </profile>
-        <profile id="be16-c3d3-67cb-bba4" name="01" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Mishap Chart">
+        <profile id="be16-c3d3-67cb-bba4" name="01" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Incident Table">
           <characteristics>
             <characteristic name="Result" typeId="c322-f782-0f6e-1a5a">Catastrophe!: The Grudgebreaker does not Move or Attack this turn, and suffers D6 Wounds with no saves allowed.</characteristic>
           </characteristics>
         </profile>
-        <profile id="f109-4507-ae83-5267" name="04-05" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Mishap Chart">
+        <profile id="f109-4507-ae83-5267" name="04-05" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Incident Table">
           <characteristics>
             <characteristic name="Result" typeId="c322-f782-0f6e-1a5a">Clunk: The Grudgebreaker counts as having rolled a 1 for its M or A value this turn.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a529-3e99-32f4-2200" name="02-03" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Mishap Chart">
+        <profile id="a529-3e99-32f4-2200" name="02-03" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Incident Table">
           <characteristics>
             <characteristic name="Result" typeId="c322-f782-0f6e-1a5a">Malfunction: The Grudgebreaker does not Move or Attack this turn.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c3c1-838d-2505-9307" name="06" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Mishap Chart">
+        <profile id="c3c1-838d-2505-9307" name="06" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false" typeId="179f-a660-aee3-9d7b" typeName="Grudgebreaker Incident Table">
           <characteristics>
             <characteristic name="Result" typeId="c322-f782-0f6e-1a5a">Overdrive: The Grudgebreaker counts as having rolled a 10 for its M or A value this turn. However, the Grudgebreaker also suffers D3 Wounds with no saves allowed after it has performed its Movement or Attacks.</characteristic>
           </characteristics>
@@ -4673,7 +4459,7 @@ The number of shots fired by the Organ Gun is equal to the total of both the Art
       </profiles>
       <rules>
         <rule id="d21d-8362-7f47-49fc" name="Steam-Pressured Engine" publicationId="aa7b-3583-0834-7bfa" page="173" hidden="false">
-          <description>The Grudgebreaker follows the rules for Random Movement and Random Attacks. In order to determine the Movement and Attacks value of the Grudgebreaker, roll an Artillery dice rather than a set of D6&apos;s (roll separately for Movement and Attacks). Whenever you attempt to move or attack with the Grudgebreaker you may re-roll the Artillery dice if it didn&apos;t score a Misfire. If a Misfire is rolled, roll a D6 and consult the Grudgebreaker Mishap Chart. If a Misfire results on the re-roll it automatically causes a Clunk result.</description>
+          <description>The Grudgebreaker follows the rules for Random Movement and Random Attacks. In order to determine the Movement and Attacks value of the Grudgebreaker, roll an Artillery dice rather than a set of D6&apos;s (roll separately for Movement and Attacks). Whenever you attempt to move or attack with the Grudgebreaker you may re-roll the Artillery dice if it didn&apos;t score a Misfire. If a Misfire is rolled, roll a D6 and consult the Grudgebreaker Incident Table. If a Misfire results on the re-roll it automatically causes a Clunk result.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4689,7 +4475,7 @@ The number of shots fired by the Organ Gun is equal to the total of both the Art
         <categoryLink id="55e3-9d48-2fbb-df80" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1efb-1bda-2859-a7da" name="Thunderbarge" hidden="false" collective="false" import="true" type="model">
@@ -4777,177 +4563,6 @@ The number of shots fired by the Organ Gun is equal to the total of both the Art
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="974e-7c8a-61c5-6977" name="Brotherhood of Grimnir" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="8ac2-8a61-4dd0-4c75" value="0.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa51-abcf-79bc-2b70" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ac2-8a61-4dd0-4c75" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="49f9-abbc-1d99-c141" name="Special" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5852-5fc3-64fe-e6d3" name="Troll Slayer" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58b-a528-13bf-4055" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="7472-404d-1dc6-7f5a" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
-            <infoLink id="acf9-0167-fb4b-b809" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
-            <infoLink id="c213-64a8-ab92-c426" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
-            <infoLink id="8079-ed06-6cec-1020" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-            <infoLink id="3f9d-1f41-5e64-7527" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
-            <infoLink id="2b92-f5d2-8f2d-1933" name="Troll Slayer" hidden="false" targetId="Troll Slayer (Brotherhood)" type="profile"/>
-            <infoLink id="e27d-7613-351b-4c98" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
-            <infoLink id="555b-4f75-0679-937f" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="ce17-fb02-fff7-a01c" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e30f-318c-cb9c-6050" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1061-08f7-67ac-247a" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3a0a-cf6d-7914-b21a" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="833b-8fc3-3f87-2f80" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b9a-9b49-34e2-4fc9" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e87-113a-c4d6-3a0c" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7ea9-1593-8f3d-4e2c" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="47f8-0d54-5049-6288" name="Wards of Grimnir" page="" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5fc-3f73-9a80-724c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71ac-56a8-b915-ec9e" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a2dd-815c-bdc6-3677" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c242-142b-a47f-9481" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="035d-893b-79b2-0c86" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9286-bc71-85ed-90d6" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="14.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ee2f-57e3-6fe6-76b6" name="Command Group" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="c3fb-dd07-bcda-ae91" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05e2-9c58-4372-3c52" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="92c2-8e85-cf3e-4a5c" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="68b5-61ce-732e-2e0f" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cb6-0c88-3850-0b57" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7a48-0c5a-64a3-29f2" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="f6c1-06a2-a4a9-2b3f" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b119-4410-e722-0efd" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40ae-e5f2-be41-c856" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="25f1-4154-f9da-3f51" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="270d-7104-dbba-359a" name="Giant Slayer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3353-7e36-8803-1c8e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="4e5f-aaf8-3bb3-ee45" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-                <infoLink id="5674-62cd-085b-be5c" name="Giant Slayer" hidden="false" targetId="Giant Slayer (Brotherhood)" type="profile"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="0dfb-364a-e8bf-cbe4" name="Weapon Runes" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="710d-22eb-13ae-f324" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3254-d239-04ff-0edf" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="3e54-ae0a-dd30-108d" name="Weapon Runes" hidden="false" collective="false" import="true" targetId="e517-2931-9022-9125" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b315-2149-5fdb-a7d5" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
@@ -5212,8 +4827,11 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
             <infoLink id="49f1-02c4-87ac-fb1d" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
             <infoLink id="0405-4223-811f-c5bc" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="31c7-a2cf-196c-b8d1" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
-            <infoLink id="7229-a901-185e-b983" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
             <infoLink id="87af-c38e-b313-ac6e" name="Miner" hidden="false" targetId="4c4c-68c5-855c-767c" type="profile"/>
+            <infoLink id="7031-694d-91b8-e12f" name="Underground Advance" hidden="false" targetId="75c9-6db1-0ce0-09c8" type="rule"/>
+            <infoLink id="3413-9d0d-434b-3986" name="01-02 (Underground Mishap Table)" hidden="false" targetId="6b3a-aeaa-1086-23ae" type="profile"/>
+            <infoLink id="9f8f-3565-3e2a-da19" name="03-05 (Underground Mishap Table)" hidden="false" targetId="6dd3-4fe6-8684-0459" type="profile"/>
+            <infoLink id="4521-680e-a534-3eb5" name="06 (Underground Mishap Table)" hidden="false" targetId="a9c9-a6fb-4d03-cd54" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="7c2c-10df-a57f-06c8" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -5239,50 +4857,19 @@ If a Gyrocopter Dive Bombs, it cannot make any other shooting attacks in that tu
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="e4b1-1747-a75f-e3eb" name="Armour" hidden="false" collective="false" import="true">
+            <selectionEntry id="7c93-62ee-d862-f7af" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ae6-7a83-299e-bded" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7ce-b798-236b-ee27" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e76-97e8-7393-add0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8091-ce4e-87ff-d34c" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="8e9b-e522-3945-c1ef" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4834-405e-ef4e-6b19" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="99e1-85f0-e40b-c2c9" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="fc2c-f8b8-cb15-364a" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d72a-ac95-b3e1-e835" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="a769-8123-67e7-83c4" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2ca4-7cc9-0568-3b2d" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc51-4000-8eac-0976" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="42d3-316d-dc22-6922" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="a17f-9420-e85d-d366" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="9.0"/>
           </costs>
@@ -5625,10 +5212,10 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
               </profiles>
               <rules>
                 <rule id="9d17-5d25-c65e-e871" name="Slayer King" publicationId="aa7b-3583-0834-7bfa" page="193" hidden="false">
-                  <description>If Ungrim is chosen as the General, Slayers are taken as Core units rather than Special units.</description>
+                  <description>If Ungrim is chosen as the General, Troll Slayers (but not Giant Slayers) are taken as Core units rather than Special units.</description>
                 </rule>
                 <rule id="5d94-d0be-bb14-e549" name="Brotherhood of Grimnir" publicationId="aa7b-3583-0834-7bfa" page="193" hidden="false">
-                  <description>If Ungrim is included in your army, one unit of Slayers may be upgraded to the Brotherhood of Grimnir for 3 points per model. These Slayers have +1 S and the Wards of Grimnir upgrade.</description>
+                  <description>If Ungrim is included in your army, one unit of Troll Slayers or Giant Slayers may be upgraded to the Brotherhood of Grimnir for 1 point per model. These Slayers have the Wards of Grimnir upgrade.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -5746,15 +5333,15 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
                   <description>Thorgrim must be the army General. Furthermore, if he is slain, all friendly models from Warhammer: Dwarfs immediately gain Frenzy.</description>
                 </rule>
                 <rule id="9909-dd20-02b7-eaa8" name="The Throne of Power" publicationId="aa7b-3583-0834-7bfa" page="178" hidden="false">
-                  <description>The Throne of Power is treated in all regards as Shieldbearers, with these additions to represent its status and additional bearers: the Throne adds +4 to Thorgrim&apos;s W and gives him Unit Strength 5. In addition, the Throne
-increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim joins a unit, he does not benefit from the &quot;Look Out Sir!&quot; rule.</description>
+                  <description>The Throne of Power is treated in all regards as Shieldbearers, with these additions to represent its status and additional bearers: the Throne adds +4 to Thorgrim&apos;s W and gives him Unit Strength 5. In addition, the Throne increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim joins a unit, he does not benefit from the &quot;Look Out Sir!&quot; rule.</description>
                 </rule>
               </rules>
               <infoLinks>
-                <infoLink id="f5cb-b6d5-7db6-4cc4" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+                <infoLink id="f5cb-b6d5-7db6-4cc4" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                 <infoLink id="547b-a240-6ba3-48fd" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
                 <infoLink id="9289-f095-9df3-1a7c" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
                 <infoLink id="1047-d44c-ed7d-bf04" name="Gromril Armour" hidden="false" targetId="6502-468e-b48f-4540" type="rule"/>
+                <infoLink id="54d5-d61e-0105-0168" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="4790-5fbb-692d-6840" name="The Axe of Grimnir" hidden="false" collective="false" import="true" type="upgrade">
@@ -6110,6 +5697,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
                     <infoLink id="be09-c484-29d9-6117" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
                     <infoLink id="af9b-bbe8-e0e7-de25" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
                     <infoLink id="8813-c3d6-0563-7b4a" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+                    <infoLink id="50bd-201d-afbd-ee8d" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -6211,13 +5799,13 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c4a6-7450-195e-c3a7" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c4a6-7450-195e-c3a7" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49b2-673d-71ba-8c73" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f68d-ec88-be33-77c1" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="c86d-8092-3409-ae47" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                    <infoLink id="c86d-8092-3409-ae47" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -6434,7 +6022,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine (Special Character)</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7120,7 +6708,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
               </profiles>
               <rules>
                 <rule id="aedb-ffa2-f414-4955" name="The War-Mourner" publicationId="aa7b-3583-0834-7bfa" page="194" hidden="false">
-                  <description>If Garagrim is included in your army, Giant Slayers may be given a single weapon rune worth up to 25 points. Each Wound inflicted by Garagrim counts double towards that round&apos;s Combat Resolution. Against enemies with T 5 or higher, Garagrim causes Multiple Wounds (D6). However, Garagrim may never be the Army General.</description>
+                  <description>Each Wound inflicted by Garagrim counts double towards that round&apos;s Combat Resolution. Against enemies with T 5 or higher, Garagrim causes Multiple Wounds (D6). However, Garagrim may never be the Army General.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -7165,6 +6753,163 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c336-7ad1-6d18-49ae" name="Slayers (Daemon Slayer)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c2b-a613-3d13-958a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="b6b1-5f2f-a26c-c2ea" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a79c-83d6-72f9-1063" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6b1-5f2f-a26c-c2ea" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7f83-eb03-e2a4-ae14" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e0e5-8ae1-37fe-e51e" name="Troll Slayers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1992-3233-ffc6-3988" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2b39-fa2d-005f-a242" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+            <infoLink id="2dd8-8e43-c1cc-fb07" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+            <infoLink id="a586-2a41-5e48-d060" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+            <infoLink id="d35f-f3ed-339b-6d8f" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
+            <infoLink id="73ef-2691-9cca-a9c4" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
+            <infoLink id="2c96-7aa7-d5df-0417" name="Troll Slayer" hidden="false" targetId="0a3b-c47a-c729-2f9c" type="profile"/>
+            <infoLink id="1045-3ab9-e035-4b62" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
+            <infoLink id="708f-2a0f-973e-001e" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="bab0-94dd-979c-f875" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c52a-5bbe-7977-cab0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91ef-8893-a6be-ad94" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c754-6898-a3d3-fa1f" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a743-6a04-77bb-3bfd" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="048f-29d8-6665-cebc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="125a-842f-ee33-c30e" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1d42-d570-dfe2-2236" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="81c6-6072-07b2-631c" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0370-647a-ae07-de76" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="04d4-70c7-cf8f-7232" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e731-ceb3-7a5d-9927" name="Brotherhood of Grimnir" page="" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bf6-9bf7-6889-3f39" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b34-549e-f9aa-6512" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c336-7ad1-6d18-49ae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e5-8ae1-37fe-e51e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36c3-1784-4e90-6631" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5b06-87e5-887d-c2ae" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2132-998b-1f3f-c090" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cdd3-01cf-4ee9-1207" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="d3db-3165-2e98-5067" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e390-f602-9f88-a17c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ac4c-019f-0934-36cd" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="d8ea-2556-3298-6650" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee19-473d-10dc-0123" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="31b3-7b71-1050-4533" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0847-eaac-a807-ffdf" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6263-8fd7-ceae-66d2" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eabd-ddb8-39f3-552c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d50c-6578-d791-4776" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="267a-259a-3431-e17b" name="Grudge Rune" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7187,7 +6932,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
         <infoLink id="496a-825d-d3ac-7482" name="Master Rune of Alaric the Mad" hidden="false" targetId="b95b-005d-9744-8478" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0174-e984-da84-a7fe" name="Master Rune of Banishment" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7227,7 +6972,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
         <infoLink id="5d14-1a4b-9b14-370a" name="Master Rune of Death" hidden="false" targetId="fc28-c580-ca83-1e20" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b0fb-8bce-c09e-50d1" name="Master Rune of Dragon Slaying" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7243,7 +6988,7 @@ increases the range of his Inspiring Presence rule to 18&quot;. If Thorgrim join
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="17e0-0ba0-482b-c53a" name="Master Rune of Flight" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7277,7 +7022,7 @@ Any additional runes on the weapon will also take effect. After this, the weapon
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="31c7-671a-98d9-0d59" name="Master Rune of Skalf Blackhammer" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7289,7 +7034,7 @@ Any additional runes on the weapon will also take effect. After this, the weapon
         <infoLink id="d5a3-be1b-5aec-526e" name="Master Rune of Skalf Blackhammer" hidden="false" targetId="9208-26f4-7d27-4cdd" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f92-07a4-a268-47b1" name="Master Rune of Smiting" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7301,7 +7046,7 @@ Any additional runes on the weapon will also take effect. After this, the weapon
         <infoLink id="5a0a-23d5-fb55-45f6" name="Master Rune of Smiting" hidden="false" targetId="070c-c416-7588-2ecf" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c084-9820-4c85-71dc" name="Master Rune of Snorri Spangelhelm" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7344,7 +7089,7 @@ Any additional runes on the weapon will also take effect. After this, the weapon
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="10.0"/>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fca0-2b1f-419f-8943" name="Rune of Cleaving (x2)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7355,7 +7100,7 @@ Any additional runes on the weapon will also take effect. After this, the weapon
         <infoLink id="0f6d-5ea0-56b9-1f40" name="Rune of Cleaving (x2)" hidden="false" targetId="a18f-4193-98bd-aeea" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e2b8-dd33-77a7-9706" name="Rune of Cleaving (x3)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7371,7 +7116,7 @@ Any additional runes on the weapon will also take effect. After this, the weapon
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
+        <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4602-4785-b067-4c1d" name="Rune of Daemon Slaying (x1)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7461,7 +7206,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         <infoLink id="a548-a9bf-ea27-c9df" name="Rune of Fire (x1)" hidden="false" targetId="35ee-df2d-558c-f4b5" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="10.0"/>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74ef-caf6-b84c-a6f3" name="Rune of Fire (x2)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7476,7 +7221,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
+        <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="303e-53f0-d568-b8a3" name="Rune of Fire (x3)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7492,7 +7237,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="75.0"/>
+        <cost name="pts" typeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb28-45f3-0037-68f8" name="Rune of Fury (x1)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7518,7 +7263,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f35d-4fec-5660-2798" name="Rune of Fury (x3)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7534,7 +7279,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="60.0"/>
+        <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="67a0-5075-2ab0-3ffe" name="Rune of Might (x1)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7549,7 +7294,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b789-7f40-36ca-c42a" name="Rune of Might (x2)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7564,7 +7309,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b9fe-d1e3-bc85-1258" name="Rune of Parrying" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7579,7 +7324,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="25.0"/>
+        <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bf64-a7af-a420-a2dd" name="Rune of Speed (x1)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7655,7 +7400,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4777-2706-99b0-2140" name="Rune of Striking (x3)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7671,7 +7416,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7fd5-bdcd-8b76-d22e" name="Rune of Fortitude (x1)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7682,7 +7427,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         <infoLink id="fc89-4777-385e-ad8e" name="Rune of Fortitude (x1)" hidden="false" targetId="862a-4ac6-2029-de0d" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee23-a3f2-568b-780a" name="Rune of Fortitude (x2)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7697,7 +7442,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="60.0"/>
+        <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb92-91a8-a117-4a80" name="Rune of Fortitude (x3)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7708,12 +7453,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
       <profiles>
         <profile id="beab-9bc4-39cc-6037" name="Rune of Fortitude (x3)" publicationId="aa7b-3583-0834-7bfa" page="204" hidden="false" typeId="6aa2-7707-349b-6651" typeName="Armour Rune">
           <characteristics>
-            <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Armour engraved with three Runes of Fortitude grants its wearer +1 T and a Ward save (5+) and Immunity (Multiple Wounds).</characteristic>
+            <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Armour engraved with three Runes of Fortitude grants its wearer +1 T, a Ward save (5+) and Immunity (Multiple Wounds).</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="70.0"/>
+        <cost name="pts" typeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="20ba-c5b7-0543-6913" name="Rune of Impact" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7723,12 +7468,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
       <profiles>
         <profile id="48ee-827a-b8e8-cf19" name="Rune of Impact" publicationId="aa7b-3583-0834-7bfa" page="204" hidden="false" typeId="6aa2-7707-349b-6651" typeName="Armour Rune">
           <characteristics>
-            <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Armour engraved with a Rune of Impact grants its wearer Impact Hits (1). Multiples of this rune have no further effect.</characteristic>
+            <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Armour engraved with a Rune of Impact grants its wearer Impact Hits (1) and Strength Bonus (1). Multiples of this rune have no further effect.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="10.0"/>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd90-4c6d-804c-878b" name="Rune of Iron (x1)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7743,7 +7488,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="20.0"/>
+        <cost name="pts" typeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f90-e79e-2930-5a53" name="Rune of Iron (x2)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7758,7 +7503,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
+        <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f2f9-155b-cd04-6a98" name="Rune of Iron (x3)" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7774,7 +7519,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="points" value="65.0"/>
+        <cost name="pts" typeId="points" value="45.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddfe-4651-4aed-bf02" name="Rune of Preservation" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7785,7 +7530,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         <infoLink id="5d84-1dc7-d7c0-d34c" name="Rune of Preservation" hidden="false" targetId="2b3d-925a-5bd0-85dc" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="25.0"/>
+        <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da82-7fb8-6d18-b73b" name="Rune of Resistance" page="" hidden="false" collective="true" import="true" type="upgrade">
@@ -7818,7 +7563,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
         <infoLink id="7232-89c7-6482-6ec2" name="Rune of Shielding" hidden="false" targetId="b1ed-2663-2429-529c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="20.0"/>
+        <cost name="pts" typeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -7848,7 +7593,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="60.0"/>
+                    <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7ad8-c6fa-5ec1-62d0" name="Master Rune of Steel" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7916,12 +7661,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                       <characteristics>
                         <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                         <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Gromril full plate armour. The Magnificent Armour of Borek Beetle brow grants a Ward save (3+) against all attacks of S 6 or higher.</characteristic>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. The Magnificent Armour of Borek Beetle brow grants a Ward save (3+) against all attacks of S 6 or higher.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="45.0"/>
+                    <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -7953,7 +7698,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                   <profiles>
                     <profile id="b994-23fd-e8c4-31cd" name="Master Rune of Groth One-Eye" publicationId="aa7b-3583-0834-7bfa" page="206" hidden="false" typeId="9fca-89e3-04a1-e4ae" typeName="Banner Rune">
                       <characteristics>
-                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing the Master Rune of Groth One-Eye confers Stubborn to the bearer&apos;s unit and all friendly Dwarf units within 8&quot; of the bearer.</characteristic>
+                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing the Master Rune of Groth One-Eye confers Stubborn to the bearer&apos;s unit and all friendly Dwarf units within 12&quot; of the bearer.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7969,12 +7714,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                   <profiles>
                     <profile id="cf27-8b7c-fcc2-af8e" name="Master Rune of Stromni Redbeard" publicationId="aa7b-3583-0834-7bfa" page="206" hidden="false" typeId="9fca-89e3-04a1-e4ae" typeName="Banner Rune">
                       <characteristics>
-                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing the Master Rune of Stromni Red beard confers a further +1 bonus to the bearer&apos;s unit&apos;s combat result score, and the combat result score of all other friendly Dwarf units within 8&quot; of the bearer.</characteristic>
+                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing the Master Rune of Stromni Red beard confers a further +1 bonus to the bearer&apos;s unit&apos;s combat result score, and the combat result score of all other friendly Dwarf units within 12&quot; of the bearer.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="75.0"/>
+                    <cost name="pts" typeId="points" value="60.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9cfc-c452-0a82-07ad" name="Master Rune of Valaya" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7990,7 +7735,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="40.0"/>
+                    <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7fa5-047f-c7d5-9491" name="Master Rune of Grungni" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8001,7 +7746,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                   <profiles>
                     <profile id="4074-9e78-f1eb-9643" name="Master Rune of Grungni" publicationId="aa7b-3583-0834-7bfa" page="206" hidden="false" typeId="9fca-89e3-04a1-e4ae" typeName="Banner Rune">
                       <characteristics>
-                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">Battle Standard Bearer only. A standard bearing the Master Rune of Grungni confers a 5+ ward save against Wounds caused by shooting attacks and all magic missiles to any friendly units within 6&quot; of the bearer.</characteristic>
+                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing the Master Rune of Grungni confers a 5+ ward save against Wounds caused by missile attacks to any friendly units within 12&quot; of the bearer.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8022,7 +7767,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
+                    <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3b5c-b7f5-1765-0f04" name="Rune of Battle (x1)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8063,7 +7808,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                   <profiles>
                     <profile id="fc3d-e605-d8f8-c86b" name="Rune of Battle (x3)" publicationId="aa7b-3583-0834-7bfa" page="206" hidden="false" typeId="9fca-89e3-04a1-e4ae" typeName="Banner Rune">
                       <characteristics>
-                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing three Runes of Battle confers a further +2 bonus to the bearer&apos;s unit&apos;s combat result score, and additionally confers Fight in Extra Ranks to the bearer&apos;s unit.</characteristic>
+                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A standard bearing three Runes of Battle confers a further +2 bonus to the bearer&apos;s unit&apos;s combat result score, and additionally confers Fight in Extra Ranks (1) to the bearer&apos;s unit.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8083,7 +7828,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
+                    <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="09b1-4b8e-44c6-f38b" name="Rune of Slowness (x2)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8098,7 +7843,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="40.0"/>
+                    <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="fb5d-fd58-bbdb-0a96" name="Rune of Slowness (x3)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8114,7 +7859,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="60.0"/>
+                    <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="76bc-d0fd-a695-19b5" name="Rune of Sanctuary (x1)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8129,7 +7874,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
+                    <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="492c-54ce-198a-41c3" name="Rune of Sanctuary (x2)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8144,7 +7889,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="30.0"/>
+                    <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d8dd-f91e-c537-3914" name="Rune of Sanctuary (x3)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8160,7 +7905,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="45.0"/>
+                    <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9b61-7217-7658-4ce6" name="Rune of Stoicism" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8175,7 +7920,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="40.0"/>
+                    <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="cefb-9bb8-d44b-4da4" name="Rune of Guarding" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8220,7 +7965,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="15.0"/>
+                    <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="fc44-c7fa-9d55-bb7e" name="Ancestor Rune" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8230,7 +7975,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                   <profiles>
                     <profile id="7aea-63a8-5920-7ea6" name="Ancestor Rune" publicationId="aa7b-3583-0834-7bfa" page="207" hidden="false" typeId="9fca-89e3-04a1-e4ae" typeName="Banner Rune">
                       <characteristics>
-                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">One use only. If the unit carrying a banner with this rune has to take a Break test, the rune is expended. Roll a D6; on a roll of 4+ the unit, tests as if it were Stubborn. Multiples of this rune have no further elect.</characteristic>
+                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">One use only. If the unit carrying a banner with this rune has to take a Break test, the rune is expended. The unit tests as if it were Stubborn. Multiples of this rune have no further elect.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8265,7 +8010,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="points" value="20.0"/>
+                    <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="bdd1-f451-33b5-436a" name="Master Rune of Grimnir" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8498,7 +8243,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             <infoLink id="934b-c47d-4f7f-00c4" name="Master Rune of Kingship" hidden="false" targetId="16dc-7092-cccb-bfdb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ec4f-6190-71d9-4e82" name="Master Rune of Balance" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8521,12 +8266,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
           <profiles>
             <profile id="0598-b976-5c9c-3894" name="Master Rune of Spellbinding" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
               <characteristics>
-                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">A model with the Master Rune of Spellbinding gets +1 to all attempts to channel dispel dice.</characteristic>
+                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">A model with the Master Rune of Spellbinding gets +2 to all attempts to channel dispel dice.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="02b4-0e28-ea86-5b16" name="Master Rune of Spite" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8537,12 +8282,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
           <profiles>
             <profile id="a7eb-c449-c041-eadb" name="Master Rune of Spite" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
               <characteristics>
-                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">Every time a model with the Master Rune of Spite suffers an unsaved Wound in close combat, the model that inflicted it suffers a S 5 hit.</characteristic>
+                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">Every time a model with the Master Rune of Spite is Hit in close combat, the model that struck the blow suffers a S 4 hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="db18-d492-833a-4583" name="Master Rune of Challenge" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8553,7 +8298,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
           <profiles>
             <profile id="78d0-3072-2fe4-b24a" name="Master Rune of Challenge" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
               <characteristics>
-                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">One use only. The rune is used during the enemy turn before they declare charges. Nominate one enemy unit within 12&quot; of the rune user. The unit must be able to charge and reach the rune user or the unit he is with according to the normal rules. The enemy unit must either declare a charge against the rune user (and any unit he is with) or must flee in the Compulsory Movement phase as if it had failed a Panic test. This rune has no effect on units that have Immunity (Psychology).</characteristic>
+                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">One use only. The rune is used during the enemy turn before they declare charges. Nominate one enemy unit within 12&quot; of the rune user. The unit must be able to charge and reach the rune user or the unit he is with according to the normal rules. The enemy unit must either declare a charge against the rune user (and any unit he is with) or must flee in the Compulsory Movement phase as if it had failed a Panic test. The rune user (and any unit he is with) can only elect to Hold or Stand and Shoot. Any Terror tests are taken as normal. This rune has no effect on units that have Immunity (Psychology).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8634,7 +8379,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             <infoLink id="de2c-ed6d-520d-42b5" name="Rune of Spellbreaking (x2)" hidden="false" targetId="6c9e-6771-a70e-1214" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d274-fa04-a5c1-d5dd" name="Rune of Fate" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8644,7 +8389,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
           <profiles>
             <profile id="12be-70cf-6156-eb41" name="Rune of Fate" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
               <characteristics>
-                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">One use only. The model has a Ward save (2+) against the first wound suffered. Multiples of this rune have no further effect.</characteristic>
+                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">One use only. The model has a Ward save (2+) against the first unsaved Wound suffered. Multiples of this rune have no further effect.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8685,7 +8430,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
           <profiles>
             <profile id="05e7-3538-f1e9-488d" name="Rune of the Brotherhood" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
               <characteristics>
-                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">May not be used by a character with an Oath stone or Shieldbearers. A character with this rune may either be deployed with a unit of Rangers utilising Scout or join a unit of Miners utilising Ambushers. Multiples of this rune have no further effect.</characteristic>
+                <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">May not be used by a character with an Oath stone or Shieldbearers. A character with this rune may either be deployed with a unit of Rangers utilising Scouts or join a unit of Miners utilising Ambushers. Multiples of this rune have no further effect.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8713,7 +8458,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="491e-91a1-ec9d-5065" name="Master Rune of Defence" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8729,7 +8474,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9745-f4ea-a0e7-80dd" name="Master Rune of Disguise" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8745,7 +8490,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="08a2-de8a-52c9-9a0e" name="Master Rune of Skewering" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8756,12 +8501,12 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
           <profiles>
             <profile id="5e45-65cf-d6ad-99f0" name="Master Rune of Skewering" publicationId="aa7b-3583-0834-7bfa" page="208" hidden="false" typeId="6aa2-7707-349b-6651" typeName="Armour Rune">
               <characteristics>
-                <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Bolt Throwers only. One use only. The Bolt Thrower hits on a 2+ with no modifiers this turn. You must choose to use this rune before rolling to hit.</characteristic>
+                <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Bolt Thrower only. The Bolt Thrower always hits on a 3+ with no modifiers.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="82bd-c92a-4b88-8e1d" name="Rune of Penetrating (x1)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8776,7 +8521,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6c55-da21-69c1-1742" name="Rune of Penetrating (x2)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8791,7 +8536,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="81c2-252a-cea2-8f06" name="Rune of Accuracy" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8836,7 +8581,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d19d-db75-2717-ffe4" name="Stalwart Rune (x2)" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8851,7 +8596,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d55e-979f-4365-32e0" name="Flakkson&apos;s Rune of Seeking" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -9100,7 +8845,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
       <description>For each friendly Anvil of Doom on the battlefield at the start of any Magic phase, add one dice to both your power and your dispel pool.</description>
     </rule>
     <rule id="17c3-44e8-eb49-193b" name="Anvil of Doom" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false">
-      <description>A Runelord with an Anvil of Doom gains Ward Save (4+) and Unbreakable. In addition, his troop type changes to War Machine and he counts as being part of the crew. Randomise any missile hits between the Runelord and the crew. The Runelord can never choose to leave the Anvil during the game. If the Runelord is killed, the whole Anvil is also removed as a casualty.</description>
+      <description>A Runelord with an Anvil of Doom gains Ward Save (4+) and Unbreakable. In addition, his troop type changes to War Machine and he counts as being part of the crew. The Runelord can never choose to leave the Anvil during the game. If the Runelord is killed, the whole Anvil is also removed as a casualty.</description>
     </rule>
     <rule id="01a2-3b93-87d9-b91e" name="Strike the Runes" publicationId="aa7b-3583-0834-7bfa" page="141" hidden="false">
       <description>A model mounted on an Anvil of Doom can use each of the following bound spells once per friendly Magic Phase. In addition, it may use up to
@@ -9119,7 +8864,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
       <description>A Dragon Slayer has Slayer. In addition, when attacking Monsters, the Slayer&apos;s attacks cause Multiple Wounds (D3).</description>
     </rule>
     <rule id="96e9-1cf9-efcf-5b46" name="Daemon Slayer" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false">
-      <description>A Daemon Slayer has Slayer and Dragon Slayer. In addition, any Ward saves successfully made against Attacks made by the Slayer must be re-rolled.</description>
+      <description>A Daemon Slayer has Slayer and Dragon Slayer. In addition, any Ward saves successfully made against Attacks made by the Slayer must be re-rolled. For each Daemon Slayer in your army, you may take one unit of Troll Slayers (but not Giant Slayers) as a Core Unit.</description>
     </rule>
     <rule id="2bd3-01fb-eccb-bcca" name="Bombing Run" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false">
       <description>During the Remaining Moves sub-phase, models with this rule may drop a bomb unless they are fleeing or have declared a charge that turn. To make a Bombing Run, select one unengaged enemy unit that the Gyrobomber moved over in that turn and place the large 5&quot; template anywhere over the target unit (but note that it cannot cover friendly models) and roll for scatter and damage as for a stone thrower. If a misfire is rolled, use the Bomb Misfire chart.
@@ -9127,19 +8872,28 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
 After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, the bomb scatters D6&quot; from where it first landed (a Hit! result remains in place). Place the small round (3&quot;) template on the new location and resolve damage using the profile above. It cannot bounce a third time.</description>
     </rule>
     <rule id="e3a8-c128-05b0-742e" name="Dwarf-crafted" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>Dwarf handguns can re-roll 1&apos;s when rolling To Hit.</description>
+      <description>All handguns, pistols and crossbows in a Dwarf army can re-roll 1&apos;s when rolling To Hit.</description>
     </rule>
     <rule id="1707-3abf-d5c8-97c0" name="Deathblow" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false">
       <description>If a Slayer is killed by normal Close Combat Attacks, it will immediately make a single Attack back against the unit or model that killed it before the Slayer is removed as a casualty.</description>
     </rule>
     <rule id="6502-468e-b48f-4540" name="Gromril Armour" publicationId="aa7b-3583-0834-7bfa" page="136" hidden="false">
-      <description>Models with this rule add +1 to their armour saves if they wear light, medium, heavy or full plate armour.</description>
+      <description>Models with this rule add +1 to their armour saves if they wear light, medium or heavy armour.</description>
     </rule>
     <rule id="a37b-fbd9-c266-3919" name="Beer Gut" publicationId="aa7b-3583-0834-7bfa" page="145" hidden="false">
       <description>Enemy attacks against the Brewmaster&apos;s front suffer -1 To Wound.</description>
     </rule>
     <rule id="cbda-1d98-cc0a-1039" name="Lumbering" publicationId="aa7b-3583-0834-7bfa" page="172" hidden="false">
       <description>Models with this rule automatically fail any I test they are forced to make.</description>
+    </rule>
+    <rule id="75c9-6db1-0ce0-09c8" name="Underground Advance" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false">
+      <description>Miners have Ambushers. In addition, instead of deploying like normal Ambushers, a Miner unit can choose to arrive anywhere on the battlefield from below.
+
+During deployment, before Scouts are placed, place a tunnel marker anywhere on the battlefield. The unit will then deploy using Ambushers. When the unit emerges, roll a scatter dice and an artillery dice. If you roll a hit on the scatter dice, the marker stays in place; if you roll an arrow, move the marker the number of inches indicated by the artillery dice in the direction shown by the arrow. If the marker is moved off the tabletop, the Miners are considered lost; treat them as casualties. In case a Misfire is rolled, roll a D6 and consult the Underground Mishap table.
+
+Once the final position is established, place the Miner unit so it can touch the marker. If the marker is under a friendly unit or impassable terrain, place it next to the closest edge of the unit/terrain. They may face in any direction.
+
+If the marker is under an enemy unit when the Miners emerge, the Miners are considered to have charged. Place the attacking Dwarfs to the front of the enemy unit that is atop the marker.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9280,7 +9034,7 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
     <profile id="Giant Slayer (Brotherhood)" name="Giant Slayer" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
@@ -9308,9 +9062,9 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
     <profile id="6dac-8ef5-d57c-4c5a" name="Giant Slayer" publicationId="aa7b-3583-0834-7bfa" page="160" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">3</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
@@ -9370,7 +9124,7 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
     </profile>
     <profile id="1e9c-5b97-4164-afe0" name="Master Rune of Breaking" publicationId="aa7b-3583-0834-7bfa" page="201" hidden="false" typeId="be21-8ba1-7009-d43e" typeName="Weapon Rune">
       <characteristics>
-        <characteristic name="Effect" typeId="daeb-8a2c-9eae-f2dd">If a Dwarf with a weapon engraved with the Master Rune of Breaking scores one or more successful hits against a model with a magic weapon, the foe&apos;s magic weapon is destroyed on a D6 roll of 2+ (roll once, regardless of the number of successful hits). A foe with a destroyed magic weapon counts as being armed with a hand weapon. If the foe has more than one magic weapon (note that Paired weapons count as one), roll a D6 to randomly determine which one is destroyed.</characteristic>
+        <characteristic name="Effect" typeId="daeb-8a2c-9eae-f2dd">If a model with a weapon engraved with the Master Rune of Breaking scores one or more successful hits against a model, the foe&apos;s weapon or armour is destroyed on a D6 roll of 2+ (roll once, regardless of the number of successful hits). If the foe has more than one piece of equipment (note that two hand weapons count as one), roll a D6 to randomly determine which one is destroyed.</characteristic>
       </characteristics>
     </profile>
     <profile id="d126-b900-e5c8-eb59" name="Grudge Rune" publicationId="aa7b-3583-0834-7bfa" page="203" hidden="false" typeId="be21-8ba1-7009-d43e" typeName="Weapon Rune">
@@ -9380,7 +9134,7 @@ After resolving the damage caused by a grudge buster bomb, roll a D6. On a 4+, t
     </profile>
     <profile id="b1ed-2663-2429-529c" name="Rune of Shielding" publicationId="aa7b-3583-0834-7bfa" page="204" hidden="false" typeId="6aa2-7707-349b-6651" typeName="Armour Rune">
       <characteristics>
-        <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Armour engraved with a Rune of Shielding grants its wearer a Ward save (2+) against Wounds caused by shooting attacks and all magic missiles. Multiples of this rune have no further effect.</characteristic>
+        <characteristic name="Effect" typeId="c6f4-789d-d436-e4d0">Armour engraved with a Rune of Shielding grants its wearer a Ward save (2+) against Wounds caused by missile attacks. Multiples of this rune have no further effect.</characteristic>
       </characteristics>
     </profile>
     <profile id="78c9-075c-5c7b-5c1f" name="Rune of Warding (x2)" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
@@ -9447,7 +9201,7 @@ A second Rune of Spell breaking maintains the previous effect and, after the spe
     </profile>
     <profile id="f482-722c-a303-db82" name="Master Rune of Balance" publicationId="aa7b-3583-0834-7bfa" page="205" hidden="false" typeId="46dc-ac3a-6194-9dc2" typeName="Talismanic Rune">
       <characteristics>
-        <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">Runesmiths/Runelords only. During the enemy&apos;s Magic phase, this rune allows the owning player to roll a D6; on a roll of 4+, he can remove one power dice from his opponent&apos;s pool and add it to his own dispel pool.</characteristic>
+        <characteristic name="Effect" typeId="2019-7faf-64f7-0c61">Runesmiths/Runelords only. During the enemy&apos;s Magic phase, this rune allows the owning player remove one power dice from his opponent&apos;s pool and add it to his own dispel pool.</characteristic>
       </characteristics>
     </profile>
     <profile id="070c-c416-7588-2ecf" name="Master Rune of Smiting" publicationId="aa7b-3583-0834-7bfa" page="201" hidden="false" typeId="be21-8ba1-7009-d43e" typeName="Weapon Rune">
@@ -9478,17 +9232,17 @@ A second Rune of Spell breaking maintains the previous effect and, after the spe
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single friendly Dwarf unit anywhere on the battlefield. The target unit increases their armour save by 1 (to a maximum of 1+) until the start of the next friendly Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d359-dedc-e7e8-0406" name="01" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
+    <profile id="d359-dedc-e7e8-0406" name="01 (Bomb Misfire Chart)" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
       <characteristics>
         <characteristic name="Result" typeId="b4d1-43ca-8017-8090">Premature Detonation: The model suffers a S 6 hit with Multiple Wounds (D3).</characteristic>
       </characteristics>
     </profile>
-    <profile id="c9d3-268a-6e9f-04af" name="02-03" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
+    <profile id="c9d3-268a-6e9f-04af" name="02-03 (Bomb Misfire Chart)" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
       <characteristics>
         <characteristic name="Result" typeId="b4d1-43ca-8017-8090">Jammed Release: Centre the 3&quot; template over the model before scattering it and resolving damage as normal. This bomb does not bounce.</characteristic>
       </characteristics>
     </profile>
-    <profile id="caaa-79d1-035f-b637" name="04-06" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
+    <profile id="caaa-79d1-035f-b637" name="04-06 (Bomb Misfire Chart)" publicationId="aa7b-3583-0834-7bfa" page="176" hidden="false" typeId="df3f-ace7-2da2-189d" typeName="Bomb Misfire Chart">
       <characteristics>
         <characteristic name="Result" typeId="b4d1-43ca-8017-8090">Dud: Only the model under the template&apos;s central hole is hit, suffering a single S 4 hit.</characteristic>
       </characteristics>
@@ -9533,6 +9287,22 @@ A second Rune of Spell breaking maintains the previous effect and, after the spe
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Melee</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">+3</characteristic>
         <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">-2 I. Requires Two Hands. A Miner unit equipped with a steam drill can re-roll a failed arrival for Ambushers.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6b3a-aeaa-1086-23ae" name="01-02 (Underground Mishap Table)" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="1f08-094e-f67a-a3fa" typeName="Underground Mishap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="05b8-374f-46db-11d2">Cave-in!: The Miners are instantly killed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6dd3-4fe6-8684-0459" name="03-05 (Underground Mishap Table)" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="1f08-094e-f67a-a3fa" typeName="Underground Mishap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="05b8-374f-46db-11d2">Partial Collapse: All models in the unit must pass a S test or be removed as
+casualties. Any models that survive may not move or charge on the turn they emerge after a Partial Collapse. If the models emerge into close combat they have Always Strikes Last for the remainder of the turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9c9-a6fb-4d03-cd54" name="06 (Underground Mishap Table)" publicationId="aa7b-3583-0834-7bfa" page="153" hidden="false" typeId="1f08-094e-f67a-a3fa" typeName="Underground Mishap Table">
+      <characteristics>
+        <characteristic name="Result" typeId="05b8-374f-46db-11d2">Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18&quot; of the original position on the table and this is where the Miners emerge. They cannot move or charge on the turn they emerge.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

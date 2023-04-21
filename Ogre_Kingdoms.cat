@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e12f-c1a5-402a-77ae" name="Ogre Kingdoms" revision="30" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dcfb-308c-d238-54ac" name="Big Name">
@@ -76,6 +76,44 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ed6-0447-987b-5316" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2135-8430-971a-03fc" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="337e-a0d7-ae20-4544" name="Second Big Name" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="55f6-d7f5-9fa2-ef92" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e1e-2ec1-ed30-e9d5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a08-048f-1217-7c51" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b4e6-194b-00cb-ba2f" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1178-0cb2-da42-0bff" name="Third Big Name" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="55f6-d7f5-9fa2-ef92" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e1e-2ec1-ed30-e9d5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d958-85bb-8a6d-754e" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="88cc-9ce7-7066-260d" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="8d61-1989-a192-c6f8" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
             <entryLink id="c6ae-34a1-52fd-7955" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
@@ -221,30 +259,11 @@
             </selectionEntry>
             <selectionEntry id="3e1e-2ec1-ed30-e9d5" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3906-64e4-372c-c2d3" type="max"/>
-                <constraint field="points" scope="parent" value="18.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2451-d88b-6a24-d415" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3906-64e4-372c-c2d3" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="290e-f7da-f4bd-e58b" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="7618-b86b-e7d6-997f" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="01be-57ed-0636-1b63" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3c3-2932-8983-a5d6" type="max"/>
-                <constraint field="points" scope="parent" value="18.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f182-7ab2-632c-c55e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1811-145a-542f-5672" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink id="00a8-61b9-b8f8-1cca" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
-              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
@@ -264,7 +283,8 @@
                 <infoLink id="0e60-bd82-7fee-d10b" name="Mournfang" hidden="false" targetId="f151-300b-a2da-39f5" type="profile"/>
                 <infoLink id="9378-1dd3-c2dc-899c" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
                 <infoLink id="d124-efc2-a69d-e921" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
-                <infoLink id="ee9f-bc01-e784-7a95" name="Mournfang" hidden="false" targetId="bc3c-4764-5df2-06e9" type="rule"/>
+                <infoLink id="ee9f-bc01-e784-7a95" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
+                <infoLink id="a191-ed15-b374-c5e7" name="Mournfang" hidden="false" targetId="bc3c-4764-5df2-06e9" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="45.0"/>
@@ -280,6 +300,7 @@
                 <infoLink id="8919-360e-57c6-2c03" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="686c-bddf-935b-c3ca" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="79d8-df3a-1e08-18b9" name="Rhinox" hidden="false" targetId="d5f3-5568-962d-6ae9" type="rule"/>
+                <infoLink id="678d-db18-aec0-b847" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
@@ -305,6 +326,7 @@
                   <infoLinks>
                     <infoLink id="890d-5e65-54a6-863d" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
                     <infoLink id="125b-a402-68d8-6472" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                    <infoLink id="6cbf-b48a-4ddb-a57c" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -365,6 +387,7 @@
             <entryLink id="680d-a877-a003-2071" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="f73d-6916-a500-a389" name="Arcane Items" hidden="false" collective="false" import="true" targetId="5b18-41f0-a03d-edb3" type="selectionEntryGroup"/>
             <entryLink id="692b-a939-3aee-de05" name="Talismans" hidden="false" collective="false" import="true" targetId="afad-d7c6-3d5d-b7d3" type="selectionEntryGroup"/>
+            <entryLink id="66a0-b7de-dbfe-ec9d" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="76c1-6c79-e314-7549" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -613,6 +636,26 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16f2-6fc5-957a-febc" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b3a8-78f9-b12e-ac7a" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="3d44-d846-6899-d7dd" name="Second Big Name" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="16bd-cf4e-7102-c09f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e6f-a19e-60df-4a51" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebf5-9739-29ae-1951" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="8240-af20-46fb-eecf" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="6493-caf0-0fcf-0a72" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e620-3ace-2026-56b2" type="selectionEntryGroup"/>
             <entryLink id="d7ba-2734-8c33-d224" name="Magic Armour" hidden="false" collective="false" import="true" targetId="a427-308b-073b-890e" type="selectionEntryGroup"/>
@@ -756,17 +799,13 @@
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="54fd-36d6-8f47-cbd9" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5e6f-a19e-60df-4a51" name="Name-Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fcd-9d76-6021-b829" type="max"/>
-                <constraint field="points" scope="parent" value="18.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="43dd-2320-2631-e15d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f0d-13cc-6f61-b639" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="b0c6-6fdb-1077-1d07" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
+                <infoLink id="f33b-93f7-15cb-c027" name="Name-Gnoblar" hidden="false" targetId="f1d9-2e36-cf53-fc2b" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="4a9e-f9b7-6792-a3fb" name="Big Names" hidden="false" collective="false" import="true" targetId="b940-f3aa-fc1c-905a" type="selectionEntryGroup"/>
-              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
@@ -787,6 +826,7 @@
                 <infoLink id="52eb-da34-fd63-b397" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
                 <infoLink id="ce89-62b7-d323-95e5" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                 <infoLink id="4c2a-dfc2-bd9a-9797" name="Mournfang" hidden="false" targetId="bc3c-4764-5df2-06e9" type="rule"/>
+                <infoLink id="905c-4df5-a6e7-bd8f" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="45.0"/>
@@ -802,6 +842,7 @@
                 <infoLink id="d80f-4fc8-7f7c-d771" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="9be3-a19a-5306-d125" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="d3fe-2363-a1ae-3da9" name="Rhinox" hidden="false" targetId="d5f3-5568-962d-6ae9" type="rule"/>
+                <infoLink id="838a-07ee-277d-25b5" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="65.0"/>
@@ -827,6 +868,7 @@
                   <infoLinks>
                     <infoLink id="90e1-0c49-b811-1ad3" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
                     <infoLink id="9273-50ef-5c78-643f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                    <infoLink id="4236-052f-c780-4e4d" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -927,6 +969,7 @@
             <entryLink id="3b08-9fc4-b828-5731" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="0057-6713-e3a6-4927" name="Arcane Items" hidden="false" collective="false" import="true" targetId="5b18-41f0-a03d-edb3" type="selectionEntryGroup"/>
             <entryLink id="ccfc-387f-0c36-b33f" name="Talismans" hidden="false" collective="false" import="true" targetId="afad-d7c6-3d5d-b7d3" type="selectionEntryGroup"/>
+            <entryLink id="5bcc-107b-f002-8c81" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="76c1-6c79-e314-7549" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1202,6 +1245,7 @@
                 <infoLink id="2786-9ba2-9ae3-855b" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="84fb-99f5-a143-46d9" name="Hunter" hidden="false" targetId="1473-ae44-e14c-a3cd" type="rule"/>
                 <infoLink id="723a-4c06-0e2c-37f9" name="Stonehorn" hidden="false" targetId="0999-ea35-b5ac-21e9" type="rule"/>
+                <infoLink id="ff26-4358-2e17-a9c2" name="Large Target (6)" hidden="false" targetId="fadb-967d-6cb8-ed08" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="225.0"/>
@@ -1223,6 +1267,7 @@
                 <infoLink id="be5d-4153-258b-8a30" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
                 <infoLink id="f608-adac-df0e-b9c4" name="Numbing Chill" hidden="false" targetId="0eb7-3104-e3e3-86bf" type="rule"/>
                 <infoLink id="c272-67b0-2de7-ed8e" name="Thundertusk" hidden="false" targetId="07c5-c697-a3cf-ca03" type="rule"/>
+                <infoLink id="3070-eeea-2f63-de6b" name="Large Target (6)" hidden="false" targetId="fadb-967d-6cb8-ed08" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="44ac-813a-805e-ef92" name="Ogre Beast Rider" hidden="false" collective="false" import="true" type="model">
@@ -1399,6 +1444,7 @@
             <entryLink id="239f-cc29-3828-d3dc" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f9f8-08c0-190e-938e" type="selectionEntryGroup"/>
             <entryLink id="1f57-4849-15f5-7087" name="Arcane Items" hidden="false" collective="false" import="true" targetId="5b18-41f0-a03d-edb3" type="selectionEntryGroup"/>
             <entryLink id="5283-1e90-49a9-10e8" name="Talismans" hidden="false" collective="false" import="true" targetId="afad-d7c6-3d5d-b7d3" type="selectionEntryGroup"/>
+            <entryLink id="b6e1-ed7f-b7aa-3133" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="76c1-6c79-e314-7549" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1552,7 +1598,7 @@
         <profile id="e631-19a5-8154-a812" name="Ice Spikes" publicationId="9e23-79cb-pubN78137" page="85" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
           <characteristics>
             <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
-            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+            <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
             <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5</characteristic>
             <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
             <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place the small round template anywhere within range of the caster. The area covered by the small template becomes dangerous terrain until the start of the caster’s next magic phase. This does not affect Yhetees and Thundertusks.</characteristic>
@@ -1563,8 +1609,8 @@
             <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
             <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5</characteristic>
-            <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast upon the caster himself and affects all units within 6&quot;. Any shooting targeted at units within the Snowstorm suffer -1 To Hit to their shooting attacks.</characteristic>
+            <characteristic name="Range" typeId="2954-76ea-decb-30ff">6&quot;</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast upon the caster himself that targets all friendly units within range. Any shooting targeted at units within the Snowstorm suffer -1 To Hit to their shooting attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2189,6 +2235,18 @@
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="1ff5-b6b5-9b03-e82d" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e62-d87a-587b-939c" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4fa0-4cf0-31dc-421a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="dfba-f05e-b4d6-5170" name="Magic Standards" hidden="false" collective="false" import="true" targetId="94f9-5904-11b4-33b0" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -2238,6 +2296,7 @@
                 <infoLink id="d4b6-fc76-84c6-99e6" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
                 <infoLink id="603f-3f3f-e016-7e30" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                 <infoLink id="7361-87eb-ea21-0a19" name="Mournfang" hidden="false" targetId="bc3c-4764-5df2-06e9" type="rule"/>
+                <infoLink id="e992-f2f1-5ef3-0367" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2365,6 +2424,17 @@
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8113-f533-392a-a3e9" name="Look-out Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3c9-658a-e565-092a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a42d-c8b2-d144-8689" name="Look-out Gnoblar" hidden="false" targetId="c1ac-3da4-f49c-8a9c" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3063,6 +3133,7 @@
             <infoLink id="fcba-caa7-0d5e-974c" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="49f3-aa95-a941-f2a9" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="1fdc-ce38-7e3f-3a05" name="Their Master&apos;s Voice" hidden="false" targetId="9148-86c0-7e97-dd9b" type="rule"/>
+            <infoLink id="ade3-178f-2d5b-e94b" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="9f5c-ecbf-b04e-81b1" name="Scouts" hidden="false" collective="true" import="true" type="upgrade">
@@ -3248,7 +3319,7 @@
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
+            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry</characteristic>
           </characteristics>
         </profile>
@@ -3288,6 +3359,7 @@
           <infoLinks>
             <infoLink id="cc5f-de1a-52a1-bacd" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
             <infoLink id="bfcf-ad8a-5c96-26d0" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="2ff1-433d-829c-ef39" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3492,6 +3564,7 @@
           <infoLinks>
             <infoLink id="223b-242b-f1b4-89de" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
             <infoLink id="5623-aa5b-e0e9-b2e5" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="6005-0cce-b3ab-dd92" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3582,6 +3655,7 @@
           <infoLinks>
             <infoLink id="a6d7-a885-5192-5190" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
             <infoLink id="8cb2-41c6-67cf-74a9" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="30ed-ff9f-9af5-6189" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3659,6 +3733,7 @@
                 <infoLink id="8dd2-a7e4-18f4-2cb3" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="b0ad-1216-61ce-57f7" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="6523-2013-66fc-e7fc" name="Rhinox" hidden="false" targetId="d5f3-5568-962d-6ae9" type="rule"/>
+                <infoLink id="9e51-a7d3-a619-3a87" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -3803,6 +3878,17 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="0974-8625-236d-db85" name="Look-out Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e9a-81b9-49c1-3e75" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c332-1c2c-fc94-e018" name="Look-out Gnoblar" hidden="false" targetId="c1ac-3da4-f49c-8a9c" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -3895,6 +3981,7 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
           <infoLinks>
             <infoLink id="389b-a4e0-636a-1abb" name="Rhinox" hidden="false" targetId="fc1f-f1f3-119e-63ec" type="profile"/>
             <infoLink id="7f5f-6d8e-ac88-df89" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="6151-7c2e-52e3-43c7" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4057,9 +4144,10 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
         <infoLink id="f437-a6f2-3d12-36a8" name="Earth-shattering Charge" hidden="false" targetId="8de9-5149-bf91-0ebc" type="rule"/>
         <infoLink id="12c9-82b7-2b27-7a8c" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
         <infoLink id="f995-b825-2d41-a8ff" name="Stone Skeleton" hidden="false" targetId="c65c-f846-aec9-4814" type="rule"/>
-        <infoLink id="6e2b-7a3a-a4bd-4993" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
         <infoLink id="3f18-737c-1762-c259" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
         <infoLink id="1ab2-d09a-10a3-1e8f" name="Stonehorn" hidden="false" targetId="0999-ea35-b5ac-21e9" type="rule"/>
+        <infoLink id="5f51-a237-aaeb-adb6" name="Large Target (6)" hidden="false" targetId="fadb-967d-6cb8-ed08" type="rule"/>
+        <infoLink id="ad71-5d2f-b427-bc5d" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e98a-d510-cd8c-e1c0" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -4140,6 +4228,7 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
         <infoLink id="5726-e997-d8af-dfee" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
         <infoLink id="fa71-c285-5ad3-607a" name="Numbing Chill" hidden="false" targetId="0eb7-3104-e3e3-86bf" type="rule"/>
         <infoLink id="5cd0-0ae5-0cc6-85b0" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+        <infoLink id="1806-78b5-d72b-f8d3" name="Large Target (6)" hidden="false" targetId="fadb-967d-6cb8-ed08" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0797-64ee-d488-135d" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -4568,6 +4657,18 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="4cc1-e31d-35f1-d32a" name="Magic Standards" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e93-ffec-ec20-7a85" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f49a-910f-43a2-249f" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b20d-d711-0315-ca00" name="Magic Standards" hidden="false" collective="false" import="true" targetId="94f9-5904-11b4-33b0" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -4616,6 +4717,7 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
                 <infoLink id="025c-6f31-f695-4678" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
                 <infoLink id="3acb-c0b1-7f86-b1a0" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="5edc-b1c7-0803-4d4a" name="Rhinox" hidden="false" targetId="d5f3-5568-962d-6ae9" type="rule"/>
+                <infoLink id="0082-0041-c073-38d4" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4758,6 +4860,17 @@ If a misfire is rolled on the first artillery dice, roll a D6 and consult the Ir
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d121-aebe-4a1c-6fd8" name="Look-out Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="17db-d05f-e87c-0c85" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4cc7-84c1-fc3e-da49" name="Look-out Gnoblar" hidden="false" targetId="c1ac-3da4-f49c-8a9c" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -5533,6 +5646,7 @@ and Multiple Wounds (D3).</characteristic>
                         <infoLink id="733a-61e9-4e7d-ce8e" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                         <infoLink id="ac95-465f-528d-d1ed" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
                         <infoLink id="d2f0-377f-576a-983b" name="Mournfang" hidden="false" targetId="bc3c-4764-5df2-06e9" type="rule"/>
+                        <infoLink id="00b3-0cc4-6281-d27c" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="45.0"/>
@@ -5549,6 +5663,7 @@ and Multiple Wounds (D3).</characteristic>
                         <infoLink id="5ab6-e66a-e17d-5463" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                         <infoLink id="8234-4224-8b0a-aa32" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
                         <infoLink id="0da5-0bd4-54b3-d2c4" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
+                        <infoLink id="a243-c22c-b56d-b455" name="Large Target (4)" hidden="false" targetId="94f0-53dc-6b11-2290" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="65.0"/>
@@ -5569,6 +5684,7 @@ and Multiple Wounds (D3).</characteristic>
                         <infoLink id="e575-2ea6-6886-8f45" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                         <infoLink id="e9c2-7c0a-5729-6f7c" name="Jhared the Red" hidden="false" targetId="cde9-e208-3420-4544" type="rule"/>
                         <infoLink id="5047-43ef-bf84-3490" name="Stonehorn" hidden="false" targetId="0999-ea35-b5ac-21e9" type="rule"/>
+                        <infoLink id="712b-2bdc-cc84-36a5" name="Large Target (6)" hidden="false" targetId="fadb-967d-6cb8-ed08" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="225.0"/>
@@ -5591,6 +5707,7 @@ and Multiple Wounds (D3).</characteristic>
                         <infoLink id="8fdd-62fd-bdb5-1b47" name="Immunity (Ice Attacks)" hidden="false" targetId="5dfb-b5c0-520b-ed68" type="rule"/>
                         <infoLink id="51d2-b55e-d9ca-db91" name="Numbing Chill" hidden="false" targetId="0eb7-3104-e3e3-86bf" type="rule"/>
                         <infoLink id="9700-cd7c-f750-15e5" name="Thundertusk" hidden="false" targetId="07c5-c697-a3cf-ca03" type="rule"/>
+                        <infoLink id="9dbc-320e-7046-35a7" name="Large Target (6)" hidden="false" targetId="fadb-967d-6cb8-ed08" type="rule"/>
                       </infoLinks>
                       <selectionEntries>
                         <selectionEntry id="c0d3-3c5e-5c94-887c" name="Ogre Beast Rider" hidden="false" collective="false" import="true" type="model">
@@ -6422,6 +6539,9 @@ and Multiple Wounds (D3).</characteristic>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b940-f3aa-fc1c-905a" name="Big Names" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a90-97ea-6300-c910" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="956d-64a4-6281-e4e3" name="Deathcheater" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -6730,7 +6850,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Ironfist. Any hits made with Skullplucker give the wielder Killing Blow.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Ironfist. Any hits made with Skullplucker have Killing Blow.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6762,22 +6882,6 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="71e7-2349-e62b-975c" name="Hellheart" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a517-f58c-526b-2e8e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5be-02f2-8394-e5a6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="52c3-8947-63e4-e62d" name="Hellheart" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One Use Only. The Hellheart can be used at the start of one of the opposing side&apos;s Magic phases, immediately after rolling for the Winds of Magic. All enemy Wizards within 12&quot; of the bearer must roll 2D6 on the Miscast table. Special rules or magic items that affect a normal miscast roll can be used against miscasts caused by the Hellheart. After resolving all the Miscasts, add an extra dispel dice to the Ogre&apos;s dispel pool for each enemy Wizard that was forced to roll on the Miscast table.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fabe-e23d-1869-2ba0" name="Halfling Cookbook" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -6819,22 +6923,6 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1e7e-2ac3-5765-50eb" name="The Hungry Maw" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b496-eb1d-9445-557e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="994c-e4c5-09c7-c77e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="abd0-cd7b-d29f-f623" name="The Hungry Maw" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Hungry Maw can be used after successfully dispelling an enemy spell. When used, the enemy spell can no longer be used for the remainder of the game.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7094,6 +7182,48 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
         <entryLink id="e554-9ae7-c022-c00a" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="76c1-6c79-e314-7549" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="470a-3346-f057-e277" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="45fb-56e7-a894-b2ed" name="Hellheart" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6db-fc2a-2470-83b4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c965-98e2-4eea-91a2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bad6-33e4-87dc-c71d" name="Hellheart" publicationId="9e23-79cb-pubN78137" page="117" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One Use Only. The Hellheart can be used at the start of one of the opposing side&apos;s Magic phases, immediately after rolling for the Winds of Magic. All enemy Wizards within 12&quot; of the bearer must roll 2D6 on the Miscast table. Special rules or magic items that affect a normal miscast roll can be used against miscasts caused by the Hellheart. After resolving all the Miscasts, add an extra dispel dice to the Ogre&apos;s dispel pool for each enemy Wizard that was forced to roll on the Miscast table.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3fe4-36b0-07a8-7399" name="The Hungry Maw" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61b0-3d09-c2c5-0eca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa1b-0202-72c5-74e8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="21bb-1459-320d-6b4c" name="The Hungry Maw" publicationId="e3da-3848-ff08-a482" page="36" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Hungry Maw can be used after successfully dispelling an enemy spell. When used, the enemy spell can no longer be used for the remainder of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3df7-b38c-02e8-1748" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="3e38-e9e9-331a-66ed" name="Bellower" publicationId="9e23-79cb-pubN78137" page="56" hidden="false">
@@ -7112,7 +7242,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
       <description>Any character or champion in a unit with a Look-out Gnoblar benefits from the &apos;Look Out Sir!&apos; as long as there are three rank and file models of the same troop type remaining in the unit.</description>
     </rule>
     <rule id="f1d9-2e36-cf53-fc2b" name="Name-Gnoblar" publicationId="9e23-79cb-pubN78137" page="57" hidden="false">
-      <description>For each Name-Gnoblar an Ogre has, he can choose an additional Big Name up to 15 points.</description>
+      <description>For each Name-Gnoblar an Ogre has, he can choose an additional Big Name.</description>
     </rule>
     <rule id="92ec-066b-93e3-da1b" name="Scalp-Gnoblar" publicationId="9e23-79cb-pubN78137" page="57" hidden="false">
       <description>One use only. A Butcher with a Scalp-Gnoblar may re-roll a single dice when attempting to cast a spell from the Lore of the Great Maw.</description>
@@ -7127,7 +7257,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
       <description>Yhetees have Ice Attacks and Magical Attacks.</description>
     </rule>
     <rule id="b689-b096-3baa-96a2" name="Scale Terrain" publicationId="9e23-79cb-pubN78137" page="84" hidden="false">
-      <description>Yhetees treat all undefended obstacles, cliffs, rocks, boulders, scree and woods as clear ground. Note that they may still not end their Movement over Impassable Terrain.</description>
+      <description>Yhetees treat all undefended obstacles, cliffs, rocks, boulders, scree and woods as open ground. Note that they may still not end their Movement in Impassable Terrain.</description>
     </rule>
     <rule id="8de9-5149-bf91-0ebc" name="Earth-shattering Charge" publicationId="9e23-79cb-pubN78137" page="87" hidden="false">
       <description>A Stonehorn has Impact Hits (D6). When a Stonehorn makes a successful charge, you may roll 2D6 when determining the number of Impact Hits, and choose the highest result.</description>
@@ -7166,7 +7296,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
       <description>Models on a Rhinox have a Unit Strength of 7.</description>
     </rule>
     <rule id="0eb7-3104-e3e3-86bf" name="Numbing Chill" publicationId="9e23-79cb-pubN78137" page="89" hidden="false">
-      <description>Any enemy model within 6&quot; of a Thundertusk has Always Strikes Last. This has no effect on models with Immunity (Ice Attacks).</description>
+      <description>Any enemy unit within 6&quot; of a Thundertusk has Always Strikes Last. This has no effect on models with Immunity (Ice Attacks).</description>
     </rule>
     <rule id="eed3-6776-38a1-0d79" name="Rhinox War Chariot" publicationId="9e23-79cb-pubN78137" page="129" hidden="false">
       <description>A Rhinox War Chariot has a Unit Strength of 7.</description>
@@ -7487,7 +7617,7 @@ If the Thundercrush Attack hits, place the small template anywhere so that it is
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+/15+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+/16+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target has Regeneration (4+) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
@@ -7509,16 +7639,16 @@ Once the final position of the template is determined, all models under the temp
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/9+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target has Stubborn until the start of the caster&apos;s next Magic phase.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/16+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target has Stubborn and Immunity (Panic) until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly units within range.</characteristic>
       </characteristics>
     </profile>
     <profile id="e315-f5ee-47ac-b46c" name="Toothcracker" publicationId="9e23-79cb-pubN78137" page="113" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/11+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target has +1 T until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
@@ -7527,7 +7657,7 @@ Once the final position of the template is determined, all models under the temp
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/10+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/11+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target has +1 S until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>

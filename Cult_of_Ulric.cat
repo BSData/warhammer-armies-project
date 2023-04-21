@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="dc49-a383-6108-ad49" name="Talisman of Ulric">
@@ -319,17 +319,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22ce-f104-fffe-77e5" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="225b-e119-df2c-719e" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45ce-37b0-f224-c955" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="88ff-75e9-f378-850e" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="9.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="f69a-1319-1a61-d277" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cac-d0b4-76dc-bd59" type="max"/>
@@ -361,6 +350,17 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="96ba-fd84-7dd0-5103" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4eb-3029-a23f-c18c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="281f-c4f3-5936-4810" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -689,17 +689,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9170-6aaf-7457-2390" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1f4d-a411-33cb-4dee" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60d0-6dba-c951-7760" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="2d43-a6bd-1785-36f6" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="27cb-53c4-d824-23f5" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34de-7d79-fa24-8f3e" type="max"/>
@@ -720,6 +709,17 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7594-b7e2-cd63-d8ff" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51ca-1eb7-eb8e-db3c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="383e-6d8a-b466-be50" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -780,6 +780,7 @@
             <entryLink id="68ef-d306-f948-ab41" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="30c1-96ba-c0e2-7788" type="selectionEntryGroup"/>
             <entryLink id="3b55-e68e-7559-7a2d" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="967e-0fc8-3a73-4932" type="selectionEntryGroup"/>
             <entryLink id="58a6-4068-39f2-c03b" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
+            <entryLink id="b708-d5a4-b87e-c294" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1120,13 +1121,13 @@
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8a9e-2dc0-af47-b49b" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a633-ebbd-aaf8-bf39" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5811-ec13-8ba2-6f0b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03de-3f1d-1470-978f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e64-d804-f682-3aad" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb5f-1f73-759d-48b9" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="452f-3303-ec2a-acf0" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+            <infoLink id="a01b-30b9-1fc9-b6f1" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1356,6 +1357,7 @@
             <entryLink id="87b3-ed8f-dece-c3a8" name="Talismans" hidden="false" collective="false" import="true" targetId="6d91-4486-5ecd-3110" type="selectionEntryGroup"/>
             <entryLink id="9813-f462-e066-431b" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="967e-0fc8-3a73-4932" type="selectionEntryGroup"/>
             <entryLink id="005b-fef1-7f5e-3786" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
+            <entryLink id="161c-d68f-577c-6010" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1854,17 +1856,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c719-02cf-d148-03eb" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d742-743c-3182-1687" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a192-000f-07aa-4a9e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="604b-ca5b-7815-5d1a" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="2404-d326-c14a-1cda" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c005-4a4c-dd5c-897d" type="max"/>
@@ -1885,6 +1876,17 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d0fb-dfb3-5669-ad8f" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e7d-8b34-5f4b-04a8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fdf9-d8a1-7cad-12a1" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2365,13 +2367,13 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6465-c0ea-0641-e996" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="6465-c0ea-0641-e996" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5026-3f7b-8a08-4fed" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ef6-2e47-bbcf-c578" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="44a1-b22e-a780-08b1" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="44a1-b22e-a780-08b1" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2517,7 +2519,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da59-8f01-d449-cd02" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="74e9-ac54-3c19-d1ee" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="74e9-ac54-3c19-d1ee" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4140,13 +4142,13 @@
             <infoLink id="3e2b-748f-6fb6-097d" name="Teutogen Guard" hidden="false" targetId="6107-9570-1bc8-c06f" type="profile"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="67e8-1f87-9e3a-1dad" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="67e8-1f87-9e3a-1dad" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4930-72da-a2b2-08ab" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="062e-d661-543a-3085" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="97ca-19c3-4383-4d02" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="97ca-19c3-4383-4d02" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4264,13 +4266,13 @@
             <infoLink id="c0f9-fe46-54a2-634e" name="Teutogen Guard" hidden="false" targetId="6107-9570-1bc8-c06f" type="profile"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="ac6d-4b14-ae97-a65c" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="ac6d-4b14-ae97-a65c" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f34c-a23e-d702-4517" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce73-bc1d-7f0a-2e62" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="863e-bd61-c209-f51e" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="863e-bd61-c209-f51e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4530,8 +4532,9 @@
       <infoLinks>
         <infoLink id="a1c8-e5bc-a204-7da5" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
         <infoLink id="f6cc-dce8-7680-8f8a" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="0d68-fb38-123a-be19" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="0d68-fb38-123a-be19" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
         <infoLink id="8a79-6d4b-32e1-1fab" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+        <infoLink id="14bb-914e-6d78-c7fe" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ea8-3e18-78a5-bd4b" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -4693,18 +4696,6 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3b35-ee19-bab5-17b8" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbcb-6965-3296-090c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7cb2-a9eb-762c-347a" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="bd78-00b2-013f-42df" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="a110-0988-d8d4-3cba" name="White Wolf Cloak" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50eb-694e-844a-9b95" type="max"/>
@@ -4724,6 +4715,18 @@
               </constraints>
               <infoLinks>
                 <infoLink id="bd21-0b9d-eb59-4252" name="White Wolf Hammer" hidden="false" targetId="1268-f101-5482-d56f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0f0c-1c4d-e352-b8c2" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff9e-375c-2288-b225" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b7c-06b3-5910-0a2d" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c7a2-d215-7f2d-ba14" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4883,7 +4886,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e55-6087-95f4-e87c" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="a09b-ddeb-bf8e-52c2" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="a09b-ddeb-bf8e-52c2" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -5035,13 +5038,13 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1754-fde6-c733-4396" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="1754-fde6-c733-4396" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f29-36b9-47e5-f51d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6c9-67c1-f0a7-bd8c" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0644-8968-0722-e093" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="0644-8968-0722-e093" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -5144,6 +5147,7 @@
             <infoLink id="8969-507a-ce98-7ab5" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="a52d-ffe0-542f-89de" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="d6a3-9bbe-acb6-3c5e" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+            <infoLink id="7e96-e2ee-ac08-1399" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
@@ -5297,18 +5301,6 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="60bc-af19-6c74-29d1" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d562-a777-0538-b6c2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23bc-c091-16f7-2223" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f321-e082-c00b-3a84" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="6eb6-2bc5-8d53-8fff" name="White Wolf Cloak" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e17-5c59-2012-3897" type="max"/>
@@ -5344,6 +5336,18 @@
                     <entryLink id="96bb-c298-72b1-3ac1" name="Talismans" hidden="false" collective="false" import="true" targetId="6d91-4486-5ecd-3110" type="selectionEntryGroup"/>
                     <entryLink id="6c18-c9a6-536f-bc85" name="Magic Armour" hidden="false" collective="false" import="true" targetId="e1fc-8e9f-86e3-570f" type="selectionEntryGroup"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4747-5f40-f633-02b9" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="676a-0868-058f-cbc6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36d1-2628-92fe-c14c" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2bcb-6c59-a330-0cf8" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -5410,18 +5414,6 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d6dd-628f-53af-53f2" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d1d4-6af7-701e-686a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9f4-7bfe-bf8a-5ef7" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f991-78b4-09a9-3041" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="e67d-6193-f902-a27e" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3736-222f-ae79-1810" type="max"/>
@@ -5444,6 +5436,18 @@
                   </constraints>
                   <infoLinks>
                     <infoLink id="8c3f-2ea4-cac1-9a3a" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="63cf-9d04-32cb-8b6b" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="151e-0285-1b2a-b190" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0931-5ab3-6af4-489a" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="56ef-f72f-11a7-34fc" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5642,7 +5646,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a4-de62-d089-b75a" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="2722-aeb6-060d-a7e6" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                    <infoLink id="2722-aeb6-060d-a7e6" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5724,18 +5728,6 @@
                 <infoLink id="cb7b-6ae2-fe5d-82fa" name="Battle Standard Bearer" hidden="false" targetId="3f4a-7d94-afef-39ea" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="ba5a-3160-bfe2-48af" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e166-3454-1c00-b188" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d98-0c23-7350-6329" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="541a-be76-0042-1bf0" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="88b1-913b-5fad-88ed" name="White Wolf Cloak" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b0c-3786-e7b0-792f" type="max"/>
@@ -5788,6 +5780,18 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="87a1-a920-ffe8-6f5b" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf03-3096-1df4-78af" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f12-8fbc-e14f-fe63" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3257-9c2a-a358-09ed" name="Full Plate Armour" hidden="false" targetId="9e6d-bba8-51e3-aa00" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -6369,6 +6373,13 @@ If a Support Fire action is declared, the unit makes an immediate, out of sequen
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9e6d-bba8-51e3-aa00" name="Full Plate Armour" publicationId="315d-135b-135c-07ce" page="172" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+      <characteristics>
+        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">3+</characteristic>
+        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">3+</characteristic>
+        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
       </characteristics>
     </profile>
   </sharedProfiles>

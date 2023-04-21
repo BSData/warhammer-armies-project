@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b7f1-0dfa-b690-b138" name="Norsca" revision="16" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b7f1-0dfa-b690-b138" name="Norsca" revision="17" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="080f-333d-9dd5-adb6" name="Skald Songs and Tales">
@@ -468,6 +468,7 @@
             <entryLink id="bce3-f4f0-42aa-e21b" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="9799-ea00-58eb-52b4" type="selectionEntryGroup"/>
             <entryLink id="1a74-7ddf-ba3d-c13b" name="Talismans" hidden="false" collective="false" import="true" targetId="4895-345f-37c6-e8df" type="selectionEntryGroup"/>
             <entryLink id="374b-0a02-47f1-aa4f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8c87-097d-7bfa-b23c" type="selectionEntryGroup"/>
+            <entryLink id="40fd-1d85-3826-c28d" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -993,6 +994,7 @@
             <entryLink id="333b-5076-fdcd-cbf7" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="9799-ea00-58eb-52b4" type="selectionEntryGroup"/>
             <entryLink id="4a44-0610-ddb2-c95f" name="Talismans" hidden="false" collective="false" import="true" targetId="4895-345f-37c6-e8df" type="selectionEntryGroup"/>
             <entryLink id="64b2-d814-1247-2e1f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8c87-097d-7bfa-b23c" type="selectionEntryGroup"/>
+            <entryLink id="28d0-078a-eaa2-f587" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1545,17 +1547,6 @@
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7fd9-2f33-fddb-1a06" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="978d-a14c-b35b-82d4" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="30a5-c05e-f9d6-4009" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="acfd-2e28-2d82-81ff" name="Fur Cloak" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b44a-5de8-2aae-0aed" type="max"/>
@@ -1568,6 +1559,38 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="6db0-21be-c00d-a7cf" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="96d8-414c-c628-2c81">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7244-28c6-302f-a9b6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9af9-cd87-ce54-eafe" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="96d8-414c-c628-2c81" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62f9-dfb6-37c9-1ac0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="17ef-ae5a-9a37-b57b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4b77-3a41-7785-2b16" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc0f-42f8-8e6a-c447" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="808d-8b8e-bfc6-1c88" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
@@ -2277,7 +2300,7 @@
                 <infoLink id="8aac-db5e-d7b5-bfd2" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d95a-d1f9-b6ae-c461" name="Horsemaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -2326,6 +2349,7 @@
           <infoLinks>
             <infoLink id="50f7-30fe-6d7d-4dee" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="ddc4-d78f-2fc6-3d19" name="War Wolf" hidden="false" targetId="cb87-1959-88d9-9d58" type="profile"/>
+            <infoLink id="e70f-c640-ebd3-0738" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="6.0"/>
@@ -2571,6 +2595,7 @@
             <infoLink id="c57d-b671-d542-69c1" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
             <infoLink id="7c77-774c-cd24-5001" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="769c-dd3b-636d-234c" name="Counter-Charge" hidden="false" targetId="d14e-e226-9b95-f281" type="rule"/>
+            <infoLink id="edb3-b947-f9c6-3d3a" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="aa40-8aa5-54d8-eb08" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
@@ -3331,7 +3356,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed83-3eda-ade4-eada" name="Ice Drake" hidden="false" collective="false" import="true" type="model">
@@ -5294,6 +5319,7 @@ The Savage: The Cursed Ettin has +1 S, -1 WS, -1 LD, Frenzy.</description>
             <infoLink id="0a60-60e4-9c5f-c1c1" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
             <infoLink id="8dd6-86ab-f69a-9bbd" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="d537-9d2f-c551-9802" name="Counter-Charge" hidden="false" targetId="d14e-e226-9b95-f281" type="rule"/>
+            <infoLink id="181d-1dfb-947a-f832" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="d52c-e0cf-ae28-45d4" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
@@ -5980,16 +6006,16 @@ The enemy unit then rolls their charge distance and complete the charge as norma
     </profile>
     <profile id="a6f1-60e9-8051-e142" name="War Wolf Chariot" publicationId="5884-1659-bf10-0d5a" page="85" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 6+)</characteristic>
       </characteristics>
     </profile>
     <profile id="1f45-d7a1-f56d-76c7" name="Marauder Crew" publicationId="5884-1659-bf10-0d5a" page="85" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

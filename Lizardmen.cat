@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
@@ -151,6 +151,7 @@
             <entryLink id="62dd-1f49-9cd5-b653" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="d946-3e58-a401-ae75" type="selectionEntryGroup"/>
             <entryLink id="0764-4f03-258c-41d2" name="Arcane Items" hidden="false" collective="false" import="true" targetId="9497-b5bd-5950-ebb3" type="selectionEntryGroup"/>
             <entryLink id="7b6b-2bf8-0461-9351" name="Talismans" hidden="false" collective="false" import="true" targetId="8aeb-fb19-9b6f-0566" type="selectionEntryGroup"/>
+            <entryLink id="1de9-03ee-4ddd-7d93" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="6044-a257-49b0-2b63" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -179,6 +180,13 @@
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="8b54-117c-88d9-4c89" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="5f1f-8d58-4691-ac90" value="0.0">
+                  <conditions>
+                    <condition field="points" scope="23ab-63f4-5496-4154" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="927a-0391-73a5-0b8a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f1f-8d58-4691-ac90" type="max"/>
               </constraints>
@@ -316,7 +324,7 @@
                 <profile id="5e11-b6d4-8d55-425e" name="Carnosaur" publicationId="9e23-79cb-pubN77402" page="165" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
                     <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
@@ -489,9 +497,9 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="9fb3-25f7-82cd-464d" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-        <infoLink id="1081-67a3-487d-a7fc" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+        <infoLink id="1081-67a3-487d-a7fc" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
         <infoLink id="59ac-3468-e238-c6ba" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+        <infoLink id="d8d4-82b7-9e38-624a" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2030-5a56-f6a2-5918" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -701,7 +709,7 @@
               <selectionEntries>
                 <selectionEntry id="5605-d0ad-52c6-8eaa" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="bc96-0877-d6b0-92f1" value="0">
+                    <modifier type="set" field="bc96-0877-d6b0-92f1" value="0.0">
                       <conditions>
                         <condition field="points" scope="1c2c-4070-247b-cb9a" value="26.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27f0-8d19-e7e0-5d4a" type="atLeast"/>
                       </conditions>
@@ -755,6 +763,7 @@
       <infoLinks>
         <infoLink id="73d3-a2fb-b30b-6a1b" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
         <infoLink id="dfc9-4bb1-513c-2a28" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+        <infoLink id="a5ab-7cfa-726e-0276" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ddaa-95af-bab2-8c04" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -1351,6 +1360,7 @@
         <infoLink id="5708-4c84-064c-4647" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
         <infoLink id="a8f8-fbf7-3f25-bbc3" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
         <infoLink id="f8ea-7c34-86bf-23cf" name="Arcane Vassal" hidden="false" targetId="fe06-6cc6-7ed9-1f16" type="rule"/>
+        <infoLink id="60b2-7a98-5de1-9a60" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e965-a687-ef17-c4d9" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
@@ -1367,6 +1377,7 @@
             <entryLink id="3419-9b72-1191-56c1" name="Arcane Items" hidden="false" collective="false" import="true" targetId="9497-b5bd-5950-ebb3" type="selectionEntryGroup"/>
             <entryLink id="1d25-4c26-b65d-49a5" name="Talismans" hidden="false" collective="false" import="true" targetId="8aeb-fb19-9b6f-0566" type="selectionEntryGroup"/>
             <entryLink id="2668-f66c-05b2-9b32" name="Blessed Spawnings (Heroes)" hidden="false" collective="false" import="true" targetId="93af-7804-972a-ef61" type="selectionEntryGroup"/>
+            <entryLink id="eafb-6c95-af0b-e5dd" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="6044-a257-49b0-2b63" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1567,7 +1578,7 @@
                 <infoLink id="b41f-84a3-42cc-b92e" name="Coatl" hidden="false" targetId="05ce-f91d-e1a3-5bc2" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="200.0"/>
+                <cost name="pts" typeId="points" value="270.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1669,7 +1680,7 @@
           <infoLinks>
             <infoLink id="796c-561a-437c-fc27" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="e107-3315-7d42-5a2c" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
-            <infoLink id="bcdb-b24a-3015-5f8b" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+            <infoLink id="bcdb-b24a-3015-5f8b" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="10e0-29be-dc9d-807d" name="Saurus Warrior" hidden="false" targetId="6e2f-04df-1c46-77fe" type="profile"/>
           </infoLinks>
           <selectionEntries>
@@ -1730,7 +1741,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1797,7 +1808,7 @@
         <infoLink id="1720-f7b0-37ad-3560" name="Must have the same Blessed Spawning" hidden="false" targetId="57dc-10f2-adc6-baae" type="rule"/>
         <infoLink id="3bb1-02b3-5e38-3b3d" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
         <infoLink id="0684-888c-0801-7d6f" name="Spawn-kin" hidden="false" targetId="698f-b8d2-c607-a401" type="rule"/>
-        <infoLink id="f67f-a1c9-c573-d122" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
+        <infoLink id="ab7f-74a6-1756-8ff1" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="43fd-342a-2045-bf35" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -1809,6 +1820,7 @@
           </constraints>
           <infoLinks>
             <infoLink id="5342-53c7-cf13-1f02" name="Skink" hidden="false" targetId="4c48-3dd4-d93f-db22" type="profile"/>
+            <infoLink id="414e-6560-71c7-6ad0" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="b763-fdf6-9553-4792" name="Blessed Spawning" hidden="false" collective="true" import="true" type="upgrade">
@@ -1933,10 +1945,10 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fea-0a6d-6226-c0a3" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="566c-cf8b-e7d7-e707" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="8e84-8be9-7723-3c33" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="01f0-6cbb-7514-02d8" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="b92f-f50b-3a42-cf4f" name="Kroxigor" hidden="false" targetId="41f6-46f5-d63f-f6f9" type="profile"/>
+            <infoLink id="2982-5131-e7d0-0e2f" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="74f6-b9cb-529e-6500" name="Blessed Spawning" hidden="false" collective="true" import="true" type="upgrade">
@@ -1971,7 +1983,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="43.0"/>
+            <cost name="pts" typeId="points" value="46.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2047,6 +2059,7 @@
             <infoLink id="fc4d-a700-55be-7042" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="82ef-4fe8-e650-d236" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="e9a3-19af-6d22-9893" name="Skink Skirmisher" hidden="false" targetId="2d6f-2cde-0366-6ce1" type="profile"/>
+            <infoLink id="dd3b-522c-1220-55c5" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="b93a-ce55-d34c-6392" name="Blessed Spawning" hidden="false" collective="true" import="true" type="upgrade">
@@ -2224,7 +2237,8 @@
             <infoLink id="bd7c-fc4a-d035-eb14" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="0352-6b1d-763b-829c" name="Guardians" hidden="false" targetId="7f5b-fdab-78aa-4c70" type="rule"/>
             <infoLink id="6e5b-751f-643c-7084" name="Temple Guard" hidden="false" targetId="9b3d-6ab8-8f7e-4285" type="profile"/>
-            <infoLink id="d5c4-9940-b6a9-d433" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="d5c4-9940-b6a9-d433" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+            <infoLink id="5069-21d4-ea38-d38e" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="445d-b54c-8f75-742c" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -2348,7 +2362,7 @@
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8da6-e1ee-b115-3ce3" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="aeac-9a6a-52e8-970e" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="aeac-9a6a-52e8-970e" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
             <infoLink id="004a-f72b-d886-899a" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="3f92-e832-f5d1-1711" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="f4a7-6131-dc2b-93d2" name="Cold One Rider" hidden="false" targetId="7c5e-2d30-ae64-52be" type="profile"/>
@@ -2407,7 +2421,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="24.0"/>
+            <cost name="pts" typeId="points" value="26.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2491,10 +2505,10 @@
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4d8-87f3-7e2a-b3f8" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="c89b-0e9d-7caa-53c6" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-            <infoLink id="051b-7051-dd99-cb08" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+            <infoLink id="051b-7051-dd99-cb08" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="e1f2-8354-faee-9206" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="57f0-64e9-3436-e651" name="Cold One Rider" hidden="false" targetId="7c5e-2d30-ae64-52be" type="profile"/>
+            <infoLink id="8941-5541-58b3-3e13" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="fa4c-01e9-cef3-e079" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -2550,7 +2564,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="24.0"/>
+            <cost name="pts" typeId="points" value="26.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2624,8 +2638,8 @@
           <infoLinks>
             <infoLink id="8df8-fb93-0f67-fc9c" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
             <infoLink id="6a68-3576-a3e9-fb50" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
-            <infoLink id="ed05-a013-d99d-c9fb" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-            <infoLink id="ae79-e2f5-f416-b739" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+            <infoLink id="ed05-a013-d99d-c9fb" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
+            <infoLink id="ae79-e2f5-f416-b739" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="881a-4908-aba0-434e" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="e2b1-5383-8310-f0b9" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="6c23-eb13-857e-7364" name="Kroxigor" hidden="false" targetId="41f6-46f5-d63f-f6f9" type="profile"/>
@@ -2656,7 +2670,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="43.0"/>
+            <cost name="pts" typeId="points" value="46.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2698,6 +2712,7 @@
             <infoLink id="334a-e230-60d3-a20f" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
             <infoLink id="a510-e3f1-7f51-eef5" name="Chameleon" hidden="false" targetId="dac5-29d3-af00-0a5d" type="rule"/>
             <infoLink id="81d8-f84e-f08a-e1e4" name="Chameleon Skink" hidden="false" targetId="04a1-c79f-eda1-2c3f" type="profile"/>
+            <infoLink id="d1d7-de94-5254-da72" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="79a5-7a44-d91e-5753" name="Blessed Spawning" hidden="false" collective="true" import="true" type="upgrade">
@@ -2775,6 +2790,7 @@
           <infoLinks>
             <infoLink id="848d-0a84-4f19-cab4" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="702d-ec4b-804d-fbef" name="Terradon Rider" hidden="false" targetId="be15-e84d-ba18-9e5b" type="profile"/>
+            <infoLink id="6aee-f2a0-834f-0eb1" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="949b-8762-3ae6-0893" name="Blessed Spawning" hidden="false" collective="true" import="true" type="upgrade">
@@ -2807,6 +2823,7 @@
                 <infoLink id="196c-bd96-997c-1444" name="Terradon" hidden="false" targetId="6c0d-aab8-87bf-6289" type="profile"/>
                 <infoLink id="5602-4820-b2c9-eb66" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="5033-9c83-864c-0292" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="b3c4-30dc-1fde-70dd" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2919,6 +2936,7 @@
           <infoLinks>
             <infoLink id="c59f-64eb-acb7-f66f" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="43fe-719f-c9f8-6a38" name="Ripperdactyl Rider" hidden="false" targetId="bfd7-2a2d-b97a-7b53" type="profile"/>
+            <infoLink id="1c74-cdfc-f925-2684" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="253f-10ac-a2f5-646f" name="Blessed Spawning" hidden="false" collective="true" import="true" type="upgrade">
@@ -2977,6 +2995,7 @@
                 <infoLink id="9d4b-f382-3b5c-996b" name="Armour Piercing (1)" hidden="false" targetId="bf4e-212e-fe1d-20c6" type="rule"/>
                 <infoLink id="0965-a746-67ef-afe6" name="Toad Rage" hidden="false" targetId="a152-f768-1c0d-4531" type="rule"/>
                 <infoLink id="28da-a4f6-0b71-8df1" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="56a6-e1bc-334d-69b4" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -3797,6 +3816,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           </constraints>
           <infoLinks>
             <infoLink id="52a2-8718-3373-ea08" name="Skink Handler" hidden="false" targetId="fb8c-8928-5304-de22" type="profile"/>
+            <infoLink id="ead9-af2f-8869-cd52" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="fe25-8b46-7de6-3ae6" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -3878,6 +3898,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           </constraints>
           <infoLinks>
             <infoLink id="404c-aa6d-0f3e-b2d6" name="Skink Handler" hidden="false" targetId="fb8c-8928-5304-de22" type="profile"/>
+            <infoLink id="059a-e935-241d-9c34" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="27e1-603a-ea17-f480" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -3915,6 +3936,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <infoLink id="6a61-8161-1f24-3d42" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="24cc-1a0e-26c9-b105" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="9a73-c883-85f0-cdf5" name="Great Crested Skink" hidden="false" targetId="1774-3227-577c-33d6" type="profile"/>
+            <infoLink id="8470-c052-16b3-c73e" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="30e6-9476-9152-864e" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -3968,7 +3990,6 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="d951-02a5-d2b3-dd1b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="8878-1f54-18f9-5282" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="24be-d30c-55d3-658c" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-                <infoLink id="3355-c2b6-52dc-683a" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                 <infoLink id="1b4c-8140-85a5-8b38" name="Horned One" hidden="false" targetId="785f-7dff-4b4a-f3e4" type="profile"/>
                 <infoLink id="233d-4fc8-3efb-cddf" name="Bestial Roar" hidden="false" targetId="6ed3-fad6-3922-83ad" type="rule"/>
                 <infoLink id="55c2-0404-f4b1-3bd8" name="Mount of Itzl" hidden="false" targetId="4271-27fb-eda6-5a5f" type="rule"/>
@@ -4013,7 +4034,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="19.0"/>
+            <cost name="pts" typeId="points" value="21.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4053,7 +4074,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="b636-1e96-29a0-6465" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ba83-717b-0b47-8c9b" name="Great Crested Brave" hidden="false" collective="false" import="true" type="upgrade">
@@ -4189,6 +4210,120 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                   </selectionEntryGroups>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="26b6-b642-b264-9927" name="Ancient Stegadon" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aea9-c0df-ffa7-94b0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="28aa-6488-a7f3-4b58" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="51c8-00ea-ca59-5a7e" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                    <infoLink id="cff3-7e24-95fb-5886" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                    <infoLink id="dce6-c26d-45f1-a517" name="Ancient Stegadon" hidden="false" targetId="bc67-15a3-0172-e398" type="profile"/>
+                    <infoLink id="8370-7f99-93f0-b4db" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                    <infoLink id="93d5-12f7-c340-4e57" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
+                    <infoLink id="d514-06a7-8284-4019" name="Impact Hits (D6+1)" hidden="false" targetId="a043-3e3c-9f8a-3661" type="rule"/>
+                    <infoLink id="ac93-1e5a-0c45-b02d" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
+                    <infoLink id="ccbf-d1f2-f750-b479" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="9b14-0b8c-d817-c0d6" name="Engine of the Gods" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2039-cbba-268e-1d75" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0605-a324-3fb7-e3e9" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="8951-63c4-f286-75d5" name="Arcane Configuration" hidden="false" targetId="d4e1-c490-8284-b26d" type="rule"/>
+                        <infoLink id="4d43-f2a2-ec31-63b1" name="Portent of Warding" hidden="false" targetId="74d6-cba6-cc00-f1ac" type="rule"/>
+                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="b482-2cc3-d399-d6a9" name="Burning Alignment" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="27ff-93f6-b580-b4a2" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="73c3-29c4-ff18-7315" type="min"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="e5c0-fcf4-1110-5ae2" name="Burning Alignment" hidden="false" targetId="c795-37c8-4ba2-ffa7" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="fa46-788c-0e50-7709" name="Skink Crew" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ad1-3eae-fddc-8826" type="min"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e757-0dd9-6a71-c14b" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d5c3-e8e1-137c-4e73" name="Skink Crew" hidden="false" targetId="79e1-5d37-4f69-4550" type="profile"/>
+                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="cfa4-08f2-ed3f-5b72" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7901-59e5-f8a3-9270" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c58e-bc0c-79b3-84bd" type="min"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="78ba-9fd8-ccdf-be65" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="1a64-e754-caf9-1edc" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a8b-33f6-009b-950a" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3393-ccbc-5b76-4e15" type="min"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="c9b1-4544-adc2-69c6" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="d832-b2cc-10b7-2864" name="Upgrades" hidden="false" collective="false" import="true">
+                      <selectionEntries>
+                        <selectionEntry id="6fb5-fc13-c270-720c" name="Unstoppable Stampede" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc7e-2519-4c81-6177" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="86cf-1bfe-3691-d9e0" name="Unstoppable Stampede" hidden="false" targetId="771f-e12a-44a8-c413" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="10.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="ea23-c12a-1e62-fbad" name="Sharpened Horns" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b877-ae58-146f-c3c5" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="2568-a6df-946e-2874" name="Sharpened Horns" hidden="false" targetId="4726-6a22-8031-2fbd" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="20.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="270.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4515,7 +4650,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
                             <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+/18+/24+</characteristic>
                             <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/18&quot;/24&quot;</characteristic>
-                            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all enemy units within range. Each target suffers 2D6 S 4 hits. If a target has Daemonic, Undead or Vampiric, it suffers 3D6 hits instead. If this spell is lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately remember it again and, if applicable, the Wizard that swapped or stole it will immediately forget it.</characteristic>
+                            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all enemy units within range of the caster&apos;s front arc. Each target suffers 2D6 S 4 hits. If a target has Daemonic, Undead or Vampiric, it suffers 3D6 hits instead. If this spell is lost, forgotten, swapped or stolen by any means, Lord Kroak will immediately remember it again and, if applicable, the Wizard that swapped or stole it will immediately forget it.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4693,7 +4828,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                     <profile id="13c7-dfda-17ad-5312" name="Grymloq" publicationId="9e23-79cb-pubN77402" page="175" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                       <characteristics>
                         <characteristic name="M" typeId="09ad-18df-607b-1215">7</characteristic>
-                        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                        <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
                         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                         <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
                         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
@@ -4824,6 +4959,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
               <infoLinks>
                 <infoLink id="a883-b42f-6a11-1017" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
                 <infoLink id="d7e5-9742-e007-7b3b" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                <infoLink id="a875-dc29-be4b-fdc8" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="ddf8-bec2-eade-08fd" name="Mask of Heavens" hidden="false" collective="false" import="true" type="upgrade">
@@ -4925,13 +5061,14 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                   <description>The Palanquin of Constellations gives Tetto&apos;eko a Ward save (5+) and Strider. Additionally, while they have the troop type Infantry, he is are never considered to be a ‘model on foot&apos; for the purposes of spells, magic items and special rules. If Tetto&apos;eko joins a unit Skink Cohorts whose front rank contains five or more models, he must be placed in the second rank, displacing other models if necessary. If the unit&apos;s front rank is ever reduced to four or fewer models, Tetto&apos;eko must immediately move into the front rank (displacing models if necessary).</description>
                 </rule>
                 <rule id="9bf2-5f4e-3673-a529" name="Herald of Cosmic Events" publicationId="9e23-79cb-pubN77402" page="181" hidden="false">
-                  <description>Roll a D6 at the start of each friendly Magic phase. On a roll of 2-6, Tetto&apos;Eko&apos;s calculations are correct and the cosmic event occurs; all friendly Wizards must re-roll power dice rolls of a 1 this phase. However, on a roll of 1, the Chaos Moon has corrupted Tetto&apos;eko&apos;s calculations and all friendly Wizards casting a spell must re-roll any of the power dice that roll a 6 this phase.</description>
+                  <description>Roll a D6 at the start of each friendly Magic phase. On a roll of 2-6, Tetto&apos;Eko&apos;s calculations are correct and the cosmic event occurs; all friendly Wizards within 12&quot; must re-roll power dice rolls of a 1 this phase. However, on a roll of 1, the Chaos Moon has corrupted Tetto&apos;eko&apos;s calculations and all friendly Wizards within 12&quot; casting a spell must re-roll any of the power dice that roll a 6 this phase.</description>
                 </rule>
               </rules>
               <infoLinks>
                 <infoLink id="8e53-3fc6-8ac9-6d65" name="Arcane Vassal" hidden="false" targetId="fe06-6cc6-7ed9-1f16" type="rule"/>
                 <infoLink id="8dbe-9c70-aded-13e0" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
                 <infoLink id="1f21-0090-4b8f-51b4" name="Loremaster (Lore of Heavens)" hidden="false" targetId="4003-e9b4-9295-bef4" type="rule"/>
+                <infoLink id="fec3-ed0f-f2b5-4a77" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="e55d-55db-a2c4-6d63" name="The Eye of the Old Ones" hidden="false" collective="false" import="true" type="upgrade">
@@ -5048,6 +5185,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
               <infoLinks>
                 <infoLink id="b620-06b9-8a9d-47ac" name="Arcane Vassal" hidden="false" targetId="fe06-6cc6-7ed9-1f16" type="rule"/>
                 <infoLink id="b812-0a56-234a-6ccf" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                <infoLink id="e825-6ab8-5cc7-1889" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="565f-234b-3c8e-1d02" name="Venom of the Firefly Frog" hidden="false" collective="false" import="true" type="upgrade">
@@ -5230,8 +5368,9 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
               <infoLinks>
                 <infoLink id="f28e-432b-5e18-cf70" name="Guardians" hidden="false" targetId="7f5b-fdab-78aa-4c70" type="rule"/>
                 <infoLink id="44fd-7393-ccb1-4a4c" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
-                <infoLink id="277a-abad-b71b-8213" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                <infoLink id="277a-abad-b71b-8213" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
                 <infoLink id="3afd-8217-819b-e5b1" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                <infoLink id="9f81-a0ce-38e8-bc19" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="8564-617a-f2fe-d4d1" name="The Helm of the Prime Guardian" hidden="false" collective="false" import="true" type="upgrade">
@@ -5303,7 +5442,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="eec0-173b-31a7-bf8d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="210.0"/>
+                <cost name="pts" typeId="points" value="215.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2044-e570-c332-bada" name="Oxyotl" hidden="false" collective="false" import="true" type="model">
@@ -5338,6 +5477,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="4992-ab4d-70f8-5a0d" name="Sniper" hidden="false" targetId="8977-b58c-704d-705e" type="rule"/>
                 <infoLink id="d4f7-edc0-d6d4-7dd9" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
                 <infoLink id="97ce-6089-3a95-43cc" name="Chameleon" hidden="false" targetId="dac5-29d3-af00-0a5d" type="rule"/>
+                <infoLink id="6eff-69cd-761f-5302" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="38d9-94a9-d59f-38f5" name="The Golden Blowpipe of P&apos;toohee" hidden="false" collective="false" import="true" type="upgrade">
@@ -5408,7 +5548,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
               </rules>
               <infoLinks>
                 <infoLink id="45e2-0c1c-c278-45d6" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
-                <infoLink id="165b-9b63-40cf-5da1" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+                <infoLink id="165b-9b63-40cf-5da1" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
                 <infoLink id="4194-ff65-498b-32a8" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
               </infoLinks>
               <selectionEntries>
@@ -5643,6 +5783,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
               <infoLinks>
                 <infoLink id="f98b-0675-8424-06c8" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
                 <infoLink id="f1e1-d935-2593-3b72" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                <infoLink id="90bf-7dea-361f-4088" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="320c-76ea-e19f-870b" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -5716,6 +5857,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
               </profiles>
               <infoLinks>
                 <infoLink id="b186-39d5-9d2f-7d0d" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+                <infoLink id="884b-5a4b-4310-b0aa" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="581e-36d8-94ab-875d" name="Xltzhpctli" hidden="false" collective="false" import="true" type="model">
@@ -5741,7 +5883,6 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                   </profiles>
                   <infoLinks>
                     <infoLink id="f4af-0c03-fefc-5ad8" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-                    <infoLink id="06b2-66a0-445c-5705" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                     <infoLink id="96f5-a2cf-ed3c-b1b8" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                     <infoLink id="5eca-5e32-ae9d-7321" name="Bestial Roar" hidden="false" targetId="6ed3-fad6-3922-83ad" type="rule"/>
                     <infoLink id="9473-45b0-e44b-ab8f" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
@@ -5809,7 +5950,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <entryLink id="91f3-a69b-0036-1544" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="75.0"/>
+                <cost name="pts" typeId="points" value="80.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5835,6 +5976,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <infoLink id="34f6-0221-bbf4-aab6" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
             <infoLink id="a9be-ec75-39b3-a22f" name="Chameleon" hidden="false" targetId="dac5-29d3-af00-0a5d" type="rule"/>
             <infoLink id="a7dc-880f-6752-7b38" name="Chameleon Skink" hidden="false" targetId="04a1-c79f-eda1-2c3f" type="profile"/>
+            <infoLink id="65d8-1734-6037-7cda" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="1926-b0ca-e627-2f88" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -5910,10 +6052,10 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="429b-2669-b21e-58dd" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="4935-fbeb-e11a-de00" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-            <infoLink id="1115-d780-4166-8505" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+            <infoLink id="1115-d780-4166-8505" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="8871-4f0a-df44-7e08" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="0c8d-9423-a1cf-f430" name="Cold One Rider" hidden="false" targetId="7c5e-2d30-ae64-52be" type="profile"/>
+            <infoLink id="ce95-99f8-e80c-6973" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="9634-ae60-0cf1-2416" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -5969,7 +6111,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="24.0"/>
+            <cost name="pts" typeId="points" value="26.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6053,10 +6195,10 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c08-a2fa-34e0-fadd" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="2822-b1ae-14a2-21cd" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-            <infoLink id="832d-5260-0b75-b335" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+            <infoLink id="832d-5260-0b75-b335" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="7aec-4246-ae08-5d31" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="7ed2-8bee-ee6a-739b" name="Cold One Rider" hidden="false" targetId="7c5e-2d30-ae64-52be" type="profile"/>
+            <infoLink id="4f9d-70a1-f5cc-a1c0" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="8e71-c9fb-eec2-1ffc" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -6112,7 +6254,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="24.0"/>
+            <cost name="pts" typeId="points" value="26.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6187,6 +6329,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <infoLink id="c45b-1b5b-d78a-0804" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="fbe2-0b06-3ee5-f920" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="483f-dfc9-cac5-7124" name="Great Crested Skink" hidden="false" targetId="1774-3227-577c-33d6" type="profile"/>
+            <infoLink id="158e-b979-d3c4-3919" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="4bc7-ad83-5de9-3cbe" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -6240,7 +6383,6 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="66e8-d0d8-dcf8-2d47" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="f6ed-890d-9c83-c448" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
                 <infoLink id="13dc-1d82-ade3-ddcf" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-                <infoLink id="c5a7-8ee0-f46c-2078" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                 <infoLink id="37e1-7464-81ff-54cc" name="Horned One" hidden="false" targetId="785f-7dff-4b4a-f3e4" type="profile"/>
                 <infoLink id="8ee2-19eb-3cca-e7ab" name="Bestial Roar" hidden="false" targetId="6ed3-fad6-3922-83ad" type="rule"/>
                 <infoLink id="8bca-5e81-1d89-9f29" name="Mount of Itzl" hidden="false" targetId="4271-27fb-eda6-5a5f" type="rule"/>
@@ -6285,7 +6427,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="19.0"/>
+            <cost name="pts" typeId="points" value="21.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6325,7 +6467,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="9095-e8f4-d00e-8692" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f3ba-af76-efd9-3dc6" name="Great Crested Brave" hidden="false" collective="false" import="true" type="upgrade">
@@ -6359,11 +6501,11 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           <infoLinks>
             <infoLink id="1dec-e250-d0ab-de2c" name="Aquatic" hidden="false" targetId="3667-691b-abd9-7da6" type="rule"/>
             <infoLink id="21f3-0ca6-06eb-fce9" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
-            <infoLink id="4a95-d672-b3fa-9313" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
-            <infoLink id="319a-8420-0312-5e81" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
+            <infoLink id="319a-8420-0312-5e81" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="3ca2-16c5-1687-398d" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="fbfc-c2cf-0318-ca00" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="d2f6-9d39-b427-ebec" name="Kroxigor" hidden="false" targetId="41f6-46f5-d63f-f6f9" type="profile"/>
+            <infoLink id="e7fd-c460-b5f5-ba46" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="4859-d0bc-2b1a-a10e" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -6391,7 +6533,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="43.0"/>
+            <cost name="pts" typeId="points" value="46.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6429,6 +6571,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           <infoLinks>
             <infoLink id="2805-4f2e-cc97-f108" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="3086-a3f8-7664-870e" name="Ripperdactyl Rider" hidden="false" targetId="bfd7-2a2d-b97a-7b53" type="profile"/>
+            <infoLink id="3fad-97c6-0008-ab4d" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="35bc-9233-99e5-0dcd" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -6484,9 +6627,10 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="630f-5c63-9208-e176" name="Fly (9)" hidden="false" targetId="2ba2-2aaa-3f36-4b24" type="rule"/>
                 <infoLink id="6bdb-767f-132f-9fcf" name="Ripperdactyl" hidden="false" targetId="3a42-7a84-0a8b-4320" type="profile"/>
                 <infoLink id="57cf-d67c-b3fc-f7fc" name="Killing Blow" hidden="false" targetId="a711-7cf6-cd2b-1d29" type="rule"/>
-                <infoLink id="e8b1-4bd7-0f1e-a5bf" name="Armour Piercing (1)" hidden="false" targetId="bf4e-212e-fe1d-20c6" type="rule"/>
+                <infoLink id="e8b1-4bd7-0f1e-a5bf" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
                 <infoLink id="27c9-627b-d193-59c2" name="Toad Rage" hidden="false" targetId="a152-f768-1c0d-4531" type="rule"/>
                 <infoLink id="bb69-f78d-0bf7-c12f" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="ad9c-fb11-e95e-ab57" name="Armour Piercing (1)" hidden="false" targetId="bf4e-212e-fe1d-20c6" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6555,7 +6699,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           <infoLinks>
             <infoLink id="d9b9-113d-05ab-afeb" name="Predatory Fighters" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="824c-dd24-a447-75a6" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
-            <infoLink id="1a00-883f-b8b7-e44e" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
+            <infoLink id="1a00-883f-b8b7-e44e" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="dce0-f8eb-20f9-8c21" name="Saurus Warrior" hidden="false" targetId="6e2f-04df-1c46-77fe" type="profile"/>
           </infoLinks>
           <selectionEntries>
@@ -6616,7 +6760,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6694,6 +6838,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <infoLink id="9eaa-30f5-0bb8-18e7" name="Guardians" hidden="false" targetId="7f5b-fdab-78aa-4c70" type="rule"/>
             <infoLink id="7784-c9a7-7bcb-5dce" name="Temple Guard" hidden="false" targetId="9b3d-6ab8-8f7e-4285" type="profile"/>
             <infoLink id="c494-cf05-1641-5704" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
+            <infoLink id="ba7e-0ab7-2136-392d" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="d2e7-2836-7f76-704b" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -6819,6 +6964,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           <infoLinks>
             <infoLink id="d005-9d7d-0486-1e55" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="87f9-b6f5-956b-61b8" name="Terradon Rider" hidden="false" targetId="be15-e84d-ba18-9e5b" type="profile"/>
+            <infoLink id="c947-62ed-4e6c-6649" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="9e11-3b20-43b0-bf03" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -6851,6 +6997,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
                 <infoLink id="5f89-7c67-086f-77ba" name="Terradon" hidden="false" targetId="6c0d-aab8-87bf-6289" type="profile"/>
                 <infoLink id="e655-a245-d143-ddf1" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
                 <infoLink id="d086-478b-efcd-a6ee" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+                <infoLink id="c8f0-14ef-76f1-019b" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6968,6 +7115,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
           </constraints>
           <infoLinks>
             <infoLink id="af59-b05f-4534-72c3" name="Skink" hidden="false" targetId="4c48-3dd4-d93f-db22" type="profile"/>
+            <infoLink id="f9ac-2ac4-35ea-3730" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="0d98-0d4e-8a67-0634" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -7092,10 +7240,10 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2308-2b08-dd03-7f2a" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7df7-4294-9021-24ad" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
             <infoLink id="06fd-d5d6-6f96-c804" name="Predatory Fighter" hidden="false" targetId="096e-8f90-c156-f63d" type="rule"/>
             <infoLink id="3e9c-6db2-a95e-956e" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
             <infoLink id="8b29-31a5-92ea-d824" name="Kroxigor" hidden="false" targetId="41f6-46f5-d63f-f6f9" type="profile"/>
+            <infoLink id="6bbf-2ec9-3de2-e797" name="Natural Armour (4+)" hidden="false" targetId="6b43-9dda-f589-0509" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="e935-0361-8202-6bde" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -7130,7 +7278,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="43.0"/>
+            <cost name="pts" typeId="points" value="46.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7206,6 +7354,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             <infoLink id="da9a-f0c2-ddf2-bfa8" name="Cold-Blooded" hidden="false" targetId="eb46-96d2-9469-4905" type="rule"/>
             <infoLink id="75c6-6e73-55b6-d606" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="a52a-6404-4a9a-b63e" name="Skink Skirmisher" hidden="false" targetId="2d6f-2cde-0366-6ce1" type="profile"/>
+            <infoLink id="390f-7d6b-b8c9-ec0e" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="4753-971e-c4f3-9aec" name="Blessed Spawnings" hidden="false" collective="true" import="true" type="upgrade">
@@ -8013,7 +8162,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="55.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a072-fc30-c184-20e4" name="Blade of Revered Tzunki" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8139,7 +8288,7 @@ If the artillery dice result is a misfire, no shots are fired and D3 Skink Handl
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d4b2-1941-af02-8a35" name="Burning Blade of Chotec" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8586,22 +8735,6 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee10-05bd-cb7c-4cfb" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="1c94-6305-c9ee-f16a" name="Cube of Darkness" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e459-8146-5583-f9eb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1af-66e6-225a-e718" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9259-2bb3-ba0a-951c" name="Cube of Darkness" publicationId="9e23-79cb-pubN77402" page="190" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a Wizard with the Cube of Darkness can use it instead of attempting to dispel the spell using dispel dice. If he does so, roll a D6; on the roll of a 2+ the spell is automatically dispelled - otherwise the spell is resolved as normal. In either case, roll a separate D6 for every Remains in Play spell currently in effect; on a 2+ that spell automatically ends.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="91eb-9351-327a-e69d" name="Plaque of Dominion" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a55e-56b1-a45f-4640" type="max"/>
@@ -8625,41 +8758,6 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5ed4-17b5-a670-a2bc" name="Cupped Hands of the Old Ones" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2949-f207-66a7-9cd1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c41e-1448-0f89-771a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="728b-3c02-9246-5557" name="Cupped Hands of the Old Ones" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Slann Mage-Priest only. One use only. If the bearer of the Cupped Hands of the Old Ones miscasts, roll a D6. On a roll of 1 the bearer suffers the results of the miscast as normal. On 2+ the miscast is ignored. In addition, any enemy Wizards within line of sight of the Slann Mage-Priest will count as having rolled a 7 on the Miscast table.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="88c9-746f-1cbf-dc34" name="Rod of the Storm" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f9f7-417c-357c-3b96" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2eb-dafd-3693-a657" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="d078-6f42-dfe7-cf0c" name="Rod of the Storm" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Bound Spell, Power Level 5. The Rod of the Storm contains Uranon&apos;s Thunderbolt spell from the Lore of Heavens.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="e227-374e-60d7-7156" name="Urannon&apos;s Thunderbolt (Bound Spell)" hidden="false" targetId="4768-022d-5e1d-bbc0" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bb2c-aa0b-138d-0a66" name="Diadem of Power" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8759,12 +8857,12 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
           <profiles>
             <profile id="832b-edc2-e3a8-3bb6" name="Aura of Quetzl" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Aura of Quetzl gives the wearer Ward Save (5+) against attacks with S 5 or more.</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Aura of Quetzl gives the wearer Ward Save (4+) against attacks with S 5 or more.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b2b3-fc4d-02d0-6ca5" name="Glyph Necklace" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8796,7 +8894,7 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8833,6 +8931,67 @@ turn. The unit carrying the Totem may immediately make a move directly forward u
         <entryLink id="3f3a-475c-9fed-977f" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" targetId="bd5d-e5cb-149e-43cf" type="selectionEntry"/>
         <entryLink id="a168-344e-8f55-3b45" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" targetId="2a5a-1a20-a8d8-ee7f" type="selectionEntry"/>
         <entryLink id="ab5e-86f0-31a7-6d15" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" targetId="7739-4475-8ba9-eac8" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6044-a257-49b0-2b63" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1afa-2e19-abb0-2c0c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="1ca0-1ec3-719c-f279" name="Cube of Darkness" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7134-5789-c6a1-15fb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e09-e21a-4f17-bd61" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5a22-68ef-7878-6063" name="Cube of Darkness" publicationId="9e23-79cb-pubN77402" page="190" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When an enemy spell has been cast, a Wizard with the Cube of Darkness can use it instead of attempting to dispel the spell using dispel dice. If he does so, roll a D6; on the roll of a 2+ the spell is automatically dispelled - otherwise the spell is resolved as normal. In either case, roll a separate D6 for every Remains in Play spell currently in effect; on a 2+ that spell automatically ends.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0638-cfad-e849-de00" name="Cupped Hands of the Old Ones" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba80-26df-834b-1348" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b25-3090-fb3a-fe25" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f816-cbaf-68ff-b925" name="Cupped Hands of the Old Ones" publicationId="e3da-3848-ff08-a482" page="33" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Slann Mage-Priest only. One use only. If the bearer of the Cupped Hands of the Old Ones miscasts, roll a D6. On a roll of 1 the bearer suffers the results of the miscast as normal. On 2+ the miscast is ignored. In addition, any enemy Wizards within line of sight of the Slann Mage-Priest will count as having rolled a 7 on the Miscast table.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="45.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ae08-36c3-0098-ebeb" name="Rod of the Storm" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="06dd-6022-5961-3188" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="760f-82aa-e7f7-6f93" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="702e-ab3f-34e2-88e9" name="Rod of the Storm" publicationId="e3da-3848-ff08-a482" page="34" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Bound Spell, Power Level 5. The Rod of the Storm contains Uranon&apos;s Thunderbolt spell from the Lore of Heavens.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f00c-7d4b-2c1f-c1cf" name="Urannon&apos;s Thunderbolt (Bound Spell)" hidden="false" targetId="4768-022d-5e1d-bbc0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="45.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="aee4-97e7-222b-2168" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -8898,7 +9057,7 @@ When fighting in close combat against a unit with a blot toad marker, the Ripper
       <description>If your army includes Tehenhauin, you may upgrade any units of Skink Cohorts, Skink Skirmishers, Horned One Riders, Terradon Riders or Ripperdactyl Riders in your army so that the Skinks have +1 WS, as well as Devastating Charge, Hatred (Skaven) and Immunity (Poisoned Attacks) for 2 points per model. They may not take any Sacred Spawning.</description>
     </rule>
     <rule id="c264-a6f3-457a-7562" name="Sacred Duty" publicationId="9e23-79cb-pubN77402" page="142" hidden="false">
-      <description>Whilst they are part of a combined unit that has been joined by a model on a Mage-Priest Palanquin, all Temple Guard models in the combined unit have Stubborn and Immunity (Psychology).</description>
+      <description>Whilst they are part of a combined unit that has been joined by a model on a Mage-Priest Palanquin, all Temple Guard models in the combined unit have Immunity (Psychology).</description>
     </rule>
     <rule id="57dc-10f2-adc6-baae" name="Must have the same Blessed Spawning" publicationId="9e23-79cb-pubN77402" page="144" hidden="false">
       <description>Skinks and Kroxigors must have the same Blessed Spawning.</description>
@@ -8916,37 +9075,51 @@ Casualties are always taken from the rearmost rank of the appropriate model type
   <sharedProfiles>
     <profile id="ab7a-0c29-8fb9-5745" name="Blessed Spawning of Sotek" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning have Devastating Charge.</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning have Devastating Charge.
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="a4d9-6148-8784-f958" name="Blessed Spawning of Itzl" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Mounted models only. Models with this Blessed Spawning re-roll failed Stupidity or Berserk Charge tests.</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Mounted models only. Models with this Blessed Spawning re-roll failed Stupidity or Berserk Rage tests.
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="a1ba-7314-fdae-2346" name="Blessed Spawning of Quetzl" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning gain Natural Armour (6+).</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning can never have their armour save reduced to less than 6+.
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="8fdc-898d-f2e1-6477" name="Blessed Spawning of Tlazcotl" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning have Immunity (Psychology).</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning have Immunity (Psychology).
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="b35b-2c5b-0352-a97e" name="Blessed Spawning of Huanchi" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models on foot only. Models with this Blessed Spawning have Ambushers and Strider (Forest).</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models on foot only. Models with this Blessed Spawning have Ambushers and Strider (Forest).
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="7905-b11b-6774-21f8" name="Blessed Spawning of Tepok" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning have Magic Resistance (1).</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning have Magic Resistance (1).
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="5f01-41cc-e023-f156" name="Blessed Spawning of Tzunki" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models on foot only. Models with this Blessed Spawning have Aquatic and +2 I.</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models on foot only. Models with this Blessed Spawning have Aquatic and +2 I.
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="83e7-140b-347b-03de" name="Giant Bow" publicationId="9e23-79cb-pubN77402" page="163" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
@@ -8963,7 +9136,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">4D6&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets every enemy unit within 4D6&quot;. Each target suffers D6 S 4 hits with Flaming Attacks, distributed as for shooting.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets every enemy unit within range of the Engine&apos;s front arc. Each target suffers D6 S 4 hits with Flaming Attacks, distributed as for shooting.</characteristic>
       </characteristics>
     </profile>
     <profile id="68a8-1a56-0cf9-b2d6" name="Spit Venom" publicationId="9e23-79cb-pubN77402" page="166" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -8975,7 +9148,9 @@ Casualties are always taken from the rearmost rank of the appropriate model type
     </profile>
     <profile id="0763-791a-17ce-0296" name="Blessed Spawning of Chotec" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning re-roll failed Charge and Pursuit distances.</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">Models with this Blessed Spawning re-roll failed Charge and Pursuit distances.
+
+A unit that has one or more Blessed Spawnings may only be joined by characters (excepting Slann Mage Priests) that have the same Blessed Spawnings. Characters with one or more Blessed Spawnings may join any other units as normal.</characteristic>
       </characteristics>
     </profile>
     <profile id="5ed7-24ee-7a6c-67cf" name="Cold One" publicationId="9e23-79cb-pubN77402" page="140" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -8994,8 +9169,7 @@ Casualties are always taken from the rearmost rank of the appropriate model type
     </profile>
     <profile id="65ad-3d14-63b1-c40e" name="Blessed Mark of the Old Ones" publicationId="9e23-79cb-pubN77402" page="188" hidden="false" typeId="cf73-bef8-dc81-5b8e" typeName="Blessed Spawning">
       <characteristics>
-        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">One per army, Characters only (not including Special Characters). The character may re-roll a total of 3 dice to
-either To Hit, To Wound, Armour saves or Ward saves during the game.</characteristic>
+        <characteristic name="Effect" typeId="01fd-a1a5-68a0-10ab">One per army, Characters only (not including Special Characters). The character may re-roll a total of 3 dice to either To Hit, To Wound, Armour saves or Ward saves during the game. This Blessed Spawning does not prevent the character from joining any other Blessed Spawning.</characteristic>
       </characteristics>
     </profile>
     <profile id="53d7-46cd-5203-e99c" name="Javelins (Poisoned Attacks)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">

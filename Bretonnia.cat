@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="30" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="31" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -187,11 +187,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e960-3ee8-2f22-6830" type="max"/>
                       </constraints>
-                      <rules>
-                        <rule id="45a4-58bf-6a7b-f006" name="Bloodrage" publicationId="9e23-79cb-pubN75312" page="137" hidden="false">
-                          <description>The Hippogryph is subject to Frenzy and Hatred.</description>
-                        </rule>
-                      </rules>
+                      <infoLinks>
+                        <infoLink id="e7d1-ce83-b44c-e01b" name="Bloodrage" hidden="false" targetId="8090-11ba-027f-b6ff" type="rule"/>
+                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="30.0"/>
                       </costs>
@@ -413,6 +411,7 @@
             <entryLink id="95ff-d86b-627e-6466" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="671f-f2bd-a42e-d104" type="selectionEntryGroup"/>
             <entryLink id="92c5-190a-7d75-e0fd" name="Talismans" hidden="false" collective="false" import="true" targetId="f90e-6119-6dae-4b9a" type="selectionEntryGroup"/>
             <entryLink id="a144-ee29-8b90-c5f4" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4815-9217-ed66-4522" type="selectionEntryGroup"/>
+            <entryLink id="5b8d-9ea7-dfcd-5d6e" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="5371-1a99-5c34-804a" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -627,6 +626,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c817-8812-fd03-869f" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+        <entryLink id="3ffc-b6a7-98e4-8d28" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="175.0"/>
@@ -1015,6 +1015,7 @@
             <entryLink id="ac86-42db-1628-779e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="671f-f2bd-a42e-d104" type="selectionEntryGroup"/>
             <entryLink id="d65f-fd3c-7599-29c2" name="Talismans" hidden="false" collective="false" import="true" targetId="f90e-6119-6dae-4b9a" type="selectionEntryGroup"/>
             <entryLink id="5aaa-9ece-5ac4-8bdb" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4815-9217-ed66-4522" type="selectionEntryGroup"/>
+            <entryLink id="d252-503c-5e8c-9076" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="5371-1a99-5c34-804a" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1101,6 +1102,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3f75-4b0b-5ab1-1a9c" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
+        <entryLink id="4fa2-38de-1282-554e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="80.0"/>
@@ -1435,7 +1437,7 @@
             <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
             <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
             <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All Hex spells effecting friendly units within 12&quot; are automatically dispelled. In addition, any Undead or Daemonic units in base contact with the Priestess takes D6 S 5 hits.</characteristic>
+            <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All Hex spells effecting friendly units within 12&quot; are automatically dispelled. In addition, any units with Daemonic, Vampiric or Undead in base contact with the Priestess suffer D6 S 5 hits.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1948,14 +1950,16 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
             <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="abc0-aa2a-0dae-14f7" name="Truffle Hounds" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="41c7-780d-da3d-f099" name="Truffle Hounds" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a299-5f82-c269-9b52" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0fb-1d13-5129-37ff" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="0301-476c-5b9e-1a67" name="Truffle Hound" hidden="false" targetId="bc30-2c0d-8f55-3868" type="profile"/>
-            <infoLink id="34dd-675c-5405-c721" name="Truffle Madness" hidden="false" targetId="8a21-a21a-7111-59bd" type="rule"/>
-            <infoLink id="2f7a-9596-93b3-16a2" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+            <infoLink id="ba49-f000-7554-a07e" name="Truffle Hound" hidden="false" targetId="bc30-2c0d-8f55-3868" type="profile"/>
+            <infoLink id="d737-3730-b47f-ba12" name="Truffle Madness" hidden="false" targetId="8a21-a21a-7111-59bd" type="rule"/>
+            <infoLink id="a09f-a1d9-f353-5abd" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+            <infoLink id="4359-7e7a-81c2-9ae8" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+            <infoLink id="8402-4b7c-de7e-b92b" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="7.0"/>
@@ -3052,7 +3056,7 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
                 <infoLink id="96b0-0eb2-d49e-e8d2" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c362-bde1-c7ad-dc5f" name="Warden" hidden="false" collective="false" import="true" type="upgrade">
@@ -3165,7 +3169,7 @@ Defensive Stakes are treated as Defended Obstacles, and remain on the table duri
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Shrine</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4011,7 +4015,6 @@ As long Spirits of the Fay remain partially within one of these terrain features
             <infoLink id="bc52-8a42-806f-a5a4" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
             <infoLink id="92a8-896f-fd35-3e84" name="Animated Construct" hidden="false" targetId="738b-aca4-740c-e425" type="rule"/>
             <infoLink id="7e7b-fc83-b69a-66f9" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-            <infoLink id="cb65-6cda-93b0-00d5" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
             <infoLink id="92a0-33b5-910e-e4ce" name="Etheral" hidden="false" targetId="9e47-05bc-376a-7463" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -4053,7 +4056,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4144,7 +4147,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4166,8 +4169,8 @@ As long Spirits of the Fay remain partially within one of these terrain features
       <selectionEntries>
         <selectionEntry id="9c87-5649-d313-0b50" name="Peasant Crew" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8d4-ff51-c2af-6542" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edc6-af8a-5466-9221" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8d4-ff51-c2af-6542" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edc6-af8a-5466-9221" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="cc81-91d6-8e2a-4848" name="Peasant Crew" hidden="false" targetId="f62a-7a00-daaf-a442" type="profile"/>
@@ -4188,7 +4191,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0705-7139-d0a3-a262" name="Wall Warden" hidden="false" collective="false" import="true" type="upgrade">
@@ -4205,7 +4208,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="19.0"/>
+        <cost name="pts" typeId="points" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24be-c095-a91b-5565" name="Mangonel" hidden="false" collective="false" import="true" type="unit">
@@ -4217,7 +4220,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4256,7 +4259,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="12a4-0917-75f8-be2f" name="Wall Warden" hidden="false" collective="false" import="true" type="upgrade">
@@ -4273,7 +4276,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="76.0"/>
+        <cost name="pts" typeId="points" value="67.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="344b-d851-191b-a843" name="Field Trebuchet" hidden="false" collective="false" import="true" type="unit">
@@ -4285,7 +4288,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4358,7 +4361,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4405,7 +4408,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="312b-1daf-1f90-0900" name="Wall Warden" hidden="false" collective="false" import="true" type="upgrade">
@@ -4422,7 +4425,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="66.0"/>
+        <cost name="pts" typeId="points" value="57.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2bef-00a6-c76c-3498" name="Men-at-Arms" hidden="false" collective="false" import="true" type="unit">
@@ -4532,7 +4535,9 @@ As long Spirits of the Fay remain partially within one of these terrain features
           <infoLinks>
             <infoLink id="c9ba-97be-6b87-f8f0" name="Truffle Hound" hidden="false" targetId="bc30-2c0d-8f55-3868" type="profile"/>
             <infoLink id="6d35-8e9b-5548-872d" name="Truffle Madness" hidden="false" targetId="8a21-a21a-7111-59bd" type="rule"/>
-            <infoLink id="0faf-bc8a-f3f1-9377" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+            <infoLink id="0faf-bc8a-f3f1-9377" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+            <infoLink id="5e57-a72f-7852-dbe0" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+            <infoLink id="2db9-23d9-c6c0-bf84" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="7.0"/>
@@ -4801,8 +4806,7 @@ As long Spirits of the Fay remain partially within one of these terrain features
 
 When the Green Knight is awoken, he must be placed in either a forest or a water terrain piece anywhere on the table, but otherwise follows the rules for Ambushers as normal. If no forest of water feature is present, he may enter from any table edge using the normal rules. 
 
-During the game, the Green Knight may disappear at will and reappear in another location completely. If the Green
-Knight is within (or moves into) a forest or water terrain piece during the Remaining Moves phase, then he may instantly be removed from the table and replaced anywhere on the table within another forest or water terrain piece, facing in any direction. He may not move any further that turn. Note that he still may not end his move within impassable terrain.</description>
+During the game, the Green Knight may disappear at will and reappear in another location completely. If the Green Knight is within (or moves into) a forest or water terrain piece during the Remaining Moves phase, then he may instantly be removed from the table and replaced anywhere on the table within another forest or water terrain piece, facing in any direction. He may not move any further that turn. Note that he still may not end his move within impassable terrain.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -4810,7 +4814,6 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <infoLink id="238d-b474-6a86-a9e7" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
                 <infoLink id="d84f-14b7-7f26-8508" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
                 <infoLink id="98b0-33af-3ae5-44dc" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
-                <infoLink id="7d7f-754a-80ce-1662" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="68a3-d248-05d9-da9a" name="The Dolorous Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -4899,8 +4902,11 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink id="767d-7aac-9dd0-095e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="275.0"/>
+                <cost name="pts" typeId="points" value="245.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e779-c45e-60f0-53d4" name="Morgiana Le Fay" hidden="false" collective="false" import="true" type="model">
@@ -5132,6 +5138,9 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink id="e49c-3c38-0859-dab1" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="460.0"/>
               </costs>
@@ -5545,6 +5554,200 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <cost name="pts" typeId="points" value="385.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="437f-b00f-8a74-3e82" name="Alberic of Bordeleaux" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1787-4e8a-1837-144f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="414f-b0f2-c89f-51e3" name="Alberic" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="39f7-c79c-ae7e-7e4c" name="Alberic of Bordeleaux" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false">
+                  <description>Alberic, and any models in the same unit, may re-roll 1&apos;s to Hit in close combat.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="43df-9cbd-a658-1fa0" name="The Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
+                <infoLink id="da14-42e6-4847-7a99" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+                <infoLink id="b1b0-ffb5-b6e3-4586" name="The Knight&apos;s Vow" hidden="false" targetId="d242-2846-8f1c-6860" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="d893-3eff-6e23-13a3" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a58e-20e9-1d9a-cfa0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e7e-9e83-784a-48d9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c8eb-cbd1-d838-39e9" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="41fa-6149-6a33-f46c" name="Trident of Manann" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02ec-8594-ae10-94b7" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4611-f8dc-b030-01d8" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="57d3-cfd7-c40f-e9d0" name="Trident of Manann" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Polearm. The Trident of Manann contains a Bound Spell, power level 4.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="7828-a87a-b2c4-2fd8" name="Trident of Manann" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                      <characteristics>
+                        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+                        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+                        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+                        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">This is a magic missile with that causes 2D6 S 3 hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e427-e216-e35a-91a2" name="Virtue of Discipline" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1f5-b932-29de-d695" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7fd-3887-084b-80df" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1712-b5cd-8ab5-8dbe" name="Virtue of Discipline" hidden="false" targetId="2846-63a9-e11a-6196" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e1f7-aa2a-b7e6-f49f" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7efe-3648-ee1d-9f4f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebde-f732-2a0b-f5f1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4365-3bd9-e512-058a" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9008-d9e7-7a2e-99a4" name="Mount" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="902f-674c-fbdf-1d18" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="cb3a-86e8-284c-e756" name="Tempete" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a8f-1b92-1a47-e6a8" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="004b-399c-2b41-60bd" name="Tempete" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                          <characteristics>
+                            <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
+                            <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+                            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+                            <characteristic name="W" typeId="27ee-0675-122f-a1b1">4</characteristic>
+                            <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                            <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="7f6e-2560-7c03-2a28" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                        <infoLink id="e06e-eb36-080c-e97a" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                        <infoLink id="b59e-a127-247e-b26d" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                        <infoLink id="fcee-5f87-f07c-f403" name="Fly (8)" hidden="false" targetId="0a9a-bfcb-1a9d-5609" type="rule"/>
+                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="8fbc-dbb3-af9a-7c57" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5794-cc66-1b62-14f4" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="e65c-eb00-473c-8675" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="6.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="626a-d5c6-25bd-9f21" name="Bloodrage" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3f8-d36e-5171-a8cf" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33f9-a49e-b639-89bc" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="e9b5-02fb-c433-2eee" name="Bloodrage" hidden="false" targetId="8090-11ba-027f-b6ff" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <costs>
+                        <cost name="pts" typeId="points" value="185.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="a404-9c2b-be61-14bf" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5202-8e89-cb37-3a44" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d9c3-ee68-1ccc-c3ac" name="Warhorse" hidden="false" targetId="1b59-fbaa-b006-c2ad" type="profile"/>
+                        <infoLink id="6add-ab76-7a83-474a" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                        <infoLink id="1bd9-d35a-fac9-57eb" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                        <infoLink id="61db-c320-29ac-7645" name="Purebred Warhorse" hidden="false" targetId="1c9e-d354-9961-b23b" type="rule"/>
+                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="4fac-8fc3-752c-a937" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1538-21ee-5a43-5582" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2df1-daf0-7306-37f7" type="min"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="ea08-0260-2a73-40c5" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <costs>
+                        <cost name="pts" typeId="points" value="24.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="a671-e6ae-695c-9ef2" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="175.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5766,7 +5969,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8b66-0e2c-61aa-e793" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c13a-0ade-5349-0de0" name="The Knight" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="c13a-0ade-5349-0de0" name="The Knight" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -5782,10 +5985,10 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 </profile>
               </profiles>
               <rules>
-                <rule id="4977-591e-f468-7aaf" name="The Parrying Shield" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
+                <rule id="4977-591e-f468-7aaf" name="The Parrying Shield" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false">
                   <description>The Knight of the Perilous Lance has Parry (6+), even though he is mounted.</description>
                 </rule>
-                <rule id="e4af-bc88-d4c7-ad08" name="The Perilous Lance" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
+                <rule id="e4af-bc88-d4c7-ad08" name="The Perilous Lance" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false">
                   <description>All attacks made by the Knight of the Perilous Lance have Ignores Armour Saves when charging.</description>
                 </rule>
               </rules>
@@ -6108,7 +6311,7 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e20-60b8-63a1-de04" type="max"/>
               </constraints>
               <profiles>
-                <profile id="328b-675d-f303-123e" name="Reynard" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="328b-675d-f303-123e" name="Reynard" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6124,17 +6327,17 @@ Knight is within (or moves into) a forest or water terrain piece during the Rema
                 </profile>
               </profiles>
               <rules>
-                <rule id="a735-ee47-082f-518c" name="Reynard&apos;s Hawk" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false">
+                <rule id="a735-ee47-082f-518c" name="Reynard&apos;s Hawk" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false">
                   <description>The hawk always attacks anyone who engages Reynard in close combat, giving Reynard an extra S 3 Attack. In addition, Reynard may use his Hawk in during the Shooting phase. The Hawk can be directed against any enemy unit within line of sight, regardless of range. The enemy unit must take a WS test or suffer a S 3 Hit.</description>
                 </rule>
-                <rule id="ec09-1ee1-ae39-1289" name="Groffe and Griffe" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false">
+                <rule id="ec09-1ee1-ae39-1289" name="Groffe and Griffe" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false">
                   <description>Reynard and his wolfhounds always move and fight together as a unit. If Reynard joins a unit, so will Groffe and Griffe.
 
 If Reynard is slain, Groffe and Griffe will be subject to Frenzy for the remainder of the game.
 
 If both his beloved wolfhounds are slain, Reynard immediately becomes subject to Hatred for the remainder of the game.</description>
                 </rule>
-                <rule id="a4ad-f5d4-7365-cefa" name="Hunting Party" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false">
+                <rule id="a4ad-f5d4-7365-cefa" name="Hunting Party" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false">
                   <description>If Reynard joins a unit of Mounted Yeomen, the unit will follow Reynard&apos;s example and become subject to The Knight’s Vow for as long as he remains with it.</description>
                 </rule>
               </rules>
@@ -6203,7 +6406,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ca5-4dfe-3425-8f52" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e946-b1aa-7256-46f7" name="The Virtous Lance" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                    <profile id="e946-b1aa-7256-46f7" name="Reynard&apos;s Boar Spear" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                         <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -6221,7 +6424,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="242a-cbe3-03b9-b277" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="1aa5-c5b6-1650-1736" name="Groffe" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                    <profile id="1aa5-c5b6-1650-1736" name="Groffe" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                       <characteristics>
                         <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
                         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -6246,7 +6449,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c7-dbe3-b6ab-b61e" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="c517-751f-3f36-3fa3" name="Griffe" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                    <profile id="c517-751f-3f36-3fa3" name="Griffe" publicationId="ff43-3b22-4e64-1d31" page="5" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                       <characteristics>
                         <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
                         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
@@ -6278,7 +6481,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5296-3e09-fdf6-19e3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="be4f-d358-18d1-827f" name="Roland" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="be4f-d358-18d1-827f" name="Roland" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
@@ -6294,7 +6497,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                 </profile>
               </profiles>
               <rules>
-                <rule id="a0e9-3cca-f08e-039b" name="Marshal" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false">
+                <rule id="a0e9-3cca-f08e-039b" name="Marshal" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
                   <description>All friendly units within 12&quot; of Roland gain +1 LD when taking Rally tests. In addition, he counts as a musician in any unit he joins.</description>
                 </rule>
               </rules>
@@ -6351,7 +6554,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d1c2-848f-fc7b-a0a4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="4b29-1892-0280-9e34" name="Falcon-horn of Fredemund" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+                    <profile id="4b29-1892-0280-9e34" name="Falcon-horn of Fredemund" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
                       <characteristics>
                         <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">One use only. The Horn may be sounded at the start of any Bretonnian turn. Until the start of the next Bretonnian turn, no enemy unit may use Fly.</characteristic>
                       </characteristics>
@@ -7097,7 +7300,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b2c2-cbfd-2c43-804b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="a9e2-24b4-2b40-61c9" name="The Knight" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="a9e2-24b4-2b40-61c9" name="Jasperre" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -7105,23 +7308,14 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <rules>
-                <rule id="b5da-7065-8acf-a04c" name="The Parrying Shield" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
-                  <description>The Knight of the Perilous Lance has Parry (6+), even though he is mounted.</description>
-                </rule>
-                <rule id="476c-87b7-281e-1c7c" name="The Perilous Lance" publicationId="ff43-3b22-4e64-1d31" page="2" hidden="false">
-                  <description>All attacks made by the Knight of the Perilous Lance have Ignores Armour Saves when charging.</description>
-                </rule>
-              </rules>
               <infoLinks>
-                <infoLink id="5fde-200d-312b-ac6b" name="Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
                 <infoLink id="cecf-57f4-d224-dfd8" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
                 <infoLink id="7477-f117-6741-11df" name="The Knight&apos;s Vow" hidden="false" targetId="d242-2846-8f1c-6860" type="rule"/>
               </infoLinks>
@@ -7144,7 +7338,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07b7-ec58-c97d-e3b5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a543-f1e8-c119-3b53" name="The Virtous Lance" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                    <profile id="a543-f1e8-c119-3b53" name="The Virtous Lance" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                         <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7186,7 +7380,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8035-a442-13bd-158d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ee3c-ac11-2cba-5162" name="Helm of the Dragon Slayer" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
+                    <profile id="ee3c-ac11-2cba-5162" name="Helm of the Dragon Slayer" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="7826-5c3d-faa6-1cb7" typeName="Magic Armour">
                       <characteristics>
                         <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                         <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
@@ -7204,7 +7398,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25ea-90ea-5d2c-c772" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="aacb-b4e1-8345-4b2e" name="Claw of Malgrimace" publicationId="ff43-3b22-4e64-1d31" page="3" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
+                    <profile id="aacb-b4e1-8345-4b2e" name="Claw of Malgrimace" publicationId="ff43-3b22-4e64-1d31" page="4" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
                       <characteristics>
                         <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">When fighting Monsters, Jasperre may deduct D3 Attacks from his opponent (not including any rider), to a minimum of 1.</characteristic>
                       </characteristics>
@@ -7361,14 +7555,16 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="138c-8a2e-7a11-5dfc" name="Truffle Hounds" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="8a13-bc38-5a91-e663" name="Truffle Hounds" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c9c-9867-b672-06d5" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b158-a8e8-3618-0395" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3d80-b633-85dc-02d8" name="Truffle Hound" hidden="false" targetId="bc30-2c0d-8f55-3868" type="profile"/>
-            <infoLink id="bcef-3878-e93d-6f5a" name="Truffle Madness" hidden="false" targetId="8a21-a21a-7111-59bd" type="rule"/>
-            <infoLink id="6a56-1968-e2f2-648e" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
+            <infoLink id="ec2e-e6ab-a57d-338b" name="Truffle Hound" hidden="false" targetId="bc30-2c0d-8f55-3868" type="profile"/>
+            <infoLink id="4fcf-1dc5-6115-f3e5" name="Truffle Madness" hidden="false" targetId="8a21-a21a-7111-59bd" type="rule"/>
+            <infoLink id="a43f-5322-32e7-afcb" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
+            <infoLink id="c9d2-ed09-1229-f7fd" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+            <infoLink id="8d3d-7db6-ac91-bf2f" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="7.0"/>
@@ -7808,6 +8004,35 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e72e-4db8-d710-056d" name="Braid of Bordeleaux" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="58ba-38a8-c4cb-8c5d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="437f-b00f-8a74-3e82" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="points" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="437f-b00f-8a74-3e82" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8057-ae0a-dfd3-74b1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58ba-38a8-c4cb-8c5d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e28c-fcfe-cff6-4e5b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0b06-4f55-089a-3ae0" name="Braid of Bordeleaux" publicationId="e3da-3848-ff08-a482" page="11" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">The bearer of the Braid of Bordeleaux and any unit they are with gain Aquatic.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -8596,22 +8821,6 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="29e6-4abc-e68b-b5e4" name="The Silver Mirror" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ec2-6c38-d92e-a89f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6541-30b5-010e-09b8" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9a4a-0c3a-c7c0-a465" name="The Silver Mirror" publicationId="9e23-79cb-pubN75312" page="181" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When used, the bearer of the Silver Mirror deflects a spell cast at her or the unit she is with back at the enemy caster. The enemy can try to dispel his own spell as normal using any remaining Power dice or Dispel dice. This item has no effect on spells that do not specifically target the bearer or the unit she is with.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="0d04-816d-c52c-52f1" name="Sacrament of the Lady" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d6d-3d23-d62d-9347" type="max"/>
@@ -8658,22 +8867,6 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="96c4-0ca0-7592-fe4d" name="Potion Sacre" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4c9-0ded-26ea-da01" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57f4-85fa-bf12-755d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1d32-e56b-5829-111e" name="Potion Sacre" publicationId="e3da-3848-ff08-a482" page="12" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Potion Sacre can be used before rolling the dice to cast or dispel a spell. After the dice are rolled, the player may add +1 to the result of one dice. This may cause Ultimate Power or prevent a Miscast.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8769,6 +8962,7 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
       </selectionEntries>
       <entryLinks>
         <entryLink id="5ab8-efb8-9ad0-10d8" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="5857-a7aa-f954-a027" type="selectionEntryGroup"/>
+        <entryLink id="88cc-74e9-6d7e-63ab" name="Braid of Bordeleaux" hidden="false" collective="false" import="true" targetId="e72e-4db8-d710-056d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="31dc-7d00-f7c8-4dc4" name="Magic Armour" hidden="false" collective="false" import="true">
@@ -9238,22 +9432,6 @@ Hit suffered during the game.</characteristic>
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5551-6d21-3686-3bc0" name="Braid of Bordeleaux" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="db5a-08b9-8ee6-0ba7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09aa-d5c0-d5f8-a1ee" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2c42-83a6-6ca7-856d" name="Braid of Bordeleaux" publicationId="e3da-3848-ff08-a482" page="11" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The bearer of the Braid of Bordeleaux and any unit they are with gain Aquatic.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="5dcb-d11d-9134-d97c" name="Mantle of the Damsel Elena" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="30c4-5de8-4930-ed12" type="max"/>
@@ -9275,14 +9453,56 @@ Hit suffered during the game.</characteristic>
         <entryLink id="6fc8-530a-1dbd-2f30" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="5371-1a99-5c34-804a" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6699-d66c-4b68-a69d" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="946c-6d32-337a-f5af" name="The Silver Mirror" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7795-b448-a7ce-5547" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b32f-4b8d-4e49-30d7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="248d-32e5-8870-6d12" name="The Silver Mirror" publicationId="9e23-79cb-pubN75312" page="181" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. When used, the bearer of the Silver Mirror deflects a spell cast at her or the unit she is with back at the enemy caster. The enemy can try to dispel his own spell as normal using any remaining Power dice or Dispel dice. This item has no effect on spells that do not specifically target the bearer or the unit she is with.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="45.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b103-3a38-a8b1-3fef" name="Potion Sacre" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0253-c336-2c0a-19d9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2a0-def9-551d-d40f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b26f-175a-5432-4fd9" name="Potion Sacre" publicationId="e3da-3848-ff08-a482" page="12" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Potion Sacre can be used before rolling the dice to cast or dispel a spell. After the dice are rolled, the player may add +1 to the result of one dice. This may cause Ultimate Power or prevent a Miscast.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="813e-9371-717e-d9e9" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="ad7f-7d06-8101-283e" name="The Lance Formation" publicationId="9e23-79cb-pubN75312" page="120" hidden="false">
-      <description>Any Cavalry unit with this rule may deploy in the Lance formation and/or reform into it during the game. A unit in Lance formation follow the rules for Ranks and Supporting Attacks that apply to Monstrous Cavalry. In effect, if by any means a unit of Bretonnian Knights is formed into a unit three models wide, it is treated as being in Lance formation. Note that if a unit is ever wider than three models, it no longer counts as being in Lance Formation. In addition to this, the unit may form a unit up to 5 ranks deep.
+      <description>Any Cavalry unit with this rule may deploy in the Lance formation and/or reform into it during the game. A unit in Lance formation follow the rules for Ranks that apply to Monstrous Cavalry. In effect, if by any means a unit of Bretonnian Knights is formed into a unit three models wide, it is treated as being in Lance formation. Note that if a unit is ever wider than three models, it no longer counts as being in Lance formation. In addition to this, the unit may form a unit up to 5 ranks deep.
 
-A Damsel or Prophetess may be placed in the centre of the second rank of the Lance formation rather than the front rank, as the Knights form up protectively around her. Note that she remains fully in play even if she is not in the front rank (so the unit may use her LD, she may cast magic, etc.). If a second Damsel or Prophetess joins the unit, she may be placed in the centre of the third rank. If the rank in front of the Damsel or Prophetess ever falls below three models, she will move forward to take up the empty space. However, a Damsel or Prophetess that is not in the front rank obviously has no line of sight.
+A wizard may be placed in the centre of the second rank of the Lance formation rather than the front rank, as the Knights form up protectively around her. Note that she remains fully in play even if she is not in the front rank (so the unit may use her LD, she may cast magic, etc.). If a second wizard joins the unit, she may be placed in the centre of the third rank. If the rank in front of the wizard ever falls below three models, she will move forward to take up the empty space. A Wizard in the second rank still counts as having line of sight for the purpose of casting spells.
 
-On a turn that a unit in Lance Formation makes a successful charge, all models with this rule make Supporting Attacks with an extra rank. In addition, they add their current Rank Bonus to the S of the Impact Hits they inflict. Finally, if the unit wins that round of combat, it also counts as having double their actual Unit Strength for the purpose of determining if the enemy unit is Steadfast or not.</description>
+On a turn that a unit in Lance Formation makes a successful charge, all models with this rule gain Fight in Extra Ranks (1), and every rider that gets to fight can make up to 3 Supporting Attacks rather than 1. In addition, they add their current Rank Bonus to the S of the Impact Hits they inflict. Finally, if the unit wins that round of combat, it also counts as having double their actual Unit Strength for the purpose of determining if the enemy unit is Steadfast or not.</description>
     </rule>
     <rule id="22b7-cc0d-1805-d244" name="The Peasant&apos;s Duty" publicationId="9e23-79cb-pubN75312" page="121" hidden="false">
       <description>Models with the Peasant&apos;s Duty treat all friendly models with the Knight&apos;s Vow, the Questing Vow or the Grail Vow within 6&quot; as having Inspiring Presence. Unit standards in units with the Peasant’s Duty do not confer any additional victory points if captured.</description>
@@ -9323,6 +9543,9 @@ on the battlefield at the start of your magic phase, add 1 dice to your power po
     </rule>
     <rule id="2aca-ac1e-41a2-0555" name="Impale" publicationId="9e23-79cb-pubN75312" page="158" hidden="false">
       <description>Unicorns gain +1 Strength to their Impact Hits.</description>
+    </rule>
+    <rule id="8090-11ba-027f-b6ff" name="Bloodrage" publicationId="9e23-79cb-pubN75312" page="137" hidden="false">
+      <description>The Hippogryph is subject to Frenzy and Hatred.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9481,7 +9704,7 @@ on the battlefield at the start of your magic phase, add 1 dice to your power po
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects all friendly units with Blessing of the Lady within range. All fleeing friendly Knights within range will rally automatically and regain the Blessing of the Lady (if they have lost it).</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects all friendly units with Blessing of the Lady within range. All fleeing friendly Knights within range will rally automatically (if they were fleeing) and regain the Blessing of the Lady (if they have lost it).</characteristic>
       </characteristics>
     </profile>
     <profile id="2491-5f85-63d2-ec58" name="Shield of Faith" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -9534,7 +9757,7 @@ on the battlefield at the start of your magic phase, add 1 dice to your power po
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/10+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/9+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. Name one enemy model to be &quot;doomed&quot; and one friendly character or champion within that range to slay him. While the spell is active, the chosen Knight will wound that model on a 2+ with no armour saves allowed.</characteristic>
       </characteristics>

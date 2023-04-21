@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e275-bf7b-24ea-92f1" name="Nippon" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="59f8-f38c-0bdd-cc1d" name="Poison">
@@ -106,6 +106,19 @@
                 <infoLink id="a871-4200-f09b-500c" name="Magic Resistance (1)" hidden="false" targetId="7ed4-9d31-09c3-6bf9" type="rule"/>
                 <infoLink id="ab7b-f365-e6a8-2e69" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="a857-ccdd-afb2-f4df" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40d8-9eed-1626-ccb5" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ef51-c563-c6bd-841d" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
@@ -369,6 +382,7 @@
             <entryLink id="1883-5e1d-f893-59a1" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="7c2a-1a78-cd5b-fa1e" type="selectionEntryGroup"/>
             <entryLink id="3a58-18f0-5c66-e94c" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="936d-9b9c-2893-3aee" type="selectionEntryGroup"/>
             <entryLink id="6de0-e438-e0e4-49db" name="Talismans" hidden="false" collective="false" import="true" targetId="4646-5518-c1b5-2f0b" type="selectionEntryGroup"/>
+            <entryLink id="2261-ea22-7f19-10ed" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -524,6 +538,7 @@
             <entryLink id="eb86-f68d-03e9-ee2a" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="7c2a-1a78-cd5b-fa1e" type="selectionEntryGroup"/>
             <entryLink id="bacd-2d8e-6821-1983" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="936d-9b9c-2893-3aee" type="selectionEntryGroup"/>
             <entryLink id="00d5-287f-a9d2-959e" name="Talismans" hidden="false" collective="false" import="true" targetId="4646-5518-c1b5-2f0b" type="selectionEntryGroup"/>
+            <entryLink id="7971-7e69-327b-7d30" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1048,6 +1063,19 @@
                 <infoLink id="6880-2d1d-ec58-d59f" name="Magic Resistance (1)" hidden="false" targetId="7ed4-9d31-09c3-6bf9" type="rule"/>
                 <infoLink id="f1b2-834f-f137-64d1" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="afe9-753a-4126-c387" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2cc5-35d6-c5b1-2092" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ebb5-2001-a568-add5" name="Barding" hidden="false" targetId="7228-95d3-3384-f234" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="4.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -1258,7 +1286,7 @@
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character, Dishonourable)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1266,7 +1294,6 @@
         <infoLink id="313a-1fc4-9852-9276" name="Hidden" hidden="false" targetId="2796-b399-4f98-a36f" type="rule"/>
         <infoLink id="4041-bfd7-7596-4456" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="237e-ed71-2597-229f" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
-        <infoLink id="fb9f-e562-7a12-98c1" name="Dishonourable" hidden="false" targetId="626f-1a4e-e786-1101" type="rule"/>
         <infoLink id="b4c2-c56d-6fcd-9e18" name="Dodge (5+)" hidden="false" targetId="cfff-6563-d1c6-820c" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1581,7 +1608,7 @@
                     <infoLink id="6357-cf3d-df8c-5db9" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1606,7 +1633,7 @@
                 <selectionEntry id="97d9-99e3-e4b2-a64a" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8595-1667-278c-da82" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4319-fb49-37c2-f228" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4319-fb49-37c2-f228" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="8312-5fad-fbc2-2814" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
@@ -1815,7 +1842,7 @@
                     <infoLink id="a9c0-5aad-7484-8c64" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1840,7 +1867,7 @@
                 <selectionEntry id="0239-abe6-7971-7b2b" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d90a-2464-b2c1-b456" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4cfd-7f30-a653-eeb6" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4cfd-7f30-a653-eeb6" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="4220-dc71-a685-b0f1" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
@@ -1904,25 +1931,11 @@
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="efba-2a0a-78b1-dac3" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="631b-4d46-9c25-e87c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06f7-ed0e-484f-4e2b" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1d01-10e6-e3fe-9040" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="2797-7ee1-ae5d-18f2" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="db35-9993-fc4d-ef28">
               <constraints>
@@ -1938,7 +1951,7 @@
                     <infoLink id="a868-b087-970d-c9a3" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="db35-9993-fc4d-ef28" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
@@ -1960,7 +1973,7 @@
                     <infoLink id="6dcf-0370-7856-180a" name="Pike" hidden="false" targetId="2c1e-e11e-fadf-b4cf" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1983,6 +1996,36 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="e89e-2e98-fb4d-663e" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="d026-73de-ce5a-39b6">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e450-102a-c8e7-8e15" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95f5-bc5b-e6ae-bf65" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3632-5051-9c8c-0ed8" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8cc8-6761-7938-f000" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f837-35cb-1f15-a07f" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d026-73de-ce5a-39b6" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="486c-06cb-e8ee-7bd8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="26aa-b154-31ee-dbe6" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="4.0"/>
@@ -1999,6 +2042,20 @@
               <infoLinks>
                 <infoLink id="4cd7-1154-bf43-1858" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="671a-30e5-249a-b75b" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6620-5876-8ddc-4dba" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="aba2-1600-ab8d-268c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="e3e9-5ec6-9ff5-0fd7" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2029,7 +2086,7 @@
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
                 </profile>
@@ -2068,24 +2125,12 @@
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry id="9570-0fd1-c2a6-9026" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81d6-b0bd-9802-afd9" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d960-80f3-038d-cb2a" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="ca5f-248a-66f0-269a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="50e9-0209-de67-f434" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0be2-c86b-7e94-827f" type="min"/>
@@ -2152,6 +2197,36 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="4532-ee56-0836-b51f" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="c61e-d761-5298-dadb">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b57-f957-cedf-569d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9301-205d-c07d-3d0a" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1da8-3f93-2aad-c678" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf9a-baf9-3b98-a7c9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="222f-3e7c-9881-1f33" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c61e-d761-5298-dadb" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da27-cf2c-86d3-8284" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b515-59ad-589c-9595" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="7.0"/>
@@ -2168,6 +2243,20 @@
               <infoLinks>
                 <infoLink id="7315-728b-8817-ed9f" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="f0c1-3533-e3ed-dbbf" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e501-a3f1-c286-7323" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c6af-00de-a6a4-e0fd" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a14d-afe2-966c-b41c" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2198,7 +2287,7 @@
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
                 </profile>
@@ -2237,24 +2326,12 @@
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry id="5419-8563-544b-3e67" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d63-0185-3681-0c81" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d59c-87f4-9b96-1269" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b9a5-acfc-1be3-ba63" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="4781-6c70-11c9-e6fb" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb68-fa9c-bace-e7c3" type="min"/>
@@ -2310,6 +2387,36 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="fe97-0b11-5fb2-15a5" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="15b1-aec0-d75e-fe06">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d8c-d0c6-9211-33fb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34c9-cde5-59c9-bb30" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="4fa2-16bc-9732-01d7" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df82-aea2-90a7-447f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0f98-9d72-21d3-26a6" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="15b1-aec0-d75e-fe06" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88bf-daab-9bc0-e5a8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a125-9f8e-5d57-712a" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="8.0"/>
@@ -2326,6 +2433,20 @@
               <infoLinks>
                 <infoLink id="c3e4-0ffd-708c-c190" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="5397-7150-49fc-f90b" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e64-a81e-8f18-1215" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="65e8-ef2c-f4fc-1f63" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="de28-0d8d-4f0e-7403" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -2346,7 +2467,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27af-e4e3-92d9-9301" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ac1a-7acb-b178-74e6" name="Tepo Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="ac1a-7acb-b178-74e6" name="Teppo Gashira" publicationId="5ff9-69dd-8810-183f" page="66" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
@@ -2356,7 +2477,7 @@
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
                 </profile>
@@ -2390,20 +2511,6 @@
             <infoLink id="97ba-de19-0ac3-17e2" name="Martial Arts" hidden="false" targetId="a796-ea91-2a9c-d601" type="rule"/>
             <infoLink id="e559-136f-fc77-46cb" name="Warrior Monk" hidden="false" targetId="d831-be1b-c1f3-2158" type="profile"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="8dd9-da37-ef7b-2713" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5f7-1aa4-db3d-2ee3" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2256-8a43-7348-b0ba" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="4485-8b58-4a97-6d26" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="3e82-3ceb-ad2e-3465" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d80-a6f5-201c-55b1">
               <constraints>
@@ -2477,6 +2584,36 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="a62d-4401-c0b4-47e4" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e6a-b07d-ad05-96a3">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="303a-2cf7-9f5f-a001" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9422-bbb8-40c7-c4c4" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="09dc-c60b-0b64-9e08" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7be1-e750-e503-bb09" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7533-0f2f-c587-2cd5" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2e6a-b07d-ad05-96a3" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e7e-5d1d-6f5d-28f4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="cecf-f82d-b295-b951" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
@@ -2497,7 +2634,7 @@
                 <selectionEntry id="c925-d334-f300-c06a" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec93-e1fc-7627-a4e4" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8f70-8b81-498a-3f1e" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8f70-8b81-498a-3f1e" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="083c-3a3b-5cfa-791e" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
@@ -2571,13 +2708,13 @@
             <infoLink id="d643-a0d2-6fd5-fa64" name="Death Before Dishonour" hidden="false" targetId="30a5-e241-6328-3c55" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="bf7e-029d-45c8-fdb1" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="bf7e-029d-45c8-fdb1" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="876d-b51f-e0c5-9d90" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec85-51c3-9154-766b" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7393-4e02-1db2-948c" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                <infoLink id="7393-4e02-1db2-948c" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2617,7 +2754,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2711,17 +2848,6 @@
             <infoLink id="7b43-7b86-b485-152e" name="Death Before Dishonour" hidden="false" targetId="30a5-e241-6328-3c55" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="a2fa-16d5-9fa7-9de2" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abdf-5772-0dae-89ca" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="75ee-c955-b7b4-92cc" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="be6e-1677-a817-48c5" name="Mantlets" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="fa3c-1f39-eabb-4179" value="1.0">
@@ -2798,6 +2924,35 @@
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9be8-e8c1-6ab9-3b78" name="Armour" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="758b-283e-ff10-d088" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="bbd4-c60e-dfbb-8be1" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af92-7652-bea0-bf18" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f3c3-944d-73db-8aae" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f2bc-7733-9832-2bca" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a39-8a12-46da-0d8e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b6ad-1256-b815-2e24" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2886,7 +3041,7 @@
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
               </characteristics>
             </profile>
@@ -2996,7 +3151,7 @@
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3077,7 +3232,7 @@
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3122,7 +3277,8 @@
           </profiles>
           <rules>
             <rule id="d3f5-0c1b-45a3-8bfb" name="Way of the Bow" publicationId="5ff9-69dd-8810-183f" page="73" hidden="false">
-              <description>Yabusame do not suffer penalties to Hit for moving and shooting and can fire Multiple Shots even when moving that turn. In addition, when firing from short range, all their missile attacks have Armour Piercing (1).</description>
+              <description>Yabusame do not suffer penalties to Hit for moving and shooting and can fire Multiple
+Shots even when moving that turn. In addition, when firing from within 6&quot;, all their missile attacks have Armour Piercing (1).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -3287,14 +3443,15 @@
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="c34c-2455-b4e4-0d6e" name="Way of the Warrior" hidden="false" targetId="dffd-62ed-41ca-bfab" type="rule"/>
-            <infoLink id="b675-f59a-eda9-0444" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+            <infoLink id="b675-f59a-eda9-0444" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="d073-7142-2695-b936" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
+            <infoLink id="a8b7-af26-b299-cbe5" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="12df-0837-9f35-bc8c" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -3382,7 +3539,7 @@
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3509,7 +3666,7 @@
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3549,14 +3706,13 @@
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="3625-c0ca-05fb-eb32" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
             <infoLink id="21ac-6e81-72f8-6635" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-            <infoLink id="5c63-2a41-341d-8ddb" name="Dishonourable" hidden="false" targetId="626f-1a4e-e786-1101" type="rule"/>
             <infoLink id="dbb7-95c9-8ad3-378e" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -3684,7 +3840,7 @@
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, (Dishonourable)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3722,7 +3878,7 @@
                 <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                 <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry</characteristic>
               </characteristics>
             </profile>
@@ -3813,7 +3969,7 @@
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry</characteristic>
                   </characteristics>
                 </profile>
@@ -4319,7 +4475,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4374,7 +4530,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4399,7 +4555,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="78.0"/>
+        <cost name="pts" typeId="points" value="79.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1da6-d47e-4788-df47" name="Flaming Arrow" hidden="false" collective="false" import="true" type="unit">
@@ -4411,7 +4567,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4466,7 +4622,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4491,7 +4647,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="38.0"/>
+        <cost name="pts" typeId="points" value="29.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f44-a3cd-5323-5173" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
@@ -4678,7 +4834,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
               </profiles>
               <rules>
                 <rule id="5af6-dd46-28fc-eafc" name="Great Guard" publicationId="5ff9-69dd-8810-183f" page="87" hidden="false">
-                  <description>One unit of Samurai Warriors in an army led by Tokudaira Ieyasu may be upgraded to Great Guard for a cost of 4 points per model. Great Guard have +1 WS and S as well as Devastating Charge and Stubborn. This unit counts as a Special choice.</description>
+                  <description>One unit of Samurai Warriors in an army led by Tokudaira Ieyasu may be upgraded to Great Guard on foot for a cost of 4 points per model. Great Guard have +1 WS and S as well as Devastating Charge and Stubborn. This unit counts as a Special choice.</description>
                 </rule>
                 <rule id="4a61-771a-dc54-602b" name="Shogun" publicationId="5ff9-69dd-8810-183f" page="87" hidden="false">
                   <description>Tokudaira Ieyasu must be the army’s General. His Inspiring Presence is 18&quot; rather than the normal 12&quot;. An army led by the Shogun ignores the restriction on not allowing multiple Clan Mons in the army.</description>
@@ -4815,7 +4971,7 @@ However, if a unit with an active Blessing flees for any reason, they immediatel
                       <characteristics>
                         <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                         <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Katana. Attacks made with Guard-breaker have Ignores Armour saves, and no Parry saves may be taken against it.</characteristic>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Katana. Attacks made with Guard Breaker have Ignores Armour saves, and no Parry saves may be taken against it.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5432,7 +5588,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">8</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character)</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Dishonourable)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5440,7 +5596,6 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                 <infoLink id="d4c0-08bf-641e-196f" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
                 <infoLink id="98e2-75e7-a077-b04c" name="Dodge (4+)" hidden="false" targetId="5e3f-9736-a9c0-4a1c" type="rule"/>
                 <infoLink id="297f-3064-d43f-25dd" name="Hidden" hidden="false" targetId="2796-b399-4f98-a36f" type="rule"/>
-                <infoLink id="a7f2-6813-b75c-bc54" name="Dishonourable" hidden="false" targetId="626f-1a4e-e786-1101" type="rule"/>
                 <infoLink id="8eb4-fb3a-968a-0af6" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
                 <infoLink id="8d1c-6b73-0503-3356" name="Mon of the Hattiga Clan" hidden="false" targetId="b372-03bc-735c-b01a" type="rule"/>
               </infoLinks>
@@ -5547,7 +5702,10 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
               </profiles>
               <rules>
                 <rule id="fb2a-a704-365f-f72b" name="The Red Devils" publicationId="5ff9-69dd-8810-183f" page="93" hidden="false">
-                  <description>The Red Devils are a unit of Samurai Cavalry with an additional +1 S and Frenzy. Naomasa must set up with this unit and may not leave it.</description>
+                  <description>The Red Devils are a unit of Samurai Cavalry with an additional +1 S and Frenzy. Naomasa must set up with this unit and may not leave it.
+
+If Sanada Naomasa is taken, then you must include a unit of Samurai Cavalry in the army, chosen at additional cost from the Core Units section of the army list. This unit must be
+upgraded to Red Devils at a cost of 3 points per model and given spears. They may not take a Clan Mon.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -6291,7 +6449,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -6371,12 +6529,12 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="46.0"/>
+        <cost name="pts" typeId="points" value="43.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b66-94e7-ac2c-5976" name="Cannon" hidden="false" collective="false" import="true" type="unit">
@@ -6388,7 +6546,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -6439,7 +6597,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
+            <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6464,7 +6622,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="73.0"/>
+        <cost name="pts" typeId="points" value="64.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4c59-0b1b-9f8d-9560" name="Great Guard" hidden="true" collective="false" import="true" type="unit">
@@ -6672,7 +6830,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                     <infoLink id="10a1-ef39-5cc8-a005" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -6697,7 +6855,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                 <selectionEntry id="e4c6-4f17-0746-4e68" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a43d-a4e2-bf8c-1c37" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3c65-05b3-6f5c-8ef4" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3c65-05b3-6f5c-8ef4" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="e6bc-9618-36cb-5788" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
@@ -6865,6 +7023,36 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="a2fb-b322-4c95-2067" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b02-6fee-791c-85a5">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="311a-f2c3-7e81-5d19" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15f0-e23e-a249-6192" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8edf-bbbd-e039-b0fc" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c114-b21a-b8b3-2e7b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="670d-6e5d-47f0-6176" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b02-6fee-791c-85a5" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da96-7814-1947-97b1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ee7d-dadb-3c32-1efd" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
@@ -6885,7 +7073,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                 <selectionEntry id="e5c1-c6ee-f6ed-7f5f" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e434-caad-e701-68ba" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="327e-151b-2030-374a" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="327e-151b-2030-374a" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="e758-f523-b6df-feac" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
@@ -6931,6 +7119,11 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
     </selectionEntry>
     <selectionEntry id="cf29-5460-ad93-03a6" name="Red Devils" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="set" field="e75c-8087-9a8d-f4d6" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90d7-ee35-5f2f-27df" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90d7-ee35-5f2f-27df" type="atLeast"/>
@@ -6939,6 +7132,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b02-ce2e-4b7b-ebe3" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e75c-8087-9a8d-f4d6" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="d427-da0c-d200-ffb0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -7035,7 +7229,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                     <infoLink id="cb01-a1b9-138b-e4af" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -7060,7 +7254,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                 <selectionEntry id="ef58-f62d-3e04-405b" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0da5-051d-a449-c2eb" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="263a-4a0c-574e-1c64" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="263a-4a0c-574e-1c64" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="6a92-4948-ef33-9624" name="Magic Standards" hidden="false" collective="false" import="true" targetId="fa2c-2229-a265-a85d" type="selectionEntryGroup"/>
@@ -7146,17 +7340,6 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
             <infoLink id="170c-f5f0-2798-aa74" name="Death Before Dishonour" hidden="false" targetId="30a5-e241-6328-3c55" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="12dd-3be3-79d2-7c57" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9060-e004-4808-0d2a" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="ae70-7b83-1252-e101" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="2c6b-9758-a3a0-3a2b" name="Mantlets" hidden="false" collective="true" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="4c47-4031-6df1-1b77" value="1.0">
@@ -7233,6 +7416,35 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="acf3-1dbc-8ed4-463f" name="Armour" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47ef-d722-47a7-a1f1" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a7ed-534c-f1ec-a2e5" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="711a-6eac-fe25-4ab2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7652-070d-07f3-b5c5" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="498d-1ec7-8dd9-f4d0" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23c7-e5e3-1e79-61d6" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9f7a-502c-a110-2763" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -7325,6 +7537,7 @@ I and A as well as a Ward save (5+) for the remainder of the turn.</characterist
         <infoLink id="3182-cf5a-199e-7038" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
         <infoLink id="c70b-ea5c-756b-a22a" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="1012-4a01-d942-eea7" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
+        <infoLink id="de85-9fe3-d1b6-a62a" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d0d5-5859-0bb6-2944" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -8064,7 +8277,7 @@ The caster can choose to cast any spell through the candle rather than themself.
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="dffd-62ed-41ca-bfab" name="Way of the Warrior" publicationId="5ff9-69dd-8810-183f" page="58" hidden="false">
-      <description>Models with this rule must always accept challenges and re-roll all failed Psychology tests. In addition, they treat friendly units without this rule as Expendable.</description>
+      <description>Models with this rule must always accept challenges and re-roll all failed Psychology tests. In addition, they ignore Panic caused by units with a lower unmodified LD value (excluding any characters) than them. Lastly, they treat all models listed as Dishonourable as Expendable.</description>
     </rule>
     <rule id="30a5-e241-6328-3c55" name="Death Before Dishonour" publicationId="5ff9-69dd-8810-183f" page="58" hidden="false">
       <description>Whenever a unit comprised wholly of models with this rule is required to take a Break Test, they may choose to do so using 3D6, discarding the highest dice. However, if this test is failed, you must remove the entire unit as a casualty. The enemy then cannot pursue or overrun, but may reform as normal.</description>
@@ -8098,7 +8311,7 @@ You may not have multiple different Clan Mons in the same army.</description>
 You may not have multiple different Clan Mons in the same army.</description>
     </rule>
     <rule id="d990-aab6-362c-50a8" name="Mon of the Odari Clan" publicationId="5ff9-69dd-8810-183f" page="100" hidden="false">
-      <description>Ashigaru only. Models with this Mon gain +1 to their LD and may use the LD of any friendly character with Way of the Warrior within 6&quot;.
+      <description>Ashigaru only. Models with this Mon gain +1 to their LD.
 
 You may not have multiple different Clan Mons in the same army.</description>
     </rule>
@@ -8135,9 +8348,6 @@ You may not have multiple different Clan Mons in the same army.</description>
     </rule>
     <rule id="8288-5fe6-1aaa-1b03" name="Impale Attack" publicationId="5ff9-69dd-8810-183f" page="75" hidden="false">
       <description>A Kirin gains +1 S to its Impact Hits.</description>
-    </rule>
-    <rule id="626f-1a4e-e786-1101" name="Dishonourable" publicationId="5ff9-69dd-8810-183f" page="78" hidden="false">
-      <description>Models with this may never join any units with Way of the Warrior and vice versa.</description>
     </rule>
     <rule id="4bbe-aa58-6fbb-46c0" name="Sworn Bodyguard" publicationId="5ff9-69dd-8810-183f" page="60" hidden="false">
       <description>A Hatamoto may be assigned to guard one friendly character model in your army (except other Hatamoto) at the start of the game. The same character may not be nominated by several Hatamoto. Whenever the nominated character suffers a Wound (before saves are taken) and the Hatamoto is in the same unit as them, roll a D6. On a 1, the Wound is resolved as normal, but on a 2+ the Wound is intercepted, and re-allocated to the Hatamoto. No more than one Wound can be re-allocated to each Hatamoto in each phase. Wounds in a challenge can&apos;t be reallocated.</description>
@@ -8179,10 +8389,10 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-        <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-        <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
       </characteristics>
     </profile>
@@ -8201,7 +8411,7 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-        <characteristic name="LD" typeId="a199-f10b-a038-5730">6</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459"/>
       </characteristics>
     </profile>
@@ -8254,7 +8464,7 @@ You may not have multiple different Clan Mons in the same army.</description>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/14+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit may immediately make a move using Fly (10) as if it were the Remaining Moves sub-phase.</characteristic>
       </characteristics>
@@ -8265,7 +8475,7 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/14+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next turn, the affected unit may not move at all in its next Movement phase and gains Immunity (Psychology).</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster’s next turn, the target unit may not move at all in its next Movement phase and gains Immunity (Psychology).</characteristic>
       </characteristics>
     </profile>
     <profile id="72b0-caca-078f-426f" name="Call of the War God" publicationId="5ff9-69dd-8810-183f" page="99" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -8274,7 +8484,7 @@ You may not have multiple different Clan Mons in the same army.</description>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">16+/24+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/18&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all friendly units with Way of the Warrior within range of the caster. Until the start of the caster’s next turn, the target units gain Devastating Charge and may re-roll all failed rolls To Wound in close combat.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all friendly units with Way of the Warrior within range of the caster. Until the start of the caster’s next magic phase, the target units gain Devastating Charge and may re-roll all failed rolls To Wound in close combat.</characteristic>
       </characteristics>
     </profile>
     <profile id="e3aa-2d01-2a16-c426" name="Onna Bushi" publicationId="5ff9-69dd-8810-183f" page="71" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">

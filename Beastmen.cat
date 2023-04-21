@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d5f-a723-f233-6849" name="Beastmen" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="3c04-36bf-f9ef-7deb" name="Gift of Chaos">
@@ -155,7 +155,7 @@
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="225.0"/>
+                <cost name="pts" typeId="points" value="250.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="74ef-669b-983e-a5e4" name="Tuskgor Chariot" hidden="false" collective="false" import="true" type="model">
@@ -309,6 +309,42 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d3d3-053c-7530-4444" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="6350-c966-2bf4-7af4" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4d0-1a55-04d5-fd66" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6350-c966-2bf4-7af4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d282-4f05-2233-986a" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5635-798c-1f74-ec5a" name="Spear (On Foot)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="4e58-9eb0-2c90-beb7" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4d0-1a55-04d5-fd66" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e58-9eb0-2c90-beb7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7d94-c97b-eb87-e34b" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e83d-3ff4-7bad-beb4" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="be69-e2e8-fb85-7133">
@@ -445,6 +481,7 @@
                     <entryLink id="2d74-7a6d-4ac6-5312" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="8889-841e-3c93-efbe" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="fd2b-3975-2232-ec73" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="6ff5-e2eb-f85c-ef8e" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -708,6 +745,7 @@
                     <entryLink id="0dad-9a50-bb84-51e0" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="63d0-b601-3c0f-703a" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="88cc-87dd-dd7b-31b2" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="c60d-5e5d-410b-d708" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -970,6 +1008,7 @@
                     <entryLink id="9443-a96e-9ae2-30d1" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="9a58-4e5e-d7e5-1a22" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="6382-2d2d-0c90-3aa8" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="8703-4868-74e5-be5f" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1239,6 +1278,7 @@
                     <entryLink id="623a-6b8e-55c6-5a32" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="01fa-2198-8278-433d" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="5e64-f512-98a1-b5e8" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="8726-dba7-9a96-b0c9" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1898,6 +1938,42 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="426c-cffb-d7ec-0e2c" name="Spear (Mounted)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="2801-9245-d5d7-e7cf" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dae3-2ef9-01ec-a883" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2801-9245-d5d7-e7cf" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e1a8-b9b2-71f1-55f6" name="Spear (Mounted)" hidden="false" targetId="b2d2-2eb6-2bd2-ddbb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f506-5caa-e752-ac2a" name="Spear (On Foot)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="bf4a-0e06-8b37-5437" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dae3-2ef9-01ec-a883" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf4a-0e06-8b37-5437" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="040d-7189-f2c9-5df1" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="ab03-7034-965a-bb83" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="f4cb-f1c9-530b-ed3d">
@@ -2062,6 +2138,7 @@
                     <entryLink id="1802-f36e-74ac-6666" name="Arcane Items" hidden="false" collective="false" import="true" targetId="b79d-03f9-13bf-d29b" type="selectionEntryGroup"/>
                     <entryLink id="e9d9-d129-f8fe-b37f" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="b867-1d26-aaa5-d3b6" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="c7c8-fc92-ab41-e77c" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2285,6 +2362,7 @@
                     <entryLink id="9010-2ccf-e37a-c3fd" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="ebe9-0182-fc8b-f3ba" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="c02b-061d-cc8a-461a" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="00fe-59e5-07f8-45cd" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2502,6 +2580,7 @@
                     <entryLink id="0cc0-d381-0a9c-1ff5" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="751d-d150-ca09-f557" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="aa1f-1786-329d-ad75" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="127f-11e5-c715-17e8" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2719,6 +2798,7 @@
                     <entryLink id="2c57-56f3-5d05-99c5" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="f891-74c1-4325-9639" type="selectionEntryGroup"/>
                     <entryLink id="36b0-9f7c-ea0a-0cc6" name="Talismans" hidden="false" collective="false" import="true" targetId="dafa-8f87-25fb-0fcb" type="selectionEntryGroup"/>
                     <entryLink id="2606-42cb-9093-c027" name="Magic Armour" hidden="false" collective="false" import="true" targetId="Magic Armour (wizard)" type="selectionEntryGroup"/>
+                    <entryLink id="dae6-d20a-58fc-cbdf" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3691-a2dc-7f2e-5c35" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3206,6 +3286,17 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1361-cf90-c431-45a2" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e14e-bbb3-d48e-9ea4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f753-946d-85db-3dc0" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4150,7 +4241,7 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2ceb-1677-28e3-f5de" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5492-43ce-102f-8621">
+            <selectionEntryGroup id="2ceb-1677-28e3-f5de" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f89-a886-f5e7-e726">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c74d-71fe-6ec8-5e26" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d71-7ac9-9259-d553" type="min"/>
@@ -4164,7 +4255,7 @@
                     <infoLink id="a696-1048-c0e0-cbf7" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="04ec-1092-820f-9e74" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -4175,7 +4266,7 @@
                     <infoLink id="11a2-efcf-19ed-25a8" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="6.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2f89-a886-f5e7-e726" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -4185,17 +4276,6 @@
                   <infoLinks>
                     <infoLink id="a8bd-3830-406b-0e10" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                     <infoLink id="7848-d564-c073-a70b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5492-43ce-102f-8621" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67d1-09c5-58c8-3f55" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="8a99-52b6-e0d2-202d" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4256,7 +4336,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="36.0"/>
+            <cost name="pts" typeId="points" value="39.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4364,7 +4444,6 @@
             <infoLink id="5a50-05e5-6f16-806d" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="e9b0-08db-9e98-6f0e" name="Drunken" hidden="false" targetId="e266-edfb-e9f4-02d1" type="rule"/>
             <infoLink id="adc5-44ae-ce03-ff93" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-            <infoLink id="bc9c-e6ab-db5f-ef6e" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
             <infoLink id="e080-b534-88e3-bc26" name="01-02" hidden="false" targetId="26c8-8fd3-7a0a-e24c" type="profile"/>
             <infoLink id="1ad7-e143-6cc8-d50b" name="03-04" hidden="false" targetId="1823-42ce-82a9-75a2" type="profile"/>
             <infoLink id="b56e-61e9-2712-9a61" name="05-06" hidden="false" targetId="dc96-3f8c-befe-1533" type="profile"/>
@@ -4391,6 +4470,17 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d0f3-ff96-7d43-e16d" name="Beastmen Ambush" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12f9-1873-d954-26f5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c24e-8321-42fb-2794" name="Beastmen Ambush" hidden="false" targetId="ac57-e28c-5e7b-ba9c" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4468,7 +4558,7 @@
                 <infoLink id="746c-4c9a-e0d5-9f58" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1676-3afa-3947-c74b" name="Gorehoof" hidden="false" collective="false" import="true" type="upgrade">
@@ -4767,111 +4857,6 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="891a-943a-6b6d-e322" name="Chaos Spawn" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="db4f-935c-ab52-b46a" name="Chaos Spawn" publicationId="9e23-79cb-pubN71963" page="83" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215"/>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="4c58-4f3d-7117-f923" name="Chaos Spawn" publicationId="9e23-79cb-pubN71963" page="128" hidden="false">
-          <description>You may take 1-2 Chaos Spawn as a single Special choice.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="f798-b1e5-8773-dbd2" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
-        <infoLink id="2e19-7e0e-3e05-4296" name="Random Attacks (D6+1)" hidden="false" targetId="183a-6a6f-951c-1663" type="rule"/>
-        <infoLink id="fbe9-a94f-bd72-1ca4" name="Random Movement (2D6)" hidden="false" targetId="4918-5aef-8930-27ec" type="rule"/>
-        <infoLink id="ba45-8007-46d9-961f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-        <infoLink id="3739-752e-e43c-06db" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="b20f-8d00-f664-e56a" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b29a-8dd2-5921-db22" name="Mark of Chaos" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f602-2a88-5398-956b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0b4d-3202-a093-4131" name="Spawn of Khorne" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb8e-c50c-c2b3-d436" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="4b75-17f1-11ab-8d27" name="Spawn of Khorne" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
-
-A Spawn of Khorne has +1 S.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6291-dcb3-d9b3-8da0" name="Spawn of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bd2-8aee-8b44-413b" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="1f4f-16a2-3049-e197" name="Spawn of Tzeentch" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
-
-A Spawn of Tzeentch has a S 3 Breath Weapon that has Flaming Attacks.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e780-4aa7-5dd3-731f" name="Spawn of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d76-d483-91b9-dfd5" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="43da-94e7-9b44-2075" name="Spawn of Slaanesh" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
-
-A Spawn of Slaanesh gain +2 to its I.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e953-376d-08e9-870b" name="Spawn of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7cf0-ab75-2c38-d443" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="7d72-11c9-6d37-df98" name="Spawn of Nurgle" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
-                  <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
-
-A Spawn of Nurgle has Poisoned Attacks.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="40.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="1a02-1881-aadc-ffbc" name="Preyton" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="453c-fdac-d618-632f" name="Preyton" publicationId="9e23-79cb-pubN71963" page="84" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -5014,7 +4999,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Cavalry</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5023,6 +5008,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
             <infoLink id="6267-ac4a-2286-3d3a" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="0153-4ab8-399b-25b3" name="Immunity (Lightning Attacks)" hidden="false" targetId="3c13-1f49-b25b-95f8" type="rule"/>
             <infoLink id="6d72-af52-6fc4-b516" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+            <infoLink id="afbb-afee-7e0b-dd12" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="88e1-39f9-b02e-e88b" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -5116,7 +5102,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Cavalry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5158,6 +5144,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
         <infoLink id="a06a-9b65-4b1b-6932" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="8411-0392-2f26-1943" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="fc9e-3fba-da37-72ff" name="Immunity (Lightning Attacks)" hidden="false" targetId="3c13-1f49-b25b-95f8" type="rule"/>
+        <infoLink id="2d90-8646-16dc-05de" name="Impact Hits (D3)" hidden="false" targetId="f30d-0b61-2836-689e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="957e-69b7-3e99-a6c1" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5556,7 +5543,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3a14-19b1-b661-f660" name="The Sons of Ghorros" hidden="true" collective="false" import="true" type="unit">
@@ -5814,7 +5801,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="044b-8e1d-baa6-1a34" name="Venom Tail" hidden="false" collective="false" import="true" type="upgrade">
@@ -5888,7 +5875,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="b7a0-345c-7c49-0b11" name="Primary Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="b7a0-345c-7c49-0b11" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="03c5-51ff-1d89-2ec8">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b86-7b32-6471-c944" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e61-75ab-e86f-1cff" type="min"/>
@@ -5902,7 +5889,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                     <infoLink id="27dd-03a1-8e78-1b37" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="afe5-e9e8-d276-db04" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -5913,7 +5900,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                     <infoLink id="91ef-2183-7b55-9747" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="6.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="03c5-51ff-1d89-2ec8" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -5923,17 +5910,6 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                   <infoLinks>
                     <infoLink id="443b-6e9f-6e88-569a" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                     <infoLink id="f50b-c887-e8ae-2e63" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c44b-5242-61ef-7eef" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc18-7690-7c0c-5eb8" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="a7c9-a801-0fa3-9d38" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -5994,7 +5970,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="36.0"/>
+            <cost name="pts" typeId="points" value="39.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6197,7 +6173,7 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
                   <description>Gorthor must be the Army General. Gorthor, and any unit he joins, may re-roll failed Psychology and Break tests.</description>
                 </rule>
                 <rule id="e974-5a80-3f02-d11b" name="Scion of the Dark Gods" publicationId="9e23-79cb-pubN71963" page="100" hidden="false">
-                  <description>At the start of each friendly Magic phase randomly generate a spell from the Lore of Death. Gorthor may use this spell during this Magic phase as a Bound Spell, with a Power Level equal to half the casting value of the spell, rounding up. Gorthor may not exchange the result for the first spell from the same lore, as a Wizard normally could.</description>
+                  <description>At the start of each friendly Magic phase randomly generate a spell from the Lore of Death. Gorthor may use this spell during this Magic phase as a Bound Spell, with a Power Level equal to half the casting value of the spell, rounding up. Gorthor may not exchange the result for the Signature spell if he prefers.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -7059,6 +7035,122 @@ A Spawn of Nurgle has Poisoned Attacks.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8f48-358e-29c1-4162" name="Chaos Spawn" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="dd20-638e-761f-0a48" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="00f0-7d17-a809-12ed" name="Chaos Spawn" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f0c2-281b-0189-90d8" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f01a-60bb-b580-be43" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dfb8-26f9-0a1e-0dcd" name="Chaos Spawn" publicationId="9e23-79cb-pubN71963" page="83" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215"/>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="def4-3b06-98f5-eab3" name="Chaos Spawn" publicationId="9e23-79cb-pubN71963" page="128" hidden="false">
+              <description>You may take 1-2 lone Chaos Spawn as a single Special choice.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="24e6-d328-33ee-8847" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+            <infoLink id="3a24-43b8-3ffc-77b8" name="Random Attacks (D6+1)" hidden="false" targetId="183a-6a6f-951c-1663" type="rule"/>
+            <infoLink id="e9a9-4203-70bb-ebfe" name="Random Movement (2D6)" hidden="false" targetId="4918-5aef-8930-27ec" type="rule"/>
+            <infoLink id="5563-a3b1-44ef-f9c0" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="dfba-b37b-23e1-4af8" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8421-f4c3-e641-e0cc" name="Mark of Chaos" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4e4-a637-f6b0-8f5e" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="71e7-e1c3-166a-8564" name="Spawn of Khorne" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d20-1a3f-c67e-c4c3" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4942-d59c-f43a-e02d" name="Spawn of Khorne" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
+                      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
+A Spawn of Khorne has +1 S.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0108-c987-5e1c-bfe3" name="Spawn of Tzeentch" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd05-0ca3-8b16-7d29" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="124c-cad9-ecb7-e710" name="Spawn of Tzeentch" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
+                      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
+A Spawn of Tzeentch has a S 3 Breath Weapon that has Flaming Attacks.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="006c-1d8b-301d-daae" name="Spawn of Slaanesh" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f02f-029e-67cf-1b86" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3f9c-fa95-e3f2-e3b7" name="Spawn of Slaanesh" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
+                      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
+A Spawn of Slaanesh gain +2 to its I.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="45fb-15e3-ed10-a825" name="Spawn of Nurgle" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0555-5f00-7a07-1011" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4193-c166-99f8-7b0c" name="Spawn of Nurgle" publicationId="9e23-79cb-pubN71963" page="83" hidden="false">
+                      <description>A character with a Mark of Chaos cannot join a unit that has a different Mark of Chaos. A character with a Mark of Chaos cannot join a unit that has already been joined by a character that has a different Mark of Chaos.
+
+A Spawn of Nurgle has Poisoned Attacks.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="437c-32c7-4262-cfc0" name="Expendable" hidden="false" collective="false" import="true" type="model">
@@ -7616,22 +7708,6 @@ modifier.</characteristic>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df2c-1b30-b7ce-6d2e" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="bcd9-2951-ac59-d0c4" name="Chalice of Dark Rain" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5104-75fd-740c-8bf9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15f8-25fb-85d7-3ed6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="bf37-e8ab-186e-683e" name="Chalice of Dark Rain" publicationId="9e23-79cb-pubN71963" page="117" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. At the beginning of the enemy Shooting phase, the bearer can blind his enemies. For the rest of the phase, all enemy missile units are at -1 To Hit. Weapons or attacks that do not use BS may only fire on the roll of a 4+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="e286-8ca1-7da6-cdd6" name="Shard of the Herd Stone" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a724-1a46-a0f5-3cd4" type="max"/>
@@ -7713,6 +7789,24 @@ modifier.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5ebd-129c-606f-dbe6" name="Jagged Dagger" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="903e-ed47-d7b9-537d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="975c-b7af-6259-8d2b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2d38-b7d6-02b3-6d68" name="Jagged Dagger" publicationId="e3da-3848-ff08-a482" page="7" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
+                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Every enemy model killed in close combat with the Jagged Dagger generates an additional Power or Dispel dice that can be used in the next Magic phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8384,24 +8478,6 @@ modifier.</characteristic>
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fa75-ca8b-7bab-f047" name="Jagged Dagger" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="76b4-01fc-6d93-7906" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad6d-cd8d-dc02-7305" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="756e-3db2-19a9-fdae" name="Jagged Dagger" publicationId="e3da-3848-ff08-a482" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Wizard only. Every enemy model killed in close combat with the Jagged Dagger generates an additional Power or Dispel dice that can be used in the next Magic phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="c465-292f-d885-8737" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
@@ -8457,6 +8533,32 @@ modifier.</characteristic>
         <entryLink id="e960-2e82-9c78-dce1" name="Chaos Armor" hidden="false" collective="false" import="true" targetId="8396-086f-b14b-e26e" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="3691-a2dc-7f2e-5c35" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="088c-4dde-ba93-ad76" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="3008-1fa4-9c1c-228c" name="Chalice of Dark Rain" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="769e-0b41-99f3-ad2d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75e9-bc42-5184-7647" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="84bf-6424-f3cc-5fa3" name="Chalice of Dark Rain" publicationId="9e23-79cb-pubN71963" page="117" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. At the beginning of the enemy Shooting phase, the bearer can blind his enemies. For the rest of the phase, all enemy missile units are at -1 To Hit. Weapons or attacks that do not use BS may only fire on the roll of a 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="dd20-773d-e07e-ca5e" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="80ca-7f30-49ff-4274" name="Primal Fury" publicationId="9e23-79cb-pubN71963" page="64" hidden="false">
@@ -8501,7 +8603,7 @@ Models with this Mark add +1 to their T but suffer -2 to their I (to a minimum o
       <description>All models with this follow the Berserk Rage rules from Frenzy. In addition, if they are forced to charge as a result of a failed Berserk Rage test, they may re-roll failed charge distance results.</description>
     </rule>
     <rule id="ac57-e28c-5e7b-ba9c" name="Beastmen Ambush" publicationId="9e23-79cb-pubN71963" page="64" hidden="false">
-      <description>Models with this rule have Ambushers, though this is lost if they have any kind of mount. In addition, they add +1 to any rolls to determine whether or not they enter the table when using Ambushers. Note that your Army General must deploy normally.</description>
+      <description>Models with this rule have Ambushers, though this is lost if they have any kind of mount. In addition, they add +1 to any rolls to determine whether or not they enter the table when using Ambushers.</description>
     </rule>
     <rule id="a0e0-e4fa-1f28-cff8" name="Bagrar the Tamer" publicationId="9e23-79cb-pubN71963" page="100" hidden="false">
       <description>If Gorthor is mounted on a Chariot, he may re-roll all Fleeing and Pursuit distance rolls.</description>
@@ -8792,14 +8894,14 @@ Models with this Mark add +1 to their T but suffer -2 to their I (to a minimum o
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Affects all enemy Cavalry, Monstrous Cavalry, Chariots, ridden Monsters as well as War Beasts with Mixed Unit within range. All affected models will suffer a number of hits equal to the S and A characteristics of their mount/carriage animal. Any armour save bonuses for the beast’s Natural Armour, barding etc, have no effect.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all enemy Cavalry, Monstrous Cavalry, Chariots, ridden Monsters as well as War Beasts/Monstrous Beasts/Monsters with Mixed Unit within range. All affected models will suffer a number of hits equal to the A characteristics of their mount(s), using its S. In the case of Mixed Units, only the handlers are targeted, and only by models in base contact (in the case of Skirmishers, calculate this as if the models were ranked up in combat). Any armour save bonuses from the beast’s Natural Armour, barding etc, have no effect.</characteristic>
       </characteristics>
     </profile>
     <profile id="e8e7-fd22-61ac-1773" name="Viletide" publicationId="9e23-79cb-pubN71963" page="111" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/8+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/7+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts 5D6 S 1 hits.</characteristic>
       </characteristics>

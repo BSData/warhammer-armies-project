@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="fac7-f094-ecff-930e" name="Bladedances">
@@ -61,6 +61,7 @@
             <entryLink id="b0ea-db95-259d-7772" name="Talismans" hidden="false" collective="false" import="true" targetId="757a-6d77-0492-5ff6" type="selectionEntryGroup"/>
             <entryLink id="3b5c-a66d-f2b7-b170" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="1dec-c95a-c173-2c38" type="selectionEntryGroup"/>
             <entryLink id="08ff-6de3-9b37-44d1" name="Arcane Items" hidden="false" collective="false" import="true" targetId="b9c6-d6bd-3867-d8e6" type="selectionEntryGroup"/>
+            <entryLink id="8398-5f93-c442-bda0" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -704,6 +705,7 @@
             <entryLink id="a6f7-8b02-a768-a06e" name="Talismans" hidden="false" collective="false" import="true" targetId="757a-6d77-0492-5ff6" type="selectionEntryGroup"/>
             <entryLink id="0cc5-c82f-9a31-4534" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="1dec-c95a-c173-2c38" type="selectionEntryGroup"/>
             <entryLink id="cce3-da56-baff-071a" name="Arcane Items" hidden="false" collective="false" import="true" targetId="b9c6-d6bd-3867-d8e6" type="selectionEntryGroup"/>
+            <entryLink id="fd3a-6a73-86d8-2577" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1781,7 +1783,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2213,14 +2215,14 @@
                     <infoLink id="b670-1cc8-cf59-8718" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="16.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2447,7 +2449,7 @@
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">4</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
@@ -3724,7 +3726,7 @@
           <profiles>
             <profile id="5aa8-cfc5-1bfc-0110" name="Carpet Rider" publicationId="d221-484d-439d-4310" page="69" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
               <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="M" typeId="09ad-18df-607b-1215"/>
                 <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
@@ -3808,11 +3810,11 @@
           </profiles>
           <rules>
             <rule id="0beb-474c-e8e7-7cd2" name="Whirling Dervish" publicationId="d221-484d-439d-4310" page="70" hidden="false">
-              <description>Dervishes do not charge like normal units. Instead, declare the unit you wish to charge, roll the charge distance as normal. Turn the Dervishes so they are facing the centre of the enemy unit, and then move the unit forward. However, Dervishes never stop when they reach an enemy unit, but always move their full charge move, emerging on the other side and moving through multiple enemy units if they have enough Movement to do so (stopping within 1&quot; of any friendly units). If they ever end their movement within an enemy unit, place the Dervishes 1&quot; behind the enemy unit.
+              <description>Dervishes do not charge like normal units. Instead, declare the unit you wish to charge, resolve charge reactions and roll the charge distance as normal. Turn the Dervishes so they are facing the centre of the enemy unit, and then move the unit forward. If the charge is successful, the Dervishes do not stop once they reach the target but always move their full charge move (through the target unit), emerging on the other side and moving through multiple enemy units if they have enough Movement to do so (stopping within 1&quot; of any friendly units). If they ever end their movement within an enemy unit, place the Dervishes 1&quot; behind the enemy unit.
 
 If they cannot be placed behind the enemy unit due to there not being enough space, they are removed as casualties after resolving their attacks. Any unit passed through in this manner takes D3 S 3 hits with Poisoned Attacks for every Dervish in the unit.
 
-An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned Attacks for each Dervish in base contact, resolved like Impact Hits. Combat is then resolved as normal.</description>
+An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned Attacks for each Dervish in base contact, resolved like Impact Hits. Combat is then resolved as normal.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -4263,7 +4265,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4327,7 +4329,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -4337,7 +4339,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
         <profile id="8b24-4cf8-2ff0-c38a" name="Monster Bombard" publicationId="d221-484d-439d-4310" page="74" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
           <characteristics>
             <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">Great Cannon</characteristic>
-            <characteristic name="Range" typeId="1c88-efb0-083f-b945">72&quot;</characteristic>
+            <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-72&quot;</characteristic>
             <characteristic name="Strength" typeId="6ca0-d074-628f-e276">10</characteristic>
             <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D6+1). Monster Bombards may re-roll the distance bounced by the cannon ball and failed rolls To Wound. If a Misfire is rolled, add -1 to the result on the Black Powder Misfire Chart.</characteristic>
           </characteristics>
@@ -4391,7 +4393,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -6294,7 +6296,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
           <profiles>
             <profile id="2c9d-bd45-1a55-4d4b" name="Rope of Kadizar" publicationId="d221-484d-439d-4310" page="93" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model on foot only. As long as he is not in base contact with an enemy model, the character may climb up the rope and disappear into the ether at the start of his Remaining Moves phase. He reappears in any location on the battlefield, but must be placed at least 1&quot; away from enemy units.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Model on foot only. As long as he is not in base contact with an enemy model or has moved previous this turn, the character may climb up the rope and disappear into the ether at the start of his Remaining Moves phase. He reappears in any location on the battlefield, but must be placed at least 1&quot; away from enemy units. This counts as moving that turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6779,7 +6781,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Ignores Armour saves. Quick to Fire.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Ignores Armour saves. Quick to Fire. An enemy unit taking a casualty from Naphtha Bombs must take a panic test.</characteristic>
       </characteristics>
     </profile>
     <profile id="06d8-d215-99ae-8ca1" name="Radiant Pegasus" publicationId="d221-484d-439d-4310" page="72" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -6854,7 +6856,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. Place a marker within 24&quot; and Line of Sight of the target. While the spell is in effect, the target must turn and move directly towards the marker as fast as possible in the Movement phase, or target it with any missile weapons. If the marker is within charge range, the unit must declare a charge against it just as if it was an enemy unit. The spell is immediately dispelled if the target reaches the marker, has lost Line of Sight to it at the start of their Movement phase, hits it with any missile weapons or is engaged in close combat.</characteristic>
       </characteristics>
@@ -6863,7 +6865,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/11+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/10+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6/2D6 S 4 hits. Roll a D6 after resolving the damage; on a 3+, the Dancing Scimitar moves to another unengaged enemy unit within 8&quot;. Keep rolling until you make an unsuccessful attempt or run out of enemy units. Note that any unit cannot get hit more than once by the same Dancing Scimitar each turn.</characteristic>
       </characteristics>
@@ -6872,7 +6874,7 @@ An enemy unit that charge a unit of Dervishes suffers D3 S 3 hits with Poisoned 
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/9+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/8+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target must re-roll all successful To Wound rolls until the start of the caster’s next magic phase.</characteristic>
       </characteristics>

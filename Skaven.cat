@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="35" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="36" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d5d-95c5-9736-ddda" name="Ringing the Bell Table">
@@ -136,6 +136,7 @@
             <entryLink id="bdb7-0c86-97e2-94c5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="e00e-6c4b-3cf0-6ce9" type="selectionEntryGroup"/>
             <entryLink id="5aae-27ff-85f9-07d3" name="Talismans" hidden="false" collective="false" import="true" targetId="0098-9d97-94f7-91bc" type="selectionEntryGroup"/>
             <entryLink id="8cdc-0bf6-93d1-500e" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="088a-0ef8-c21e-a74d" type="selectionEntryGroup"/>
+            <entryLink id="676c-fff7-926e-884c" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -257,7 +258,7 @@
                 </profile>
                 <profile id="1305-17ff-3959-51c5" name="11-12" publicationId="4086-1ccd-f433-39a2" page="149" hidden="false" typeId="4d5d-95c5-9736-ddda" typeName="Ringing the Bell Table">
                   <characteristics>
-                    <characteristic name="Result" typeId="4d75-0675-077d-fe87">Deafening Peals: All War Machines and Chariots with T 7 or more that are within 18&quot; of the Screaming Bell immediately take a Wound with Multiple Wounds (D3). Roll a D6 for each building within 18&quot; of the Bell - each collapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the Cracks Call spell from the Lore of Ruin.</characteristic>
+                    <characteristic name="Result" typeId="4d75-0675-077d-fe87">Deafening Peals: All enemy War Machines and Chariots with T 7 or more that are within 18&quot; of the Screaming Bell immediately take a Wound with Multiple Wounds (D3). Roll a D6 for each building within 18&quot; of the Bell - each collapses on a roll of 5+. Models inside collapsed buildings are treated the same as per the Cracks Call spell from the Lore of Ruin.</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="b70d-d1a8-8a5f-798c" name="17" publicationId="4086-1ccd-f433-39a2" page="149" hidden="false" typeId="4d5d-95c5-9736-ddda" typeName="Ringing the Bell Table">
@@ -285,7 +286,7 @@
                 <rule id="67d0-12a3-03e0-4f65" name="Ringing the Bell" publicationId="4086-1ccd-f433-39a2" page="149" hidden="false">
                   <description>In your Magic phase, immediately after generating power dice, you can choose to ring the Screaming Bell. The owning player can choose to roll between 1-3 D6&apos;s. Consult the Screaming Bell table after rolling.
 
-If the Screaming Bell suffers one or more wounds inflicted by a shooting attack with a Strength of 5 or more, it will ring once using one dice.</description>
+If the Screaming Bell suffers one or more wounds inflicted by a shooting attack with a S of 5 or more, it will immediately ring once using one D6, even if it is destroyed as a result of the attack.</description>
                 </rule>
                 <rule id="844c-ee48-d553-9965" name="Above the Masses" publicationId="4086-1ccd-f433-39a2" page="149" hidden="false">
                   <description>The Grey Seer may use Verminous Valor to refuse a challenge, but is not moved to the back of the unit – instead it clambers higher atop the Screaming Bell. The Grey Seer is not moved but cannot fight or be attacked for the duration of that round of close combat.</description>
@@ -352,7 +353,8 @@ If the Screaming Bell suffers one or more wounds inflicted by a shooting attack 
                 <infoLink id="46e2-1ae1-fd09-decf" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
                 <infoLink id="556f-8cd8-bf57-9198" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
                 <infoLink id="5301-b879-c089-e796" name="War-Litter" hidden="false" targetId="10d3-4214-04d0-7709" type="profile"/>
-                <infoLink id="1667-913e-d7ca-8f8b" name="War-Litter" hidden="false" targetId="03e2-1030-42c5-4223" type="rule"/>
+                <infoLink id="1667-913e-d7ca-8f8b" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
+                <infoLink id="eb1b-6ccb-dd3c-cc20" name="War-Litter" hidden="false" targetId="03e2-1030-42c5-4223" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -546,6 +548,7 @@ If the Screaming Bell suffers one or more wounds inflicted by a shooting attack 
                 <infoLink id="1101-a0a5-d3b1-5abc" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
                 <infoLink id="2982-3f4e-8cab-5f4b" name="War-Litter" hidden="false" targetId="10d3-4214-04d0-7709" type="profile"/>
                 <infoLink id="4820-acd4-f3a9-e2d6" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
+                <infoLink id="bf81-f647-fe79-8878" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -727,7 +730,7 @@ If the Screaming Bell suffers one or more wounds inflicted by a shooting attack 
                 <infoLink id="653b-2e9f-ff73-0ec6" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1326,6 +1329,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <entryLink id="6e48-8c2e-fd4d-7356" name="Talismans" hidden="false" collective="false" import="true" targetId="0098-9d97-94f7-91bc" type="selectionEntryGroup"/>
             <entryLink id="c9b8-936c-0dec-2391" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="088a-0ef8-c21e-a74d" type="selectionEntryGroup"/>
             <entryLink id="6fdc-fa72-4a35-35c3" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0f36-7336-7d11-28e6" type="selectionEntryGroup"/>
+            <entryLink id="f9a5-04f6-d15d-363b" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1853,7 +1857,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         <entryLink id="38b9-c379-34c8-dffa" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="90.0"/>
+        <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e703-1c11-d7e4-65c9" name="Warlock Master" hidden="false" collective="false" import="true" type="model">
@@ -1897,6 +1901,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <entryLink id="7d3b-2623-f494-b6c2" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0f36-7336-7d11-28e6" type="selectionEntryGroup"/>
             <entryLink id="f9c8-1f66-567d-aad1" name="Magic Armour" hidden="false" collective="false" import="true" targetId="75a7-06a3-6a2d-496c" type="selectionEntryGroup"/>
             <entryLink id="2ffc-60fc-83fe-2890" name="Clan Skryre Gear of War" hidden="false" collective="false" import="true" targetId="a4d3-f58e-91a0-d900" type="selectionEntry"/>
+            <entryLink id="19a2-c84f-fcd0-ec43" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2336,6 +2341,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <entryLink id="6ad7-d918-371f-7452" name="Talismans" hidden="false" collective="false" import="true" targetId="0098-9d97-94f7-91bc" type="selectionEntryGroup"/>
             <entryLink id="f30f-8888-24b7-d500" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="088a-0ef8-c21e-a74d" type="selectionEntryGroup"/>
             <entryLink id="d8b3-880e-6cbf-e831" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0f36-7336-7d11-28e6" type="selectionEntryGroup"/>
+            <entryLink id="bf25-98bf-5d82-0cc2" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2457,6 +2463,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <entryLink id="2a31-118f-bbc5-3d10" name="Talismans" hidden="false" collective="false" import="true" targetId="0098-9d97-94f7-91bc" type="selectionEntryGroup"/>
             <entryLink id="e35e-d78b-1626-4fdf" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="088a-0ef8-c21e-a74d" type="selectionEntryGroup"/>
             <entryLink id="7461-22a2-73f0-6ca4" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0f36-7336-7d11-28e6" type="selectionEntryGroup"/>
+            <entryLink id="e4cc-0037-e7e8-5844" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2916,7 +2923,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         <entryLink id="7014-c877-60b4-0190" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="pts" typeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ab1e-61a8-1820-f0c3" name="Warlock Engineer" hidden="false" collective="false" import="true" type="model">
@@ -2959,6 +2966,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <entryLink id="02a4-14d8-3c2c-8e1c" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0f36-7336-7d11-28e6" type="selectionEntryGroup"/>
             <entryLink id="6c97-79c6-fd31-e951" name="Magic Armour" hidden="false" collective="false" import="true" targetId="75a7-06a3-6a2d-496c" type="selectionEntryGroup"/>
             <entryLink id="c43d-5d4c-d3d1-87c9" name="Clan Skryre Gear of War" hidden="false" collective="false" import="true" targetId="a4d3-f58e-91a0-d900" type="selectionEntry"/>
+            <entryLink id="feeb-4cb3-c943-c220" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3397,7 +3405,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="35.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e5d-d508-6fe1-ca1f" name="Poisoned Wind Mortar" hidden="false" collective="false" import="true" type="model">
@@ -3549,14 +3557,14 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                     <infoLink id="a326-d5b8-4674-53d3" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="1.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="7.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3726,7 +3734,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="35.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="204d-91d2-d37d-a274" name="Poisoned Wind Mortar" hidden="false" collective="false" import="true" type="model">
@@ -3781,6 +3789,9 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
       </costs>
     </selectionEntry>
     <selectionEntry id="5df5-8e4d-2ea5-1c2f" name="Skavenslaves" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="b63d-8ec7-9134-0f19" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="faf7-8bcc-b2ea-d9d0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -3907,19 +3918,20 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <selectionEntry id="debe-2882-92f4-78ec" name="Pawleader" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2d8-92ab-7955-096b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d79a-979b-d289-875e" type="min"/>
               </constraints>
               <profiles>
                 <profile id="7fe6-5923-c001-4d5f" name="Pawleader" publicationId="4086-1ccd-f433-39a2" page="159" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">4</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
                 </profile>
@@ -3928,7 +3940,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                 <infoLink id="acec-df99-31f5-f83a" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3952,7 +3964,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </constraints>
           <rules>
             <rule id="5246-e8ab-0d0f-7c4e" name="Mainstay" publicationId="4086-1ccd-f433-39a2" page="243" hidden="false">
-              <description>If your army General is a Clan Pestilens Character, the requirement to take Clan Rats does not apply.</description>
+              <description>If your army General is a Clan Pestilens Character, the requirement to take Clanrats does not apply.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -4080,7 +4092,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </profiles>
           <rules>
             <rule id="4eab-7049-20e0-8918" name="Mainstay" publicationId="4086-1ccd-f433-39a2" page="243" hidden="false">
-              <description>If your army General is a Clan Eshin Character, the requirement to take Clan Rats does not apply.</description>
+              <description>If your army General is a Clan Eshin Character, the requirement to take Clanrats does not apply.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -4221,7 +4233,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
     <selectionEntry id="2707-f300-47f0-58ec" name="Giant Rats" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="0dd8-dfde-5b74-ad27" name="Mainstay" publicationId="4086-1ccd-f433-39a2" page="243" hidden="false">
-          <description>If your army General is a Clan Moulder Character, the requirement to take Clan Rats does not apply.�</description>
+          <description>If your army General is a Clan Moulder Character, the requirement to take Clanrats does not apply.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4229,6 +4241,8 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         <infoLink id="deed-2989-2da1-086f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="d827-ff50-bba0-a148" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
         <infoLink id="90ba-975c-d476-e942" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
+        <infoLink id="f274-c0d2-0acd-1638" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
+        <infoLink id="3c3f-e133-3776-6296" name="Fight in Extra Ranks (1)" hidden="false" targetId="3d84-8ad0-b310-e355" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="25b3-d21f-2b55-5ab1" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
@@ -4254,9 +4268,6 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="6633-31f1-d68f-5241" name="Fight in Extra Ranks (1)" hidden="false" targetId="3d84-8ad0-b310-e355" type="rule"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="2.0"/>
           </costs>
@@ -4267,7 +4278,6 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </constraints>
           <infoLinks>
             <infoLink id="4042-12bd-228c-72b5" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
-            <infoLink id="f7c3-0c25-8a17-36fa" name="Packmaster" hidden="false" targetId="ccd1-cb1f-61e9-0f0c" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="3138-2e8a-7b41-0469" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -4308,7 +4318,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4392,6 +4402,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <infoLink id="3e0a-e10f-67ac-6265" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
             <infoLink id="9408-fe39-2c0e-77a5" name="Dodge (6+)" hidden="false" targetId="bf3d-abaf-45ca-3477" type="rule"/>
             <infoLink id="fa0f-fa72-1407-9c17" name="Ambushers" hidden="false" targetId="f366-0f91-841f-cf80" type="rule"/>
+            <infoLink id="992c-22fe-2ef7-1840" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="0392-46a2-22ec-3bc1" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
@@ -4566,6 +4577,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             <infoLink id="d9d2-35b2-1b98-47ed" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
             <infoLink id="2a1b-b001-7689-1e3c" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
             <infoLink id="dd27-6fe1-a335-6499" name="Hatred" hidden="false" targetId="f6d7-9fbc-abc1-5cfc" type="rule"/>
+            <infoLink id="313d-b3be-9534-f23d" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="a9fb-845e-b8c8-9f96" name="Plague Censer" hidden="false" collective="true" import="true" type="upgrade">
@@ -4885,7 +4897,6 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </constraints>
           <infoLinks>
             <infoLink id="b84a-c43c-2868-d568" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
-            <infoLink id="ba3c-3094-0053-bd4a" name="Packmaster" hidden="false" targetId="ccd1-cb1f-61e9-0f0c" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="02b3-581e-17ba-6cb3" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -4926,7 +4937,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4960,8 +4971,9 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="8d83-889a-8145-d048" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
+            <infoLink id="8d83-889a-8145-d048" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
             <infoLink id="260b-c61f-76c6-9202" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+            <infoLink id="ded4-b869-caa4-2f7f" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="2c79-f9d5-bb8f-76da" name="Poisoned Wind Globes" hidden="false" collective="true" import="true" type="upgrade">
@@ -4972,7 +4984,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
               <profiles>
                 <profile id="cac3-f066-1a88-a4ef" name="Poisoned Wind Globes" publicationId="4086-1ccd-f433-39a2" page="191" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
+                    <characteristic name="Range" typeId="59f2-3142-82d5-4f43">8&quot;</characteristic>
                     <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
                     <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Quick to Fire. Magical Attacks. Ignores Armour saves. Models hit by a Poisoned Wind Globe must pass a T test or suffer a Wound. On the To Hit roll of a 1, the Globadier hits himself (including when firing into close combat).</characteristic>
                   </characteristics>
@@ -5139,6 +5151,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           </profiles>
           <infoLinks>
             <infoLink id="5c34-5159-9416-1782" name="Scurry Away!" hidden="false" targetId="45db-9bbc-8b3b-4865" type="rule"/>
+            <infoLink id="5543-9dd5-265f-cf15" name="Strength in Numbers" hidden="false" targetId="337b-11fe-1de2-0cd0" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="ef4f-f6d0-4a5f-ea2c" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -5380,9 +5393,10 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         <infoLink id="42c9-b08e-32a2-d89a" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="7a3e-e8d5-c0f8-8464" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="92a9-9ebb-fcbb-9d79" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
-        <infoLink id="4563-abcf-612d-3634" name="Random Movement (3D6)" hidden="false" targetId="0877-cd17-c381-a045" type="rule"/>
+        <infoLink id="4563-abcf-612d-3634" name="Immunity (Psychology)" hidden="false" targetId="b143-056c-658e-ba26" type="rule"/>
         <infoLink id="7215-4f4e-48a3-35dc" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
         <infoLink id="d9fe-6ad1-3334-d6ff" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
+        <infoLink id="8e0b-5787-2a00-5c37" name="Random Movement (3D6)" hidden="false" targetId="0877-cd17-c381-a045" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6be2-1a89-baee-6796" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5431,6 +5445,11 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="af67-0e9d-8131-35bc" name="Stormfiends" publicationId="4086-1ccd-f433-39a2" page="185" hidden="false">
+              <description>The models in a unit of Stormfiends can be armed with a variety of different weapons. If they are, your opponent must make it clear which model they want to allocate their attacks to. Any excess wounds are carried over to the rest of the unit as normal in an order chosen by your opponent.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="a7bf-7325-00f2-ea93" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="1a27-8ef1-fe8c-f09a" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
@@ -5529,7 +5548,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                     </rule>
                   </rules>
                   <costs>
-                    <cost name="pts" typeId="points" value="35.0"/>
+                    <cost name="pts" typeId="points" value="45.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a3f4-863b-d447-b5c4" name="Grinderfists" hidden="false" collective="false" import="true" type="upgrade">
@@ -5793,7 +5812,7 @@ The Warp Lightning Cannon cannot fire grapeshot.</description>
             <characteristic name="M" typeId="09ad-18df-607b-1215"/>
             <characteristic name="WS" typeId="f049-8a65-9c04-1559"/>
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+            <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
             <characteristic name="W" typeId="27ee-0675-122f-a1b1">5</characteristic>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
@@ -5804,9 +5823,9 @@ The Warp Lightning Cannon cannot fire grapeshot.</description>
         </profile>
         <profile id="6750-ac1c-d1cf-124a" name="Warp Lightning Bolt" publicationId="4086-1ccd-f433-39a2" page="202" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">12&quot;</characteristic>
+            <characteristic name="Range" typeId="59f2-3142-82d5-4f43">18&quot;</characteristic>
             <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Lightning Attacks. Magical Attacks. Multiple Shots (D3). Multiple Wounds (D3).</characteristic>
+            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Lightning Attacks. Magical Attacks. Multiple Shots (3). Multiple Wounds (D3).</characteristic>
           </characteristics>
         </profile>
         <profile id="9cb8-8185-0bde-0028" name="01" publicationId="4086-1ccd-f433-39a2" page="202" hidden="false" typeId="835e-05f0-e7d0-b4f3" typeName="Doomwheel Mishap Chart">
@@ -5898,7 +5917,7 @@ If you roll a misfire result something has gone awry. No more shots are fired th
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="160.0"/>
+        <cost name="pts" typeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="96de-1e1b-338c-c9b1" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
@@ -5962,6 +5981,7 @@ If you roll a misfire result something has gone awry. No more shots are fired th
             <entryLink id="89f1-47fd-dbed-e024" name="Talismans" hidden="false" collective="false" import="true" targetId="0098-9d97-94f7-91bc" type="selectionEntryGroup"/>
             <entryLink id="382c-7ca5-178b-ce0b" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="088a-0ef8-c21e-a74d" type="selectionEntryGroup"/>
             <entryLink id="cdd0-67c0-9dc7-eb50" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0f36-7336-7d11-28e6" type="selectionEntryGroup"/>
+            <entryLink id="2c9c-82c5-fb67-2dce" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="c027-0a07-e3cb-1039" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -6205,14 +6225,14 @@ If you roll a misfire result something has gone awry. No more shots are fired th
                     <infoLink id="20a4-0800-3b42-99ec" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="1.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="9.0"/>
+            <cost name="pts" typeId="points" value="8.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6382,7 +6402,7 @@ If you roll a misfire result something has gone awry. No more shots are fired th
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="35.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5ab8-3cad-eb47-d81e" name="Poisoned Wind Mortar" hidden="false" collective="false" import="true" type="model">
@@ -6495,7 +6515,6 @@ If you roll a misfire result something has gone awry. No more shots are fired th
           </constraints>
           <infoLinks>
             <infoLink id="5bc6-6ad9-12c2-7fc2" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
-            <infoLink id="ebbb-e95e-56cf-f60f" name="Packmaster" hidden="false" targetId="ccd1-cb1f-61e9-0f0c" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="948d-0712-138a-256c" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -6536,7 +6555,7 @@ If you roll a misfire result something has gone awry. No more shots are fired th
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6558,6 +6577,9 @@ If you roll a misfire result something has gone awry. No more shots are fired th
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6090-ff3d-9f56-f732" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="8f2b-a90b-e54c-85e3" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8d65-0b01-a567-8975" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -6684,19 +6706,20 @@ If you roll a misfire result something has gone awry. No more shots are fired th
             <selectionEntry id="d3f5-0f52-062d-e5b3" name="Pawleader" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6939-be62-f0d5-3d6f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="96ca-05ad-4b4e-2598" type="min"/>
               </constraints>
               <profiles>
                 <profile id="4f6a-5eb3-1ac1-936b" name="Pawleader" publicationId="4086-1ccd-f433-39a2" page="159" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">2</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
                     <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
                     <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
                     <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">2</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">4</characteristic>
                     <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
                   </characteristics>
                 </profile>
@@ -6705,7 +6728,7 @@ If you roll a misfire result something has gone awry. No more shots are fired th
                 <infoLink id="3d36-6942-1593-e894" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7208,7 +7231,7 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                 <entryLink id="6d7c-63b3-8636-aa42" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="185.0"/>
+                <cost name="pts" typeId="points" value="175.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="be60-a43d-5ebe-a707" name="Nurglitch" hidden="false" collective="false" import="true" type="model">
@@ -7377,6 +7400,23 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                       </characteristics>
                     </profile>
                   </profiles>
+                  <selectionEntries>
+                    <selectionEntry id="f7d6-974a-3cff-ae5b" name="6. Plague" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d99-08a5-5bea-5984" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e811-0048-59f7-8e15" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="659c-bf3a-2a85-fe50" name="Plague" hidden="false" targetId="f2a0-2e9b-a185-dacf" type="profile"/>
+                        <infoLink id="4d50-7fd5-fd6f-c4d6" name="01 (Plague)" hidden="false" targetId="effb-dae2-4ad7-6efd" type="profile"/>
+                        <infoLink id="60cb-7191-0077-e24b" name="02-04 (Plague)" hidden="false" targetId="acf0-dc19-e1aa-a408" type="profile"/>
+                        <infoLink id="ec81-77ee-cd7f-6852" name="05-06 (Plague)" hidden="false" targetId="f1f3-9374-f6f3-7c99" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="fa2e-0c4d-1102-9978" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="02a1-ff02-35b6-5526">
                       <constraints>
@@ -7397,7 +7437,7 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                 <entryLink id="c8c0-e2a9-69b7-da82" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="415.0"/>
+                <cost name="pts" typeId="points" value="425.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8734-7ae4-0219-461d" name="Deathmaster Snikch" hidden="false" collective="false" import="true" type="model">
@@ -7875,7 +7915,7 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                   <description>Queek must issue or accept a challenge if possible. When fighting in a challenge, Queek adds +1 to both his To Hit and To Wound dice rolls.</description>
                 </rule>
                 <rule id="b1d6-7abf-6dcc-f5b7" name="The Red Guard" publicationId="4086-1ccd-f433-39a2" page="209" hidden="false">
-                  <description>Queek must always be accompanied by his Red Guard, and may join no other unit. The Red Guard are a unit of Stormvermin with an additional +1 S. Queek must deploy with this unit and may not leave it. No other character may join the unit.</description>
+                  <description>Queek must always be accompanied by his Red Guard, and may join no other unit. The Red Guard are a unit of Stormvermin with an additional +1 S. Queek must deploy with this unit and may not leave it. No Grey Seers may join the unit.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -11322,7 +11362,7 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Cursed Blade of Delirium causes all enemies attempting to strike the wielder to suffer -1 To Hit. This has no effect against Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">The Cursed Blade of Delirium causes all enemy models attempting to strike the wielder in close combat to suffer -1 To Hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11461,7 +11501,7 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
           <profiles>
             <profile id="315d-f6dc-f3bb-82bf" name="Rival Hide Talisman" publicationId="e3da-3848-ff08-a482" page="45" hidden="false" typeId="065f-58ea-de5d-d3c6" typeName="Talisman">
               <characteristics>
-                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Rival Hide Talisman forces all enemies attempting to strike the wearer to re-roll successful rolls To Hit.</characteristic>
+                <characteristic name="Special Rules" typeId="08ca-4a32-203d-40c0">The Rival Hide Talisman forces all enemies attempting to strike the wearer in close combat to re-roll successful rolls To Hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11527,56 +11567,6 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb59-9622-ac60-2ce0" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="3f23-65a3-1c14-9377" name="Warpscroll" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c9a-25cf-b95d-b88e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0550-7927-80c7-33f3" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b3c6-cc98-1b8a-df0c" name="Warpscroll" publicationId="4086-1ccd-f433-39a2" page="228" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Bound spell (power lever 6).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="e64c-503d-a7a5-8068" name="Warpscroll" publicationId="4086-1ccd-f433-39a2" page="228" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts a S 3 Hit on all models in the unit. If the unit suffers any casualties from the spell, they must also take a Panic test.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8cba-adbd-799b-6d2f" name="Warpstorm Scroll" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf91-dd9f-3d51-adb0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e440-cc77-7d35-7aa2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="63f3-779b-dc32-1122" name="Warpstorm Scroll" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Bound Spell, Power Level 5. One use only.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="cab6-636f-164c-75b6" name="Warpstorm" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-              <characteristics>
-                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
-                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all units with Fly within range. The target units suffer D6 S 6 Hits with Lightning Attacks.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="6347-e6b4-b2c9-9efd" name="Eye of the Horned Rat" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e50-4b08-800b-b88a" type="max"/>
@@ -11591,22 +11581,6 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a514-e2b1-2692-629a" name="Scrying Stone" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed85-25a5-e413-19ef" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f37-ce16-2bb8-62b7" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4602-8aa6-cb7a-50e6" name="Scrying Stone" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The bearer of the Scrying Stone gains a Ward Save (2+) against their first Wounding Hit suffered. However, if this Wound is saved the model gains Stupidity for the remainder of the game in their next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -11785,7 +11759,7 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
           <profiles>
             <profile id="17a2-0862-fb97-e8a4" name="Grand Banner of Clan Superiority" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Grand Banner of Clan Superiority gains +D3 combat resolution bonus if they have more ranks than all enemy units in base contact.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Grand Banner of Clan Superiority gains +D3 combat resolution bonus if they have more ranks than each enemy unit in base contact.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11865,7 +11839,7 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
           <profiles>
             <profile id="edfa-e86a-5fb5-0280" name="Banner of the Swarm" publicationId="e3da-3848-ff08-a482" page="47" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of the Swarm gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1. This has no effect on Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The unit carrying the Banner of the Swarm gains +2 to their combat resolution bonus from outnumbering their enemies, rather than +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11926,18 +11900,93 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
         <entryLink id="479c-2c0f-6099-e4cb" name="Magic Standards" hidden="false" collective="false" import="true" targetId="2613-24d7-a26e-eb37" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="c027-0a07-e3cb-1039" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b88e-92db-8c6c-6ef7" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="7f95-4a18-6b14-b484" name="Warpscroll" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9f12-cf24-e7ba-e8e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e14f-4041-bbc5-43bf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e7ca-c3e4-69b6-17cb" name="Warpscroll" publicationId="4086-1ccd-f433-39a2" page="228" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. Bound spell (power lever 6).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="59fd-776e-4f98-840e" name="Warpscroll" publicationId="4086-1ccd-f433-39a2" page="228" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts a S 3 Hit on all models in the unit. If the unit suffers any casualties from the spell, they must also take a Panic test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ab9-9afb-0f7f-fab3" name="Scrying Stone" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7e23-c385-1356-1dcd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa00-e612-31f5-0ece" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7993-1658-81c2-6650" name="Scrying Stone" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The bearer of the Scrying Stone gains a Ward Save (2+) against their first Wounding Hit suffered. However, if this Wound is saved the model gains Stupidity for the remainder of the game in their next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b4f3-4855-e2da-f927" name="Warpstorm Scroll" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="01b4-fcb0-b8e6-ec39" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3627-c486-bff5-8082" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f8f0-faf9-4458-837c" name="Warpstorm Scroll" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Bound Spell, Power Level 5. One use only.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2dab-0451-691e-739a" name="Warpstorm" publicationId="e3da-3848-ff08-a482" page="46" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+              <characteristics>
+                <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+                <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+                <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+                <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets all units with Fly within range. The target units suffer D6 S 6 Hits with Lightning Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0278-7dfb-24e5-05af" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="45db-9bbc-8b3b-4865" name="Scurry Away!" publicationId="4086-1ccd-f433-39a2" page="144" hidden="false">
-      <description>All models in the Skaven army have Swiftstride when fleeing.</description>
+      <description>All models in the Skaven army roll 3D6 and discard the lowest result when determining their flee distance.</description>
     </rule>
     <rule id="337b-11fe-1de2-0cd0" name="Strength in Numbers" publicationId="4086-1ccd-f433-39a2" page="144" hidden="false">
-      <description>Units with this rule add what would be their Combat Resolution bonus from ranks to their LD value for any Psychology and Break tests. To calculate the LD of a unit with the Strength in Numbers rule, first determine the unit&apos;s LD as normal and then add the rank bonus of the unit to this value, up to a maximum LD of 10. 
+      <description>Units with this rule add +1 to its LD if it has Unit Strength 10 or more, +2 LD if it has Unit
+Strength 15 or more, and +3 LD if it has Unit Strength 20 or more. To calculate the LD of a unit with Strength in Numbers, first determine the unit&apos;s LD as normal and then add the LD
+bonus of the unit to this value, up to a maximum LD of 10.
 
-Note that a Skaven General confers his basic LD and then units modify it with their own rank bonus. Any bonus from the ranks of the General&apos;s unit is not passed on to units within his Inspiring Presence range.
-
-If for any reason a Skaven unit loses its rank bonus, it also loses its LD bonus. For instance, fleeing units do not have a rank bonus, so fleeing Skaven must use their basic LD.
-</description>
+Note that a Skaven General confers his basic LD and then units modify it with their own Unit Strength. Any bonus from the Unit Strength of the General&apos;s unit is not passed on to units within his Inspiring Presence range.</description>
     </rule>
     <rule id="5c1c-bc13-7613-8134" name="Verminous Valour" publicationId="4086-1ccd-f433-39a2" page="144" hidden="false">
       <description>If a Skaven player refuses a challenge, a Skaven character is placed in the back rank as normal and may not attack, but the unit may still use the model’s LD value or Hold Your Ground ability.</description>
@@ -11958,7 +12007,9 @@ If for any reason a Skaven unit loses its rank bonus, it also loses its LD bonus
       <description>An Assassin cannot be your army General (this does not apply to Master Assassins). Only Eshin units can use their LD or Inspiring Presence.</description>
     </rule>
     <rule id="b29b-75ba-9d82-c0e2" name="Beastmaster" publicationId="4086-1ccd-f433-39a2" page="177" hidden="false">
-      <description>Master Moulders and Master Mutators may join units of Giant Rats or Rat Ogres and act as their handlers following the Mixed Units rule. All friendly Clan Moulder units within 6&quot; of a Master Moulder or 12&quot; of a Master Mutator roll 3D6 for all LD tests and discard the highest dice.</description>
+      <description>Master Moulders and Master Mutators may join units of Giant Rats or Rat Ogres and act as
+their handlers following Mixed Units, or be deployed in the front rank if they wish. All friendly Clan Moulder units within 6&quot; of a Master Moulder or 12&quot; of a Master Mutator roll 3D6 for all
+LD tests and discard the highest dice.</description>
     </rule>
     <rule id="7a20-799e-3c0b-1ae6" name="Tunneler" publicationId="4086-1ccd-f433-39a2" page="123" hidden="false">
       <description>A unit that contains a model with Grinderfists, follows the rules for Ambushers. During deployment, but before Scouts are set up, place a tunnel marker anywhere on the battlefield that is not impassable terrain.
@@ -12019,7 +12070,7 @@ The Warp-grinder fights in close combat using its crew&apos;s I, but not their A
 Roll an Artillery Dice to determine number of shots fired. After the first Artillery Dice is rolled, you can now decide whether to stop or to roll an additional Artillery Dice, and repeat the process up to a maximum of 3 Artillery Dice. In case a Misfire is rolled, roll a D6 and consult the Ratling Gun Misfire chart, no further Artillery Dice may be rolled.</description>
     </rule>
     <rule id="704f-9cc5-3947-3141" name="Smoke Bombs" publicationId="4086-1ccd-f433-39a2" page="174" hidden="false">
-      <description>One use only. If a model equipped with Smoke Bombs breaks from combat he can choose to smash the bombs underfoot to slow the victors as they pursue. Before declaring to pursue, announce that the Smoke Bombs are being detonated. Any units pursuing this model roll one D6 less than normal this turn.</description>
+      <description>One per model only. If a model with Smoke Bombs breaks from combat before declaring to pursue, announce that the Smoke Bombs are being detonated. Any units pursuing this model roll one D6 less than normal this turn.</description>
     </rule>
     <rule id="60c7-e1cf-df2c-ae21" name="Skittering" publicationId="4086-1ccd-f433-39a2" page="203" hidden="false">
       <description>A model mounted on a Great Pox Rat is treated as an Infantry model for the purpose of &apos;Look Out, Sir!&apos;.</description>
@@ -12035,9 +12086,6 @@ Roll an Artillery Dice to determine number of shots fired. After the first Artil
     </rule>
     <rule id="03e2-1030-42c5-4223" name="War-Litter" publicationId="4086-1ccd-f433-39a2" page="203" hidden="false">
       <description>A War-litter should be placed on a 40x40mm base, and adds +4 to the Unit Strength of any model mounted on them.</description>
-    </rule>
-    <rule id="ccd1-cb1f-61e9-0f0c" name="Packmaster" publicationId="4086-1ccd-f433-39a2" page="176" hidden="false">
-      <description>Packmasters follow all the rules for Champions.</description>
     </rule>
     <rule id="aa3d-b64a-ba31-e27d" name="Mainstay" publicationId="4086-1ccd-f433-39a2" page="242" hidden="false">
       <description>You may not have more of any other type of Core Unit than you have units of Clanrats.</description>
@@ -12075,7 +12123,7 @@ Roll an Artillery Dice to determine number of shots fired. After the first Artil
       <characteristics>
         <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
         <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flail. At the beginning of any Close Combat phase all models in base contact (friend or foe, including the Censer Bearer itself) with one or more models bearing a plague censer must pass a T test or suffer a single wound with Ignores Armour Saves and Magical Attacks. All Clan Pestilens models gain a +1 modifier for these tests.</characteristic>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flail. At the start of each round of close combat, all enemy models in base contact with one or more models bearing a plague censer, as well the Censer Bearers themselves that are allowed to fight this round, must pass a T test or suffer a single wound with Ignores Armour Saves and Magical Attacks. All Clan Pestilens models gain a +1 bonus for these tests.</characteristic>
       </characteristics>
     </profile>
     <profile id="Plague Furnace Mishap Chart" name="01-02 (Plague Furnace Mishap)" publicationId="4086-1ccd-f433-39a2" page="167" hidden="false" typeId="6dcb-cce3-7e75-3f89" typeName="Plague Furnace Mishap Chart">
@@ -12379,7 +12427,7 @@ Sight to in all directions from the Ratling Gun.</characteristic>
     </profile>
     <profile id="72cf-6162-5936-4276" name="06 (Warp-grinder Mishap)" publicationId="4086-1ccd-f433-39a2" page="199" hidden="false" typeId="e0ec-8efd-daf3-465d" typeName="Warp-grinder Mishap Chart">
       <characteristics>
-        <characteristic name="Result" typeId="3837-490b-b7b7-a01a">Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18&quot; of the original positon on the table and this is where the Weapon Team and its parent unit emerge. They cannot move or charge on the turn they emerge.</characteristic>
+        <characteristic name="Result" typeId="3837-490b-b7b7-a01a">Should Have Taken That Left Turn: Your opponent places the marker anywhere within 18&quot; of the original position on the table and this is where the Weapon Team and its parent unit emerge. They cannot move or charge on the turn they emerge.</characteristic>
       </characteristics>
     </profile>
     <profile id="c683-d563-ffc7-37b0" name="Cloud of Corruption" publicationId="4086-1ccd-f433-39a2" page="226" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -12440,7 +12488,7 @@ Sight to in all directions from the Ratling Gun.</characteristic>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/14+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+/15+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers -1 to their T for the remainder of the game. This can be cast multiple times on the same target and the effects are cumulative.</characteristic>
       </characteristics>
@@ -12474,9 +12522,9 @@ Magic Resistance being allowed as saves. If the whole unit is removed as casualt
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">14+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">14+/18+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">4D6&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Trace a straight line from the base of the caster the number of inches rolled. All models in its path must pass an I test or be removed as casualties with no saves except Magic Resistance allowed. Instead of taking an I test, War Machines and Chariots must instead roll a 5+ or be destroyed. A building (or single section of a multi-part building) affected by the spell will collapse on a roll of 5+. If the building collapses, any models garrisoning it must pass an I test, or be removed as a casualty with no armour save allowed. Any survivors are placed outside the building, as described for a unit abandoning a building. Then replace the building with an area of dangerous terrain of equal size.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Trace a straight line from the base of the caster the number of inches rolled. All models in its path must pass an I test or be removed as casualties with no saves except Magic Resistance allowed. Instead of taking an I test, War Machines and Chariots must instead roll a 5+ or be destroyed. A building (or single section of a multi-part building) affected by the spell will collapse on a roll of 5+. If the building collapses, any models garrisoning it must pass an I test, or be removed as a casualty with no armour save allowed. Any survivors are placed outside the building, as described for a unit abandoning a building. Then replace the building with an area of dangerous terrain of equal size. Boosted version doubles the result of the 4D6&quot; range rolled.</characteristic>
       </characteristics>
     </profile>
     <profile id="3bc2-cc41-deca-a3ca" name="Death Frenzy" publicationId="4086-1ccd-f433-39a2" page="225" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -12492,7 +12540,7 @@ Magic Resistance being allowed as saves. If the whole unit is removed as casualt
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/13+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">10+/14+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single model (even a character in a unit). The target suffers D3 S 6 Hits with Lightning Attacks.</characteristic>
       </characteristics>
@@ -12611,7 +12659,7 @@ If the result on the artillery dice is a misfire, centre the template on the cas
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/8+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/9+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target model (which must be an Infantry character) may immediately be placed anywhere on battlefield within 24&quot; of the caster, but at least 1&quot; away from enemy models.</characteristic>
       </characteristics>
@@ -12622,14 +12670,14 @@ If the result on the artillery dice is a misfire, centre the template on the cas
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+/12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on an Infantry unit. The target unit ignores Dangerous and Impassable Terrain (note that it may not end its move within 1&quot; of it as normal) until the start of the caster&apos;s next Magic phase. Boosted version affects all friendly units within range.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on an Infantry unit. The target unit ignores Dangerous and Impassable Terrain (note that it may not end its move within 1&quot; of it as normal) until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Infantry units within range.</characteristic>
       </characteristics>
     </profile>
     <profile id="45e1-cd71-ee90-a30b" name="Bless with Filth" publicationId="4086-1ccd-f433-39a2" page="226" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/11+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target gets Poisoned Attacks  until the start of the caster&apos;s next Magic phase. If the unit already has Poisoned Attacks, the warriors will also cause an automatic wound on a To Hit roll of 6+.</characteristic>
       </characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="290c-8805-073e-3492" name="Estalia" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="290c-8805-073e-3492" name="Estalia" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4915-9f81-8966-f15c" name="Insane Chart">
@@ -265,7 +265,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e775-0623-36a5-3fe6" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d813-a18c-cc52-4dc3" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="d813-a18c-cc52-4dc3" name="Full Plate Armour" hidden="false" targetId="c4bc-385f-454b-0ead" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
@@ -463,6 +463,7 @@
             <entryLink id="679c-8c0e-df16-7169" name="Talismans" hidden="false" collective="false" import="true" targetId="a219-4ba4-6fe4-0715" type="selectionEntryGroup"/>
             <entryLink id="8ecf-7782-fdea-fd1e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="7867-eda0-a060-576e" type="selectionEntryGroup"/>
             <entryLink id="7517-bd8f-cf52-4906" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="1696-0399-b780-5d25" type="selectionEntryGroup"/>
+            <entryLink id="20e3-5067-19db-c0ea" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -823,7 +824,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2448-58a4-2662-376a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3550-58a4-a991-170c" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="3550-58a4-a991-170c" name="Full Plate Armour" hidden="false" targetId="c4bc-385f-454b-0ead" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="4.0"/>
@@ -1083,6 +1084,7 @@
             <entryLink id="51c3-3752-bdb4-1bfb" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="7867-eda0-a060-576e" type="selectionEntryGroup"/>
             <entryLink id="a27d-069b-528a-ec3e" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="1696-0399-b780-5d25" type="selectionEntryGroup"/>
             <entryLink id="b54a-1909-6837-9a2e" name="Talismans" hidden="false" collective="false" import="true" targetId="a219-4ba4-6fe4-0715" type="selectionEntryGroup"/>
+            <entryLink id="a305-4793-d81c-53eb" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3395,13 +3397,13 @@
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="03e5-7e2a-16c6-4e9b" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+                    <selectionEntry id="03e5-7e2a-16c6-4e9b" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8be1-d9a5-d9a9-33da" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfab-7c90-77a6-967e" type="min"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="b620-569f-57d4-7490" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                        <infoLink id="b620-569f-57d4-7490" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -3535,13 +3537,13 @@
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="8ef4-8205-6dc9-236b" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+                    <selectionEntry id="8ef4-8205-6dc9-236b" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b39a-c2a9-e275-e164" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="098e-09c1-08a4-4857" type="min"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="7f12-8ea9-c116-9129" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                        <infoLink id="7f12-8ea9-c116-9129" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -3702,7 +3704,7 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="970a-e918-cb42-290f" type="min"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="ddc3-481a-c944-650e" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                        <infoLink id="ddc3-481a-c944-650e" name="Full Plate Armour" hidden="false" targetId="c4bc-385f-454b-0ead" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -3845,7 +3847,7 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="efae-2730-cce8-be3f" type="min"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="228d-c829-83e5-094f" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                        <infoLink id="228d-c829-83e5-094f" name="Full Plate Armour" hidden="false" targetId="c4bc-385f-454b-0ead" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -4335,13 +4337,13 @@
             <infoLink id="9e23-c0b8-3743-8cc9" name="Immunity (Terror)" hidden="false" targetId="e14b-e42f-3ee3-3636" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="4f67-0d56-8682-6691" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="4f67-0d56-8682-6691" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09e9-625f-2b04-918d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55f9-6fd3-ee48-9862" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c48e-edee-56b0-f956" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                <infoLink id="c48e-edee-56b0-f956" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4454,6 +4456,9 @@ When suffering casualties from shooting or magic, the Herders follow the rules f
       </rules>
       <infoLinks>
         <infoLink id="0a00-f92c-4876-316d" name="Mixed Unit" hidden="false" targetId="e00a-3a09-9b67-e994" type="rule"/>
+        <infoLink id="c58e-9847-f330-5413" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
+        <infoLink id="65ee-c453-6363-40e3" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="73cb-a53d-4546-870b" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6df4-f261-0841-5fed" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -4560,10 +4565,6 @@ When suffering casualties from shooting or magic, the Herders follow the rules f
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="dc4d-bdf5-2576-2ba3" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
-            <infoLink id="d246-6df8-9e1a-5942" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="12.0"/>
           </costs>
@@ -6304,6 +6305,13 @@ Units of Crossbowmen or Handgunners within 3&quot; of a unit in Tercio Formation
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c4bc-385f-454b-0ead" name="Full Plate Armour" publicationId="315d-135b-135c-07ce" page="172" hidden="false" typeId="884c-d50e-eeb6-eda0" typeName="Armour">
+      <characteristics>
+        <characteristic name="Combat" typeId="168d-1cc2-66f3-e766">3+</characteristic>
+        <characteristic name="Missile" typeId="97ea-ecf7-8d24-b2ca">3+</characteristic>
+        <characteristic name="Special Rules" typeId="ff58-91e4-84d7-e6e4"/>
       </characteristics>
     </profile>
   </sharedProfiles>

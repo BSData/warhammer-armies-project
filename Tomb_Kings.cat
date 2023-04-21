@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7c10-2fc1-fb87-88ca" name="Entombed Beneath the Sands Mishap Table">
@@ -139,7 +139,7 @@
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="45.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="14d6-c6da-6702-a89d" name="Khemrian Warsphinx" hidden="false" collective="false" import="true" type="model">
@@ -179,7 +179,7 @@
                         <infoLink id="377e-acc6-aec8-a802" name="Fiery Roar" hidden="false" targetId="ed7a-36f6-5317-3efb" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="25.0"/>
+                        <cost name="pts" typeId="points" value="30.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="a3e0-756e-13e9-2801" name="Envenomed Sting" hidden="false" collective="false" import="true" type="upgrade">
@@ -371,6 +371,7 @@
             <entryLink id="f26d-9fe4-44df-aeb5" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a292-d6b8-3b62-bdd7" type="selectionEntryGroup"/>
             <entryLink id="7faa-55c9-68ea-c1d9" name="Talismans" hidden="false" collective="false" import="true" targetId="9d35-822a-cf5f-ecd5" type="selectionEntryGroup"/>
             <entryLink id="3158-ee5c-9248-e4b5" name="Arcane Items" hidden="false" collective="false" import="true" targetId="cd2d-e1a8-bc91-28ec" type="selectionEntryGroup"/>
+            <entryLink id="e460-9566-1aaa-7a1e" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="0f63-e784-b699-be17" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -819,7 +820,7 @@
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="45.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="61c7-961b-3f5c-4379" name="Skeletal Steed" hidden="false" collective="false" import="true" type="model">
@@ -893,6 +894,7 @@
             <entryLink id="3eda-85c3-478d-9d0d" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a292-d6b8-3b62-bdd7" type="selectionEntryGroup"/>
             <entryLink id="a3eb-5894-f3c4-a73d" name="Talismans" hidden="false" collective="false" import="true" targetId="9d35-822a-cf5f-ecd5" type="selectionEntryGroup"/>
             <entryLink id="2a33-37af-d4b6-cd1c" name="Arcane Items" hidden="false" collective="false" import="true" targetId="cd2d-e1a8-bc91-28ec" type="selectionEntryGroup"/>
+            <entryLink id="9338-9522-33bf-f570" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="0f63-e784-b699-be17" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1362,7 +1364,7 @@
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="50.0"/>
+                <cost name="pts" typeId="points" value="45.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1681,6 +1683,24 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="aa04-fc8e-e366-637d" name="Poisoned Attacks" hidden="true" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15da-d4b6-dcc7-cfb2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7192-a377-b3eb-1baa" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="8.0"/>
@@ -1763,7 +1783,7 @@
             <infoLink id="0639-e83f-841d-835a" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1848,7 +1868,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1972,9 +1992,27 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="312b-25c3-910e-9a15" name="Poisoned Attacks" hidden="true" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e6d1-6d8d-607d-ff63" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5d85-4f32-0a7d-f3a7" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="11.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2136,6 +2174,24 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="a2f7-ac1a-88d4-6ccc" name="Poisoned Attacks" hidden="true" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5d1-8685-341b-8570" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c10c-3b73-2de1-cae5" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="48.0"/>
@@ -2277,7 +2333,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="11.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2505,7 +2561,7 @@
             <infoLink id="a824-7177-bf07-fa72" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2568,9 +2624,27 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="9c80-10f3-ebb4-0a36" name="Poisoned Attacks" hidden="true" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e06b-3a8f-6f70-0326" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fd9d-724e-dc62-6bad" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="11.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2725,6 +2799,24 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="8a54-63d3-9245-68eb" name="Poisoned Attacks" hidden="true" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="616f-6f13-eaf5-c981" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5101-ff5d-2d17-8210" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="48.0"/>
@@ -2856,7 +2948,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2985,7 +3077,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="11.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3384,7 +3476,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="55.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3533,7 +3625,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="55.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3800,7 +3892,7 @@
                     <infoLink id="7ad3-4a50-c319-1172" name="Geheb, God of Earth and Giver of Strength" hidden="false" targetId="d9de-e4d5-effc-203d" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1ffc-a015-c8cf-6d80" name="Phakth, God of the Sky and Bringer of Justice" hidden="false" collective="true" import="true" type="upgrade">
@@ -3811,7 +3903,7 @@
                     <infoLink id="7c98-198f-675a-5b13" name="Phakth, God of the Sky and Bringer of Justice" hidden="false" targetId="9cd4-488f-ce57-669c" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f00b-7616-13db-a29a" name="Sobk, God of Water and War" hidden="false" collective="true" import="true" type="upgrade">
@@ -3822,7 +3914,7 @@
                     <infoLink id="ff4f-655d-84be-9358" name="Sobk, God of Water and War" hidden="false" targetId="df8c-a99c-2d3e-5451" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2073-6e4d-f20e-6ab8" name="Djaf, God of Death" hidden="false" collective="true" import="true" type="upgrade">
@@ -3833,7 +3925,7 @@
                     <infoLink id="847a-dd57-e21c-5e9d" name="Djaf, God of Death" hidden="false" targetId="4205-ef1d-9c23-921f" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2cee-62ce-88e3-eacf" name="Asaph, Goddess of Magic and Vengeance" hidden="false" collective="true" import="true" type="upgrade">
@@ -3844,7 +3936,7 @@
                     <infoLink id="fedc-5a5f-ebf9-a431" name="Asaph, Goddess of Magic and Vengeance" hidden="false" targetId="75f9-77ca-b1e8-ddd3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3980,7 +4072,7 @@
                     <infoLink id="fd34-61f5-c314-f7ba" name="Geheb, God of Earth and Giver of Strength" hidden="false" targetId="d9de-e4d5-effc-203d" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="59d3-840d-cfdf-a30a" name="Phakth, God of the Sky and Bringer of Justice" hidden="false" collective="true" import="true" type="upgrade">
@@ -3991,7 +4083,7 @@
                     <infoLink id="6f97-db44-ffbd-878b" name="Phakth, God of the Sky and Bringer of Justice" hidden="false" targetId="9cd4-488f-ce57-669c" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1adc-a8fb-b65a-9209" name="Sobk, God of Water and War" hidden="false" collective="true" import="true" type="upgrade">
@@ -4002,7 +4094,7 @@
                     <infoLink id="ff84-88b6-21ae-bbae" name="Sobk, God of Water and War" hidden="false" targetId="df8c-a99c-2d3e-5451" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0c14-2482-4553-ccec" name="Djaf, God of Death" hidden="false" collective="true" import="true" type="upgrade">
@@ -4013,7 +4105,7 @@
                     <infoLink id="bffb-0b04-2026-95c2" name="Djaf, God of Death" hidden="false" targetId="4205-ef1d-9c23-921f" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="62c9-549f-c5f9-999e" name="Asaph, Goddess of Magic and Vengeance" hidden="false" collective="true" import="true" type="upgrade">
@@ -4024,7 +4116,7 @@
                     <infoLink id="4905-707d-e00e-8f7a" name="Asaph, Goddess of Magic and Vengeance" hidden="false" targetId="75f9-77ca-b1e8-ddd3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4077,7 +4169,7 @@
             <infoLink id="fe24-3dc7-1eec-a59a" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="85.0"/>
+            <cost name="pts" typeId="points" value="75.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4112,7 +4204,7 @@
             <infoLink id="eb33-9a1e-4a3a-0dd7" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="85.0"/>
+            <cost name="pts" typeId="points" value="75.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4175,6 +4267,24 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dc63-189e-1615-a849" name="Poisoned Attacks" hidden="true" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fe9-a1c2-5c62-7248" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4bee-1938-8633-74b7" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4257,6 +4367,7 @@
             <infoLink id="5d34-1e4b-67e0-6151" name="Carrion" hidden="false" targetId="1e1c-9277-1682-5cbd" type="profile"/>
             <infoLink id="80e2-c238-d87f-f7bd" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="3f1e-8157-8d03-8ff6" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="f0d8-74f0-19bb-b270" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
@@ -4290,6 +4401,7 @@
             <infoLink id="48dd-277d-5073-c06f" name="Carrion" hidden="false" targetId="1e1c-9277-1682-5cbd" type="profile"/>
             <infoLink id="c5cc-1c3e-139f-ab18" name="Expendable" hidden="false" targetId="b806-942b-15af-b309" type="rule"/>
             <infoLink id="fa74-e716-86b8-f21b" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+            <infoLink id="350f-5d3f-f03a-e324" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
@@ -4337,7 +4449,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="22.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4389,7 +4501,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="22.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4924,7 +5036,7 @@
                 <infoLink id="a490-d9bf-9b88-769e" name="Fiery Roar" hidden="false" targetId="ed7a-36f6-5317-3efb" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="db83-062a-1c3c-7d0d" name="Envenomed Sting" hidden="false" collective="false" import="true" type="upgrade">
@@ -5017,7 +5129,7 @@
                 <infoLink id="4550-3499-5dba-70e8" name="Fiery Roar" hidden="false" targetId="ed7a-36f6-5317-3efb" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
+                <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2536-b508-76b8-4d79" name="Envenomed Sting" hidden="false" collective="false" import="true" type="upgrade">
@@ -5243,7 +5355,7 @@
                 <infoLink id="f787-ba99-0ce6-4b6d" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5336,7 +5448,7 @@
                 <infoLink id="2010-de6c-6ae0-7180" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5425,7 +5537,7 @@
       <infoLinks>
         <infoLink id="e214-da53-e264-b9a2" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
         <infoLink id="4790-cffb-4615-5ce2" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
-        <infoLink id="ff39-12c4-ce67-a268" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+        <infoLink id="ff39-12c4-ce67-a268" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
         <infoLink id="de12-04da-8b06-6fec" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
         <infoLink id="9d9d-32dd-25fe-5d4d" name="Fly (7)" hidden="false" targetId="36ba-3349-99bd-1979" type="rule"/>
         <infoLink id="1562-a24b-ce9d-51f0" name="Khemric Titan" hidden="false" targetId="739b-0a63-0ba8-f189" type="profile"/>
@@ -5441,6 +5553,7 @@
         <infoLink id="75d3-00b7-35e9-4fbb" name="05" hidden="false" targetId="c2dd-90cf-aa0e-efa3" type="profile"/>
         <infoLink id="8460-9d6c-22dc-01a7" name="06" hidden="false" targetId="d4cd-62e8-e370-6919" type="profile"/>
         <infoLink id="1dfb-3786-0c34-d5cb" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+        <infoLink id="d022-c532-446c-1b55" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9189-5cb6-4c90-426b" name="New CategoryLink" hidden="false" targetId="0eb4-f376-7725-b05b" primary="true"/>
@@ -5476,6 +5589,7 @@
         <infoLink id="a451-99ac-1b3f-d3d4" name="01-02" hidden="false" targetId="5ecf-db1f-b152-9c93" type="profile"/>
         <infoLink id="e5ac-b2d0-e9f0-edcf" name="06" hidden="false" targetId="d4cd-62e8-e370-6919" type="profile"/>
         <infoLink id="cab5-906a-99b5-fd2f" name="Natural Armour (5+)" hidden="false" targetId="306d-711a-1300-587f" type="rule"/>
+        <infoLink id="69f5-6923-17eb-6b32" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2402-21e6-9a67-c7b5" name="New CategoryLink" hidden="false" targetId="fc26-7737-f7cb-8977" primary="true"/>
@@ -5698,7 +5812,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                     <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
                     <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
                     <characteristic name="LD" typeId="a199-f10b-a038-5730">10</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Special Character, Tomb King)</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Special Character, Tomb King)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5873,7 +5987,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                 <entryLink id="37c5-6984-6ec1-64e3" name="Hierophant" hidden="false" collective="false" import="true" targetId="6d08-1b34-d5e3-80e2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="560.0"/>
+                <cost name="pts" typeId="points" value="545.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2301-d0ec-32fe-2ec7" name="King Phar" hidden="false" collective="false" import="true" type="model">
@@ -5978,7 +6092,7 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                     </selectionEntry>
                   </selectionEntries>
                   <costs>
-                    <cost name="pts" typeId="points" value="55.0"/>
+                    <cost name="pts" typeId="points" value="45.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="25ba-e222-dbaa-b04c" name="Armour of Eternity" hidden="false" collective="false" import="true" type="upgrade">
@@ -6149,17 +6263,18 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               </profiles>
               <rules>
                 <rule id="e431-7f9f-b565-be7f" name="Blessing of Asaph" publicationId="feeb-1927-4a99-f849" page="110" hidden="false">
-                  <description>Any unit of Skeleton Archers joined by High Queen Khalida uses her unmodified BS in place of its own. In addition, all shooting attacks made by this unit have Poisoned Attacks.</description>
+                  <description>If Khalida is included in your army, any unit of Skeleton Archers, Horse Archers or Chariots may be upgraded to gain Poisoned Attacks for all shooting attacks for +2 points per model.</description>
                 </rule>
               </rules>
               <infoLinks>
-                <infoLink id="7b88-98b9-88ff-b318" name="The Curse" hidden="false" targetId="a176-c1ce-aa13-2aa9" type="rule"/>
+                <infoLink id="7b88-98b9-88ff-b318" name="My Will Be Done" hidden="false" targetId="4c10-220e-8d87-e844" type="rule"/>
                 <infoLink id="f23f-bc11-aa8b-bf21" name="Undead" hidden="false" targetId="3c14-eb0b-929e-502a" type="rule"/>
                 <infoLink id="ffd9-4c32-8f6f-bd70" name="Always Strikes First" hidden="false" targetId="00b2-9504-41a2-f664" type="rule"/>
                 <infoLink id="ab3f-e33f-3c04-eb25" name="Regeneration (4+)" hidden="false" targetId="c21b-d368-6f1c-bae3" type="rule"/>
                 <infoLink id="58e8-f9d7-0f8e-dd8c" name="Flammable" hidden="false" targetId="ec58-b231-6a2f-a163" type="rule"/>
                 <infoLink id="afed-2948-14f3-d7d1" name="Hatred (Vampire Counts)" hidden="false" targetId="52f5-10f0-a975-cf04" type="rule"/>
                 <infoLink id="c3a0-7ccb-1f27-eb3a" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+                <infoLink id="e7e6-eacc-fed8-2237" name="The Curse" hidden="false" targetId="a176-c1ce-aa13-2aa9" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="2634-6f60-4221-69dc" name="Venom Staff" hidden="false" collective="false" import="true" type="upgrade">
@@ -6204,7 +6319,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <entryLink id="aa48-0fd6-e6bb-a9df" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="315.0"/>
+                <cost name="pts" typeId="points" value="285.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="20c5-a8b9-359c-d761" name="Arkhan the Black" hidden="false" collective="false" import="true" type="model">
@@ -6241,7 +6356,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                   <profiles>
                     <profile id="e21b-6cb2-289e-73e4" name="Liber Mortis" publicationId="feeb-1927-4a99-f849" page="113" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
                       <characteristics>
-                        <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Whilst Arkhan the Black has the Liber Mortis his Wizard Level is increased to 5. If the Liber Mortis is ever destroyed, Arkhan the Black immediately loses a Wizard Level, and therefore must lose a randomly determined spell.</characteristic>
+                        <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">Whilst Arkhan the Black has the Liber Mortis he gains +1 to cast, +1 to dispel and one additional spell. If the Liber Mortis is ever destroyed, Arkhan the Blac kimmediately loses a randomly determined spell.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6249,7 +6364,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ac7d-d9b0-ac4d-0641" name="Wizard Level 5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ac7d-d9b0-ac4d-0641" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4aa0-59bf-91dc-1422" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3c6-c788-b941-0bf6" type="min"/>
@@ -6257,11 +6372,11 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                   <profiles>
                     <profile id="0071-8d28-d4bd-5896" name="Arkhan the Black" publicationId="feeb-1927-4a99-f849" page="113" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                       <characteristics>
-                        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">5</characteristic>
-                        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">5</characteristic>
+                        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
+                        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
                         <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-6</characteristic>
-                        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">7</characteristic>
-                        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">3</characteristic>
+                        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">6</characteristic>
+                        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">2</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6392,7 +6507,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     </selectionEntry>
                   </selectionEntries>
                   <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
+                    <cost name="pts" typeId="points" value="45.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -6401,7 +6516,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <entryLink id="b85c-6474-4db4-f991" name="Hierophant" hidden="false" collective="false" import="true" targetId="6d08-1b34-d5e3-80e2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="360.0"/>
+                <cost name="pts" typeId="points" value="330.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="622c-6eb4-a641-f498" name="Grand Heirophant Khatep" hidden="false" collective="false" import="true" type="model">
@@ -6426,7 +6541,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               </profiles>
               <rules>
                 <rule id="fff3-3687-cd18-05e6" name="Grand Hierophant of Khemri" publicationId="feeb-1927-4a99-f849" page="111" hidden="false">
-                  <description>If you take Grand Hierophant Khatep, he must be your army&apos;s Hierophant. He gives his unit Regeneration (5+). Additionally, Khatep restores 2D6 Wounds with the The Restless Dead Lore Attribute.</description>
+                  <description>If you take Grand Hierophant Khatep, he must be your army&apos;s Hierophant. He gives his unit Regeneration (5+) rather than Regeneration (6+). Additionally, Khatep restores 2D6 Wounds with the The Restless Dead Lore Attribute.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -6640,7 +6755,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="440.0"/>
+                <cost name="pts" typeId="points" value="425.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6816,7 +6931,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                         </selectionEntry>
                       </selectionEntries>
                       <costs>
-                        <cost name="pts" typeId="points" value="50.0"/>
+                        <cost name="pts" typeId="points" value="45.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -7040,7 +7155,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     </selectionEntry>
                   </selectionEntries>
                   <costs>
-                    <cost name="pts" typeId="points" value="55.0"/>
+                    <cost name="pts" typeId="points" value="45.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1ecf-a11a-7fd8-feea" name="Golden Ankhra" hidden="false" collective="false" import="true" type="upgrade">
@@ -7105,13 +7220,13 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8e69-479e-34ba-5b8b" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8e69-479e-34ba-5b8b" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a23-739d-349d-fbcd" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1a3-bf39-0f25-e48a" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="3f5b-5a3d-4fe9-b384" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                    <infoLink id="3f5b-5a3d-4fe9-b384" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -7122,7 +7237,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
                 <entryLink id="91ed-76fb-7443-215b" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="220.0"/>
+                <cost name="pts" typeId="points" value="210.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7652,22 +7767,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ed5-6601-2e4c-f17f" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="b19b-2c69-15ae-ac5e" name="Neferra&apos;s Scrolls of Mighty Incantations" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90c7-66dc-b7b4-83dd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d83-1241-0f15-3583" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b626-0c7c-4f79-5c71" name="Neferra&apos;s Scrolls of Mighty Incantations" publicationId="feeb-1927-4a99-f849" page="124" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. A Wizard can declare that he is using Neferra&apos;s Scrolls of Mighty Incantations immediately before casting a spell. If he does so, the Wizard must add a number of extra bonus dice, equal to his Wizard level, to the power dice he is going to roll (you still need to roll at least one dice from the power pool). The bonus dice do not count as power dice. However, a roll of any double when casting a spell using them counts as rolling a 6 for the purpose of Ultimate Power.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="82a4-0fba-175e-a00b" name="Enkhil&apos;s Kanopi" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d993-6f90-8009-badd" type="max"/>
@@ -7727,22 +7826,6 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
             <profile id="f4fe-4760-eede-e017" name="Staff of Mastery" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
               <characteristics>
                 <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of Mastery gives the bearer a +1 bonus to the result of their spell casting attempts when using the Lore of Light.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="933e-3bdf-50b9-da27" name="Hieratic Jar" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c6d-4542-f7ba-4145" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="948b-b753-498e-c32c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5470-e214-367a-5963" name="Hieratic Jar" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Hieratic Jar may be used at the start of any of your Magic phases. The bearer immediately gains +D3 Power dice. Only they may use these extra Power dice.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7816,7 +7899,7 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
           <profiles>
             <profile id="77d0-a817-20c7-1c75" name="Crown of Kings" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Tomb King only. The Crown of Kings makes the Tomb King&apos;s &quot;My Will Be Done!&quot; affect all friendly units within 6&quot;.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Tomb King only. The Crown of Kings makes the Tomb King&apos;s &quot;My Will Be Done!&quot; affect all friendly units within 6&quot; rather than just the unit they are with (including allowing them to March).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7929,7 +8012,7 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
                 <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
                 <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
                 <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can only be cast on the bearer&apos;s unit. If successfully cast, the bearer&apos;s unit immediately recovers D6+2 Wounds&apos; worth of models, as described in Resurrecting Fallen Warriors.</characteristic>
+                <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can only be cast on the bearer&apos;s unit. If successfully cast, the bearer&apos;s unit immediately recovers D6+2 Wounds&apos; worth of models, as described in the Restless Dead and Resurrecting Fallen Warriors.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7961,7 +8044,7 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
           <profiles>
             <profile id="9079-ca5f-2750-7aeb" name="Icon of Rakaph" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Tomb Guard or Tomb Herald only. The unit carrying the Icon of Rakaph may make a Swift Reform at the start of their Movement phase. The unit may then move as normal (including declaring charges).</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">Tomb Guard or Tomb Herald only on foot only. The unit carrying the Icon of Rakaph may make a Swift Reform at the start of their Movement phase. The unit may then move as normal (including declaring charges).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7993,7 +8076,7 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
           <profiles>
             <profile id="2ce7-ee8f-cf87-ed52" name="Mirage Standard" publicationId="e3da-3848-ff08-a482" page="49" hidden="false" typeId="fc80-e52f-edf4-4e7e" typeName="Magic Standard">
               <characteristics>
-                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The Mirage Standard forces all Hits from missile attacks targeting the unit carrying it to be re-rolled. This has no effect against Animated Constructs.</characteristic>
+                <characteristic name="Special Rules" typeId="97aa-092b-c6fe-4f5a">The Mirage Standard forces all Hits from missile attacks targeting the unit carrying it to be re-rolled.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8037,7 +8120,7 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
               <characteristics>
                 <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                 <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Tomb King on foot only. Great weapon. Attacks made with the Destroyer of Eternities have Heroic Killing Blow. The wielder can choose to exchange all of his Attacks to make a special &apos;Sweeping Attack&apos;, if he does so, all enemy models in base contact with the wielder suffer a single automatic hit (with Heroic Killing Blow). If a target is a character riding a chariot or monster, then both the rider and mount each take a single automatic hit. In a challenge, only the models engaged in the challenge count as being in base contact with the Tomb King.</characteristic>
+                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Tomb King on foot only. Great weapon. Attacks made with the Destroyer of Eternities have Heroic Killing Blow. The wielder can choose to exchange all of his Attacks to make a special &apos;Sweeping Attack&apos;, if he does so, all enemy models in base contact with the wielder suffer a single automatic hit (with Heroic Killing Blow). In a challenge, only the models engaged in the challenge count as being in base contact with the Tomb King.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8162,10 +8245,52 @@ In addition, every unit that is Entombed Beneath the Sands and attempts to emerg
         <entryLink id="d3ad-8016-b96e-75d9" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="0f63-e784-b699-be17" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b6b-aaec-f1d4-5f46" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b11b-5b41-c55d-89b7" name="Neferra&apos;s Scrolls of Mighty Incantations" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e54-67f1-ad88-590a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4603-9add-9886-3406" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4119-943f-06c3-2fa6" name="Neferra&apos;s Scrolls of Mighty Incantations" publicationId="feeb-1927-4a99-f849" page="124" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. A Wizard can declare that he is using Neferra&apos;s Scrolls of Mighty Incantations immediately before casting a spell. If he does so, the Wizard must add a number of extra bonus dice, equal to his Wizard level, to the power dice he is going to roll (you still need to roll at least one dice from the power pool). The bonus dice do not count as power dice. However, a roll of any double (except 1&apos;s) when initially casting a spell using them counts as rolling a 6 for the purpose of Ultimate Power.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7d5b-2ceb-6ec0-8389" name="Hieratic Jar" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6067-a41b-d936-0296" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4be2-fa65-c85d-52da" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c5d8-6df5-20ff-23e6" name="Hieratic Jar" publicationId="e3da-3848-ff08-a482" page="48" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">One use only. The Hieratic Jar may be used at the start of any of your Magic phases. The bearer immediately gains +D3 Power dice. Only they may use these extra Power dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e4a3-29f8-8231-5bc1" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="3c14-eb0b-929e-502a" name="Undead" publicationId="feeb-1927-4a99-f849" page="68" hidden="false">
-      <description>All units with Undead have Animated Construct, Fear, and Unstable. However, they may make march moves if they are joined by a character with My Will Be Done or Sworn Bodyguard.</description>
+      <description>All units with Undead have Animated Construct, Fear, and Unstable. However, they may make march moves if they are, or are joined by, a character with the My Will Be Done or Sworn Bodyguard.</description>
     </rule>
     <rule id="88ab-0ed4-9261-e417" name="The Hierophant" publicationId="feeb-1927-4a99-f849" page="68" hidden="false">
       <description>Your army must include at least one Nehekharan Undead Wizard to be the army&apos;s Hierophant. If your army includes several Wizards, this will be the one with the highest Wizard Level. If two or more models have the highest Wizard Level, choose which of them will be the Hierophant. The Hierophant must use the Lore of Nehekhara.
@@ -8272,7 +8397,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <description>An Icon of Ptra contains the spell Shem&apos;s Burning Gaze.</description>
     </rule>
     <rule id="75f9-77ca-b1e8-ddd3" name="Asaph, Goddess of Magic and Vengeance" publicationId="feeb-1927-4a99-f849" page="96" hidden="false">
-      <description>For each successful Wound inflicted upon the Ushabti unit in close combat, they get to immediately make an additional Attack back.</description>
+      <description>The unit gains Magic Resistance (2).</description>
     </rule>
     <rule id="4205-ef1d-9c23-921f" name="Djaf, God of Death" publicationId="feeb-1927-4a99-f849" page="96" hidden="false">
       <description>The unit gains Killing Blow.</description>
@@ -8284,7 +8409,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <description>The unit gains +1 M.</description>
     </rule>
     <rule id="df8c-a99c-2d3e-5451" name="Sobk, God of Water and War" publicationId="feeb-1927-4a99-f849" page="96" hidden="false">
-      <description>The unit may re-roll To Hit rolls of 1 in close combat.</description>
+      <description>The unit may re-roll To Hit rolls of 1 with shooting and close combat attacks.</description>
     </rule>
     <rule id="ed7a-36f6-5317-3efb" name="Fiery Roar" publicationId="feeb-1927-4a99-f849" page="99" hidden="false">
       <description>A Khemrian Warsphinx with this upgrade has a S 4 Breath Weapon with Flaming Attacks.</description>
@@ -8666,7 +8791,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -8680,7 +8805,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="M" typeId="09ad-18df-607b-1215">5</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">2</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
@@ -8816,7 +8941,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
-        <characteristic name="S" typeId="edd2-7979-54a4-6b35">5</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">8</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
@@ -8862,7 +8987,7 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
         <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">1</characteristic>
-        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">5</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster</characteristic>
       </characteristics>
@@ -8996,9 +9121,9 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/18+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the target unit gain +1 A (including mounts) and Multiple Shots (2) (excluding war machines) until the start of the caster&apos;s next Magic phase, a. If they already have Multiple Shots, they may instead fire an additional shot. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the target unit gain +1 A (including mounts) and Multiple Shots (2) (excluding war machines) until the start of the caster&apos;s next Magic phase, a. If they already have Multiple Shots, they may instead fire an additional shot.</characteristic>
       </characteristics>
     </profile>
     <profile id="319d-65f5-343b-1888" name="The Restless Dead" publicationId="feeb-1927-4a99-f849" page="122" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -9007,16 +9132,16 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Each time a Wizard successfully casts an augment spell from the Lore of Nehekhara at a friendly, Undead unit, the target(s) of the spell immediately recovers D6+1 Wounds&apos; worth of models, as described in Resurrecting Fallen Warriors. MI, MC, MB and Monsters can only ever recover a single lost Wound in this way per spell.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Each time a Wizard successfully casts an augment spell from the Lore of Nehekhara at a friendly, Undead unit, the target(s) of the spell immediately recovers D6+1 Wounds&apos; worth of models, as described in Resurrecting Fallen Warriors. Ch, MI, MC, MB can only recover D3 Wounds, and Mo can only recover a single lost Wound in this way per spell.</characteristic>
       </characteristics>
     </profile>
     <profile id="67ad-002f-2d28-0628" name="Neru&apos;s Incantation of Protection" publicationId="feeb-1927-4a99-f849" page="122" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/18+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit gains a Ward save (5+) until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit gains a Ward save (5+) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="d32f-73d1-a3ae-9801" name="Khsar&apos;s Incantation of the Desert Wind" publicationId="feeb-1927-4a99-f849" page="122" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -9032,9 +9157,9 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/14+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit&apos;s close combat Attacks gain Killing Blow until the start of your next Magic phase. If the target unit&apos;s Attacks already have Killing Blow or Heroic Killing Blow, these will take effect on any To Wound rolls of a 5 or 6 whilst this spell is in play. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/10+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit&apos;s close combat Attacks gain Killing Blow until the start of your next Magic phase. If the target unit&apos;s Attacks already have Killing Blow or Heroic Killing Blow, these will take effect on any To Wound rolls of a 5 or 6 whilst this spell is in play.</characteristic>
       </characteristics>
     </profile>
     <profile id="297d-fd21-2d33-aa55" name="Casket Guard" publicationId="feeb-1927-4a99-f849" page="81" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -9068,12 +9193,12 @@ If all characters with My Will Be Done in the unit are killed, the unit immediat
     <profile id="06e6-535e-9223-5789" name="Light of Death" publicationId="feeb-1927-4a99-f849" page="86" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Innate Bound Spell</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">48&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target of Light of Death must take a LD test on 3D6, adding the results together. If the test is passed, nothing happens. Otherwise, for each point the unit failed the test by, it suffers an automatic Wound which Ignores Armour saves, distributed as for shooting attacks.
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The Casket of Souls can use this spell as long as the Keeper of the Casket model is alive, and the Casket of Souls has not moved this turn. The target unit must take a LD test on 3D6, adding the results together. If the test is passed, nothing happens. Otherwise, for each point the unit failed the test by, it suffers an automatic Wound which Ignores Armour saves, distributed as for shooting attacks.
 
-Once the LD test has been resolved, roll a D6: on a 3 or more, choose another unengaged enemy unit within 6&quot; of the initial target, the unit must also suffer the effects of the Light of Death spell. Keep rolling for further victims (each within 6&quot; of the last target struck), until the roll is failed or there are no more viable targets. A unit can only be the target of Light of Death once per Magic phase.</characteristic>
+Once the LD test has been resolved, roll a D6: on a 3 or more, choose another unengaged enemy unit within Line of Sight and 6&quot; of the initial target, which must also suffer the effects of the Light of Death spell. Keep rolling for further victims (each within Line of Sight and 6&quot; of the last target struck), until the roll is failed or there are no more viable targets. A unit can only be the target of Light of Death once per Magic phase.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

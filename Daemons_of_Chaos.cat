@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="efb3-d0de-5567-f01a" name="Daemonic Gift">
@@ -87,7 +87,7 @@
       </profiles>
       <rules>
         <rule id="75e9-e7d3-4195-bd9e" name="Reign of Chaos" publicationId="ee54-3543-b9db-fe40" page="113" hidden="false">
-          <description>Whenever you roll for the Winds of Magic, total the two scores (in games where you roll 4D6, 6D6 etc, divide the result by 2, 3 etc, rounding up) and immediately resolve the result shown on the table.</description>
+          <description>Whenever you roll for the Winds of Magic, total the two scores (in games over 4000 points, first roll 2D6 and use that to determine the result before rolling the other dice) and immediately resolve the result shown on the table.</description>
         </rule>
       </rules>
       <costs>
@@ -648,6 +648,7 @@
             <entryLink id="d415-9398-be22-4bfc" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="7cc0-fc03-1319-553f" name="Gifts of Slaanesh" hidden="false" collective="false" import="true" targetId="a6c0-ee41-9842-7cc5" type="selectionEntryGroup"/>
             <entryLink id="04f3-9da7-d6f3-457d" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
+            <entryLink id="637d-764b-e933-92d4" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2311,7 +2312,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
+                    <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="20ab-63b9-c0ac-e769" name="Daemonic Gifts &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
@@ -2482,6 +2483,12 @@
                           </characteristics>
                         </profile>
                       </profiles>
+                      <rules>
+                        <rule id="ae61-dc4e-a4a8-1d7c" name="Totem of Endless Pleasure" publicationId="ee54-3543-b9db-fe40" page="186" hidden="false">
+                          <description>Any Daemon of Slaanesh whose unit is within 6&quot; of a Herald on an Exalted Chariot of Slaanesh benefits from the Herald&apos;s locus, exactly as if it were in the same unit.
+</description>
+                        </rule>
+                      </rules>
                       <infoLinks>
                         <infoLink id="3926-68fb-2c0a-a6bb" name="Daemon of Slaanesh" hidden="false" targetId="4f49-9bdd-696d-bc2d" type="rule"/>
                         <infoLink id="89d9-5f9b-7f9b-cbb3" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
@@ -2615,7 +2622,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
+                    <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2744,9 +2751,10 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9df8-496f-8756-65bf" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="cbe7-d1f3-b38a-2be6" name="Daemon of Nurgle" hidden="false" targetId="daf5-f973-a7d7-101e" type="rule"/>
+                        <infoLink id="cbe7-d1f3-b38a-2be6" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                         <infoLink id="1958-f1da-a649-0928" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
                         <infoLink id="55a6-8ccd-6652-f4cd" name="Palanquin of Nurgle" hidden="false" targetId="ff39-41b1-a41c-3467" type="profile"/>
+                        <infoLink id="d796-ab6f-cef4-a6fe" name="Daemon of Nurgle" hidden="false" targetId="daf5-f973-a7d7-101e" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="25.0"/>
@@ -2878,9 +2886,10 @@
                             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6103-229e-11e7-ca71" type="min"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="7a17-f532-7b9a-37fc" name="Daemon of Khorne" hidden="false" targetId="964e-697b-ab75-a66b" type="rule"/>
+                            <infoLink id="7a17-f532-7b9a-37fc" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
                             <infoLink id="e0bd-41d0-d10b-3256" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
                             <infoLink id="db04-cb3f-d9da-e037" name="Bloodletter" hidden="false" targetId="666d-7d94-5100-d027" type="profile"/>
+                            <infoLink id="73f5-f6fd-61b5-d5c6" name="Daemon of Khorne" hidden="false" targetId="964e-697b-ab75-a66b" type="rule"/>
                           </infoLinks>
                           <selectionEntries>
                             <selectionEntry id="9197-493b-3558-0fbd" name="Hellblade" hidden="false" collective="true" import="true" type="upgrade">
@@ -3085,6 +3094,18 @@
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="70.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3728-fe96-8df0-941c" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c9b-ee74-b9e2-93b1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cb7-dc96-4965-773e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7fce-a1c5-961c-0bb9" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3899,6 +3920,7 @@
             <infoLink id="9cae-7624-522d-9210" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
             <infoLink id="a2f6-e71d-0017-a6d1" name="Slashing Attack" hidden="false" targetId="bb7d-1d02-73e2-158a" type="rule"/>
             <infoLink id="91d3-ec82-60a4-b6bc" name="Screamer" hidden="false" targetId="4b04-c96b-4a28-e4e4" type="profile"/>
+            <infoLink id="739c-c095-5ef4-351b" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="32.0"/>
@@ -4516,7 +4538,7 @@
             <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 3+)</characteristic>
+            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
           </characteristics>
         </profile>
         <profile id="082e-f0aa-523c-4559" name="Skull Cannon" publicationId="ee54-3543-b9db-fe40" page="129" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
@@ -4547,8 +4569,9 @@
           </constraints>
           <infoLinks>
             <infoLink id="612a-d2c2-e9b8-d759" name="Daemon of Khorne" hidden="false" targetId="964e-697b-ab75-a66b" type="rule"/>
-            <infoLink id="99e3-c8ee-03f9-35aa" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+            <infoLink id="99e3-c8ee-03f9-35aa" name="Natural Armour (6+)" hidden="false" targetId="fa69-07b8-fdc1-3ac9" type="rule"/>
             <infoLink id="f696-d19e-fa25-c128" name="Bloodletter" hidden="false" targetId="666d-7d94-5100-d027" type="profile"/>
+            <infoLink id="91e0-214b-60b8-e665" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="f0f0-0d56-02f7-635f" name="Hellblade" hidden="false" collective="true" import="true" type="upgrade">
@@ -4992,7 +5015,7 @@
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5255,7 +5278,7 @@
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2b6a-c606-c2b0-9db3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e2fa-e8f3-0d05-d2b5" name="Synessa" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="e2fa-e8f3-0d05-d2b5" name="Synessa" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -5271,9 +5294,8 @@
                 </profile>
               </profiles>
               <rules>
-                <rule id="89fc-983f-6d26-a6fa" name="The Voice of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false">
-                  <description>All friendly models within Line of Sight of Synessa may use their LD. In addition, any spells that
-Synessa casts can be targeted at all enemies within Line of Sight, regardless of range.</description>
+                <rule id="89fc-983f-6d26-a6fa" name="The Voice of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false">
+                  <description>All friendly models within Line of Sight of Synessa may use their LD. In addition, any spells that Synessa casts can be targeted at all enemies within Line of Sight, regardless of range.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -5293,12 +5315,12 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fea0-fb44-cdf4-01ee" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="9b74-54b9-5276-1421" name="Staff of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+                    <profile id="9b74-54b9-5276-1421" name="Staff of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
                       <characteristics>
                         <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Staff of Slaanesh contains a Bound Spell, Power Level 4. This is a direct damage spell with a range of 18&quot;. The target unit takes 2D6 Wounds, with Armour Saves allowed.</characteristic>
                       </characteristics>
                     </profile>
-                    <profile id="f157-56f6-12c8-9d0f" name="Staff of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+                    <profile id="f157-56f6-12c8-9d0f" name="Staff of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
                       <characteristics>
                         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
                         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -5318,7 +5340,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84bb-2264-c1cb-9dee" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="9ad8-4598-1d7c-3c3d" name="Synessa" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                    <profile id="9ad8-4598-1d7c-3c3d" name="Synessa" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                       <characteristics>
                         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
@@ -5477,7 +5499,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                   <description>At the start of each of your Shooting phases, all enemy units within 6&quot; of Rotigus suffer D3 S 4 Hits.</description>
                 </rule>
                 <rule id="4095-cd69-19b8-7404" name="Blubber and Bile" publicationId="acbb-53f3-d3f4-1f4e" page="3" hidden="false">
-                  <description>For each Wound Rotigus successfully Regenerates in close combat, he inflicts a S 4 on the model which caused the Wound.</description>
+                  <description>For each Wound Rotigus successfully Regenerates in close combat, he inflicts a S 4 Hit on the model which caused the Wound.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -5902,7 +5924,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="06de-e20f-6cda-c368" type="max"/>
               </constraints>
               <profiles>
-                <profile id="cd3b-bde6-8484-4f64" name="Dexcessa" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="cd3b-bde6-8484-4f64" name="Dexcessa" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">9</characteristic>
@@ -5918,10 +5940,10 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 </profile>
               </profiles>
               <rules>
-                <rule id="43ee-9a50-3276-f50b" name="Joyous Battle Fury" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+                <rule id="43ee-9a50-3276-f50b" name="Joyous Battle Fury" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false">
                   <description>Dexcessa receives +1 A for each round of close combat after the first, for as a long as they remain in close combat (to a maximum of 10 A total).</description>
                 </rule>
-                <rule id="e3a5-984a-25ed-1c51" name="Fleeting Dance of Death" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+                <rule id="e3a5-984a-25ed-1c51" name="Fleeting Dance of Death" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false">
                   <description>At the end of each round of close combat, Dexcessa can choose to disengage from the combat (before any Break tests are taken). If they do so, they may make a Random Move of 3D6&quot;, discarding the highest result. Dexcessa will stop within 1&quot; of any units or impassable terrain, and may turn to face any direction of her choosing at the end of the move.</description>
                 </rule>
               </rules>
@@ -5941,7 +5963,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b45f-b6cd-cd1d-3e71" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="f986-c989-c304-c59b" name="Sceptre of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
+                    <profile id="f986-c989-c304-c59b" name="Sceptre of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
                       <characteristics>
                         <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">All friendly Daemons of Slaanesh units within 12&quot; of Dexcessa may re-roll Daemonic Instability tests.</characteristic>
                       </characteristics>
@@ -5964,7 +5986,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5f98-a296-b4b5-b28e" type="max"/>
               </constraints>
               <profiles>
-                <profile id="24f7-b90e-3232-6d22" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="24f7-b90e-3232-6d22" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="9" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
@@ -5980,10 +6002,10 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 </profile>
               </profiles>
               <rules>
-                <rule id="7730-10d3-4f3b-d01d" name="Daemonic Aura" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false">
+                <rule id="7730-10d3-4f3b-d01d" name="Daemonic Aura" publicationId="acbb-53f3-d3f4-1f4e" page="9" hidden="false">
                   <description>Amon &apos;Chakai&apos;s Ward Save is increased to a 3+ against non-Magical Attacks.</description>
                 </rule>
-                <rule id="2eef-d95f-8c92-6d6f" name="The Hand of Destiny" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false">
+                <rule id="2eef-d95f-8c92-6d6f" name="The Hand of Destiny" publicationId="acbb-53f3-d3f4-1f4e" page="9" hidden="false">
                   <description>One enemy model, chosen by the Daemon player, is doomed to perish by Amon &apos;Chakai. All close combat and shooting attacks against this model will automatically hit. This lasts until the end of the battle, even if Amon &apos;Chakai is killed.</description>
                 </rule>
               </rules>
@@ -6003,7 +6025,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e1c-7cce-779f-93b0" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="ff47-12ef-8638-0a39" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="8" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                    <profile id="ff47-12ef-8638-0a39" name="Amon &apos;Chakai" publicationId="acbb-53f3-d3f4-1f4e" page="9" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                       <characteristics>
                         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">4</characteristic>
                         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">4</characteristic>
@@ -6085,7 +6107,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c639-38ac-e67f-02ba" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5198-2422-1bc2-6e0a" name="Azazel" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                <profile id="5198-2422-1bc2-6e0a" name="Azazel" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
                   <characteristics>
                     <characteristic name="M" typeId="09ad-18df-607b-1215">8</characteristic>
                     <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
@@ -6101,10 +6123,10 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 </profile>
               </profiles>
               <rules>
-                <rule id="6ac1-98c7-11e6-a842" name="Aura of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false">
+                <rule id="6ac1-98c7-11e6-a842" name="Aura of Slaanesh" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
                   <description>Any enemy unit in base contact with Azazel suffers a -1 penalty to its LD value.</description>
                 </rule>
-                <rule id="6e9f-b966-46dc-8563" name="Dark Halo" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false">
+                <rule id="6e9f-b966-46dc-8563" name="Dark Halo" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
                   <description>Azazel has a Ward Save (4+).</description>
                 </rule>
               </rules>
@@ -6122,7 +6144,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3cd3-a9f4-f4b1-b002" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="3f87-c9d8-759a-6ba1" name="Daemonblade" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                    <profile id="3f87-c9d8-759a-6ba1" name="Daemonblade" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
                         <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -6164,7 +6186,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9201-e8de-3ac4-f26d" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="2254-d134-0d1d-add3" name="Azazel" publicationId="acbb-53f3-d3f4-1f4e" page="5" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                    <profile id="2254-d134-0d1d-add3" name="Azazel" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
                       <characteristics>
                         <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
                         <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
@@ -6496,6 +6518,7 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                     <infoLink id="653b-208d-e4c3-f2df" name="Daemon of Nurgle" hidden="false" targetId="daf5-f973-a7d7-101e" type="rule"/>
                     <infoLink id="4f08-4471-fe5f-d98f" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
                     <infoLink id="3d80-5205-f7c3-d1be" name="Palanquin of Nurgle" hidden="false" targetId="ff39-41b1-a41c-3467" type="profile"/>
+                    <infoLink id="44f6-7fba-1053-ae9c" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -6507,6 +6530,104 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="510.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8b3a-bcc8-b777-7c46" name="N&apos;Kari" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ee87-ec36-d8b1-9e63" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6fc0-cc42-c3ba-9afe" name="N&apos;Kari" publicationId="acbb-53f3-d3f4-1f4e" page="4" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">10</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">8</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">6</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">6</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">6</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">9</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">6</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monster (Special Character)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="cd89-9c5e-25b9-b103" name="Willing Prey" publicationId="acbb-53f3-d3f4-1f4e" page="4" hidden="false">
+                  <description>Enemy units in base contact with N&apos;Kari are at +1 to be Hit in close combat.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="5a52-95a6-de77-15c4" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
+                <infoLink id="a3f3-dc5d-27eb-c52d" name="Sensual barrage" hidden="false" targetId="eef4-b046-1853-ecce" type="rule"/>
+                <infoLink id="51bb-b21a-6c23-47cf" name="Terror" hidden="false" targetId="df59-4284-cca7-e4ca" type="rule"/>
+                <infoLink id="7a5a-398e-a141-5709" name="Stomp" hidden="false" targetId="668c-19e8-b764-8549" type="rule"/>
+                <infoLink id="97fa-242c-a367-7442" name="Daemon of Slaanesh" hidden="false" targetId="4f49-9bdd-696d-bc2d" type="rule"/>
+                <infoLink id="84ed-cb68-a4f1-237f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="c3a8-dcc2-13a0-22d5" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf78-6afc-62d9-f9df" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63ec-ea5b-46bc-e3d8" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="0886-49ec-8543-f501" name="N&apos;Kari" publicationId="acbb-53f3-d3f4-1f4e" page="4" hidden="false" typeId="0ce6-a5f9-6184-218d" typeName="Wizard">
+                      <characteristics>
+                        <characteristic name="Wizard Level" typeId="7f8d-5707-7251-c1a5">2</characteristic>
+                        <characteristic name="Known Spells" typeId="b859-9e7c-9452-f90e">2</characteristic>
+                        <characteristic name="Spell Level" typeId="c5a7-d8e1-9c88-2f0e">1-4</characteristic>
+                        <characteristic name="Max. Power Dice Per Spell" typeId="d5d5-4c2e-491e-474a">4</characteristic>
+                        <characteristic name="Bonus to Casting/Dispel Value" typeId="7261-e23f-ab6d-b4af">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="ad2a-9367-8445-938e" name="Lore of Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac5a-6167-9dbd-1697">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc92-d4e4-3406-1c87" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3ec-663b-3376-d605" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="ac5a-6167-9dbd-1697" name="Lore of Slaanesh DoC 4" hidden="false" collective="false" import="true" targetId="1648-deaa-2a7d-a8ec" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a2fc-7d28-388b-2b37" name="Allure of Slaanesh" page="" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8092-4b34-fc8b-5831" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bb3-5163-3bc5-d8c9" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b7b9-870a-6fe3-60ca" name="Allure of Slaanesh" hidden="false" targetId="e19b-ecfc-484a-1dac" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="62c6-4650-4884-bd3b" name="Spirit Swallower" page="" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4aec-e4ab-3f2c-cb02" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57ea-4427-7fe1-042e" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="18d4-ac48-1d2d-477f" name="Spirit Swallower" hidden="false" targetId="f93f-fa87-54e9-21d2" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="4911-9381-e7dc-5526" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="93bf-63c5-3fe0-ae2e" name="Witstealer Sword" hidden="false" collective="false" import="true" targetId="202a-ab1a-a297-a5d0" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="630.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6624,15 +6745,15 @@ Synessa casts can be targeted at all enemies within Line of Sight, regardless of
                 <infoLink id="e10f-9469-f905-8dc1" name="Fly" hidden="false" targetId="953a-d5a4-ee81-4093" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="a9b8-9137-abf4-ee37" name="Scroll of Sorcery" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a9b8-9137-abf4-ee37" name="Scrolls of Sorcery" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="592f-8319-13bc-5775" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c97-2975-2e77-f2b6" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="17d4-5cc5-ff63-9d5c" name="Scroll of Sorcery" publicationId="ee54-3543-b9db-fe40" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
+                    <profile id="17d4-5cc5-ff63-9d5c" name="Scrolls of Sorcery" publicationId="ee54-3543-b9db-fe40" page="152" hidden="false" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item">
                       <characteristics>
-                        <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Blue Scribes can cast one spell from one of the eight Lores of Battle Magic in the Warhammer rulebook during each of his own Magic phases. You can choose which lore the spell is to be cast from, but must roll a D6 and consult the magic lore to see which spell is cast (the Blue Scribes can therefore never cast a signature spell). If there is no viable target or you choose not to cast the spell that has been rolled, the Blue Scribes do not cast a spell that turn. Spells cast by the Blue Scribes are treated as bound spells with a power level equal to their casting value.</characteristic>
+                        <characteristic name="Special Rules" typeId="3df8-4ab0-c4bd-e2ad">The Blue Scribes can cast one spell from one of the eight Lores of Battle Magic in the Warhammer rulebook during each of his own Magic phases. You can choose which lore the spell is to be cast from, but must roll a D6 and consult the magic lore to see which spell is cast (the Blue Scribes can therefore never cast a signature spell). If there is no viable target or you choose not to cast the spell that has been rolled, the Blue Scribes do not cast a spell that turn. Spells cast by the Blue Scribes are treated as innate bound spells with a power level equal to their casting value.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7037,6 +7158,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
                     <infoLink id="8fa4-3fe7-677a-e337" name="Daemon of Nurgle" hidden="false" targetId="daf5-f973-a7d7-101e" type="rule"/>
                     <infoLink id="8b33-fee3-ca59-038c" name="Daemonic" hidden="false" targetId="38e3-04cc-8978-e3a4" type="rule"/>
                     <infoLink id="5860-6250-1d75-257e" name="Palanquin of Nurgle" hidden="false" targetId="ff39-41b1-a41c-3467" type="profile"/>
+                    <infoLink id="5e1d-86da-8e49-17ac" name="Large Target (2)" hidden="false" targetId="e267-b037-e703-ace7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -7346,6 +7468,37 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="202a-ab1a-a297-a5d0" name="Witstealer Sword" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="7c44-6cfa-9d63-3d55" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b3a-bcc8-b777-7c46" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="points" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b3a-bcc8-b777-7c46" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e80d-547a-db35-a230" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da91-19f1-b1f1-104e" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c44-6cfa-9d63-3d55" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="f36f-a6a9-3fde-abf8" name="Witstealer Sword" publicationId="ee54-3543-b9db-fe40" page="205" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+            <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+            <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Slaanesh only. Any character or monster that suffers one or more unsaved Wounds from the Witstealer Sword must immediately pass an I test or suffer another Wound with Ignores Armour Saves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4323-f58c-05ba-2081" name="Gifts of Chaos" hidden="false" collective="false" import="true">
@@ -7357,7 +7510,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
           <profiles>
             <profile id="12f3-9b76-4592-c424" name="Ward of Chaos" publicationId="ee54-3543-b9db-fe40" page="202" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
               <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon has the Ward save (3+) special rule against missile attacks.</characteristic>
+                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">The Daemon has the Ward save (3+) special rule against missile attacks. This cannot be combined with Diabolic Splendour.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7407,7 +7560,7 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3352-2e88-1cf3-a8e6" name="Massive Stature" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -7835,24 +7988,6 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4d7c-368b-9dad-a953" name="Witstealer Sword" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e05c-e946-e30c-79a9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21c7-616d-a0c7-22d1" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5456-e7b0-4ddb-5dcf" name="Witstealer Sword" publicationId="ee54-3543-b9db-fe40" page="205" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
-                <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Daemon of Slaanesh only. Any character or monster that suffers one or more unsaved Wounds from the Witstealer Sword must immediately pass an I test or suffer another Wound with Ignores Armour Saves.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="8e29-3ce4-3fed-ee90" name="The Eternal Blade" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="93be-2df7-5009-5594" type="max"/>
@@ -8187,13 +8322,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d35-e301-dca9-f47e" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="90e4-c989-ddfe-a3b6" name="Allure of Slaanesh" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Enemy models in base contact with the Daemon must pass a Psychology test. If the test is failed, the affected model may not strike blows in that round of combat.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="35af-8399-476e-685b" name="Allure of Slaanesh" hidden="false" targetId="e19b-ecfc-484a-1dac" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
@@ -8243,13 +8374,9 @@ At the start of each of your turns, consult the Tally of Pestilence table to det
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5abf-af84-665c-0822" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="75b5-6c20-a856-0af0" name="Spirit Swallower" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Roll a D6 for each unsaved wound the Daemon causes in close combat. On a 4+, the Daemon regains one wound lost earlier in the battle.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="a3f0-2510-665c-226a" name="Spirit Swallower" hidden="false" targetId="f93f-fa87-54e9-21d2" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -8533,39 +8660,40 @@ Double 6 Banished! Remove the unit from play as a casualty.
 If characters are present in the unit, the controlling player first allocates Wounds to the unit (up to their current Wounds), then divides remaining Wounds as equally as possible amongst any characters. Once all Wounds have been allocated, the penalty to the Daemons&apos; LD is discounted. They can, be rerolled if the battle standard is within 12&quot;, use the General&apos;s Inspiring Presence rule, and/or be tested on unmodified LD if the unit is Stubborn or Steadfast. If a Daemonic unit somehow is Unbreakable, it takes no Daemonic Instability test.</description>
     </rule>
     <rule id="964e-697b-ab75-a66b" name="Daemon of Khorne" publicationId="ee54-3543-b9db-fe40" page="112" hidden="false">
-      <description>Daemons of Khorne have Hatred (Daemons of Slaanesh) and Magic Resistance (1) and Strength Bonus (1).
+      <description>Daemons of Khorne have treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of Slaanesh as Desperate Allies. All of the rules below also apply to mounts.
 
-They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of Slaanesh as Desperate Allies.</description>
+They have Hatred (Daemons of Slaanesh) and Magic Resistance (1) and Strength Bonus (1).</description>
     </rule>
     <rule id="f763-a8b8-ef54-e22c" name="Daemon of Tzeentch" publicationId="ee54-3543-b9db-fe40" page="112" hidden="false">
-      <description>Daemons of Tzeentch have Hatred (Daemons of Nurgle), and re-roll Ward save results of 1. Wizards that are a Daemon of Tzeentch can also re-roll channelling results of 1.
+      <description>Daemons of Tzeentch treat Daemons of Khorne and Slaanesh as Suspicious Allies, and Daemons of Nurgle as Desperate Allies. All of the rules below also apply to mounts.
 
-They treat Daemons of Khorne and Slaanesh as Suspicious Allies, and Daemons of Nurgle as Desperate Allies.</description>
+They have Hatred (Daemons of Nurgle), and re-roll Ward save results of 1. Wizards that are a Daemon of Tzeentch can also re-roll channelling results of 1.</description>
     </rule>
     <rule id="daf5-f973-a7d7-101e" name="Daemon of Nurgle" publicationId="ee54-3543-b9db-fe40" page="112" hidden="false">
-      <description>Daemons of Nurgle have Hatred (Daemons of Tzeentch). Enemy models in base contact with a Daemon of Nurgle suffer a -1 penalty to their WS.
+      <description>Daemons of Nurgle treat Daemons of Khorne and Slaanesh as Suspicious Allies, and Daemons of Tzeentch as Desperate Allies. All of the rules below also apply to mounts.
 
-They treat Daemons of Khorne and Slaanesh as Suspicious Allies, and Daemons of Tzeentch as Desperate Allies.</description>
+They have Hatred (Daemons of Tzeentch). Enemy models in base contact with a Daemon of Nurgle suffer a -1 penalty to their WS.</description>
     </rule>
     <rule id="4f49-9bdd-696d-bc2d" name="Daemon of Slaanesh" publicationId="ee54-3543-b9db-fe40" page="112" hidden="false">
-      <description>Daemons of Slaanesh have Hatred (Daemons of Khorne) and Armour Piercing (2).
+      <description>Daemons of Slaanesh treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of Khorne as Desperate Allies. All of the rules below also apply to mounts.
 
-They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of Khorne as Desperate Allies.</description>
+They have Hatred (Daemons of Khorne) and Armour Piercing (2).
+</description>
     </rule>
     <rule id="0146-2b6c-6a65-97b0" name="Locus of Wrath" publicationId="ee54-3543-b9db-fe40" page="117" hidden="false">
       <description>This model, and all models in his unit, have Hatred.</description>
     </rule>
     <rule id="f5b3-9f50-1105-1111" name="Aura of Fury" publicationId="ee54-3543-b9db-fe40" page="116" hidden="false">
-      <description>All Daemons of Khorne within 12&quot; of a Bloodthirster may re-roll 1&apos;s To Wound and gain Fight in Extra Ranks (1).</description>
+      <description>All Daemons of Khorne units within 12&quot; of a Bloodthirster may re-roll 1&apos;s To Wound and gain Fight in Extra Ranks (1).</description>
     </rule>
     <rule id="0907-10ea-f748-e65c" name="Locus of Fury" publicationId="ee54-3543-b9db-fe40" page="117" hidden="false">
-      <description>This model, and all models in his unit, have Frenzy.</description>
+      <description>This model, and all models in his unit, have Frenzy (note that this Frenzy is not lost if the unit loses a round of combat).</description>
     </rule>
     <rule id="bf93-4460-17ec-e206" name="Gorefeast" publicationId="ee54-3543-b9db-fe40" page="129" hidden="false">
       <description>If this chariot&apos;s Impact Hits cause unsaved Wounds, immediately roll a D6 for each Wound caused. For each score of 4+, the chariot regains a single Wound lost earlier in the game.</description>
     </rule>
     <rule id="8fde-69af-d8f8-e6d3" name="Barrage of Knowledge" publicationId="ee54-3543-b9db-fe40" page="139" hidden="false">
-      <description>All enemy models within 8&quot; of a Lord of Change suffer a -1 penalty to their WS and BS. This has no effect on Animated Constructs or Daemons of Tzeentch.</description>
+      <description>All enemy units within 8&quot; of a Lord of Change suffer a -1 penalty to their WS and BS. This has no effect on Animated Constructs or Daemons of Tzeentch.</description>
     </rule>
     <rule id="f4f2-df61-5b5c-874c" name="Locus of Transmogrification" publicationId="ee54-3543-b9db-fe40" page="141" hidden="false">
       <description>When a model with Split in this model&apos;s unit is slain, you may re-roll dice results of 1-3 to see if it turns into two Blue Horrors.</description>
@@ -8598,9 +8726,9 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
       <description>During the Shooting phase, the Exalted Flamer can shoot either Pink Fire or Blue Fire. These do not have Move or Fire. If a misfire is rolled when resolving Pink Fire or Blue Fire, the Exalted Flamer suffers D6 S D6 hits with Flaming Attacks.</description>
     </rule>
     <rule id="eef4-b046-1853-ecce" name="Sensual barrage" publicationId="ee54-3543-b9db-fe40" page="174" hidden="false">
-      <description>All enemy models within 6&quot; of the Keeper of Secrets suffer a -1 penalty to their WS and I. This has no effect on Daemons of Slaanesh.</description>
+      <description>All enemy units within 6&quot; of the Keeper of Secrets suffer a -1 penalty to their WS and I. This has no effect on Daemons of Slaanesh.</description>
     </rule>
-    <rule id="3f0e-94b9-6e43-1ed9" name="Mesmerising Lepidoptera" publicationId="acbb-53f3-d3f4-1f4e" page="6" hidden="false">
+    <rule id="3f0e-94b9-6e43-1ed9" name="Mesmerising Lepidoptera" publicationId="acbb-53f3-d3f4-1f4e" page="7" hidden="false">
       <description>All enemy attacks targeting this model suffer a -1 penalty To Hit.</description>
     </rule>
     <rule id="cac0-8d81-36ce-e7b4" name="Palanquin of Nurgle" publicationId="ee54-3543-b9db-fe40" page="164" hidden="false">
@@ -8704,7 +8832,7 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">2</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 3+)</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
       </characteristics>
     </profile>
     <profile id="ff39-41b1-a41c-3467" name="Palanquin of Nurgle" publicationId="ee54-3543-b9db-fe40" page="164" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -8723,7 +8851,7 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
     </profile>
     <profile id="0e43-29ce-6f51-b35b" name="Disc of Tzeentch" publicationId="ee54-3543-b9db-fe40" page="145" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
       <characteristics>
-        <characteristic name="M" typeId="09ad-18df-607b-1215">1</characteristic>
+        <characteristic name="M" typeId="09ad-18df-607b-1215"/>
         <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
         <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
         <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
@@ -8947,6 +9075,16 @@ They treat Daemons of Tzeentch and Nurgle as Suspicious Allies, and Daemons of K
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Beast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e19b-ecfc-484a-1dac" name="Allure of Slaanesh" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Enemy models in base contact with the Daemon must pass a Psychology test. If the test is failed, the affected model may not strike blows in that round of combat.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f93f-fa87-54e9-21d2" name="Spirit Swallower" publicationId="ee54-3543-b9db-fe40" page="204" hidden="false" typeId="efb3-d0de-5567-f01a" typeName="Daemonic Gift">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="4627-cfbc-c37e-235a">Roll a D6 for each unsaved wound the Daemon causes in close combat. On a 4+, the Daemon regains one wound lost earlier in the battle.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

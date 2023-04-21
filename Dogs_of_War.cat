@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1a86-ad23-323a-d30c" name="Quirk of Character">
@@ -107,7 +107,7 @@
             <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c6ea-b401-c8ba-5d95" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c6ea-b401-c8ba-5d95" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74d2-2057-62f9-dff6" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f807-107d-ae1c-0551" type="max"/>
@@ -305,17 +305,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f932-97d0-6d92-8dbd" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="9889-c2f0-3398-dda3" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98c2-bfc6-f5b4-c3b5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="2e3e-746b-5d72-20ac" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="9.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="a709-716b-2492-c6a4" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab02-027c-d428-ed30" type="max"/>
@@ -395,7 +384,7 @@
             <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="50a2-d15c-1794-73ac" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="50a2-d15c-1794-73ac" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d7e-8abb-e8e4-4b02" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="afbd-9814-6978-d563" type="max"/>
@@ -701,17 +690,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee6d-d5b3-1d28-016d" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c1fa-a85b-6dad-7685" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b06-c178-5c1a-a81e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="db71-dd5b-b7b7-e8e0" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="9.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="36b6-340d-e2f8-3c6a" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99e1-8b37-ae34-c50a" type="max"/>
@@ -803,6 +781,7 @@
             <entryLink id="c39e-8f3a-bdce-b1e7" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dce8-ca52-4094-4037" type="selectionEntryGroup"/>
             <entryLink id="2ec5-dc48-25ac-4d85" name="Arcane Items" hidden="false" collective="false" import="true" targetId="87d5-5eda-bce6-3a6a" type="selectionEntryGroup"/>
             <entryLink id="3afa-a88e-ebca-bc4e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="7daa-e9f3-ed2b-b705" type="selectionEntryGroup"/>
+            <entryLink id="2aff-0bcd-5e15-8efb" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1000,7 +979,7 @@
         <categoryLink id="7ea5-d547-2012-4db0" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5d74-dd3b-e70a-4818" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5d74-dd3b-e70a-4818" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1e7-3a39-8b5c-8d76" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ba97-e297-8058-66e8" type="max"/>
@@ -1231,17 +1210,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="16d0-8d23-8209-3c55" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6f1a-cc6c-35e3-f4cb" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="643b-9453-e85a-a7d8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="246e-364c-4320-1a24" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="3b38-1ce7-f3a1-e333" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aab-5b35-d9c0-b74a" type="max"/>
@@ -1368,6 +1336,7 @@
             <entryLink id="f474-1191-3fe8-6b23" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dce8-ca52-4094-4037" type="selectionEntryGroup"/>
             <entryLink id="6f52-4b37-f851-4e9a" name="Arcane Items" hidden="false" collective="false" import="true" targetId="87d5-5eda-bce6-3a6a" type="selectionEntryGroup"/>
             <entryLink id="8216-6007-3686-197f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="7daa-e9f3-ed2b-b705" type="selectionEntryGroup"/>
+            <entryLink id="f8a7-7520-6a28-7338" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1804,17 +1773,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4504-fd70-10ed-f58d" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="89ad-fcca-7c68-6cd5" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="433b-eac4-ab3f-d58b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a412-ac42-f5a8-1ac2" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="d504-76b3-d642-0177" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f45-2a2c-1830-6768" type="max"/>
@@ -1886,7 +1844,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
         <categoryLink id="32c5-92a1-db22-23b6" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6dd9-ad06-f895-2478" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6dd9-ad06-f895-2478" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56f7-0ee9-924c-71ba" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d297-b1cf-c030-f13d" type="max"/>
@@ -1932,6 +1890,28 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4f94-9648-25c4-9c78" name="Killing Blow" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e06-13ff-ca00-11c0" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0d1e-c4b2-3390-6b79" name="Killing Blow" hidden="false" targetId="a711-7cf6-cd2b-1d29" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d3f3-1a84-fa85-90e7" name="Poisoned Attacks" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fd4-53af-0b58-aa69" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="111d-461a-e9fa-9ab7" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2001,7 +1981,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
         <categoryLink id="db1d-1a6d-7fc1-a00f" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f910-4ab6-a5e6-3d38" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f910-4ab6-a5e6-3d38" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fad8-50a5-6386-ed09" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e976-f0a9-e9c7-f3b8" type="max"/>
@@ -2095,17 +2075,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="891e-dd93-798b-ed41" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2db9-9a9f-1de1-7c76" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bbf-fd8b-7786-a47d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="17cd-d44f-d047-be7a" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="79b1-2029-3a70-a74a" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30a9-c300-0cd1-1f64" type="max"/>
@@ -2164,7 +2133,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
         <categoryLink id="7d2c-c647-d867-2841" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="25fe-24c0-e8d7-2edd" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="25fe-24c0-e8d7-2edd" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac1c-66d0-7d14-f473" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d852-8b00-f08d-5850" type="max"/>
@@ -2180,12 +2149,12 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="de85-c4f9-c118-22e3" name="Longbow" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="de85-c4f9-c118-22e3" name="Elven Longbow" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c81-55c9-9b93-534c" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="e987-2465-8382-bedc" name="Longbow" hidden="false" targetId="cde7-c47d-3818-1e9d" type="profile"/>
+            <infoLink id="e987-2465-8382-bedc" name="Elven Longbow" hidden="false" targetId="223c-171b-2de0-9b28" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
@@ -2362,6 +2331,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="0690-b1bc-7de7-4bca" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="4abe-fcb0-5f4f-d8bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efec-d1b1-3ad3-947f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4e1-1a84-9bf9-d65c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c7bd-56e5-cac2-97ef" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f4fb-fabb-2f5e-41bc" name="Command Group" hidden="false" collective="false" import="true">
@@ -2374,9 +2361,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="d8eb-dc82-657a-7814" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="efc9-2837-4478-de48" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="efc9-2837-4478-de48" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="fc5b-3e7f-9f7a-17d3" value="50.0">
                       <conditions>
                         <condition field="selections" scope="4abe-fcb0-5f4f-d8bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -2384,22 +2371,10 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de2d-29ec-da11-763e" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fc5b-3e7f-9f7a-17d3" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fc5b-3e7f-9f7a-17d3" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="cb84-062d-bb28-64de" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="cf85-d262-1b8b-2cbd" name="Magic Standard " hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97a0-6635-d8ea-8e8f" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="96c7-fc89-823b-e715" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d53a-f840-9cdb-12c6" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2523,6 +2498,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="8.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e619-df51-6194-d489" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="8148-4ba8-0a2c-8ab6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab6d-0408-d9fe-e42a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0c5-d60d-b2b4-e13a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f6eb-19c8-7821-b0ad" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="bd83-53f0-0579-0da7" name="Command Group" hidden="false" collective="false" import="true">
@@ -2535,9 +2528,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="6128-0162-51c4-2aeb" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="195b-cb15-bedf-f8c5" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="195b-cb15-bedf-f8c5" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="3cf2-7a73-a28a-2a9d" value="50.0">
                       <conditions>
                         <condition field="selections" scope="8148-4ba8-0a2c-8ab6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -2545,22 +2538,10 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d19c-68f6-39fc-23e7" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3cf2-7a73-a28a-2a9d" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3cf2-7a73-a28a-2a9d" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="144b-c1d1-ba4d-18b9" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4cce-55ed-b660-72cc" name="Magic Standard " hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d42f-b6c6-7723-e0ed" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="01b8-1fd9-c60d-26cd" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="5944-7fe6-13e8-01e7" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2679,6 +2660,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="8.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="dc19-bb26-e5c5-a668" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="8226-2b72-19c8-2909" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c13-9563-08ee-c3cb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afd6-e811-9ddc-0144" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="95ab-c5be-9b82-c7b2" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="8693-b41f-e622-2f5c" name="Command Group" hidden="false" collective="false" import="true">
@@ -2691,32 +2690,20 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="a6f8-7e80-1aae-79da" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="f2f5-3ffd-76bf-4335" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="79fa-c0e6-4f22-3dc8" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="e31d-48b4-6391-a482" value="50.0">
                       <conditions>
                         <condition field="selections" scope="8226-2b72-19c8-2909" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d1d1-51a3-624c-f2e7" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ec92-2e74-3499-10b0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a843-a857-2c2c-12c1" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e31d-48b4-6391-a482" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="3f49-a426-5736-5f47" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a3ae-66d8-4783-bb4d" name="Magic Standard " hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69b1-c193-e10b-611c" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9e92-8442-cbbb-21bb" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="f81f-8e39-e7db-82d8" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
+                    <entryLink id="ecdb-9dc9-0e8c-a4aa" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2860,6 +2847,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a05c-12cb-273b-8ec0" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="b74d-49d8-54eb-c210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2621-3fd5-6c5f-b4a6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d08f-b320-66d7-933a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2530-26b3-a86d-0a17" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3125,6 +3130,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e236-d023-93f0-43f1" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="76f1-e737-9ba6-70f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f98-1273-b15b-0a03" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bc3-e2af-f264-34b6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e80c-b960-eb7f-2679" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="5d84-5eef-11b6-d761" name="Command Group" hidden="false" collective="false" import="true">
@@ -3137,9 +3160,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="3dfd-97c9-9bed-357c" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="68f4-2129-9d44-d8c8" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="68f4-2129-9d44-d8c8" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="c042-09d1-4a50-c2dd" value="50.0">
                       <conditions>
                         <condition field="selections" scope="76f1-e737-9ba6-70f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -3147,7 +3170,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbbd-1bc1-67a6-4846" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c042-09d1-4a50-c2dd" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c042-09d1-4a50-c2dd" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="2ef8-1ba1-1805-7fb5" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -3204,309 +3227,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="810b-2ea8-e2a8-2322" name="The Best Money Can Buy" hidden="false" collective="false" import="true" targetId="c8b6-66d9-060a-f3e3" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f3fa-d00d-8659-d2c4" name="Veteran Sellswords" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="750f-a059-ba43-13af" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76f1-e737-9ba6-70f5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="750f-a059-ba43-13af" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="4b19-572b-bb82-31b0" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d621-b9ec-133e-6e77" name="Veteran Sellsword" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a2f-44ac-6494-3cfa" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="55e6-ab37-362d-24e4" name="Veteran Sellsword" publicationId="8ada-88a0-cdcd-9b5e" page="52" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Human)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="8203-ad10-310c-2e36" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="aaf2-3067-9227-a8ed" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="31bc-c452-a2bd-21c8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="8177-1409-e8cf-5d07" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5c26-c7ce-9946-f34f" name="Armour" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce91-ebe0-ae28-3410" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="f599-5019-3797-72f3" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a836-e200-fc88-dae1" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="dfdb-9d32-885f-d1e6" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3c26-1122-2958-48e2" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6e0-094c-a969-092d" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="2b1f-7131-2b09-8a04" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d7c0-c381-1fa4-b035" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87ea-a6e2-ae05-038c" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="b739-0918-fed4-a430" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="19b5-276a-b17b-9b50" name="Secondary Weapon" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef78-3896-faad-8ef2" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c1e2-e0cf-2b32-b644" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ce1-0065-995b-f82a" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="6be5-fd60-4d8c-e7de" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6e85-6b57-442d-e309" name="Bow" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cfa-a38e-0e64-a2c8" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3622-1c22-5a5f-25a2" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="7efd-3154-d474-2902" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f410-c3bc-85fb-d8c9">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fc8-a6b0-a0c1-75ac" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1299-4b2d-110b-29cf" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="f36a-cbf5-974f-af11" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7b1-0933-a214-d1c7" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="4c88-df85-976f-424e" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f410-c3bc-85fb-d8c9" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6587-3d8f-1309-1060" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="6585-fd43-5239-0fda" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8d9b-380a-67ee-147b" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9f7-2b7e-6c93-6f24" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="414e-2a24-fe1c-5ddc" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bd21-add8-3e4c-aaa4" name="Polearm/Halberd" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="470c-7144-d2eb-0663" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="d8ee-13c3-77e9-e24a" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c246-e333-262b-04cf" name="Spear (On Foot)" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ab9-f190-0333-187e" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="d90a-f946-b9be-f3c5" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1ce5-e6c2-70a3-b85b" name="Flail" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6923-5086-f73a-28fd" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="9983-250d-8466-9b1b" name="Flail" hidden="false" targetId="7f6a-b8b2-8978-4f35" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="4.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ab74-3a33-9f65-6371" name="Command Group" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="0bd2-ace7-5680-1f5e" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8930-8743-91ea-afa7" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="2c4e-02b8-82bb-eb2c" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8847-e7f5-7960-c884" name="Magic Standard" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9aa2-c2f2-dde2-2c15" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="1887-0f72-b68c-5356" name="Magic Standard (25 points)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbae-561b-5c22-129b" type="max"/>
-                        <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5805-7879-a5b2-5a68" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="63a9-ee74-bf49-8b4e" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5c9d-30f9-df0f-7ed7" name="Magic Standard (50 points)" hidden="true" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="f3fa-d00d-8659-d2c4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e6f6-5d29-6493-7e1e" type="max"/>
-                        <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1cb3-ebfc-20e2-68e1" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="6bb9-559d-a1cf-26a5" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c4c4-c94b-dd35-b78b" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="232e-9348-99df-d7e6" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="61eb-1f1b-8f3a-a278" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a9ff-b9ce-807a-b286" name="Veteran Sergeant" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a81-dfd1-dc40-62c2" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4e56-9d82-f1ed-15aa" name="Veteran Sergeant" publicationId="8ada-88a0-cdcd-9b5e" page="52" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-                  <characteristics>
-                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
-                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
-                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
-                    <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Human)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="afe8-1a9e-2904-0491" name="Champion" hidden="false" targetId="777a-7a64-44fa-a78e" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="6125-fcac-f6a9-af69" name="The Best Money Can Buy" hidden="false" collective="false" import="true" targetId="c8b6-66d9-060a-f3e3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -3600,17 +3320,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af83-a295-0f33-172a" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="9317-a5af-8e81-34db" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab3f-67d2-0e1a-314c" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="2474-e510-4683-9874" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="bb18-50fb-fa0b-6501" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04b7-c88e-f169-ff37" type="max"/>
@@ -3638,6 +3347,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="16.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2301-932a-0c96-72af" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="5323-2f31-e345-a3c7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d73e-977d-abd8-b259" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="601d-5f41-0197-adce" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2dc5-cb3e-1ce7-5a37" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3824,7 +3551,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <infoLink id="6b01-9d0b-116e-8242" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9759-6fbc-ab80-9a06" name="Light Armour" hidden="false" collective="true" import="true" type="upgrade">
@@ -3885,6 +3612,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="de7d-55b0-b1fb-7b38" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="6933-953b-f99a-e082" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22cd-be64-b195-a00a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3c9-16d3-bf1e-42f8" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7046-8c3f-ae5d-4c4b" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="77bc-c625-bb5e-2db8" name="Command Group" hidden="false" collective="false" import="true">
@@ -3897,9 +3642,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="cb15-1582-e10a-da44" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="2cf5-4e39-8685-a914" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2cf5-4e39-8685-a914" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="cdc2-2d09-1511-d170" value="50.0">
                       <conditions>
                         <condition field="selections" scope="6933-953b-f99a-e082" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -3907,7 +3652,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0388-80cc-67e9-fd8a" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cdc2-2d09-1511-d170" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cdc2-2d09-1511-d170" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="7879-c0ae-d846-98e2" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -4039,41 +3784,39 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="0d1c-41b7-56be-db23" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="50b9-55b5-6ec2-4924">
+            <selectionEntry id="f75b-90ab-17d7-e447" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2f3-949f-e8e9-8a78" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cff-a2b8-bc20-eee8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe17-241c-b954-00c1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5907-cc3b-58a8-c2ba" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="e32c-2139-941d-22df" name="Full Plate Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5629-7acb-47d0-d99c" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f3ed-7d09-7101-59b8" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="50b9-55b5-6ec2-4924" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b43c-d8f6-681e-95b5" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="973b-9dec-3ab0-4c0a" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <infoLinks>
+                <infoLink id="465a-b4bc-fb34-8eff" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="11.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7aed-f90e-de8e-810d" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="4805-5eda-6974-d1ff" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="312f-2e9d-bf1d-cc14" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b5fb-f5de-b118-a11f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a164-18c0-b2f9-6ec2" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4196,9 +3939,20 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="8d7c-af26-414d-41fb" name="Javelins" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3580-2228-058c-17f1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6106-623c-2004-f759" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="625f-4b51-c498-f0a0" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2703-0128-4aa0-329c">
+            <selectionEntryGroup id="625f-4b51-c498-f0a0" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="11c4-45fd-c42e-b8f3">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b7f-b07c-3294-22fc" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9dd-8a8c-f3e9-118d" type="min"/>
@@ -4212,7 +3966,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <infoLink id="eaed-30da-693d-6e1d" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2703-0128-4aa0-329c" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -4222,19 +3976,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   <infoLinks>
                     <infoLink id="62e5-94d4-350f-5fa3" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
                     <infoLink id="721a-2a20-b7fa-0eaf" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6e37-178c-f5d0-2d0d" name="Hand Weapon, Shield &amp; Javelins" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e97a-b756-c0a2-1cab" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f667-08d1-9af6-a661" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-                    <infoLink id="fe99-19fa-e8ff-dcb0" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
-                    <infoLink id="8e04-b9e2-6c72-3abb" name="Javelins" hidden="false" targetId="3ecc-5d9c-7d29-ee2f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="1.0"/>
@@ -4253,14 +3994,44 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <infoLink id="7d49-200a-f14b-c305" name="Spear (Infantry)" hidden="false" targetId="be39-37ac-ac20-5053" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="1.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="11c4-45fd-c42e-b8f3" name="Hand Weapon &amp; Buckler" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b68-edd9-7837-a36a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b51b-02f2-a96e-e702" name="Buckler" hidden="false" targetId="1700-a7e5-d272-ef20" type="profile"/>
+                    <infoLink id="248a-9b7f-73b3-9771" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c543-356a-9927-1b9a" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="f481-6a59-df15-6276" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4b3-7473-ee90-79c4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d41-d8f0-0fff-0e8e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="52f9-a02c-26e5-8911" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4437,7 +4208,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <infoLink id="5eef-240f-5fde-f07e" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4445,6 +4216,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e938-9c10-9ac7-d39f" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="e0b5-ba55-bb7f-12d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5b0-07b6-ecc3-0c02" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c52b-7e1b-11e6-141e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="061e-448d-038c-e8b0" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4459,9 +4248,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="1949-5246-37cf-9cb5" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="6f10-7c22-0d2b-f913" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="6f10-7c22-0d2b-f913" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="9c2f-a071-868c-7b38" value="50.0">
                       <conditions>
                         <condition field="selections" scope="e0b5-ba55-bb7f-12d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -4469,7 +4258,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fca8-d585-4a66-d5a4" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c2f-a071-868c-7b38" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9c2f-a071-868c-7b38" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="c7e4-0de4-1c9f-7700" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -4637,6 +4426,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="7.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="5371-42a2-181e-f5a1" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="b627-a704-20f3-9f7d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d02-258d-2a65-417b" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4710-6c14-36ce-b70b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="19ad-2ff6-c902-db18" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="3a4f-9419-9259-81ba" name="Command Group" hidden="false" collective="false" import="true">
@@ -4649,9 +4456,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="32f3-eb1a-b0eb-2bdd" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="9573-9ce1-01a3-eff7" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9573-9ce1-01a3-eff7" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="9aef-a987-f268-45a0" value="50.0">
                       <conditions>
                         <condition field="selections" scope="b627-a704-20f3-9f7d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -4659,7 +4466,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e38-fd4d-af8a-28f8" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9aef-a987-f268-45a0" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9aef-a987-f268-45a0" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="83cb-d213-449a-830e" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -4769,24 +4576,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1905-51ac-378c-057e" name="Scouts" hidden="true" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adbc-fe6d-7e65-4b98" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa56-e5ba-c689-3d97" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7679-18cb-5c94-fca7" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="6d5a-c26f-0019-1291" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e04-76ad-996c-e160" type="max"/>
@@ -4847,6 +4636,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a0dd-54b5-6dd1-0abe" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="8570-faa3-7157-e1bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6a9-1813-6619-4fc1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26ec-c8e3-04de-8099" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1c7f-49e9-9cb9-e228" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="694c-d191-1644-6529" name="Command Group" hidden="false" collective="false" import="true">
@@ -4859,9 +4666,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="c79f-830c-15eb-14ff" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="7711-8c4c-7de0-28c4" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7711-8c4c-7de0-28c4" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="f00a-bcc6-5436-16ba" value="50.0">
                       <conditions>
                         <condition field="selections" scope="8570-faa3-7157-e1bc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -4869,7 +4676,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba74-1eff-dd96-d0e0" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f00a-bcc6-5436-16ba" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f00a-bcc6-5436-16ba" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="e966-45bb-280f-c65a" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -5005,17 +4812,6 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4367-5f43-70e1-5a56" name="Poisoned Attacks" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="688b-7080-247d-74d2" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9d88-b89a-c577-54cc" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="9f8f-fa4a-706b-7806" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d7d-0b18-bf78-367f">
@@ -5052,7 +4848,25 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9cf0-15a7-ef43-29d5" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="fbfc-661c-54ea-0bcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df66-0a24-6394-70c6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb2c-ddc5-72a1-09bc" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="04bd-c604-a4c0-30c9" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5090,9 +4904,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="d648-26dd-f0c0-2578" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="30ad-ee85-6e85-1625" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="30ad-ee85-6e85-1625" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="e5fc-eb32-ea52-c0bb" value="50.0">
                       <conditions>
                         <condition field="selections" scope="fbfc-661c-54ea-0bcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -5100,7 +4914,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df8e-d93e-fca4-ea9f" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e5fc-eb32-ea52-c0bb" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e5fc-eb32-ea52-c0bb" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="f65c-de43-7a64-b04a" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -5156,7 +4970,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <infoLink id="6ffc-6a39-8963-edd5" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="f5b1-7ebf-ec95-a27e" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8aa-829f-3b7f-debf">
+            <selectionEntryGroup id="f5b1-7ebf-ec95-a27e" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2977-5a69-1046-2257">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d091-b5f8-fe3a-d7ad" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dbb-b2b4-f643-79f4" type="min"/>
@@ -5170,7 +4984,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <infoLink id="1a61-c469-ca52-ebd8" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="bb3b-f8cf-3d49-9abb" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
@@ -5181,7 +4995,30 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <infoLink id="8c18-39d0-77a6-6094" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2977-5a69-1046-2257" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3092-43f7-4a0c-915a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f432-ecc0-8e2f-fbb4" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f627-c823-5b7e-b859" name="Hand Weapon &amp; Buckler" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ecf-ce4f-a8f0-25bb" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d225-b7b3-d523-898d" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+                    <infoLink id="d317-79e0-e667-ccea" name="Buckler" hidden="false" targetId="1700-a7e5-d272-ef20" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -5218,7 +5055,25 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="31.0"/>
+            <cost name="pts" typeId="points" value="28.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2d68-56d8-7715-9b0a" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="a6b6-68d6-a922-0090" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e02-8747-0b37-9534" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="645e-a291-2f61-3b1c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="917d-0300-d9e6-e002" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5271,9 +5126,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <infoLink id="88c3-451b-4139-9e40" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="d8a3-010c-5365-2d2f" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="d8a3-010c-5365-2d2f" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="3a50-9e37-dbb9-afbf" value="50.0">
                       <conditions>
                         <condition field="selections" scope="a6b6-68d6-a922-0090" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -5281,7 +5136,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f18-2574-e405-7412" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3a50-9e37-dbb9-afbf" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3a50-9e37-dbb9-afbf" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="10e7-2242-76e4-3aec" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -5314,7 +5169,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -5352,12 +5207,12 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="31.0"/>
+        <cost name="pts" typeId="points" value="22.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5e40-377d-5eae-605f" name="Scorpion" hidden="false" collective="false" import="true" type="unit">
@@ -5378,7 +5233,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
                 <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
                 <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
                 <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
                 <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
                 <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -5466,12 +5321,12 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <infoLink id="53b4-0f35-14cc-dea3" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="4b09-1b9a-a304-ca3b" name="Longbow" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="4b09-1b9a-a304-ca3b" name="Elven Longbow" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab63-6b8b-9800-e3df" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2d2e-2215-76a9-9f08" name="Longbow" hidden="false" targetId="cde7-c47d-3818-1e9d" type="profile"/>
+                <infoLink id="d056-aeaa-1562-57c8" name="Elven Longbow" hidden="false" targetId="223c-171b-2de0-9b28" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="4.0"/>
@@ -5488,16 +5343,15 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e60d-c644-775b-d573" name="Skirmishers &amp; Scouts" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="e60d-c644-775b-d573" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ad3-47ce-15c9-2d07" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="88e8-ea25-0b86-6dcb" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
-                <infoLink id="d785-7721-d991-688d" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
+                <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5566,6 +5420,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d35b-4f0c-33a2-c536" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="6da5-63e2-f3a0-6359" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40ac-1c82-cbc4-b7c6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad87-3155-18a6-c782" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6108-7b95-e990-5376" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="876b-6580-966a-f48b" name="Command Group" hidden="false" collective="false" import="true">
@@ -5583,21 +5455,9 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1844-f3ad-c656-4d98" type="max"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="22f2-3101-4fb9-13a7" name="Magic Standard (25 points)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7f4-2039-abfa-e3c4" type="max"/>
-                        <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bb37-9824-e55f-223b" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="1192-5ba7-b76c-cf65" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="57d4-0409-25fc-5fe0" name="Magic Standard (50 points)" hidden="true" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="57d4-0409-25fc-5fe0" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
-                        <modifier type="set" field="hidden" value="false">
+                        <modifier type="set" field="828b-b2ed-6ec9-90f5" value="50.0">
                           <conditions>
                             <condition field="selections" scope="6da5-63e2-f3a0-6359" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                           </conditions>
@@ -5605,7 +5465,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                       </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1de3-515e-15a6-e900" type="max"/>
-                        <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="828b-b2ed-6ec9-90f5" type="max"/>
+                        <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="828b-b2ed-6ec9-90f5" type="max"/>
                       </constraints>
                       <entryLinks>
                         <entryLink id="806e-2a07-a247-866b" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -5784,6 +5644,17 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
                     <cost name="pts" typeId="points" value="6.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="4bca-9ad1-8b91-1ce2" name="Polearm/Halberd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aecf-7e00-75b2-f9c9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="27f4-57ce-13be-09e5" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="cb21-cfbd-6af0-6e3c" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa87-6e7f-b3fa-6012">
@@ -5919,6 +5790,24 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="44.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f2a5-3740-f53e-f9e6" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="cbeb-eef5-b0db-dd87" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="923d-6b7b-897e-c414" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ade7-1f53-643c-da05" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c3c6-255c-0886-2b89" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6067,7 +5956,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -6106,12 +5995,12 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="76.0"/>
+        <cost name="pts" typeId="points" value="67.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d99-c7e6-61c7-637d" name="Ribault" hidden="false" collective="false" import="true" type="unit">
@@ -6123,7 +6012,7 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -6172,12 +6061,12 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="76.0"/>
+        <cost name="pts" typeId="points" value="67.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="794f-ac35-1c79-7937" name="Halfling Hot Pot" hidden="false" collective="false" import="true" type="unit">
@@ -6189,7 +6078,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">5</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -6259,7 +6148,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
       </constraints>
       <rules>
         <rule id="e709-0709-38b8-5863" name="Racial Distrust" publicationId="8ada-88a0-cdcd-9b5e" page="42" hidden="false">
-          <description>Models belonging to the same race follow the ally rules for Bound by Blood. Humans, Dwarfs, Elves and Halflings treat each other as Trusted Allies. Ogres, Giants and Hobgoblins are considered Suspicious Allies to all. Orcs are Desperate Allies to Humans, Dwarfs, Elves and Halflings. However, all models may still use the Paymaster&apos;s Hold Your Ground! as normal.</description>
+          <description>Most models belong to a certain race as detailed in their Troop Type. This includes Human, Dwarf, Elf, Halfling, Ogre, Orc and Hobgoblin. Characters may only join units belonging to the same race.</description>
         </rule>
       </rules>
       <costs>
@@ -6348,17 +6237,6 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fee1-fd07-bfb4-e982" name="Poisoned Attacks" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f69c-5a95-9e13-bec2" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5a7c-6750-1444-f80a" name="Poisoned Attacks" hidden="false" targetId="fefd-9cb0-d6fa-e2ef" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="2.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="c33f-6d26-355b-5b32" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c1d5-ae49-2528-51a8">
@@ -6395,7 +6273,25 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="11.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="94a4-aa08-99bb-eaa2" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c454-cded-7bbe-6343" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50e6-8497-8ffa-218b" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7df0-81e5-a0db-8e60" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6d16-0815-8441-a8a4" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6433,9 +6329,9 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                 <infoLink id="f128-f9e0-0500-1c3a" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="6ea4-243c-2809-a13e" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="6ea4-243c-2809-a13e" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="7739-5932-e6ff-a870" value="50.0">
                       <conditions>
                         <condition field="selections" scope="c454-cded-7bbe-6343" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -6443,7 +6339,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c19-64e1-2086-3457" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7739-5932-e6ff-a870" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7739-5932-e6ff-a870" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="68a7-37a9-d1df-fb9d" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -6492,7 +6388,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
         <categoryLink id="f0f0-8f92-5b86-26e2" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8ac9-62d7-be8c-22dd" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8ac9-62d7-be8c-22dd" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9a1-3b73-6ee6-5b6d" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3ee6-b1f0-6ddd-e4d1" type="max"/>
@@ -6628,7 +6524,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
         <categoryLink id="7a02-180b-50a4-c757" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="db88-fd95-17ba-9e8a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="db88-fd95-17ba-9e8a" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1541-a898-d219-d8bb" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f78b-0057-a5a7-5130" type="max"/>
@@ -6787,7 +6683,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
         <categoryLink id="d469-3c21-2d8e-901c" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f6b3-24a2-6a45-d673" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f6b3-24a2-6a45-d673" name="Quirks of Character &amp; Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a4c-305f-6b88-181a" type="max"/>
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3314-ba4c-1c22-6112" type="max"/>
@@ -7016,6 +6912,24 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e571-ddba-10b5-142a" name="Quirks of Character" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="703b-c3b9-85f2-378d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="531e-34f5-f206-ed68" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18fa-1eba-82be-e031" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0954-2c3c-095b-3567" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true" targetId="1d71-3b16-7b21-8c3d" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="164e-85ee-fdb1-526b" name="Command Group" hidden="false" collective="false" import="true">
@@ -7028,9 +6942,9 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                 <infoLink id="b849-d586-8318-7a4b" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="f3d2-7326-4283-8b5b" name="Magic Standard" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f3d2-7326-4283-8b5b" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="b9a9-40b0-f4fc-4759" value="50.0">
                       <conditions>
                         <condition field="selections" scope="703b-c3b9-85f2-378d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b6-66d9-060a-f3e3" type="atLeast"/>
                       </conditions>
@@ -7038,7 +6952,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d6d-e1a0-557f-d7a2" type="max"/>
-                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b9a9-40b0-f4fc-4759" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b9a9-40b0-f4fc-4759" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="a6c1-fe6d-d02e-4029" name="Magic Standards" hidden="false" collective="false" import="true" targetId="29d8-6c94-c95f-c55d" type="selectionEntryGroup"/>
@@ -7109,7 +7023,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
             <characteristic name="BS" typeId="7b67-9dfa-eeac-d007"/>
             <characteristic name="S" typeId="edd2-7979-54a4-6b35"/>
             <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">7</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+            <characteristic name="W" typeId="27ee-0675-122f-a1b1"/>
             <characteristic name="I" typeId="7cca-e51f-edc2-7322"/>
             <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0"/>
             <characteristic name="LD" typeId="a199-f10b-a038-5730"/>
@@ -7147,12 +7061,12 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="76.0"/>
+        <cost name="pts" typeId="points" value="67.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5829-63d0-43c6-b7a5" name="Regiments of Renown" hidden="false" collective="false" import="true" type="unit">
@@ -7761,7 +7675,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                       <characteristics>
                         <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                         <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The Armour of Brazen Bronze gives Borgio Ward save (5+).</characteristic>
+                        <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. The Armour of Brazen Bronze gives Borgio Ward save (5+).</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8480,7 +8394,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54ad-46f2-6f6d-f0ed" type="max"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink id="95f7-c9cf-5d62-b7fd" name="Hedge Magic" hidden="false" collective="false" import="true" targetId="6665-d00a-c28f-6113" type="selectionEntry"/>
+                        <entryLink id="95f7-c9cf-5d62-b7fd" name="Hedge Magic 2" hidden="false" collective="false" import="true" targetId="6665-d00a-c28f-6113" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -8585,13 +8499,13 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b86b-24da-ad15-f06e" name="Full Plate Armour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b86b-24da-ad15-f06e" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db6a-204a-2eb5-1dea" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ff5-0b4b-834e-9de3" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="7154-f185-e169-5911" name="Full Plate Armour" hidden="false" targetId="9594-9ece-7acf-49be" type="profile"/>
+                    <infoLink id="7154-f185-e169-5911" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8747,7 +8661,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
               </profiles>
               <rules>
                 <rule id="9506-8839-e154-98fd" name="Vampiric" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false">
-                  <description>Marianna has Fear and Immunity (Psychology). In addition, enemies must re-roll successful To Wound rolls against her. This does not apply to Magical Attacks, Flaming Attacks, or successful Killing Blows.</description>
+                  <description>Marianna has Fear and Immunity (Psychology). In addition, models suffer -1 To Wound against her, unless they are using Magical Attacks or Flaming Attacks</description>
                 </rule>
                 <rule id="e260-13c8-eba1-6ecb" name="The Red Thirst" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false">
                   <description>Whenever Marianna kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 5+, the model recovers a single Wound lost earlier in the battle. This does not work against models with Animated Construct, Daemonic, Forest Spirit or Vampiric.</description>
@@ -9103,7 +9017,6 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="efec-d1b1-3ad3-947f" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab6d-0408-d9fe-e42a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f98-1273-b15b-0a03" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d621-b9ec-133e-6e77" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2621-3fd5-6c5f-b4a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="312f-2e9d-bf1d-cc14" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b3-7473-ee90-79c4" repeats="1" roundUp="false"/>
@@ -9138,7 +9051,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6665-d00a-c28f-6113" name="Hedge Magic 2" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6665-d00a-c28f-6113" name="Hedge Magic" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73c1-fc92-9045-c255" type="max"/>
       </constraints>
@@ -9337,13 +9250,12 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
               <characteristics>
                 <characteristic name="Combat" typeId="617f-cb5d-6c83-2017"/>
                 <characteristic name="Missile" typeId="5b67-725f-ad85-da5b"/>
-                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Full plate armour. The wearer gains Immunity (Killing Blow, Multiple Wounds). However, he suffers -2
-I and a -1 penalty to Dangerous Terrain tests.</characteristic>
+                <characteristic name="Special Rules" typeId="4e25-3626-a136-c38d">Heavy armour. The wearer gains +2 to their armour save and Immunity (Killing Blow, Multiple Wounds). However, they suffer -2 I and a -1 penalty to Dangerous Terrain tests.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9406,7 +9318,7 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
           <profiles>
             <profile id="5eb3-2eec-9e94-c222" name="Justintine&apos;s Paychest" publicationId="8ada-88a0-cdcd-9b5e" page="87" hidden="false" typeId="ff67-d27f-2eef-bb35" typeName="Enchanted Item">
               <characteristics>
-                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Paymaster with Paychest only. The Paymaster and any unit he is with always roll 3D6 when taking Psychology and Break tests, and discard the highest result.</characteristic>
+                <characteristic name="Special Rules" typeId="9d2e-d14d-dd58-a829">Paymaster with Paychest only. The Paymaster and any unit he is with always roll 3D6 when taking LD tests, and discard the highest result.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9471,49 +9383,40 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <entryLink id="cb53-f54a-513a-1eb1" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="aa33-378c-bea4-c4c1" name="Quirks of Character" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="aa33-378c-bea4-c4c1" name="Quirks of Character (Character)" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="ab52-cebb-7805-1797" name="Ambusher" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e933-0f6c-2b57-55f7" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7741-2f28-8a3c-4848" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="c38a-63c1-2d42-7530" name="Ambusher" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The character allows one Core Unit (except Freelancers) to gain Ambushers.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="084f-3981-2769-6b5f" name="Ambusher" hidden="false" targetId="2870-a8ab-aeef-4423" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4de8-05c6-621d-3ce6" name="Berserker" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38e3-17be-fd74-306d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="50c2-8b33-7acf-c795" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="ccf6-c5f7-47f5-b023" name="Berserker" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Frenzy.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="c438-3f02-d379-fdeb" name="Berserker" hidden="false" targetId="0633-9ab8-224a-5565" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="636d-7e93-28d2-de0b" name="Blood Feud" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="093a-b2ec-cb48-23fa" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="973f-1968-254e-9c17" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="3cee-adb1-885a-b370" name="Blood Feud" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The character has Hatred.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="06ef-4ef7-778d-14c9" name="Blood Feud" hidden="false" targetId="b3a5-2cff-e539-39bf" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
@@ -9521,14 +9424,11 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <selectionEntry id="70d2-8224-46fb-ec01" name="Charismatic Leader" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="310c-81ec-e109-7213" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b70-b3be-e8d5-253b" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="9b24-29e4-0303-6d12" name="Charismatic Leader" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">General Only. The model&apos;s Inspiring Presence range is increased by 6&quot;.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="136d-0bca-a89f-d2c6" name="Charismatic Leader" hidden="false" targetId="34a2-02a6-874c-06a5" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
@@ -9536,14 +9436,11 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <selectionEntry id="a051-5438-08ce-d385" name="Cunning" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1034-9589-f763-f69a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f7d-7606-0873-88e0" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="4329-994c-7903-8378" name="Cunning" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The character may re-roll one failed To Hit roll each close combat phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="e1f8-dc06-1138-bd5b" name="Cunning" hidden="false" targetId="9ff6-ec1f-d8e4-e958" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -9551,74 +9448,47 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <selectionEntry id="2ec5-527c-0123-f5d8" name="Eagle Eye" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca1c-0d72-e6ba-5ac0" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b08-ec63-edc1-f7ca" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="8aa6-0665-f95e-4651" name="Eagle Eye" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The character gains Sniper.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="e292-b52e-130f-f467" name="Eagle Eye" hidden="false" targetId="8b19-4b6d-a172-39a7" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e420-8a19-6fa7-ea8b" name="Lethal Strike" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9de2-c3c4-d653-5917" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5cf7-e871-1f41-9586" name="Lethal Strike" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Killing Blow.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="647c-256d-089f-4ab6" name="Ranger" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ad2-90e5-b6cf-aafd" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b1d-d937-e49b-b84f" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="1378-d9d4-a208-59f4" name="Ranger" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Model on foot only. The model gains Scouts.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="d63e-e71d-c948-6818" name="Ranger" hidden="false" targetId="d039-2c67-b963-b149" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2fb2-db52-727f-b637" name="Stoic" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2fb2-db52-727f-b637" name="Defiant" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d65-cf1b-568d-93c2" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d72c-ba6d-70aa-49af" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="4849-3032-fcc3-7a82" name="Stoic" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model and any unit it joins gain Stubborn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="534e-feb7-f1d4-eecf" name="Defiant" hidden="false" targetId="d63e-94dc-fde4-e1da" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1faf-8157-1396-f304" name="Rich &amp; Greedy" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff4a-ef2b-e084-e2ca" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cc8-1a47-a761-8175" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="a55f-047d-bc77-a505" name="Rich &amp; Greedy" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Mercenary General only. All models using the Paymaster&apos;s Hold Your Ground ability may choose to re-roll just one of the dice when taking Break or Panic tests.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="9c70-920c-cd90-16bc" name="Rich &amp; Greedy" hidden="false" targetId="3241-63af-1f29-d343" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
@@ -9626,14 +9496,11 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <selectionEntry id="216a-7bbd-91f1-81a0" name="Poisoner" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e51a-43e2-96b5-9dcf" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="165e-64e4-82b5-7232" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="fb8b-74f0-94fe-1d0d" name="Poisoner" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Poisoned Attacks.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="081a-5e59-6e01-91cd" name="Poisoner" hidden="false" targetId="87b4-38ba-104a-0d6c" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -9641,14 +9508,11 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <selectionEntry id="c183-994e-13ab-29b2" name="Grizzled Warrior" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81c3-094a-5fcd-279f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b68d-dada-6716-cbbb" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="5c4e-4e06-f07f-b3ad" name="Grizzled Warrior" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">All successful To Wound rolls against this character must be re-rolled.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="eafd-dbbb-8294-60a5" name="Grizzled Warrior" hidden="false" targetId="cc4d-eb0b-dfd7-a42e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
@@ -9656,46 +9520,176 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <selectionEntry id="fb47-8c67-569b-f682" name="Fearless" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7da9-d04a-1893-8a93" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2328-fcae-c47f-07c2" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="3465-eff9-a5f0-fa9a" name="Fearless" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model and any unit it joins gain Immunity (Psychology).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="409f-9ee9-3426-93e8" name="Fearless" hidden="false" targetId="c3ab-68f8-fbf2-a4b7" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="eacf-682e-51dc-090c" name="Vanguard" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6519-8619-cf1e-40ea" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad08-02bb-99d1-dd02" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="07dd-fecf-7dbe-26df" name="Vanguard" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model and any unit it joins gain Vanguard.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="6ead-3e38-3f9d-c7ee" name="Vanguard" hidden="false" targetId="7c99-7450-c766-8e7c" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8fda-7f17-7263-04be" name="Veteran" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca4c-1b3d-246b-2418" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f02a-8f15-9873-97de" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="19c4-e94a-4125-2c6c" name="Veteran" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The character gains +1 WS.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="0ee1-e719-52ba-1aea" name="Veteran" hidden="false" targetId="67d2-ed38-92de-5abf" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="07f6-5b43-4b18-546d" name="Crushing Blow" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a06-273e-822d-485c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22e6-88dd-1e82-ac30" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d620-ceec-f2a2-563f" name="Crushing Blow" hidden="false" targetId="ea4d-1442-0cef-942e" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1d71-3b16-7b21-8c3d" name="Quirks of Character (Unit)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25b7-945f-2d38-a077" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0d19-159d-1a4a-67ca" name="Ambusher" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6655-8581-39f3-429d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9ba-dbe0-b7cd-5009" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9e93-9a2f-c53a-18d7" name="Ambusher" hidden="false" targetId="2870-a8ab-aeef-4423" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5c4e-11c4-f253-854b" name="Berserker" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2285-4818-8537-dd36" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f426-8f2d-865b-7e1b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1227-7ef9-13ea-24d5" name="Berserker" hidden="false" targetId="0633-9ab8-224a-5565" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5ac9-6871-ab1d-9c17" name="Blood Feud" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9731-2419-ed5b-6592" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5644-7b7c-a91b-22b4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8839-e16a-3512-a7a1" name="Blood Feud" hidden="false" targetId="b3a5-2cff-e539-39bf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="73f9-f282-0e56-263c" name="Ranger" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="960b-c9af-8092-4c5b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8dfc-1abe-281b-47c1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7a4f-7e88-5000-8ee1" name="Ranger" hidden="false" targetId="d039-2c67-b963-b149" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2c08-e42c-38b8-2563" name="Defiant" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="282e-db25-eb79-b182" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfd0-6a4c-31ab-42cd" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="96b9-3ff6-f98d-0aa4" name="Defiant" hidden="false" targetId="d63e-94dc-fde4-e1da" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4e66-f3a3-2425-d70c" name="Poisoner" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba99-fd20-af84-69ac" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e159-434c-bee9-b47a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e29e-5cef-d807-af69" name="Poisoner" hidden="false" targetId="87b4-38ba-104a-0d6c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d85a-5b2b-9c96-859f" name="Fearless" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b30-b964-fd3e-742e" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a262-0d52-8b37-1a94" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b46c-5233-da21-9820" name="Fearless" hidden="false" targetId="c3ab-68f8-fbf2-a4b7" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d1cb-9c7d-9a79-56ae" name="Vanguard" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a689-778d-67dc-c0fa" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c912-c9d7-a9ec-a5da" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0a5c-c9f5-cafe-deb3" name="Vanguard" hidden="false" targetId="7c99-7450-c766-8e7c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="526f-266a-fc03-f4ea" name="Veteran" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d801-0b26-119c-e765" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b06-2059-6e70-fc0c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8a37-5c87-e0f6-7ae7" name="Veteran" hidden="false" targetId="67d2-ed38-92de-5abf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e1a7-0e57-4591-48d1" name="Crushing Blow" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27cc-2fa4-cdc8-b435" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="69c6-eea2-88a0-652a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="328f-2126-968e-acfc" name="Crushing Blow" hidden="false" targetId="ea4d-1442-0cef-942e" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9703,7 +9697,7 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2c67-26d2-b08b-3286" name="The Best Money Can Buy" publicationId="8ada-88a0-cdcd-9b5e" page="43" hidden="false">
-      <description>If a Merchant Prince is included in your army, one Dogs of War unit (which is not a Regiment of Renown, character, monster or war machine) may increase its armour save by +1 (no effect on models with full plate armour) or gain Armour Piercing (1). This costs +1 point per model for Infantry, and 2 points per model for other troop types. Alternatively, the unit may take a Magic Standard worth up to 50 points.</description>
+      <description>If a Merchant Prince is included in your army, one Dogs of War unit (which is not a Regiment of Renown, character, monster or war machine) may increase its armour save by +1 or gain Armour Piercing (1). This costs +1 point per model for Infantry, and 2 points per model for other troop types. Alternatively, the unit may take a Magic Standard worth up to 50 points.</description>
     </rule>
     <rule id="29c1-0321-0595-8f17" name="Iron-hard Hooves" publicationId="8ada-88a0-cdcd-9b5e" page="69" hidden="false">
       <description>A Pegasus with this upgrade re-roils failed To Wound rolls.</description>
@@ -9712,7 +9706,7 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
       <description>A Pegasus with the Swift as the Wind upgrade re-rolls any dice results of a 1 when determining its charge range.</description>
     </rule>
     <rule id="d996-215a-4565-86db" name="Hobgoblin Animosity" publicationId="8ada-88a0-cdcd-9b5e" page="61" hidden="false">
-      <description>Units with this rule must roll a D6 and consult the Hobgoblin Animosity chart below at the start of the turn, unless they are already in combat, fleeing, or have less than 5 models.</description>
+      <description>Units with this rule must roll a D6 and consult the Hobgolin Animosity Chart in the Charge sub-phase after all other charges have been declared, unless they have declared a charge, are already in combat, fleeing, or have less than 5 models.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9828,14 +9822,14 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the wizard itself. They immediately make a move using Fly as if it were the Remaining Moves sub-phase.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the wizard itself. They immediately make a move using Fly (10) as if it were the Remaining Moves sub-phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="ced7-1e4b-19f2-de1e" name="Fires of U&apos;zhul" publicationId="72a4-a4fc-cfd6-d138" page="7" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+/8+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+/7+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/36&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits with Flaming Attacks.</characteristic>
       </characteristics>
@@ -9874,6 +9868,88 @@ I and a -1 penalty to Dangerous Terrain tests.</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">3+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. Is cast on the Wizard itself. The sword gives the wizard +1 To Hit, +2 S, +1 A and Flaming Attacks and Magical Attacks to their close combat attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="223c-171b-2de0-9b28" name="Elven Longbow" publicationId="8ada-88a0-cdcd-9b5e" page="57" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43"/>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Longbow. All shots with this weapon has Armour Piercing (1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2870-a8ab-aeef-4423" name="Ambusher" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Ambushers.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0633-9ab8-224a-5565" name="Berserker" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Frenzy.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b3a5-2cff-e539-39bf" name="Blood Feud" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model has Hatred.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="34a2-02a6-874c-06a5" name="Charismatic Leader" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">General Only. The model&apos;s Inspiring Presence range is increased by 6&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea4d-1442-0cef-942e" name="Crushing Blow" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Strength Bonus (1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9ff6-ec1f-d8e4-e958" name="Cunning" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Character only. The model may re-roll one failed To Hit roll each close combat phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d63e-94dc-fde4-e1da" name="Defiant" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Stubborn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8b19-4b6d-a172-39a7" name="Eagle Eye" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Character only. The model gains Sniper.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c3ab-68f8-fbf2-a4b7" name="Fearless" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Immunity (Fear, Panic).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cc4d-eb0b-dfd7-a42e" name="Grizzled Warrior" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Character only. All successful To Wound rolls against this model must be re-rolled.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="87b4-38ba-104a-0d6c" name="Poisoner" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Character, Duellists, Hobgoblins or Elves only. The model gains Poisoned Attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d039-2c67-b963-b149" name="Ranger" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">Character on foot and Skirmishers only. The model gains Scouts.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3241-63af-1f29-d343" name="Rich &amp; Greedy" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">General only. All friendly models using the Paymaster&apos;s Hold Your Ground ability may choose to re-roll just one of the dice when taking Break or Panic tests.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7c99-7450-c766-8e7c" name="Vanguard" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains Vanguard.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="67d2-ed38-92de-5abf" name="Veteran" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains +1 WS.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

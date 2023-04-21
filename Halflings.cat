@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9a34-2536-da13-b61a" name="Halflings" revision="14" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9a34-2536-da13-b61a" name="Halflings" revision="15" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5384-2616-b740-bea5" name="Before Battle Meal Table">
@@ -279,6 +279,7 @@
             <entryLink id="fb5d-48b5-51b0-1ad0" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="446a-8ca7-ebd8-fe2c" type="selectionEntryGroup"/>
             <entryLink id="3b44-021d-aaac-95ba" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
             <entryLink id="241e-02c2-5705-cd4c" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="2d93-6ac1-addc-a779" type="selectionEntryGroup"/>
+            <entryLink id="78e6-cea3-e493-aaf3" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -629,10 +630,11 @@
             <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b14e-4c61-ba08-84d3" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9530-93ad-418e-a665" name="Arcane Items" hidden="false" collective="false" import="true" targetId="2e59-a981-68aa-cc22" type="selectionEntryGroup"/>
+            <entryLink id="9530-93ad-418e-a665" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
             <entryLink id="8a52-dbfa-5f82-14fd" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="446a-8ca7-ebd8-fe2c" type="selectionEntryGroup"/>
             <entryLink id="f48b-e75c-db57-99b2" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
             <entryLink id="b390-d951-534e-4b59" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="2d93-6ac1-addc-a779" type="selectionEntryGroup"/>
+            <entryLink id="b957-2ab2-b76b-e6a1" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="2e59-a981-68aa-cc22" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4524,7 +4526,7 @@ Any magic item can be drawn out of the &apos;Swag&apos; Bag, but special items t
         <entryLink id="a023-c4f0-9637-7873" name="Magic Armour" hidden="false" collective="false" import="true" targetId="557c-c8c5-0c0f-d2b3" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2e59-a981-68aa-cc22" name="Arcane Items" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="2e59-a981-68aa-cc22" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78e3-048c-74c2-2b36" type="max"/>
       </constraints>
@@ -4547,7 +4549,7 @@ Any magic item can be drawn out of the &apos;Swag&apos; Bag, but special items t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="acdd-22fd-d55f-3478" name="Arcane Items" hidden="false" collective="false" import="true" targetId="6cd2-3f4b-da2d-1ee9" type="selectionEntryGroup"/>
+        <entryLink id="acdd-22fd-d55f-3478" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="3dfd-c3fd-5a56-45f1" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="446a-8ca7-ebd8-fe2c" name="Enchanted Items" hidden="false" collective="false" import="true">

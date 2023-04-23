@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="199b-5495-f6b6-fe0f" name="Lizardmen" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="8f38-4096-41a1-bd68" name="Discipline of the Old Ones">
@@ -142,6 +142,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="927a-0391-73a5-0b8a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="86bf-b5b7-088c-8817" value="0.0">
+              <conditions>
+                <condition field="points" scope="23ab-63f4-5496-4154" value="51.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b54-117c-88d9-4c89" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a10-57e3-d780-1fe6" type="max"/>
             <constraint field="points" scope="parent" value="100.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="86bf-b5b7-088c-8817" type="max"/>
@@ -181,14 +188,15 @@
           <selectionEntries>
             <selectionEntry id="8b54-117c-88d9-4c89" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="5f1f-8d58-4691-ac90" value="0.0">
+                <modifier type="set" field="c08d-53c3-7246-9959" value="50.0">
                   <conditions>
-                    <condition field="points" scope="23ab-63f4-5496-4154" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="927a-0391-73a5-0b8a" type="atLeast"/>
+                    <condition field="selections" scope="23ab-63f4-5496-4154" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="927a-0391-73a5-0b8a" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f1f-8d58-4691-ac90" type="max"/>
+                <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c08d-53c3-7246-9959" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="26b8-8849-93b9-e6be" name="Magic Standards" hidden="false" collective="false" import="true" targetId="4392-6388-0d15-2410" type="selectionEntryGroup"/>

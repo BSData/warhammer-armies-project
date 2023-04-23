@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="25" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="26" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="e151-a589-4fd4-2c1e" name="Animosity Chart">
@@ -1649,6 +1649,18 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="19cb-8ca6-3482-3fec" name="Great Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8e2-f4af-de2c-02ce" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d79e-e08d-6a57-1d33" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+                    <infoLink id="0999-6c8c-12f7-7ca5" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="95f1-d796-53c1-8e16" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="b5aa-7825-f91d-7f4c">
@@ -2153,7 +2165,7 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
                     <infoLink id="7853-a390-cd91-8648" name="Fireglaive (Combat)" hidden="false" targetId="9597-d493-c3ad-2813" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -6543,7 +6555,7 @@ If a double 1 is rolled, no damage is inflicted on the enemy unit. Instead the G
                     <infoLink id="33cf-fcc0-c30a-11dd" name="Fireglaive (Combat)" hidden="false" targetId="9597-d493-c3ad-2813" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>

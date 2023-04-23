@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="31" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="32" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
@@ -3360,19 +3360,49 @@ For each unsaved Wound caused by a Disciple in close combat, he gains +1 to cast
             <selectionEntry id="f865-0c10-5442-9213" name="Slave Master" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="979b-538b-b6e1-2665" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="16d1-9765-76f3-508e" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" repeats="1" roundUp="false"/>
-                  </repeats>
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="61.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="979b-538b-b6e1-2665" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="81.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="979b-538b-b6e1-2665" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="21.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="979b-538b-b6e1-2665" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="41.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
                 </modifier>
                 <modifier type="increment" field="4b79-6062-635e-0764" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="16d1-9765-76f3-508e" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" repeats="1" roundUp="false"/>
-                  </repeats>
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="21.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4b79-6062-635e-0764" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="41.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4b79-6062-635e-0764" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="61.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4b79-6062-635e-0764" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="16d1-9765-76f3-508e" value="81.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ac0-85c2-de8d-6097" type="atLeast"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="979b-538b-b6e1-2665" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b79-6062-635e-0764" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="979b-538b-b6e1-2665" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b79-6062-635e-0764" type="min"/>
               </constraints>
               <profiles>
                 <profile id="594d-3f27-9528-dab8" name="Slave Master" publicationId="9e23-79cb-pubN76150" page="125" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -4591,12 +4621,12 @@ For each unsaved Wound caused by a Disciple in close combat, he gains +1 to cast
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="8.0"/>
+            <cost name="pts" typeId="points" value="11.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="44.0"/>
+        <cost name="pts" typeId="points" value="38.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="258d-e0e0-ab96-edff" name="Melusai" hidden="false" collective="false" import="true" type="unit">
@@ -7284,7 +7314,7 @@ For each unsaved Wound caused by a Disciple in close combat, he gains +1 to cast
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e18c-e3b6-94b4-67db" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7781-a183-fb4b-8de6" name="Light Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+            <infoLink id="7781-a183-fb4b-8de6" name="Light Armour" hidden="false" targetId="4129-1acd-3564-d3ea" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>

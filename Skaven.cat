@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="37" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="38" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d5d-95c5-9736-ddda" name="Ringing the Bell Table">
@@ -593,7 +593,7 @@ If the Screaming Bell suffers one or more wounds inflicted by a shooting attack 
                         <infoLink id="f92f-dfd1-c51a-1e58" name="Skryre Claws" hidden="false" targetId="863e-2af3-719c-4567" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="5.0"/>
+                        <cost name="pts" typeId="points" value="10.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="6064-cddf-8d4f-4420" name="Rusted Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -1728,7 +1728,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                         <infoLink id="9747-b463-a7cb-e1d4" name="Skryre Claws" hidden="false" targetId="863e-2af3-719c-4567" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="5.0"/>
+                        <cost name="pts" typeId="points" value="10.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="9dca-f54d-a1db-ba81" name="Rusted Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -7789,7 +7789,7 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                 </profile>
               </profiles>
               <rules>
-                <rule id="81ff-92f5-f3c4-5edd" name="Roden Genius" publicationId="47b1-3485-34cf-bc48" page="3" hidden="false">
+                <rule id="81ff-92f5-f3c4-5edd" name="Rodent Genius" publicationId="47b1-3485-34cf-bc48" page="3" hidden="false">
                   <description>Any rolls on the Misfire table for all Clan Skryre units may be re-rolled.</description>
                 </rule>
                 <rule id="7497-ba10-9155-0ff9" name="Warpstone Mutants" publicationId="47b1-3485-34cf-bc48" page="3" hidden="false">
@@ -7856,23 +7856,19 @@ shut down, Boneripper cannot do anything at all, and in combat he will be hit au
                 <selectionEntry id="30c0-6908-6b5d-2e30" name="Warp-Blades" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3e1-a833-7e31-331a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73ca-6dc6-dedd-dcb6" type="min"/>
                   </constraints>
-                  <profiles>
-                    <profile id="8211-adee-1a61-8772" name="Warp-Blades" publicationId="4086-1ccd-f433-39a2" page="189" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
-                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Polearm. Warp-Blades give the bearer +1 to cast the Warp Lightning spell from the Lore of Ruin.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <infoLinks>
+                    <infoLink id="54ba-0a4b-52f7-26c6" name="Warp-Blades" hidden="false" targetId="9bc0-10de-61dd-f230" type="profile"/>
+                  </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="10.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="621c-0a62-56b4-e2c9" name="Warplock Pistol" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9630-ddb6-2702-fee9" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5b8-1111-ace2-5242" type="min"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="3dcb-fb66-b0ee-f380" name="Warplock Pistol" hidden="false" targetId="0976-5ad1-1c64-7ceb" type="profile"/>
@@ -8791,15 +8787,9 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f6e-713e-065b-5d76" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="d1b4-930d-6cb8-db05" name="Warp-Blades" publicationId="4086-1ccd-f433-39a2" page="189" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
-                <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
-                <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Polearm. Warp-Blades give the bearer +1 to cast the Warp Lightning spell from the Lore of Ruin.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="b4b3-7dd3-68b9-9432" name="Warp-Blades" hidden="false" targetId="9bc0-10de-61dd-f230" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
@@ -12680,6 +12670,13 @@ If the result on the artillery dice is a misfire, centre the template on the cas
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target gets Poisoned Attacks  until the start of the caster&apos;s next Magic phase. If the unit already has Poisoned Attacks, the warriors will also cause an automatic wound on a To Hit roll of 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9bc0-10de-61dd-f230" name="Warp-Blades" publicationId="4086-1ccd-f433-39a2" page="189" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">Combat</characteristic>
+        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add"/>
+        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Polearm. Warp-Blades give the bearer +1 to cast the Warp Lightning spell from the Lore of Ruin.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

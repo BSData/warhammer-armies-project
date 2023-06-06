@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="37" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="38" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -49,11 +49,11 @@
     <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters v.1.3" shortName="Br" publisher="Warhammer - Bretonnia Special Characters 1.3" publicationDate="28.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fef7-683c-50d7-d1bb" name="Dwarfs Special Characters v.1.0" shortName="Dw" publisher="Warhammer - Dwarfs Special Characters 1.0" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="1354-aa33-a41b-202a" name="High Elves Special Characters v.1.3" shortName="HE" publisher="Warhammer - High Elves Special Characters 1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters v.1.4" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.4" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters v.1.5" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.5" publicationDate="28.05.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="47b1-3485-34cf-bc48" name="Skaven Special Characters v.1.1" shortName="Sk" publisher="Warhammer - Skaven Special Characters 1.1" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="f4eb-8c89-b57e-d2df" name="Wood Elves Special Characters v.1.2" shortName="WE" publisher="Warhammer - Wood Elves Special Characters 1.2" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fe07-d23f-5110-8489" name="Lizardmen Special Characters v.1.2" shortName="LM" publisher="Warhammer - Lizardmen Special Characters 1.2" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="72a4-a4fc-cfd6-d138" name="Dogs of War Special Characters v.1.1" shortName="DoW" publisher="Warhammer - Dogs of War Special Characters 1.1" publicationDate="27.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="72a4-a4fc-cfd6-d138" name="Dogs of War Special Characters v.1.2" shortName="DoW" publisher="Warhammer - Dogs of War Special Characters 1.2" publicationDate="30.05.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="f46b-8c4e-ed82-05f7" name="Warriors of Chaos Special Characters v.1.3" shortName="WoC" publisher="Warhammer - Warriors of Chaos Special Characters 1.3" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
   </publications>
   <costTypes>
@@ -23340,7 +23340,7 @@ flee or pursue.</description>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6/2D6/3D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1d55-f70f-d713-0f87" name="Fireball (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="145" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="1d55-f70f-d713-0f87" name="Fireball (Bound Spell 3+)" publicationId="9e23-79cb-pubN66727" page="145" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24978,6 +24978,15 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
     <profile id="2624-b6e6-e171-5b72" name="06 (Animosity Chart)" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false" typeId="9025-f9c9-08a1-7918" typeName="Animosity Chart">
       <characteristics>
         <characteristic name="Result" typeId="fb86-d23a-8886-cc3b">We&apos;ll Show &apos;Em: Pivot the unit on the spot to face the nearest visible enemy unit, and then make a full (non-march) move in a straight line towards it. If there is no visible enemy, the unit must move straight ahead instead. If it is impossible for the unit to pivot to face the closest enemy, it will pivot towards it as far as it can, and will then move as far forward as it can while still keeping the enemy within its forward arc. After the move is complete the unit must immediately declare a charge against the closest visible enemy unit, if it is possible to do so. If the unit cannot declare a charge then it may carry on with the rest of its turn normally, as if it had not yet moved this turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a2ab-616d-3db2-492a" name="Fireball (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="145" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="64a1-690b-5a90-4de6" name="Dogs of War" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="1a86-ad23-323a-d30c" name="Quirk of Character">
@@ -3460,25 +3460,10 @@ If the Paymaster is killed, all friendly units gain Hatred against the enemy uni
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ac-49b2-d3db-187c" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="49e7-6832-d002-1381" name="Stradiot" publicationId="8ada-88a0-cdcd-9b5e" page="54" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-              <characteristics>
-                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
-                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
-                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
-                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
-                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
-                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
-                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
-                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Human)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="698d-9d20-8fe5-962f" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
             <infoLink id="4057-9abe-e8c5-7e95" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
+            <infoLink id="209a-c85a-02ee-4674" name="Stradiot" hidden="false" targetId="becd-3f5d-07d8-32c0" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="b73e-fefd-ae94-22b2" name="Warhorse" hidden="false" collective="true" import="true" type="model">
@@ -6150,9 +6135,6 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0f62-c8a1-5fbb-c777" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="b7c7-cb3b-8a14-b411" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
       </categoryLinks>
@@ -7230,7 +7212,7 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
         <categoryLink id="886e-0f2f-7226-512a" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4d04-a857-62aa-4f1f" name="Character" hidden="false" collective="false" import="true" defaultSelectionEntryId="6fc0-bc6a-e3ea-9585">
+        <selectionEntryGroup id="4d04-a857-62aa-4f1f" name="Character" hidden="false" collective="false" import="true" defaultSelectionEntryId="f636-2d37-9936-4366">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="580a-72c3-6d58-86c6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a170-6933-dd67-fb1d" type="min"/>
@@ -8047,6 +8029,107 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="220.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f636-2d37-9936-4366" name="Morgan Bernhardt" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="6fff-57aa-5cd4-87fc" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed2f-f8db-8a82-c341" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ddbc-87b5-951f-016a" type="max"/>
+                <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6fff-57aa-5cd4-87fc" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="49f6-14d0-67c0-59d8" name="Morgan Bernhardt" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="LD" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Special Character, Human)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="0d70-cecc-e0b7-a9b3" name="Grudgebringer Cavalry" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false">
+                  <description>Morgan Bernhardt must be accompanied by a unit of Stradiots armed with hand weapons, medium armour, shields and the Defiant Quirk of Character. The unit may include a standard bearer and musician, but not any other upgrades. He may never leave this unit during the game.</description>
+                </rule>
+              </rules>
+              <selectionEntries>
+                <selectionEntry id="a0a5-0a4d-1624-2bd6" name="Warhorse" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c2a-c968-f9a2-f847" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c48-f80f-b718-8d58" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0998-60b6-6247-ac5f" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+                    <infoLink id="8fc6-ca3b-7167-e8b6" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                    <infoLink id="b3d4-70bd-3bd1-76cd" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f035-d439-4814-ca35" name="Grudgebringer Sword" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04cc-55be-77fb-98c4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57f0-1620-d677-69e2" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="41d8-fd10-78fa-31cb" name="Grudgebringer Sword" publicationId="72a4-a4fc-cfd6-d138" page="3" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4285-3917-6bf9-348b">Combat</characteristic>
+                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
+                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">All attacks made with the Grudgebringer Sword may re-roll failed rolls to Hit and have Flaming Attacks. In addition, it contains the Fireball spell from the Lore of Fire as a Bound Spell, cast on 4+.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="c049-d5de-6902-8ded" name="Fireball (Bound Spell 4+)" hidden="false" targetId="a2ab-616d-3db2-492a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="37bb-cc4e-8d0f-299f" name="Medium Armor" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9477-b4ab-e1b8-0536" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2726-f6e7-42bd-683f" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="43d8-b536-817e-d1a1" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="319e-0b85-8901-c654" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb0f-01e9-cd73-d1d6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ac0-928b-b571-e258" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fd3f-74cf-1f8e-4351" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="ad77-8392-76cf-1c4e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="150.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8947,6 +9030,125 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed2f-f8db-8a82-c341" name="Grudgebringer Cavalry" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f636-2d37-9936-4366" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="148c-a754-8bef-8529" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f636-2d37-9936-4366" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="148c-a754-8bef-8529" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d653-3d9f-1cf8-ac1f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="40a4-887b-cc9a-b5cd" name="New CategoryLink" hidden="false" targetId="b876-2856-f1c2-c4f0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d20-e226-5903-fc75" name="Stradiot" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3a7-bd8f-84bd-fd06" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="35bd-7c17-e4e0-2490" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+            <infoLink id="c44a-54f7-5185-7f66" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
+            <infoLink id="5bdc-86ed-8f2d-6504" name="Stradiot" hidden="false" targetId="becd-3f5d-07d8-32c0" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="05c8-dc0d-4536-e51b" name="Warhorse" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75d3-9409-df81-d268" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edb7-df5c-13b3-59c5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="be5d-0439-5653-2099" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
+                <infoLink id="899d-6b30-f0b6-1aa9" name="Impact Hits (1)" hidden="false" targetId="bb3b-3ca8-fcbc-a78b" type="rule"/>
+                <infoLink id="d3f4-4867-9431-a8a6" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="62a5-1957-18cb-c9ed" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9de-8d43-16be-d535" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="495e-ae43-5a88-7701" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a146-0b0c-801f-f0e2" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3371-367e-36f3-584b" name="Medium Armour" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f752-88b2-0cab-06bf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65cb-e2f9-bf82-b04a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a7f9-1c3d-77e7-4f07" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bd52-4c3e-aa55-f8dc" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f9c-507f-d014-6331" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8de-12cf-0399-1483" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="02ce-c15d-4771-c775" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="14.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="24d0-6ca0-6956-2f87" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="7745-ca50-6dcd-791e" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f142-6096-4efa-7132" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7ab1-2d8e-de03-749b" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c581-af07-fe96-7ccd" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5427-fe82-28ca-e3bf" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3ec3-17c0-6b27-f059" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -9932,6 +10134,20 @@ If no Misfires are rolled, the number of shots fired is equal to the total on th
     <profile id="67d2-ed38-92de-5abf" name="Veteran" publicationId="8ada-88a0-cdcd-9b5e" page="85" hidden="false" typeId="1a86-ad23-323a-d30c" typeName="Quirk of Character">
       <characteristics>
         <characteristic name="Special Rules" typeId="f6cc-ecc5-a476-801c">The model gains +1 WS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="becd-3f5d-07d8-32c0" name="Stradiot" publicationId="8ada-88a0-cdcd-9b5e" page="54" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Cavalry (Human)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

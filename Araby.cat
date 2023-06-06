@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="fac7-f094-ecff-930e" name="Bladedances">
@@ -922,7 +922,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="1b1a-848f-43ab-f155" name="Khar-Mel" hidden="false" collective="false" import="true" targetId="f867-c806-65f6-7ee3" type="selectionEntry"/>
+            <entryLink id="1b1a-848f-43ab-f155" name="Khar-Mel (Hero)" hidden="false" collective="false" import="true" targetId="24e7-e27c-31d7-e6f7" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5791,35 +5791,11 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="f867-c806-65f6-7ee3" name="Khar-Mel" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f867-c806-65f6-7ee3" name="Khar-Mel (Lord)" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="45bd-45f0-6bd8-b777" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8492-07ad-345f-d46d" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="942a-6ff2-712f-15d8" name="Khar-Mel" publicationId="d221-484d-439d-4310" page="89" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
-          <characteristics>
-            <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
-            <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
-            <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
-            <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
-            <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
-            <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
-            <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
-            <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
-            <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
-            <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="7bc3-c1a2-b54a-cf71" name="Khar-mel&apos;s Curse" publicationId="d221-484d-439d-4310" page="89" hidden="false">
-          <description>All enemy units within 6&quot; of Khar-mel suffer a -1 modifier to their To Hit rolls for both close combat and missile attacks, as well as -1 to any armour, Ward or Regeneration saves they might have.</description>
-        </rule>
-        <rule id="1cba-6268-c016-acec" name="Khar-mel&apos;s Luck" publicationId="d221-484d-439d-4310" page="89" hidden="false">
-          <description>Khar-mel may re-roll failed Ward saves.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="e43b-098e-95f0-58a0" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
         <infoLink id="37f3-9358-22c3-8e8d" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
@@ -5828,7 +5804,10 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
         <infoLink id="e916-3f1d-cc96-2148" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
         <infoLink id="4a4d-ec9e-7a80-4372" name="Djinn" hidden="false" targetId="7e64-1b32-e64c-5e86" type="rule"/>
         <infoLink id="751f-20b7-de17-142f" name="Magical Attacks" hidden="false" targetId="03db-d81f-f264-84b8" type="rule"/>
-        <infoLink id="a135-5dce-5909-b083" name="Wind Blast (Bound Spell 4+)" hidden="false" targetId="bd35-6d41-ee5b-045f" type="profile"/>
+        <infoLink id="a135-5dce-5909-b083" name="Khar-Mel" hidden="false" targetId="4ff5-86ba-6851-3a16" type="profile"/>
+        <infoLink id="26ea-6f9c-f655-87a9" name="Wind Blast (Bound Spell 4+)" hidden="false" targetId="bd35-6d41-ee5b-045f" type="profile"/>
+        <infoLink id="126d-0b68-094a-d01d" name="Khar-mel&apos;s Curse" hidden="false" targetId="9cc3-9e21-c1fc-b4fa" type="rule"/>
+        <infoLink id="fba4-2e8e-2187-da4e" name="Khar-mel&apos;s Luck" hidden="false" targetId="179d-1edc-0fbe-2a0d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="498c-0872-72dd-e2dc" name="New CategoryLink" hidden="false" targetId="d280-b7df-c185-2ba5" primary="false"/>
@@ -6252,6 +6231,45 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="24e7-e27c-31d7-e6f7" name="Khar-Mel (Hero)" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3394-2bdd-26a9-eb3a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc61-a68b-80db-743d" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="cf2d-1e97-ba94-6897" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
+        <infoLink id="9912-4b6d-9a5d-cc28" name="Unstable" hidden="false" targetId="b779-6d7f-8298-7c82" type="rule"/>
+        <infoLink id="4b09-73c4-3166-ed4a" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
+        <infoLink id="d067-8d41-bf02-efd9" name="Genie Binding" hidden="false" targetId="f19f-3812-9763-7466" type="rule"/>
+        <infoLink id="a632-239f-4a7b-af35" name="Ward Save (5+)" hidden="false" targetId="4b60-6477-75a8-f6dd" type="rule"/>
+        <infoLink id="89f0-9eb6-be60-1cc1" name="Djinn" hidden="false" targetId="7e64-1b32-e64c-5e86" type="rule"/>
+        <infoLink id="c76f-27c5-4af1-0842" name="Magical Attacks" hidden="false" targetId="03db-d81f-f264-84b8" type="rule"/>
+        <infoLink id="d864-a27e-014f-1ba7" name="Khar-Mel" hidden="false" targetId="4ff5-86ba-6851-3a16" type="profile"/>
+        <infoLink id="219b-c045-fbd6-7ffa" name="Wind Blast (Bound Spell 4+)" hidden="false" targetId="bd35-6d41-ee5b-045f" type="profile"/>
+        <infoLink id="7795-d9e0-1b02-5e1d" name="Khar-mel&apos;s Curse" hidden="false" targetId="9cc3-9e21-c1fc-b4fa" type="rule"/>
+        <infoLink id="9287-cfa7-ce8a-3f7c" name="Khar-mel&apos;s Luck" hidden="false" targetId="179d-1edc-0fbe-2a0d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bb0c-b861-7f13-6628" name="Heroes" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="124c-d553-b35c-de96" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a2e-5046-0947-8959" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0067-191f-6fda-a626" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c887-b0dc-ab1e-c5e5" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="160.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b9c6-d6bd-3867-d8e6" name="Arcane Items" hidden="false" collective="false" import="true">
@@ -6663,6 +6681,12 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
     <rule id="e9fd-0625-11fc-ff39" name="Radiant Aura" publicationId="d221-484d-439d-4310" page="72" hidden="false">
       <description>The model has a one use only S 2 Breath Weapon.</description>
     </rule>
+    <rule id="9cc3-9e21-c1fc-b4fa" name="Khar-mel&apos;s Curse" publicationId="d221-484d-439d-4310" page="89" hidden="false">
+      <description>All enemy units within 6&quot; of Khar-mel suffer a -1 modifier to their To Hit rolls for both close combat and missile attacks, as well as -1 to any armour, Ward or Regeneration saves they might have.</description>
+    </rule>
+    <rule id="179d-1edc-0fbe-2a0d" name="Khar-mel&apos;s Luck" publicationId="d221-484d-439d-4310" page="89" hidden="false">
+      <description>Khar-mel may re-roll failed Ward saves.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2cb7-c0c4-9c8b-f80a" name="Dao" publicationId="d221-484d-439d-4310" page="56" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -6905,6 +6929,20 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">8</characteristic>
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ff5-86ba-6851-3a16" name="Khar-Mel" publicationId="d221-484d-439d-4310" page="89" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="09ad-18df-607b-1215">6</characteristic>
+        <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+        <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+        <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+        <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+        <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+        <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+        <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+        <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">Monstrous Infantry (Special Character)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="38" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="39" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d5d-95c5-9736-ddda" name="Ringing the Bell Table">
@@ -1396,7 +1396,6 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                 <infoLink id="7dcd-1c91-d5b3-0911" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
                 <infoLink id="c876-92a4-424a-db71" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
                 <infoLink id="9ac4-6de6-a50c-0286" name="Magic Resistance (2)" hidden="false" targetId="0e09-3526-25d5-2646" type="rule"/>
-                <infoLink id="a490-dfa1-53ab-5492" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="e541-95d8-ea82-f826" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="c1a7-f5f1-4a9b-d482" name="Wrecker Attack" hidden="false" targetId="d3ca-4052-20b9-4293" type="rule"/>
                 <infoLink id="c7ec-96b5-3fd9-adcf" name="Billowing Death" hidden="false" targetId="6dea-37fb-3d6e-416d" type="rule"/>
@@ -2529,7 +2528,6 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                 <infoLink id="21c6-2e9d-a570-a9ce" name="Fear" hidden="false" targetId="7bd0-8602-4375-a731" type="rule"/>
                 <infoLink id="99c7-cca1-8f39-f3ff" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
                 <infoLink id="9b4d-6e49-2d25-1597" name="Large Target (5)" hidden="false" targetId="1b3d-4a57-6f3e-25d7" type="rule"/>
-                <infoLink id="cbed-15d6-366e-2160" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
                 <infoLink id="6258-cf8c-f7fe-39d6" name="Frenzy" hidden="false" targetId="9ff3-dda6-e142-5a77" type="rule"/>
                 <infoLink id="dac6-39d1-7482-5a8a" name="Wrecker Attack" hidden="false" targetId="d3ca-4052-20b9-4293" type="rule"/>
                 <infoLink id="5665-40d2-28b1-2dc3" name="Billowing Death" hidden="false" targetId="6dea-37fb-3d6e-416d" type="rule"/>
@@ -6867,7 +6865,11 @@ Note that if Spinetail is included in your army, no other model may be given the
               </selectionEntries>
               <entryLinks>
                 <entryLink id="9291-a153-942f-8e0d" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-                <entryLink id="a425-88c7-90e4-e58c" name="Blade of Corruption" hidden="false" collective="false" import="true" targetId="bca9-33e8-37c8-20f7" type="selectionEntry"/>
+                <entryLink id="a425-88c7-90e4-e58c" name="Blade of Corruption" hidden="false" collective="false" import="true" targetId="bca9-33e8-37c8-20f7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1899-72ad-fa6e-d6ee" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="160.0"/>
@@ -8892,15 +8894,9 @@ character and in his line of sight. The template then scatters D6&quot;. All mod
             <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cc1-6661-5000-c2dc" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="4139-d521-febf-2171" value="1.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cc1-6661-5000-c2dc" type="instanceOf"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5faa-1719-3474-648f" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4139-d521-febf-2171" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e6a1-b008-df17-0232" type="max"/>
       </constraints>
       <profiles>

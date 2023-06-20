@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="32" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d5f5-ad84-7e47-d02e" name="Warriors of Chaos" revision="33" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="49dc-2fd8-b942-dbc2" name="Chaos Mutations and Powers">
@@ -1535,17 +1535,6 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d44b-cbf6-5bc8-6257" type="max"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="5bc7-f67c-d3a8-fc7c" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a03-2eb7-0d96-fd79" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="968f-3342-658f-71ab" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="6.0"/>
-                      </costs>
-                    </selectionEntry>
                     <selectionEntry id="129b-ff68-e75b-bcc8" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92b1-fd3a-159c-9eda" type="max"/>
@@ -17850,7 +17839,11 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
                         </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink id="54e6-0ee1-da05-e30e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                        <entryLink id="54e6-0ee1-da05-e30e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="420e-2b29-9922-5a00" type="min"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="655.0"/>
@@ -17934,7 +17927,11 @@ If you do not have a spare Daemon Prince model, or if it cannot be placed on the
                         </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink id="20c4-16b7-942f-0fc4" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                        <entryLink id="20c4-16b7-942f-0fc4" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1041-4d7c-79e6-8e0f" type="min"/>
+                          </constraints>
+                        </entryLink>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="655.0"/>
@@ -20889,13 +20886,6 @@ failed charge rolls.</characteristic>
               </costs>
             </selectionEntry>
             <selectionEntry id="bc24-6680-b227-36f7" name="Archaon" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="3e20-ab4a-5199-10cb" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6df-abcd-e981-4319" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5488-4a58-7bc8-4bd7" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3e20-ab4a-5199-10cb" type="max"/>
@@ -21129,7 +21119,11 @@ failed charge rolls.</characteristic>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="0e68-fc40-cd14-6e00" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="0e68-fc40-cd14-6e00" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1070-61ab-c888-27e1" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="580.0"/>
@@ -22030,7 +22024,7 @@ If Crom uses two hand weapons, he gains +3 Attacks rather than +1.</description>
               </profiles>
               <rules>
                 <rule id="9b2a-25c5-ea21-13fd" name="Plague Knights" publicationId="f46b-8c4e-ed82-05f7" page="35" hidden="false">
-                  <description>If Kayzk is included in your army, you may upgrade one unit of Chaos Knights with the Mark of Nurgle to Plague Knights for +8 points per model. Plague Knights ride Rot Beasts of Nurgle and have Fear and Regeneration (5+).</description>
+                  <description>If Kayzk is included in your army, you may upgrade one unit of Chaos Knights with the Mark of Nurgle to Plague Knights for +24 points per model. Plague Knights ride Rot Beasts of Nurgle and have Fear and Regeneration (5+).</description>
                 </rule>
                 <rule id="9c18-1045-644c-e1d0" name="Corrupted Flesh" publicationId="f46b-8c4e-ed82-05f7" page="35" hidden="false">
                   <description>All attacks (except those with Flaming Attacks) suffer -1 To Wound Kayzk the Befouled.</description>

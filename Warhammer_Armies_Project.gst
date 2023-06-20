@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="38" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="39" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -14290,6 +14290,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
         <selectionEntry id="7384-194f-2b0c-4bea" name="Galloper Gun" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50c-6b49-18ca-83b1" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f8-e143-81f0-778b" type="max"/>
           </constraints>
           <profiles>
             <profile id="a2c3-73b2-d8af-cda0" name="Galloper Gun" publicationId="9e23-79cb-pubN116235" page="51" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -23355,7 +23356,7 @@ flee or pursue.</description>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The casting difficulty for a Lore of Metal spell is lowered by 1 if the majority of the models in the target unit have light or medium armour, or lowered by 2 to if the majority have heavy or full plate armour.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The casting value for a Lore of Metal spell is lowered by 1 if the majority of the models in the target unit have a close combat armour save of 4+ to 6+, or lowered by 2 to if the majority have a close combat armour save of 1+ to 3+ (excluding Natural Armour). Roll a D6 in case of a tie.</characteristic>
       </characteristics>
     </profile>
     <profile id="6bd0-6da5-dee9-b098" name="Searing Doom" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">

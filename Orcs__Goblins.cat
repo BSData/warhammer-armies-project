@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="34" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="35" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="bf00-3101-4063-678b" name="Animosity Table">
@@ -12060,9 +12060,6 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="205b-83bc-a576-803e" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1728-0930-a486-fc7d" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee65-5592-86e4-59db" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS NGBB" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS SOBB" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ABS OBB" type="atLeast"/>
@@ -12186,7 +12183,11 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="1d33-dd7e-9a91-0303" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="1d33-dd7e-9a91-0303" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="859a-170d-db38-120c" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="335.0"/>
@@ -12314,19 +12315,6 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
               </costs>
             </selectionEntry>
             <selectionEntry id="205b-83bc-a576-803e" name="Morglum Necksnapper" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="b41d-3eff-7eee-9cc3" value="0.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8e0-ad29-9afd-2d7e" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1728-0930-a486-fc7d" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee65-5592-86e4-59db" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b41d-3eff-7eee-9cc3" type="max"/>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4057-2f3c-bf03-87f0" type="max"/>
@@ -12414,7 +12402,11 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="ab87-1ace-280a-046e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="ab87-1ace-280a-046e" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0a0f-caaf-0ac5-ea34" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="260.0"/>
@@ -12646,7 +12638,7 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 <entryLink id="483a-a50f-0a2b-f5dd" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="460.0"/>
+                <cost name="pts" typeId="points" value="500.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="229e-180e-5a5e-f6b0" name="Gorfang Rotgut" hidden="false" collective="false" import="true" type="model">
@@ -12730,19 +12722,6 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
               </costs>
             </selectionEntry>
             <selectionEntry id="1728-0930-a486-fc7d" name="Grimgor Ironhide" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="637c-09ec-208d-36ac" value="0.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="205b-83bc-a576-803e" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8e0-ad29-9afd-2d7e" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee65-5592-86e4-59db" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="637c-09ec-208d-36ac" type="max"/>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ab51-f9ee-6156-4a86" type="max"/>
@@ -12834,7 +12813,11 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="ba46-d12c-0f1f-12be" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="ba46-d12c-0f1f-12be" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d82-4fb6-78c0-b20d" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="320.0"/>
@@ -12846,10 +12829,7 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="205b-83bc-a576-803e" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1728-0930-a486-fc7d" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="229e-180e-5a5e-f6b0" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8e0-ad29-9afd-2d7e" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7669-30f4-69c6-01fa" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077a-051b-bcd4-eb56" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22ea-d1c8-6a46-c371" type="atLeast"/>
@@ -13015,7 +12995,11 @@ The target has its WS reduced to 1 until the end of the next turn. This has no e
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="865b-264d-5fd6-7dc6" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="865b-264d-5fd6-7dc6" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e59e-8b1e-215c-f978" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="240.0"/>

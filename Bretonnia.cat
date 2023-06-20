@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="32" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b575-9224-4fce-6de1" name="Bretonnia" revision="33" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
@@ -5548,7 +5548,11 @@ During the game, the Green Knight may disappear at will and reappear in another 
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="4f64-a6e2-c7db-a3e5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="4f64-a6e2-c7db-a3e5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c34-0581-93ea-2980" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="385.0"/>
@@ -5575,7 +5579,7 @@ During the game, the Green Knight may disappear at will and reappear in another 
                 </profile>
               </profiles>
               <rules>
-                <rule id="39f7-c79c-ae7e-7e4c" name="Alberic of Bordeleaux" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false">
+                <rule id="39f7-c79c-ae7e-7e4c" name="Spirit of the Tempest" publicationId="ff43-3b22-4e64-1d31" page="1" hidden="false">
                   <description>Alberic, and any models in the same unit, may re-roll 1&apos;s to Hit in close combat.</description>
                 </rule>
               </rules>
@@ -5616,7 +5620,7 @@ During the game, the Green Knight may disappear at will and reappear in another 
                         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
                         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
                         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-                        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">This is a magic missile with that causes 2D6 S 3 hits.</characteristic>
+                        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">This is a magic missile that causes 2D6 S 3 hits.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5742,7 +5746,11 @@ During the game, the Green Knight may disappear at will and reappear in another 
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="a671-e6ae-695c-9ef2" name="Braid of Bordeleaux" hidden="false" collective="false" import="true" targetId="e72e-4db8-d710-056d" type="selectionEntry"/>
+                <entryLink id="a671-e6ae-695c-9ef2" name="Braid of Bordeleaux" hidden="false" collective="false" import="true" targetId="e72e-4db8-d710-056d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb5e-0336-8083-9619" type="min"/>
+                  </constraints>
+                </entryLink>
                 <entryLink id="e49c-f8e6-af35-eda3" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -8009,11 +8017,6 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
     </selectionEntry>
     <selectionEntry id="e72e-4db8-d710-056d" name="Braid of Bordeleaux" page="" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="58ba-38a8-c4cb-8c5d" value="1.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="437f-b00f-8a74-3e82" type="instanceOf"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="points" value="0.0">
           <conditions>
             <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="437f-b00f-8a74-3e82" type="instanceOf"/>
@@ -8022,7 +8025,6 @@ If both his beloved wolfhounds are slain, Reynard immediately becomes subject to
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8057-ae0a-dfd3-74b1" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58ba-38a8-c4cb-8c5d" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e28c-fcfe-cff6-4e5b" type="max"/>
       </constraints>
       <profiles>

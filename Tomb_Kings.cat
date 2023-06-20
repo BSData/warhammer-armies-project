@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="28" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5f0e-5e33-61a6-a2ee" name="Tomb Kings" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7c10-2fc1-fb87-88ca" name="Entombed Beneath the Sands Mishap Table">
@@ -5789,13 +5789,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
           </constraints>
           <selectionEntries>
             <selectionEntry id="f0f0-d61c-7461-7962" name="Settra the Imperishable" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="3069-d6c6-d631-0786" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2301-d0ec-32fe-2ec7" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3069-d6c6-d631-0786" type="max"/>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="59b7-2285-1d07-f678" type="max"/>
@@ -5983,7 +5976,11 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="5bc1-4517-9a01-feb9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="5bc1-4517-9a01-feb9" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f412-a366-2345-a002" type="min"/>
+                  </constraints>
+                </entryLink>
                 <entryLink id="37c5-6984-6ec1-64e3" name="Hierophant" hidden="false" collective="false" import="true" targetId="6d08-1b34-d5e3-80e2" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -5991,20 +5988,6 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
               </costs>
             </selectionEntry>
             <selectionEntry id="2301-d0ec-32fe-2ec7" name="King Phar" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="1761-4234-7389-e5f3" value="0.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e5-290d-1398-8bff" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b5-f16a-35ed-2caa" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22a1-3d1a-1dd6-977b" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0f0-d61c-7461-7962" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1761-4234-7389-e5f3" type="max"/>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a634-6f2e-1883-1ead" type="max"/>
@@ -6133,7 +6116,11 @@ A unit cannot be taken beyond its starting size unless specified, and no single 
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="c6d6-eeb2-d09b-2bf8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="c6d6-eeb2-d09b-2bf8" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d15a-a11f-4c51-ebe1" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="250.0"/>
@@ -6615,7 +6602,11 @@ Roll an Artillery dice to determine the number of hits caused. If a Misfire is r
               </selectionEntries>
               <entryLinks>
                 <entryLink id="a870-f58d-cdc6-754c" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
-                <entryLink id="4072-2e84-d5bb-e5d4" name="Hierophant" hidden="false" collective="false" import="true" targetId="6d08-1b34-d5e3-80e2" type="selectionEntry"/>
+                <entryLink id="4072-2e84-d5bb-e5d4" name="Hierophant" hidden="false" collective="false" import="true" targetId="6d08-1b34-d5e3-80e2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4df7-4d40-4df4-412b" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="340.0"/>

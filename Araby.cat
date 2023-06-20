@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5054-fb11-bd56-cd58" name="Araby" revision="24" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="fac7-f094-ecff-930e" name="Bladedances">
@@ -4550,13 +4550,6 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
           </constraints>
           <selectionEntries>
             <selectionEntry id="d172-803a-0460-1881" name="Khalil Al-Zahir" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="2e99-4cca-4c52-d989" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d466-da9b-cf89-7f0f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2e99-4cca-4c52-d989" type="max"/>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4376-3e30-8c02-aad7" type="max"/>
@@ -4692,7 +4685,11 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="d9ac-9923-9e33-5df5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="d9ac-9923-9e33-5df5" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="77df-653c-15b4-cd67" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="295.0"/>
@@ -4810,13 +4807,6 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
               </costs>
             </selectionEntry>
             <selectionEntry id="d466-da9b-cf89-7f0f" name="Sultan Jaffar" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="f91a-6770-1515-e049" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d172-803a-0460-1881" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f91a-6770-1515-e049" type="max"/>
                 <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e060-45af-63f5-faa4" type="max"/>
@@ -5006,7 +4996,11 @@ An enemy unit that charges a unit of Dervishes suffers D3 S 3 hits with Poisoned
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="e57f-1016-8e7a-e8ce" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink id="e57f-1016-8e7a-e8ce" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9b23-8d24-cf77-b59a" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="325.0"/>

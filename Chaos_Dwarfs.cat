@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="29" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="634c-4455-82da-0471" name="Chaos Dwarfs" revision="30" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="e151-a589-4fd4-2c1e" name="Animosity Chart">
@@ -1960,6 +1960,20 @@ If the attack is successful, then D6 automatic hits are inflicted on the target.
             <infoLink id="0504-a9cc-a348-69fd" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
             <infoLink id="cf39-8197-1355-7a6f" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="daba-153f-03ee-b15d" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6045-fa34-4d49-cda9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ad2-1d24-96b1-70ed" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a737-79d7-7520-7e1b" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="6ebf-438b-46fc-969a" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="4814-6084-da75-9477">
               <constraints>

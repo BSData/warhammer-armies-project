@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="39" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="40" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -35,7 +35,7 @@
     <publication id="0545-ea23-873c-f668" name="Halflings" shortName="Ha" publisher="Warhammer - Halflings 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins" shortName="Ho" publisher="Warhammer - Hobgoblins 9th Ed" publicationDate="" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="1607-bfe9-82af-d3dc" name="Kislev" shortName="Ki" publisher="Warhammer - Kislev 9th ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="1607-bfe9-82af-d3dc" name="Kislev v.1.14" shortName="Ki" publisher="Warhammer - Kislev 1.14" publicationDate="16.07.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5ff9-69dd-8810-183f" name="Nippon v.1.2" shortName="Ni" publisher="Warhammer - Nippon 9th Ed v.1.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5884-1659-bf10-0d5a" name="Norsca v.1.1" shortName="No" publisher="Warhammer - Norsca 9th Ed v.1.1" publicationDate="10.11.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa v.1.2" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.2" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -23065,6 +23065,9 @@ flee or pursue.</description>
     </rule>
     <rule id="fadb-967d-6cb8-ed08" name="Large Target (6)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>Models with this rule have a Line of Sight value equal to the number in the bracket. This replaces their normal Line of Sight value normally assigned for their Troop Type.</description>
+    </rule>
+    <rule id="7366-8bcf-f881-7f30" name="Hatred (Chaos)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+      <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="290c-8805-073e-3492" name="Estalia" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="290c-8805-073e-3492" name="Estalia" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4915-9f81-8966-f15c" name="Insane Chart">
@@ -4115,6 +4115,18 @@
                         <cost name="pts" typeId="points" value="0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="eb40-53eb-8a71-38c" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8be1-d9a5-d9a9-33da" type="max"/>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfab-7c90-77a6-967e" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5184-b939-bcca-42bc" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </selectionEntry>
                   </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="25"/>
@@ -4241,6 +4253,18 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="428a-3367-151c-6596" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="8438-31e5-cde3-dad" name="Heavy Armour" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8be1-d9a5-d9a9-33da" type="max"/>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfab-7c90-77a6-967e" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d592-4093-b535-6ef3" name="Heavy Armour" hidden="false" targetId="8e15-bc32-b40c-bad3" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -4602,7 +4626,7 @@
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Machine (Cannon)</characteristic>
           </characteristics>
         </profile>
-        <profile id="5673-6d31-8013-91d6" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
+        <profile id="e09d-4bda-581b-a4cf" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
           <characteristics>
             <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
             <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
@@ -4648,232 +4672,6 @@
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
-          <profiles>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6258-a258-dac3-ec58" name="Small Calibre" publicationId="894a-5ecc-1ff7-958a" page="22" hidden="false" typeId="781d-35fe-dd22-05d6" typeName="War Machine">
-              <characteristics>
-                <characteristic name="Type" typeId="6081-ebe8-e15b-4e82">War Machine (Cannon)</characteristic>
-                <characteristic name="Range" typeId="1c88-efb0-083f-b945">12-36&quot;</characteristic>
-                <characteristic name="Strength" typeId="6ca0-d074-628f-e276">7</characteristic>
-                <characteristic name="Special Rules" typeId="d3a4-721b-f750-5564">Multiple Wounds (D3).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6690,7 +6488,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
       <selectionEntries>
         <selectionEntry id="fbb5-3912-f902-7b7f" name="Knight of the Raging Bull" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="add3-c632-d461-f449" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="add3-c632-d461-f449" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="6557-8993-2c78-edc0" name="Tactical Supremacy" hidden="false" targetId="988f-a5b4-56b9-dbcb" type="rule"/>
@@ -6735,6 +6533,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
             <selectionEntry id="e367-cc58-f99c-a0f4" name="Auroch" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="272b-c3e1-e048-9bb5" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e49-3f90-b4fa-6f96" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="5a7d-505a-2a0e-b8e8" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
@@ -6747,7 +6546,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
               <selectionEntries>
-                <selectionEntry id="6129-b84e-e80a-4350" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="6129-b84e-e80a-4350" name="Barding" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e48-656c-fe2b-d1a0" type="max"/>
                   </constraints>

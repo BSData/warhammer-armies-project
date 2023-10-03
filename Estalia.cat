@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="290c-8805-073e-3492" name="Estalia" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="290c-8805-073e-3492" name="Estalia" revision="24" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4915-9f81-8966-f15c" name="Insane Chart">
@@ -1062,13 +1062,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="50b7-71c9-58ee-668f" name="Army Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="2a84-c518-9cc2-486e" value="0">
-                  <conditions>
-                    <condition field="points" scope="4cec-0487-f58e-19e1" value="26" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ba-8bf6-db85-1a72" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a84-c518-9cc2-486e" type="max"/>
                 <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="a737-e837-3a5f-060d" type="max"/>
@@ -1081,7 +1074,7 @@
                   <modifiers>
                     <modifier type="set" field="83d8-38b1-59fc-fe86" value="0">
                       <conditions>
-                        <condition field="selections" scope="4cec-0487-f58e-19e1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ba-8bf6-db85-1a72" type="atLeast"/>
+                        <condition field="points" scope="4cec-0487-f58e-19e1" value="26" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ba-8bf6-db85-1a72" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1237,7 +1230,7 @@
         <entryLink id="62a0-6323-5949-ce2c" name="Warrior Familiar" hidden="false" collective="false" import="true" targetId="6ba4-68a0-cd51-88ce" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="75"/>
+        <cost name="pts" typeId="points" value="100"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f34-d62d-8a91-6935" name="Magus" hidden="false" collective="false" import="true" type="upgrade">
@@ -1836,7 +1829,7 @@
       <selectionEntries>
         <selectionEntry id="5606-630b-7521-ae53" name="Pikeman" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e368-c7bc-ef24-030b" type="min"/>
+            <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e368-c7bc-ef24-030b" type="min"/>
           </constraints>
           <profiles>
             <profile id="4dc8-1b66-760e-c7bc" name="Pikeman" publicationId="894a-5ecc-1ff7-958a" page="13" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -2563,7 +2556,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="17"/>
+            <cost name="pts" typeId="points" value="14"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2753,7 +2746,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="12"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3058,7 +3051,8 @@
         </selectionEntry>
         <selectionEntry id="b196-87d-4484-6fb8" name="Handler" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e10e-c280-f909-47ae" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e10e-c280-f909-47ae" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6a-c6b4-1a86-c8e8" type="max"/>
           </constraints>
           <profiles>
             <profile id="766a-7beb-994e-fd9b" name="Handler" publicationId="894a-5ecc-1ff7-958a" page="16" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -3093,6 +3087,18 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="1" field="e10e-c280-f909-47ae">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="parent" childId="e200-ee96-c291-f0f9" shared="true" roundUp="true" id="13a2-5131-5736-85c3" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3d6a-c6b4-1a86-c8e8">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="parent" childId="e200-ee96-c291-f0f9" shared="true" roundUp="true" id="fbf4-72e0-a7c8-57fb" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="472e-bf09-ea2b-5924" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
@@ -6949,7 +6955,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30"/>
+            <cost name="pts" typeId="points" value="20"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1d25-64af-3584-8357" name="Mace of Sacrifice" hidden="false" collective="false" import="true" type="upgrade">
@@ -6995,7 +7001,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="points" value="35"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7047,7 +7053,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="60"/>
+            <cost name="pts" typeId="points" value="50"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5cca-cd10-a660-3bfc" name="Staff of Tomas the Pure" hidden="false" collective="false" import="true" type="upgrade">
@@ -7111,7 +7117,7 @@ Units of Crossbowmen or Arquebusiers within 3&quot; of a unit of Tercios may len
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="75"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="43ef-1fb9-792b-d4d7" name="Banner of Santiago" hidden="false" collective="false" import="true" type="upgrade">

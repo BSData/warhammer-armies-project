@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="44" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="45" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -27,7 +27,7 @@
     <publication id="e967-620f-06be-096a" name="Wood Elves v.1.5" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.3" shortName="Am" publisher="Warhammer - Amazons 9th Ed 1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d221-484d-439d-4310" name="Araby v.1.5" shortName="Ar" publisher="Warhammer - Araby 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="8abe-59b3-1084-5e51" name="Cathay v.1.4" shortName="Ca" publisher="Warhammer - Cathay 9th Ed 1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="8abe-59b3-1084-5e51" name="Grand Cathay v.1.52" shortName="GC" publisher="Warhammer - Grand Cathay 1.52" publicationDate="11.09.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.5" shortName="CD" publisher="Warhammer - Chaos Dwarfs 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric" shortName="CoU" publisher="Warhammer - Cult or Ulric 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.4" shortName="DoW" publisher="Warhammer - Dogs of War 9th Ed v.1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -23082,6 +23082,22 @@ flee or pursue.</description>
     <rule id="c6b3-2ae5-df09-b853" name="Hatred (Vampires)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of combat. Sometimes a model will only Hate a specific foe. Where this is the case, the type of foe will be expressed in the brackets. In the case an enemy hates a certain faction, they have Hatred against all models from that army book. In addition, they must also re-roll successful rolls to restrain from pursuit against enemies they have Hatred against. If a unit would gain Hatred in a round of close combat after the first for any reason, treat this as the first round of combat for that purpose.</description>
     </rule>
+    <rule id="7a27-4cc5-bde-2d7f" name="Fly (4)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
+      <description>Flying models follow the rules for Skirmishers. However, they cannot use Feigned Flight, and if they have a Unit Strength above 2 and/or a close combat armour save better than 4+, they cannot use Vanguard.
+
+Moving Flyers
+Flight is represented by a swoop equal to the number in the brackets instead of using the model&apos;s normal M value. Note that any equipment or rules that affect the model&apos;s regular M will also affect its Fly move, unless specified. The flyer starts off on the ground, takes off, flies to where it wishes to go, and then lands. Flyers, therefore, begin and end their movement on the ground.
+
+Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
+
+Flying March
+A unit that is flying can march as normal, doubling its
+flying move.
+
+Flee and Pursue
+Flyers always move on the ground when attempting to
+flee or pursue.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="3ecc-5d9c-7d29-ee2f" name="Javelins" publicationId="9e23-79cb-pubN66727" page="94" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -24979,7 +24995,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
         <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
         <characteristic name="LD" typeId="a199-f10b-a038-5730">5</characteristic>
-        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast</characteristic>
+        <characteristic name="Type" typeId="13f9-a26b-05af-3459">War Beast, Animal</characteristic>
       </characteristics>
     </profile>
     <profile id="c769-45c9-27cd-e14e" name="01 (Animosity Chart)" publicationId="8ada-88a0-cdcd-9b5e" page="60" hidden="false" typeId="9025-f9c9-08a1-7918" typeName="Animosity Chart">
@@ -25004,6 +25020,15 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1cf4-60b2-c05f-5ce5" name="Transmutation of Lead (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers a -1 penalty to Hit in close combat and with missile weapons, -1 I and -1 to its armour saves until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="36" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="1194-2922-b8ab-2f1d" name="Dark Elves" revision="37" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d67-b1d7-6891-ce0e" name="Gift of Khaine">
@@ -3420,10 +3420,10 @@ For each unsaved Wound caused by a Disciple in close combat, he gains +1 to cast
       <selectionEntryGroups>
         <selectionEntryGroup id="8168-00ab-5b4b-2946" name="Command Group" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="f865-0c10-5442-9213" name="Slave Master" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f865-0c10-5442-9213" name="Slave Master" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="979b-538b-b6e1-2665" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b79-6062-635e-0764" type="min"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="979b-538b-b6e1-2665" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b79-6062-635e-0764" type="min"/>
               </constraints>
               <profiles>
                 <profile id="594d-3f27-9528-dab8" name="Slave Master" publicationId="9e23-79cb-pubN76150" page="125" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -3449,6 +3449,18 @@ For each unsaved Wound caused by a Disciple in close combat, he gains +1 to cast
               <costs>
                 <cost name="pts" typeId="points" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="979b-538b-b6e1-2665">
+                  <repeats>
+                    <repeat value="20" repeats="1" field="selections" scope="parent" childId="9ac0-85c2-de8d-6097" shared="true" roundUp="true" id="b41-25c2-acf5-d241" percentValue="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="4b79-6062-635e-0764">
+                  <repeats>
+                    <repeat value="20" repeats="1" field="selections" scope="parent" childId="9ac0-85c2-de8d-6097" shared="true" roundUp="true" id="b4df-e038-78d1-5684" percentValue="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

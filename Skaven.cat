@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="42" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="28da-4dfe-fb43-8a0c" name="Skaven" revision="43" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="4d5d-95c5-9736-ddda" name="Ringing the Bell Table">
@@ -886,7 +886,7 @@ If the Screaming Bell suffers one or more wounds inflicted by a shooting attack 
               </profiles>
               <rules>
                 <rule id="18c1-1229-b40f-9213" name="Master of Lightning" publicationId="4086-1ccd-f433-39a2" page="152" hidden="false">
-                  <description>A Verminlord Warpseer can re-roll failed casting attempts when attempting to cast Warp Lightning. Furthermore, he always counts as rolling a 6 when determining how many hits the spell causes.</description>
+                  <description>A Verminlord Warpseer must choose all its spells from the Lore of Ruin, and can reroll failed casting attempts when attempting to cast the Warp Lightning spell from the Lore of Ruin.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -1001,7 +1001,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
                   <description>Enemy units that target a Verminlord Deceiver with a shooting attack suffer a -1 To Hit modifier in addition to any other modifiers.</description>
                 </rule>
                 <rule id="80a8-1b74-45b4-df6e" name="Shadowstrider" publicationId="4086-1ccd-f433-39a2" page="152" hidden="false">
-                  <description>A Verminlord Deceiver can re-roll failed casting attempts when attempting to cast the Skitterleap spell from the Lore of Stealth, and can choose itself as the target of this spell.</description>
+                  <description>A Verminlord Deceiver must choose all its spells from the Lore of Stealth, and can re-roll failed casting attempts when attempting to cast the Skitterleap spell from the Lore of Stealth, and can choose itself as the target of this spell.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -1124,7 +1124,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
               </profiles>
               <rules>
                 <rule id="06b2-8ee6-d4c0-85c6" name="Plaguemaster" publicationId="4086-1ccd-f433-39a2" page="153" hidden="false">
-                  <description>A Verminlord Corruptor must always pick the Plague spell from the Lore of Plague, other spells are chosen as normal. It can re-roll failed casting attempts when attempting to cast Plague.</description>
+                  <description>A Verminlord Corruptor must choose all its spells from the Lore of Plague, and can re-roll failed casting attempts when attempting to cast Plague.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -1224,7 +1224,7 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
               </profiles>
               <rules>
                 <rule id="5e00-b394-f1d1-f189" name="Verminous Fury" publicationId="4086-1ccd-f433-39a2" page="153" hidden="false">
-                  <description>A Verminlord Warbringer must always pick the Death Frenzy spell from the Lore of Ruin, other spells are chosen as normal. It can re-roll failed casting attempts when attempting to cast Death Frenzy.</description>
+                  <description>A Verminlord Warbringer must choose all its spells from the Lore of Ruin, and can reroll failed casting attempts when attempting to cast Death Frenzy.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -4317,7 +4317,8 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         </selectionEntry>
         <selectionEntry id="7c2d-cb84-3a31-d534" name="Packmaster" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9df-a4f1-32b1-ab45" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9df-a4f1-32b1-ab45" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e6-a26e-80e6-58a8" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="4042-12bd-228c-72b5" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
@@ -4363,6 +4364,18 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="d9df-a4f1-32b1-ab45">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="parent" childId="e391-6d8c-b7df-bcd1" shared="true" roundUp="true" id="acbb-55a1-72cc-6671" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="2e6-a26e-80e6-58a8">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="parent" childId="e391-6d8c-b7df-bcd1" shared="true" roundUp="true" id="2c51-b07d-1364-71dc" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4936,7 +4949,8 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
         </selectionEntry>
         <selectionEntry id="263b-a0e0-8a21-a37e" name="Packmaster" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9187-0975-ec1e-1684" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9187-0975-ec1e-1684" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="367f-a617-ad9e-a273" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="b84a-c43c-2868-d568" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
@@ -4982,6 +4996,18 @@ To throw the Scry-orb, place the small round template with its centre anywhere w
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="9187-0975-ec1e-1684">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="parent" childId="ac20-2e82-04c7-5d21" shared="true" roundUp="true" id="1f1d-9aac-16-b10f" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="367f-a617-ad9e-a273">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="parent" childId="ac20-2e82-04c7-5d21" shared="true" roundUp="true" id="644c-f0e2-921d-3696" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6557,7 +6583,8 @@ If you roll a misfire result something has gone awry. No more shots are fired th
         </selectionEntry>
         <selectionEntry id="7dcd-46c4-ae43-438d" name="Packmaster" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfd3-59d3-7b0f-046a" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b243-1cb3-40da-fab7" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcb8-f772-efec-d593" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="5bc6-6ad9-12c2-7fc2" name="Packmaster" hidden="false" targetId="f8eb-0b2e-6bea-166b" type="profile"/>
@@ -6603,6 +6630,18 @@ If you roll a misfire result something has gone awry. No more shots are fired th
           <costs>
             <cost name="pts" typeId="points" value="5"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="b243-1cb3-40da-fab7">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="parent" childId="f2b7-cb11-c373-19f5" shared="true" roundUp="true" id="4154-e252-df5d-2dcd" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="bcb8-f772-efec-d593">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="parent" childId="f2b7-cb11-c373-19f5" shared="true" roundUp="true" id="6796-8041-19e4-3516" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

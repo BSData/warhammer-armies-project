@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aaba-9578-3681-8fdf" name="Grand Cathay" revision="25" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="aaba-9578-3681-8fdf" name="Grand Cathay" revision="26" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7557-86fd-25f4-8e4c" name="Stratagem">
@@ -1612,7 +1612,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f565-ff63-c052-2b53" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="dbea-f94e-211b-91b6" name="Polearm/Halberd" hidden="false" targetId="e43e-5153-eeec-36be" type="profile"/>
+                    <infoLink id="dbea-f94e-211b-91b6" name="Bow" hidden="false" targetId="9dcd-3be8-08b0-96ab" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -4551,11 +4551,6 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
-                  <rules>
-                    <rule id="dd10-b051-4b33-e615" name="Hardened Scale" publicationId="8abe-59b3-1084-5e51" page="39" hidden="false">
-                      <description>While in Dragon Form, Zhao Ming may re-roll failed armour saves.</description>
-                    </rule>
-                  </rules>
                 </selectionEntry>
                 <selectionEntry id="5fa9-8feb-b79e-a6ce" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -5148,7 +5143,7 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
                     <entryLink id="5fec-e9e7-e2fc-f1a5" name="Lore of Metal 4" hidden="false" collective="false" import="true" targetId="2cef-95ed-47e7-6458" type="selectionEntry"/>
                     <entryLink id="3364-ee00-46d9-e8c5" name="Lore of Yang 4" hidden="false" collective="false" import="true" targetId="ee16-b23c-23cd-8c29" type="selectionEntry"/>
                     <entryLink id="f57-cb47-32c1-512c" name="Lore of Shadow 4" hidden="false" collective="false" import="true" targetId="ee91-ed67-6c90-eca4" type="selectionEntry"/>
-                    <entryLink id="6a4-87fc-4d24-3ae2" name="Lore of Yang 4" hidden="false" collective="false" import="true" targetId="ee16-b23c-23cd-8c29" type="selectionEntry"/>
+                    <entryLink id="4d1b-6c98-34a-5294" name="Lore of Heavens 4" hidden="false" collective="false" import="true" targetId="ae49-5ec1-e00e-5ef3" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7901,9 +7896,6 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="bcad-8c2b-856e-f92d" name="Sky Lantern" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4301-a585-3af3-311c" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="7e49-322f-cf00-1eb1" name="Harmony Yin" hidden="false" targetId="d575-1ac8-ec73-d8e4" type="rule"/>
         <infoLink id="6098-775d-2f32-dbbf" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>
@@ -8341,9 +8333,6 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
       </costs>
     </selectionEntry>
     <selectionEntry id="e018-53ca-b0a4-cfb4" name="Wu Xing War Compass" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="952a-ad77-a7e5-d58d" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="ccb0-9a28-d175-da33" name="Celestial Lightning" hidden="false" targetId="e7b2-47a5-92e1-9b9e" type="profile"/>
         <infoLink id="ec88-50d2-4c6b-846e" name="Impact Hits (D6)" hidden="false" targetId="e9e6-66cc-623f-8e94" type="rule"/>
@@ -8415,13 +8404,10 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
         <cost name="pts" typeId="points" value="125"/>
       </costs>
       <categoryLinks>
-        <categoryLink id="a6a1-5c0f-e358-e910" name="(Mount)" hidden="false" targetId="(Mount)" primary="false"/>
+        <categoryLink targetId="0eb4-f376-7725-b05b" id="8f23-59ef-610e-f1a0" primary="true" name="Rare"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="132e-c281-d5a8-577c" name="Sky-junk" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca21-b523-a754-2d58" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="6bf5-3f56-4379-b2c1" name="Harmony Yin" hidden="false" targetId="d575-1ac8-ec73-d8e4" type="rule"/>
         <infoLink id="1cdc-ed38-8c5d-cff5" name="Swiftstride" hidden="false" targetId="fdd9-fa75-5594-d363" type="rule"/>

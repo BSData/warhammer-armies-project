@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="45" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="46" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -17,9 +17,9 @@
     <publication id="d69c-a7ea-95db-6f56" name="Steam Tanks" shortName="Emp" publisher="Warhammer - Steam Tanks" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315d-135b-135c-07ce" name="Empire v.1.5" shortName="Em" publisher="Warhammer - Empire 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="4086-1ccd-f433-39a2" name="Skaven v.1.8" shortName="Sk" publisher="Warhammer - Skaven 9th Ed v.1.8" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos v.1.5" shortName="DoC" publisher="Warhammer - Daemons of Chaos 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos v.1.62" shortName="DoC" publisher="Warhammer - Daemons of Chaos 1.62" publicationDate="26.10.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.4, Lizardmen v.1.4" shortName="HE, LM" publisher="Warhammer - High Elves 9th Ed v.1.4, Warhammer - Lizardmen 9th Ed v.1.4" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.6, Daemons of Chaos v.1.5, Warriors of Chaos v.1.5" shortName="BM, DoC, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Daemons of Chaos 9th Ed 1.5, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.6, Daemons of Chaos v.1.62, Warriors of Chaos v.1.5" shortName="BM, DoC, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Daemons of Chaos 1.62, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.5" shortName="TK" publisher="Warhammer - Tomb Kings 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="10a5-5781-61f5-86ae" name="Vampire Counts v.1.5" shortName="VC" publisher="Warhammer - Vampire Counts 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.5" shortName="WoC" publisher="Warhammer - Warriors of Chaos 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -43,7 +43,6 @@
     <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.4" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.4, Zombie Pirates of the Vampire Coast v.1.3" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.4, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.3" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa v.1.2, Zombie Pirates of the Vampire Coast v.1.4" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.2, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.4" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="acbb-53f3-d3f4-1f4e" name="Daemons of Chaos Special Characters v.1.4" shortName="DoC" publisher="Warhammer - Daemons of Chaos Special Characters v.1.4" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters v.1.6" shortName="Em" publisher="Warhammer - Empire Special Characters 1.6" publicationDate="27.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.1" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.1" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters v.1.3" shortName="Br" publisher="Warhammer - Bretonnia Special Characters 1.3" publicationDate="28.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -23098,6 +23097,21 @@ Flee and Pursue
 Flyers always move on the ground when attempting to
 flee or pursue.</description>
     </rule>
+    <rule id="ba8d-3b7f-3ea7-977b" name="Impact Hits (3D6)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+      <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
+
+Impact Hits are only made on the turn the model makes a successful charge into close combat, and only against the unit the model has charged. Impact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact and are randomised as Automatic Hits. If the model is in base contact with more than one unit, randomise the Impact Hits between them as evenly as possible. If the model with Impact Hits is not in base contact with the enemy, no Impact Hits are inflicted.
+
+Impact Hits roll to wound using the S of the model making the Impact Hits. Any armour saves taken are done using the close combat value of the armour, and Parry saves may not be taken. Any Wounds caused by Impact Hits are counted towards combat resolution. 
+
+Unless specified, any rules that apply to the model’s normal attacks do not apply to its Impact Hits.</description>
+    </rule>
+    <rule id="18cb-1dc6-4139-8c3" name="Large Target (1)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+      <description>Models with this rule have a Line of Sight value equal to the number in the bracket. This replaces their normal Line of Sight value normally assigned for their Troop Type.</description>
+    </rule>
+    <rule id="aa3f-b179-12a1-b4c3" name="Large Target (3)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
+      <description>Models with this rule have a Line of Sight value equal to the number in the bracket. This replaces their normal Line of Sight value normally assigned for their Troop Type.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="3ecc-5d9c-7d29-ee2f" name="Javelins" publicationId="9e23-79cb-pubN66727" page="94" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
@@ -24459,43 +24473,43 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. Uses the small/large round template. Once the template is placed, the player then nominates the direction in which the Wind of Death will move. To determine how many inches the template moves, roll an artillery dice and multiply the result by 3. Any model passed over by the template takes a S 3 hit which Ignores Armour Saves. If the result on the artillery dice is a misfire, centre the template on the caster and roll a scatter dice and a D6. The template moves a number of inches equal to the roll of the D6, in the direction indicated by the scatter dice. If a Hit! is rolled, use the small arrow on the Hit! symbol. In either event, in subsequent turns, the Wind of Death will move a number of inches determined by rolling an artillery dice, in a random direction determined by rolling a scatter dice. If a misfire is rolled in subsequent turns, the Wind of Death dissipates and is removed.</characteristic>
       </characteristics>
     </profile>
-    <profile id="477e-cbd8-907d-4c5b" name="Born of Damnation" publicationId="ee54-3543-b9db-fe40" page="201" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="477e-cbd8-907d-4c5b" name="Born of Damnation" publicationId="ee54-3543-b9db-fe40" page="7" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Lore Attribute</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a Daemon casts a spell from the Lore of Slaanesh that causes one or more unsaved Wounds, choose a unit of Daemonettes or Fiends of Slaanesh within range of the caster, and roll a D6 for each Wound caused. If it is a unit of Daemonettes, add 1 model to the unit for each result of 5+. If it is a unit of Fiends, add 1 model to the unit for each result of 6. Models are added, one at a time, to the back rank. If the back rank is full at any point, or the unit has a single rank of at least five models, the next model starts a new back rank. Models that cannot be placed (because there isn&apos;t enough room, or you do not have sufficient models) are lost. Models created in this way have no upgrades and don&apos;t award additional victory points.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a Daemon casts a spell from the Lore of Slaanesh that causes one or more unsaved Wounds, choose a friendly Daemon of Slaanesh unit within 12&quot; of the caster, and roll a D6 for each Wound caused. For each result of 5+, add 1 Wound&apos;s worth of models to the unit. Models are added, one at a time, to the back rank. If the back rank is full at any point, or the unit has a single rank of at least five models, the next model starts a new back rank. Models that cannot be placed (because there isn&apos;t enough room, or you do not have sufficient models) are lost. Models created in this way have no upgrades and don&apos;t award additional victory points.</characteristic>
       </characteristics>
     </profile>
-    <profile id="41a1-0a41-1fe7-d02e" name="Fires of Change" publicationId="ee54-3543-b9db-fe40" page="199" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="41a1-0a41-1fe7-d02e" name="Fires of Change" publicationId="ee54-3543-b9db-fe40" page="5" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Lore Attribute</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a Daemon casts a spell from the Lore of Tzeentch that causes one or more unsaved Wounds, choose a unit of Pink Horrors or Screamers within range of the caster, and roll a D6 for each Wound caused. If it is a unit of Pink Horrors, add 1 model to the unit for each result of 5+. If it is a unit of Screamers, add 1 model to the unit for each result of 6. Models are added, one at a time, to the back rank. If the back rank is full at any point, or the unit has a single rank of at least five models, the next model starts a new back rank. Models that cannot be placed (because there isn&apos;t enough room, or you do not have sufficient models) are lost. Models created in this way have no upgrades and do not award additional victory points.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a Daemon casts a spell from the Lore of Tzeentch that causes one or more unsaved Wounds, choose a friendly Daemon of Tzeentch unit within range of the caster, and roll a D6 for each Wound caused. For each result of 5+, add 1 Wound&apos;s worth of models to the unit. Models are added, one at a time, to the back rank. If the back rank is full at any point, or the unit has a single rank of at least five models, the next model starts a new back rank. Models that cannot be placed (because there isn&apos;t enough room, or you do not have sufficient models) are lost. Models created in this way have no upgrades and do not award additional victory points.</characteristic>
       </characteristics>
     </profile>
-    <profile id="01ce-33f5-e0c9-56aa" name="Children of Nurgle" publicationId="ee54-3543-b9db-fe40" page="200" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="01ce-33f5-e0c9-56aa" name="Children of Nurgle" publicationId="ee54-3543-b9db-fe40" page="6" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Lore Attribute</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a Daemon casts a spell from the Lore of Nurgle that causes one or more unsaved Wounds, choose a unit of Plaguebearers or Nurglings within range of the caster, and roll a D6 for each Wound caused. If it is a unit of Plaguebearers, add 1 model to the unit for each result of 5+. If it is a unit of Nurglings, add 1 base to the unit for each result of 6. Models are added, one at a time, to the back rank. If the back rank is full at any point, or the unit has a single rank of at least five models, the next model starts a new back rank. Models that cannot be placed (because there isn&apos;t enough room, or you do not have sufficient models) are lost. Models created in this way have no upgrades and don&apos;t award additional victory points.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a Daemon casts a spell from the Lore of Nurgle that causes one or more unsaved Wounds, choose a friendly Daemon of Nurgle unit within 12&quot; of the caster, and roll a D6 for each Wound caused. For each result of 5+, add 1 Wound&apos;s worth of models to the unit. Models are added, one at a time, to the back rank. If the back rank is full at any point, or the unit has a single rank of at least five models, the next model starts a new back rank. Models that cannot be placed (because there isn&apos;t enough room, or you do not have sufficient models) are lost. Models created in this way have no upgrades and don&apos;t award additional victory points.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a42c-8d8d-62bf-e130" name="Acquiescence" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="a42c-8d8d-62bf-e130" name="Acquiescence" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/9+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/11+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit is subject to Always Strikes Last and Random Movement (D6) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f39-2dfe-12ce-91b5" name="Acquiescence (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="0f39-2dfe-12ce-91b5" name="Acquiescence (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -24504,7 +24518,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit is subject to Always Strikes Last and Random Movement (D6) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="202f-4dfc-6064-f53b" name="Blades of Putrification" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="202f-4dfc-6064-f53b" name="Blades of Putrification" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24531,7 +24545,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a spell from the Lore of Nurgle is successfully cast, roll a D6 after resolving the spell&apos;s effect(s). On the roll of a 6, the Wizard’s Wounds are increased by 1 for the remainder of the game.</characteristic>
       </characteristics>
     </profile>
-    <profile id="884b-d4e2-a581-531b" name="Blue Fire of Tzeentch" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="884b-d4e2-a581-531b" name="Blue Fire of Tzeentch" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24540,7 +24554,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S D6+1 hits with Flaming Attacks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4c51-7bd8-93b6-cac6" name="Bolt of Change" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="4c51-7bd8-93b6-cac6" name="Bolt of Change" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24558,7 +24572,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a spell from the Lore of Tzeentch is successfully cast, make a note of how many power dice results were a 6. After resolving the spell’s effect(s), you immediately add a single power dice to your army’s pool for each result of a 6 that was rolled to cast the spell.</characteristic>
       </characteristics>
     </profile>
-    <profile id="ce69-9487-76f2-b466" name="Cacophonic Choir" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="ce69-9487-76f2-b466" name="Cacophonic Choir" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -24567,7 +24581,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit takes 2D6 hits that wound on a 4+ and Ignore Armour saves. If at least one unsaved Wound is caused, the target unit is subject to Always Strikes Last and Random Movement (D6) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1a00-6df9-99a2-d0b4" name="Curse of the Leper" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="1a00-6df9-99a2-d0b4" name="Curse of the Leper" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment/Hex</characteristic>
@@ -24594,7 +24608,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the Wizard and any unit they are with. Until the start of the caster&apos;s next Magic Phase, any missile fire directed from or against the Wizard or their unit suffer -1 To Hit. Any missile attacks that do not roll to Hit must first roll a 4+ on a D6 to be able to target the unit. Any unit in base contact with the Wizard or their unit suffer D6 S 5 Hits at the start of each Magic Phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4f9a-1da0-5247-f420" name="Fleshy Abundance" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="4f9a-1da0-5247-f420" name="Fleshy Abundance" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24612,7 +24626,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. All models in the target unit suffer -1 to their WS and LD.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6790-32ca-fb54-f081" name="Glean Magic" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="6790-32ca-fb54-f081" name="Glean Magic" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -24621,7 +24635,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy Wizard within range. The caster and the target both roll a D6 and add their Wizard level to the score. If the target&apos;s total is higher than the caster&apos;s, nothing happens. Otherwise, the target suffers a S 4 hit with Flaming Attacks, loses one Wizard level (to a minimum of 0) including forgetting one randomly determined spell (this cannot be a bound spell). If the caster does not already know this spell, they immediately gain it and can cast it just like any of his other spells. When casting a stolen spell, always substitute its lore attribute with the Lore of Tzeentch&apos;s lore attribute.</characteristic>
       </characteristics>
     </profile>
-    <profile id="798a-1c4a-ebdf-a01d" name="Hysterical Frenzy" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="798a-1c4a-ebdf-a01d" name="Hysterical Frenzy" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment/Hex</characteristic>
@@ -24630,7 +24644,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. Hysterical Frenzy can be cast on any unit (friend or foe) within range. If cast on a friendly unit, Hysterical Frenzy is an Augment spell. If Hysterical Frenzy is cast on an enemy unit, it is a Hex spell. For the duration of the spell, the target gains Frenzy (which is not lost if the unit is defeated in close combat). If the target unit already has Frenzy, that Frenzy grants +2 Ainstead of just +1. In addition, for the duration of the spell, the target of Hysterical Frenzy suffers D6 S 3 hits at the end of each of the caster&apos;s Magic phases.</characteristic>
       </characteristics>
     </profile>
-    <profile id="402c-33cd-03a0-0634" name="Infernal Gateway" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="402c-33cd-03a0-0634" name="Infernal Gateway" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24660,7 +24674,7 @@ Armour Saves in addition to the effects of the spell.</characteristic>
 In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves a number of inches equal to 2D6. If a double is rolled in subsequent turns, Kraken&apos;s Pull is removed.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b7ea-f68a-3a08-e2d4" name="Lash of Slaanesh" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="b7ea-f68a-3a08-e2d4" name="Lash of Slaanesh" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24669,7 +24683,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Extend a straight line 24&quot; in length, within the caster&apos;s forward arc and directly from his base. Any model whose base falls under the line (determined using the line template) suffers a S 4 hit with Armour Piercing (1). Any unit that suffers a casualty from this spell may not march in its next Movement phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a22b-12af-efd7-84fc" name="Miasma of Pestilence" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="a22b-12af-efd7-84fc" name="Miasma of Pestilence" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24678,7 +24692,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, all enemy units in base contact with the target unit reduce their WS and I by 1 (to a minimum of 1). Boosted version reduces WS and I by D3 (roll once and apply the result to all affected enemies).</characteristic>
       </characteristics>
     </profile>
-    <profile id="f1e8-83cf-3d49-1009" name="Pandemonium" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="f1e8-83cf-3d49-1009" name="Pandemonium" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -24687,7 +24701,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, the target unit must use the lowest LD value in the unit (including that of mounts) and cannot benefit from Inspiring Presence or Hold Your Ground!. This spell has no effect on units with Immunity (Psychology). The boosted version affects all enemy units within range.</characteristic>
       </characteristics>
     </profile>
-    <profile id="5338-8b26-f6be-4c74" name="Pavane of Slaanesh" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="5338-8b26-f6be-4c74" name="Pavane of Slaanesh" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24696,7 +24710,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). If successfully cast, the target must pass a LD test on 3D6. If failed, the target suffers 1 Wound which Ignores Armour saves for every point they failed the LD test by.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a012-5764-3f62-c2bb" name="Pavane of Slaanesh (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="a012-5764-3f62-c2bb" name="Pavane of Slaanesh (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24705,7 +24719,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). If successfully cast, the target must pass a Psychology test on 3D6. If failed, the target suffers 1 Wound which Ignores Armour saves for every point they failed the Psychology test by.</characteristic>
       </characteristics>
     </profile>
-    <profile id="57b2-6f4a-b820-f178" name="Phantasmagoria" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="57b2-6f4a-b820-f178" name="Phantasmagoria" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -24714,7 +24728,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, the target unit must roll an additional D6 whenever it takes a LD test, discarding the lowest result rolled.</characteristic>
       </characteristics>
     </profile>
-    <profile id="75f5-0942-b785-d105" name="Pink Fire of Tzeentch" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="75f5-0942-b785-d105" name="Pink Fire of Tzeentch" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24723,7 +24737,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Place the teardrop-shaped template with its narrow end touching the front of the Wizard&apos;s base and the large end aimed at the target. Roll 2D6 and move the template directly forwards the number of inches indicated. All models underneath the template suffer a S D6+1 hit with Flaming Attacks (roll once for the S and use that value for all hits).</characteristic>
       </characteristics>
     </profile>
-    <profile id="620d-993b-8dbe-ad17" name="Plague Wind" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="620d-993b-8dbe-ad17" name="Plague Wind" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magical Vortex</characteristic>
@@ -24734,7 +24748,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
 In subsequent turns, the Plague Wind travels in a random direction and moves a number of inches equal to the roll of an artillery dice (if a misfire is rolled, the Plague Wind dissipates and is removed).</characteristic>
       </characteristics>
     </profile>
-    <profile id="3798-925f-55c2-5b3a" name="Rancid Visitations" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="3798-925f-55c2-5b3a" name="Rancid Visitations" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24743,7 +24757,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts D6 S 5 hits. The target unit must then immediately pass a T test or suffer a further D6 S 5 hits. The target must keep testing its T in this manner until a test is passed, or the target is removed as a casualty.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4c78-9e0c-d24a-d6da" name="Rancid Visitations (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="4c78-9e0c-d24a-d6da" name="Rancid Visitations (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24761,7 +24775,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Each model in the target unit must take a S test or suffer 1 Wound with no armour save allowed.</characteristic>
       </characteristics>
     </profile>
-    <profile id="582b-da6b-ae94-c53e" name="Slicing Shards" publicationId="eee5-f9c5-fa08-3f2e" page="114, 201, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="582b-da6b-ae94-c53e" name="Slicing Shards" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24770,7 +24784,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts D6 S 4 hits with Armour Piercing (1). The target must then immediately pass a LD test, or suffer a further D6 S 4 hits with Armour Piercing (1). The target must keep testing its LD in this manner until a test is passed, or the target is removed as a casualty.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1146-2b63-8bfc-ab96" name="Stream of Corruption" publicationId="eee5-f9c5-fa08-3f2e" page="113, 200, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="1146-2b63-8bfc-ab96" name="Stream of Corruption" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24797,7 +24811,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The caster makes a S 2 Breath Weapon Attack. This may be cast in close combat, following the normal rules for Breath Weapons. Until the start of the caster&apos;s next Magic Phase, any unit Hit will suffer -D6&quot; to any Move they make as well as being Disrupted.</characteristic>
       </characteristics>
     </profile>
-    <profile id="9809-0d7b-f693-60b4" name="Treason of Tzeentch" publicationId="eee5-f9c5-fa08-3f2e" page="112, 199, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="9809-0d7b-f693-60b4" name="Treason of Tzeentch" publicationId="eee5-f9c5-fa08-3f2e" page="112, 5, 238" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>

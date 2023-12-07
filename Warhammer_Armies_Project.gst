@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="48" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="49" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -34,7 +34,7 @@
     <publication id="894a-5ecc-1ff7-958a" name="Estalia v.1.15" shortName="Es" publisher="Warhammer - Estalia 1.15" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.08.2023"/>
     <publication id="0545-ea23-873c-f668" name="Halflings" shortName="Ha" publisher="Warhammer - Halflings 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins" shortName="Ho" publisher="Warhammer - Hobgoblins 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind 1.12" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 1.12" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
     <publication id="1607-bfe9-82af-d3dc" name="Kislev v.1.16" shortName="Ki" publisher="Warhammer - Kislev 1.16" publicationDate="26.07.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5ff9-69dd-8810-183f" name="Nippon v.1.2" shortName="Ni" publisher="Warhammer - Nippon 9th Ed v.1.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5884-1659-bf10-0d5a" name="Norsca v.1.1" shortName="No" publisher="Warhammer - Norsca 9th Ed v.1.1" publicationDate="10.11.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -22247,12 +22247,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="777a-7a64-44fa-a78e" name="Champion" publicationId="9e23-79cb-pubN66727" page="97" hidden="false">
       <description>&quot;Follow Me!&quot;
@@ -22986,12 +22984,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="0a9a-bfcb-1a9d-5609" name="Fly (8)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>Flying models follow the rules for Skirmishers. However, they cannot use Feigned Flight, and if they have a Unit Strength above 2 and/or a close combat armour save better than 4+, they cannot use Vanguard.
@@ -23002,12 +22998,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="36ba-3349-99bd-1979" name="Fly (7)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>Flying models follow the rules for Skirmishers. However, they cannot use Feigned Flight, and if they have a Unit Strength above 2 and/or a close combat armour save better than 4+, they cannot use Vanguard.
@@ -23018,12 +23012,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="b830-fe6e-b461-0377" name="Fly (6)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>Flying models follow the rules for Skirmishers. However, they cannot use Feigned Flight, and if they have a Unit Strength above 2 and/or a close combat armour save better than 4+, they cannot use Vanguard.
@@ -23034,12 +23026,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="36d4-923e-e1c7-72bc" name="Fly (5)" publicationId="9e23-79cb-pubN66727" page="75" hidden="false">
       <description>Flying models follow the rules for Skirmishers. However, they cannot use Feigned Flight, and if they have a Unit Strength above 2 and/or a close combat armour save better than 4+, they cannot use Vanguard.
@@ -23050,12 +23040,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="1b3d-4a57-6f3e-25d7" name="Large Target (5)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>Models with this rule have a Line of Sight value equal to the number in the bracket. This replaces their normal Line of Sight value normally assigned for their Troop Type.</description>
@@ -23090,12 +23078,10 @@ Flight is represented by a swoop equal to the number in the brackets instead of 
 Units made up entirely of models that can fly can move or charge normally on the ground, using their M value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Models that Fly can make a flying charge over intervening units and terrain as long as they can draw Line of Sight to their target as normal. A unit that makes a flying charge does so using its Fly move as its M characteristic, using Swiftstride.
 
 Flying March
-A unit that is flying can march as normal, doubling its
-flying move.
+A unit that is flying can march as normal, doubling its flying move.
 
 Flee and Pursue
-Flyers always move on the ground when attempting to
-flee or pursue.</description>
+Flyers always move on the ground when attempting to flee or pursue.</description>
     </rule>
     <rule id="ba8d-3b7f-3ea7-977b" name="Impact Hits (3D6)" publicationId="9e23-79cb-pubN66727" page="77" hidden="false">
       <description>The number of Impact Hits is shown in brackets after the rule. If a creature is granted two sets of Impact Hits, use the highest set, rather than a total, before rolling. If a unit contains more than one model that inflicts a random amount of Impact Hits, always roll separately for each model.
@@ -24504,7 +24490,7 @@ attribute may still apply.</characteristic>
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+/11+</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/11+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit is subject to Always Strikes Last and Random Movement (D6) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aaba-9578-3681-8fdf" name="Grand Cathay" revision="26" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="aaba-9578-3681-8fdf" name="Grand Cathay" revision="27" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="7557-86fd-25f4-8e4c" name="Stratagem">
@@ -957,6 +957,7 @@
             <entryLink id="121b-520d-7945-0745" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="feaa-df73-98a4-5d92" type="selectionEntryGroup"/>
             <entryLink id="dea1-674c-d8c9-9e6e" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="2df2-d741-2d79-b7f9" type="selectionEntryGroup"/>
             <entryLink id="a4ff-7434-6140-d371" name="Talismans" hidden="false" collective="false" import="true" targetId="bf25-6aa3-0d64-7153" type="selectionEntryGroup"/>
+            <entryLink id="15dc-8a94-3841-5bef" name="Magic Armour" hidden="false" collective="false" import="true" targetId="2924-323a-1a26-aeec" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -5073,6 +5074,7 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
             <entryLink id="d946-12b3-5606-8e27" name="Talismans" hidden="false" collective="false" import="true" targetId="bf25-6aa3-0d64-7153" type="selectionEntryGroup"/>
             <entryLink id="e0a0-f56f-2c91-4075" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4831-7031-c3ed-b7df" type="selectionEntryGroup"/>
             <entryLink id="6c27-5336-b6fb-1b8e" name="Arcane Items (One use only)" hidden="false" collective="false" import="true" targetId="7edf-cf31-16f0-a179" type="selectionEntryGroup"/>
+            <entryLink id="b747-2f7f-bea4-5c37" name="Magic Armour" hidden="false" collective="false" import="true" targetId="2924-323a-1a26-aeec" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -6315,7 +6317,7 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
       <selectionEntries>
         <selectionEntry id="f697-5d80-8699-269a" name="Peasant Javelinman" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="888c-6846-7615-c875" type="min"/>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="888c-6846-7615-c875" type="min"/>
           </constraints>
           <profiles>
             <profile id="3d94-f806-6e04-6372" name="Peasant Javelinman" publicationId="8abe-59b3-1084-5e51" page="17" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7280,7 +7282,7 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
           </profiles>
           <infoLinks>
             <infoLink id="9c05-c1fe-b404-52fe" name="Harmony Yang" hidden="false" targetId="f871-7939-4df7-5d64" type="rule"/>
-            <infoLink id="546d-e89-3324-2806" name="Fast Cavalry" hidden="false" targetId="8877-a5de-cc9c-9142" type="rule"/>
+            <infoLink id="20fd-193a-662e-18dd" name="Stubborn" hidden="false" targetId="d56e-8ec7-dbcd-aeee" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="7eb1-f98b-751d-79ee" name="Warhorse" hidden="false" collective="true" import="true" type="upgrade">
@@ -7314,7 +7316,6 @@ After these hits are resolved, place the Vermillion Warbird at the line&apos;s e
             <selectionEntry id="d23a-70f2-c536-7618" name="Fire Lance" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9680-ee73-19e8-264b" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1ff-9deb-6256-51bb" type="min"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="2"/>
@@ -8499,11 +8500,11 @@ If a misfire is rolled, roll a D6. On a 1, the Sky-junk suffers a S 6 hit with M
             <characteristic name="Type" typeId="13f9-a26b-05af-3459">Chariot (Armour save 4+)</characteristic>
           </characteristics>
         </profile>
-        <profile id="157e-b78d-1dc-10ce" name="Sky-junk" publicationId="8abe-59b3-1084-5e51" page="35" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+        <profile id="157e-b78d-1dc-10ce" name="Rocket Salvo" publicationId="8abe-59b3-1084-5e51" page="35" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
             <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">5</characteristic>
-            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Flaming Attacks. Multiple Shots (5)</characteristic>
+            <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Flaming Attacks. Multiple Shots (5). It does not suffer penalties for moving and shooting or firing Multiple Shots.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8595,6 +8596,115 @@ If a misfire is rolled, roll a D6. On a 1, the Sky-junk suffers a S 6 hit with M
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="a7db-f6ca-e0f6-d740" name="Field Engineers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink targetId="fc26-7737-f7cb-8977" id="7c63-e1f3-ab25-263a" primary="true" name="Special"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="487a-2ba2-92f3-4d8a" name="Field Engineer" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6c6-333c-3b85-373f" type="min"/>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c9-cb8-5ab-11ac" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3f4-41b0-f727-337c" name="Field Engineer" publicationId="8abe-59b3-1084-5e51" page="26" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
+              <characteristics>
+                <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                <characteristic name="W" typeId="27ee-0675-122f-a1b1">1</characteristic>
+                <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                <characteristic name="LD" typeId="a199-f10b-a038-5730">7</characteristic>
+                <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, Human</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4ead-eb21-a58e-5ccf" name="Harmony Yin" hidden="false" targetId="d575-1ac8-ec73-d8e4" type="rule"/>
+            <infoLink id="cb1d-91cd-8db3-b7ff" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="1b50-ea1f-68dd-ddb3" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e33d-9633-54f5-30b3" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8487-9f94-907f-8341" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e13c-977a-9aa2-3db2" name="Hand Weapon" hidden="false" targetId="f6da-d707-0cd6-b1dd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4fe5-1676-6abc-b1c9" name="Medium Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebca-8203-a023-8dc7" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86dc-c4ff-475e-50a9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a89-534c-4041-84c8" name="Medium Armour" hidden="false" targetId="6d9a-c9f8-e013-e77f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="758e-2de4-ec3b-295f" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f752-43c1-e7b1-46c0">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d225-65ff-6d28-b0d0" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="997a-ace6-962a-8e68" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f752-43c1-e7b1-46c0" name="Fire Bombs" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="715f-ce8a-2743-a56a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                  <profiles>
+                    <profile id="dd9-eff1-7d66-fcb6" name="Fire Bombs" publicationId="8abe-59b3-1084-5e51" page="26" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">6&quot;</characteristic>
+                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">4</characteristic>
+                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Armour Piercing (1). Flaming Attacks. Quick to Fire. Each Hit from a Fire Bomb is multiplied into D6 Hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="a2d-338d-e5dc-3a31" name="Sky Rockets" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1264-1ef7-7760-c716" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="7"/>
+                  </costs>
+                  <profiles>
+                    <profile id="1cdb-6bb5-96ad-390f" name="Sky Rockets" publicationId="8abe-59b3-1084-5e51" page="26" hidden="false" typeId="6f70-cea1-702c-43bc" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="59f2-3142-82d5-4f43">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="b80e-7dac-0dea-9add">3</characteristic>
+                        <characteristic name="Special Rules" typeId="de63-d6da-efa8-00ac">Flaming Attacks. Move or Fire. Multiple Shots (D6). Volley Fire.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>

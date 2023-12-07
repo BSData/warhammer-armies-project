@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="39" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="62ee-24f6-1508-ac6a" name="Orcs &amp; Goblins" revision="40" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="bf00-3101-4063-678b" name="Animosity Table">
@@ -6857,7 +6857,7 @@ At the start of each round of close combat in which a Goblin Jester is involved,
                     <infoLink id="84fa-c490-b9d1-0427" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="2"/>
+                    <cost name="pts" typeId="points" value="1"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d542-4579-e8a0-bd43" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -6930,6 +6930,20 @@ At the start of each round of close combat in which a Goblin Jester is involved,
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
+              <selectionEntries>
+                <selectionEntry id="205a-9d3a-bc59-982e" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="908f-fbaf-2a24-8754" type="max"/>
+                    <constraint field="points" scope="parent" value="25" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a887-c11f-269-532a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="30b3-6253-a75d-ebe5" name="Magic Standards" hidden="false" collective="false" import="true" targetId="0b11-5c25-beb7-1810" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8391,18 +8405,6 @@ Movement, but they always move in a random direction.</description>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bb9d-07df-2609-563b" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="914c-0d57-8fe4-a6b6" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8d9-d630-01f5-aee2" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e537-dc8c-7a49-5fa8" name="Shield" hidden="false" targetId="8bf1-244f-c642-d43f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="389c-1112-4fae-fe9a" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3113-d6a8-af38-f008">
@@ -8411,7 +8413,7 @@ Movement, but they always move in a random direction.</description>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="001f-c763-6e57-079e" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="620e-24f7-98e2-1a0c" name="Spear (Mounted)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="620e-24f7-98e2-1a0c" name="Spear (Mounted) &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bdf-b77e-6cd5-f568" type="max"/>
                   </constraints>
@@ -8434,7 +8436,7 @@ Movement, but they always move in a random direction.</description>
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3113-d6a8-af38-f008" name="Hand Weapon" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="3113-d6a8-af38-f008" name="Hand Weapon &amp; Shield" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09f7-9264-f7cb-550a" type="max"/>
                   </constraints>

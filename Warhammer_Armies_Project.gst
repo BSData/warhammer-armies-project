@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="49" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="50" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -17,7 +17,7 @@
     <publication id="d69c-a7ea-95db-6f56" name="Steam Tanks" shortName="Emp" publisher="Warhammer - Steam Tanks" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315d-135b-135c-07ce" name="Empire v.1.5" shortName="Em" publisher="Warhammer - Empire 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="4086-1ccd-f433-39a2" name="Skaven v.1.8" shortName="Sk" publisher="Warhammer - Skaven 9th Ed v.1.8" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos v.1.62" shortName="DoC" publisher="Warhammer - Daemons of Chaos 1.62" publicationDate="26.10.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="ee54-3543-b9db-fe40" name="Daemons of Chaos 1.62" shortName="DoC" publisher="Warhammer - Daemons of Chaos 1.62" publicationDate="26.10.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.4, Lizardmen v.1.4" shortName="HE, LM" publisher="Warhammer - High Elves 9th Ed v.1.4, Warhammer - Lizardmen 9th Ed v.1.4" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.6, Daemons of Chaos v.1.62, Warriors of Chaos v.1.5" shortName="BM, DoC, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Daemons of Chaos 1.62, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.5" shortName="TK" publisher="Warhammer - Tomb Kings 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -27,15 +27,15 @@
     <publication id="e967-620f-06be-096a" name="Wood Elves v.1.5" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.3" shortName="Am" publisher="Warhammer - Amazons 9th Ed 1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d221-484d-439d-4310" name="Araby v.1.5" shortName="Ar" publisher="Warhammer - Araby 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="8abe-59b3-1084-5e51" name="Grand Cathay v.1.52" shortName="GC" publisher="Warhammer - Grand Cathay 1.52" publicationDate="11.09.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="8abe-59b3-1084-5e51" name="Grand Cathay 1.52" shortName="GC" publisher="Warhammer - Grand Cathay 1.52" publicationDate="11.09.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.5" shortName="CD" publisher="Warhammer - Chaos Dwarfs 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric" shortName="CoU" publisher="Warhammer - Cult or Ulric 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric 1.11" shortName="CoU" publisher="Warhammer - Cult of Ulric 1.11" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
     <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.4" shortName="DoW" publisher="Warhammer - Dogs of War 9th Ed v.1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="894a-5ecc-1ff7-958a" name="Estalia v.1.15" shortName="Es" publisher="Warhammer - Estalia 1.15" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.08.2023"/>
+    <publication id="894a-5ecc-1ff7-958a" name="Estalia 1.15" shortName="Es" publisher="Warhammer - Estalia 1.15" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.08.2023"/>
     <publication id="0545-ea23-873c-f668" name="Halflings" shortName="Ha" publisher="Warhammer - Halflings 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins" shortName="Ho" publisher="Warhammer - Hobgoblins 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind 1.12" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 1.12" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
-    <publication id="1607-bfe9-82af-d3dc" name="Kislev v.1.16" shortName="Ki" publisher="Warhammer - Kislev 1.16" publicationDate="26.07.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="1607-bfe9-82af-d3dc" name="Kislev 1.16" shortName="Ki" publisher="Warhammer - Kislev 1.16" publicationDate="26.07.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5ff9-69dd-8810-183f" name="Nippon v.1.2" shortName="Ni" publisher="Warhammer - Nippon 9th Ed v.1.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5884-1659-bf10-0d5a" name="Norsca v.1.1" shortName="No" publisher="Warhammer - Norsca 9th Ed v.1.1" publicationDate="10.11.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa v.1.2" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.2" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="22" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7180-a214-a635-1dfa" name="Kingdoms of Ind" revision="23" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="285d-8655-ed69-a327" name="Maleficent Gaze Table">
@@ -5409,24 +5409,6 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c265-9b35-a5cd-3cca" name="Sudarshana Chakram" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c87e-f13c-848b-eeca" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c682-847f-5f7a-6fe5" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="8f72-eead-81b5-0819" name="Sudarshana Chakram" publicationId="84d9-dc45-4bf8-ae57" page="28" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="4285-3917-6bf9-348b"/>
-                        <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
-                        <characteristic name="Special Rules" typeId="ce2d-df6c-9271-a2f8">Sudarshana Chakram may be thrown in the Shooting Phase. It has a range of 18&quot;. Target 1 enemy model within line of sight and roll to Hit as normal. If the attack hits, place the 3&quot; template over that model. Roll a D6 and the Scatter dice to determine in which direction Sudarshana Chakram moves. Any model passed over by the template suffers a Magical S 5 hit with Armour Piercing (1).</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="610a-8d85-cd67-e65e" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8065-df26-e214-bfe5" type="max"/>
@@ -5577,6 +5559,11 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
               </selectionEntries>
               <entryLinks>
                 <entryLink id="a00a-ad4e-3a81-5f17" name="General" hidden="false" collective="false" import="true" targetId="d322-3c7a-6d1e-7dc2" type="selectionEntry"/>
+                <entryLink import="true" name="Sudarshana Chakram" hidden="false" type="selectionEntry" id="6bac-bbd0-a6e7-5c1d" targetId="ac68-98cc-edfe-2025">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f1d-e906-36-4675" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="240"/>
@@ -7477,13 +7464,13 @@ On the first turn of combat with the Basilisk a wound is inflicted on a result o
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cce5-2598-a2b5-b314" name="Sudarshana Chakram" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ac68-98cc-edfe-2025" name="Sudarshana Chakram" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9a8-884e-fd9e-b8aa" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="85f1-5f6d-f908-fc6a" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e368-a109-8c49-5818" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc80-4f16-d66b-50e1" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6e4e-5c61-b87-6fdc" name="Sudarshana Chakram" publicationId="84d9-dc45-4bf8-ae57" page="5" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
+        <profile id="bcdc-4e04-2c0f-3865" name="Sudarshana Chakram" publicationId="84d9-dc45-4bf8-ae57" page="5" hidden="false" typeId="c119-42f4-2cbe-71a5" typeName="Magic Weapon">
           <characteristics>
             <characteristic name="Range" typeId="4285-3917-6bf9-348b">18&quot;</characteristic>
             <characteristic name="Strength" typeId="a1a2-667b-2ec7-4ba7"/>
@@ -7805,7 +7792,7 @@ addition, the wielder gains Heroic Killing Blow.</characteristic>
       </selectionEntries>
       <entryLinks>
         <entryLink id="ce1c-e5e1-1d35-0b24" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6820-41cc-94f6-87c1" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Sudarshana Chakram" hidden="false" type="selectionEntry" id="16bf-1ec2-b15-aa69" targetId="cce5-2598-a2b5-b314"/>
+        <entryLink import="true" name="Sudarshana Chakram" hidden="false" type="selectionEntry" id="f995-b9c9-54ae-db9e" targetId="ac68-98cc-edfe-2025"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0131-c007-fe5d-ad93" name="Arcane Items (One use only)" hidden="false" collective="false" import="true">

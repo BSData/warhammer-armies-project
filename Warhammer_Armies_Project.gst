@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="51" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="52" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -25,7 +25,7 @@
     <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.5" shortName="WoC" publisher="Warhammer - Warriors of Chaos 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.6, Warriors of Chaos v.1.5" shortName="BM, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e967-620f-06be-096a" name="Wood Elves v.1.5" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.43" shortName="Am" publisher="Warhammer - Amazons 1.43" publicationDate="13.12.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.44" shortName="Am" publisher="Warhammer - Amazons 1.44" publicationDate="08.01.2024" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d221-484d-439d-4310" name="Araby v.1.5" shortName="Ar" publisher="Warhammer - Araby 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="8abe-59b3-1084-5e51" name="Grand Cathay 1.52" shortName="GC" publisher="Warhammer - Grand Cathay 1.52" publicationDate="11.09.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.5" shortName="CD" publisher="Warhammer - Chaos Dwarfs 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>

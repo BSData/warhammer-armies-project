@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="34" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="452f-70ac-20f9-baed" name="Daemons of Chaos" revision="35" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="efb3-d0de-5567-f01a" name="Daemonic Gift">
@@ -7927,12 +7927,12 @@ turn.</description>
             <constraint field="points" scope="parent" value="50" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="801e-4d3e-3593-aa82" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6ba-b5f4-e0e3-33e3" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
-            <entryLink id="4a99-5032-6be7-27d4" name="Talismans" hidden="false" collective="false" import="true" targetId="7076-9cba-be01-b9e1" type="selectionEntryGroup"/>
+            <entryLink id="4a99-5032-6be7-27d4" name="Tzeentch Talismans" hidden="false" collective="false" import="true" targetId="3d0d-cb63-5c4a-339a" type="selectionEntryGroup"/>
             <entryLink id="ab69-5761-e02c-f77f" name="Arcane Items" hidden="false" collective="false" import="true" targetId="fa90-b934-7df2-70a8" type="selectionEntryGroup"/>
-            <entryLink id="3a8-b40b-dc84-e268" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
             <entryLink id="eded-35c1-b1a0-7fb7" name="Gifts of Chaos" hidden="false" collective="false" import="true" targetId="4323-f58c-05ba-2081" type="selectionEntryGroup"/>
             <entryLink id="84ff-7e73-32f3-d8eb" name="Gifts of Tzeentch" hidden="false" collective="false" import="true" targetId="d406-65f6-d51e-0fe2" type="selectionEntryGroup"/>
+            <entryLink id="c636-e84c-ca6-3d48" name="Magic Weapons (Tzeentch)" hidden="false" collective="false" import="true" targetId="beac-1329-994f-7903" type="selectionEntryGroup"/>
+            <entryLink id="31d6-b1b7-818a-e8a6" name="Enchanted Items (Tzeentch)" hidden="false" collective="false" import="true" targetId="4648-2a95-4158-9c64" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -11064,7 +11064,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Weapons (Khorne)" hidden="false" id="af47-3794-1327-9fa0">
+    <selectionEntryGroup name="Khorne Magic Weapons" hidden="false" id="af47-3794-1327-9fa0">
       <entryLinks>
         <entryLink id="6b1f-83d5-8791-71cd" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11225,7 +11225,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enchanted Items (Khorne)" hidden="false" id="127b-f76-6797-f4a4">
+    <selectionEntryGroup name="Khorne Enchanted Items" hidden="false" id="127b-f76-6797-f4a4">
       <entryLinks>
         <entryLink id="12c5-6e04-2734-40cf" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11306,7 +11306,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Weapons (Nurgle)" hidden="false" id="8a5b-8cdf-aa43-eea7">
+    <selectionEntryGroup name="Nurgle Magic Weapons" hidden="false" id="8a5b-8cdf-aa43-eea7">
       <entryLinks>
         <entryLink id="e180-cae2-5f66-2b78" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11395,7 +11395,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enchanted Items (Nurgle)" hidden="false" id="b4c-d1d7-9606-44a2">
+    <selectionEntryGroup name="Nurgle Enchanted Items" hidden="false" id="b4c-d1d7-9606-44a2">
       <entryLinks>
         <entryLink id="fa15-de64-3267-4e4f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11444,7 +11444,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Weapons (Tzeentch)" hidden="false" id="beac-1329-994f-7903">
+    <selectionEntryGroup name="Tzeentch Magic Weapons" hidden="false" id="beac-1329-994f-7903">
       <entryLinks>
         <entryLink id="6923-1c0d-7891-7056" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11533,7 +11533,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Weapons (Slaanesh)" hidden="false" id="7d1a-dd80-d196-d40e">
+    <selectionEntryGroup name="Slaanesh Magic Weapons" hidden="false" id="7d1a-dd80-d196-d40e">
       <entryLinks>
         <entryLink id="a40a-199a-2a7e-bfaf" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="aa64-641b-679d-4ec7" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11607,7 +11607,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enchanted Items (Slaanesh)" hidden="false" id="c730-a179-c4d3-41b1">
+    <selectionEntryGroup name="Slaanesh Enchanted Items" hidden="false" id="c730-a179-c4d3-41b1">
       <entryLinks>
         <entryLink id="a390-5867-45f4-3ade" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11704,7 +11704,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enchanted Items (Tzeentch)" hidden="false" id="4648-2a95-4158-9c64">
+    <selectionEntryGroup name="Tzeentch Enchanted Items" hidden="false" id="4648-2a95-4158-9c64">
       <entryLinks>
         <entryLink id="fa75-fa49-7dc8-827f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="12fb-9043-3608-2fbe" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11753,7 +11753,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Standards (Khorne)" hidden="false" id="fc5f-12f1-6000-259e">
+    <selectionEntryGroup name="Khorne Magic Standards" hidden="false" id="fc5f-12f1-6000-259e">
       <entryLinks>
         <entryLink id="b00a-4f87-7371-fed" name="Undivided Magic Standards" hidden="false" collective="false" import="true" targetId="5b2f-10a0-adff-f5d6" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11802,7 +11802,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Standards (Tzeentch)" hidden="false" id="4a5a-2596-35d4-31f3">
+    <selectionEntryGroup name="Tzeentch Magic Standards" hidden="false" id="4a5a-2596-35d4-31f3">
       <entryLinks>
         <entryLink id="2119-df7-1697-9a6d" name="Undivided Magic Standards" hidden="false" collective="false" import="true" targetId="5b2f-10a0-adff-f5d6" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11860,7 +11860,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Standards (Nurgle)" hidden="false" id="9d8d-8085-4b3f-2ba">
+    <selectionEntryGroup name="Nurgle Magic Standards" hidden="false" id="9d8d-8085-4b3f-2ba">
       <entryLinks>
         <entryLink id="b5a7-fca-6380-4434" name="Undivided Magic Standards" hidden="false" collective="false" import="true" targetId="5b2f-10a0-adff-f5d6" type="selectionEntryGroup"/>
       </entryLinks>
@@ -11909,7 +11909,7 @@ Cursed terrain features placed in this way must be positioned touching an existi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Standards (Slaanesh)" hidden="false" id="d7af-d28f-8c7-990a">
+    <selectionEntryGroup name="Slaanesh Magic Standards" hidden="false" id="d7af-d28f-8c7-990a">
       <entryLinks>
         <entryLink id="f2a-7d7b-57bd-dba6" name="Undivided Magic Standards" hidden="false" collective="false" import="true" targetId="5b2f-10a0-adff-f5d6" type="selectionEntryGroup"/>
       </entryLinks>

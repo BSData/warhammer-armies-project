@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="50" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="51" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -25,7 +25,7 @@
     <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.5" shortName="WoC" publisher="Warhammer - Warriors of Chaos 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.6, Warriors of Chaos v.1.5" shortName="BM, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e967-620f-06be-096a" name="Wood Elves v.1.5" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.3" shortName="Am" publisher="Warhammer - Amazons 9th Ed 1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.43" shortName="Am" publisher="Warhammer - Amazons 1.43" publicationDate="13.12.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d221-484d-439d-4310" name="Araby v.1.5" shortName="Ar" publisher="Warhammer - Araby 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="8abe-59b3-1084-5e51" name="Grand Cathay 1.52" shortName="GC" publisher="Warhammer - Grand Cathay 1.52" publicationDate="11.09.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.5" shortName="CD" publisher="Warhammer - Chaos Dwarfs 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -23464,7 +23464,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4/6 hits which count as Flaming Attacks. Against models with Daemonic, Undead or Vampiric, this is increased to 2D6 Hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1685-1790-fbf5-ac7c" name="Shem&apos;s Burning Gaze (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="1685-1790-fbf5-ac7c" name="Shem&apos;s Burning Gaze (Bound Spell 3+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -23559,7 +23559,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers 2D6 hits. Against models with Daemonic, Undead or Vampiric, this is increased to 3D6 Hits. The S of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12&quot; of the caster (not counting the caster them self). Successful Ward saves taken against Banishment must be re-rolled.</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff7e-9796-a8b9-4e5e" name="Banishment (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="ff7e-9796-a8b9-4e5e" name="Banishment (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -23568,7 +23568,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers 2D6 hits. Against models with Daemonic, Undead or Vampiric, this is increased to 3D6 Hits. The S of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12&quot; of the caster (not counting the caster them self). Successful Ward saves taken against Banishment must be re-rolled.</characteristic>
       </characteristics>
     </profile>
-    <profile id="8e76-49b5-99ad-b4aa" name="Birona&apos;s Timewarp (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="8e76-49b5-99ad-b4aa" name="Birona&apos;s Timewarp (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -23741,7 +23741,7 @@ In addition, any enemy unit within 12&quot; of the target at the start of their 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If fleeing, the target rallies immediately. Additionally, the target will pass all LD tests (regardless of modifiers) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1635-9e12-e315-6de7" name="Light of Battle (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="1635-9e12-e315-6de7" name="Light of Battle (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -23759,7 +23759,7 @@ In addition, any enemy unit within 12&quot; of the target at the start of their 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit must pass a S test every time it moves in the Movement phase, shoots or casts spells until the start of the caster&apos;s next Magic phase. If the test is passed, the target acts normally. If the test is failed, the unit is unable to perform the desired action, remaining in place and taking D6 S 4 hits. Against models with Daemonic, Undead or Vampiric, this is increased to 2D6 Hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e9ec-caf8-9298-da51" name="Net of Amyntok (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="e9ec-caf8-9298-da51" name="Net of Amyntok (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -23795,7 +23795,7 @@ In addition, any enemy unit within 12&quot; of the target at the start of their 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All attacks against the target unit (shooting or close combat) suffer a -1 penalty To Hit until the start of the caster&apos;s next Magic phase. Shooting attacks that do not use BS must roll 4+ on a D6 before firing, or the shot(s) is lost. Boosted version affects all friendly units within range.</characteristic>
       </characteristics>
     </profile>
-    <profile id="16d6-648c-3c70-9ff0" name="Pha&apos;s Protection (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="16d6-648c-3c70-9ff0" name="Pha&apos;s Protection (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24013,7 +24013,7 @@ resurrected in an order of your choosing, displacing rank-and-file models as req
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit gains Always Strikes First until the start of the caster&apos;s next Magic phase. Boosted version, affects all friendly units within range.</characteristic>
       </characteristics>
     </profile>
-    <profile id="9579-8aa8-6eff-8a6a" name="The Speed of Light (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="9579-8aa8-6eff-8a6a" name="The Speed of Light (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -25029,6 +25029,69 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers a -1 penalty to Hit in close combat and with missile weapons, -1 I and -1 to its armour saves until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b641-93cc-e21a-b9fc" name="Shem&apos;s Burning Gaze (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits which count as Flaming Attacks. Against models with Daemonic, Undead or Vampiric, this is increased to 2D6 Hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="515a-4044-48ba-a907" name="The Speed of Light (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit gains Always Strikes First until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4127-6277-3555-ff27" name="Pha&apos;s Protection (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All attacks against the target unit (shooting or close combat) suffer a -1 penalty To Hit until the start of the caster&apos;s next Magic phase. Shooting attacks that do not use BS must roll 4+ on a D6 before firing, or the shot(s) is lost.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1059-54cf-60ca-abbb" name="Net of Amyntok (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit must pass a S test every time it moves in the Movement phase, shoots or casts spells until the start of the caster&apos;s next Magic phase. If the test is passed, the target acts normally. If the test is failed, the unit is unable to perform the desired action, remaining in place and taking D6 S 4 hits. Against models with Daemonic, Undead or Vampiric, this is increased to 2D6 Hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="395a-53de-245d-c0d3" name="Light of Battle (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">If fleeing, the target rallies immediately. Additionally, the target will pass all LD tests (regardless of modifiers) until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c43f-8a6d-9ec1-f15c" name="Birona&apos;s Timewarp (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit&apos;s M is doubled, its I is raised to 10, and its A is increased by 1 until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2804-2536-752f-f0ff" name="Banishment (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers 2D6 hits. Against models with Daemonic, Undead or Vampiric, this is increased to 3D6 Hits. The S of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12&quot; of the caster (not counting the caster them self). Successful Ward saves taken against Banishment must be re-rolled.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="18" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0542-5575-8060-2eff" name="Cult of Ulric" revision="19" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <selectionEntries>
     <selectionEntry id="f550-ff56-cf52-9b96" name="Midden Marshal" hidden="false" collective="false" import="true" type="model">
@@ -5255,14 +5255,14 @@
                   <selectionEntryGroups>
                     <selectionEntryGroup id="785b-b64c-38db-84e1" name="Drawn by..." hidden="false" collective="false" import="true" defaultSelectionEntryId="d6b8-494e-bc46-dfd4">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d94-1a9f-b820-a769" type="max"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1de-34f5-8d05-db96" type="min"/>
+                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d94-1a9f-b820-a769" type="max"/>
+                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1de-34f5-8d05-db96" type="min"/>
                       </constraints>
                       <selectionEntries>
                         <selectionEntry id="6b0e-87d5-3263-4fc" name="Warhorse" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="912f-32ae-719a-d41e" type="max"/>
-                            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a8-71f3-693f-9cef" type="min"/>
+                            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a8-71f3-693f-9cef" type="min"/>
                           </constraints>
                           <infoLinks>
                             <infoLink id="8b1f-12a8-a34d-1c74" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
@@ -5270,11 +5270,18 @@
                           <costs>
                             <cost name="pts" typeId="points" value="0"/>
                           </costs>
+                          <modifiers>
+                            <modifier type="set" value="2" field="2a8-71f3-693f-9cef">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6b0e-87d5-3263-4fc" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </selectionEntry>
                         <selectionEntry id="fd29-8d23-9697-42cb" name="Winter Wolf" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b902-e29e-7e7d-e45a" type="max"/>
-                            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b87-6a90-94b9-e12f" type="min"/>
+                            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b87-6a90-94b9-e12f" type="min"/>
                           </constraints>
                           <infoLinks>
                             <infoLink id="41d7-31de-3f71-a4ac" name="Winter Wolf" hidden="false" targetId="c8e7-a97a-49d5-c687" type="profile"/>
@@ -5284,6 +5291,13 @@
                           <costs>
                             <cost name="pts" typeId="points" value="15"/>
                           </costs>
+                          <modifiers>
+                            <modifier type="set" value="2" field="7b87-6a90-94b9-e12f">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fd29-8d23-9697-42cb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
@@ -5700,16 +5714,16 @@
                 <categoryLink id="f339-12be-a92b-72a4" name="(Mount)" hidden="false" targetId="(Mount)" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="8de7-490d-3ba8-59ff" name="Drawn by..." hidden="false" collective="false" import="true" defaultSelectionEntryId="d6b8-494e-bc46-dfd4">
+                <selectionEntryGroup id="8de7-490d-3ba8-59ff" name="Drawn by..." hidden="false" collective="false" import="true" defaultSelectionEntryId="4da2-4d4e-f11a-55b6">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6793-5361-b099-bb82" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30c-6481-b475-51f2" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6793-5361-b099-bb82" type="max"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30c-6481-b475-51f2" type="min"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="4da2-4d4e-f11a-55b6" name="Warhorse" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f29e-d08a-6c60-c507" type="max"/>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d4c-ad03-f72e-b1ed" type="min"/>
+                        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d4c-ad03-f72e-b1ed" type="min"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="2f3f-1153-c062-ac18" name="Warhorse" hidden="false" targetId="1c38-2830-10db-579c" type="profile"/>
@@ -5717,11 +5731,18 @@
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
                       </costs>
+                      <modifiers>
+                        <modifier type="set" value="2" field="6d4c-ad03-f72e-b1ed">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4da2-4d4e-f11a-55b6" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                     <selectionEntry id="19f-1868-b47f-aee5" name="Winter Wolf" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81d6-4704-4785-93d0" type="max"/>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f0d-e114-98f-77f4" type="min"/>
+                        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f0d-e114-98f-77f4" type="min"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="6f0a-f737-e75b-f01b" name="Winter Wolf" hidden="false" targetId="c8e7-a97a-49d5-c687" type="profile"/>
@@ -5731,6 +5752,13 @@
                       <costs>
                         <cost name="pts" typeId="points" value="15"/>
                       </costs>
+                      <modifiers>
+                        <modifier type="set" value="2" field="5f0d-e114-98f-77f4">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="19f-1868-b47f-aee5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>

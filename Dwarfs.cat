@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="32" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b378-d254-8745-ba60" name="Dwarfs" revision="33" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="6aa2-7707-349b-6651" name="Armour Rune">
@@ -2763,35 +2763,36 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <cost name="pts" typeId="points" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2b34-549e-f9aa-6512" name="Brotherhood of Grimnir" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9f5e-a555-65b7-e592" name="Brotherhood of Grimnir" hidden="true" collective="true" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="points">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="2e7e-4c0d-3f04-43b2" shared="true" roundUp="false" id="67a3-1b2-5517-71c2" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bf6-9bf7-6889-3f39" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e731-ceb3-7a5d-9927" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e46e-4f4d-6205-61b7" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6cad-ce5-dcf6-677d" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2d8-8657-c3f0-c32c" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="points" value="1">
-              <repeats>
-                <repeat field="selections" scope="9fa1-ad93-8854-17cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e7e-4c0d-3f04-43b2" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5292-548d-c11a-8b35" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="874d-afee-1fac-6ae9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4691-7498-9202-3fed" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="788a-fc4e-e94a-5535" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7bc4-c0be-7eef-af66" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+            <infoLink id="8d2a-bd46-3e60-e3e8" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2844,7 +2845,7 @@ Note that a shot from a war machine with an engineering rune is a magical attack
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c2b-a613-3d13-958a" name="Slayers (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7c2b-a613-3d13-958a" name="Troll Slayers (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2919,35 +2920,36 @@ Note that a shot from a war machine with an engineering rune is a magical attack
             <cost name="pts" typeId="points" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4bf6-9bf7-6889-3f39" name="Brotherhood of Grimnir" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e46e-4f4d-6205-61b7" name="Brotherhood of Grimnir" hidden="true" collective="true" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="points">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="eedd-0cdf-3e03-265a" shared="true" roundUp="false" id="bcdf-d42e-a465-d45f" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e731-ceb3-7a5d-9927" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b34-549e-f9aa-6512" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6cad-ce5-dcf6-677d" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f5e-a555-65b7-e592" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2d8-8657-c3f0-c32c" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="points" value="1">
-              <repeats>
-                <repeat field="selections" scope="7c2b-a613-3d13-958a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eedd-0cdf-3e03-265a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a62-df79-6f3c-1a8b" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3f86-8b84-47f7-6b8e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="151d-399d-dd68-9274" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e650-5ace-3b2e-6bbc" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="e2b6-66ec-cca9-c53e" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+            <infoLink id="6b7c-93aa-7dbf-347c" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -6807,7 +6809,7 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c336-7ad1-6d18-49ae" name="Slayers (Daemon Slayer)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c336-7ad1-6d18-49ae" name="Troll Slayers (Daemon Slayer)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -6883,35 +6885,36 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
             <cost name="pts" typeId="points" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e731-ceb3-7a5d-9927" name="Brotherhood of Grimnir" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6cad-ce5-dcf6-677d" name="Brotherhood of Grimnir" hidden="true" collective="true" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="points">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e0e5-8ae1-37fe-e51e" shared="true" roundUp="false" id="e755-5e13-cbe3-7669" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bf6-9bf7-6889-3f39" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b34-549e-f9aa-6512" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e46e-4f4d-6205-61b7" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f5e-a555-65b7-e592" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2d8-8657-c3f0-c32c" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="points" value="1">
-              <repeats>
-                <repeat field="selections" scope="c336-7ad1-6d18-49ae" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e5-8ae1-37fe-e51e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="36c3-1784-4e90-6631" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5b06-87e5-887d-c2ae" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10f-ab81-e489-30c4" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6ad5-22e7-c500-232b" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="2132-998b-1f3f-c090" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+            <infoLink id="637b-e9b2-2a10-e949" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -6952,6 +6955,163 @@ Thorek can re-roll a single dice on a failed attempt to cast one of the innate b
               </constraints>
               <infoLinks>
                 <infoLink id="d50c-6578-d791-4776" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6c59-148-6993-457a" name="Giantslayers (Ungrim as General)" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="98af-3e83-745b-65d1" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-ad93-8854-17cb" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98af-3e83-745b-65d1" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="fc26-7737-f7cb-8977" id="76d1-13cf-ecaf-f5a4" primary="true" name="Special"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="16c1-aeff-eef5-b874" name="Giantslayers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ca5-a43c-d7c0-3261" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a059-c044-fc57-5d80" name="Ancestral Grudge" hidden="false" targetId="73fd-d115-269d-bd0a" type="rule"/>
+            <infoLink id="4469-a4f7-86b6-dfb5" name="Relentless" hidden="false" targetId="db34-00cf-d5b6-9a4d" type="rule"/>
+            <infoLink id="f0d3-c89b-f054-d682" name="Resolute" hidden="false" targetId="7da8-9e3b-77c9-cc8a" type="rule"/>
+            <infoLink id="5e17-93b8-88e0-97c9" name="Unbreakable" hidden="false" targetId="1c9d-2d99-6222-2853" type="rule"/>
+            <infoLink id="8829-53d3-6936-65dc" name="Slayer" hidden="false" targetId="4740-7f33-d5b8-5563" type="rule"/>
+            <infoLink id="715b-7a69-3903-ee12" name="Vanguard" hidden="false" targetId="38ba-d48a-be97-f830" type="rule"/>
+            <infoLink id="2327-10ad-d05b-f16f" name="Deathblow" hidden="false" targetId="1707-3abf-d5c8-97c0" type="rule"/>
+            <infoLink id="1249-3fd6-8adb-37c7" name="Giant Slayer" hidden="false" targetId="6dac-8ef5-d57c-4c5a" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="689d-ebaa-669e-6bc0" name="Great Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2b4-7390-2546-f1df" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="549c-bb3c-cdc1-17e3" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="81fc-762d-ae0c-e3e5" name="Great Weapon" hidden="false" targetId="193e-bc43-b252-8eff" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="da0b-4de5-94d0-8149" name="Two/Additional Hand Weapons" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad91-c635-f19-4cd9" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a75-1ed9-ee8a-6ce0" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2036-936e-a6f5-310e" name="Two/Additional Hand Weapons" hidden="false" targetId="4a5d-0b6d-f6ac-fd7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6837-1795-2439-bef1" name="Skirmishers" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58e5-a842-9926-dbf7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fba2-4728-add6-9bca" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="1"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f2d8-8657-c3f0-c32c" name="Brotherhood of Grimnir" hidden="true" collective="true" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="506f-adb1-4d36-2c7f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="points">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="16c1-aeff-eef5-b874" shared="true" roundUp="false" id="4d57-6563-5b20-e627" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e46e-4f4d-6205-61b7" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6cad-ce5-dcf6-677d" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2d8-8657-c3f0-c32c" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbd8-b1ad-3980-2eb3" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1ff1-cd3-cf4-294a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7293-3ebb-cea0-84ba" name="Wards of Grimnir" hidden="false" targetId="63eb-ebea-8bb3-87bf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ab05-7c1b-cb63-b9eb" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="56d-a409-e7a4-a1c4" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b47-fa99-9d1f-e798" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3363-5644-4b1b-77e1" name="Standard Bearer" hidden="false" targetId="6002-29d0-d620-1bd0" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="453a-5a93-b395-b710" name="Magic Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbe5-4ba1-a137-3ae1" type="max"/>
+                    <constraint field="points" scope="parent" value="50" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4535-dd56-8d95-795f" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="ce1e-24ca-5e7e-9488" name="Magic Standards &amp; Banner Runes" hidden="false" collective="false" import="true" targetId="d116-5914-dd74-4a4d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3907-e5f8-a68e-97c2" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1798-87d-5365-f389" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2881-2dd5-20d5-59f" name="Musician" hidden="false" targetId="54c3-1d1b-3ffe-59a5" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
@@ -7908,7 +8068,7 @@ on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against
                   <profiles>
                     <profile id="0a57-9532-a1b1-9aed" name="Rune of Slowness (x3)" publicationId="aa7b-3583-0834-7bfa" page="206" hidden="false" typeId="9fca-89e3-04a1-e4ae" typeName="Banner Rune">
                       <characteristics>
-                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A third Rune of Slowness means a foe rolls 2D3 and must choose the highest dice when subtracting from his charge distance.Sshould a foe contact the bearing unit, they have Always Strikes Last in the first round of combat.</characteristic>
+                        <characteristic name="Effect" typeId="51cc-aa7c-4178-d853">A third Rune of Slowness means a foe rolls 2D3 and must choose the highest dice when subtracting from his charge distance. Should a foe contact the bearing unit, they have Always Strikes Last in the first round of combat.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>

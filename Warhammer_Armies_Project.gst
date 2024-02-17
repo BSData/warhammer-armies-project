@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="52" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="53" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -32,7 +32,7 @@
     <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric 1.11" shortName="CoU" publisher="Warhammer - Cult of Ulric 1.11" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
     <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.4" shortName="DoW" publisher="Warhammer - Dogs of War 9th Ed v.1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="894a-5ecc-1ff7-958a" name="Estalia 1.15" shortName="Es" publisher="Warhammer - Estalia 1.15" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.08.2023"/>
-    <publication id="0545-ea23-873c-f668" name="Halflings" shortName="Ha" publisher="Warhammer - Halflings 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="0545-ea23-873c-f668" name="Halflings 1.13" shortName="Ha" publisher="Warhammer - Halflings 1.13" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="16.01.2024"/>
     <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins" shortName="Ho" publisher="Warhammer - Hobgoblins 9th Ed" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind 1.12" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 1.12" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
     <publication id="1607-bfe9-82af-d3dc" name="Kislev 1.16" shortName="Ki" publisher="Warhammer - Kislev 1.16" publicationDate="26.07.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -22945,8 +22945,8 @@ Once on the ground a Giant may get up in his following Movement phase, but may n
     <rule id="fb9d-b6f0-9c84-38e2" name="Dwarf Rum" publicationId="9e23-79cb-pubN116235" page="32" hidden="false">
       <description>Enemy models in base contact with models with this rule suffer -1 to their WS in Close Combat. This does not affect Undead, Daemonic or Mark of Nurgle models. The Slayer Pirates may not be deployed closer than 6&quot; to any other unit in the army at the start of the battle.</description>
     </rule>
-    <rule id="03d6-87a5-ffd8-93ba" name="Short and Nimble" publicationId="0545-ea23-873c-f668" page="40" hidden="false">
-      <description>Enemies attacking models with this rule suffer -1 To Hit in close combat. This only applies to Infantry units.</description>
+    <rule id="03d6-87a5-ffd8-93ba" name="Duck &amp; Weave" publicationId="0545-ea23-873c-f668" page="3" hidden="false">
+      <description>Enemies attacking Infantry models with this rule suffer 1 To Hit in close combat.</description>
     </rule>
     <rule id="1451-9754-507c-44a8" name="Murderous Prowess" publicationId="9e23-79cb-pubN76150" page="114" hidden="false">
       <description>Models with this rule may re-roll all To Wound rolls of 1 when making close combat attacks.</description>
@@ -23415,8 +23415,7 @@ Unless specified, any rules that apply to the model’s normal attacks do not ap
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the Wizard itself and any unit they are with. The target unit gains Regeneration (5+) until the start of the caster&apos;s next Magic phase. Alternatively, the Wizard
-can choose to target one unit within 12&quot;. If they do so, the target gains Regeneration (6+) instead of Regeneration (5+).</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the Wizard itself and any unit they are with. The target unit gains Regeneration (5+) until the start of the caster&apos;s next Magic phase. Alternatively, the Wizard can choose to target one unit within 12&quot;. If they do so, the target gains Regeneration (6+) instead of Regeneration (5+).</characteristic>
       </characteristics>
     </profile>
     <profile id="8d26-28db-c5b3-370f" name="Fate Manipulation" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -23437,7 +23436,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers a -1 to their WS, BS and LD until the start of the caster&apos;s next Magic phase. Shooting attacks that do not use BS must roll 4+ on a D6 before firing, or the shot(s) is lost. This is an Ice Attack.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0ece-506a-9882-5f13" name="Iceshard Blizzard (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="0ece-506a-9882-5f13" name="Iceshard Blizzard (Bound Spell 4+)" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -23509,7 +23508,7 @@ can choose to target one unit within 12&quot;. If they do so, the target gains R
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). Both caster and target roll a D6 and add their respective LD values. For every point the caster wins by, the target suffers a Wound which Ignores Armour saves.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6b1a-c795-4066-75c9" name="Spirit Leech (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="6b1a-c795-4066-75c9" name="Spirit Leech (Bound Spell 7+)" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -23669,7 +23668,7 @@ In addition, any enemy unit within 12&quot; of the target at the start of their 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit (except mounts) has a +1 bonus when rolling To Wound with all shooting and close combat attacks until the start of the caster&apos;s next Magic phase. The target unit also counts as having both Magical Attacks and Flaming Attacks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="da1f-0914-1ccf-d707" name="Flaming Sword of Rhuin (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="145" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="da1f-0914-1ccf-d707" name="Flaming Sword of Rhuin (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="145" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -23687,7 +23686,7 @@ In addition, any enemy unit within 12&quot; of the target at the start of their 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit has +2 to its T value until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f9e4-8ae2-fe0f-02ae" name="Flesh to Stone (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="f9e4-8ae2-fe0f-02ae" name="Flesh to Stone (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -23842,7 +23841,7 @@ I test or suffer a Wound using Multiple Wounds (D3)/(D6) and Ignores Armour Save
 resurrected in an order of your choosing, displacing rank-and-file models as required. Then rank-and-file models with multiple Wounds are healed to their starting value. Finally, any remaining wounds resurrect rank and file models (in the case of multiple wound rank and file models, the first resurrected models must be fully healed before another can be resurrected, and so on). These are added to the front or rear of the unit as you wish as long as the unit keeps a legal formation. Regrowth cannot take a unit beyond its starting size, and cannot be used to heal characters or their mounts. Any models that are resurrected retain any rules and/or bonuses the unit has gained or lost this turn.</characteristic>
       </characteristics>
     </profile>
-    <profile id="462d-e08c-2aba-a7b8" name="Regrowth (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="462d-e08c-2aba-a7b8" name="Regrowth (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -23878,7 +23877,7 @@ resurrected in an order of your choosing, displacing rank-and-file models as req
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Can be cast on Infantry character (including the Wizard) within range. The target immediately makes a move using Fly (10) as if it were the Remaining Moves sub-phase. In addition, the target will count as being Ethereal for the purpose of resolving missile attacks against it until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="c42b-21dc-06e9-25a2" name="Steed of Shadows (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="c42b-21dc-06e9-25a2" name="Steed of Shadows (Bound Spell 3+)" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24060,7 +24059,7 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
 of their Magic Phases.</characteristic>
       </characteristics>
     </profile>
-    <profile id="db05-ce95-2cf2-8200" name="Transformation of Kadon (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="db05-ce95-2cf2-8200" name="Transformation of Kadon (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24080,7 +24079,7 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 6 hits with Lightning Attacks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4768-022d-5e1d-bbc0" name="Urannon&apos;s Thunderbolt (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="4768-022d-5e1d-bbc0" name="Urannon&apos;s Thunderbolt (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24170,7 +24169,7 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6/2D6 S 5 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2897-e2c7-a845-ee02" name="Doombolt of Kharaidon (Bound Spell)" publicationId="9e23-79cb-pubN76150" page="168" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="2897-e2c7-a845-ee02" name="Doombolt of Kharaidon (Bound Spell 4+)" publicationId="9e23-79cb-pubN76150" page="168" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24197,7 +24196,7 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All models in the target unit have a +1 bonus to their S until the start of the caster&apos;s next Magic phase. Then add D3 power dice to your power pool. If a natural 6 is rolled when generating these power dice, the caster suffers a Wound which Ignores Armour saves.</characteristic>
       </characteristics>
     </profile>
-    <profile id="9138-efc9-8b35-fc6d" name="Power of Darkness (Bound Spell)" publicationId="9e23-79cb-pubN76150" page="170" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="9138-efc9-8b35-fc6d" name="Power of Darkness (Bound Spell 8+)" publicationId="9e23-79cb-pubN76150" page="170" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24242,7 +24241,7 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy character (even if in a unit). The target suffers a single Wound which Ignores Armour saves on a dice roll greater than or equal to the model&apos;s unmodified armour save (excluding Natural Armour, models without an armour save cannot be wounded). The owning player must then reveal to the caster all the magic items possessed by the target (if any). If the target has one or more magic items, randomly select one of them – that item is immediately destroyed on the roll of 2+ and cannot be used for the rest of the game. Note that this spell has no effect on magic items that are mounts, magic items that contain bound spells that have miscast during the game, and any magic items labelled as &apos;one use only&apos; that have already been used during the game – do not include these when randomly selecting a magic item.</characteristic>
       </characteristics>
     </profile>
-    <profile id="3779-c51d-6f3c-8ecb" name="Arcane Unforging (Bound Spell)" publicationId="b724-d2c4-d151-2d9e" page="201, 187" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="3779-c51d-6f3c-8ecb" name="Arcane Unforging (Bound Spell 5+)" publicationId="b724-d2c4-d151-2d9e" page="201, 187" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24305,7 +24304,7 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6/3D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="bfdd-7aed-5578-4031" name="Soul Quench (Bound Spell)" publicationId="b724-d2c4-d151-2d9e" page="201, 187" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="bfdd-7aed-5578-4031" name="Soul Quench (Bound Spell 4+)" publicationId="b724-d2c4-d151-2d9e" page="201, 187" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24351,7 +24350,7 @@ suffer a Wound on a 5+, and so on, to a maximum of 2+. No armour saves are allow
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b215-84f3-231c-b9df" name="Gaze of Nagash (Bound Spell)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="b215-84f3-231c-b9df" name="Gaze of Nagash (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24369,7 +24368,7 @@ suffer a Wound on a 5+, and so on, to a maximum of 2+. No armour saves are allow
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit gains Always Strikes First and may re-roll failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f8fe-06ac-9d38-eb14" name="Hellish Vigour (Bound Spell)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="f8fe-06ac-9d38-eb14" name="Hellish Vigour (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24399,7 +24398,7 @@ When placing this unit, it must be wholly within the spell&apos;s range and at l
 attribute may still apply.</characteristic>
       </characteristics>
     </profile>
-    <profile id="dc96-4835-7143-539b" name="Raise Dead (ZP Bound Spell)" publicationId="079e-9b65-30b3-2c59" page="44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="dc96-4835-7143-539b" name="Raise Dead (ZP Bound Spell 4+)" publicationId="079e-9b65-30b3-2c59" page="44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
@@ -24441,7 +24440,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">That targets a unengaged Undead unit within range. The target unit can immediately make a normal move (but not march or reform) as if it were the Remaining Moves sub-phase (including any Characters in the unit) Boosted version targets all Undead units within range.</characteristic>
       </characteristics>
     </profile>
-    <profile id="33ac-cce9-8a53-c1ef" name="Vanhel&apos;s Danse Macabre (Bound Spell)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="33ac-cce9-8a53-c1ef" name="Vanhel&apos;s Danse Macabre (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
@@ -24495,7 +24494,7 @@ attribute may still apply.</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit is subject to Always Strikes Last and Random Movement (D6) until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f39-2dfe-12ce-91b5" name="Acquiescence (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="0f39-2dfe-12ce-91b5" name="Acquiescence (Bound Spell 3+)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -24696,7 +24695,7 @@ In subsequent turns, Kraken&apos;s Pull travels in a random direction and moves 
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). If successfully cast, the target must pass a LD test on 3D6. If failed, the target suffers 1 Wound which Ignores Armour saves for every point they failed the LD test by.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a012-5764-3f62-c2bb" name="Pavane of Slaanesh (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="a012-5764-3f62-c2bb" name="Pavane of Slaanesh (Bound Spell 5+)" publicationId="eee5-f9c5-fa08-3f2e" page="114, 7, 240" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -24743,7 +24742,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts D6 S 5 hits. The target unit must then immediately pass a T test or suffer a further D6 S 5 hits. The target must keep testing its T in this manner until a test is passed, or the target is removed as a casualty.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4c78-9e0c-d24a-d6da" name="Rancid Visitations (Bound Spell)" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="4c78-9e0c-d24a-d6da" name="Rancid Visitations (Bound Spell 5+)" publicationId="eee5-f9c5-fa08-3f2e" page="113, 6, 239" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
@@ -24752,7 +24751,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Inflicts D6 S 5 hits. The target unit must then immediately pass a T test or suffer a further D6 S 5 hits. The target must keep testing its T in this manner until a test is passed, or the target is removed as a casualty.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a543-eec5-2be6-556b" name="Rip Tide (Bound Spell)" publicationId="2053-6f2b-423f-8b0f" page="77" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="a543-eec5-2be6-556b" name="Rip Tide (Bound Spell 5+)" publicationId="2053-6f2b-423f-8b0f" page="77" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
@@ -25022,7 +25021,7 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1cf4-60b2-c05f-5ce5" name="Transmutation of Lead (Bound Spell)" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="1cf4-60b2-c05f-5ce5" name="Transmutation of Lead (Bound Spell 12+)" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
@@ -25092,6 +25091,105 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers 2D6 hits. Against models with Daemonic, Undead or Vampiric, this is increased to 3D6 Hits. The S of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12&quot; of the caster (not counting the caster them self). Successful Ward saves taken against Banishment must be re-rolled.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5ea-2c79-61b7-d6ee" name="The Enfeebling Foe (Bound Spell 8+)" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. All models in the target unit have their S reduced by D3 (to a minimum of 1) for the duration of the spell.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="88ed-e199-2942-a431" name="The Withering (Bound Spell 8+)" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. All models in the target unit have their T reduced by D3 (to a minimum of 1) for the duration of the spell.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df8-187e-6984-cac7" name="Regrowth (Bound Spell 7+)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit instantly recovers D3+1 Wounds&apos; worth of models slain earlier in the battle (Cavalry count as 2 models). The wounds in the unit are regained in a strict order. First the musician and then the standard bearer is resurrected, displacing rank-and-file models as required. Then rank-and-file models with multiple Wounds are healed to their starting value. Finally, any remaining wounds resurrect rank and file models (in the case of multiple wound rank and file models, the first resurrected models must be fully healed before another can be resurrected, and so on). These are added to the front or rear of the unit as you wish as long as the unit keeps a legal formation. If the unit already has more than one rank, models can only be added to the rear rank. Regrowth cannot take a unit beyond its starting size, and cannot be used to heal characters or their mounts.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8115-7fe0-73a6-360c" name="Fireball (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="145" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3bd9-27dd-37c2-f2b" name="Searing Doom (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="146" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 hits with Ignores Armour saves and Flaming Attacks. The To Wound score is equal to the unmodified close combat armour save of the target (excluding Natural Armour). Models without an armour save cannot be wounded.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6264-dcb8-7b47-d645" name="Earth Blood (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="147" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the Wizard itself and any unit they are with. The target unit gains Regeneration (5+) until the start of the caster&apos;s next Magic phase. Alternatively, the Wizard can choose to target one unit within 12&quot;. If they do so, the target gains Regeneration (6+) instead of Regeneration (5+).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d0e9-ce85-b12a-a614" name="Wyssan&apos;s Wildform (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="148" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit gains +1 S and +1 T until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd6d-c56c-332-533a" name="Iceshard Blizzard (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="149" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target suffers a -1 to their WS, BS and LD until the start of the caster&apos;s next Magic phase. Shooting attacks that do not use BS must roll 4+ on a D6 before firing, or the shot(s) is lost. This is an Ice Attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b403-209d-9d3a-eedc" name="Shem&apos;s Burning Gaze (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="150" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes D6 S 4 hits which count as Flaming Attacks. Against models with Daemonic, Undead or Vampiric, this is increased to 2D6 Hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="80be-37ce-4901-6cf9" name="Melkoth&apos;s Mystifying Miasma (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="151" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target unit&apos;s WS, BS, I or M (you choose which) is reduced by D3 (to a minimum of 1) until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb88-b796-3856-9102" name="Spirit Leech (Bound Spell 5+)" publicationId="9e23-79cb-pubN66727" page="152" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Direct Damage</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). Both caster and target roll a D6 and add their respective unmodified LD values. For every point the caster wins by, the target suffers a Wound which Ignores Armour saves.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9a34-2536-da13-b61a" name="Halflings" revision="20" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9a34-2536-da13-b61a" name="Halflings" revision="21" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="bdae-0785-80ac-2d6f" name="Light-fingered chart">
@@ -77,6 +77,13 @@
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="50" field="2497-da16-2a79-60aa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb25-6371-4236-c52f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -380,9 +387,14 @@
       <selectionEntries>
         <selectionEntry id="3e3e-6231-37bc-ea4a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="71d0-7103-6eee-5d6b" value="0">
+            <modifier type="decrement" field="6cc0-8ad7-f073-5a25" value="25">
               <conditions>
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5865-329a-14bf-cb4b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="50" field="6cc0-8ad7-f073-5a25">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb25-6371-4236-c52f" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -601,7 +613,7 @@
                   <modifiers>
                     <modifier type="set" field="dba1-7f5b-e7c0-33a3" value="0">
                       <conditions>
-                        <condition field="selections" scope="400d-ae08-6c4a-006f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e3e-6231-37bc-ea4a" type="atLeast"/>
+                        <condition field="points" scope="400d-ae08-6c4a-006f" value="26" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e3e-6231-37bc-ea4a" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -716,6 +728,13 @@
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="50" field="8889-ef7a-8179-e122">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb25-6371-4236-c52f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="0882-299a-9a1e-6f62" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -939,6 +958,13 @@
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="50" field="42d6-e6cc-c8e2-b50e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb25-6371-4236-c52f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="9340-1aa0-cb03-5802" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3317,12 +3343,17 @@
             <entryLink id="36ab-abb9-18c3-1705" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
             <entryLink id="1e68-af36-3b5a-2808" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="2d93-6ac1-addc-a779" type="selectionEntryGroup"/>
             <entryLink id="a8c0-678a-ba01-5b19" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="446a-8ca7-ebd8-fe2c" type="selectionEntryGroup"/>
-            <entryLink id="d637-fc7c-d61c-6f05" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="446a-8ca7-ebd8-fe2c" type="selectionEntryGroup"/>
-            <entryLink id="2925-5ab-3b4a-5383" name="Talismans" hidden="false" collective="false" import="true" targetId="946f-a470-9912-9301" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="50" field="4579-c0a6-9b29-704e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb25-6371-4236-c52f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="ee13-9e63-801e-5a8b" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5010,23 +5041,6 @@ Killing Blow, as well as one extra attack for each enemy infantry model in base
           <costs>
             <cost name="pts" typeId="points" value="10"/>
           </costs>
-          <selectionEntries>
-            <selectionEntry id="5c27-a152-f48c-bcf2" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="752c-b314-6d97-b19c" type="max"/>
-                <constraint field="points" scope="parent" value="50" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="341e-f5cc-28c7-a929" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="8f82-ac0e-19a4-f202" name="Magic Armour" hidden="false" collective="false" import="true" targetId="ae39-f3eb-1a10-4324" type="selectionEntryGroup"/>
-                <entryLink id="42f3-69bb-7b8a-8e1f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="2d93-6ac1-addc-a779" type="selectionEntryGroup"/>
-                <entryLink id="ca4-2457-f4a5-fcb0" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="446a-8ca7-ebd8-fe2c" type="selectionEntryGroup"/>
-                <entryLink id="e974-84db-7a37-8685" name="Talismans" hidden="false" collective="false" import="true" targetId="3f5f-1b3f-81bc-f2d1" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5307,52 +5321,52 @@ Killing Blow, as well as one extra attack for each enemy infantry model in base
         <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry, Halfling</characteristic>
       </characteristics>
     </profile>
-    <profile name="01" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="62b8-969f-c277-c655" publicationId="0545-ea23-873c-f668" page="18">
+    <profile name="1" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="62b8-969f-c277-c655" publicationId="0545-ea23-873c-f668" page="18">
       <characteristics>
         <characteristic name="Result" typeId="b1a1-a886-b4ae-f32d">Stale Rations: The unit suffer 1 to its LD but gains Hatred until the start of your next turn.</characteristic>
       </characteristics>
     </profile>
-    <profile name="02" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="227e-4710-1da7-ea45" publicationId="0545-ea23-873c-f668" page="18">
+    <profile name="2" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="227e-4710-1da7-ea45" publicationId="0545-ea23-873c-f668" page="18">
       <characteristics>
         <characteristic name="Result" typeId="b1a1-a886-b4ae-f32d">Rich Stew: The unit suffers -1 to its M value but gains Stubborn until the start of your next turn.</characteristic>
       </characteristics>
     </profile>
-    <profile name="05" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="5df5-dd17-dcdd-d763" publicationId="0545-ea23-873c-f668" page="18">
+    <profile name="5" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="5df5-dd17-dcdd-d763" publicationId="0545-ea23-873c-f668" page="18">
       <characteristics>
         <characteristic name="Result" typeId="b1a1-a886-b4ae-f32d">Oxtail Soup: The unit gains +1 Combat Resolution until the start of your next turn.</characteristic>
       </characteristics>
     </profile>
-    <profile name="06" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="d40a-d123-3b20-beb7" publicationId="0545-ea23-873c-f668" page="18">
+    <profile name="6" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="d40a-d123-3b20-beb7" publicationId="0545-ea23-873c-f668" page="18">
       <characteristics>
         <characteristic name="Result" typeId="b1a1-a886-b4ae-f32d">Chef&apos;s Special: You may choose which of the options apply to the unit.</characteristic>
       </characteristics>
     </profile>
-    <profile name="03" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="fcf2-f3be-79b6-49a1" publicationId="0545-ea23-873c-f668" page="18">
+    <profile name="3" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="fcf2-f3be-79b6-49a1" publicationId="0545-ea23-873c-f668" page="18">
       <characteristics>
         <characteristic name="Result" typeId="b1a1-a886-b4ae-f32d">Sugary Sweets: The unit gains Frenzy until the start of your next turn.</characteristic>
       </characteristics>
     </profile>
-    <profile name="04" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="bdd8-b1f-f2c0-fe1c" publicationId="0545-ea23-873c-f668" page="18">
+    <profile name="4" typeId="a2c7-4e5b-dca1-c70b" typeName="Provisions Table" hidden="false" id="bdd8-b1f-f2c0-fe1c" publicationId="0545-ea23-873c-f668" page="18">
       <characteristics>
         <characteristic name="Result" typeId="b1a1-a886-b4ae-f32d">Spicy Chicken: The unit gains Strength Bonus (1) until the start of your next turn.</characteristic>
       </characteristics>
     </profile>
-    <profile name="01" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="b4b4-dd58-a105-4d1" publicationId="0545-ea23-873c-f668" page="10">
+    <profile name="1" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="b4b4-dd58-a105-4d1" publicationId="0545-ea23-873c-f668" page="10">
       <characteristics>
         <characteristic name="Result" typeId="8458-31c3-77fb-6905">The model is caught and killed outright.</characteristic>
       </characteristics>
     </profile>
-    <profile name="02" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="f993-4d15-6a15-3cde" publicationId="0545-ea23-873c-f668" page="10">
+    <profile name="2" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="f993-4d15-6a15-3cde" publicationId="0545-ea23-873c-f668" page="10">
       <characteristics>
         <characteristic name="Result" typeId="8458-31c3-77fb-6905">The model is chased back and may not attack this round.</characteristic>
       </characteristics>
     </profile>
-    <profile name="05" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="dbac-e62-6997-faa1" publicationId="0545-ea23-873c-f668" page="10">
+    <profile name="5" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="dbac-e62-6997-faa1" publicationId="0545-ea23-873c-f668" page="10">
       <characteristics>
         <characteristic name="Result" typeId="8458-31c3-77fb-6905">The model succeeds in stealing a random magic item.</characteristic>
       </characteristics>
     </profile>
-    <profile name="06" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="568-2f6f-ac23-452b" publicationId="0545-ea23-873c-f668" page="10">
+    <profile name="6" typeId="bdae-0785-80ac-2d6f" typeName="Light-fingered chart" hidden="false" id="568-2f6f-ac23-452b" publicationId="0545-ea23-873c-f668" page="10">
       <characteristics>
         <characteristic name="Result" typeId="8458-31c3-77fb-6905">The model succeeds in stealing a magic item of their choice.</characteristic>
       </characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="54" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
+<gameSystem id="9e23-79cb-afed-cf4c" name="Warhammer Armies Project" revision="55" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" library="true">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <publications>
     <publication id="9e23-79cb-pubN66727" name="Rulebook v.2.2" shortName="RB" publisher="Warhammer - The Game of Fantasy Battles - 9th Edition v.2.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -21,19 +21,19 @@
     <publication id="b724-d2c4-d151-2d9e" name="High Elves v.1.4, Lizardmen v.1.4" shortName="HE, LM" publisher="Warhammer - High Elves 9th Ed v.1.4, Warhammer - Lizardmen 9th Ed v.1.4" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="eee5-f9c5-fa08-3f2e" name="Beastmen v.1.6, Daemons of Chaos v.1.62, Warriors of Chaos v.1.5" shortName="BM, DoC, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Daemons of Chaos 1.62, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="feeb-1927-4a99-f849" name="Tomb Kings v.1.5" shortName="TK" publisher="Warhammer - Tomb Kings 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="10a5-5781-61f5-86ae" name="Vampire Counts v.1.5" shortName="VC" publisher="Warhammer - Vampire Counts 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="10a5-5781-61f5-86ae" name="Vampire Counts 1.63" shortName="VC" publisher="Warhammer - Vampire Counts 1.63" publicationDate="18.05.2024" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="1a01-044f-047b-618f" name="Warriors of Chaos v.1.5" shortName="WoC" publisher="Warhammer - Warriors of Chaos 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="bb4b-874f-580a-13d6" name="Beastmen v.1.6, Warriors of Chaos v.1.5" shortName="BM, WoC" publisher="Warhammer - Beastmen 9th Ed 1.6, Warhammer - Warriors of Chaos 9th Ed 1.5" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e967-620f-06be-096a" name="Wood Elves v.1.5" shortName="WE" publisher="Warhammer - Wood Elves 9th Ed v.1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="315c-6fd1-56a3-8b04" name="Amazons v.1.44" shortName="Am" publisher="Warhammer - Amazons 1.44" publicationDate="08.01.2024" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="d221-484d-439d-4310" name="Araby v.1.5" shortName="Ar" publisher="Warhammer - Araby 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="8abe-59b3-1084-5e51" name="Grand Cathay 1.52" shortName="GC" publisher="Warhammer - Grand Cathay 1.52" publicationDate="11.09.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs v.1.5" shortName="CD" publisher="Warhammer - Chaos Dwarfs 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="faf5-2026-3cea-6e96" name="Chaos Dwarfs 1.5" shortName="CD" publisher="Warhammer - Chaos Dwarfs 9th Ed 1.5" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="7f0c-7d47-a39d-8c68" name="Cult of Ulric 1.11" shortName="CoU" publisher="Warhammer - Cult of Ulric 1.11" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
     <publication id="8ada-88a0-cdcd-9b5e" name="Dogs of War v.1.4" shortName="DoW" publisher="Warhammer - Dogs of War 9th Ed v.1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="894a-5ecc-1ff7-958a" name="Estalia 1.15" shortName="Es" publisher="Warhammer - Estalia 1.15" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.08.2023"/>
     <publication id="0545-ea23-873c-f668" name="Halflings 1.13" shortName="Ha" publisher="Warhammer - Halflings 1.13" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="16.01.2024"/>
-    <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins v.1.11" shortName="Ho" publisher="Warhammer - Hobgoblins 1.11" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="20.02.2024"/>
+    <publication id="92f3-84a1-4644-bc2f" name="Hobgoblins 1.12" shortName="Ho" publisher="Warhammer - Hobgoblins 1.12" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="18.03.2024"/>
     <publication id="84d9-dc45-4bf8-ae57" name="Kingdoms of Ind 1.12" shortName="KoI" publisher="Warhammer - Kingdoms of Ind 1.12" publisherUrl="http://warhammerarmiesproject.blogspot.com/" publicationDate="15.11.2023"/>
     <publication id="1607-bfe9-82af-d3dc" name="Kislev 1.16" shortName="Ki" publisher="Warhammer - Kislev 1.16" publicationDate="26.07.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="5ff9-69dd-8810-183f" name="Nippon v.1.2" shortName="Ni" publisher="Warhammer - Nippon 9th Ed v.1.2" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -41,14 +41,13 @@
     <publication id="2053-6f2b-423f-8b0f" name="Pirates of Sartosa v.1.2" shortName="PoS" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.2" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="e3da-3848-ff08-a482" name="Magic Items v.1.3" shortName="MI" publisher="Warhammer - Magic Items v.1.3" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="079e-9b65-30b3-2c59" name="Zombie Pirates of the Vampire Coast v.1.4" shortName="ZP" publisher="Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.4" publicationDate="22.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.4, Zombie Pirates of the Vampire Coast v.1.3" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 9th Ed v.1.4, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.3" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
+    <publication id="4ff3-b09f-ec27-d6ec" name="Vampire Counts v.1.63, Zombie Pirates of the Vampire Coast v.1.3" shortName="VC, ZP" publisher="Warhammer - Vampire Counts 1.63, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.3" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="a873-5a26-f107-1c0b" name="Pirates of Sartosa v.1.2, Zombie Pirates of the Vampire Coast v.1.4" shortName="PoS, ZP" publisher="Warhammer - Pirates of Sartosa 9th Ed v.1.2, Warhammer - Zombie Pirates of the Vampire Coast 9th Ed v.1.4" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="dcfc-4992-9141-dee0" name="Empire Special Characters v.1.6" shortName="Em" publisher="Warhammer - Empire Special Characters 1.6" publicationDate="27.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="15a5-c139-f130-a940" name="Orcs &amp; Goblins Special Characters 1.1" shortName="O&amp;G" publisher="Warhammer - Orcs &amp; Goblins Special Characters 1.1" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="ff43-3b22-4e64-1d31" name="Bretonnia Special Characters v.1.3" shortName="Br" publisher="Warhammer - Bretonnia Special Characters 1.3" publicationDate="28.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fef7-683c-50d7-d1bb" name="Dwarfs Special Characters v.1.0" shortName="Dw" publisher="Warhammer - Dwarfs Special Characters 1.0" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="1354-aa33-a41b-202a" name="High Elves Special Characters v.1.3" shortName="HE" publisher="Warhammer - High Elves Special Characters 1.3" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
-    <publication id="bf60-84de-5e13-5dbf" name="Vampire Counts Special Characters v.1.5" shortName="VC" publisher="Warhammer - Vampire Counts Special Characters 1.5" publicationDate="28.05.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="47b1-3485-34cf-bc48" name="Skaven Special Characters v.1.1" shortName="Sk" publisher="Warhammer - Skaven Special Characters 1.1" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="f4eb-8c89-b57e-d2df" name="Wood Elves Special Characters v.1.2" shortName="WE" publisher="Warhammer - Wood Elves Special Characters 1.2" publicationDate="27.02.2023" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
     <publication id="fe07-d23f-5110-8489" name="Lizardmen Special Characters v.1.2" shortName="LM" publisher="Warhammer - Lizardmen Special Characters 1.2" publicationDate="14.02.2022" publisherUrl="http://warhammerarmiesproject.blogspot.com/"/>
@@ -743,7 +742,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3d0-fe36-f400-8968" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c6d3-08c2-9c41-7ba2" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+                <infoLink id="c6d3-08c2-9c41-7ba2" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1403,7 +1402,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67c3-62ba-245f-e99f" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c32a-f0ae-242d-3482" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+                <infoLink id="c32a-f0ae-242d-3482" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -5436,7 +5435,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db77-c5d9-c9b0-1924" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="1969-0fc2-fc86-3082" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+            <infoLink id="1969-0fc2-fc86-3082" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -5524,7 +5523,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb37-2cc5-c2ae-39b6" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="6452-ea63-8ef8-daa2" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+            <infoLink id="6452-ea63-8ef8-daa2" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -5623,7 +5622,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ffa-b586-5d7e-2bb0" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3ff4-5e81-d219-3d69" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+            <infoLink id="3ff4-5e81-d219-3d69" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -5733,7 +5732,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8224-9e48-0f8b-e71d" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="619f-cf22-d6ec-22cb" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+            <infoLink id="619f-cf22-d6ec-22cb" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -5857,7 +5856,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e52-380f-264c-430e" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="a2fb-d16e-be4e-ab9a" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+            <infoLink id="a2fb-d16e-be4e-ab9a" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -5983,7 +5982,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10c3-9f18-a0bf-05d2" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="03c1-2878-831a-24ac" name="Exorcism" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
+            <infoLink id="03c1-2878-831a-24ac" name="Focus of Will" hidden="false" targetId="cd1f-0bc5-ab83-af06" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -9062,7 +9061,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="dfed-9295-c3fe-d736" name="0. Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dfed-9295-c3fe-d736" name="Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0636-934d-de2e-db8e" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bd7-907c-4cd3-4426" type="min"/>
@@ -9078,11 +9077,11 @@ If you want to make a list using the allied rules, make separate rosters for eac
       <selectionEntryGroups>
         <selectionEntryGroup id="7c28-ecb9-7aa9-1646" name="Spells from the Lore of Necromancy" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a0d-1d71-6a29-6044" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7403-fa4c-76ae-f306" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a0d-1d71-6a29-6044" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7403-fa4c-76ae-f306" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ca20-7f46-3df2-cb8e" name="1. Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ca20-7f46-3df2-cb8e" name="Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8c7-10d0-e3a4-b4d3" type="max"/>
               </constraints>
@@ -9093,18 +9092,18 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4c69-5c48-d5c7-d665" name="3. Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4c69-5c48-d5c7-d665" name="Hand of Dust" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf72-84eb-e33f-1087" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2948-656d-074c-161a" name="Gaze of Nagash" hidden="false" targetId="92c2-d7f9-a91b-7c5a" type="profile"/>
+                <infoLink id="2948-656d-074c-161a" name="Hand of Dust" hidden="false" targetId="dec1-ac22-9286-efd9" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="23f7-95b5-25f9-4d4c" name="2. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="23f7-95b5-25f9-4d4c" name="Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1447-fe32-ea7f-ab38" type="max"/>
               </constraints>
@@ -9139,7 +9138,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e5aa-dc60-a02d-9742" name="0. Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e5aa-dc60-a02d-9742" name="Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ef2-d18b-2d3f-56ba" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d1b-3354-1c0b-1222" type="min"/>
@@ -9155,11 +9154,11 @@ If you want to make a list using the allied rules, make separate rosters for eac
       <selectionEntryGroups>
         <selectionEntryGroup id="1aca-8c0d-018b-107f" name="Spells from the Lore of Necromancy" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d38-7fb4-f744-ce5a" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9707-5d9d-1a2a-2fa1" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d38-7fb4-f744-ce5a" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9707-5d9d-1a2a-2fa1" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="226b-44c7-532a-6dd0" name="1. Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="226b-44c7-532a-6dd0" name="Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a305-048b-0a2b-5e52" type="max"/>
               </constraints>
@@ -9170,7 +9169,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2377-2c4f-89e8-fca9" name="3. Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2377-2c4f-89e8-fca9" name="Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f9b-0fbe-fe8b-2af4" type="max"/>
               </constraints>
@@ -9181,7 +9180,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1aee-8674-4535-0b56" name="2. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1aee-8674-4535-0b56" name="Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a13b-39a3-2819-e5ae" type="max"/>
               </constraints>
@@ -9192,12 +9191,34 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9a66-1f2f-906a-2c53" name="4. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9a66-1f2f-906a-2c53" name="Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1a7-ab42-013b-2e1c" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="a195-aad0-a5fc-e4e4" name="Raise Dead" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+                <infoLink id="a195-aad0-a5fc-e4e4" name="Raise Dead (VC)" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hand of Dust" hidden="false" id="fb23-4c9c-d313-fd49" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e58-3531-3e0f-bd82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand of Dust" id="afc8-b13e-584b-1748" hidden="false" targetId="dec1-ac22-9286-efd9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fountains of Blood" hidden="false" id="2ae-13ac-69ce-4207" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="14eb-3be4-511a-2395" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Fountains of Blood" id="4a75-1606-38ed-cf78" hidden="false" targetId="8024-eccd-965c-e81c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -9227,7 +9248,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f17b-8f29-bcdd-0d09" name="0. Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f17b-8f29-bcdd-0d09" name="Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f3f-7e7f-87a6-1a9d" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a36-4004-bc77-9021" type="min"/>
@@ -9243,11 +9264,11 @@ If you want to make a list using the allied rules, make separate rosters for eac
       <selectionEntryGroups>
         <selectionEntryGroup id="f89c-1711-4e72-0118" name="Spells from the Lore of Necromancy" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59c9-e9d6-f3da-116c" type="min"/>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d45c-9a91-0294-02bd" type="max"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59c9-e9d6-f3da-116c" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d45c-9a91-0294-02bd" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8025-2ae8-0b87-3dfe" name="1. Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8025-2ae8-0b87-3dfe" name="Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b0b-c647-8e57-afdc" type="max"/>
               </constraints>
@@ -9258,7 +9279,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="26b7-f1ad-6e18-fcb6" name="3. Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="26b7-f1ad-6e18-fcb6" name="Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fa6-a04b-cc04-cb59" type="max"/>
               </constraints>
@@ -9269,7 +9290,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c040-366d-d086-44ff" name="2. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c040-366d-d086-44ff" name="Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf4a-996f-4b80-2d99" type="max"/>
               </constraints>
@@ -9280,23 +9301,67 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="70db-af6f-c285-ea93" name="4. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="70db-af6f-c285-ea93" name="Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd0b-5181-05ed-99f7" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="e7f4-628f-4bcf-f703" name="Raise Dead" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+                <infoLink id="e7f4-628f-4bcf-f703" name="Raise Dead (VC)" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bd5a-3f28-73f7-34d4" name="5. Curse of Years" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Fountains of Blood" hidden="false" id="a846-223a-8d84-ff81" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d3d-1e08-2001-2fe4" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8e30-4745-91fa-a0a1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="30b7-7982-3993-748b" name="Curse of Years" hidden="false" targetId="35c2-f26a-2814-dcf4" type="profile"/>
+                <infoLink name="Fountains of Blood" id="5a58-b832-9e2f-9c03" hidden="false" targetId="8024-eccd-965c-e81c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hand of Dust" hidden="false" id="6955-53f0-d424-66ae" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="89fc-db97-8d6a-a355" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand of Dust" id="5ba5-b95b-a519-473f" hidden="false" targetId="dec1-ac22-9286-efd9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Deathly Cabal" hidden="false" id="b004-ac95-d12b-a53e" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="29cf-d2f0-ae5e-5eb8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Deathly Cabal" id="fbad-af-5c03-d632" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unquiet Spirits" hidden="false" id="dbc9-e047-951d-4f52" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e521-efc4-bc00-6235" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Deathly Cabal" id="d3f5-958f-637e-88d2" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Malediction of Nagash" hidden="false" id="c6e8-4cca-e44e-630f" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="94e3-5a02-f4ae-4ac7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Malediction of Nagash" id="e000-2518-97f4-134d" hidden="false" targetId="446f-6c4f-ce7e-9df2" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -9326,7 +9391,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c77c-e6d1-a5a6-e98a" name="0. Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c77c-e6d1-a5a6-e98a" name="Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46fd-51d0-18df-e022" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da88-01b0-0d4a-3bf4" type="min"/>
@@ -9342,11 +9407,11 @@ If you want to make a list using the allied rules, make separate rosters for eac
       <selectionEntryGroups>
         <selectionEntryGroup id="bdac-b490-6352-3b6f" name="Spells from the Lore of Necromancy" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b86-2999-3c9e-6005" type="min"/>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97cd-5461-3018-786b" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b86-2999-3c9e-6005" type="min"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97cd-5461-3018-786b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3de7-ef02-7071-e00d" name="1. Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3de7-ef02-7071-e00d" name="Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8a2-bebc-0b84-61c5" type="max"/>
               </constraints>
@@ -9357,7 +9422,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5892-e710-af80-f51b" name="3. Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5892-e710-af80-f51b" name="Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="548c-ab30-24bf-7b8c" type="max"/>
               </constraints>
@@ -9368,7 +9433,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2ed6-6d8d-a4eb-1ac5" name="2. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2ed6-6d8d-a4eb-1ac5" name="Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6eed-55b2-1bd0-16b9" type="max"/>
               </constraints>
@@ -9379,34 +9444,100 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="86c4-20ac-b045-cebc" name="6. Wind of Death" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="86c4-20ac-b045-cebc" name="Spiritual Vortex" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="069c-6bec-84a7-8495" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5f00-9ce9-02e7-d7b1" name="Wind of Death" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
+                <infoLink id="5f00-9ce9-02e7-d7b1" name="Spiritual Vortex" hidden="false" targetId="64ed-3892-cb76-e274" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1991-25c8-1bc1-2198" name="4. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1991-25c8-1bc1-2198" name="Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b6d-df12-560b-29fa" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c29a-3b33-a7d5-1ab2" name="Raise Dead" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+                <infoLink id="c29a-3b33-a7d5-1ab2" name="Raise Dead (VC)" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d178-35d3-962f-5e19" name="5. Curse of Years" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d178-35d3-962f-5e19" name="Curse of Years" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35a2-27de-744d-7bc2" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="5321-b810-8501-4a1b" name="Curse of Years" hidden="false" targetId="35c2-f26a-2814-dcf4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Deathly Cabal" hidden="false" id="f9bd-8368-53d5-f12e" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3628-e972-3680-b4ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Deathly Cabal" id="231b-f84c-2a4e-b42c" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fountains of Blood" hidden="false" id="c04d-e456-fb3b-6f" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1ec9-1104-c755-fd74" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Fountains of Blood" id="4be2-7aed-29e0-91f0" hidden="false" targetId="8024-eccd-965c-e81c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hand of Dust" hidden="false" id="fada-6721-7bdf-75be" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5b7-1a1d-ee50-329c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand of Dust" id="3e8d-a67d-903-b6d2" hidden="false" targetId="dec1-ac22-9286-efd9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Malediction of Nagash" hidden="false" id="7a60-78be-ee2e-65c2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4aae-37fc-7499-2484" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Malediction of Nagash" id="fed1-dc21-6404-66a6" hidden="false" targetId="446f-6c4f-ce7e-9df2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unquiet Spirits" hidden="false" id="2665-e613-a9c0-5951" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6590-ba47-5d8c-166d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Deathly Cabal" id="9922-de78-186b-f5d8" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wind of Undeath" hidden="false" id="981d-6390-bdb0-6726" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="944c-b6c-90ff-b9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Wind of Undeath" id="398c-7b8c-d173-cb88" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -9436,7 +9567,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e734-4108-1dc6-e7b3" name="0. Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e734-4108-1dc6-e7b3" name="Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4eb9-bf0e-e11a-1456" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="960b-c45d-31cb-5114" type="min"/>
@@ -9464,71 +9595,137 @@ If you want to make a list using the allied rules, make separate rosters for eac
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49d7-1cf0-b709-8557" type="min"/>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9ab-0421-c823-9bbd" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49d7-1cf0-b709-8557" type="min"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9ab-0421-c823-9bbd" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8fad-57db-d88d-f1fb" name="1. Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Curse of Years" hidden="false" id="d47b-56c2-9f25-ce0f" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a5f-b475-ec5e-450b" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3396-d4dc-46b2-bac7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="afdc-b9ac-ef20-fcdb" name="Vanhel&apos;s Danse Macabre" hidden="false" targetId="7ebe-8da7-4994-41d7" type="profile"/>
+                <infoLink name="Curse of Years" id="dc5c-9674-4013-61a9" hidden="false" targetId="35c2-f26a-2814-dcf4" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0ff8-f350-ae5a-8085" name="3. Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Deathly Cabal" hidden="false" id="dfb8-4ed4-67ad-86f7" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="417f-3285-3863-f3e9" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f0d4-e3db-a945-ca26" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d26c-85a4-e796-d0e9" name="Gaze of Nagash" hidden="false" targetId="92c2-d7f9-a91b-7c5a" type="profile"/>
+                <infoLink name="Deathly Cabal" id="d443-97f2-f437-4270" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="295a-8667-db48-f675" name="2. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Fountains of Blood" hidden="false" id="62ea-d596-af30-27a6" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5967-6723-1dd8-a5a6" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="755f-dfeb-49d9-5580" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="11ed-83c2-9b90-cf96" name="Hellish Vigour" hidden="false" targetId="90c0-d007-9eda-3ad6" type="profile"/>
+                <infoLink name="Fountains of Blood" id="577c-1cfd-bffa-4779" hidden="false" targetId="8024-eccd-965c-e81c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fcc4-b8cc-9f52-759e" name="6. Wind of Death" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Gaze of Nagash" hidden="false" id="ff3d-4df1-1ee5-b40c" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8ba-0dfb-32b5-6f51" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c461-59c-2548-3f6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7e67-7915-4cdf-fea7" name="Wind of Death" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
+                <infoLink name="Gaze of Nagash" id="beec-5f6a-df3d-5186" hidden="false" targetId="92c2-d7f9-a91b-7c5a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dc58-7511-a113-58be" name="4. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Hand of Dust" hidden="false" id="58f0-eb50-f459-f806" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3056-a789-7144-e998" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="93b2-ac83-9713-8b9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="371a-ced4-8478-28ab" name="Raise Dead" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+                <infoLink name="Hand of Dust" id="54c6-ca6c-b804-662e" hidden="false" targetId="dec1-ac22-9286-efd9" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5dda-24df-22cf-7403" name="5. Curse of Years" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Hellish Vigour" hidden="false" id="5133-6330-608e-3142" collective="false">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da64-694b-4384-8d6a" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6a66-dc4d-6c36-6f89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink id="daf6-f7cb-52b7-0a00" name="Curse of Years" hidden="false" targetId="35c2-f26a-2814-dcf4" type="profile"/>
+                <infoLink name="Hellish Vigour" id="1599-2b43-69c6-8d20" hidden="false" targetId="90c0-d007-9eda-3ad6" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Malediction of Nagash" hidden="false" id="6a71-cbac-918e-fdfe" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1c51-b511-dff9-2365" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Malediction of Nagash" id="5d57-e85b-38c2-ce18" hidden="false" targetId="446f-6c4f-ce7e-9df2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Raise Dead" hidden="false" id="b124-9f0c-d3e6-c212" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d645-513d-cb52-e9df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Raise Dead (VC)" id="9a7e-e7c9-c243-7b3e" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Spiritual Vortex" hidden="false" id="af5f-9e4b-e5da-2f05" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1dc5-5c3e-5c28-885d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Spiritual Vortex" id="ae44-dce0-2581-8fb8" hidden="false" targetId="64ed-3892-cb76-e274" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unquiet Spirits" hidden="false" id="c46-ecac-4714-7a2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6363-2b92-6d0e-d473" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Deathly Cabal" id="e7a8-4fe9-27b5-1c98" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vanhel&apos;s Danse Macabre" hidden="false" id="4c3f-7486-1761-6e8b" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f35e-d0ed-964c-fc52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Vanhel&apos;s Danse Macabre" id="ed51-f712-86d2-7156" hidden="false" targetId="7ebe-8da7-4994-41d7" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wind of Undeath" hidden="false" id="17f1-2f10-4b36-f36e" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6610-c513-e27f-7acd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Wind of Undeath" id="c93d-ee57-e987-8847" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -9558,7 +9755,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2bf3-dee8-e470-980b" name="0. Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2bf3-dee8-e470-980b" name="Invocation of Nehek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03f1-f1d4-dd3b-7926" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2449-6216-f8ab-8019" type="min"/>
@@ -9570,67 +9767,133 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="658c-2f05-7498-a00d" name="1. Vanhel&apos;s Danse Macabre" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Wind of Undeath" hidden="false" id="950e-e2bc-b57b-c623" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8ea-cec9-68d0-2c18" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f538-daa9-c03e-7ded" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="b220-cd60-5a97-a264" name="Vanhel&apos;s Danse Macabre" hidden="false" targetId="7ebe-8da7-4994-41d7" type="profile"/>
+            <infoLink name="Wind of Undeath" id="6581-98c0-c044-60c2" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7845-79cd-8216-ceb7" name="2. Hellish Vigour" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Vanhel&apos;s Danse Macabre" hidden="false" id="220b-38c3-44bc-bf51" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a115-e410-1981-e86d" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d527-7a6c-443b-f31b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="bd86-ee76-36e9-2cfc" name="Hellish Vigour" hidden="false" targetId="90c0-d007-9eda-3ad6" type="profile"/>
+            <infoLink name="Vanhel&apos;s Danse Macabre" id="7372-5c3b-a85f-7e50" hidden="false" targetId="7ebe-8da7-4994-41d7" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="efec-07b0-5291-7fd6" name="3. Gaze of Nagash" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Unquiet Spirits" hidden="false" id="d85f-1a9e-75ff-df5c" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d0f-56d6-b539-ee9c" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eba6-59e2-7635-2f50" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="0372-4195-29af-d16c" name="Gaze of Nagash" hidden="false" targetId="92c2-d7f9-a91b-7c5a" type="profile"/>
+            <infoLink name="Deathly Cabal" id="8dd1-6a34-986-9328" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ae95-78a3-60b3-c828" name="4. Raise Dead" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Spiritual Vortex" hidden="false" id="b23c-3c03-7192-934c" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1694-fade-5838-7b85" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="35e0-5407-792e-e215" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="ac3b-12fd-0541-cdd4" name="Raise Dead" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
+            <infoLink name="Spiritual Vortex" id="ba69-c291-c38a-8ef1" hidden="false" targetId="64ed-3892-cb76-e274" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="de34-3a28-5caa-dfdc" name="5. Curse of Years" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Raise Dead" hidden="false" id="62a1-15d0-f898-2966" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9d2-f9f5-68e9-e3fe" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ef7d-a28-afd6-cc54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7954-8de7-4bd2-69d0" name="Curse of Years" hidden="false" targetId="35c2-f26a-2814-dcf4" type="profile"/>
+            <infoLink name="Raise Dead (VC)" id="79fe-a193-5314-c08a" hidden="false" targetId="7155-7c35-0c07-d42c" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5eb3-be59-29e0-6811" name="6. Wind of Death" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Malediction of Nagash" hidden="false" id="3501-164d-3a4b-cea" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d22-907a-fa5c-773d" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81e2-6383-fe00-713b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="d8db-378c-ebca-2599" name="Wind of Death" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
+            <infoLink name="Malediction of Nagash" id="d864-a42d-e67f-d287" hidden="false" targetId="446f-6c4f-ce7e-9df2" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hellish Vigour" hidden="false" id="f82b-21a0-7712-9f09" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ffc9-98b2-164b-bcb9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hellish Vigour" id="3aae-b000-7f9a-ce44" hidden="false" targetId="90c0-d007-9eda-3ad6" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hand of Dust" hidden="false" id="7844-52ee-62a8-5d52" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="50b-f22b-8984-50e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hand of Dust" id="8461-79c-bf63-44b7" hidden="false" targetId="dec1-ac22-9286-efd9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gaze of Nagash" hidden="false" id="9046-b321-80e8-18f7" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="75f5-6551-2fa8-796a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gaze of Nagash" id="4c2d-dfa1-cc6f-96cd" hidden="false" targetId="92c2-d7f9-a91b-7c5a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fountains of Blood" hidden="false" id="f8ce-45aa-d909-859e" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bbe8-cce9-a3f4-2a24" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fountains of Blood" id="34b0-22fa-6f6f-1070" hidden="false" targetId="8024-eccd-965c-e81c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Deathly Cabal" hidden="false" id="9232-47c5-1215-1e5b" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="77a1-813b-a0d0-c57" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Deathly Cabal" id="4f01-b0ca-e81c-1c78" hidden="false" targetId="757b-7538-e2dd-c62" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Curse of Years" hidden="false" id="3d55-7fac-3af4-9229" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="37e9-9793-6e23-7464" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Curse of Years" id="4c7e-3e17-6aa5-2f8f" hidden="false" targetId="35c2-f26a-2814-dcf4" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -10014,7 +10277,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ccb-b9ac-835b-50c6" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c369-399f-85f4-9f53" name="Wind of Death" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
+                <infoLink id="c369-399f-85f4-9f53" name="Wind of Undeath" hidden="false" targetId="13fc-3f78-b3b1-c52b" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11633,7 +11896,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f8f-23ba-299b-dca5" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="545e-c53a-ad77-d952" name="Dark Waters" hidden="false" targetId="61de-4ea8-ff54-83a2" type="profile"/>
+            <infoLink id="545e-c53a-ad77-d952" name="Kiss of the Deep" hidden="false" targetId="61de-4ea8-ff54-83a2" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -11664,7 +11927,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2035-5c91-9695-7542" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0c80-d611-db7e-78a1" name="Water Blast" hidden="false" targetId="3bb7-0c80-2250-1ed0" type="profile"/>
+                <infoLink id="0c80-d611-db7e-78a1" name="Denizens of the Deep" hidden="false" targetId="3bb7-0c80-2250-1ed0" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11697,7 +11960,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf66-ca9a-6e21-1437" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="184b-5d29-3160-10a0" name="Eye of the Storm" hidden="false" targetId="0d07-048d-6441-bfc8" type="profile"/>
+                <infoLink id="184b-5d29-3160-10a0" name="Fog of the Damned" hidden="false" targetId="0d07-048d-6441-bfc8" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11721,7 +11984,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d7f-8118-f1ef-434e" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="6f7b-7910-5642-4b4d" name="Dark Waters" hidden="false" targetId="61de-4ea8-ff54-83a2" type="profile"/>
+            <infoLink id="6f7b-7910-5642-4b4d" name="Kiss of the Deep" hidden="false" targetId="61de-4ea8-ff54-83a2" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -11752,7 +12015,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7137-48e1-d577-0bc6" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="4e94-605e-58d2-9986" name="Water Blast" hidden="false" targetId="3bb7-0c80-2250-1ed0" type="profile"/>
+                <infoLink id="4e94-605e-58d2-9986" name="Denizens of the Deep" hidden="false" targetId="3bb7-0c80-2250-1ed0" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11785,7 +12048,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="678a-1ef6-333a-46bc" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="dec7-174a-73b7-1334" name="Eye of the Storm" hidden="false" targetId="0d07-048d-6441-bfc8" type="profile"/>
+                <infoLink id="dec7-174a-73b7-1334" name="Fog of the Damned" hidden="false" targetId="0d07-048d-6441-bfc8" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11820,7 +12083,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e74-ab5f-67a1-2dfb" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="e558-588f-8b75-c380" name="Dark Waters" hidden="false" targetId="61de-4ea8-ff54-83a2" type="profile"/>
+            <infoLink id="e558-588f-8b75-c380" name="Kiss of the Deep" hidden="false" targetId="61de-4ea8-ff54-83a2" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -11851,7 +12114,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3119-d177-a1d5-4712" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="ffaa-83e9-3a19-90c4" name="Water Blast" hidden="false" targetId="3bb7-0c80-2250-1ed0" type="profile"/>
+                <infoLink id="ffaa-83e9-3a19-90c4" name="Denizens of the Deep" hidden="false" targetId="3bb7-0c80-2250-1ed0" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11884,7 +12147,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6bf2-f11a-ff9d-76ca" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="dd0c-d7f2-2961-6535" name="Rip Tide" hidden="false" targetId="b9c6-0914-719d-9b70" type="profile"/>
+                <infoLink id="dd0c-d7f2-2961-6535" name="Kraken&apos;s Pull" hidden="false" targetId="b9c6-0914-719d-9b70" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -11895,7 +12158,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72a9-5efb-d94a-c63a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0f46-e4af-f47b-a904" name="Eye of the Storm" hidden="false" targetId="0d07-048d-6441-bfc8" type="profile"/>
+                <infoLink id="0f46-e4af-f47b-a904" name="Fog of the Damned" hidden="false" targetId="0d07-048d-6441-bfc8" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -13543,7 +13806,7 @@ If you want to make a list using the allied rules, make separate rosters for eac
       </constraints>
       <infoLinks>
         <infoLink id="aca7-7bc9-6b64-6258" name="Mercenaries" hidden="false" targetId="8a53-e985-f3f0-a91b" type="rule"/>
-        <infoLink id="60b8-ad14-f219-4005" name="Forest Strider" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
+        <infoLink id="60b8-ad14-f219-4005" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
         <infoLink id="56ac-afd4-d330-bc56" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="b1e8-9d4b-7d7c-315b" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
       </infoLinks>
@@ -13575,8 +13838,8 @@ If you want to make a list using the allied rules, make separate rosters for eac
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="492f-5713-fffb-0e9a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0904-22d9-f3b3-1c15" name="Blades of the Ancients (Melee)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
-                <infoLink id="29ec-1563-24ce-486b" name="Blades of the Ancients (Ranged)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
+                <infoLink id="0904-22d9-f3b3-1c15" name="Blades of the Ancients (Combat)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
+                <infoLink id="29ec-1563-24ce-486b" name="Blades of the Ancients (Shooting)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -13622,8 +13885,8 @@ If you want to make a list using the allied rules, make separate rosters for eac
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b371-9b43-6d4c-0e9f" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="9499-4313-b702-d857" name="Blades of the Ancients (Melee)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
-                    <infoLink id="3be1-fae1-6e9a-e841" name="Blades of the Ancients (Ranged)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
+                    <infoLink id="9499-4313-b702-d857" name="Blades of the Ancients (Combat)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
+                    <infoLink id="3be1-fae1-6e9a-e841" name="Blades of the Ancients (Shooting)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -13665,8 +13928,8 @@ If you want to make a list using the allied rules, make separate rosters for eac
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0753-8b13-6e5c-5368" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="c62c-45f3-61e9-8bf1" name="Blades of the Ancients (Melee)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
-                    <infoLink id="5f66-29de-1959-fea0" name="Blades of the Ancients (Ranged)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
+                    <infoLink id="c62c-45f3-61e9-8bf1" name="Blades of the Ancients (Combat)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
+                    <infoLink id="5f66-29de-1959-fea0" name="Blades of the Ancients (Shooting)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -13708,8 +13971,8 @@ If you want to make a list using the allied rules, make separate rosters for eac
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4954-8082-abca-c6a2" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="6c56-9613-234d-13ae" name="Blades of the Ancients (Melee)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
-                    <infoLink id="c7bb-a007-d76e-4cbb" name="Blades of the Ancients (Ranged)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
+                    <infoLink id="6c56-9613-234d-13ae" name="Blades of the Ancients (Combat)" hidden="false" targetId="eb45-b280-1043-8a09" type="profile"/>
+                    <infoLink id="c7bb-a007-d76e-4cbb" name="Blades of the Ancients (Shooting)" hidden="false" targetId="9b3d-3ef4-1c5b-fdef" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -15317,7 +15580,7 @@ order to march, regardless of the proximity of enemy units.</description>
         <infoLink id="d0f7-4275-37c1-16e7" name="Skirmishers" hidden="false" targetId="9a30-1c5c-12f4-5798" type="rule"/>
         <infoLink id="8186-0d74-9aeb-8127" name="Scouts" hidden="false" targetId="6624-0b7b-c5b8-6397" type="rule"/>
         <infoLink id="a937-e83d-5e15-944f" name="Strider (Forest)" hidden="false" targetId="8d09-c701-2658-67e8" type="rule"/>
-        <infoLink id="f3df-0cbc-2a51-d4ff" name="Short and Nimble" hidden="false" targetId="03d6-87a5-ffd8-93ba" type="rule"/>
+        <infoLink id="f3df-0cbc-2a51-d4ff" name="Duck &amp; Weave" hidden="false" targetId="03d6-87a5-ffd8-93ba" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="7da8-fb7c-c574-4cac" name="Fighting Cock" hidden="false" collective="false" import="true" type="model">
@@ -15359,7 +15622,7 @@ order to march, regardless of the proximity of enemy units.</description>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d10-f3cf-67d3-dd33" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="e532-0c07-43c1-7332" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                <infoLink id="e532-0c07-43c1-7332" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -15417,7 +15680,7 @@ order to march, regardless of the proximity of enemy units.</description>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3c2-fd4c-2113-d74e" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="0811-9df1-4449-bd07" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                    <infoLink id="0811-9df1-4449-bd07" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -15507,7 +15770,7 @@ order to march, regardless of the proximity of enemy units.</description>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0780-f876-ebdb-affd" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="bb44-8f68-2ecd-d35b" name="Short Bow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
+                    <infoLink id="bb44-8f68-2ecd-d35b" name="Shortbow" hidden="false" targetId="487e-16a4-8ab8-2c85" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -24787,71 +25050,67 @@ If the Wizard is in a unit, they can remain within the unit, even though they ar
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single unengaged unit within range. The target gains Ethereal until the end of the phase and can immediately move up to 10&quot;/20&quot; as if it were the Remaining Moves sub-phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="35c2-f26a-2814-dcf4" name="Curse of Years" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="35c2-f26a-2814-dcf4" name="Curse of Years" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">5</characteristic>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. When cast, roll a D6 for every model in the target unit - on a score of 6 the model suffers a Wound. At the end of the next Magic phase, roll again for each model in the unit, they will
-suffer a Wound on a 5+, and so on, to a maximum of 2+. No armour saves are allowed against Wounds caused by Curse of Years.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in Play. When cast, roll a D6 for every model in the target unit - on a score of 6 the model suffers a Wound which Ignores Armour Saves. At the end of the next Magic phase, roll again for each model in the unit, they will suffer a Wound on a 5+, and so on, to a maximum of 2+.</characteristic>
       </characteristics>
     </profile>
-    <profile id="92c2-d7f9-a91b-7c5a" name="Gaze of Nagash" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-      <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/12+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/48&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6 S 4 hits.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b215-84f3-231c-b9df" name="Gaze of Nagash (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
-      <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6 S 4 hits.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="90c0-d007-9eda-3ad6" name="Hellish Vigour" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="92c2-d7f9-a91b-7c5a" name="Gaze of Nagash" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">8+/16+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit gains Always Strikes First and may re-roll failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase. Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6 S 4 hits.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f8fe-06ac-9d38-eb14" name="Hellish Vigour (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="b215-84f3-231c-b9df" name="Gaze of Nagash (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="4" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magic Missile</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Causes 2D6 S 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="90c0-d007-9eda-3ad6" name="Hellish Vigour" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All Undead models in the unit gain Always Strikes First and may re-roll failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f8fe-06ac-9d38-eb14" name="Hellish Vigour (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="4" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a friendly Undead unit within range. The unit gains Always Strikes First and may re-roll failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">All Undead models in the unit gain Always Strikes First and may re-roll failed To Hit rolls in Close Combat until the start of the caster&apos;s next Magic phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6e49-e2c5-e1f2-6d5c" name="Invocation of Nehek" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="6e49-e2c5-e1f2-6d5c" name="Invocation of Nehek" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Signature Spell</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/9+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;/24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets Undead. The target unit immediately regains a number of Wounds as follows: infantry gains D6 plus the caster&apos;s Wizard level in Wounds (roll for each unit); other troop types targeted gain 1 plus the caster&apos;s Wizard level in Wounds. However, characters, Shrines, Chariots, Monsters or Ethereal models can never regain more than D3 Wounds per successful casting. Wounds gained are distributed as described in Resurrecting Fallen Warriors.</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">6+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets Undead. The target immediately regains a number of Wounds as follows: Infantry and War Beasts gain D6 plus the caster&apos;s Wizard level in Wounds; other troop types targeted gain 1 plus the caster&apos;s Wizard level in Wounds. Characters, Shrines, Chariots and Monsters regain D3 Wounds per successful casting. Models gained are distributed as a summoning spell. Any characters in a unit can only be healed if targeted separately from the rest of the unit, in which case only they are healed.</characteristic>
       </characteristics>
     </profile>
-    <profile id="7155-7c35-0c07-d42c" name="Raise Dead (VC)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="7155-7c35-0c07-d42c" name="Raise Dead (VC)" publicationId="10a5-5781-61f5-86ae" page="4" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Summoning</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+/12+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;/18&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Brings a brand new unit of Zombies into play. Choose a point on the battlefield – that point need not lie in the caster&apos;s line of sight or forward arc. Next, roll 2D6+3. This is how many models comprise the new unit. Boosted version summons 2D6+3 Skeleton Warriors instead.
-
-When placing this unit, it must be wholly within the spell&apos;s range and at least 1&quot; away from all units, buildings and impassable terrain. It can be placed facing any direction, and in any legal formation, as long as the unit&apos;s front rank contains at least five models. This unit does not have any upgrades or command models. Units summoned by this spell cannot be dispelled, and do not award victory points under any circumstances. Finally, if a summoned unit cannot be placed because there is not enough room, the unit does not enter play at all, though the spell&apos;s lore
-attribute may still apply.</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Brings a unit of Zombies/Skeleton Warriors with shields into play. Roll 2D6+3. This is how many models comprise the new unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="dc96-4835-7143-539b" name="Raise Dead (ZP Bound Spell 4+)" publicationId="079e-9b65-30b3-2c59" page="44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -24878,40 +25137,40 @@ When placing this unit, it must be wholly within the spell&apos;s range and at l
 attribute may still apply.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b11d-282d-37a5-c7f5" name="The Curse of Undeath" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="b11d-282d-37a5-c7f5" name="The Curse of Undeath" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Lore Attribute</characteristic>
         <characteristic name="Type" typeId="21e9-4aa2-f538-c93b"/>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0"/>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">6&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a spell from the Lore of Necromancy is successfully cast, one Undead unit within range of the caster regain 1 Wound following the rules for Invocation of Nehek.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">When a spell from the Lore of Necromancy is successfully cast, one Undead unit within range of the caster regains D3 Wounds following the rules for Invocation of Nehek.</characteristic>
       </characteristics>
     </profile>
-    <profile id="7ebe-8da7-4994-41d7" name="Vanhel&apos;s Danse Macabre" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="7ebe-8da7-4994-41d7" name="Vanhel&apos;s Danse Macabre" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+/10+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;/12&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">That targets a unengaged Undead unit within range. The target unit can immediately make a normal move (but not march or reform) as if it were the Remaining Moves sub-phase (including any Characters in the unit) Boosted version targets all Undead units within range.</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Conveyance</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets Undead. The target can immediately make a normal move as if it were the Remaining Moves sub-phase (including any Characters in the unit).</characteristic>
       </characteristics>
     </profile>
-    <profile id="33ac-cce9-8a53-c1ef" name="Vanhel&apos;s Danse Macabre (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="237" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="33ac-cce9-8a53-c1ef" name="Vanhel&apos;s Danse Macabre (Bound Spell 4+)" publicationId="10a5-5781-61f5-86ae" page="4" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
         <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">Bound Spell</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Conveyance</characteristic>
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">4+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">That targets a friendly unengaged Undead unit within range. The target unit can immediately make a normal move (but not march or reform) as if it were the Remaining Moves sub-phase (including any Characters in the unit) Boosted version targets all friendly Undead units within range.</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets Undead. The target can immediately make a normal move as if it were the Remaining Moves sub-phase (including any Characters in the unit).</characteristic>
       </characteristics>
     </profile>
-    <profile id="13fc-3f78-b3b1-c52b" name="Wind of Death" publicationId="4ff3-b09f-ec27-d6ec" page="237, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
+    <profile id="13fc-3f78-b3b1-c52b" name="Wind of Undeath" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
       <characteristics>
-        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">6</characteristic>
-        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Magical Vortex</characteristic>
-        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">15+/25+</characteristic>
-        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
-        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. Uses the small/large round template. Once the template is placed, the player then nominates the direction in which the Wind of Death will move. To determine how many inches the template moves, roll an artillery dice and multiply the result by 3. Any model passed over by the template takes a S 3 hit which Ignores Armour Saves. If the result on the artillery dice is a misfire, centre the template on the caster and roll a scatter dice and a D6. The template moves a number of inches equal to the roll of the D6, in the direction indicated by the scatter dice. If a Hit! is rolled, use the small arrow on the Hit! symbol. In either event, in subsequent turns, the Wind of Death will move a number of inches determined by rolling an artillery dice, in a random direction determined by rolling a scatter dice. If a misfire is rolled in subsequent turns, the Wind of Death dissipates and is removed.</characteristic>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">12+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">targets all enemy units within range. Each enemy unit suffer D6 S 3 Hits which Ignores Armour Saves. In addition, if the spell causes any Wounds, a unit of Spirit Hosts is created within 12&quot; of the caster, just like a summoning spell. This unit has a number of Wounds equal to the number of Wounds caused by the spell.</characteristic>
       </characteristics>
     </profile>
     <profile id="477e-cbd8-907d-4c5b" name="Born of Damnation" publicationId="ee54-3543-b9db-fe40" page="7" hidden="false" typeId="cb92-d882-5ba8-11ab" typeName="Spell">
@@ -25646,6 +25905,60 @@ In subsequent turns, the Plague Wind travels in a random direction and moves a n
         <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
         <characteristic name="Range" typeId="2954-76ea-decb-30ff">12&quot;</characteristic>
         <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Targets a single enemy model (even a character in a unit). Both caster and target roll a D6 and add their respective unmodified LD values. For every point the caster wins by, the target suffers a Wound which Ignores Armour saves.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hand of Dust" typeId="cb92-d882-5ba8-11ab" typeName="Spell" hidden="false" id="dec1-ac22-9286-efd9" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">1</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">5+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff"/>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Is cast on the Wizard itself. While the spell is in effect, the caster gains an additional special attack in close combat that does not benefit from any other magic items or special rule. If this Attack Hits, the target suffers an automatic Wound with the Ignores Armour Saves and Multiple Wounds (D6).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fountains of Blood" typeId="cb92-d882-5ba8-11ab" typeName="Spell" hidden="false" id="8024-eccd-965c-e81c" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">2</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">7+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, all failed To Wound rolls made against this unit may be re-rolled. In addition, Vampires gain a +1 to bonus to any The Red Thirst rolls for Wounds caused against this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Deathly Cabal" typeId="cb92-d882-5ba8-11ab" typeName="Spell" hidden="false" id="757b-7538-e2dd-c62" publicationId="10a5-5781-61f5-86ae" page="4">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, the target gains a Ward save (6+) against non-magical attacks and Terror.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Unquiet Spirits" typeId="cb92-d882-5ba8-11ab" typeName="Spell" hidden="false" id="36f5-d125-e749-b811" publicationId="10a5-5781-61f5-86ae" page="4">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Augment</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">9+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">18&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Until the start of the caster&apos;s next Magic phase, the target gains a Ward save (6+) against non-magical attacks and Terror.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Malediction of Nagash" typeId="cb92-d882-5ba8-11ab" typeName="Spell" hidden="false" id="446f-6c4f-ce7e-9df2" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">3</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">The target halves their S (rounding down) until the start of the caster&apos;s next Magic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Spiritual Vortex" typeId="cb92-d882-5ba8-11ab" typeName="Spell" hidden="false" id="64ed-3892-cb76-e274" publicationId="4ff3-b09f-ec27-d6ec" page="4, 44">
+      <characteristics>
+        <characteristic name="Spell Level" typeId="576b-eaa1-0bd1-3f7a">4</characteristic>
+        <characteristic name="Type" typeId="21e9-4aa2-f538-c93b">Summoning</characteristic>
+        <characteristic name="Casting Value" typeId="d6bf-647e-ba69-e8a0">11+</characteristic>
+        <characteristic name="Range" typeId="2954-76ea-decb-30ff">24&quot;</characteristic>
+        <characteristic name="Details" typeId="f5f2-ac1b-25cd-89c6">Remains in play. Summons the 5&quot; template. While the spell is in effect, the template counts as Dangerous Terrain, and enemy units within 6&quot; of it suffer -1 to their LD.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

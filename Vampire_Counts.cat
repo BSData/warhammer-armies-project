@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="38" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="335c-7873-eaf3-a60a" name="Vampire Counts" revision="39" battleScribeVersion="2.03" authorName="L3610N 115" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="9e23-79cb-afed-cf4c" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>https://discordapp.com/invite/UrrPB3T</readme>
   <profileTypes>
     <profileType id="21e6-6317-460c-b75f" name="Vampiric Power">
@@ -1362,6 +1362,7 @@
                     <entryLink id="ce14-4f6f-bbc1-b38c" name="Talismans" hidden="false" collective="false" import="true" targetId="4215-2a8d-e599-7c88" type="selectionEntryGroup"/>
                     <entryLink id="434b-7ebd-30e6-e537" name="Vampiric Powers (Strigoi)" hidden="false" collective="false" import="true" targetId="32e5-30e7-6b82-27b8" type="selectionEntryGroup"/>
                     <entryLink import="true" name="Arcane Items (One use only)" hidden="false" id="a259-82b7-4f6c-57ec" collective="false" targetId="db27-b8a6-8e1f-2a53" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Magic Weapons" hidden="false" id="cd9a-62df-7c4c-10d5" collective="false" targetId="65a4-2cd8-a0c9-8a92" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -1788,7 +1789,7 @@
                         <infoLink id="d8b5-6660-60d7-199e" name="Unholy Lodestone" hidden="false" targetId="f430-3ed6-4b7e-01a8" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="30"/>
+                        <cost name="pts" typeId="points" value="20"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="b592-0c8f-b387-99fc" name="Balefire" hidden="false" collective="false" import="true" type="upgrade">
@@ -1799,7 +1800,7 @@
                         <infoLink id="547f-5db4-62ae-9a85" name="Balefire" hidden="false" targetId="383a-aee7-e212-10e2" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="15"/>
+                        <cost name="pts" typeId="points" value="20"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3707,7 +3708,7 @@
                         <infoLink id="1b45-352a-30bb-b1f3" name="Unholy Lodestone" hidden="false" targetId="f430-3ed6-4b7e-01a8" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="30"/>
+                        <cost name="pts" typeId="points" value="20"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="9890-8bb0-1ffb-4514" name="Balefire" hidden="false" collective="false" import="true" type="upgrade">
@@ -3718,7 +3719,7 @@
                         <infoLink id="4bcb-c7a9-4d4d-bd43" name="Balefire" hidden="false" targetId="383a-aee7-e212-10e2" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="15"/>
+                        <cost name="pts" typeId="points" value="20"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3774,7 +3775,7 @@
           <modifiers>
             <modifier type="set" field="11fd-996b-af40-3fc4" value="25">
               <conditions>
-                <condition field="selections" scope="2419-cf0c-5617-ea9f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22a0-d012-6a25-3c3e" type="atLeast"/>
+                <condition field="selections" scope="2419-cf0c-5617-ea9f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91f2-3ee0-9c56-861f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4132,7 +4133,7 @@
         <selectionEntry id="ff70-b55f-2851-8e9a" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="876e-3131-d8eb-da07" type="max"/>
-            <constraint field="points" scope="parent" value="25" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e899-cb24-5e02-b0b0" type="max"/>
+            <constraint field="points" scope="parent" value="50" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e899-cb24-5e02-b0b0" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="a90d-c0fa-f007-d176" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="65a4-2cd8-a0c9-8a92" type="selectionEntryGroup"/>
@@ -9991,7 +9992,7 @@ The last two effects last until the start of your next turn.</characteristic>
                             <infoLink id="61f3-a639-d3f5-ff41" name="Unholy Lodestone" hidden="false" targetId="f430-3ed6-4b7e-01a8" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30"/>
+                            <cost name="pts" typeId="points" value="20"/>
                           </costs>
                         </selectionEntry>
                         <selectionEntry id="36b8-28ab-7a76-8649" name="Balefire" hidden="false" collective="false" import="true" type="upgrade">
@@ -10002,7 +10003,7 @@ The last two effects last until the start of your next turn.</characteristic>
                             <infoLink id="583c-fa00-0712-084c" name="Balefire" hidden="false" targetId="383a-aee7-e212-10e2" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="15"/>
+                            <cost name="pts" typeId="points" value="20"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -11177,7 +11178,7 @@ The last two effects last until the start of your next turn.</characteristic>
           <modifiers>
             <modifier type="set" value="25" field="d7dc-ca48-2bf9-be19">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="83dc-42af-bff7-31a3" childId="dc3c-8211-2a81-886" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="83dc-42af-bff7-31a3" childId="c1fe-a36-e710-2082" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12330,7 +12331,7 @@ The last two effects last until the start of your next turn.</characteristic>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Morbheg Knight" hidden="false" id="59c6-9b13-d832-b508" collective="false">
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="false" id="83ee-d544-e309-bbe7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="false" id="83ee-d544-e309-bbe7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Morbheg Knight" typeId="d9ed-a507-0102-d498" typeName="Model" hidden="false" id="8395-2a11-30b2-24a2" publicationId="10a5-5781-61f5-86ae" page="36">
@@ -12624,7 +12625,7 @@ The last two effects last until the start of your next turn.</characteristic>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="(Mount)" hidden="false" id="3ffd-b9a7-caf5-13" targetId="(Mount)" primary="false"/>
+        <categoryLink targetId="0eb4-f376-7725-b05b" id="ae48-5c2a-2eaa-29fc" primary="true" name="Rare"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Glooms (Olynder or Kurdoss as general)" hidden="true" id="383a-2279-7c36-e171" collective="false">
@@ -12862,8 +12863,8 @@ The last two effects last until the start of your next turn.</characteristic>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Staff of Raukhamon" hidden="false" id="d017-4fee-dde4-bf98" collective="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5a6f-0d78-ce4f-d6d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e143-629c-f2bc-b424" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="699f-cdef-7453-b126" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Staff of Raukhamon" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item" hidden="false" id="ea05-15f7-d496-70dc" publicationId="10a5-5781-61f5-86ae" page="10">
@@ -12909,22 +12910,6 @@ The last two effects last until the start of your next turn.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" id="6c37-e1a5-fa36-16a4" hidden="false" typeId="points" value="30"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wychlight Lantern" hidden="false" id="5da2-377c-f4fa-12f7" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="99e3-6336-b55c-8a8c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f4e3-d0e3-50a9-1622" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Wychlight Lantern" typeId="24d7-7f7d-a4d7-c26c" typeName="Arcane Item" hidden="false" id="f661-ed27-b5a1-c2e6" publicationId="10a5-5781-61f5-86ae" page="11">
-              <characteristics>
-                <characteristic name="Special Rules" id="cd94-f2dc-9c8b-1c2" hidden="false" typeId="3df8-4ab0-c4bd-e2ad">One use only. This item can be used during any of your Magic phases. Once used, it allows the bearer to cast one of their spells automatically without using any power dice, at its minimum casting value.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="30"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Amulet of Screams" hidden="false" id="8b58-2bed-1bc7-e189" collective="false">
